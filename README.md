@@ -30,11 +30,11 @@ infinity-research-paper/
 │   ├── generate_time_chart.py          # Figure 4: Processing Time
 │   ├── generate_figure5_chart.py       # Figure 5: Vision vs Consensus Performance
 │   ├── generate_figure6_chart.py       # Figure 6: API Specialization Matrix
-│   ├── generate_concordance_table.py   # Table 4.5: Concordance Performance
-│   ├── generate_field_analysis_table.py # Table 4.6: Field-by-Field Analysis
-│   ├── generate_conflicts_table_simple.py # Table 4.7: Manual Resolution of Conflicts
+│   ├── generate_concordance_table.py   # Table 3.5: Concordance Performance
+│   ├── generate_field_analysis_table.py # Table 3.6: Field-by-Field Analysis
+│   ├── generate_conflicts_table_simple.py # Table 3.7: Manual Resolution of Conflicts
 │   ├── generate_conflicts_table.py     # Detailed conflict analysis (alternative)
-│   ├── generate_accuracy_table_real.py  # Table 4.8: Infinity Research Real Accuracy Performance
+│   ├── generate_accuracy_table_real.py  # Table 3.8: Infinity Research Real Accuracy Performance
 │   └── generate_accuracy_table.py      # Alternative accuracy calculation
 └── plots/                       # Generated outputs
     ├── *.png                           # Generated charts and figures
@@ -62,11 +62,11 @@ python scripts/generate_figure6_chart.py   # Figure 6
 
 ### Reproduce All Tables
 ```bash
-# Generate all tables (4.5, 4.6, 4.7, 4.8)
-python scripts/generate_concordance_table.py      # Table 4.5
-python scripts/generate_field_analysis_table.py   # Table 4.6
-python scripts/generate_conflicts_table_simple.py # Table 4.7
-python scripts/generate_accuracy_table_real.py    # Table 4.8
+# Generate all tables (3.5, 3.6, 3.7, 3.8)
+python scripts/generate_concordance_table.py      # Table 3.5
+python scripts/generate_field_analysis_table.py   # Table 3.6
+python scripts/generate_conflicts_table_simple.py # Table 3.7
+python scripts/generate_accuracy_table_real.py    # Table 3.8
 ```
 
 ## 📊 Generated Figures
@@ -86,12 +86,12 @@ Each figure script generates:
 
 ## 📋 Generated Tables
 
-| Script | Table | Description | Key Metrics |
-|--------|-------|-------------|-------------|
-| `generate_concordance_table.py` | **Table 4.5** | Concordance Performance | Claude: 83.6% vs DeepSeek: 91.4% general concordance |
-| `generate_field_analysis_table.py` | **Table 4.6** | Field-by-Field Analysis | Author: 100% concordance, Year: 63.2-68.4% |
-| `generate_conflicts_table_simple.py` | **Table 4.7** | Manual Resolution of Conflicts | 27 total conflicts, Infinity: 41%, Manual: 30% |
-| `generate_accuracy_table_real.py` | **Table 4.8** | Real Accuracy Performance | 94.7% overall Infinity accuracy (144/152 fields) |
+| Script | Table | Description | 
+|--------|-------|-------------|
+| `generate_concordance_table.py` | **Table 3.5** | Concordance Performance | 
+| `generate_field_analysis_table.py` | **Table 3.6** | Field-by-Field Analysis | 
+| `generate_conflicts_table_simple.py` | **Table 3.7** | Manual Resolution of Conflicts | 
+| `generate_accuracy_table_real.py` | **Table 3.8** | Real Accuracy Performance | 94.7% overall Infinity accuracy (144/152 fields) |
 
 ### Output Files (Tables)
 Each table script generates:
