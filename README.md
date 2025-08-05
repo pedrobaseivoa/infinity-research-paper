@@ -100,10 +100,10 @@ Each table script generates:
 ## 🔬 Data Sources
 
 ### Article Processing Pipeline
-1. **Vision JSON** (`vision_json.json`): Claude 3.5 Sonnet baseline extraction
+1. **Vision JSON** (`vision_json.json`): GPT-4o-vision baseline extraction
 2. **APIs Raw JSON** (`apis_raw_json.json`): Raw responses from 11 scholarly APIs
-3. **APIs Clean JSON** (`apis_clean_json.json`): Consensus results with field_sources tracking
-4. **LLM Topics JSON** (`llm_topics_json.json`): DeepSeek V3 topic classification  
+3. **APIs Clean JSON** (`apis_clean_json.json`): DeepSeek Consensus results with field_sources tracking
+4. **LLM Topics JSON** (`llm_topics_json.json`): GPT-4o-vision topic classification  
 5. **Final JSON** (`final_json.json`): Consolidated platform results with cost/time tracking
 
 ### Field Sources Tracking
