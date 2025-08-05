@@ -116,10 +116,6 @@ Each table script generates:
 - **`analysis_deepseek.json`**: evaluation of DeepSeek V3 extractions (152 field comparisons)
 - **`conflicts.json`**: Detailed analysis of 27 unique conflicts with resolution outcomes
 
-## ✅ Validation
-
-All scripts reproduce the **exact numbers** reported in the article:
-
 ### Figures
 - ✅ **$0.833** total cost with 29.98% Vision contribution
 - ✅ **540K tokens** with 54.33% Consensus consumption
