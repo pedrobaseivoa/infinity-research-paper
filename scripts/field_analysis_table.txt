@@ -1,0 +1,36 @@
+5.6 Field-by-Field Analysis of General Concordance
+
+| Scientific Field                          | Claude 3.5 Sonnet | DeepSeek V3       | Distribution (Claude)      | Distribution (DeepSeek)    |
+|-------------------------------------------|--------------------|--------------------|----------------------------|----------------------------|
+| Author                                    | 100.0% (19/19)     | 100.0% (19/19)     | A:19 B:0 C:0 D:0 E:0 F:0   | A:18 B:0 C:1 D:0 E:0 F:0   |
+| Year                                      |  63.2% (12/19)     |  68.4% (13/19)     | A:12 B:0 C:0 D:7 E:0 F:0   | A:12 B:0 C:1 D:6 E:0 F:0   |
+| Study Type                                |  89.5% (17/19)     |  94.7% (18/19)     | A:1 B:8 C:8 D:2 E:0 F:0    | A:2 B:8 C:8 D:1 E:0 F:0    |
+| Methodology                               |  89.5% (17/19)     | 100.0% (19/19)     | A:1 B:13 C:3 D:1 E:1 F:0   | A:0 B:19 C:0 D:0 E:0 F:0   |
+| Sample Size (n), Population Characteristics |  78.9% (15/19)     | 100.0% (19/19)     | A:0 B:14 C:1 D:4 E:0 F:0   | A:0 B:18 C:1 D:0 E:0 F:0   |
+| Outcome Measure                           | 100.0% (19/19)     | 100.0% (19/19)     | A:1 B:14 C:4 D:0 E:0 F:0   | A:0 B:17 C:2 D:0 E:0 F:0   |
+| Key Findings                              |  84.2% (16/19)     |  73.7% (14/19)     | A:1 B:12 C:3 D:0 E:0 F:3   | A:0 B:13 C:1 D:0 E:2 F:3   |
+| Limitations                               |  63.2% (12/19)     |  94.7% (18/19)     | A:1 B:9 C:2 D:0 E:5 F:2    | A:0 B:17 C:1 D:0 E:0 F:1   |
+
+The table reports the General concordance (A+B+C), indicating overall alignment where all
+core information was retained, with extra details added in non-critical areas. Both models
+Claude 3.5 Sonnet and DeepSeek V3 achieved 100% concordance in the Author and
+Outcome Measure fields, demonstrating high reliability in validating these data types. A
+notable point in the Author field is that, although all 19 cases were successfully validated,
+DeepSeek had a single Category C occurrence, where the automated output returned
+"Borresen" while the manual reference read "Borreson." This highlights how subtle spelling
+variations can appear even in high-performing fields and reinforces that, while Claude tends
+to be more critical in overall validation, DeepSeek maintained consistent precision in
+extracting and validating author names across diverse publication formats.
+
+The most challenging fields for validation were Year, Key Findings, and Sample
+Size/Population Characteristics, where discrepancies or gaps were more frequent. The Year
+field achieved only 63.2% (12/19) for Claude and 68.4% (13/19) for DeepSeek, reflecting
+source-level date conflicts. Key Findings (84.2% for Claude vs. 73.6% for DeepSeek) and
+Limitations (63.2% vs. 94.7%) showed the greatest variation between models, illustrating
+the difficulty of validating complex narrative information. Sample Size and Population
+Characteristics reached 78.9% (15/19) for Claude versus 100% (19/19) for DeepSeek,
+indicating the latter's stronger capability in validating structured quantitative data. These
+results indicate that while both models maintain high concordance in objective fields, the
+validation of temporal and narrative information remains more prone to subtle
+inconsistencies, which subsequently guided the detailed discrepancy analysis in the
+following evaluation stage.

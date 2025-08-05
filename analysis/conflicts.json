@@ -1,0 +1,249 @@
+=============================================================================
+🔍 CONFLICT ANALYSIS REPORT - CORRECTED
+================================================================================
+Generated: 2025-07-22 14:14:46
+
+📊 SUMMARY STATISTICS
+----------------------------------------
+Claude-only conflicts: 14
+DeepSeek-only conflicts: 2
+Both models (same category): 11
+Both models (different categories): 0
+Total unique conflicts: 27
+
+📈 CATEGORY BREAKDOWN
+----------------------------------------
+Category D (Factually Divergent):
+  Claude: 14 (7 unique + 7 shared)
+  DeepSeek: 7 (0 unique + 7 shared)
+Category E (Conceptually Different):
+  Claude: 6 (6 unique + 0 shared)
+  DeepSeek: 2 (2 unique + 0 shared)
+Category F (Incomparable):
+  Claude: 5 (1 unique + 4 shared)
+  DeepSeek: 4 (0 unique + 4 shared)
+
+🔴 CATEGORY D (Factually Divergent)
+------------------------------------------------------------
+
+🤖 Claude-only (7 instances):
+  • Article 4 - Author_Year_StudyType_Year
+    Description: Year=D
+    Explanation: Different years (2024 vs 2023).
+    Full classification: Author=A, Year=D, Study Type=C
+
+Resolution: Infinity correct (2024)
+
+  • Article 1 - Methodology
+    Description: D
+    Explanation: Different smart glasses systems specified - Manual mentions Magic Leap 1 while Infinity describes Vuzix Blade glasses
+    Full classification: D
+
+Resolution: Infinity correct (Vuzix Blade)
+
+  • Article 16 - Author_Year_StudyType_Study Type
+    Description: Study Type=D
+    Explanation: Different types specified - 'Observational cross-sectional' vs 'Observational Feasibility'
+    Full classification: Author=A, Year=A, Study Type=D
+
+Resolution: Manual partially correct (Observational Feasibility), Infinity correct (Observational cross-sectional)
+
+  • Article 7 - Sample_Size
+    Description: D
+    Explanation: Factual conflict in number of study sites (12 vs 13) while core info about 121 participants and community-dwelling adults >50 matches
+    Full classification: D
+
+Resolution: Manual correct (13 sites - 121 community-dwelling adults aged >50 from 13 European study sites, with exclusions for conditions affecting cognition or daily functioning)
+Infinity incorrect (121 participants; Community-dwelling adults over 50 years with healthy controls, preclinical AD, and prodromal AD; recruited from 12 European study sites - correct participants but wrong number of European study sites)
+
+  • Article 2 - Sample_Size
+    Description: D
+    Explanation: Manual reports 25 total participants (23 students + 2 experts) while Infinity only shows 23 students total. Missing expert participants.
+    Full classification: D
+
+Resolution: Manual correct (25 total participants: 23 students + 2 experts), Infinity partially correct (23 students, but missing 2 experts)
+
+  • Article 5 - Sample_Size
+    Description: D
+    Explanation: Manual shows 50 technical readings vs 10 in automated. Both mention 3 clinicians but with different breakdowns.
+    Full classification: D
+
+Resolution: Manual correct ("50 technical readings" - refers to technical validation phase), Infinity partially correct ("10 measurements" - refers to measurements per clinician)
+
+  • Article 14 - Sample_Size
+    Description: D
+    Explanation: Sample size differs (30 vs 29 patients). Both indicate non-acute neurology clinic patients, but have a factual discrepancy in n.
+    Full classification: D
+
+Resolution: Both factually correct but capture different aspects:
+Manual: 30 patients (correct - initially enrolled participants)
+Infinity: 29 patients (correct - participants in final analysis)
+Analysis: Both are factually correct but capture different aspects:
+Manual: Initial sample size (recruited/enrolled)
+Infinity: Analytical sample size (completed analysis)
+
+🤝 Both models agree (7 instances):
+  • Article 15 - Author_Year_StudyType_Year
+    Claude: Year=D
+    Claude explanation: Different years (2022 vs 2023).
+    DeepSeek: Year=D
+    DeepSeek explanation: Different years (2022 vs 2023).
+
+Resolution: Infinity correct (2023)
+
+  • Article 1 - Author_Year_StudyType_Year
+    Claude: Year=D
+    Claude explanation: Different years (2022 vs 2023).
+    DeepSeek: Year=D
+    DeepSeek explanation: Different years (2022 vs 2023).
+
+Resolution: Infinity correct (2022)
+
+  • Article 2 - Author_Year_StudyType_Year
+    Claude: Year=D
+    Claude explanation: Different years (2024 vs 2021).
+    DeepSeek: Year=D
+    DeepSeek explanation: Different years (2021 vs 2024).
+
+Resolution: Infinity correct (2024)
+
+  • Article 18 - Author_Year_StudyType_Year
+    Claude: Year=D
+    Claude explanation: Different years (2023 vs 2024).
+    DeepSeek: Year=D
+    DeepSeek explanation: Different years (2023 vs 2024).
+
+Resolution: Manual correct (2024)
+
+  • Article 18 - Author_Year_StudyType_Study Type
+    Claude: Study Type=D
+    Claude explanation: Different study types (Observational cross-sectional vs Perspective Study with User-Survey)
+    DeepSeek: Study Type=D
+    DeepSeek explanation: Different study types (Observational cross-sectional vs Perspective Study with User-Survey-based analysis).
+
+Resolution: Manual: "Observational cross-sectional" (captures only data component), Infinity: "Perspective Study with User-Survey-based analysis" (more precise)
+
+  • Article 11 - Author_Year_StudyType_Year
+    Claude: Year=D
+    Claude explanation: Different years (2024 vs 2025).
+    DeepSeek: Year=D
+    DeepSeek explanation: Different years (2024 vs 2025).
+
+Resolution: Infinity correct (2025)
+
+  • Article 3 - Author_Year_StudyType_Year
+    Claude: Year=D
+    Claude explanation: Clear conflict 2019 vs 2021.
+    DeepSeek: Year=D
+    DeepSeek explanation: Different years (2019 vs 2021).
+
+Resolution: Infinity correct (2019)
+
+🟡 CATEGORY E (Conceptually Different)
+------------------------------------------------------------
+
+🤖 Claude-only (6 instances):
+  • Article 14 - Methodology
+    Description: E
+    Explanation: Both describe HoloLens 2 systems but focus on different applications - Infinity focuses on telepresence while manual focuses on ultrasound guidance
+    Full classification: E
+
+Resolution: Infinity CORRECT - perfectly captured telepresence methodology
+Manual INCORRECT - study is not about ultrasound
+
+  • Article 11 - Limitations
+    Description: E
+    Explanation: Manual focuses on equipment needs while automated focuses on methodological limitations - different aspects of study limitations
+    Full classification: E
+
+Resolution: Infinity CORRECT - precisely captured official methodological limitations
+Manual partially correct - limitation not specifically mentioned
+
+  • Article 18 - Limitations
+    Description: E
+    Explanation: Manual focuses on AR paywall and template requirements, while automated focuses on Android device hardware requirements - different aspects
+    Full classification: E
+
+Resolution: Infinity CORRECT - captured valid technical/hardware limitations
+Manual CORRECT - captured valid access/usage limitations
+
+  • Article 2 - Limitations
+    Description: E
+    Explanation: Manual focuses on clinical/sample limitations while automated focuses on technical/prototype limitations - different aspects of study limitations
+    Full classification: E
+
+Resolution: Both correct - different valid perspectives
+
+  • Article 3 - Limitations
+    Description: E
+    Explanation: Manual focuses on prototype/testing limitations while automated focuses on administrative/maintenance limitations - different aspects
+    Full classification: E
+
+Resolution: Both correct - different valid perspectives
+
+  • Article 17 - Limitations
+    Description: E
+    Explanation: Manual focuses on AR hardware limitations while automated focuses on study methodology limitations - different aspects of limitations
+    Full classification: E
+
+Resolution: Both correct - different valid perspectives
+
+🧠 DeepSeek-only (2 instances):
+  • Article 19 - Key_Findings
+    Description: E
+    Explanation: Automated extraction focuses on quantitative hand movement data, while manual extraction mentions general tracking fidelity without specifics.
+    Full classification: E
+
+Resolution: Both correct - complementary perspectives
+
+  • Article 8 - Key_Findings
+    Description: E
+    Explanation: Automated and manual extractions describe different aspects of the study's findings without conflict.
+    Full classification: E
+
+Resolution: Both correct - complementary perspectives
+
+⚫ CATEGORY F (Incomparable)
+------------------------------------------------------------
+
+🤖 Claude-only (1 instance):
+  • Article 10 - Limitations
+    Description: F
+    Explanation: Manual extraction shows 'Not evaluated' while automated provides detailed limitations - fields cannot be meaningfully compared
+    Full classification: F
+
+Resolution: Infinity made valid inferences about potential limitations based on study design, while manual was more conservative by not extracting limitations from a protocol. Both approaches are defensible, resulting in F (incomparable) classification - both correct.
+
+🤝 Both models agree (4 instances):
+  • Article 9 - Limitations
+    Claude: F
+    Claude explanation: Manual extraction is marked as 'Not Evaluated', making comparison impossible
+    DeepSeek: F
+    DeepSeek explanation: Manual extraction not evaluated, no data to compare
+
+Resolution: Infinity made valid inferences vs. manual conservative approach - but this is a study protocol which would be more related, so let's consider partially correct, manual correct, but study protocol - insights about this
+
+  • Article 9 - Key_Findings
+    Claude: F
+    Claude explanation: Manual extraction shows 'Not applicable' while automated extraction provides specific IKDC and PASS threshold findings - cannot compare
+    DeepSeek: F
+    DeepSeek explanation: Manual extraction is 'Not applicable', making it incomparable with automated extraction.
+
+Resolution: Manual correct - protocols fundamentally don't have "findings"; Infinity confused evaluation criteria with findings - but study protocol here gives insights for future consideration of study protocols and description of this protocol study issue
+
+  • Article 10 - Key_Findings
+    Claude: F
+    Claude explanation: Manual extraction shows 'Not applicable' while automated has detailed findings - these are not meaningfully comparable
+    DeepSeek: F
+    DeepSeek explanation: Manual extraction is not applicable, making comparison impossible.
+
+Resolution: Manual is correct - study protocols fundamentally don't have "Key Findings" in the sense of research results. They describe methodology for future findings. Infinity confused objectives/hypotheses/planned outcomes with actual findings, appropriately resulting in F (incomparable) classification - Manual correct, Infinity incorrect - but this gives insights for future consideration of study protocols
+
+  • Article 17 - Key_Findings
+    Claude: F
+    Claude explanation: Manual extraction shows 'Not Applicable' while automated extraction provides detailed findings - cannot make meaningful comparison
+    DeepSeek: F
+    DeepSeek explanation: Manual extraction is 'Not Applicable', making it incomparable with automated extraction.
+
+Resolution: These are PLANNED OUTCOMES and ASSESSMENT METHODS that will be used in the future study, not actual findings. The text uses future language: "will be explored", "is expressed in".
+Verdict: Manual is correct - study protocols fundamentally don't have "Key Findings" in the sense of research results. They describe how to find future findings. Infinity confused planned outcome measures and assessment methods with actual findings, appropriately resulting in F (incomparable) classification.
