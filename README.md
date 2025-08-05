@@ -185,6 +185,6 @@ This repository ensures **complete scientific reproducibility** by:
 
 **Article**: "Infinity Research: A Modular and Transparent AI Platform for Automated Systematic Reviews"   
 **Dataset**: 19 articles from "Comparison" project  
-**Platform**: Infinity Research (infinity-research.com)
+**Platform**: Infinity Research (https://infinityresearch-09sw.onrender.com/))
 
 *This repository demonstrates the platform's transparency and reproducibility principles by making all data, scripts, and analysis methods publicly available.*
