@@ -1,0 +1,82 @@
+{
+  "timestamp": "2025-07-22T14:54:20.911135",
+  "cost_tracking": {
+    "model": "deepseek-chat",
+    "call_type": "smart_consensus",
+    "timestamp": "2025-07-22T14:54:20.910920",
+    "input_cost": 0.001852,
+    "total_cost": 0.002998,
+    "output_cost": 0.001146,
+    "input_tokens": 6859,
+    "total_tokens": 7901,
+    "output_tokens": 1042,
+    "parsing_error": null,
+    "parsing_successful": true,
+    "processing_time_ms": 53491
+  },
+  "consensus_result": {
+    "DOI": "10.1109/THMS.2024.3432735",
+    "PMID": null,
+    "Year": 2024,
+    "Issue": "5",
+    "PMCID": null,
+    "Pages": "589-598",
+    "Title": "ARMedicalSketch: Exploring 3D Sketching for Medical Image Using True 2D-3D Interlinked Visualization and Interaction",
+    "PDFUrl": null,
+    "Volume": "54",
+    "Authors": [
+      "Zhang, Nan",
+      "Huang, Tianqi",
+      "Liao, Hongen"
+    ],
+    "Journal": "IEEE Transactions on Human-Machine Systems",
+    "Abstract": "In traditional clinical practice, doctors often have to deal with 3D information based on 2D-displayed medical images. There is a considerable mismatch between the 2D and 3D dimensions in image interaction during clinical diagnosis, making image manipulation challenging and time-consuming. In this study, we explored 3D sketching for medical images using true 2D-3D interlinked visualization and interaction, presenting a novel AR environment named ARMedicalSketch. It supports image display enhancement preprocessing and 3D interaction tasks for original 3D medical images. Our interaction interface, based on 3D autostereoscopic display technology, provides both floating 3D display and 2D tablet display while enabling glasses-free visualization. We presented a method of 2D-3D interlinked visualization and interaction, employing synchronized projection visualization and a virtual synchronized interactive plane to establish an integrated relationship between 2D and 3D displays. Additionally, we utilized gesture sensors and a 2D touch tablet to capture the user's hand information for convenient interaction. We constructed the prototype system and evaluated it by studying 23 students and 2 clinical experts. The results showed improved user processing efficiency with medical images while maintaining 2D interaction accuracy, and the prototype displays strong 3D spatial accuracy. In the future, we aim to further enhance the interaction precision and application scenarios of ARMedicalSketch.",
+    "Keywords": [
+      "3D aerial display",
+      "augmented reality",
+      "autostereoscopic visualization",
+      "human-computer interaction"
+    ],
+    "Citations": 0,
+    "Publisher": "IEEE",
+    "OpenAccess": false,
+    "confidence_factors": {
+      "source": "Vision-Foundation + API Enhancement",
+      "reasoning": "Vision data used as foundation with API validation confirming DOI, title, authors, and journal. API data enhanced citation count and open access status. All fields validated as coherent across multiple APIs.",
+      "field_sources": {
+        "doi": "crossref|openalex|semantic_scholar",
+        "year": "vision",
+        "issue": "vision",
+        "pages": "vision",
+        "title": "vision",
+        "volume": "vision",
+        "authors": "crossref+vision",
+        "journal": "vision",
+        "abstract": "vision",
+        "keywords": "vision",
+        "citations": "semantic_scholar",
+        "publisher": "vision",
+        "openaccess": "crossref|openalex|semantic_scholar|unpaywall"
+      },
+      "enhancement_level": "MODERATE",
+      "validation_status": "HIGH"
+    },
+    "api_success_summary": {
+      "insights": "Best contributors: Crossref, Semantic Scholar, OpenAlex. Failures due to no results in biomedical/engineering-focused APIs (PubMed, Europe PMC). High coherence among successful APIs confirms data quality.",
+      "total_apis": 11,
+      "failed_apis": [
+        "doaj",
+        "arxiv",
+        "europe_pmc",
+        "pubmed",
+        "datacite",
+        "core"
+      ],
+      "success_rate": 0.55,
+      "coherent_apis": 5,
+      "coherence_rate": 0.83,
+      "successful_apis": 6
+    }
+  },
+  "processing_time_ms": 68366
+}

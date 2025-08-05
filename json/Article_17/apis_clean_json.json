@@ -1,0 +1,87 @@
+{
+  "timestamp": "2025-07-22T14:17:17.936544",
+  "cost_tracking": {
+    "model": "deepseek-chat",
+    "call_type": "smart_consensus",
+    "timestamp": "2025-07-22T14:17:17.936387",
+    "input_cost": 0.007956,
+    "total_cost": 0.009656,
+    "output_cost": 0.0017,
+    "input_tokens": 29468,
+    "total_tokens": 31013,
+    "output_tokens": 1545,
+    "parsing_error": null,
+    "parsing_successful": true,
+    "processing_time_ms": 79125
+  },
+  "consensus_result": {
+    "DOI": "10.1186/s40814-024-01480-w",
+    "PMID": "38539250",
+    "Year": 2024,
+    "Issue": "1",
+    "PMCID": "PMC10967163",
+    "Pages": null,
+    "Title": "Remotely prescribed and monitored home-based gait-and-balance therapeutic exergaming using augmented reality glasses: protocol for a clinical feasibility study in people with Parkinson’s disease",
+    "PDFUrl": "https://pilotfeasibilitystudies.biomedcentral.com/counter/pdf/10.1186/s40814-024-01480-w",
+    "Volume": "10",
+    "Authors": [
+      "Hardeman, L. E. S.",
+      "Geerse, D. J.",
+      "Hoogendoorn, E. M.",
+      "Nonnekes, J.",
+      "Roerdink, M."
+    ],
+    "Journal": "Pilot and Feasibility Studies",
+    "Abstract": "Clinical guidelines for people with Parkinson’s disease stress that, complementary to pharmacological treatment, exercise and physiotherapy should be given a central role in disease management. Adhering to regular exercise of the right type, and with high repetition, remains a challenge for people with Parkinson’s disease. Exergaming has the potential to increase adherence through play and personalised interventions, both in clinic and at home. Reality DTx is an augmented-reality home-based gait-and-balance exergaming intervention specifically designed for people with Parkinson’s disease as an extension of supervised physiotherapy. The primary objective of this study is to evaluate the feasibility and potential efficacy of Reality DTx. Twenty-four people with Parkinson’s disease (Hoehn and Yahr stages 2–4) with self-reported gait and/or balance impairments will participate in this study. The study comprises a 6-week waitlist-controlled AR home-based therapeutic gait-and-balance exergaming intervention. Reality DTx will initially be prescribed remotely for a minimum of 5 days a week for 30 min per day. We will remotely set and adjust the frequency, difficulty, type of games, and/or duration weekly, based on objective and subjective data from the AR glasses and participant, respectively. In addition to the home-based gait-and-balance exergaming intervention, the study comprises three laboratory visits: before the 6-week waitlist period (t0; baseline), before the 6-week intervention period (t1; pre-intervention), and after the 6-week intervention period (t2; post-intervention). The primary study parameters are feasibility (in terms of safety, adherence, and user experience) and potential efficacy for improving gait and balance (using standard clinical gait-and-balance tests and a targeted walking-related risk assessment). Recruitment started in December 2022 and the final post-intervention assessment will be according to planning in July 2023. This clinical feasibility trial is the first remotely prescribed and monitored home-based AR gait-and-balance exergaming intervention for people with Parkinson’s disease. The results in terms of clinical feasibility (i.e., safety, adherence, and user experience) and potential efficacy (gait, balance, and fall-risk outcomes) form the basis for future randomised controlled studies on the effectiveness of home-based AR gait-and-balance exergaming interventions for people with Parkinson’s disease.",
+    "Keywords": [
+      "Parkinson’s disease",
+      "Augmented reality",
+      "Clinical feasibility",
+      "Home-based therapy",
+      "Rehabilitation",
+      "Exergaming",
+      "Remote monitoring",
+      "Gait",
+      "Balance"
+    ],
+    "Citations": 6,
+    "Publisher": "BMC",
+    "OpenAccess": true,
+    "confidence_factors": {
+      "source": "Vision-Foundation + API Enhancement",
+      "reasoning": "Vision data used as foundation with extensive validation from multiple APIs. DOI, PMID, PMCID, and citation data were consistently confirmed across sources. Abstract was enhanced with structured sections from Europe PMC. Keywords were combined from multiple sources with duplicates removed.",
+      "field_sources": {
+        "doi": "crossref|openalex|semantic_scholar|europe_pmc|pubmed|unpaywall|doaj",
+        "pmid": "europe_pmc|pubmed",
+        "year": "vision|crossref|openalex|semantic_scholar|europe_pmc|pubmed|unpaywall|doaj",
+        "issue": "crossref|europe_pmc|pubmed|doaj",
+        "pmcid": "europe_pmc|semantic_scholar",
+        "title": "vision",
+        "pdfurl": "semantic_scholar|openalex",
+        "volume": "vision|crossref|europe_pmc|pubmed|doaj",
+        "authors": "crossref|europe_pmc|pubmed|vision",
+        "journal": "vision|crossref|europe_pmc|pubmed|doaj",
+        "abstract": "europe_pmc+vision",
+        "keywords": "doaj+europe_pmc+vision",
+        "citations": "semantic_scholar",
+        "publisher": "vision|crossref|unpaywall|doaj",
+        "openaccess": "openalex|unpaywall|semantic_scholar"
+      },
+      "enhancement_level": "SIGNIFICANT",
+      "validation_status": "HIGH"
+    },
+    "api_success_summary": {
+      "insights": "Excellent coherence across all successful APIs (Crossref, Europe PMC, PubMed, Semantic Scholar, OpenAlex, Unpaywall, DOAJ, CORE, DataCite). ORCID failed due to no results, arXiv is not relevant for this medical publication. Semantic Scholar provided valuable citation data and open access status.",
+      "total_apis": 11,
+      "failed_apis": [
+        "orcid",
+        "arxiv"
+      ],
+      "success_rate": 0.82,
+      "coherent_apis": 9,
+      "coherence_rate": 1.0,
+      "successful_apis": 9
+    }
+  },
+  "processing_time_ms": 83024
+}

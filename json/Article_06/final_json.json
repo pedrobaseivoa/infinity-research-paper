@@ -1,0 +1,940 @@
+{
+  "vision_json": {
+    "source": "gpt-4o-vision",
+    "success": true,
+    "prompt_sent": "Extract ONLY publication metadata from these academic paper pages.\n\nCRITICAL: This data will be sent to 11 external APIs, so format accuracy is essential.\n\nFIELD REQUIREMENTS WITH EXACT FORMATS:\n\n1. **Title**: Clean title for API queries (HIGHEST PRIORITY)\n   - Remove line breaks, extra spaces, formatting\n   - No HTML tags or special characters  \n   - Example: \"Effects of Machine Learning on Healthcare Outcomes\"\n\n2. **Authors**: API-compatible author list (HIGHEST PRIORITY)\n   - Each author as separate string in array\n   - Format: \"FirstName LastName\" or \"F. LastName\"\n   - Clean, no extra punctuation\n   - Example: [\"John Smith\", \"M. Johnson\", \"Sarah Williams\"]\n\n3. **DOI**: Standard DOI format for resolution APIs\n   - Must start with \"10.\" if present\n   - Clean format without URL prefixes\n   - Example: \"10.1234/journal.2024.001\"\n\n4. **Journal**: Clean journal name for database queries\n   - Full journal name preferred over abbreviations\n   - Remove extra formatting, parentheses\n   - Example: \"Nature Medicine\"\n\n5. **Year**: Numeric format for date filtering\n   - 4-digit NUMBER only (not string)\n   - Example: 2024\n\n6. **Volume**: Clean number for bibliographic APIs\n   - Numbers only, no \"Vol.\" prefix\n   - Example: \"15\"\n\n7. **Issue**: Clean number format\n   - Numbers only, no \"No.\" or \"Issue\" prefix\n   - Example: \"3\"\n\n8. **Pages**: Standard page range for citations\n   - Format: \"start-end\" or single page\n   - Example: \"123-135\" or \"45\"\n\n9. **PMID**: PubMed ID for medical APIs\n   - Numbers only, no \"PMID:\" prefix\n   - Example: \"12345678\"\n\n10. **PMCID**: PubMed Central ID for open access papers\n    - Numbers only, no \"PMC\" prefix\n    - Often appears near PMID in biomedical papers\n    - Example: \"9876543\"\n\n11. **Keywords**: API-compatible keyword list\n    - Each keyword as separate string\n    - Research-quality terms, no punctuation\n    - Example: [\"machine learning\", \"healthcare\", \"clinical outcomes\"]\n\n11. **Abstract**: Complete clean text (HIGHEST PRIORITY)\n    - Remove formatting, line breaks, extra spaces\n    - Complete sentences, proper punctuation\n    - Search thoroughly across ALL pages\n    - This is CRITICAL for Semantic Scholar and other APIs\n\n12. **Publisher**: Clean organization name\n    - Official publisher name\n    - Example: \"Elsevier\" or \"Nature Publishing Group\"\n\nABSTRACT EXTRACTION PRIORITY:\n- Look thoroughly across ALL pages for abstract sections\n- Extract COMPLETE text, including multiple paragraphs\n- Check: Abstract, Summary, Introduction summary paragraphs\n- This field is CRITICAL for API enrichment success\n\nReturn JSON format:\n{\n  \"Title\": \"clean title without formatting\",\n  \"Authors\": [\"Author One\", \"Author Two\"],\n  \"DOI\": \"10.xxxx/xxxxx\",\n  \"Journal\": \"clean journal name\", \n  \"Year\": 2024,\n  \"Volume\": \"15\",\n  \"Issue\": \"3\", \n  \"Pages\": \"123-135\",\n  \"Abstract\": \"complete clean abstract text\",\n  \"Keywords\": [\"keyword1\", \"keyword2\"],\n  \"PMID\": \"12345678\",\n  \"PMCID\": \"9876543\",\n  \"Publisher\": \"publisher name\"\n}\n\nReturn null for fields not clearly visible. The Abstract field is MOST IMPORTANT for downstream API success.",
+    "cost_tracking": {
+      "model": "gpt-4o",
+      "call_type": "vision_extraction",
+      "timestamp": "2025-07-22T14:43:57.077270",
+      "input_cost": 0.007725,
+      "total_cost": 0.010655,
+      "output_cost": 0.00293,
+      "input_tokens": 3090,
+      "total_tokens": 3383,
+      "output_tokens": 293
+    },
+    "input_details": {
+      "dpi": 120,
+      "max_tokens": 1500,
+      "model_used": "gpt-4o",
+      "temperature": 0.1,
+      "page_strategy": "strategic",
+      "image_resolution": "high",
+      "processing_time_ms": 16847,
+      "pdf_pages_processed": 3
+    },
+    "extracted_data": {
+      "DOI": "10.1002/cpe.5526",
+      "PMID": null,
+      "Year": 2020,
+      "Issue": "e5526",
+      "PMCID": null,
+      "Pages": "e5526",
+      "Title": "Augmented reality for botulinum toxin injection",
+      "Volume": "32",
+      "Authors": [
+        "HyoJoon Kim",
+        "SangHui Jeong",
+        "JiHyeon Seo",
+        "InSeok Park",
+        "Hoon Ko",
+        "Seong Yong Moon"
+      ],
+      "Journal": "Concurrency Computation Practice and Experience",
+      "Abstract": "Augmented-reality (AR) devices allow physicians to incorporate data visualization into diagnostic and treatment procedures to improve work efficiency and safety and reduce cost. They are also used to enhance surgical training. In this study, we implemented an AR application for Botox injections using a face recognition algorithm based on deep learning, and we evaluated the recognition accuracy of this application using 27 participants. The accuracy was around 3 mm for all parts of the facial region. The method of increasing surgical efficiency with AR is accurate enough to be used for surgery and provides great potential for further development.",
+      "Keywords": [
+        "augmented reality",
+        "botulinum toxins",
+        "clinical education",
+        "face recognition",
+        "injection technique"
+      ],
+      "Publisher": "Wiley"
+    },
+    "pages_processed": 3,
+    "extraction_matrix": {
+      "_performance_summary": {
+        "total_cost": 0.0,
+        "data_source": "vision_json",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "vision_status": "COMPLETE",
+        "extraction_rate": 84.62,
+        "extraction_source": "gpt-4o-vision",
+        "performance_level": "EXCELLENT",
+        "fields_with_content": 11,
+        "processing_time_seconds": 0,
+        "total_fields_in_response": 13
+      }
+    },
+    "extraction_method": "vision_strategic_strategy",
+    "extraction_quality": {
+      "success_rate": 50.0,
+      "quality_score": 50.0,
+      "successful_fields": 11,
+      "validation_details": {
+        "errors": [],
+        "is_valid": true,
+        "warnings": [],
+        "quality_score": 100,
+        "completeness_score": 100.0
+      },
+      "total_fields_attempted": 13
+    },
+    "processing_time_ms": 16847,
+    "raw_openai_response": {
+      "content": "```json\n{\n  \"Title\": \"Augmented reality for botulinum toxin injection\",\n  \"Authors\": [\"HyoJoon Kim\", \"SangHui Jeong\", \"JiHyeon Seo\", \"InSeok Park\", \"Hoon Ko\", \"Seong Yong Moon\"],\n  \"DOI\": \"10.1002/cpe.5526\",\n  \"Journal\": \"Concurrency Computation Practice and Experience\",\n  \"Year\": 2020,\n  \"Volume\": \"32\",\n  \"Issue\": \"e5526\",\n  \"Pages\": \"e5526\",\n  \"Abstract\": \"Augmented-reality (AR) devices allow physicians to incorporate data visualization into diagnostic and treatment procedures to improve work efficiency and safety and reduce cost. They are also used to enhance surgical training. In this study, we implemented an AR application for Botox injections using a face recognition algorithm based on deep learning, and we evaluated the recognition accuracy of this application using 27 participants. The accuracy was around 3 mm for all parts of the facial region. The method of increasing surgical efficiency with AR is accurate enough to be used for surgery and provides great potential for further development.\",\n  \"Keywords\": [\"augmented reality\", \"botulinum toxins\", \"clinical education\", \"face recognition\", \"injection technique\"],\n  \"PMID\": null,\n  \"PMCID\": null,\n  \"Publisher\": \"Wiley\"\n}\n```",
+      "parsing_error": "Expecting value: line 1 column 1 (char 0)",
+      "response_length": 1200,
+      "parsing_successful": false
+    },
+    "processing_timestamp": "2025-07-22T14:43:57.077259"
+  },
+  "apis_raw_json": {
+    "core": {
+      "data": {
+        "data": {
+          "doi": "10.1002/cpe.5526",
+          "year": 2020,
+          "title": "Augmented reality for botulinum toxin injection",
+          "authors": [
+            "Hoon Ko",
+            "HyoJoon Kim",
+            "InSeok Park",
+            "JiHyeon Seo",
+            "SangHui Jeong",
+            "Seong Yong Moon"
+          ],
+          "core_id": 174435653,
+          "journal": "",
+          "pdf_url": "",
+          "abstract": null,
+          "repository": "",
+          "open_access": false,
+          "citation_count": 0
+        },
+        "success": true,
+        "strategy": "DOI"
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:44:00.480433",
+      "processing_time_ms": 2926
+    },
+    "doaj": {
+      "error": "No DOI available for DOAJ search",
+      "success": false,
+      "timestamp": "2025-07-22T14:43:58.782632",
+      "processing_time_ms": 1110
+    },
+    "arxiv": {
+      "error": "No results found",
+      "success": false,
+      "timestamp": "2025-07-22T14:43:59.014448",
+      "processing_time_ms": 1458
+    },
+    "orcid": {
+      "data": {
+        "person": {
+          "name": {
+            "path": "0000-0003-3791-1257",
+            "source": null,
+            "visibility": "public",
+            "credit-name": null,
+            "family-name": {
+              "value": "Kim"
+            },
+            "given-names": {
+              "value": "Hyojoon"
+            },
+            "created-date": {
+              "value": 1460765187736
+            },
+            "last-modified-date": {
+              "value": 1460765187736
+            }
+          },
+          "path": "/0000-0003-3791-1257/person",
+          "emails": {
+            "path": "/0000-0003-3791-1257/email",
+            "email": [],
+            "last-modified-date": null
+          },
+          "keywords": {
+            "path": "/0000-0003-3791-1257/keywords",
+            "keyword": [],
+            "last-modified-date": null
+          },
+          "addresses": {
+            "path": "/0000-0003-3791-1257/address",
+            "address": [],
+            "last-modified-date": null
+          },
+          "biography": null,
+          "other-names": {
+            "path": "/0000-0003-3791-1257/other-names",
+            "other-name": [],
+            "last-modified-date": null
+          },
+          "researcher-urls": {
+            "path": "/0000-0003-3791-1257/researcher-urls",
+            "researcher-url": [],
+            "last-modified-date": null
+          },
+          "last-modified-date": null,
+          "external-identifiers": {
+            "path": "/0000-0003-3791-1257/external-identifiers",
+            "last-modified-date": null,
+            "external-identifier": []
+          }
+        },
+        "orcid_id": "0000-0003-3791-1257"
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:43:59.298657",
+      "processing_time_ms": 1731
+    },
+    "pubmed": {
+      "error": "No results found",
+      "success": false,
+      "timestamp": "2025-07-22T14:44:01.559344",
+      "processing_time_ms": 4015
+    },
+    "crossref": {
+      "data": {
+        "status": "ok",
+        "message": {
+          "DOI": "10.1002/cpe.5526",
+          "URL": "https://doi.org/10.1002/cpe.5526",
+          "ISSN": [
+            "1532-0626",
+            "1532-0634"
+          ],
+          "link": [
+            {
+              "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/cpe.5526",
+              "content-type": "application/pdf",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/cpe.5526",
+              "content-type": "application/xml",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/cpe.5526",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "type": "journal-article",
+          "issue": "18",
+          "score": 1,
+          "title": [
+            "Augmented reality for botulinum toxin injection"
+          ],
+          "author": [
+            {
+              "ORCID": "https://orcid.org/0000-0001-6123-4810",
+              "given": "HyoJoon",
+              "family": "Kim",
+              "sequence": "first",
+              "affiliation": [
+                {
+                  "name": "Department of Oral and Maxillofacial Surgery, School of Dentistry Chosun University  Gwangju South Korea"
+                }
+              ],
+              "authenticated-orcid": false
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-2386-2872",
+              "given": "SangHui",
+              "family": "Jeong",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "School of Dentistry Chosun University  Gwangju South Korea"
+                }
+              ],
+              "authenticated-orcid": false
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-2081-8753",
+              "given": "JiHyeon",
+              "family": "Seo",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "School of Dentistry Chosun University  Gwangju South Korea"
+                }
+              ],
+              "authenticated-orcid": false
+            },
+            {
+              "given": "InSeok",
+              "family": "Park",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Industry Academic Cooperation Foundation Chosun University  Gwangju South Korea"
+                }
+              ]
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-4604-1735",
+              "given": "Hoon",
+              "family": "Ko",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "IT Research Institute Chosun University  Gwangju South Korea"
+                }
+              ],
+              "authenticated-orcid": false
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-7513-4404",
+              "given": "Seong Yong",
+              "family": "Moon",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Department of Oral and Maxillofacial Surgery, School of Dentistry Chosun University  Gwangju South Korea"
+                }
+              ],
+              "authenticated-orcid": false
+            }
+          ],
+          "funder": [
+            {
+              "id": [
+                {
+                  "id": "10.13039/501100002868",
+                  "id-type": "DOI",
+                  "asserted-by": "publisher"
+                }
+              ],
+              "DOI": "10.13039/501100002868",
+              "name": "Chosun University Dental Hospital",
+              "doi-asserted-by": "publisher"
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2019,
+                10,
+                23
+              ]
+            ]
+          },
+          "member": "311",
+          "prefix": "10.1002",
+          "source": "Crossref",
+          "volume": "32",
+          "archive": [
+            "Portico"
+          ],
+          "created": {
+            "date-time": "2019-10-23T11:47:34Z",
+            "timestamp": 1571831254000,
+            "date-parts": [
+              [
+                2019,
+                10,
+                23
+              ]
+            ]
+          },
+          "indexed": {
+            "version": "3.40.5",
+            "date-time": "2025-05-13T14:47:10Z",
+            "timestamp": 1747147630009,
+            "date-parts": [
+              [
+                2025,
+                5,
+                13
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+              "start": {
+                "date-time": "2019-10-23T00:00:00Z",
+                "timestamp": 1571788800000,
+                "date-parts": [
+                  [
+                    2019,
+                    10,
+                    23
+                  ]
+                ]
+              },
+              "delay-in-days": 0,
+              "content-version": "vor"
+            }
+          ],
+          "subject": [],
+          "abstract": "<jats:title>Summary</jats:title><jats:p>Augmented‐reality (AR) devices allow physicians to incorporate data visualization into diagnostic and treatment procedures to improve work efficiency and safety and reduce cost. They are also used to enhance surgical training. In this study, we implemented an AR application for Botox injections using a face recognition algorithm based on deep learning, and we evaluated the recognition accuracy of this application using 27 participants. The accuracy was around 3 mm for all parts of the facial region. The method of increasing surgical efficiency with AR is accurate enough to be used for surgery and provides great potential for further development.</jats:p>",
+          "language": "en",
+          "relation": {},
+          "resource": {
+            "primary": {
+              "URL": "https://onlinelibrary.wiley.com/doi/10.1002/cpe.5526"
+            }
+          },
+          "subtitle": [],
+          "assertion": [
+            {
+              "name": "received",
+              "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+              },
+              "label": "Received",
+              "order": 0,
+              "value": "2019-06-10"
+            },
+            {
+              "name": "accepted",
+              "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+              },
+              "label": "Accepted",
+              "order": 1,
+              "value": "2019-08-08"
+            },
+            {
+              "name": "published",
+              "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+              },
+              "label": "Published",
+              "order": 2,
+              "value": "2019-10-23"
+            }
+          ],
+          "deposited": {
+            "date-time": "2023-09-05T18:51:09Z",
+            "timestamp": 1693939869000,
+            "date-parts": [
+              [
+                2023,
+                9,
+                5
+              ]
+            ]
+          },
+          "issn-type": [
+            {
+              "type": "print",
+              "value": "1532-0626"
+            },
+            {
+              "type": "electronic",
+              "value": "1532-0634"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2019,
+                10,
+                23
+              ]
+            ]
+          },
+          "publisher": "Wiley",
+          "reference": [
+            {
+              "DOI": "10.1155/2017/4574172",
+              "key": "e_1_2_11_2_1",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1111/dsu.12317",
+              "key": "e_1_2_11_3_1",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "key": "e_1_2_11_4_1",
+              "year": "2006",
+              "issue": "2",
+              "author": "Widmann G",
+              "volume": "21",
+              "first-page": "305",
+              "article-title": "Accuracy in computer‐aided implant surgery–a review.",
+              "journal-title": "Int J Oral Maxillofac Implants"
+            },
+            {
+              "DOI": "10.1109/TBME.2014.2301191",
+              "key": "e_1_2_11_5_1",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1016/S0967-0661(02)00043-6",
+              "key": "e_1_2_11_6_1",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "key": "e_1_2_11_7_1",
+              "year": "2007",
+              "issue": "5",
+              "author": "Wittwer G",
+              "volume": "22",
+              "first-page": "785",
+              "article-title": "Prospective randomized clinical comparison of 2 dental implant navigation systems",
+              "journal-title": "Int J Oral Maxillofac Implants"
+            },
+            {
+              "key": "e_1_2_11_8_1",
+              "year": "2008",
+              "issue": "6",
+              "author": "Elian N",
+              "volume": "23",
+              "first-page": "1123",
+              "article-title": "Precision of flapless implant placement using real‐time surgical navigation: a case series",
+              "journal-title": "Int J Oral Maxillofac Implants"
+            },
+            {
+              "DOI": "10.1016/j.joms.2004.06.028",
+              "key": "e_1_2_11_9_1",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1001/archotol.126.12.1462",
+              "key": "e_1_2_11_10_1",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1016/j.cmpb.2012.07.006",
+              "key": "e_1_2_11_11_1",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1007/s11263-006-7938-1",
+              "key": "e_1_2_11_12_1",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1016/j.patrec.2007.03.005",
+              "key": "e_1_2_11_13_1",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1016/j.cmpb.2018.02.006",
+              "key": "e_1_2_11_14_1",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1007/978-3-642-24267-0_5",
+              "key": "e_1_2_11_15_1",
+              "unstructured": "OgielaMR OgielaU.Secure information management in hierarchical structures. Paper presented at: International Conference on Advanced Computer Science and Information Technology;2011;Seoul South Korea.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "key": "e_1_2_11_16_1",
+              "unstructured": "OgielaL.Cognitive systems for medical pattern understanding and diagnosis. Paper presented at: International Conference on Knowledge‐Based and Intelligent Information and Engineering Systems;2008;Zagreb Croatia."
+            },
+            {
+              "DOI": "10.1109/AINA.2016.159",
+              "key": "e_1_2_11_17_1",
+              "unstructured": "OgielaMR OgielaL.On using cognitive models in cryptography. Paper presented at: 2016 IEEE 30th International Conference on Advanced Information Networking and Applications (AINA);2016;Crans‐Montana Switzerland.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1016/j.camwa.2011.07.041",
+              "key": "e_1_2_11_18_1",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1155/2019/3926930",
+              "key": "e_1_2_11_19_1",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1016/B978-0-12-810408-8.00006-7",
+              "key": "e_1_2_11_20_1",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1109/ICCV.2017.397",
+              "key": "e_1_2_11_21_1",
+              "unstructured": "KorshunovaI ShiW DambreJ TheisL.Fast face‐swap using convolutional neural networks. Paper presented at: IEEE International Conference on Computer Vision;2017;Venice Italy.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "key": "e_1_2_11_22_1",
+              "year": "2015",
+              "issue": "2",
+              "author": "Peng H",
+              "volume": "8",
+              "first-page": "249",
+              "article-title": "Application research on face detection technology based on OpenCV in mobile augmented reality",
+              "journal-title": "Int J Signal Process Image Process Pattern Recognit"
+            },
+            {
+              "DOI": "10.1145/954339.954342",
+              "key": "e_1_2_11_23_1",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1109/ICACCCT.2016.7831628",
+              "key": "e_1_2_11_24_1",
+              "unstructured": "SharmaS ShanmugasundaramK RamasamySK.FAREC—CNN based efficient face recognition technique using Dlib. Paper presented at: 2016 International Conference on Advanced Communication Control and Computing Technologies (ICACCCT);2016;Ramanathapuram India.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "key": "e_1_2_11_25_1",
+              "unstructured": "AmosB LudwiczukB SatyanarayananM et al.OpenFace: A general‐purpose face recognition library with mobile applications.Pittsburgh PA:CMU School of Computer Science;2016."
+            },
+            {
+              "DOI": "10.1109/DSMP.2018.8478556",
+              "key": "e_1_2_11_26_1",
+              "unstructured": "BoykoN BasystiukO ShakhovskaN.Performance evaluation and comparison of software for face recognition based on Dlib and OpenCV library. Paper presented at: 2018 IEEE Second International Conference on Data Stream Mining and Processing (DSMP);2018;Lviv Ukraine.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "key": "e_1_2_11_27_1",
+              "unstructured": "OpenCV.Open source computer vision library. Accessed June 5 2019.https://opencv.org/"
+            }
+          ],
+          "short-title": [],
+          "journal-issue": {
+            "issue": "18",
+            "published-print": {
+              "date-parts": [
+                [
+                  2020,
+                  9,
+                  25
+                ]
+              ]
+            }
+          },
+          "update-policy": "https://doi.org/10.1002/crossmark_policy",
+          "alternative-id": [
+            "10.1002/cpe.5526"
+          ],
+          "content-domain": {
+            "domain": [
+              "onlinelibrary.wiley.com"
+            ],
+            "crossmark-restriction": true
+          },
+          "original-title": [],
+          "container-title": [
+            "Concurrency and Computation: Practice and Experience"
+          ],
+          "published-print": {
+            "date-parts": [
+              [
+                2020,
+                9,
+                25
+              ]
+            ]
+          },
+          "reference-count": 26,
+          "published-online": {
+            "date-parts": [
+              [
+                2019,
+                10,
+                23
+              ]
+            ]
+          },
+          "references-count": 26,
+          "short-container-title": [
+            "Concurrency and Computation"
+          ],
+          "is-referenced-by-count": 7
+        },
+        "message-type": "work",
+        "message-version": "1.0.0"
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:43:59.158718",
+      "processing_time_ms": 1600
+    },
+    "datacite": {
+      "error": "No matching articles found",
+      "success": false,
+      "timestamp": "2025-07-22T14:44:07.021845",
+      "processing_time_ms": 9464
+    },
+    "openalex": {
+      "data": {
+        "id": "https://openalex.org/W2981711012",
+        "doi": "https://doi.org/10.1002/cpe.5526",
+        "title": "Augmented reality for botulinum toxin injection",
+        "open_access": {
+          "is_oa": false,
+          "oa_url": null,
+          "oa_status": "closed",
+          "any_repository_has_fulltext": false
+        },
+        "cited_by_count": 8,
+        "publication_year": 2019
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:43:59.231393",
+      "processing_time_ms": 1684
+    },
+    "unpaywall": {
+      "data": {
+        "doi": "10.1002/cpe.5526",
+        "year": 2019,
+        "genre": "journal-article",
+        "is_oa": false,
+        "title": "Augmented reality for botulinum toxin injection",
+        "doi_url": "https://doi.org/10.1002/cpe.5526",
+        "oa_status": "closed",
+        "publisher": "Wiley",
+        "is_paratext": false,
+        "journal_name": "Concurrency and Computation Practice and Experience",
+        "journal_issns": "1532-0626,1532-0634",
+        "journal_issn_l": "1532-0626",
+        "published_date": "2019-10-23",
+        "z_authors_summary": {
+          "count": 6,
+          "first_author": ""
+        },
+        "has_repository_copy": false,
+        "oa_locations_summary": {
+          "count": 0,
+          "has_repository": false
+        },
+        "best_oa_location_summary": null,
+        "first_oa_location_summary": null
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:43:58.886001",
+      "processing_time_ms": 1330
+    },
+    "europe_pmc": {
+      "error": "No results found",
+      "success": false,
+      "timestamp": "2025-07-22T14:43:59.379702",
+      "processing_time_ms": 1816
+    },
+    "semantic_scholar": {
+      "data": {
+        "year": 2019,
+        "title": "Augmented reality for botulinum toxin injection",
+        "authors": [
+          {
+            "name": "Hyo-Joon Kim",
+            "authorId": "2109648186"
+          },
+          {
+            "name": "Sang Hui Jeong",
+            "authorId": "2194332799"
+          },
+          {
+            "name": "Ji-Hyeon Seo",
+            "authorId": "147153292"
+          },
+          {
+            "name": "Inseok Park",
+            "authorId": "2114396753"
+          },
+          {
+            "name": "H. Ko",
+            "authorId": "145655733"
+          },
+          {
+            "name": "Seong Yong Moon",
+            "authorId": "2194338484"
+          }
+        ],
+        "journal": {
+          "name": "Concurrency and Computation: Practice and Experience",
+          "volume": "32"
+        },
+        "paperId": "9c486d65820a2c1ae379e8f824251b12d3e847f3",
+        "abstract": "Augmented‐reality (AR) devices allow physicians to incorporate data visualization into diagnostic and treatment procedures to improve work efficiency and safety and reduce cost. They are also used to enhance surgical training. In this study, we implemented an AR application for Botox injections using a face recognition algorithm based on deep learning, and we evaluated the recognition accuracy of this application using 27 participants. The accuracy was around 3 mm for all parts of the facial region. The method of increasing surgical efficiency with AR is accurate enough to be used for surgery and provides great potential for further development.",
+        "externalIds": {
+          "DOI": "10.1002/cpe.5526",
+          "MAG": "2981711012",
+          "DBLP": "journals/concurrency/KimJSPKM20",
+          "CorpusId": 208098240
+        },
+        "isOpenAccess": false,
+        "citationCount": 7,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1002/cpe.5526?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1002/cpe.5526, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:43:57.953509",
+      "processing_time_ms": 408
+    }
+  },
+  "questions_json": {
+    "reason": "custom_topics_not_enabled",
+    "success": false,
+    "extraction_method": "disabled",
+    "processing_timestamp": "2025-07-22T14:45:30.181198"
+  },
+  "apis_clean_json": {
+    "timestamp": "2025-07-22T14:45:00.062273",
+    "cost_tracking": {
+      "model": "deepseek-chat",
+      "call_type": "smart_consensus",
+      "timestamp": "2025-07-22T14:45:00.061403",
+      "input_cost": 0.002,
+      "total_cost": 0.003088,
+      "output_cost": 0.001088,
+      "input_tokens": 7408,
+      "total_tokens": 8397,
+      "output_tokens": 989,
+      "parsing_error": null,
+      "parsing_successful": true,
+      "processing_time_ms": 53037
+    },
+    "consensus_result": {
+      "DOI": "10.1002/cpe.5526",
+      "PMID": null,
+      "Year": 2020,
+      "Issue": "18",
+      "PMCID": null,
+      "Pages": "e5526",
+      "Title": "Augmented reality for botulinum toxin injection",
+      "PDFUrl": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/cpe.5526",
+      "Volume": "32",
+      "Authors": [
+        "Kim, HyoJoon",
+        "Jeong, SangHui",
+        "Seo, JiHyeon",
+        "Park, InSeok",
+        "Ko, Hoon",
+        "Moon, Seong Yong"
+      ],
+      "Journal": "Concurrency and Computation: Practice and Experience",
+      "Abstract": "Augmented-reality (AR) devices allow physicians to incorporate data visualization into diagnostic and treatment procedures to improve work efficiency and safety and reduce cost. They are also used to enhance surgical training. In this study, we implemented an AR application for Botox injections using a face recognition algorithm based on deep learning, and we evaluated the recognition accuracy of this application using 27 participants. The accuracy was around 3 mm for all parts of the facial region. The method of increasing surgical efficiency with AR is accurate enough to be used for surgery and provides great potential for further development.",
+      "Keywords": [
+        "augmented reality",
+        "botulinum toxins",
+        "clinical education",
+        "face recognition",
+        "injection technique"
+      ],
+      "Citations": 8,
+      "Publisher": "Wiley",
+      "OpenAccess": false,
+      "confidence_factors": {
+        "source": "Vision-Foundation + API Enhancement",
+        "reasoning": "Used vision as foundation with significant enhancements from multiple coherent API sources. Crossref provided most reliable metadata including issue number, publication dates, and PDF URL. OpenAlex provided updated citation count. All API data was validated against vision foundation.",
+        "field_sources": {
+          "doi": "crossref|openalex|semantic_scholar|unpaywall",
+          "year": "crossref|unpaywall+vision",
+          "issue": "crossref",
+          "pages": "vision",
+          "title": "vision",
+          "pdfurl": "crossref",
+          "volume": "crossref|semantic_scholar|vision",
+          "authors": "crossref+vision",
+          "journal": "crossref|semantic_scholar|unpaywall",
+          "abstract": "crossref|semantic_scholar|vision",
+          "keywords": "vision",
+          "citations": "openalex",
+          "publisher": "crossref|unpaywall|vision",
+          "openaccess": "crossref|openalex|unpaywall"
+        },
+        "enhancement_level": "SIGNIFICANT",
+        "validation_status": "HIGH"
+      },
+      "api_success_summary": {
+        "insights": "Crossref, Semantic Scholar, OpenAlex, and Unpaywall provided the most valuable enhancements with high coherence. ORCID provided limited author info. Core had inconsistent year data. Multiple APIs failed to find this article (likely due to being a Wiley publication).",
+        "total_apis": 11,
+        "failed_apis": [
+          "doaj",
+          "arxiv",
+          "europe_pmc",
+          "pubmed",
+          "datacite"
+        ],
+        "success_rate": 0.55,
+        "coherent_apis": 5,
+        "coherence_rate": 0.83,
+        "successful_apis": 6
+      }
+    },
+    "processing_time_ms": 62524
+  },
+  "llm_topics_json": {
+    "success": true,
+    "prompt_sent": "You are a scientific research assistant extracting data for academic comparison tables with statistical rigor.\n\nCRITICAL INSTRUCTIONS FOR ACADEMIC COMPARISON:\n\n- SYSTEMATICALLY scan ALL content: text, tables, figures, charts, appendices\n- PRIORITIZE quantitative data while preserving qualitative context\n- When conflicts exist in the paper, prioritize MOST RECENT/AUTHORITATIVE source\n- Extract ALL relevant details mentioned - DON'T truncate important information\n- Include statistical tests results (Z-scores, t-values, chi-square, etc.)\n- Extract accuracy rates, completion rates, success rates with specific numbers\n- Capture comparative data (e.g., \"46% vs 27%\", \"Group A: 64.5%, Group B: 68.2%\")\n- Use proper numeric format: \"p = 0.007\" not \"p = .007\", \"81\" not \"eighty-one\"\n\nCOMPREHENSIVE CAPTURE REQUIREMENTS:\n\n- List ALL hardware components: cameras, sensors, headsets, controllers, phones, tablets, webcams, probes\n- Include ALL software details: platforms, SDKs, libraries, export formats (CSV, JSON), feedback systems\n- Capture ALL measurement instruments: scales, questionnaires, assessment tools (SUS, NASA-TLX, FES-I, MoCA, IKDC, VAS, ABC scale, WHODAS 2.0, etc.)\n- Note ALL technical specifications: resolutions, frame rates, tracking capabilities, joint counts\n- Include ALL study phases: pilot tests, technical validation, user studies, expert evaluations\n- Capture ALL procedural details: training time, calibration steps, data export processes, real-time feedback\n\nCONFLICT RESOLUTION:\n\n- If conflicting information exists, prioritize methods/results over abstract\n- When uncertain, include both: \"X in abstract, Y in methods section\"\n\nExtract the following 7 scientific topics:\n\n1. *study_design*: Extract the PRIMARY study type/design using the most specific and authoritative terminology from the paper's methods section. Recognize equivalent terms: \"RCT\" = \"Randomized controlled trial\", \"Pilot study\" = \"Feasibility pilot study\", \"Cross-sectional\" = \"Observational cross-sectional\", \"User study\" = \"User evaluation study\". When multiple study type descriptions exist, prioritize the most comprehensive version from methods over abstract. Include specific qualifiers when mentioned (e.g., \"multicenter\", \"double-blind\", \"waitlist-controlled\") as these add valuable detail. Format as brief phrase describing core study methodology, avoiding generic terms like \"study\" or \"research\" alone.\n\n2. *methodology*: ONE comprehensive sentence covering: technology + application + key technical details. Include: ALL device models, software platforms, measurement tools, statistical analyses. Capture ALL hardware components mentioned (cameras, sensors, controllers, probes, etc.). Include ALL software features (real-time feedback, data export, tracking capabilities). Mention ALL technical specifications (joint tracking numbers, frame rates, resolutions). Example: \"Microsoft HoloLens 2 with HoloAnatomy platform for 3D anatomical procedural visualization using real-time motion tracking of 25 joints with CSV data export and real-time visual feedback\".\n\n3. *sample_size*: Format: \"X participants/patients\" (use paper's exact terminology). Include TOTAL numbers if multiple groups exist. Include ALL test phases: technical tests, pilot studies, user evaluations. Example: \"25 total: 23 biomedical students + 2 clinical experts; 50 technical validation readings\".\n\n4. *population*: ALL demographic details and characteristics not captured in sample_size. Include age, profession, condition, experience, setting details. Add specific numbers when available. Include recruitment sources and inclusion/exclusion criteria.\n\n5. *primary_outcome*: Include ALL measurement tools, scales, timing, specific metrics, usability criteria (ease of use, realism, anatomical accuracy). List ALL assessment instruments used and functional scales (SUS, NASA-TLX, FES-I, MoCA, IKDC, VAS, ABC scale, WHODAS 2.0, etc.), and evaluation dimensions beyond the primary measures.. Include ALL comparison conditions and timepoints. Example: \"Patient understanding via 5-point Likert scale assessed pre/post intervention, plus SUS usability scores and NASA-TLX workload assessment\".\n\n6. *key_findings*: PRIORITIZE statistical results with practical implications. Format: \"Finding 1: [statistical data + meaning]. Finding 2: [data + context]\". Include ALL significant findings, p-values, effect sizes, accuracy rates, comparative data, accuracy measurements (sub-mm, degrees), specific understanding domains (surgical risks, operative steps, recovery), and detailed performance metrics beyond statistical significance. Present ALL questionnaire results, prototype performance, qualitative benefits. Include ALL cost factors, training requirements, implementation details. Capture ALL comparison groups and their specific results. Be comprehensive - capture complete findings picture. Include ALL technical specifications mentioned: accuracy measurements (sub-mm, degrees).\n\n7. *limitations*: Extract ALL limitations from limitation/discussion sections. Include sample size issues, technical equipment requirements, methodological, practical constraints. Mention ALL equipment needs, calibration requirements, manufacturing variability. Include ALL generalizability issues, validity concerns, implementation barriers. Capture training requirements, cost constraints, specialized equipment needs. Note real-world applicability issues and clinical implementation challenges. Don't summarize - capture complete limitation landscape.\n\nReturn as valid JSON with this EXACT structure:\n\n{\n  \"study_design\": \"string\",\n  \"methodology\": \"string\",\n  \"sample_size\": \"string\",\n  \"population\": \"string\",\n  \"primary_outcome\": \"string\",\n  \"key_findings\": \"string\",\n  \"limitations\": \"string\"\n}",
+    "cost_tracking": {
+      "model": "gpt-4o",
+      "call_type": "scientific_topics_multimodal",
+      "timestamp": "2025-07-22T14:45:29.279127",
+      "input_cost": 0.016307,
+      "total_cost": 0.019008,
+      "output_cost": 0.0027,
+      "input_tokens": 6523,
+      "total_tokens": 6793,
+      "output_tokens": 270
+    },
+    "input_details": {
+      "dpi": 150,
+      "max_tokens": 6000,
+      "model_used": "gpt-4o",
+      "temperature": 0.1,
+      "strategy_used": "vision_all_pages (≤40)",
+      "pdf_total_pages": 7,
+      "image_resolution": "high",
+      "processing_time_ms": 27979,
+      "pdf_pages_processed": 7
+    },
+    "pages_processed": 7,
+    "extracted_topics": {
+      "population": "Patients from Chosun University dental hospital; inclusion criteria not specified.",
+      "limitations": "Limited to patients with little practical experience; actual facial muscle data difficult to extract from MRI; AR app should be used with caution until facial-feature data can be mapped to AR overlay; generalizability limited due to specific equipment requirements.",
+      "methodology": "Unity3D-based AR application for Botox injection using Android devices with face recognition via OpenCV and Dlib libraries, employing Histogram of Oriented Gradients for landmark extraction and Delaunay triangulation for facial mapping, with real-time feedback and error measurement using IBM SPSS Statistics v.22.",
+      "sample_size": "28 participants",
+      "key_findings": "Finding 1: Error measurements ranged from 0.0 mm to 3.0 mm, with an average of 0.40 ± 0.25 mm, indicating satisfactory accuracy for clinical practice. Finding 2: Statistically significant differences in frontal vs. side recognition accuracy (p < 0.05), with better accuracy from the front.",
+      "study_design": "Implementation study with technical validation",
+      "primary_outcome": "Recognition accuracy of facial landmarks measured in mm, with error analysis using paired T-test for frontal and side recognition."
+    },
+    "extraction_method": "multimodal_vision",
+    "extraction_quality": {
+      "topics_missing": 0,
+      "topics_extracted": 7
+    },
+    "processing_time_ms": 27979,
+    "raw_openai_response": {
+      "content": "```json\n{\n  \"study_design\": \"Implementation study with technical validation\",\n  \"methodology\": \"Unity3D-based AR application for Botox injection using Android devices with face recognition via OpenCV and Dlib libraries, employing Histogram of Oriented Gradients for landmark extraction and Delaunay triangulation for facial mapping, with real-time feedback and error measurement using IBM SPSS Statistics v.22.\",\n  \"sample_size\": \"28 participants\",\n  \"population\": \"Patients from Chosun University dental hospital; inclusion criteria not specified.\",\n  \"primary_outcome\": \"Recognition accuracy of facial landmarks measured in mm, with error analysis using paired T-test for frontal and side recognition.\",\n  \"key_findings\": \"Finding 1: Error measurements ranged from 0.0 mm to 3.0 mm, with an average of 0.40 ± 0.25 mm, indicating satisfactory accuracy for clinical practice. Finding 2: Statistically significant differences in frontal vs. side recognition accuracy (p < 0.05), with better accuracy from the front.\",\n  \"limitations\": \"Limited to patients with little practical experience; actual facial muscle data difficult to extract from MRI; AR app should be used with caution until facial-feature data can be mapped to AR overlay; generalizability limited due to specific equipment requirements.\"\n}\n```",
+      "parsing_error": null,
+      "response_length": 1307,
+      "parsing_successful": true
+    },
+    "processing_timestamp": "2025-07-22T14:45:29.279000"
+  },
+  "processing_metadata": {
+    "filename": "23) Augmented reality for botulinum toxin injection.pdf",
+    "article_id": "unknown",
+    "total_phases": 5,
+    "aggregated_at": "2025-07-22T14:45:30.461983",
+    "phases_completed": {
+      "topics": true,
+      "vision": true,
+      "apis_raw": true,
+      "questions": false,
+      "apis_clean": true
+    },
+    "transparency_level": "complete"
+  }
+}

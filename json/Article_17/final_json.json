@@ -1,0 +1,2104 @@
+{
+  "vision_json": {
+    "source": "gpt-4o-vision",
+    "success": true,
+    "prompt_sent": "Extract ONLY publication metadata from these academic paper pages.\n\nCRITICAL: This data will be sent to 11 external APIs, so format accuracy is essential.\n\nFIELD REQUIREMENTS WITH EXACT FORMATS:\n\n1. **Title**: Clean title for API queries (HIGHEST PRIORITY)\n   - Remove line breaks, extra spaces, formatting\n   - No HTML tags or special characters  \n   - Example: \"Effects of Machine Learning on Healthcare Outcomes\"\n\n2. **Authors**: API-compatible author list (HIGHEST PRIORITY)\n   - Each author as separate string in array\n   - Format: \"FirstName LastName\" or \"F. LastName\"\n   - Clean, no extra punctuation\n   - Example: [\"John Smith\", \"M. Johnson\", \"Sarah Williams\"]\n\n3. **DOI**: Standard DOI format for resolution APIs\n   - Must start with \"10.\" if present\n   - Clean format without URL prefixes\n   - Example: \"10.1234/journal.2024.001\"\n\n4. **Journal**: Clean journal name for database queries\n   - Full journal name preferred over abbreviations\n   - Remove extra formatting, parentheses\n   - Example: \"Nature Medicine\"\n\n5. **Year**: Numeric format for date filtering\n   - 4-digit NUMBER only (not string)\n   - Example: 2024\n\n6. **Volume**: Clean number for bibliographic APIs\n   - Numbers only, no \"Vol.\" prefix\n   - Example: \"15\"\n\n7. **Issue**: Clean number format\n   - Numbers only, no \"No.\" or \"Issue\" prefix\n   - Example: \"3\"\n\n8. **Pages**: Standard page range for citations\n   - Format: \"start-end\" or single page\n   - Example: \"123-135\" or \"45\"\n\n9. **PMID**: PubMed ID for medical APIs\n   - Numbers only, no \"PMID:\" prefix\n   - Example: \"12345678\"\n\n10. **PMCID**: PubMed Central ID for open access papers\n    - Numbers only, no \"PMC\" prefix\n    - Often appears near PMID in biomedical papers\n    - Example: \"9876543\"\n\n11. **Keywords**: API-compatible keyword list\n    - Each keyword as separate string\n    - Research-quality terms, no punctuation\n    - Example: [\"machine learning\", \"healthcare\", \"clinical outcomes\"]\n\n11. **Abstract**: Complete clean text (HIGHEST PRIORITY)\n    - Remove formatting, line breaks, extra spaces\n    - Complete sentences, proper punctuation\n    - Search thoroughly across ALL pages\n    - This is CRITICAL for Semantic Scholar and other APIs\n\n12. **Publisher**: Clean organization name\n    - Official publisher name\n    - Example: \"Elsevier\" or \"Nature Publishing Group\"\n\nABSTRACT EXTRACTION PRIORITY:\n- Look thoroughly across ALL pages for abstract sections\n- Extract COMPLETE text, including multiple paragraphs\n- Check: Abstract, Summary, Introduction summary paragraphs\n- This field is CRITICAL for API enrichment success\n\nReturn JSON format:\n{\n  \"Title\": \"clean title without formatting\",\n  \"Authors\": [\"Author One\", \"Author Two\"],\n  \"DOI\": \"10.xxxx/xxxxx\",\n  \"Journal\": \"clean journal name\", \n  \"Year\": 2024,\n  \"Volume\": \"15\",\n  \"Issue\": \"3\", \n  \"Pages\": \"123-135\",\n  \"Abstract\": \"complete clean abstract text\",\n  \"Keywords\": [\"keyword1\", \"keyword2\"],\n  \"PMID\": \"12345678\",\n  \"PMCID\": \"9876543\",\n  \"Publisher\": \"publisher name\"\n}\n\nReturn null for fields not clearly visible. The Abstract field is MOST IMPORTANT for downstream API success.",
+    "cost_tracking": {
+      "model": "gpt-4o",
+      "call_type": "vision_extraction",
+      "timestamp": "2025-07-22T14:15:54.534376",
+      "input_cost": 0.007725,
+      "total_cost": 0.014705,
+      "output_cost": 0.00698,
+      "input_tokens": 3090,
+      "total_tokens": 3788,
+      "output_tokens": 698
+    },
+    "input_details": {
+      "dpi": 120,
+      "max_tokens": 1500,
+      "model_used": "gpt-4o",
+      "temperature": 0.1,
+      "page_strategy": "strategic",
+      "image_resolution": "high",
+      "processing_time_ms": 38154,
+      "pdf_pages_processed": 3
+    },
+    "extracted_data": {
+      "DOI": "10.1186/s40814-024-01480-w",
+      "PMID": null,
+      "Year": 2024,
+      "Issue": "54",
+      "PMCID": null,
+      "Pages": null,
+      "Title": "Remotely prescribed and monitored home-based gait-and-balance therapeutic exergaming using augmented reality glasses: protocol for a clinical feasibility study in people with Parkinson’s disease",
+      "Volume": "10",
+      "Authors": [
+        "L. E. S. Hardeman",
+        "D. J. Geerse",
+        "E. M. Hoogendoorn",
+        "J. Nonnekes",
+        "M. Roerdink"
+      ],
+      "Journal": "Pilot and Feasibility Studies",
+      "Abstract": "Clinical guidelines for people with Parkinson’s disease stress that, complementary to pharmacological treatment, exercise and physiotherapy should be given a central role in disease management. Adhering to regular exercise of the right type, and with high repetition, remains a challenge for people with Parkinson’s disease. Exergaming has the potential to increase adherence through play and personalised interventions, both in clinic and at home. Reality DTx is an augmented-reality home-based gait-and-balance exergaming intervention specifically designed for people with Parkinson’s disease as an extension of supervised physiotherapy. The primary objective of this study is to evaluate the feasibility and potential efficacy of Reality DTx. Twenty-four people with Parkinson’s disease (Hoehn and Yahr stages 2–4) with self-reported gait and/or balance impairments will participate in this study. The study comprises a 6-week waitlist-controlled AR home-based therapeutic gait-and-balance exergaming intervention. Reality DTx will initially be prescribed remotely for a minimum of 5 days a week for 30 min per day. We will remotely set and adjust the frequency, difficulty, type of games, and/or duration weekly, based on objective and subjective data from the AR glasses and participant, respectively. In addition to the home-based gait-and-balance exergaming intervention, the study comprises three laboratory visits: before the 6-week waitlist period (t0; baseline), before the 6-week intervention period (t1; pre-intervention), and after the 6-week intervention period (t2; post-intervention). The primary study parameters are feasibility (in terms of safety, adherence, and user experience) and potential efficacy for improving gait and balance (using standard clinical gait-and-balance tests and a targeted walking-related risk assessment). Recruitment started in December 2022 and the final post-intervention assessment will be according to planning in July 2023. This clinical feasibility trial is the first remotely prescribed and monitored home-based AR gait-and-balance exergaming intervention for people with Parkinson’s disease. The results in terms of clinical feasibility (i.e., safety, adherence, and user experience) and potential efficacy (gait, balance, and fall-risk outcomes) form the basis for future randomised controlled studies on the effectiveness of home-based AR gait-and-balance exergaming interventions for people with Parkinson’s disease.",
+      "Keywords": [
+        "Parkinson’s disease",
+        "Augmented reality",
+        "Clinical feasibility",
+        "Home-based therapy",
+        "Rehabilitation",
+        "Exergaming",
+        "Remote monitoring",
+        "Gait",
+        "Balance"
+      ],
+      "Publisher": "BMC"
+    },
+    "pages_processed": 3,
+    "extraction_matrix": {
+      "_performance_summary": {
+        "total_cost": 0.0,
+        "data_source": "vision_json",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "vision_status": "COMPLETE",
+        "extraction_rate": 76.92,
+        "extraction_source": "gpt-4o-vision",
+        "performance_level": "GOOD",
+        "fields_with_content": 10,
+        "processing_time_seconds": 0,
+        "total_fields_in_response": 13
+      }
+    },
+    "extraction_method": "vision_strategic_strategy",
+    "extraction_quality": {
+      "success_rate": 50.0,
+      "quality_score": 50.0,
+      "successful_fields": 10,
+      "validation_details": {
+        "errors": [],
+        "is_valid": true,
+        "warnings": [],
+        "quality_score": 100,
+        "completeness_score": 100.0
+      },
+      "total_fields_attempted": 13
+    },
+    "processing_time_ms": 38154,
+    "raw_openai_response": {
+      "content": "```json\n{\n  \"Title\": \"Remotely prescribed and monitored home-based gait-and-balance therapeutic exergaming using augmented reality glasses: protocol for a clinical feasibility study in people with Parkinson’s disease\",\n  \"Authors\": [\"L. E. S. Hardeman\", \"D. J. Geerse\", \"E. M. Hoogendoorn\", \"J. Nonnekes\", \"M. Roerdink\"],\n  \"DOI\": \"10.1186/s40814-024-01480-w\",\n  \"Journal\": \"Pilot and Feasibility Studies\",\n  \"Year\": 2024,\n  \"Volume\": \"10\",\n  \"Issue\": \"54\",\n  \"Pages\": null,\n  \"Abstract\": \"Clinical guidelines for people with Parkinson’s disease stress that, complementary to pharmacological treatment, exercise and physiotherapy should be given a central role in disease management. Adhering to regular exercise of the right type, and with high repetition, remains a challenge for people with Parkinson’s disease. Exergaming has the potential to increase adherence through play and personalised interventions, both in clinic and at home. Reality DTx is an augmented-reality home-based gait-and-balance exergaming intervention specifically designed for people with Parkinson’s disease as an extension of supervised physiotherapy. The primary objective of this study is to evaluate the feasibility and potential efficacy of Reality DTx. Twenty-four people with Parkinson’s disease (Hoehn and Yahr stages 2–4) with self-reported gait and/or balance impairments will participate in this study. The study comprises a 6-week waitlist-controlled AR home-based therapeutic gait-and-balance exergaming intervention. Reality DTx will initially be prescribed remotely for a minimum of 5 days a week for 30 min per day. We will remotely set and adjust the frequency, difficulty, type of games, and/or duration weekly, based on objective and subjective data from the AR glasses and participant, respectively. In addition to the home-based gait-and-balance exergaming intervention, the study comprises three laboratory visits: before the 6-week waitlist period (t0; baseline), before the 6-week intervention period (t1; pre-intervention), and after the 6-week intervention period (t2; post-intervention). The primary study parameters are feasibility (in terms of safety, adherence, and user experience) and potential efficacy for improving gait and balance (using standard clinical gait-and-balance tests and a targeted walking-related risk assessment). Recruitment started in December 2022 and the final post-intervention assessment will be according to planning in July 2023. This clinical feasibility trial is the first remotely prescribed and monitored home-based AR gait-and-balance exergaming intervention for people with Parkinson’s disease. The results in terms of clinical feasibility (i.e., safety, adherence, and user experience) and potential efficacy (gait, balance, and fall-risk outcomes) form the basis for future randomised controlled studies on the effectiveness of home-based AR gait-and-balance exergaming interventions for people with Parkinson’s disease.\",\n  \"Keywords\": [\"Parkinson’s disease\", \"Augmented reality\", \"Clinical feasibility\", \"Home-based therapy\", \"Rehabilitation\", \"Exergaming\", \"Remote monitoring\", \"Gait\", \"Balance\"],\n  \"PMID\": null,\n  \"PMCID\": null,\n  \"Publisher\": \"BMC\"\n}\n```",
+      "parsing_error": "Expecting value: line 1 column 1 (char 0)",
+      "response_length": 3203,
+      "parsing_successful": false
+    },
+    "processing_timestamp": "2025-07-22T14:15:54.534365"
+  },
+  "apis_raw_json": {
+    "core": {
+      "data": {
+        "data": {
+          "doi": "10.1186/s40814-024-01480-w",
+          "year": 2024,
+          "title": "Remotely prescribed and monitored home-based gait-and-balance therapeutic exergaming using augmented reality (AR) glasses:protocol for a clinical feasibility study in people with Parkinson’s disease",
+          "authors": [
+            "Geerse, D. J.",
+            "Hardeman, L. E.S.",
+            "Hoogendoorn, E. M.",
+            "Nonnekes, J.",
+            "Roerdink, M."
+          ],
+          "core_id": 160686198,
+          "journal": "",
+          "pdf_url": "",
+          "abstract": "Background: Clinical guidelines for people with Parkinson’s disease (pwPD) stress that, complementary to pharmacological treatment, exercise and physiotherapy should be given a central role in disease management. Adhering to regular exercise of the right type, and with high repetition, remains a challenge for pwPD. Exergaming has the potential to increase adherence through play and personalised interventions, both in clinic and at home. Reality DTx® is an augmented-reality (AR) home-based gait-and-balance exergaming intervention specifically designed for pwPD as an extension of supervised physiotherapy. The primary objective of this study is to evaluate the feasibility and potential efficacy of Reality DTx®. Methods: Twenty-four pwPD (Hoehn and Yahr stages 2–4) with self-reported gait and/or balance impairments will participate in this study. The study comprises a 6-week waitlist-controlled AR home-based therapeutic gait-and-balance exergaming intervention. Reality DTx® will initially be prescribed remotely for a minimum of 5 days a week for 30 min per day. We will remotely set and adjust the frequency, difficulty, type of games, and/or duration weekly, based on objective and subjective data from the AR glasses and participant, respectively. In addition to the home-based gait-and-balance exergaming intervention, the study comprises three laboratory visits: before the 6-week waitlist period (t0; baseline), before the 6-week intervention period (t1; pre-intervention), and after the 6-week intervention period (t2; post-intervention). The primary study parameters are feasibility (in terms of safety, adherence, and user experience) and potential efficacy for improving gait and balance (using standard clinical gait-and-balance tests and a targeted walking-related fall-risk assessment). Recruitment started in December 2022 and the final post-intervention assessment will be according to planning in July 2023. Conclusions: This clinical feasibility trial is the first remotely prescribed and monitored home-based AR gait-and-balance exergaming intervention for pwPD. The results in terms of clinical feasibility (i.e. safety, adherence, and user experience) and potential efficacy (gait, balance, and fall-risk outcomes) form the basis for future randomised controlled studies on the effectiveness of home-based AR gait-and-balance exergaming interventions for pwPD. Trial registration: ClinicalTrials.gov, NCT05605249. Registered on 4 November 2022.</p",
+          "repository": "",
+          "open_access": false,
+          "citation_count": 0
+        },
+        "success": true,
+        "strategy": "DOI"
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:15:57.786436",
+      "processing_time_ms": 2864
+    },
+    "doaj": {
+      "data": {
+        "found": true,
+        "total": 1,
+        "results": [
+          {
+            "id": "4e51b08a66624492b8efa40184acaac9",
+            "bibjson": {
+              "link": [
+                {
+                  "url": "https://doi.org/10.1186/s40814-024-01480-w",
+                  "type": "fulltext",
+                  "content_type": "HTML"
+                }
+              ],
+              "year": "2024",
+              "month": "3",
+              "title": "Remotely prescribed and monitored home-based gait-and-balance therapeutic exergaming using augmented reality (AR) glasses: protocol for a clinical feasibility study in people with Parkinson’s disease",
+              "author": [
+                {
+                  "name": "L. E. S. Hardeman",
+                  "affiliation": "Department of Human Movement Sciences, Faculty of Behavioural and Movement Sciences, Vrije Universiteit Amsterdam, Amsterdam Movement Sciences"
+                },
+                {
+                  "name": "D. J. Geerse",
+                  "affiliation": "Department of Human Movement Sciences, Faculty of Behavioural and Movement Sciences, Vrije Universiteit Amsterdam, Amsterdam Movement Sciences"
+                },
+                {
+                  "name": "E. M. Hoogendoorn",
+                  "affiliation": "Department of Human Movement Sciences, Faculty of Behavioural and Movement Sciences, Vrije Universiteit Amsterdam, Amsterdam Movement Sciences"
+                },
+                {
+                  "name": "J. Nonnekes",
+                  "affiliation": "Department of Rehabilitation, Centre of Expertise for Parkinson & Movement Disorders, Donders Institute for Brain, Cognition and Behaviour, Radboud University Medical Centre"
+                },
+                {
+                  "name": "M. Roerdink",
+                  "affiliation": "Department of Human Movement Sciences, Faculty of Behavioural and Movement Sciences, Vrije Universiteit Amsterdam, Amsterdam Movement Sciences"
+                }
+              ],
+              "journal": {
+                "issns": [
+                  "2055-5784"
+                ],
+                "title": "Pilot and Feasibility Studies",
+                "number": "1",
+                "volume": "10",
+                "country": "GB",
+                "language": [
+                  "EN"
+                ],
+                "publisher": "BMC"
+              },
+              "subject": [
+                {
+                  "code": "R5-920",
+                  "term": "Medicine (General)",
+                  "scheme": "LCC"
+                }
+              ],
+              "abstract": "Abstract Background Clinical guidelines for people with Parkinson’s disease (pwPD) stress that, complementary to pharmacological treatment, exercise and physiotherapy should be given a central role in disease management. Adhering to regular exercise of the right type, and with high repetition, remains a challenge for pwPD. Exergaming has the potential to increase adherence through play and personalised interventions, both in clinic and at home. Reality DTx® is an augmented-reality (AR) home-based gait-and-balance exergaming intervention specifically designed for pwPD as an extension of supervised physiotherapy. The primary objective of this study is to evaluate the feasibility and potential efficacy of Reality DTx®. Methods Twenty-four pwPD (Hoehn and Yahr stages 2–4) with self-reported gait and/or balance impairments will participate in this study. The study comprises a 6-week waitlist-controlled AR home-based therapeutic gait-and-balance exergaming intervention. Reality DTx® will initially be prescribed remotely for a minimum of 5 days a week for 30 min per day. We will remotely set and adjust the frequency, difficulty, type of games, and/or duration weekly, based on objective and subjective data from the AR glasses and participant, respectively. In addition to the home-based gait-and-balance exergaming intervention, the study comprises three laboratory visits: before the 6-week waitlist period (t0; baseline), before the 6-week intervention period (t1; pre-intervention), and after the 6-week intervention period (t2; post-intervention). The primary study parameters are feasibility (in terms of safety, adherence, and user experience) and potential efficacy for improving gait and balance (using standard clinical gait-and-balance tests and a targeted walking-related fall-risk assessment). Recruitment started in December 2022 and the final post-intervention assessment will be according to planning in July 2023. Conclusions This clinical feasibility trial is the first remotely prescribed and monitored home-based AR gait-and-balance exergaming intervention for pwPD. The results in terms of clinical feasibility (i.e. safety, adherence, and user experience) and potential efficacy (gait, balance, and fall-risk outcomes) form the basis for future randomised controlled studies on the effectiveness of home-based AR gait-and-balance exergaming interventions for pwPD. Trial registration ClinicalTrials.gov, NCT05605249 . Registered on 4 November 2022.",
+              "end_page": "14",
+              "keywords": [
+                "Parkinson’s disease",
+                "Augmented-reality",
+                "Clinical feasibility",
+                "Home-based therapy",
+                "Rehabilitation",
+                "Exergaming"
+              ],
+              "identifier": [
+                {
+                  "id": "10.1186/s40814-024-01480-w",
+                  "type": "doi"
+                },
+                {
+                  "id": "2055-5784",
+                  "type": "eissn"
+                }
+              ],
+              "start_page": "1"
+            },
+            "created_date": "2024-03-31T11:10:52Z",
+            "last_updated": "2024-03-31T11:10:52Z"
+          }
+        ]
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:15:56.278987",
+      "processing_time_ms": 1352
+    },
+    "arxiv": {
+      "error": "No results found",
+      "success": false,
+      "timestamp": "2025-07-22T14:15:56.383055",
+      "processing_time_ms": 1459
+    },
+    "orcid": {
+      "error": "No results found",
+      "success": false,
+      "timestamp": "2025-07-22T14:15:55.355249",
+      "processing_time_ms": 428
+    },
+    "pubmed": {
+      "data": {
+        "PubmedArticle": [
+          {
+            "MedlineCitation": {
+              "PMID": {
+                "content": "38539250"
+              },
+              "Article": {
+                "Journal": {
+                  "Title": "Pilot and feasibility studies",
+                  "JournalIssue": {
+                    "Issue": "1",
+                    "Volume": "10",
+                    "PubDate": {
+                      "Year": "2024"
+                    }
+                  }
+                },
+                "Abstract": {
+                  "AbstractText": [
+                    "Clinical guidelines for people with Parkinson's disease (pwPD) stress that, complementary to pharmacological treatment, exercise and physiotherapy should be given a central role in disease management. Adhering to regular exercise of the right type, and with high repetition, remains a challenge for pwPD. Exergaming has the potential to increase adherence through play and personalised interventions, both in clinic and at home. Reality DTx",
+                    "Twenty-four pwPD (Hoehn and Yahr stages 2-4) with self-reported gait and/or balance impairments will participate in this study. The study comprises a 6-week waitlist-controlled AR home-based therapeutic gait-and-balance exergaming intervention. Reality DTx",
+                    "This clinical feasibility trial is the first remotely prescribed and monitored home-based AR gait-and-balance exergaming intervention for pwPD. The results in terms of clinical feasibility (i.e. safety, adherence, and user experience) and potential efficacy (gait, balance, and fall-risk outcomes) form the basis for future randomised controlled studies on the effectiveness of home-based AR gait-and-balance exergaming interventions for pwPD.",
+                    "ClinicalTrials.gov, NCT05605249 . Registered on 4 November 2022."
+                  ]
+                },
+                "AuthorList": {
+                  "Author": [
+                    {
+                      "ForeName": "L E S",
+                      "LastName": "Hardeman"
+                    },
+                    {
+                      "ForeName": "D J",
+                      "LastName": "Geerse"
+                    },
+                    {
+                      "ForeName": "E M",
+                      "LastName": "Hoogendoorn"
+                    },
+                    {
+                      "ForeName": "J",
+                      "LastName": "Nonnekes"
+                    },
+                    {
+                      "ForeName": "M",
+                      "LastName": "Roerdink"
+                    }
+                  ]
+                },
+                "Pagination": {
+                  "MedlinePgn": "54"
+                },
+                "ArticleTitle": "Remotely prescribed and monitored home-based gait-and-balance therapeutic exergaming using augmented reality (AR) glasses: protocol for a clinical feasibility study in people with Parkinson's disease."
+              }
+            }
+          }
+        ]
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:15:56.544069",
+      "processing_time_ms": 1628
+    },
+    "crossref": {
+      "data": {
+        "status": "ok",
+        "message": {
+          "DOI": "10.1186/s40814-024-01480-w",
+          "URL": "https://doi.org/10.1186/s40814-024-01480-w",
+          "ISSN": [
+            "2055-5784"
+          ],
+          "link": [
+            {
+              "URL": "https://link.springer.com/content/pdf/10.1186/s40814-024-01480-w.pdf",
+              "content-type": "application/pdf",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://link.springer.com/article/10.1186/s40814-024-01480-w/fulltext.html",
+              "content-type": "text/html",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://link.springer.com/content/pdf/10.1186/s40814-024-01480-w.pdf",
+              "content-type": "application/pdf",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "type": "journal-article",
+          "issue": "1",
+          "score": 1,
+          "title": [
+            "Remotely prescribed and monitored home-based gait-and-balance therapeutic exergaming using augmented reality (AR) glasses: protocol for a clinical feasibility study in people with Parkinson’s disease"
+          ],
+          "author": [
+            {
+              "ORCID": "https://orcid.org/0000-0001-9963-8087",
+              "given": "L. E. S.",
+              "family": "Hardeman",
+              "sequence": "first",
+              "affiliation": [],
+              "authenticated-orcid": false
+            },
+            {
+              "given": "D. J.",
+              "family": "Geerse",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "E. M.",
+              "family": "Hoogendoorn",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "J.",
+              "family": "Nonnekes",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "M.",
+              "family": "Roerdink",
+              "sequence": "additional",
+              "affiliation": []
+            }
+          ],
+          "funder": [
+            {
+              "name": "Eureka Eurostars",
+              "award": [
+                "E115506"
+              ]
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2024,
+                3,
+                27
+              ]
+            ]
+          },
+          "member": "297",
+          "prefix": "10.1186",
+          "source": "Crossref",
+          "volume": "10",
+          "created": {
+            "date-time": "2024-03-27T06:39:43Z",
+            "timestamp": 1711521583000,
+            "date-parts": [
+              [
+                2024,
+                3,
+                27
+              ]
+            ]
+          },
+          "indexed": {
+            "version": "3.37.3",
+            "date-time": "2025-07-05T05:22:20Z",
+            "timestamp": 1751692940248,
+            "date-parts": [
+              [
+                2025,
+                7,
+                5
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "https://creativecommons.org/licenses/by/4.0",
+              "start": {
+                "date-time": "2024-03-27T00:00:00Z",
+                "timestamp": 1711497600000,
+                "date-parts": [
+                  [
+                    2024,
+                    3,
+                    27
+                  ]
+                ]
+              },
+              "delay-in-days": 0,
+              "content-version": "tdm"
+            },
+            {
+              "URL": "https://creativecommons.org/licenses/by/4.0",
+              "start": {
+                "date-time": "2024-03-27T00:00:00Z",
+                "timestamp": 1711497600000,
+                "date-parts": [
+                  [
+                    2024,
+                    3,
+                    27
+                  ]
+                ]
+              },
+              "delay-in-days": 0,
+              "content-version": "vor"
+            }
+          ],
+          "subject": [],
+          "abstract": "<jats:title>Abstract</jats:title><jats:sec>\n                <jats:title>Background</jats:title>\n                <jats:p>Clinical guidelines for people with Parkinson’s disease (pwPD) stress that, complementary to pharmacological treatment, exercise and physiotherapy should be given a central role in disease management. Adhering to regular exercise of the right type, and with high repetition, remains a challenge for pwPD. Exergaming has the potential to increase adherence through play and personalised interventions, both in clinic and at home. Reality DTx<jats:sup>®</jats:sup> is an augmented-reality (AR) home-based gait-and-balance exergaming intervention specifically designed for pwPD as an extension of supervised physiotherapy. The primary objective of this study is to evaluate the feasibility and potential efficacy of Reality DTx<jats:sup>®</jats:sup>.</jats:p>\n              </jats:sec><jats:sec>\n                <jats:title>Methods</jats:title>\n                <jats:p>Twenty-four pwPD (Hoehn and Yahr stages 2–4) with self-reported gait and/or balance impairments will participate in this study. The study comprises a 6-week waitlist-controlled AR home-based therapeutic gait-and-balance exergaming intervention. Reality DTx<jats:sup>®</jats:sup> will initially be prescribed remotely for a minimum of 5 days a week for 30 min per day. We will remotely set and adjust the frequency, difficulty, type of games, and/or duration weekly, based on objective and subjective data from the AR glasses and participant, respectively. In addition to the home-based gait-and-balance exergaming intervention, the study comprises three laboratory visits: before the 6-week waitlist period (t0; baseline), before the 6-week intervention period (t1; pre-intervention), and after the 6-week intervention period (t2; post-intervention). The primary study parameters are feasibility (in terms of safety, adherence, and user experience) and potential efficacy for improving gait and balance (using standard clinical gait-and-balance tests and a targeted walking-related fall-risk assessment). Recruitment started in December 2022 and the final post-intervention assessment will be according to planning in July 2023.</jats:p>\n              </jats:sec><jats:sec>\n                <jats:title>Conclusions</jats:title>\n                <jats:p>This clinical feasibility trial is the first remotely prescribed and monitored home-based AR gait-and-balance exergaming intervention for pwPD. The results in terms of clinical feasibility (i.e. safety, adherence, and user experience) and potential efficacy (gait, balance, and fall-risk outcomes) form the basis for future randomised controlled studies on the effectiveness of home-based AR gait-and-balance exergaming interventions for pwPD.</jats:p>\n              </jats:sec><jats:sec>\n                <jats:title>Trial registration</jats:title>\n                <jats:p>ClinicalTrials.gov, <jats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"uri\" xlink:href=\"https://clinicaltrials.gov/ct2/show/NCT05605249\">NCT05605249</jats:ext-link>. Registered on 4 November 2022.</jats:p>\n              </jats:sec>",
+          "language": "en",
+          "relation": {},
+          "resource": {
+            "primary": {
+              "URL": "https://pilotfeasibilitystudies.biomedcentral.com/articles/10.1186/s40814-024-01480-w"
+            }
+          },
+          "subtitle": [],
+          "assertion": [
+            {
+              "name": "received",
+              "group": {
+                "name": "ArticleHistory",
+                "label": "Article History"
+              },
+              "label": "Received",
+              "order": 1,
+              "value": "6 June 2023"
+            },
+            {
+              "name": "accepted",
+              "group": {
+                "name": "ArticleHistory",
+                "label": "Article History"
+              },
+              "label": "Accepted",
+              "order": 2,
+              "value": "12 March 2024"
+            },
+            {
+              "name": "first_online",
+              "group": {
+                "name": "ArticleHistory",
+                "label": "Article History"
+              },
+              "label": "First Online",
+              "order": 3,
+              "value": "27 March 2024"
+            },
+            {
+              "name": "Ethics",
+              "group": {
+                "name": "EthicsHeading",
+                "label": "Declarations"
+              },
+              "order": 1
+            },
+            {
+              "name": "Ethics",
+              "group": {
+                "name": "EthicsHeading",
+                "label": "Ethics approval and consent to participate"
+              },
+              "order": 2,
+              "value": "Ethical approval has been obtained from the accredited medical ethical committee MEC-U, the Netherlands (R22.076, NL82441.100.22, under the title “CueX: a gamified gait-and-balance exercise intervention for augmented-reality glasses to improve Parkinsonian gait”). The trial has been registered on Clinicaltrials.gov (NCT05605249, November 4, 2022). Participants will provide their written informed consent obtained by researchers LH, DG, or EH before participating in this study."
+            },
+            {
+              "name": "Ethics",
+              "group": {
+                "name": "EthicsHeading",
+                "label": "Consent for publication"
+              },
+              "order": 3,
+              "value": "Written informed consent will be obtained from the participants for the publication of any potentially identifiable images, videos, or data included in this protocol and subsequent results papers."
+            },
+            {
+              "name": "Ethics",
+              "group": {
+                "name": "EthicsHeading",
+                "label": "Competing interests"
+              },
+              "order": 4,
+              "value": "This study is part of a collaboration between the Vrije Universiteit Amsterdam and Strolll, the manufacturer of Reality DTx<sup>®</sup>, formalised in a consortium agreement associated with their joint EUreka Eurostars grant. Anonymised movement and/or environmental data from the AR glasses and information on exercise adherence and performance (e.g. tasks performed, hours spent on games) of the proposed study will be shared with Strolll for the further development of Reality DTx<sup>®</sup>. Per May 1, 2023, MR will work on a consultancy agreement for Strolll ancillary to his position as Associate Professor Technology in Motion at the Department of Human Movement Sciences of the Vrije Universiteit Amsterdam."
+            }
+          ],
+          "deposited": {
+            "date-time": "2024-03-27T06:45:16Z",
+            "timestamp": 1711521916000,
+            "date-parts": [
+              [
+                2024,
+                3,
+                27
+              ]
+            ]
+          },
+          "issn-type": [
+            {
+              "type": "electronic",
+              "value": "2055-5784"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2024,
+                3,
+                27
+              ]
+            ]
+          },
+          "publisher": "Springer Science and Business Media LLC",
+          "reference": [
+            {
+              "DOI": "10.1055/s-0041-1725133",
+              "key": "1480_CR1",
+              "year": "2021",
+              "issue": "2",
+              "author": "TD Ellis",
+              "volume": "41",
+              "first-page": "189",
+              "unstructured": "Ellis TD, Colón-Semenza C, DeAngelis TR, Thomas CA, Hilaire MS, Earhart GM, et al. Evidence for early and regular physical therapy and exercise in Parkinson’s disease. Semin Neurol. 2021;41(2):189–205.",
+              "journal-title": "Semin Neurol",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1016/j.parkreldis.2020.09.024",
+              "key": "1480_CR2",
+              "year": "2020",
+              "issue": "Suppl 1",
+              "author": "PA LeWitt",
+              "volume": "80",
+              "first-page": "S7",
+              "unstructured": "LeWitt PA, Chaudhuri KR. Unmet needs in Parkinson disease: motor and non-motor. Parkinsonism Relat Disord. 2020;80(Suppl 1):S7–s12.",
+              "journal-title": "Parkinsonism Relat Disord",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1055/s-0037-1601869",
+              "key": "1480_CR3",
+              "year": "2017",
+              "issue": "02",
+              "author": "CW Hess",
+              "volume": "37",
+              "first-page": "109",
+              "unstructured": "Hess CW, Hallett M. The phenomenology of Parkinson’s disease. Semin Neurol. 2017;37(02):109–17.",
+              "journal-title": "Semin Neurol",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1371/journal.pone.0122064",
+              "key": "1480_CR4",
+              "year": "2015",
+              "issue": "3",
+              "author": "J Nonnekes",
+              "volume": "10",
+              "first-page": "e0122064",
+              "unstructured": "Nonnekes J, de Kam D, Oude Nijhuis LB, van Geel K, Bloem BR, Geurts A, et al. StartReact effects support different pathophysiological mechanisms underlying freezing of gait and postural instability in Parkinson’s disease. PLoS One. 2015;10(3):e0122064.",
+              "journal-title": "PLoS One",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1159/000098468",
+              "key": "1480_CR5",
+              "year": "2007",
+              "issue": "3",
+              "author": "JC Gómez-Esteban",
+              "volume": "57",
+              "first-page": "161",
+              "unstructured": "Gómez-Esteban JC, Zarranz JJ, Lezcano E, Tijero B, Luna A, Velasco F, et al. Influence of motor symptoms upon the quality of life of patients with Parkinson’s disease. Eur Neurol. 2007;57(3):161–5.",
+              "journal-title": "Eur Neurol",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1002/mds.23790",
+              "key": "1480_CR6",
+              "year": "2011",
+              "issue": "9",
+              "author": "NE Allen",
+              "volume": "26",
+              "first-page": "1605",
+              "unstructured": "Allen NE, Sherrington C, Paul SS, Canning CG. Balance and falls in Parkinson’s disease: a meta-analysis of the effect of exercise and motor training. Mov Disord. 2011;26(9):1605–15.",
+              "journal-title": "Mov Disord",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "key": "1480_CR7",
+              "year": "2014",
+              "author": "S Keus",
+              "volume": "191",
+              "first-page": "1",
+              "unstructured": "Keus S, Munneke M, Graziano M, Paltamaa J, Pelosin E, Domingos J, et al. European physiotherapy guideline for Parkinson’s disease. Netherlands: KNGF/ParkinsonNet. 2014;191:1.",
+              "journal-title": "Netherlands: KNGF/ParkinsonNet"
+            },
+            {
+              "DOI": "10.1093/ptj/pzab302",
+              "key": "1480_CR8",
+              "unstructured": "Osborne JA, Botkin R, Colon-Semenza C, DeAngelis TR, Gallardo OG, Kosakowski H, et al. Physical therapist management of Parkinson disease: a clinical practice guideline from the American Physical Therapy Association. Physical Therapy. 2022;102(4):pzab302.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "key": "1480_CR9",
+              "year": "2017",
+              "author": "M van Nimwegen",
+              "unstructured": "van Nimwegen M, Nijkrake M, van Ziekte Parkinson MM. KNGF-richtlijn Koninklijk Nederlands Genootschap voor Fysiotherapie augustus. 2017.",
+              "volume-title": "KNGF-richtlijn Koninklijk Nederlands Genootschap voor Fysiotherapie augustus"
+            },
+            {
+              "DOI": "10.1136/bjsports-2020-102955",
+              "key": "1480_CR10",
+              "year": "2020",
+              "issue": "24",
+              "author": "FC Bull",
+              "volume": "54",
+              "first-page": "1451",
+              "unstructured": "Bull FC, Al-Ansari SS, Biddle S, Borodulin K, Buman MP, Cardon G, et al. World Health Organization 2020 guidelines on physical activity and sedentary behaviour. Br J Sports Med. 2020;54(24):1451–62.",
+              "journal-title": "Br J Sports Med",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "key": "1480_CR11",
+              "year": "2013",
+              "issue": "9",
+              "author": "CL Tomlinson",
+              "volume": "2013",
+              "first-page": "817",
+              "unstructured": "Tomlinson CL, Patel S, Meek C, Herd CP, Clarke CE, Stowe R, et al. Physiotherapy versus placebo or no intervention in Parkinson’s disease. Cochrane Database Syst Rev. 2013;2013(9):817.",
+              "journal-title": "Cochrane Database Syst Rev"
+            },
+            {
+              "DOI": "10.1002/mds.25658",
+              "key": "1480_CR12",
+              "year": "2013",
+              "issue": "11",
+              "author": "NM van der Kolk",
+              "volume": "28",
+              "first-page": "1587",
+              "unstructured": "van der Kolk NM, King LA. Effects of exercise on mobility in people with Parkinson’s disease. Mov Disord. 2013;28(11):1587–96.",
+              "journal-title": "Mov Disord",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1002/mds.21922",
+              "key": "1480_CR13",
+              "year": "2008",
+              "issue": "5",
+              "author": "VA Goodwin",
+              "volume": "23",
+              "first-page": "631",
+              "unstructured": "Goodwin VA, Richards SH, Taylor RS, Taylor AH, Campbell JL. The effectiveness of exercise interventions for people with Parkinson’s disease: a systematic review and meta-analysis. Mov Disord. 2008;23(5):631–40.",
+              "journal-title": "Mov Disord",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1177/1545968318801558",
+              "key": "1480_CR14",
+              "year": "2018",
+              "issue": "10",
+              "author": "M Ni",
+              "volume": "32",
+              "first-page": "872",
+              "unstructured": "Ni M, Hazzard JB, Signorile JF, Luca C. Exercise guidelines for gait function in Parkinson’s disease: a systematic review and meta-analysis. Neurorehabil Neural Repair. 2018;32(10):872–86.",
+              "journal-title": "Neurorehabil Neural Repair",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.3233/JPD-181489",
+              "key": "1480_CR15",
+              "year": "2018",
+              "issue": "s1",
+              "author": "T Ellis",
+              "volume": "8",
+              "first-page": "S95",
+              "unstructured": "Ellis T, Rochester L. Mobilizing Parkinson’s disease: The Future of Exercise. J Parkinsons Dis. 2018;8(s1):S95–s100.",
+              "journal-title": "J Parkinsons Dis",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1177/1545968320952799",
+              "key": "1480_CR16",
+              "year": "2020",
+              "issue": "10",
+              "author": "DLM Radder",
+              "volume": "34",
+              "first-page": "871",
+              "unstructured": "Radder DLM, de Silva Lima Lígia A, Domingos J, Keus SHJ, van Nimwegen M, Bloem BR, et al. Physiotherapy in Parkinson’s disease: a meta-analysis of present treatment modalities. Neurorehabil Neural Repair. 2020;34(10):871–80.",
+              "journal-title": "Neurorehabil Neural Repair",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "key": "1480_CR17",
+              "year": "2023",
+              "issue": "1",
+              "author": "M Ernst",
+              "volume": "1",
+              "first-page": "Cd013856",
+              "unstructured": "Ernst M, Folkerts AK, Gollan R, Lieker E, Caro-Valenzuela J, Adams A, et al. Physical exercise for people with Parkinson’s disease: a systematic review and network meta-analysis. Cochrane Database Syst Rev. 2023;1(1):Cd013856.",
+              "journal-title": "Cochrane Database Syst Rev"
+            },
+            {
+              "DOI": "10.3233/JPD-202247",
+              "key": "1480_CR18",
+              "year": "2020",
+              "issue": "4",
+              "author": "S Schootemeijer",
+              "volume": "10",
+              "first-page": "1293",
+              "unstructured": "Schootemeijer S, van der Kolk NM, Ellis T, Mirelman A, Nieuwboer A, Nieuwhof F, et al. Barriers and motivators to engage in exercise for persons with Parkinson’s disease. J Parkinsons Dis. 2020;10(4):1293–9.",
+              "journal-title": "J Parkinsons Dis",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.2522/ptj.20120279",
+              "key": "1480_CR19",
+              "year": "2013",
+              "issue": "5",
+              "author": "T Ellis",
+              "volume": "93",
+              "first-page": "628",
+              "unstructured": "Ellis T, Boudreau JK, DeAngelis TR, Brown LE, Cavanaugh JT, Earhart GM, et al. Barriers to exercise in people with Parkinson disease. Phys Ther. 2013;93(5):628–36.",
+              "journal-title": "Phys Ther",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1016/j.parkreldis.2012.07.006",
+              "key": "1480_CR20",
+              "year": "2013",
+              "issue": "1",
+              "author": "RM Pickering",
+              "volume": "19",
+              "first-page": "66",
+              "unstructured": "Pickering RM, Fitton C, Ballinger C, Fazakarley L, Ashburn A. Self reported adherence to a home-based exercise programme among people with Parkinson’s disease. Parkinsonism Relat Disord. 2013;19(1):66–71.",
+              "journal-title": "Parkinsonism Relat Disord",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "key": "1480_CR21",
+              "unstructured": "Lindop F, Skelly R. Parkinson’s disease: an interdisciplinary guide to management. United States: Elsevier Health Sciences; 2021."
+            },
+            {
+              "DOI": "10.1080/09638288.2021.2022780",
+              "key": "1480_CR22",
+              "unstructured": "Gallou-Guyot M, Nuic D, Mandigout S, Compagnat M, Welter ML, Daviet JC, et al. Effectiveness of home-based rehabilitation using active video games on quality of life, cognitive and motor functions in people with Parkinson’s disease: a systematic review. Disabil Rehabil. 2022;44:8222–33.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1186/1743-0003-11-33",
+              "key": "1480_CR23",
+              "year": "2014",
+              "author": "G Barry",
+              "volume": "11",
+              "first-page": "33",
+              "unstructured": "Barry G, Galna B, Rochester L. The role of exergaming in Parkinson’s disease rehabilitation: a systematic review of the evidence. J Neuroeng Rehabil. 2014;11:33.",
+              "journal-title": "J Neuroeng Rehabil",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1007/s10916-015-0289-0",
+              "key": "1480_CR24",
+              "year": "2015",
+              "issue": "9",
+              "author": "G Palacios-Navarro",
+              "volume": "39",
+              "first-page": "103",
+              "unstructured": "Palacios-Navarro G, García-Magariño I, Ramos-Lorente P. A kinect-based system for lower limb rehabilitation in Parkinson’s disease patients: a pilot study. J Med Syst. 2015;39(9):103.",
+              "journal-title": "J Med Syst",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1212/WNL.0000000000005603",
+              "key": "1480_CR25",
+              "year": "2018",
+              "issue": "22",
+              "author": "D Cano Porras",
+              "volume": "90",
+              "first-page": "1017",
+              "unstructured": "Cano Porras D, Siemonsma P, Inzelberg R, Zeilig G, Plotnik M. Advantages of virtual reality in the rehabilitation of balance and gait: systematic review. Neurology. 2018;90(22):1017–25.",
+              "journal-title": "Neurology",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "key": "1480_CR26",
+              "year": "2020",
+              "author": "S Janssen",
+              "volume": "2020",
+              "first-page": "4104712",
+              "unstructured": "Janssen S, De Ruyter Van Steveninck J, Salim HS, Bloem BR, Heida T, Van Wezel RJ. The beneficial effects of conventional visual cues are retained when augmented reality glasses are worn. Parkinson’s Disease. 2020;2020:4104712.",
+              "journal-title": "Parkinson’s Disease."
+            },
+            {
+              "DOI": "10.3389/fneur.2021.628388",
+              "key": "1480_CR27",
+              "unstructured": "Geerse DJ, Coolen B, van Hilten JJ, Roerdink M. Holocue: a wearable holographic cueing application for alleviating freezing of gait in Parkinson's disease. Frontiers in Neurology. 2022:314.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "key": "1480_CR28",
+              "unstructured": "Team J. JASP (version 0.18.1). [computer software]. Amsterdam: University of Amsterdam; 2023."
+            },
+            {
+              "DOI": "10.1016/j.displa.2022.102283",
+              "key": "1480_CR29",
+              "year": "2022",
+              "author": "M Kaufeld",
+              "volume": "74",
+              "first-page": "102283",
+              "unstructured": "Kaufeld M, Mundt M, Forst S, Hecht H. Optical see-through augmented reality can induce severe motion sickness. Displays. 2022;74:102283.",
+              "journal-title": "Displays",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "key": "1480_CR30",
+              "year": "2018",
+              "author": "A Vovk",
+              "first-page": "209",
+              "unstructured": "Vovk A, Wild F, Guest W, Kuula T. Simulator sickness in augmented reality training using the Microsoft HoloLens. Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems. Montreal: Association for Computing Machinery; 2018. p. 209.",
+              "volume-title": "Simulator sickness in augmented reality training using the Microsoft HoloLens. Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems"
+            },
+            {
+              "key": "1480_CR31",
+              "unstructured": "Geerse D, Roerdink M, Marinus J, van Hilten J, editors. Fall risk assessments with the Interactive Walkway. SMALLL congres 2017; 2017."
+            },
+            {
+              "DOI": "10.3390/s20113216",
+              "key": "1480_CR32",
+              "year": "2020",
+              "issue": "11",
+              "author": "DJ Geerse",
+              "volume": "20",
+              "first-page": "3216",
+              "unstructured": "Geerse DJ, Coolen B, Roerdink M. Quantifying spatiotemporal gait parameters with HoloLens in healthy adults and people with Parkinson’s disease: test-retest reliability, concurrent validity, and face validity. Sensors. 2020;20(11):3216.",
+              "journal-title": "Sensors",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1371/journal.pone.0139913",
+              "key": "1480_CR33",
+              "year": "2015",
+              "issue": "10",
+              "author": "DJ Geerse",
+              "volume": "10",
+              "first-page": "e0139913",
+              "unstructured": "Geerse DJ, Coolen BH, Roerdink M. Kinematic validation of a multi-kinect v2 instrumented 10-meter walkway for quantitative gait assessments. PLoS One. 2015;10(10):e0139913.",
+              "journal-title": "PLoS One",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.3389/fneur.2018.01096",
+              "key": "1480_CR34",
+              "year": "2018",
+              "author": "DJ Geerse",
+              "volume": "9",
+              "first-page": "1096",
+              "unstructured": "Geerse DJ, Roerdink M, Marinus J, van Hilten JJ. Assessing walking adaptability in Parkinson’s disease: “The Interactive Walkway.” Front Neurol. 2018;9:1096.",
+              "journal-title": "Front Neurol",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1016/j.gaitpost.2019.02.013",
+              "key": "1480_CR35",
+              "year": "2019",
+              "author": "DJ Geerse",
+              "volume": "70",
+              "first-page": "203",
+              "unstructured": "Geerse DJ, Roerdink M, Marinus J, van Hilten JJ. Walking adaptability for targeted fall-risk assessments. Gait Posture. 2019;70:203–10.",
+              "journal-title": "Gait Posture",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1186/s12913-017-2031-8",
+              "key": "1480_CR36",
+              "year": "2017",
+              "issue": "1",
+              "author": "M Sekhon",
+              "volume": "17",
+              "first-page": "88",
+              "unstructured": "Sekhon M, Cartwright M, Francis JJ. Acceptability of healthcare interventions: an overview of reviews and development of a theoretical framework. BMC Health Serv Res. 2017;17(1):88.",
+              "journal-title": "BMC Health Serv Res",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1136/bmjopen-2021-056623",
+              "key": "1480_CR37",
+              "year": "2022",
+              "issue": "2",
+              "author": "MHG Gerards",
+              "volume": "12",
+              "first-page": "e056623",
+              "unstructured": "Gerards MHG, Sieben J, Marcellis R, Bie RAd, Meijer K, Lenssen AF. Acceptability of a perturbation-based balance training programme for falls prevention in older adults: a qualitative study. BMJ Open. 2022;12(2):e056623.",
+              "journal-title": "BMJ Open",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "key": "1480_CR38",
+              "year": "2008",
+              "author": "B Laugwitz",
+              "first-page": "63",
+              "unstructured": "Laugwitz B, Held T, Schrepp M. Construction and evaluation of a user experience questionnaire. 2008. p. 63–76.",
+              "volume-title": "Construction and evaluation of a user experience questionnaire"
+            },
+            {
+              "DOI": "10.1016/j.cedpsych.2020.101860",
+              "key": "1480_CR39",
+              "year": "2020",
+              "author": "RM Ryan",
+              "volume": "61",
+              "first-page": "101860",
+              "unstructured": "Ryan RM, Deci EL. Intrinsic and extrinsic motivation from a self-determination theory perspective: Definitions, theory, practices, and future directions. Contemp Educ Psychol. 2020;61:101860.",
+              "journal-title": "Contemp Educ Psychol",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1093/ptj/pzz013",
+              "key": "1480_CR40",
+              "year": "2019",
+              "issue": "7",
+              "author": "C Timmermans",
+              "volume": "99",
+              "first-page": "882",
+              "unstructured": "Timmermans C, Roerdink M, Janssen TWJ, Beek PJ, Meskers CGM. Automatized, standardized, and patient-tailored progressive walking-adaptability training: a proof-of-concept study. Phys Ther. 2019;99(7):882–92.",
+              "journal-title": "Phys Ther",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1002/pri.165",
+              "key": "1480_CR41",
+              "year": "1999",
+              "issue": "3",
+              "author": "E Stack",
+              "volume": "4",
+              "first-page": "190",
+              "unstructured": "Stack E, Ashburn A. Fall events described by people with Parkinson’s disease: implications for clinical interviewing and the research agenda. Physiother Res Int. 1999;4(3):190–200.",
+              "journal-title": "Physiother Res Int",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1016/j.parkreldis.2004.06.003",
+              "key": "1480_CR42",
+              "year": "2005",
+              "issue": "1",
+              "author": "L Lim",
+              "volume": "11",
+              "first-page": "19",
+              "unstructured": "Lim L, Van Wegen E, De Goede C, Jones D, Rochester L, Hetherington V, et al. Measuring gait and gait-related activities in Parkinson’s patients own home environment: a reliability, responsiveness and feasibility study. Parkinsonism Relat Disord. 2005;11(1):19–24.",
+              "journal-title": "Parkinsonism Relat Disord",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.2522/ptj.20090126",
+              "key": "1480_CR43",
+              "year": "2011",
+              "issue": "1",
+              "author": "S-L Huang",
+              "volume": "91",
+              "first-page": "114",
+              "unstructured": "Huang S-L, Hsieh C-L, Wu R-M, Tai C-H, Lin C-H, Lu W-S. Minimal detectable change of the Timed “Up & Go” Test and the Dynamic Gait Index in people with Parkinson disease. Phys Ther. 2011;91(1):114–21.",
+              "journal-title": "Phys Ther",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1016/j.gaitpost.2020.05.004",
+              "key": "1480_CR44",
+              "year": "2020",
+              "author": "M Godi",
+              "volume": "80",
+              "first-page": "14",
+              "unstructured": "Godi M, Arcolin I, Giardini M, Corna S, Schieppati M. Responsiveness and minimal clinically important difference of the Mini-BESTest in patients with Parkinson’s disease. Gait Posture. 2020;80:14–9.",
+              "journal-title": "Gait Posture",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.12965/jer.2040532.266",
+              "key": "1480_CR45",
+              "year": "2020",
+              "issue": "4",
+              "author": "I Mollinedo",
+              "volume": "16",
+              "first-page": "302",
+              "unstructured": "Mollinedo I, Ma CJ. Evaluation of the psychometric properties and clinical applications of the Timed Up and Go test in Parkinson disease: a systematic review. J Exerc Rehabil. 2020;16(4):302–12.",
+              "journal-title": "J Exerc Rehabil",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1016/j.physio.2009.02.003",
+              "key": "1480_CR46",
+              "year": "2009",
+              "issue": "2",
+              "author": "M Pearson",
+              "volume": "95",
+              "first-page": "126",
+              "unstructured": "Pearson M, Lindop F, Mockett S, Saunders L. Validity and inter-rater reliability of the Lindop Parkinson’s Disease Mobility Assessment: a preliminary study. Physiotherapy. 2009;95(2):126–33.",
+              "journal-title": "Physiotherapy",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1016/j.apmr.2011.04.008",
+              "key": "1480_CR47",
+              "year": "2011",
+              "issue": "9",
+              "author": "RP Duncan",
+              "volume": "92",
+              "first-page": "1431",
+              "unstructured": "Duncan RP, Leddy AL, Earhart GM. Five times sit-to-stand test performance in Parkinson’s disease. Arch Phys Med Rehabil. 2011;92(9):1431–6.",
+              "journal-title": "Arch Phys Med Rehabil",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1002/mds.22340",
+              "key": "1480_CR48",
+              "year": "2008",
+              "issue": "15",
+              "author": "CG Goetz",
+              "volume": "23",
+              "first-page": "2129",
+              "unstructured": "Goetz CG, Tilley BC, Shaftman SR, Stebbins GT, Fahn S, Martinez-Martin P, et al. Movement Disorder Society-sponsored revision of the Unified Parkinson’s Disease Rating Scale (MDS-UPDRS): Scale presentation and clinimetric testing results. Mov Disord. 2008;23(15):2129–70.",
+              "journal-title": "Mov Disord",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1002/mds.21745",
+              "key": "1480_CR49",
+              "year": "2009",
+              "issue": "5",
+              "author": "N Giladi",
+              "volume": "24",
+              "first-page": "655",
+              "unstructured": "Giladi N, Tal J, Azulay T, Rascol O, Brooks DJ, Melamed E, et al. Validation of the freezing of gait questionnaire in patients with Parkinson’s disease. Mov Disord. 2009;24(5):655–61.",
+              "journal-title": "Mov Disord",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1177/0269215519877498",
+              "key": "1480_CR50",
+              "year": "2019",
+              "issue": "12",
+              "author": "SJ Winser",
+              "volume": "33",
+              "first-page": "1949",
+              "unstructured": "Winser SJ, Kannan P, Bello UM, Whitney SL. Measures of balance and falls risk prediction in people with Parkinson’s disease: a systematic review of psychometric properties. Clin Rehabil. 2019;33(12):1949–62.",
+              "journal-title": "Clin Rehabil",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1155/2019/6505232",
+              "key": "1480_CR51",
+              "unstructured": "Mehdizadeh M, Habibi S, Martinez-Martin P, Taghizadeh G, Fereshtehnejad S-M. Reliability and validity of fall efficacy scale-international in people with Parkinson’s disease during on- and off-drug phases. J Parkinsons Dis. 2019;6505232.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1016/0895-4356(93)90053-4",
+              "key": "1480_CR52",
+              "year": "1993",
+              "issue": "2",
+              "author": "RA Washburn",
+              "volume": "46",
+              "first-page": "153",
+              "unstructured": "Washburn RA, Smith KW, Jette AM, Janney CA. The physical activity scale for the elderly (pase): development and evaluation. J Clin Epidemiol. 1993;46(2):153–62.",
+              "journal-title": "J Clin Epidemiol",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1016/j.parkreldis.2007.05.005",
+              "key": "1480_CR53",
+              "year": "2008",
+              "issue": "1",
+              "author": "J Marinus",
+              "volume": "14",
+              "first-page": "24",
+              "unstructured": "Marinus J, Visser M, Jenkinson C, Stiggelbout AM. Evaluation of the Dutch version of the Parkinson’s Disease Questionnaire 39. Parkinsonism Relat Disord. 2008;14(1):24–7.",
+              "journal-title": "Parkinsonism Relat Disord",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1080/02701367.1989.10607413",
+              "key": "1480_CR54",
+              "year": "1989",
+              "issue": "1",
+              "author": "E McAuley",
+              "volume": "60",
+              "first-page": "48",
+              "unstructured": "McAuley E, Duncan T, Tammen VV. Psychometric properties of the Intrinsic Motivation Inventory in a competitive sport setting: a confirmatory factor analysis. Res Q Exerc Sport. 1989;60(1):48–58.",
+              "journal-title": "Res Q Exerc Sport",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "key": "1480_CR55",
+              "unstructured": "Team J. JASP (version 0.18.1) [Computer software]. 2023."
+            },
+            {
+              "DOI": "10.4135/9781412983419",
+              "key": "1480_CR56",
+              "unstructured": "Girden E. ANOVA. Thousand Oaks, California1992. Available from: https://methods-sagepub-com.vu-nl.idm.oclc.org/book/anova.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "key": "1480_CR57",
+              "year": "1961",
+              "author": "HS Jeffreys",
+              "unstructured": "Jeffreys HS. Theory of probability / by Harold Jeffreys. Oxford: Clarendon Press; 1961.",
+              "volume-title": "Theory of probability / by Harold Jeffreys"
+            },
+            {
+              "DOI": "10.3758/s13423-017-1272-1",
+              "key": "1480_CR58",
+              "year": "2018",
+              "issue": "1",
+              "author": "JK Kruschke",
+              "volume": "25",
+              "first-page": "155",
+              "unstructured": "Kruschke JK, Liddell TM. Bayesian data analysis for newcomers. Psychon Bull Rev. 2018;25(1):155–77.",
+              "journal-title": "Psychon Bull Rev",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1371/journal.pone.0224819",
+              "key": "1480_CR59",
+              "year": "2019",
+              "issue": "11",
+              "author": "C Lei",
+              "volume": "14",
+              "first-page": "e0224819",
+              "unstructured": "Lei C, Sunzi K, Dai F, Liu X, Wang Y, Zhang B, et al. Effects of virtual reality rehabilitation training on gait and balance in patients with Parkinson’s disease: a systematic review. PLoS One. 2019;14(11):e0224819.",
+              "journal-title": "PLoS One",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1093/ptj/pzaa042",
+              "key": "1480_CR60",
+              "year": "2020",
+              "issue": "6",
+              "author": "Y Chen",
+              "volume": "100",
+              "first-page": "933",
+              "unstructured": "Chen Y, Gao Q, He CQ, Bian R. Effect of virtual reality on balance in individuals with Parkinson disease: a systematic review and meta-analysis of randomized controlled trials. Phys Ther. 2020;100(6):933–45.",
+              "journal-title": "Phys Ther",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.3233/NRE-192700",
+              "key": "1480_CR61",
+              "year": "2019",
+              "issue": "4",
+              "author": "P Santos",
+              "volume": "44",
+              "first-page": "569",
+              "unstructured": "Santos P, Scaldaferri G, Santos L, Ribeiro N, Neto M, Melo A. Effects of the Nintendo Wii training on balance rehabilitation and quality of life of patients with Parkinson’s disease: a systematic review and meta-analysis. NeuroRehabilitation. 2019;44(4):569–77.",
+              "journal-title": "NeuroRehabilitation",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1186/s12984-019-0492-1",
+              "key": "1480_CR62",
+              "year": "2019",
+              "issue": "1",
+              "author": "A Garcia-Agundez",
+              "volume": "16",
+              "first-page": "17",
+              "unstructured": "Garcia-Agundez A, Folkerts AK, Konrad R, Caserman P, Tregel T, Goosses M, et al. Recent advances in rehabilitation for Parkinson’s disease with exergames: a systematic review. J Neuroeng Rehabil. 2019;16(1):17.",
+              "journal-title": "J Neuroeng Rehabil",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1186/s40814-017-0210-3",
+              "key": "1480_CR63",
+              "year": "2017",
+              "author": "KG Silva",
+              "volume": "3",
+              "first-page": "68",
+              "unstructured": "Silva KG, De Freitas TB, Doná F, Ganança FF, Ferraz HB, Torriani-Pasin C, et al. Effects of virtual rehabilitation versus conventional physical therapy on postural control, gait, and cognition of patients with Parkinson’s disease: study protocol for a randomized controlled feasibility trial. Pilot Feasibility Stud. 2017;3:68.",
+              "journal-title": "Pilot Feasibility Stud",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1016/j.cortex.2015.04.003",
+              "key": "1480_CR64",
+              "year": "2015",
+              "author": "TT Chong",
+              "volume": "69",
+              "first-page": "40",
+              "unstructured": "Chong TT, Bonnelle V, Manohar S, Veromann KR, Muhammed K, Tofaris GK, et al. Dopamine enhances willingness to exert effort for reward in Parkinson’s disease. Cortex. 2015;69:40–6.",
+              "journal-title": "Cortex",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1007/s00415-013-7037-5",
+              "key": "1480_CR65",
+              "year": "2013",
+              "issue": "12",
+              "author": "S Lord",
+              "volume": "260",
+              "first-page": "2964",
+              "unstructured": "Lord S, Godfrey A, Galna B, Mhiripiri D, Burn D, Rochester L. Ambulatory activity in incident Parkinson’s: more than meets the eye? J Neurol. 2013;260(12):2964–72.",
+              "journal-title": "J Neurol",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.3389/fneur.2019.00062",
+              "key": "1480_CR66",
+              "year": "2019",
+              "author": "M Olson",
+              "volume": "10",
+              "first-page": "62",
+              "unstructured": "Olson M, Lockhart TE, Lieberman A. Motor learning deficits in Parkinson’s disease (PD) and their effect on training response in gait and balance: a narrative review. Front Neurol. 2019;10:62.",
+              "journal-title": "Front Neurol",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1016/j.bbr.2016.04.010",
+              "key": "1480_CR67",
+              "year": "2016",
+              "author": "R Vitório",
+              "volume": "307",
+              "first-page": "159",
+              "unstructured": "Vitório R, Gobbi LT, Lirani-Silva E, Moraes R, Almeida QJ. Synchrony of gaze and stepping patterns in people with Parkinson’s disease. Behav Brain Res. 2016;307:159–64.",
+              "journal-title": "Behav Brain Res",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "key": "1480_CR68",
+              "year": "1979",
+              "author": "J Gibson",
+              "edition": "Classic",
+              "unstructured": "Gibson J. The Ecological Approach to Visual Perception. Classic. Hoboken: Psychology Press & Routledge Classic Editions. Taylor and Francis; 1979.",
+              "volume-title": "The Ecological Approach to Visual Perception"
+            },
+            {
+              "DOI": "10.3389/fneur.2018.00681",
+              "key": "1480_CR69",
+              "year": "2018",
+              "author": "LI Gómez-Jordana",
+              "volume": "9",
+              "first-page": "681",
+              "unstructured": "Gómez-Jordana LI, Stafford J, Peper CE, Craig CM. Virtual footprints can improve walking performance in people with Parkinson’s disease. Frontiers in Neurology. 2018;9:681.",
+              "journal-title": "Frontiers in Neurology",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1177/0269215517721593",
+              "key": "1480_CR70",
+              "year": "2018",
+              "issue": "3",
+              "author": "J Song",
+              "volume": "32",
+              "first-page": "299",
+              "unstructured": "Song J, Paul SS, Caetano MJD, Smith S, Dibble LE, Love R, et al. Home-based step training using videogame technology in people with Parkinson’s disease: a single-blinded randomised controlled trial. Clin Rehabil. 2018;32(3):299–311.",
+              "journal-title": "Clin Rehabil",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1016/j.dhjo.2019.100848",
+              "key": "1480_CR71",
+              "year": "2020",
+              "issue": "2",
+              "author": "T Tunur",
+              "volume": "13",
+              "first-page": "100848",
+              "unstructured": "Tunur T, DeBlois A, Yates-Horton E, Rickford K, Columna LA. Augmented reality-based dance intervention for individuals with Parkinson’s disease: a pilot study. Disabil Health J. 2020;13(2):100848.",
+              "journal-title": "Disabil Health J",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1186/1743-0003-11-60",
+              "key": "1480_CR72",
+              "year": "2014",
+              "author": "B Galna",
+              "volume": "11",
+              "first-page": "60",
+              "unstructured": "Galna B, Jackson D, Schofield G, McNaney R, Webster M, Barry G, et al. Retraining function in people with Parkinson’s disease using the Microsoft kinect: game design and pilot testing. J Neuroeng Rehabil. 2014;11:60.",
+              "journal-title": "J Neuroeng Rehabil",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1186/s40814-018-0334-0",
+              "key": "1480_CR73",
+              "year": "2018",
+              "author": "A Golla",
+              "volume": "4",
+              "first-page": "1",
+              "unstructured": "Golla A, Müller T, Wohlfarth K, Jahn P, Mattukat K, Mau W. Home-based balance training using Wii Fit™: a pilot randomised controlled trial with mobile older stroke survivors. Pilot and feasibility studies. 2018;4:1–10.",
+              "journal-title": "Pilot and feasibility studies",
+              "doi-asserted-by": "publisher"
+            }
+          ],
+          "short-title": [],
+          "journal-issue": {
+            "issue": "1",
+            "published-online": {
+              "date-parts": [
+                [
+                  2024,
+                  12
+                ]
+              ]
+            }
+          },
+          "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+          "alternative-id": [
+            "1480"
+          ],
+          "article-number": "54",
+          "content-domain": {
+            "domain": [
+              "link.springer.com"
+            ],
+            "crossmark-restriction": false
+          },
+          "original-title": [],
+          "container-title": [
+            "Pilot and Feasibility Studies"
+          ],
+          "reference-count": 73,
+          "published-online": {
+            "date-parts": [
+              [
+                2024,
+                3,
+                27
+              ]
+            ]
+          },
+          "references-count": 73,
+          "short-container-title": [
+            "Pilot Feasibility Stud"
+          ],
+          "is-referenced-by-count": 7
+        },
+        "message-type": "work",
+        "message-version": "1.0.0"
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:15:56.157243",
+      "processing_time_ms": 1243
+    },
+    "datacite": {
+      "data": {
+        "data": {
+          "id": "10.6084/m9.figshare.c.7153935.v1",
+          "type": "dois",
+          "attributes": {
+            "doi": "10.6084/m9.figshare.c.7153935.v1",
+            "url": "https://springernature.figshare.com/collections/Remotely_prescribed_and_monitored_home-based_gait-and-balance_therapeutic_exergaming_using_augmented_reality_AR_glasses_protocol_for_a_clinical_feasibility_study_in_people_with_Parkinson_s_disease/7153935/1",
+            "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjQvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC42MDg0L005LkZJR1NIQVJFLkMuNzE1MzkzNS5WMTwvaWRlbnRpZmllcj4KICA8Y3JlYXRvcnM+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPkwuIEUuIFMuIEhhcmRlbWFuPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5MLiBFLiBTLjwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5IYXJkZW1hbjwvZmFtaWx5TmFtZT4KICAgICAgPG5hbWVJZGVudGlmaWVyIG5hbWVJZGVudGlmaWVyU2NoZW1lPSJPUkNJRCIgc2NoZW1lVVJJPSJodHRwczovL29yY2lkLm9yZyI+MDAwMC0wMDAxLTk5NjMtODA4NzwvbmFtZUlkZW50aWZpZXI+CiAgICAgIDxhZmZpbGlhdGlvbiBhZmZpbGlhdGlvbklkZW50aWZpZXI9Imh0dHBzOi8vcm9yLm9yZy8wMDh4eGV3NTAiIGFmZmlsaWF0aW9uSWRlbnRpZmllclNjaGVtZT0iUk9SIiBzY2hlbWVVUkk9Imh0dHBzOi8vcm9yLm9yZy8iPlZVIEFtc3RlcmRhbTwvYWZmaWxpYXRpb24+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPkQuIEouIEdlZXJzZTwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+RC4gSi48L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+R2VlcnNlPC9mYW1pbHlOYW1lPgogICAgICA8YWZmaWxpYXRpb24gYWZmaWxpYXRpb25JZGVudGlmaWVyPSJodHRwczovL3Jvci5vcmcvMDA4eHhldzUwIiBhZmZpbGlhdGlvbklkZW50aWZpZXJTY2hlbWU9IlJPUiIgc2NoZW1lVVJJPSJodHRwczovL3Jvci5vcmcvIj5WVSBBbXN0ZXJkYW08L2FmZmlsaWF0aW9uPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5FLiBNLiBIb29nZW5kb29ybjwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+RS4gTS48L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+SG9vZ2VuZG9vcm48L2ZhbWlseU5hbWU+CiAgICAgIDxhZmZpbGlhdGlvbiBhZmZpbGlhdGlvbklkZW50aWZpZXI9Imh0dHBzOi8vcm9yLm9yZy8wMDh4eGV3NTAiIGFmZmlsaWF0aW9uSWRlbnRpZmllclNjaGVtZT0iUk9SIiBzY2hlbWVVUkk9Imh0dHBzOi8vcm9yLm9yZy8iPlZVIEFtc3RlcmRhbTwvYWZmaWxpYXRpb24+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPkouIE5vbm5la2VzPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5KLjwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5Ob25uZWtlczwvZmFtaWx5TmFtZT4KICAgICAgPGFmZmlsaWF0aW9uIGFmZmlsaWF0aW9uSWRlbnRpZmllcj0iaHR0cHM6Ly9yb3Iub3JnLzA1d2cxbTczNCIgYWZmaWxpYXRpb25JZGVudGlmaWVyU2NoZW1lPSJST1IiIHNjaGVtZVVSST0iaHR0cHM6Ly9yb3Iub3JnLyI+UmFkYm91ZCBVbml2ZXJzaXR5IE5pam1lZ2VuIE1lZGljYWwgQ2VudHJlPC9hZmZpbGlhdGlvbj4KICAgICAgPGFmZmlsaWF0aW9uIGFmZmlsaWF0aW9uSWRlbnRpZmllcj0iaHR0cHM6Ly9yb3Iub3JnLzA0NTRnZnAzMCIgYWZmaWxpYXRpb25JZGVudGlmaWVyU2NoZW1lPSJST1IiIHNjaGVtZVVSST0iaHR0cHM6Ly9yb3Iub3JnLyI+U2ludCBNYWFydGVuc2tsaW5pZWs8L2FmZmlsaWF0aW9uPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5NLiBSb2VyZGluazwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+TS48L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+Um9lcmRpbms8L2ZhbWlseU5hbWU+CiAgICAgIDxhZmZpbGlhdGlvbiBhZmZpbGlhdGlvbklkZW50aWZpZXI9Imh0dHBzOi8vcm9yLm9yZy8wMDh4eGV3NTAiIGFmZmlsaWF0aW9uSWRlbnRpZmllclNjaGVtZT0iUk9SIiBzY2hlbWVVUkk9Imh0dHBzOi8vcm9yLm9yZy8iPlZVIEFtc3RlcmRhbTwvYWZmaWxpYXRpb24+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPlJlbW90ZWx5IHByZXNjcmliZWQgYW5kIG1vbml0b3JlZCBob21lLWJhc2VkIGdhaXQtYW5kLWJhbGFuY2UgdGhlcmFwZXV0aWMgZXhlcmdhbWluZyB1c2luZyBhdWdtZW50ZWQgcmVhbGl0eSAoQVIpIGdsYXNzZXM6IHByb3RvY29sIGZvciBhIGNsaW5pY2FsIGZlYXNpYmlsaXR5IHN0dWR5IGluIHBlb3BsZSB3aXRoIFBhcmtpbnNvbuKAmXMgZGlzZWFzZTwvdGl0bGU+CiAgPC90aXRsZXM+CiAgPGRlc2NyaXB0aW9ucz4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9IkFic3RyYWN0Ij5BYnN0cmFjdCBCYWNrZ3JvdW5kIENsaW5pY2FsIGd1aWRlbGluZXMgZm9yIHBlb3BsZSB3aXRoIFBhcmtpbnNvbuKAmXMgZGlzZWFzZSAocHdQRCkgc3RyZXNzIHRoYXQsIGNvbXBsZW1lbnRhcnkgdG8gcGhhcm1hY29sb2dpY2FsIHRyZWF0bWVudCwgZXhlcmNpc2UgYW5kIHBoeXNpb3RoZXJhcHkgc2hvdWxkIGJlIGdpdmVuIGEgY2VudHJhbCByb2xlIGluIGRpc2Vhc2UgbWFuYWdlbWVudC4gQWRoZXJpbmcgdG8gcmVndWxhciBleGVyY2lzZSBvZiB0aGUgcmlnaHQgdHlwZSwgYW5kIHdpdGggaGlnaCByZXBldGl0aW9uLCByZW1haW5zIGEgY2hhbGxlbmdlIGZvciBwd1BELiBFeGVyZ2FtaW5nIGhhcyB0aGUgcG90ZW50aWFsIHRvIGluY3JlYXNlIGFkaGVyZW5jZSB0aHJvdWdoIHBsYXkgYW5kIHBlcnNvbmFsaXNlZCBpbnRlcnZlbnRpb25zLCBib3RoIGluIGNsaW5pYyBhbmQgYXQgaG9tZS4gUmVhbGl0eSBEVHjCriBpcyBhbiBhdWdtZW50ZWQtcmVhbGl0eSAoQVIpIGhvbWUtYmFzZWQgZ2FpdC1hbmQtYmFsYW5jZSBleGVyZ2FtaW5nIGludGVydmVudGlvbiBzcGVjaWZpY2FsbHkgZGVzaWduZWQgZm9yIHB3UEQgYXMgYW4gZXh0ZW5zaW9uIG9mIHN1cGVydmlzZWQgcGh5c2lvdGhlcmFweS4gVGhlIHByaW1hcnkgb2JqZWN0aXZlIG9mIHRoaXMgc3R1ZHkgaXMgdG8gZXZhbHVhdGUgdGhlIGZlYXNpYmlsaXR5IGFuZCBwb3RlbnRpYWwgZWZmaWNhY3kgb2YgUmVhbGl0eSBEVHjCri4gTWV0aG9kcyBUd2VudHktZm91ciBwd1BEIChIb2VobiBhbmQgWWFociBzdGFnZXMgMuKAkzQpIHdpdGggc2VsZi1yZXBvcnRlZCBnYWl0IGFuZC9vciBiYWxhbmNlIGltcGFpcm1lbnRzIHdpbGwgcGFydGljaXBhdGUgaW4gdGhpcyBzdHVkeS4gVGhlIHN0dWR5IGNvbXByaXNlcyBhIDYtd2VlayB3YWl0bGlzdC1jb250cm9sbGVkIEFSIGhvbWUtYmFzZWQgdGhlcmFwZXV0aWMgZ2FpdC1hbmQtYmFsYW5jZSBleGVyZ2FtaW5nIGludGVydmVudGlvbi4gUmVhbGl0eSBEVHjCriB3aWxsIGluaXRpYWxseSBiZSBwcmVzY3JpYmVkIHJlbW90ZWx5IGZvciBhIG1pbmltdW0gb2YgNcKgZGF5cyBhIHdlZWsgZm9yIDMwwqBtaW4gcGVyIGRheS4gV2Ugd2lsbCByZW1vdGVseSBzZXQgYW5kIGFkanVzdCB0aGUgZnJlcXVlbmN5LCBkaWZmaWN1bHR5LCB0eXBlIG9mIGdhbWVzLCBhbmQvb3IgZHVyYXRpb24gd2Vla2x5LCBiYXNlZCBvbiBvYmplY3RpdmUgYW5kIHN1YmplY3RpdmUgZGF0YSBmcm9tIHRoZSBBUiBnbGFzc2VzIGFuZCBwYXJ0aWNpcGFudCwgcmVzcGVjdGl2ZWx5LiBJbiBhZGRpdGlvbiB0byB0aGUgaG9tZS1iYXNlZCBnYWl0LWFuZC1iYWxhbmNlIGV4ZXJnYW1pbmcgaW50ZXJ2ZW50aW9uLCB0aGUgc3R1ZHkgY29tcHJpc2VzIHRocmVlIGxhYm9yYXRvcnkgdmlzaXRzOiBiZWZvcmUgdGhlIDYtd2VlayB3YWl0bGlzdCBwZXJpb2QgKHQwOyBiYXNlbGluZSksIGJlZm9yZSB0aGUgNi13ZWVrIGludGVydmVudGlvbiBwZXJpb2QgKHQxOyBwcmUtaW50ZXJ2ZW50aW9uKSwgYW5kIGFmdGVyIHRoZSA2LXdlZWsgaW50ZXJ2ZW50aW9uIHBlcmlvZCAodDI7IHBvc3QtaW50ZXJ2ZW50aW9uKS4gVGhlIHByaW1hcnkgc3R1ZHkgcGFyYW1ldGVycyBhcmUgZmVhc2liaWxpdHkgKGluIHRlcm1zIG9mIHNhZmV0eSwgYWRoZXJlbmNlLCBhbmQgdXNlciBleHBlcmllbmNlKSBhbmQgcG90ZW50aWFsIGVmZmljYWN5IGZvciBpbXByb3ZpbmcgZ2FpdCBhbmQgYmFsYW5jZSAodXNpbmcgc3RhbmRhcmQgY2xpbmljYWwgZ2FpdC1hbmQtYmFsYW5jZSB0ZXN0cyBhbmQgYSB0YXJnZXRlZCB3YWxraW5nLXJlbGF0ZWQgZmFsbC1yaXNrIGFzc2Vzc21lbnQpLiBSZWNydWl0bWVudCBzdGFydGVkIGluIERlY2VtYmVyIDIwMjIgYW5kIHRoZSBmaW5hbCBwb3N0LWludGVydmVudGlvbiBhc3Nlc3NtZW50IHdpbGwgYmUgYWNjb3JkaW5nIHRvIHBsYW5uaW5nIGluIEp1bHkgMjAyMy4gQ29uY2x1c2lvbnMgVGhpcyBjbGluaWNhbCBmZWFzaWJpbGl0eSB0cmlhbCBpcyB0aGUgZmlyc3QgcmVtb3RlbHkgcHJlc2NyaWJlZCBhbmQgbW9uaXRvcmVkIGhvbWUtYmFzZWQgQVIgZ2FpdC1hbmQtYmFsYW5jZSBleGVyZ2FtaW5nIGludGVydmVudGlvbiBmb3IgcHdQRC4gVGhlIHJlc3VsdHMgaW4gdGVybXMgb2YgY2xpbmljYWwgZmVhc2liaWxpdHkgKGkuZS4gc2FmZXR5LCBhZGhlcmVuY2UsIGFuZCB1c2VyIGV4cGVyaWVuY2UpIGFuZCBwb3RlbnRpYWwgZWZmaWNhY3kgKGdhaXQsIGJhbGFuY2UsIGFuZCBmYWxsLXJpc2sgb3V0Y29tZXMpIGZvcm0gdGhlIGJhc2lzIGZvciBmdXR1cmUgcmFuZG9taXNlZCBjb250cm9sbGVkIHN0dWRpZXMgb24gdGhlIGVmZmVjdGl2ZW5lc3Mgb2YgaG9tZS1iYXNlZCBBUiBnYWl0LWFuZC1iYWxhbmNlIGV4ZXJnYW1pbmcgaW50ZXJ2ZW50aW9ucyBmb3IgcHdQRC4gVHJpYWwgcmVnaXN0cmF0aW9uIENsaW5pY2FsVHJpYWxzLmdvdiwgTkNUMDU2MDUyNDkgLiBSZWdpc3RlcmVkIG9uIDQgTm92ZW1iZXIgMjAyMi48L2Rlc2NyaXB0aW9uPgogIDwvZGVzY3JpcHRpb25zPgogIDxzdWJqZWN0cz4KICAgIDxzdWJqZWN0Pk1lZGljaW5lPC9zdWJqZWN0PgogICAgPHN1YmplY3Q+QmlvdGVjaG5vbG9neTwvc3ViamVjdD4KICAgIDxzdWJqZWN0PlNvY2lvbG9neTwvc3ViamVjdD4KICAgIDxzdWJqZWN0PkltbXVub2xvZ3k8L3N1YmplY3Q+CiAgPC9zdWJqZWN0cz4KICA8cHVibGlzaGVyPmZpZ3NoYXJlPC9wdWJsaXNoZXI+CiAgPHB1YmxpY2F0aW9uWWVhcj4yMDI0PC9wdWJsaWNhdGlvblllYXI+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9IkNyZWF0ZWQiPjIwMjQtMDgtMTg8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iVXBkYXRlZCI+MjAyNC0wOC0xODwvZGF0ZT4KICA8L2RhdGVzPgogIDxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iQ29sbGVjdGlvbiI+Q29sbGVjdGlvbjwvcmVzb3VyY2VUeXBlPgogIDxyZWxhdGVkSWRlbnRpZmllcnM+CiAgICA8cmVsYXRlZElkZW50aWZpZXIgcmVsYXRlZElkZW50aWZpZXJUeXBlPSJET0kiIHJlbGF0aW9uVHlwZT0iSXNJZGVudGljYWxUbyI+MTAuNjA4NC9tOS5maWdzaGFyZS5jLjcxNTM5MzU8L3JlbGF0ZWRJZGVudGlmaWVyPgogIDwvcmVsYXRlZElkZW50aWZpZXJzPgogIDxyaWdodHNMaXN0PgogICAgPHJpZ2h0cyByaWdodHNVUkk9Imh0dHBzOi8vY3JlYXRpdmVjb21tb25zLm9yZy9saWNlbnNlcy9ieS80LjAvIj5DQyBCWSA0LjA8L3JpZ2h0cz4KICA8L3JpZ2h0c0xpc3Q+CjwvcmVzb3VyY2U+",
+            "dates": [
+              {
+                "date": "2024-08-18",
+                "dateType": "Created"
+              },
+              {
+                "date": "2024-08-18",
+                "dateType": "Updated"
+              },
+              {
+                "date": "2024",
+                "dateType": "Issued"
+              }
+            ],
+            "sizes": [],
+            "state": "findable",
+            "types": {
+              "ris": "GEN",
+              "bibtex": "misc",
+              "citeproc": "article",
+              "schemaOrg": "Collection",
+              "resourceType": "Collection",
+              "resourceTypeGeneral": "Collection"
+            },
+            "prefix": "10.6084",
+            "reason": null,
+            "source": "mds",
+            "suffix": "m9.figshare.c.7153935.v1",
+            "titles": [
+              {
+                "title": "Remotely prescribed and monitored home-based gait-and-balance therapeutic exergaming using augmented reality (AR) glasses: protocol for a clinical feasibility study in people with Parkinson’s disease"
+              }
+            ],
+            "created": "2024-08-18T17:17:41Z",
+            "formats": [],
+            "updated": "2024-08-18T17:17:42Z",
+            "version": null,
+            "creators": [
+              {
+                "name": "Hardeman, L. E. S.",
+                "givenName": "L. E. S.",
+                "familyName": "Hardeman",
+                "affiliation": [
+                  {
+                    "name": "VU Amsterdam",
+                    "schemeUri": "https://ror.org/",
+                    "affiliationIdentifier": "https://ror.org/008xxew50",
+                    "affiliationIdentifierScheme": "ROR"
+                  }
+                ],
+                "nameIdentifiers": [
+                  {
+                    "schemeUri": "https://orcid.org",
+                    "nameIdentifier": "https://orcid.org/0000-0001-9963-8087",
+                    "nameIdentifierScheme": "ORCID"
+                  }
+                ]
+              },
+              {
+                "name": "Geerse, D. J.",
+                "givenName": "D. J.",
+                "familyName": "Geerse",
+                "affiliation": [
+                  {
+                    "name": "VU Amsterdam",
+                    "schemeUri": "https://ror.org/",
+                    "affiliationIdentifier": "https://ror.org/008xxew50",
+                    "affiliationIdentifierScheme": "ROR"
+                  }
+                ],
+                "nameIdentifiers": []
+              },
+              {
+                "name": "Hoogendoorn, E. M.",
+                "givenName": "E. M.",
+                "familyName": "Hoogendoorn",
+                "affiliation": [
+                  {
+                    "name": "VU Amsterdam",
+                    "schemeUri": "https://ror.org/",
+                    "affiliationIdentifier": "https://ror.org/008xxew50",
+                    "affiliationIdentifierScheme": "ROR"
+                  }
+                ],
+                "nameIdentifiers": []
+              },
+              {
+                "name": "Nonnekes, J.",
+                "givenName": "J.",
+                "familyName": "Nonnekes",
+                "affiliation": [
+                  {
+                    "name": "Radboud University Nijmegen Medical Centre",
+                    "schemeUri": "https://ror.org/",
+                    "affiliationIdentifier": "https://ror.org/05wg1m734",
+                    "affiliationIdentifierScheme": "ROR"
+                  },
+                  {
+                    "name": "Sint Maartenskliniek",
+                    "schemeUri": "https://ror.org/",
+                    "affiliationIdentifier": "https://ror.org/0454gfp30",
+                    "affiliationIdentifierScheme": "ROR"
+                  }
+                ],
+                "nameIdentifiers": []
+              },
+              {
+                "name": "Roerdink, M.",
+                "givenName": "M.",
+                "familyName": "Roerdink",
+                "affiliation": [
+                  {
+                    "name": "VU Amsterdam",
+                    "schemeUri": "https://ror.org/",
+                    "affiliationIdentifier": "https://ror.org/008xxew50",
+                    "affiliationIdentifierScheme": "ROR"
+                  }
+                ],
+                "nameIdentifiers": []
+              }
+            ],
+            "isActive": true,
+            "language": null,
+            "subjects": [
+              {
+                "subject": "Medicine"
+              },
+              {
+                "subject": "Biotechnology"
+              },
+              {
+                "subject": "Sociology"
+              },
+              {
+                "subject": "FOS: Sociology",
+                "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+                "subjectScheme": "Fields of Science and Technology (FOS)"
+              },
+              {
+                "subject": "Immunology"
+              },
+              {
+                "subject": "FOS: Clinical medicine",
+                "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+                "subjectScheme": "Fields of Science and Technology (FOS)"
+              }
+            ],
+            "container": {},
+            "partCount": 0,
+            "published": null,
+            "publisher": {
+              "name": "figshare"
+            },
+            "viewCount": 0,
+            "contentUrl": null,
+            "registered": "2024-08-18T17:17:42Z",
+            "rightsList": [
+              {
+                "rights": "Creative Commons Attribution 4.0 International",
+                "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+                "schemeUri": "https://spdx.org/licenses/",
+                "rightsIdentifier": "cc-by-4.0",
+                "rightsIdentifierScheme": "SPDX"
+              }
+            ],
+            "identifiers": [],
+            "partOfCount": 0,
+            "contributors": [],
+            "descriptions": [
+              {
+                "description": "Abstract Background Clinical guidelines for people with Parkinson’s disease (pwPD) stress that, complementary to pharmacological treatment, exercise and physiotherapy should be given a central role in disease management. Adhering to regular exercise of the right type, and with high repetition, remains a challenge for pwPD. Exergaming has the potential to increase adherence through play and personalised interventions, both in clinic and at home. Reality DTx® is an augmented-reality (AR) home-based gait-and-balance exergaming intervention specifically designed for pwPD as an extension of supervised physiotherapy. The primary objective of this study is to evaluate the feasibility and potential efficacy of Reality DTx®. Methods Twenty-four pwPD (Hoehn and Yahr stages 2–4) with self-reported gait and/or balance impairments will participate in this study. The study comprises a 6-week waitlist-controlled AR home-based therapeutic gait-and-balance exergaming intervention. Reality DTx® will initially be prescribed remotely for a minimum of 5 days a week for 30 min per day. We will remotely set and adjust the frequency, difficulty, type of games, and/or duration weekly, based on objective and subjective data from the AR glasses and participant, respectively. In addition to the home-based gait-and-balance exergaming intervention, the study comprises three laboratory visits: before the 6-week waitlist period (t0; baseline), before the 6-week intervention period (t1; pre-intervention), and after the 6-week intervention period (t2; post-intervention). The primary study parameters are feasibility (in terms of safety, adherence, and user experience) and potential efficacy for improving gait and balance (using standard clinical gait-and-balance tests and a targeted walking-related fall-risk assessment). Recruitment started in December 2022 and the final post-intervention assessment will be according to planning in July 2023. Conclusions This clinical feasibility trial is the first remotely prescribed and monitored home-based AR gait-and-balance exergaming intervention for pwPD. The results in terms of clinical feasibility (i.e. safety, adherence, and user experience) and potential efficacy (gait, balance, and fall-risk outcomes) form the basis for future randomised controlled studies on the effectiveness of home-based AR gait-and-balance exergaming interventions for pwPD. Trial registration ClinicalTrials.gov, NCT05605249 . Registered on 4 November 2022.",
+                "descriptionType": "Abstract"
+              }
+            ],
+            "geoLocations": [],
+            "relatedItems": [],
+            "versionCount": 0,
+            "citationCount": 0,
+            "downloadCount": 0,
+            "schemaVersion": "http://datacite.org/schema/kernel-4",
+            "viewsOverTime": [],
+            "referenceCount": 0,
+            "versionOfCount": 0,
+            "metadataVersion": 0,
+            "publicationYear": 2024,
+            "citationsOverTime": [],
+            "downloadsOverTime": [],
+            "fundingReferences": [],
+            "relatedIdentifiers": [
+              {
+                "relationType": "IsIdenticalTo",
+                "relatedIdentifier": "10.6084/m9.figshare.c.7153935",
+                "relatedIdentifierType": "DOI"
+              }
+            ],
+            "alternateIdentifiers": []
+          },
+          "relationships": {
+            "parts": {
+              "data": []
+            },
+            "client": {
+              "data": {
+                "id": "figshare.ars",
+                "type": "clients"
+              }
+            },
+            "partOf": {
+              "data": []
+            },
+            "provider": {
+              "data": {
+                "id": "otjm",
+                "type": "providers"
+              }
+            },
+            "versions": {
+              "data": []
+            },
+            "citations": {
+              "data": []
+            },
+            "versionOf": {
+              "data": []
+            },
+            "references": {
+              "data": []
+            }
+          }
+        }
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:15:58.808688",
+      "processing_time_ms": 3882
+    },
+    "openalex": {
+      "data": {
+        "id": "https://openalex.org/W4393247161",
+        "doi": "https://doi.org/10.1186/s40814-024-01480-w",
+        "title": "Remotely prescribed and monitored home-based gait-and-balance therapeutic exergaming using augmented reality (AR) glasses: protocol for a clinical feasibility study in people with Parkinson’s disease",
+        "open_access": {
+          "is_oa": true,
+          "oa_url": "https://pilotfeasibilitystudies.biomedcentral.com/counter/pdf/10.1186/s40814-024-01480-w",
+          "oa_status": "gold",
+          "any_repository_has_fulltext": true
+        },
+        "cited_by_count": 10,
+        "publication_year": 2024
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:15:56.154718",
+      "processing_time_ms": 1235
+    },
+    "unpaywall": {
+      "data": {
+        "doi": "10.1186/s40814-024-01480-w",
+        "year": 2024,
+        "genre": "journal-article",
+        "is_oa": true,
+        "title": "Remotely prescribed and monitored home-based gait-and-balance therapeutic exergaming using augmented reality (AR) glasses: protocol for a clinical feasibility study in people with Parkinson’s disease",
+        "doi_url": "https://doi.org/10.1186/s40814-024-01480-w",
+        "oa_status": "gold",
+        "publisher": "Springer Science and Business Media LLC",
+        "is_paratext": false,
+        "journal_name": "Pilot and Feasibility Studies",
+        "journal_issns": "2055-5784",
+        "journal_issn_l": "2055-5784",
+        "published_date": "2024-03-27",
+        "z_authors_summary": {
+          "count": 5,
+          "first_author": ""
+        },
+        "has_repository_copy": true,
+        "oa_locations_summary": {
+          "count": 3,
+          "has_repository": true
+        },
+        "best_oa_location_summary": {
+          "is_best": true,
+          "host_type": "publisher",
+          "url_for_pdf": true
+        },
+        "first_oa_location_summary": {
+          "is_first": true,
+          "host_type": "publisher",
+          "url_for_pdf": true
+        }
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:15:56.159849",
+      "processing_time_ms": 1238
+    },
+    "europe_pmc": {
+      "data": {
+        "id": "38539250",
+        "doi": "10.1186/s40814-024-01480-w",
+        "pmid": "38539250",
+        "inPMC": "Y",
+        "pmcid": "PMC10967163",
+        "title": "Remotely prescribed and monitored home-based gait-and-balance therapeutic exergaming using augmented reality (AR) glasses: protocol for a clinical feasibility study in people with Parkinson's disease.",
+        "hasPDF": "Y",
+        "inEPMC": "Y",
+        "source": "MED",
+        "authMan": "N",
+        "hasBook": "N",
+        "hasData": "Y",
+        "license": "cc by",
+        "pubYear": "2024",
+        "hasSuppl": "Y",
+        "language": "eng",
+        "pageInfo": "54",
+        "pubModel": "Electronic",
+        "authorList": {
+          "author": [
+            {
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-9963-8087"
+              },
+              "fullName": "Hardeman LES",
+              "initials": "LES",
+              "lastName": "Hardeman",
+              "firstName": "L E S",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Human Movement Sciences, Faculty of Behavioural and Movement Sciences, Vrije Universiteit Amsterdam, Amsterdam Movement Sciences, Amsterdam, The Netherlands. l.e.s.hardeman@vu.nl."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Geerse DJ",
+              "initials": "DJ",
+              "lastName": "Geerse",
+              "firstName": "D J",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Human Movement Sciences, Faculty of Behavioural and Movement Sciences, Vrije Universiteit Amsterdam, Amsterdam Movement Sciences, Amsterdam, The Netherlands."
+                  }
+                ]
+              }
+            },
+            {
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0005-4554-3628"
+              },
+              "fullName": "Hoogendoorn EM",
+              "initials": "EM",
+              "lastName": "Hoogendoorn",
+              "firstName": "E M",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Human Movement Sciences, Faculty of Behavioural and Movement Sciences, Vrije Universiteit Amsterdam, Amsterdam Movement Sciences, Amsterdam, The Netherlands."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Nonnekes J",
+              "initials": "J",
+              "lastName": "Nonnekes",
+              "firstName": "J",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Rehabilitation, Centre of Expertise for Parkinson & Movement Disorders, Donders Institute for Brain, Cognition and Behaviour, Radboud University Medical Centre, Nijmegen, The Netherlands."
+                  },
+                  {
+                    "affiliation": "Department of Rehabilitation, Sint Maartenskliniek, Nijmegen, The Netherlands."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Roerdink M",
+              "initials": "M",
+              "lastName": "Roerdink",
+              "firstName": "M",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Human Movement Sciences, Faculty of Behavioural and Movement Sciences, Vrije Universiteit Amsterdam, Amsterdam Movement Sciences, Amsterdam, The Netherlands."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Eureka Eurostars",
+              "grantId": "E115506",
+              "orderIn": 0
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "affiliation": "Department of Human Movement Sciences, Faculty of Behavioural and Movement Sciences, Vrije Universiteit Amsterdam, Amsterdam Movement Sciences, Amsterdam, The Netherlands. l.e.s.hardeman@vu.nl.",
+        "epmcAuthMan": "N",
+        "journalInfo": {
+          "issue": "1",
+          "volume": "10",
+          "journal": {
+            "essn": "2055-5784",
+            "issn": "2055-5784",
+            "nlmid": "101676536",
+            "title": "Pilot and feasibility studies",
+            "isoabbreviation": "Pilot Feasibility Stud",
+            "medlineAbbreviation": "Pilot Feasibility Stud"
+          },
+          "journalIssueId": 3732697,
+          "dateOfPublication": "2024 Mar",
+          "yearOfPublication": 2024,
+          "monthOfPublication": 3,
+          "printPublicationDate": "2024-03-01"
+        },
+        "keywordList": {
+          "keyword": [
+            "Rehabilitation",
+            "Balance",
+            "Gait",
+            "Parkinson’s Disease",
+            "Remote Monitoring",
+            "Exergaming",
+            "Clinical Feasibility",
+            "Home-based Therapy",
+            "Augmented-reality"
+          ]
+        },
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "abstractText": "<h4>Background</h4>Clinical guidelines for people with Parkinson's disease (pwPD) stress that, complementary to pharmacological treatment, exercise and physiotherapy should be given a central role in disease management. Adhering to regular exercise of the right type, and with high repetition, remains a challenge for pwPD. Exergaming has the potential to increase adherence through play and personalised interventions, both in clinic and at home. Reality DTx<sup>®</sup> is an augmented-reality (AR) home-based gait-and-balance exergaming intervention specifically designed for pwPD as an extension of supervised physiotherapy. The primary objective of this study is to evaluate the feasibility and potential efficacy of Reality DTx<sup>®</sup>.<h4>Methods</h4>Twenty-four pwPD (Hoehn and Yahr stages 2-4) with self-reported gait and/or balance impairments will participate in this study. The study comprises a 6-week waitlist-controlled AR home-based therapeutic gait-and-balance exergaming intervention. Reality DTx<sup>®</sup> will initially be prescribed remotely for a minimum of 5 days a week for 30 min per day. We will remotely set and adjust the frequency, difficulty, type of games, and/or duration weekly, based on objective and subjective data from the AR glasses and participant, respectively. In addition to the home-based gait-and-balance exergaming intervention, the study comprises three laboratory visits: before the 6-week waitlist period (t0; baseline), before the 6-week intervention period (t1; pre-intervention), and after the 6-week intervention period (t2; post-intervention). The primary study parameters are feasibility (in terms of safety, adherence, and user experience) and potential efficacy for improving gait and balance (using standard clinical gait-and-balance tests and a targeted walking-related fall-risk assessment). Recruitment started in December 2022 and the final post-intervention assessment will be according to planning in July 2023.<h4>Conclusions</h4>This clinical feasibility trial is the first remotely prescribed and monitored home-based AR gait-and-balance exergaming intervention for pwPD. The results in terms of clinical feasibility (i.e. safety, adherence, and user experience) and potential efficacy (gait, balance, and fall-risk outcomes) form the basis for future randomised controlled studies on the effectiveness of home-based AR gait-and-balance exergaming interventions for pwPD.<h4>Trial registration</h4>ClinicalTrials.gov, NCT05605249 . Registered on 4 November 2022.",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-9963-8087"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0005-4554-3628"
+            }
+          ]
+        },
+        "authorString": "Hardeman LES, Geerse DJ, Hoogendoorn EM, Nonnekes J, Roerdink M.",
+        "citedByCount": 5,
+        "hasLabsLinks": "Y",
+        "isOpenAccess": "Y",
+        "hasReferences": "Y",
+        "dateOfCreation": "2024-03-28",
+        "dateOfRevision": "2024-11-10",
+        "firstIndexDate": "2024-03-28",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC10967163"
+          ]
+        },
+        "hasEvaluations": "N",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "url": "https://doi.org/10.1186/s40814-024-01480-w",
+              "site": "Unpaywall",
+              "availability": "Open access",
+              "documentStyle": "doi",
+              "availabilityCode": "OA"
+            },
+            {
+              "url": "https://doi.org/10.1186/s40814-024-01480-w",
+              "site": "DOI",
+              "availability": "Subscription required",
+              "documentStyle": "doi",
+              "availabilityCode": "S"
+            },
+            {
+              "url": "https://europepmc.org/articles/PMC10967163",
+              "site": "Europe_PMC",
+              "availability": "Open access",
+              "documentStyle": "html",
+              "availabilityCode": "OA"
+            },
+            {
+              "url": "https://europepmc.org/articles/PMC10967163?pdf=render",
+              "site": "Europe_PMC",
+              "availability": "Open access",
+              "documentStyle": "pdf",
+              "availabilityCode": "OA"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "supporting_data"
+          ]
+        },
+        "hasTextMinedTerms": "Y",
+        "publicationStatus": "epublish",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "nct"
+          ]
+        },
+        "firstPublicationDate": "2024-03-27",
+        "fullTextReceivedDate": "2024-03-29",
+        "hasDbCrossReferences": "N",
+        "hasTMAccessionNumbers": "Y",
+        "electronicPublicationDate": "2024-03-27"
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:15:56.705358",
+      "processing_time_ms": 1785
+    },
+    "semantic_scholar": {
+      "data": {
+        "year": 2024,
+        "title": "Remotely prescribed and monitored home-based gait-and-balance therapeutic exergaming using augmented reality (AR) glasses: protocol for a clinical feasibility study in people with Parkinson’s disease",
+        "authors": [
+          {
+            "name": "L. E. S. Hardeman",
+            "authorId": "2293675324"
+          },
+          {
+            "name": "D. Geerse",
+            "authorId": "5172973"
+          },
+          {
+            "name": "E. M. Hoogendoorn",
+            "authorId": "2296195915"
+          },
+          {
+            "name": "J. Nonnekes",
+            "authorId": "2293678142"
+          },
+          {
+            "name": "M. Roerdink",
+            "authorId": "2293675327"
+          }
+        ],
+        "journal": {
+          "name": "Pilot and Feasibility Studies",
+          "volume": "10"
+        },
+        "paperId": "89c479014f30b7a1639ba9b1aab97a008c995855",
+        "abstract": "Background Clinical guidelines for people with Parkinson’s disease (pwPD) stress that, complementary to pharmacological treatment, exercise and physiotherapy should be given a central role in disease management. Adhering to regular exercise of the right type, and with high repetition, remains a challenge for pwPD. Exergaming has the potential to increase adherence through play and personalised interventions, both in clinic and at home. Reality DTx® is an augmented-reality (AR) home-based gait-and-balance exergaming intervention specifically designed for pwPD as an extension of supervised physiotherapy. The primary objective of this study is to evaluate the feasibility and potential efficacy of Reality DTx®. Methods Twenty-four pwPD (Hoehn and Yahr stages 2–4) with self-reported gait and/or balance impairments will participate in this study. The study comprises a 6-week waitlist-controlled AR home-based therapeutic gait-and-balance exergaming intervention. Reality DTx® will initially be prescribed remotely for a minimum of 5 days a week for 30 min per day. We will remotely set and adjust the frequency, difficulty, type of games, and/or duration weekly, based on objective and subjective data from the AR glasses and participant, respectively. In addition to the home-based gait-and-balance exergaming intervention, the study comprises three laboratory visits: before the 6-week waitlist period (t0; baseline), before the 6-week intervention period (t1; pre-intervention), and after the 6-week intervention period (t2; post-intervention). The primary study parameters are feasibility (in terms of safety, adherence, and user experience) and potential efficacy for improving gait and balance (using standard clinical gait-and-balance tests and a targeted walking-related fall-risk assessment). Recruitment started in December 2022 and the final post-intervention assessment will be according to planning in July 2023. Conclusions This clinical feasibility trial is the first remotely prescribed and monitored home-based AR gait-and-balance exergaming intervention for pwPD. The results in terms of clinical feasibility (i.e. safety, adherence, and user experience) and potential efficacy (gait, balance, and fall-risk outcomes) form the basis for future randomised controlled studies on the effectiveness of home-based AR gait-and-balance exergaming interventions for pwPD. Trial registration ClinicalTrials.gov, NCT05605249. Registered on 4 November 2022. Supplementary Information The online version contains supplementary material available at 10.1186/s40814-024-01480-w.",
+        "externalIds": {
+          "DOI": "10.1186/s40814-024-01480-w",
+          "PubMed": "38539250",
+          "CorpusId": 262089394,
+          "PubMedCentral": "10967163"
+        },
+        "isOpenAccess": true,
+        "citationCount": 6,
+        "openAccessPdf": {
+          "url": "https://pilotfeasibilitystudies.biomedcentral.com/counter/pdf/10.1186/s40814-024-01480-w",
+          "status": "GOLD",
+          "license": "CCBY",
+          "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10967163, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:15:55.855890",
+      "processing_time_ms": 938
+    }
+  },
+  "questions_json": {
+    "reason": "custom_topics_not_enabled",
+    "success": false,
+    "extraction_method": "disabled",
+    "processing_timestamp": "2025-07-22T14:18:15.173876"
+  },
+  "apis_clean_json": {
+    "timestamp": "2025-07-22T14:17:17.936544",
+    "cost_tracking": {
+      "model": "deepseek-chat",
+      "call_type": "smart_consensus",
+      "timestamp": "2025-07-22T14:17:17.936387",
+      "input_cost": 0.007956,
+      "total_cost": 0.009656,
+      "output_cost": 0.0017,
+      "input_tokens": 29468,
+      "total_tokens": 31013,
+      "output_tokens": 1545,
+      "parsing_error": null,
+      "parsing_successful": true,
+      "processing_time_ms": 79125
+    },
+    "consensus_result": {
+      "DOI": "10.1186/s40814-024-01480-w",
+      "PMID": "38539250",
+      "Year": 2024,
+      "Issue": "1",
+      "PMCID": "PMC10967163",
+      "Pages": null,
+      "Title": "Remotely prescribed and monitored home-based gait-and-balance therapeutic exergaming using augmented reality glasses: protocol for a clinical feasibility study in people with Parkinson’s disease",
+      "PDFUrl": "https://pilotfeasibilitystudies.biomedcentral.com/counter/pdf/10.1186/s40814-024-01480-w",
+      "Volume": "10",
+      "Authors": [
+        "Hardeman, L. E. S.",
+        "Geerse, D. J.",
+        "Hoogendoorn, E. M.",
+        "Nonnekes, J.",
+        "Roerdink, M."
+      ],
+      "Journal": "Pilot and Feasibility Studies",
+      "Abstract": "Clinical guidelines for people with Parkinson’s disease stress that, complementary to pharmacological treatment, exercise and physiotherapy should be given a central role in disease management. Adhering to regular exercise of the right type, and with high repetition, remains a challenge for people with Parkinson’s disease. Exergaming has the potential to increase adherence through play and personalised interventions, both in clinic and at home. Reality DTx is an augmented-reality home-based gait-and-balance exergaming intervention specifically designed for people with Parkinson’s disease as an extension of supervised physiotherapy. The primary objective of this study is to evaluate the feasibility and potential efficacy of Reality DTx. Twenty-four people with Parkinson’s disease (Hoehn and Yahr stages 2–4) with self-reported gait and/or balance impairments will participate in this study. The study comprises a 6-week waitlist-controlled AR home-based therapeutic gait-and-balance exergaming intervention. Reality DTx will initially be prescribed remotely for a minimum of 5 days a week for 30 min per day. We will remotely set and adjust the frequency, difficulty, type of games, and/or duration weekly, based on objective and subjective data from the AR glasses and participant, respectively. In addition to the home-based gait-and-balance exergaming intervention, the study comprises three laboratory visits: before the 6-week waitlist period (t0; baseline), before the 6-week intervention period (t1; pre-intervention), and after the 6-week intervention period (t2; post-intervention). The primary study parameters are feasibility (in terms of safety, adherence, and user experience) and potential efficacy for improving gait and balance (using standard clinical gait-and-balance tests and a targeted walking-related risk assessment). Recruitment started in December 2022 and the final post-intervention assessment will be according to planning in July 2023. This clinical feasibility trial is the first remotely prescribed and monitored home-based AR gait-and-balance exergaming intervention for people with Parkinson’s disease. The results in terms of clinical feasibility (i.e., safety, adherence, and user experience) and potential efficacy (gait, balance, and fall-risk outcomes) form the basis for future randomised controlled studies on the effectiveness of home-based AR gait-and-balance exergaming interventions for people with Parkinson’s disease.",
+      "Keywords": [
+        "Parkinson’s disease",
+        "Augmented reality",
+        "Clinical feasibility",
+        "Home-based therapy",
+        "Rehabilitation",
+        "Exergaming",
+        "Remote monitoring",
+        "Gait",
+        "Balance"
+      ],
+      "Citations": 6,
+      "Publisher": "BMC",
+      "OpenAccess": true,
+      "confidence_factors": {
+        "source": "Vision-Foundation + API Enhancement",
+        "reasoning": "Vision data used as foundation with extensive validation from multiple APIs. DOI, PMID, PMCID, and citation data were consistently confirmed across sources. Abstract was enhanced with structured sections from Europe PMC. Keywords were combined from multiple sources with duplicates removed.",
+        "field_sources": {
+          "doi": "crossref|openalex|semantic_scholar|europe_pmc|pubmed|unpaywall|doaj",
+          "pmid": "europe_pmc|pubmed",
+          "year": "vision|crossref|openalex|semantic_scholar|europe_pmc|pubmed|unpaywall|doaj",
+          "issue": "crossref|europe_pmc|pubmed|doaj",
+          "pmcid": "europe_pmc|semantic_scholar",
+          "title": "vision",
+          "pdfurl": "semantic_scholar|openalex",
+          "volume": "vision|crossref|europe_pmc|pubmed|doaj",
+          "authors": "crossref|europe_pmc|pubmed|vision",
+          "journal": "vision|crossref|europe_pmc|pubmed|doaj",
+          "abstract": "europe_pmc+vision",
+          "keywords": "doaj+europe_pmc+vision",
+          "citations": "semantic_scholar",
+          "publisher": "vision|crossref|unpaywall|doaj",
+          "openaccess": "openalex|unpaywall|semantic_scholar"
+        },
+        "enhancement_level": "SIGNIFICANT",
+        "validation_status": "HIGH"
+      },
+      "api_success_summary": {
+        "insights": "Excellent coherence across all successful APIs (Crossref, Europe PMC, PubMed, Semantic Scholar, OpenAlex, Unpaywall, DOAJ, CORE, DataCite). ORCID failed due to no results, arXiv is not relevant for this medical publication. Semantic Scholar provided valuable citation data and open access status.",
+        "total_apis": 11,
+        "failed_apis": [
+          "orcid",
+          "arxiv"
+        ],
+        "success_rate": 0.82,
+        "coherent_apis": 9,
+        "coherence_rate": 1.0,
+        "successful_apis": 9
+      }
+    },
+    "processing_time_ms": 83024
+  },
+  "llm_topics_json": {
+    "success": true,
+    "prompt_sent": "You are a scientific research assistant extracting data for academic comparison tables with statistical rigor.\n\nCRITICAL INSTRUCTIONS FOR ACADEMIC COMPARISON:\n\n- SYSTEMATICALLY scan ALL content: text, tables, figures, charts, appendices\n- PRIORITIZE quantitative data while preserving qualitative context\n- When conflicts exist in the paper, prioritize MOST RECENT/AUTHORITATIVE source\n- Extract ALL relevant details mentioned - DON'T truncate important information\n- Include statistical tests results (Z-scores, t-values, chi-square, etc.)\n- Extract accuracy rates, completion rates, success rates with specific numbers\n- Capture comparative data (e.g., \"46% vs 27%\", \"Group A: 64.5%, Group B: 68.2%\")\n- Use proper numeric format: \"p = 0.007\" not \"p = .007\", \"81\" not \"eighty-one\"\n\nCOMPREHENSIVE CAPTURE REQUIREMENTS:\n\n- List ALL hardware components: cameras, sensors, headsets, controllers, phones, tablets, webcams, probes\n- Include ALL software details: platforms, SDKs, libraries, export formats (CSV, JSON), feedback systems\n- Capture ALL measurement instruments: scales, questionnaires, assessment tools (SUS, NASA-TLX, FES-I, MoCA, IKDC, VAS, ABC scale, WHODAS 2.0, etc.)\n- Note ALL technical specifications: resolutions, frame rates, tracking capabilities, joint counts\n- Include ALL study phases: pilot tests, technical validation, user studies, expert evaluations\n- Capture ALL procedural details: training time, calibration steps, data export processes, real-time feedback\n\nCONFLICT RESOLUTION:\n\n- If conflicting information exists, prioritize methods/results over abstract\n- When uncertain, include both: \"X in abstract, Y in methods section\"\n\nExtract the following 7 scientific topics:\n\n1. *study_design*: Extract the PRIMARY study type/design using the most specific and authoritative terminology from the paper's methods section. Recognize equivalent terms: \"RCT\" = \"Randomized controlled trial\", \"Pilot study\" = \"Feasibility pilot study\", \"Cross-sectional\" = \"Observational cross-sectional\", \"User study\" = \"User evaluation study\". When multiple study type descriptions exist, prioritize the most comprehensive version from methods over abstract. Include specific qualifiers when mentioned (e.g., \"multicenter\", \"double-blind\", \"waitlist-controlled\") as these add valuable detail. Format as brief phrase describing core study methodology, avoiding generic terms like \"study\" or \"research\" alone.\n\n2. *methodology*: ONE comprehensive sentence covering: technology + application + key technical details. Include: ALL device models, software platforms, measurement tools, statistical analyses. Capture ALL hardware components mentioned (cameras, sensors, controllers, probes, etc.). Include ALL software features (real-time feedback, data export, tracking capabilities). Mention ALL technical specifications (joint tracking numbers, frame rates, resolutions). Example: \"Microsoft HoloLens 2 with HoloAnatomy platform for 3D anatomical procedural visualization using real-time motion tracking of 25 joints with CSV data export and real-time visual feedback\".\n\n3. *sample_size*: Format: \"X participants/patients\" (use paper's exact terminology). Include TOTAL numbers if multiple groups exist. Include ALL test phases: technical tests, pilot studies, user evaluations. Example: \"25 total: 23 biomedical students + 2 clinical experts; 50 technical validation readings\".\n\n4. *population*: ALL demographic details and characteristics not captured in sample_size. Include age, profession, condition, experience, setting details. Add specific numbers when available. Include recruitment sources and inclusion/exclusion criteria.\n\n5. *primary_outcome*: Include ALL measurement tools, scales, timing, specific metrics, usability criteria (ease of use, realism, anatomical accuracy). List ALL assessment instruments used and functional scales (SUS, NASA-TLX, FES-I, MoCA, IKDC, VAS, ABC scale, WHODAS 2.0, etc.), and evaluation dimensions beyond the primary measures.. Include ALL comparison conditions and timepoints. Example: \"Patient understanding via 5-point Likert scale assessed pre/post intervention, plus SUS usability scores and NASA-TLX workload assessment\".\n\n6. *key_findings*: PRIORITIZE statistical results with practical implications. Format: \"Finding 1: [statistical data + meaning]. Finding 2: [data + context]\". Include ALL significant findings, p-values, effect sizes, accuracy rates, comparative data, accuracy measurements (sub-mm, degrees), specific understanding domains (surgical risks, operative steps, recovery), and detailed performance metrics beyond statistical significance. Present ALL questionnaire results, prototype performance, qualitative benefits. Include ALL cost factors, training requirements, implementation details. Capture ALL comparison groups and their specific results. Be comprehensive - capture complete findings picture. Include ALL technical specifications mentioned: accuracy measurements (sub-mm, degrees).\n\n7. *limitations*: Extract ALL limitations from limitation/discussion sections. Include sample size issues, technical equipment requirements, methodological, practical constraints. Mention ALL equipment needs, calibration requirements, manufacturing variability. Include ALL generalizability issues, validity concerns, implementation barriers. Capture training requirements, cost constraints, specialized equipment needs. Note real-world applicability issues and clinical implementation challenges. Don't summarize - capture complete limitation landscape.\n\nReturn as valid JSON with this EXACT structure:\n\n{\n  \"study_design\": \"string\",\n  \"methodology\": \"string\",\n  \"sample_size\": \"string\",\n  \"population\": \"string\",\n  \"primary_outcome\": \"string\",\n  \"key_findings\": \"string\",\n  \"limitations\": \"string\"\n}",
+    "cost_tracking": {
+      "model": "gpt-4o",
+      "call_type": "scientific_topics_multimodal",
+      "timestamp": "2025-07-22T14:18:14.281279",
+      "input_cost": 0.029695,
+      "total_cost": 0.032905,
+      "output_cost": 0.00321,
+      "input_tokens": 11878,
+      "total_tokens": 12199,
+      "output_tokens": 321
+    },
+    "input_details": {
+      "dpi": 150,
+      "max_tokens": 6000,
+      "model_used": "gpt-4o",
+      "temperature": 0.1,
+      "strategy_used": "vision_all_pages (≤40)",
+      "pdf_total_pages": 14,
+      "image_resolution": "high",
+      "processing_time_ms": 55044,
+      "pdf_pages_processed": 14
+    },
+    "pages_processed": 14,
+    "extracted_topics": {
+      "population": "People with Parkinson's disease, aged 18 or older, Hoehn and Yahr stages 2–4, Dutch language proficiency, experiencing gait/balance impairments.",
+      "limitations": "Sample size limited to 24 due to feasibility constraints; potential equipment variability between AR glasses; generalizability limited to Dutch-speaking pwPD; reliance on self-reported adherence data; potential bias in user experience feedback.",
+      "methodology": "Magic Leap 2 and HoloLens 2 AR glasses with Reality DTx platform for home-based gait-and-balance exergaming using real-time motion tracking and remote monitoring with SLAM technology, CSV data export, and real-time feedback.",
+      "sample_size": "24 participants",
+      "key_findings": "Finding 1: Feasibility expressed in safety (adverse events), adherence (exercise frequency, duration, repetitions), and user experience (26-item User-Experience Questionnaire). Finding 2: Potential efficacy assessed via gait and balance outcomes (Mini-BESTest, Timed Up-and-Go, Lindop Parkinson's Assessment, walking adaptability).",
+      "study_design": "Waitlist-controlled clinical feasibility trial",
+      "primary_outcome": "Feasibility assessed via safety (adverse events), adherence (exercise frequency, duration, repetitions), and user experience (26-item User-Experience Questionnaire) at t0, t1, t2; gait and balance outcomes using Mini-BESTest, Timed Up-and-Go, Lindop Parkinson's Assessment, and walking adaptability tests."
+    },
+    "extraction_method": "multimodal_vision",
+    "extraction_quality": {
+      "topics_missing": 0,
+      "topics_extracted": 7
+    },
+    "processing_time_ms": 55044,
+    "raw_openai_response": {
+      "content": "```json\n{\n  \"study_design\": \"Waitlist-controlled clinical feasibility trial\",\n  \"methodology\": \"Magic Leap 2 and HoloLens 2 AR glasses with Reality DTx platform for home-based gait-and-balance exergaming using real-time motion tracking and remote monitoring with SLAM technology, CSV data export, and real-time feedback.\",\n  \"sample_size\": \"24 participants\",\n  \"population\": \"People with Parkinson's disease, aged 18 or older, Hoehn and Yahr stages 2–4, Dutch language proficiency, experiencing gait/balance impairments.\",\n  \"primary_outcome\": \"Feasibility assessed via safety (adverse events), adherence (exercise frequency, duration, repetitions), and user experience (26-item User-Experience Questionnaire) at t0, t1, t2; gait and balance outcomes using Mini-BESTest, Timed Up-and-Go, Lindop Parkinson's Assessment, and walking adaptability tests.\",\n  \"key_findings\": \"Finding 1: Feasibility expressed in safety (adverse events), adherence (exercise frequency, duration, repetitions), and user experience (26-item User-Experience Questionnaire). Finding 2: Potential efficacy assessed via gait and balance outcomes (Mini-BESTest, Timed Up-and-Go, Lindop Parkinson's Assessment, walking adaptability).\",\n  \"limitations\": \"Sample size limited to 24 due to feasibility constraints; potential equipment variability between AR glasses; generalizability limited to Dutch-speaking pwPD; reliance on self-reported adherence data; potential bias in user experience feedback.\"\n}\n```",
+      "parsing_error": null,
+      "response_length": 1475,
+      "parsing_successful": true
+    },
+    "processing_timestamp": "2025-07-22T14:18:14.281150"
+  },
+  "processing_metadata": {
+    "filename": "5) Remotely prescribed and monitored home-based gait-and-balance therapeutic exergaming using augmented reality (AR) glasses.pdf",
+    "article_id": "unknown",
+    "total_phases": 5,
+    "aggregated_at": "2025-07-22T14:18:15.442102",
+    "phases_completed": {
+      "topics": true,
+      "vision": true,
+      "apis_raw": true,
+      "questions": false,
+      "apis_clean": true
+    },
+    "transparency_level": "complete"
+  }
+}

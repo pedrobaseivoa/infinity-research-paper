@@ -1,0 +1,1531 @@
+{
+  "vision_json": {
+    "source": "gpt-4o-vision",
+    "success": true,
+    "prompt_sent": "Extract ONLY publication metadata from these academic paper pages.\n\nCRITICAL: This data will be sent to 11 external APIs, so format accuracy is essential.\n\nFIELD REQUIREMENTS WITH EXACT FORMATS:\n\n1. **Title**: Clean title for API queries (HIGHEST PRIORITY)\n   - Remove line breaks, extra spaces, formatting\n   - No HTML tags or special characters  \n   - Example: \"Effects of Machine Learning on Healthcare Outcomes\"\n\n2. **Authors**: API-compatible author list (HIGHEST PRIORITY)\n   - Each author as separate string in array\n   - Format: \"FirstName LastName\" or \"F. LastName\"\n   - Clean, no extra punctuation\n   - Example: [\"John Smith\", \"M. Johnson\", \"Sarah Williams\"]\n\n3. **DOI**: Standard DOI format for resolution APIs\n   - Must start with \"10.\" if present\n   - Clean format without URL prefixes\n   - Example: \"10.1234/journal.2024.001\"\n\n4. **Journal**: Clean journal name for database queries\n   - Full journal name preferred over abbreviations\n   - Remove extra formatting, parentheses\n   - Example: \"Nature Medicine\"\n\n5. **Year**: Numeric format for date filtering\n   - 4-digit NUMBER only (not string)\n   - Example: 2024\n\n6. **Volume**: Clean number for bibliographic APIs\n   - Numbers only, no \"Vol.\" prefix\n   - Example: \"15\"\n\n7. **Issue**: Clean number format\n   - Numbers only, no \"No.\" or \"Issue\" prefix\n   - Example: \"3\"\n\n8. **Pages**: Standard page range for citations\n   - Format: \"start-end\" or single page\n   - Example: \"123-135\" or \"45\"\n\n9. **PMID**: PubMed ID for medical APIs\n   - Numbers only, no \"PMID:\" prefix\n   - Example: \"12345678\"\n\n10. **PMCID**: PubMed Central ID for open access papers\n    - Numbers only, no \"PMC\" prefix\n    - Often appears near PMID in biomedical papers\n    - Example: \"9876543\"\n\n11. **Keywords**: API-compatible keyword list\n    - Each keyword as separate string\n    - Research-quality terms, no punctuation\n    - Example: [\"machine learning\", \"healthcare\", \"clinical outcomes\"]\n\n11. **Abstract**: Complete clean text (HIGHEST PRIORITY)\n    - Remove formatting, line breaks, extra spaces\n    - Complete sentences, proper punctuation\n    - Search thoroughly across ALL pages\n    - This is CRITICAL for Semantic Scholar and other APIs\n\n12. **Publisher**: Clean organization name\n    - Official publisher name\n    - Example: \"Elsevier\" or \"Nature Publishing Group\"\n\nABSTRACT EXTRACTION PRIORITY:\n- Look thoroughly across ALL pages for abstract sections\n- Extract COMPLETE text, including multiple paragraphs\n- Check: Abstract, Summary, Introduction summary paragraphs\n- This field is CRITICAL for API enrichment success\n\nReturn JSON format:\n{\n  \"Title\": \"clean title without formatting\",\n  \"Authors\": [\"Author One\", \"Author Two\"],\n  \"DOI\": \"10.xxxx/xxxxx\",\n  \"Journal\": \"clean journal name\", \n  \"Year\": 2024,\n  \"Volume\": \"15\",\n  \"Issue\": \"3\", \n  \"Pages\": \"123-135\",\n  \"Abstract\": \"complete clean abstract text\",\n  \"Keywords\": [\"keyword1\", \"keyword2\"],\n  \"PMID\": \"12345678\",\n  \"PMCID\": \"9876543\",\n  \"Publisher\": \"publisher name\"\n}\n\nReturn null for fields not clearly visible. The Abstract field is MOST IMPORTANT for downstream API success.",
+    "cost_tracking": {
+      "model": "gpt-4o",
+      "call_type": "vision_extraction",
+      "timestamp": "2025-07-22T14:48:06.405310",
+      "input_cost": 0.010275,
+      "total_cost": 0.016335,
+      "output_cost": 0.00606,
+      "input_tokens": 4110,
+      "total_tokens": 4716,
+      "output_tokens": 606
+    },
+    "input_details": {
+      "dpi": 120,
+      "max_tokens": 1500,
+      "model_used": "gpt-4o",
+      "temperature": 0.1,
+      "page_strategy": "strategic",
+      "image_resolution": "high",
+      "processing_time_ms": 25606,
+      "pdf_pages_processed": 3
+    },
+    "extracted_data": {
+      "DOI": "10.3390/children12010032",
+      "PMID": null,
+      "Year": 2025,
+      "Issue": "1",
+      "PMCID": null,
+      "Pages": "32",
+      "Title": "Advancing Pediatric Surgery: The Use of HoloLens 2 for 3D Anatomical Reconstructions in Preoperative Planning",
+      "Volume": "12",
+      "Authors": [
+        "Marco Di Mitri",
+        "Annalisa Di Carmine",
+        "Simone D'Antonio",
+        "Benedetta Maria Capobianco",
+        "Cristian Bisanti",
+        "Edoardo Collautti",
+        "Sara Maria Cravano",
+        "Francesca Ruspi",
+        "Michele Libri",
+        "Tommaso Gargano",
+        "Mario Lima"
+      ],
+      "Journal": "Children",
+      "Abstract": "Background: In pediatric surgery, a comprehensive knowledge of the child’s anatomy is crucial to optimize surgical outcomes and minimize complications. Recent advancements in medical imaging and technology have introduced innovative tools that enhance surgical planning and decision-making. Methods: This study explores the integration of mixed reality technology, specifically the HoloLens 2 headset, for visualization and interaction with three-dimensional (3D) anatomical reconstructions obtained from computed tomography (CT) scans. Our prospective observational study, conducted at the IRCCS (Scientific Hospitalization and Care Institute) Sant’Orsola-Malpighi University Hospital in Bologna, engaged ten pediatric surgeons, who assessed three types of anatomical malformations (splenic cysts, pulmonary cystic adenomatoid malformations, and pyelo-ureteral junction stenosis) and planned surgeries using both traditional 2D CT scans and 3D visualizations via HoloLens 2, followed by completing a questionnaire to evaluate the utility of each of these imaging techniques in surgical planning. Results: The statistical analysis revealed that the 3D visualizations significantly outperformed the 2D CT scans in clarity and utility (p < 0.05). The results indicated significant improvements in anatomy understanding and surgical precision. The immersive experience provided by HoloLens 2 enabled surgeons to better identify critical landmarks, understand spatial relationships, and prevent surgical challenges. Furthermore, this technology facilitated collaborative decision-making and streamlined surgical workflows. Conclusions: Despite some challenges in ease of use, HoloLens 2 showed promising results in reducing the learning curve for complex procedures. This study underscores the transformative potential of mixed reality technology in pediatric surgery, advocating for further research and development to integrate these advancements into routine clinical practice.",
+      "Keywords": [
+        "HoloLens 2",
+        "three-dimensional reconstruction",
+        "Verima",
+        "pediatric surgery",
+        "innovations",
+        "mixed reality",
+        "augmented reality",
+        "preoperative planning"
+      ],
+      "Publisher": "MDPI"
+    },
+    "pages_processed": 3,
+    "extraction_matrix": {
+      "_performance_summary": {
+        "total_cost": 0.0,
+        "data_source": "vision_json",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "vision_status": "COMPLETE",
+        "extraction_rate": 84.62,
+        "extraction_source": "gpt-4o-vision",
+        "performance_level": "EXCELLENT",
+        "fields_with_content": 11,
+        "processing_time_seconds": 0,
+        "total_fields_in_response": 13
+      }
+    },
+    "extraction_method": "vision_strategic_strategy",
+    "extraction_quality": {
+      "success_rate": 50.0,
+      "quality_score": 50.0,
+      "successful_fields": 11,
+      "validation_details": {
+        "errors": [],
+        "is_valid": true,
+        "warnings": [],
+        "quality_score": 100,
+        "completeness_score": 100.0
+      },
+      "total_fields_attempted": 13
+    },
+    "processing_time_ms": 25606,
+    "raw_openai_response": {
+      "content": "```json\n{\n  \"Title\": \"Advancing Pediatric Surgery: The Use of HoloLens 2 for 3D Anatomical Reconstructions in Preoperative Planning\",\n  \"Authors\": [\n    \"Marco Di Mitri\",\n    \"Annalisa Di Carmine\",\n    \"Simone D'Antonio\",\n    \"Benedetta Maria Capobianco\",\n    \"Cristian Bisanti\",\n    \"Edoardo Collautti\",\n    \"Sara Maria Cravano\",\n    \"Francesca Ruspi\",\n    \"Michele Libri\",\n    \"Tommaso Gargano\",\n    \"Mario Lima\"\n  ],\n  \"DOI\": \"10.3390/children12010032\",\n  \"Journal\": \"Children\",\n  \"Year\": 2025,\n  \"Volume\": \"12\",\n  \"Issue\": \"1\",\n  \"Pages\": \"32\",\n  \"Abstract\": \"Background: In pediatric surgery, a comprehensive knowledge of the child’s anatomy is crucial to optimize surgical outcomes and minimize complications. Recent advancements in medical imaging and technology have introduced innovative tools that enhance surgical planning and decision-making. Methods: This study explores the integration of mixed reality technology, specifically the HoloLens 2 headset, for visualization and interaction with three-dimensional (3D) anatomical reconstructions obtained from computed tomography (CT) scans. Our prospective observational study, conducted at the IRCCS (Scientific Hospitalization and Care Institute) Sant’Orsola-Malpighi University Hospital in Bologna, engaged ten pediatric surgeons, who assessed three types of anatomical malformations (splenic cysts, pulmonary cystic adenomatoid malformations, and pyelo-ureteral junction stenosis) and planned surgeries using both traditional 2D CT scans and 3D visualizations via HoloLens 2, followed by completing a questionnaire to evaluate the utility of each of these imaging techniques in surgical planning. Results: The statistical analysis revealed that the 3D visualizations significantly outperformed the 2D CT scans in clarity and utility (p < 0.05). The results indicated significant improvements in anatomy understanding and surgical precision. The immersive experience provided by HoloLens 2 enabled surgeons to better identify critical landmarks, understand spatial relationships, and prevent surgical challenges. Furthermore, this technology facilitated collaborative decision-making and streamlined surgical workflows. Conclusions: Despite some challenges in ease of use, HoloLens 2 showed promising results in reducing the learning curve for complex procedures. This study underscores the transformative potential of mixed reality technology in pediatric surgery, advocating for further research and development to integrate these advancements into routine clinical practice.\",\n  \"Keywords\": [\n    \"HoloLens 2\",\n    \"three-dimensional reconstruction\",\n    \"Verima\",\n    \"pediatric surgery\",\n    \"innovations\",\n    \"mixed reality\",\n    \"augmented reality\",\n    \"preoperative planning\"\n  ],\n  \"PMID\": null,\n  \"PMCID\": null,\n  \"Publisher\": \"MDPI\"\n}\n```",
+      "parsing_error": "Expecting value: line 1 column 1 (char 0)",
+      "response_length": 2814,
+      "parsing_successful": false
+    },
+    "processing_timestamp": "2025-07-22T14:48:06.405300"
+  },
+  "apis_raw_json": {
+    "core": {
+      "data": {
+        "data": {
+          "doi": "10.3390/children12010032",
+          "year": 2024,
+          "title": "Advancing Pediatric Surgery: The Use of HoloLens 2 for 3D Anatomical Reconstructions in Preoperative Planning",
+          "authors": [
+            "Bisanti, Cristian",
+            "Capobianco, Benedetta Maria",
+            "Collautti, Edoardo",
+            "Cravano, Sara Maria",
+            "D'Antonio, Simone",
+            "Di Carmine, Annalisa",
+            "Di Mitri, Marco",
+            "Gargano, Tommaso",
+            "Libri, Michele",
+            "Lima, Mario",
+            "Ruspi, Francesca"
+          ],
+          "core_id": 275599499,
+          "journal": "",
+          "pdf_url": "https://core.ac.uk/download/654525825.pdf",
+          "abstract": "Abstract: Background: In pediatric surgery, a comprehensive knowledge of the child’s\r\nanatomy is crucial to optimize surgical outcomes and minimize complications. Recent\r\nadvancements in medical imaging and technology have introduced innovative tools that\r\nenhance surgical planning and decision-making. Methods: This study explores the integration\r\nof mixed reality technology, specifically the HoloLens 2 headset, for visualization\r\nand interaction with three-dimensional (3D) anatomical reconstructions obtained from\r\ncomputed tomography (CT) scans. Our prospective observational study, conducted at\r\nIRCCS (Scientific Hospitalization and Care Institute) Sant’Orsola-Malpighi University Hospital\r\nin Bologna, engaged ten pediatric surgeons, who assessed three types of anatomical\r\nmalformations (splenic cysts, pulmonary cystic adenomatoid malformations, and pyeloureteral\r\njunction stenosis) and planned surgeries using both traditional 2D CT scans and\r\n3D visualizations via HoloLens 2, followed by completing a questionnaire to evaluate the\r\nutility of each of these imaging techniques in surgical planning. Results: The statistical\r\nanalysis revealed that the 3D visualizations significantly outperformed the 2D CT scans in\r\nclarity and utility (p &lt; 0.05). The results indicated significant improvements in anatomy\r\nunderstanding and surgical precision. The immersive experience provided by HoloLens\r\n2 enabled surgeons to better identify critical landmarks, understand spatial relationships,\r\nand prevent surgical challenges. Furthermore, this technology facilitated collaborative\r\ndecision-making and streamlined surgical workflows. Conclusions: Despite some challenges\r\nin ease of use, HoloLens 2 showed promising results in reducing the learning curve\r\nfor complex procedures. This study underscores the transformative potential of mixed\r\nreality technology in pediatric surgery, advocating for further research and development to\r\nintegrate these advancements into routine clinical practice",
+          "repository": "",
+          "open_access": false,
+          "citation_count": 0
+        },
+        "success": true,
+        "strategy": "DOI"
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:48:09.570073",
+      "processing_time_ms": 2895
+    },
+    "doaj": {
+      "data": {
+        "found": true,
+        "total": 1,
+        "results": [
+          {
+            "id": "f205094e072a446b8dc129fc7d56446d",
+            "bibjson": {
+              "link": [
+                {
+                  "url": "https://www.mdpi.com/2227-9067/12/1/32",
+                  "type": "fulltext",
+                  "content_type": "text/html"
+                }
+              ],
+              "year": "2024",
+              "month": "12",
+              "title": "Advancing Pediatric Surgery: The Use of HoloLens 2 for 3D Anatomical Reconstructions in Preoperative Planning",
+              "author": [
+                {
+                  "name": "Marco Di Mitri",
+                  "affiliation": "Pediatric Surgery Department, IRCCS Azienda Ospedaliero, Universitaria di Bologna, Via Massarenti 11, 40138 Bologna, Italy"
+                },
+                {
+                  "name": "Annalisa Di Carmine",
+                  "affiliation": "Pediatric Surgery Department, IRCCS Azienda Ospedaliero, Universitaria di Bologna, Via Massarenti 11, 40138 Bologna, Italy"
+                },
+                {
+                  "name": "Simone D’Antonio",
+                  "affiliation": "Pediatric Surgery Department, IRCCS Azienda Ospedaliero, Universitaria di Bologna, Via Massarenti 11, 40138 Bologna, Italy"
+                },
+                {
+                  "name": "Benedetta Maria Capobianco",
+                  "affiliation": "Pediatric Surgery Department, IRCCS Azienda Ospedaliero, Universitaria di Bologna, Via Massarenti 11, 40138 Bologna, Italy"
+                },
+                {
+                  "name": "Cristian Bisanti",
+                  "affiliation": "Pediatric Surgery Department, IRCCS Azienda Ospedaliero, Universitaria di Bologna, Via Massarenti 11, 40138 Bologna, Italy"
+                },
+                {
+                  "name": "Edoardo Collautti",
+                  "affiliation": "Pediatric Surgery Department, IRCCS Azienda Ospedaliero, Universitaria di Bologna, Via Massarenti 11, 40138 Bologna, Italy"
+                },
+                {
+                  "name": "Sara Maria Cravano",
+                  "affiliation": "Pediatric Surgery Department, IRCCS Azienda Ospedaliero, Universitaria di Bologna, Via Massarenti 11, 40138 Bologna, Italy"
+                },
+                {
+                  "name": "Francesca Ruspi",
+                  "affiliation": "Pediatric Surgery Department, IRCCS Azienda Ospedaliero, Universitaria di Bologna, Via Massarenti 11, 40138 Bologna, Italy"
+                },
+                {
+                  "name": "Michele Libri",
+                  "affiliation": "Pediatric Surgery Department, IRCCS Azienda Ospedaliero, Universitaria di Bologna, Via Massarenti 11, 40138 Bologna, Italy"
+                },
+                {
+                  "name": "Tommaso Gargano",
+                  "affiliation": "Pediatric Surgery Department, IRCCS Azienda Ospedaliero, Universitaria di Bologna, Via Massarenti 11, 40138 Bologna, Italy"
+                },
+                {
+                  "name": "Mario Lima",
+                  "affiliation": "Pediatric Surgery Department, IRCCS Azienda Ospedaliero, Universitaria di Bologna, Via Massarenti 11, 40138 Bologna, Italy"
+                }
+              ],
+              "journal": {
+                "issns": [
+                  "2227-9067"
+                ],
+                "title": "Children",
+                "number": "1",
+                "volume": "12",
+                "country": "CH",
+                "language": [
+                  "EN"
+                ],
+                "publisher": "MDPI AG"
+              },
+              "subject": [
+                {
+                  "code": "RJ1-570",
+                  "term": "Pediatrics",
+                  "scheme": "LCC"
+                }
+              ],
+              "abstract": "Background: In pediatric surgery, a comprehensive knowledge of the child’s anatomy is crucial to optimize surgical outcomes and minimize complications. Recent advancements in medical imaging and technology have introduced innovative tools that enhance surgical planning and decision-making. Methods: This study explores the integration of mixed reality technology, specifically the HoloLens 2 headset, for visualization and interaction with three-dimensional (3D) anatomical reconstructions obtained from computed tomography (CT) scans. Our prospective observational study, conducted at IRCCS (Scientific Hospitalization and Care Institute) Sant’Orsola-Malpighi University Hospital in Bologna, engaged ten pediatric surgeons, who assessed three types of anatomical malformations (splenic cysts, pulmonary cystic adenomatoid malformations, and pyelo-ureteral junction stenosis) and planned surgeries using both traditional 2D CT scans and 3D visualizations via HoloLens 2, followed by completing a questionnaire to evaluate the utility of each of these imaging techniques in surgical planning. Results: The statistical analysis revealed that the 3D visualizations significantly outperformed the 2D CT scans in clarity and utility (<i>p</i> < 0.05). The results indicated significant improvements in anatomy understanding and surgical precision. The immersive experience provided by HoloLens 2 enabled surgeons to better identify critical landmarks, understand spatial relationships, and prevent surgical challenges. Furthermore, this technology facilitated collaborative decision-making and streamlined surgical workflows. Conclusions: Despite some challenges in ease of use, HoloLens 2 showed promising results in reducing the learning curve for complex procedures. This study underscores the transformative potential of mixed reality technology in pediatric surgery, advocating for further research and development to integrate these advancements into routine clinical practice.",
+              "keywords": [
+                "HoloLens 2",
+                "three-dimensional reconstruction",
+                "Verima",
+                "pediatric surgery",
+                "innovations",
+                "mixed reality"
+              ],
+              "identifier": [
+                {
+                  "id": "10.3390/children12010032",
+                  "type": "doi"
+                },
+                {
+                  "id": "2227-9067",
+                  "type": "eissn"
+                }
+              ],
+              "start_page": "32"
+            },
+            "created_date": "2025-01-24T13:27:03Z",
+            "last_updated": "2025-01-24T13:27:03Z"
+          }
+        ]
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:48:08.261080",
+      "processing_time_ms": 1583
+    },
+    "arxiv": {
+      "error": "No results found",
+      "success": false,
+      "timestamp": "2025-07-22T14:48:08.485640",
+      "processing_time_ms": 1810
+    },
+    "orcid": {
+      "data": {
+        "person": {
+          "name": {
+            "path": "0000-0003-0392-579X",
+            "source": null,
+            "visibility": "public",
+            "credit-name": null,
+            "family-name": {
+              "value": "Di Mitri"
+            },
+            "given-names": {
+              "value": "Marco"
+            },
+            "created-date": {
+              "value": 1641131927186
+            },
+            "last-modified-date": {
+              "value": 1641131927186
+            }
+          },
+          "path": "/0000-0003-0392-579X/person",
+          "emails": {
+            "path": "/0000-0003-0392-579X/email",
+            "email": [],
+            "last-modified-date": null
+          },
+          "keywords": {
+            "path": "/0000-0003-0392-579X/keywords",
+            "keyword": [],
+            "last-modified-date": null
+          },
+          "addresses": {
+            "path": "/0000-0003-0392-579X/address",
+            "address": [],
+            "last-modified-date": null
+          },
+          "biography": null,
+          "other-names": {
+            "path": "/0000-0003-0392-579X/other-names",
+            "other-name": [],
+            "last-modified-date": null
+          },
+          "researcher-urls": {
+            "path": "/0000-0003-0392-579X/researcher-urls",
+            "researcher-url": [],
+            "last-modified-date": null
+          },
+          "last-modified-date": {
+            "value": 1681635774508
+          },
+          "external-identifiers": {
+            "path": "/0000-0003-0392-579X/external-identifiers",
+            "last-modified-date": {
+              "value": 1681635774508
+            },
+            "external-identifier": [
+              {
+                "path": "/0000-0003-0392-579X/external-identifiers/2963415",
+                "source": {
+                  "source-name": {
+                    "value": "Scopus - Elsevier"
+                  },
+                  "source-orcid": null,
+                  "source-client-id": {
+                    "uri": "https://orcid.org/client/0000-0002-5982-8983",
+                    "host": "orcid.org",
+                    "path": "0000-0002-5982-8983"
+                  },
+                  "assertion-origin-name": {
+                    "value": "Marco Di Mitri"
+                  },
+                  "assertion-origin-orcid": {
+                    "uri": "https://orcid.org/0000-0003-0392-579X",
+                    "host": "orcid.org",
+                    "path": "0000-0003-0392-579X"
+                  },
+                  "assertion-origin-client-id": null
+                },
+                "put-code": 2963415,
+                "visibility": "public",
+                "created-date": {
+                  "value": 1678572175705
+                },
+                "display-index": 0,
+                "external-id-url": {
+                  "value": "http://www.scopus.com/inward/authorDetails.url?authorID=57208276241&partnerID=MN8TOARS"
+                },
+                "external-id-type": "Scopus Author ID",
+                "external-id-value": "57208276241",
+                "last-modified-date": {
+                  "value": 1678572175705
+                },
+                "external-id-relationship": "self"
+              },
+              {
+                "path": "/0000-0003-0392-579X/external-identifiers/3018449",
+                "source": {
+                  "source-name": {
+                    "value": "Multidisciplinary Digital Publishing Institute"
+                  },
+                  "source-orcid": null,
+                  "source-client-id": {
+                    "uri": "https://orcid.org/client/APP-WRQOUAK78G5F7GMD",
+                    "host": "orcid.org",
+                    "path": "APP-WRQOUAK78G5F7GMD"
+                  },
+                  "assertion-origin-name": null,
+                  "assertion-origin-orcid": null,
+                  "assertion-origin-client-id": null
+                },
+                "put-code": 3018449,
+                "visibility": "public",
+                "created-date": {
+                  "value": 1681635774508
+                },
+                "display-index": 0,
+                "external-id-url": {
+                  "value": "https://sciprofiles.com/profile/2045709"
+                },
+                "external-id-type": "SciProfiles",
+                "external-id-value": "2045709",
+                "last-modified-date": {
+                  "value": 1681635774508
+                },
+                "external-id-relationship": "self"
+              }
+            ]
+          }
+        },
+        "orcid_id": "0000-0003-0392-579X"
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:48:08.306609",
+      "processing_time_ms": 1627
+    },
+    "pubmed": {
+      "data": {
+        "PubmedArticle": [
+          {
+            "MedlineCitation": {
+              "PMID": {
+                "content": "39857863"
+              },
+              "Article": {
+                "Journal": {
+                  "Title": "Children (Basel, Switzerland)",
+                  "JournalIssue": {
+                    "Issue": "1",
+                    "Volume": "12",
+                    "PubDate": {
+                      "Year": "2024"
+                    }
+                  }
+                },
+                "Abstract": {
+                  "AbstractText": [
+                    "In pediatric surgery, a comprehensive knowledge of the child's anatomy is crucial to optimize surgical outcomes and minimize complications. Recent advancements in medical imaging and technology have introduced innovative tools that enhance surgical planning and decision-making.",
+                    "This study explores the integration of mixed reality technology, specifically the HoloLens 2 headset, for visualization and interaction with three-dimensional (3D) anatomical reconstructions obtained from computed tomography (CT) scans. Our prospective observational study, conducted at IRCCS (Scientific Hospitalization and Care Institute) Sant'Orsola-Malpighi University Hospital in Bologna, engaged ten pediatric surgeons, who assessed three types of anatomical malformations (splenic cysts, pulmonary cystic adenomatoid malformations, and pyelo-ureteral junction stenosis) and planned surgeries using both traditional 2D CT scans and 3D visualizations via HoloLens 2, followed by completing a questionnaire to evaluate the utility of each of these imaging techniques in surgical planning.",
+                    "The statistical analysis revealed that the 3D visualizations significantly outperformed the 2D CT scans in clarity and utility (",
+                    "Despite some challenges in ease of use, HoloLens 2 showed promising results in reducing the learning curve for complex procedures. This study underscores the transformative potential of mixed reality technology in pediatric surgery, advocating for further research and development to integrate these advancements into routine clinical practice."
+                  ]
+                },
+                "AuthorList": {
+                  "Author": [
+                    {
+                      "ForeName": "Marco",
+                      "LastName": "Di Mitri"
+                    },
+                    {
+                      "ForeName": "Annalisa",
+                      "LastName": "Di Carmine"
+                    },
+                    {
+                      "ForeName": "Simone",
+                      "LastName": "D'Antonio"
+                    },
+                    {
+                      "ForeName": "Benedetta Maria",
+                      "LastName": "Capobianco"
+                    },
+                    {
+                      "ForeName": "Cristian",
+                      "LastName": "Bisanti"
+                    },
+                    {
+                      "ForeName": "Edoardo",
+                      "LastName": "Collautti"
+                    },
+                    {
+                      "ForeName": "Sara Maria",
+                      "LastName": "Cravano"
+                    },
+                    {
+                      "ForeName": "Francesca",
+                      "LastName": "Ruspi"
+                    },
+                    {
+                      "ForeName": "Michele",
+                      "LastName": "Libri"
+                    },
+                    {
+                      "ForeName": "Tommaso",
+                      "LastName": "Gargano"
+                    },
+                    {
+                      "ForeName": "Mario",
+                      "LastName": "Lima"
+                    }
+                  ]
+                },
+                "Pagination": {},
+                "ArticleTitle": "Advancing Pediatric Surgery: The Use of HoloLens 2 for 3D Anatomical Reconstructions in Preoperative Planning."
+              }
+            }
+          }
+        ]
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:48:08.613257",
+      "processing_time_ms": 1947
+    },
+    "crossref": {
+      "data": {
+        "status": "ok",
+        "message": {
+          "DOI": "10.3390/children12010032",
+          "URL": "https://doi.org/10.3390/children12010032",
+          "ISSN": [
+            "2227-9067"
+          ],
+          "link": [
+            {
+              "URL": "https://www.mdpi.com/2227-9067/12/1/32/pdf",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "page": "32",
+          "type": "journal-article",
+          "issue": "1",
+          "score": 1,
+          "title": [
+            "Advancing Pediatric Surgery: The Use of HoloLens 2 for 3D Anatomical Reconstructions in Preoperative Planning"
+          ],
+          "author": [
+            {
+              "ORCID": "https://orcid.org/0000-0003-0392-579X",
+              "given": "Marco",
+              "family": "Di Mitri",
+              "sequence": "first",
+              "affiliation": [
+                {
+                  "name": "Pediatric Surgery Department, IRCCS Azienda Ospedaliero, Universitaria di Bologna, Via Massarenti 11, 40138 Bologna, Italy"
+                }
+              ],
+              "authenticated-orcid": false
+            },
+            {
+              "given": "Annalisa",
+              "family": "Di Carmine",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Pediatric Surgery Department, IRCCS Azienda Ospedaliero, Universitaria di Bologna, Via Massarenti 11, 40138 Bologna, Italy"
+                }
+              ]
+            },
+            {
+              "given": "Simone",
+              "family": "D’Antonio",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Pediatric Surgery Department, IRCCS Azienda Ospedaliero, Universitaria di Bologna, Via Massarenti 11, 40138 Bologna, Italy"
+                }
+              ]
+            },
+            {
+              "given": "Benedetta Maria",
+              "family": "Capobianco",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Pediatric Surgery Department, IRCCS Azienda Ospedaliero, Universitaria di Bologna, Via Massarenti 11, 40138 Bologna, Italy"
+                }
+              ]
+            },
+            {
+              "given": "Cristian",
+              "family": "Bisanti",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Pediatric Surgery Department, IRCCS Azienda Ospedaliero, Universitaria di Bologna, Via Massarenti 11, 40138 Bologna, Italy"
+                }
+              ]
+            },
+            {
+              "given": "Edoardo",
+              "family": "Collautti",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Pediatric Surgery Department, IRCCS Azienda Ospedaliero, Universitaria di Bologna, Via Massarenti 11, 40138 Bologna, Italy"
+                }
+              ]
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-9429-8498",
+              "given": "Sara Maria",
+              "family": "Cravano",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Pediatric Surgery Department, IRCCS Azienda Ospedaliero, Universitaria di Bologna, Via Massarenti 11, 40138 Bologna, Italy"
+                }
+              ],
+              "authenticated-orcid": false
+            },
+            {
+              "given": "Francesca",
+              "family": "Ruspi",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Pediatric Surgery Department, IRCCS Azienda Ospedaliero, Universitaria di Bologna, Via Massarenti 11, 40138 Bologna, Italy"
+                }
+              ]
+            },
+            {
+              "given": "Michele",
+              "family": "Libri",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Pediatric Surgery Department, IRCCS Azienda Ospedaliero, Universitaria di Bologna, Via Massarenti 11, 40138 Bologna, Italy"
+                }
+              ]
+            },
+            {
+              "given": "Tommaso",
+              "family": "Gargano",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Pediatric Surgery Department, IRCCS Azienda Ospedaliero, Universitaria di Bologna, Via Massarenti 11, 40138 Bologna, Italy"
+                }
+              ]
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-5877-440X",
+              "given": "Mario",
+              "family": "Lima",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Pediatric Surgery Department, IRCCS Azienda Ospedaliero, Universitaria di Bologna, Via Massarenti 11, 40138 Bologna, Italy"
+                }
+              ],
+              "authenticated-orcid": false
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2024,
+                12,
+                28
+              ]
+            ]
+          },
+          "member": "1968",
+          "prefix": "10.3390",
+          "source": "Crossref",
+          "volume": "12",
+          "created": {
+            "date-time": "2024-12-31T17:37:19Z",
+            "timestamp": 1735666639000,
+            "date-parts": [
+              [
+                2024,
+                12,
+                31
+              ]
+            ]
+          },
+          "indexed": {
+            "version": "3.37.3",
+            "date-time": "2025-06-04T04:24:32Z",
+            "timestamp": 1749011072580,
+            "date-parts": [
+              [
+                2025,
+                6,
+                4
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "https://creativecommons.org/licenses/by/4.0/",
+              "start": {
+                "date-time": "2024-12-28T00:00:00Z",
+                "timestamp": 1735344000000,
+                "date-parts": [
+                  [
+                    2024,
+                    12,
+                    28
+                  ]
+                ]
+              },
+              "delay-in-days": 0,
+              "content-version": "vor"
+            }
+          ],
+          "subject": [],
+          "abstract": "<jats:p>Background: In pediatric surgery, a comprehensive knowledge of the child’s anatomy is crucial to optimize surgical outcomes and minimize complications. Recent advancements in medical imaging and technology have introduced innovative tools that enhance surgical planning and decision-making. Methods: This study explores the integration of mixed reality technology, specifically the HoloLens 2 headset, for visualization and interaction with three-dimensional (3D) anatomical reconstructions obtained from computed tomography (CT) scans. Our prospective observational study, conducted at IRCCS (Scientific Hospitalization and Care Institute) Sant’Orsola-Malpighi University Hospital in Bologna, engaged ten pediatric surgeons, who assessed three types of anatomical malformations (splenic cysts, pulmonary cystic adenomatoid malformations, and pyelo-ureteral junction stenosis) and planned surgeries using both traditional 2D CT scans and 3D visualizations via HoloLens 2, followed by completing a questionnaire to evaluate the utility of each of these imaging techniques in surgical planning. Results: The statistical analysis revealed that the 3D visualizations significantly outperformed the 2D CT scans in clarity and utility (p &lt; 0.05). The results indicated significant improvements in anatomy understanding and surgical precision. The immersive experience provided by HoloLens 2 enabled surgeons to better identify critical landmarks, understand spatial relationships, and prevent surgical challenges. Furthermore, this technology facilitated collaborative decision-making and streamlined surgical workflows. Conclusions: Despite some challenges in ease of use, HoloLens 2 showed promising results in reducing the learning curve for complex procedures. This study underscores the transformative potential of mixed reality technology in pediatric surgery, advocating for further research and development to integrate these advancements into routine clinical practice.</jats:p>",
+          "language": "en",
+          "relation": {},
+          "resource": {
+            "primary": {
+              "URL": "https://www.mdpi.com/2227-9067/12/1/32"
+            }
+          },
+          "subtitle": [],
+          "deposited": {
+            "date-time": "2024-12-31T18:48:04Z",
+            "timestamp": 1735670884000,
+            "date-parts": [
+              [
+                2024,
+                12,
+                31
+              ]
+            ]
+          },
+          "issn-type": [
+            {
+              "type": "electronic",
+              "value": "2227-9067"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2024,
+                12,
+                28
+              ]
+            ]
+          },
+          "publisher": "MDPI AG",
+          "reference": [
+            {
+              "DOI": "10.3390/children8070603",
+              "key": "ref_1",
+              "unstructured": "Parente, G., Thomas, E., Cravano, S., Di Mitri, M., Vastano, M., Gargano, T., Cerasoli, T., Ruspi, F., Libri, M., and Lima, M. (2021). ArtiSential® Articulated Wrist-Like Instruments and Their First Application in Pediatric Minimally Invasive Surgery: Case Reports and Literature Review of the Most Commonly Available Robot-Inspired Devices. Children, 8.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.3390/children10071153",
+              "key": "ref_2",
+              "unstructured": "Di Mitri, M., Thomas, E., Di Carmine, A., Manghi, I., Cravano, S.M., Bisanti, C., Collautti, E., Ruspi, F., Cordola, C., and Vastano, M. (2023). Intraoperative Ultrasound in Minimally Invasive Laparoscopic and Robotic Pediatric Surgery: Our Experiences and Literature Review. Children, 10.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1186/s12891-024-07509-8",
+              "key": "ref_3",
+              "unstructured": "Hu, X., Lu, M., Wang, Y., Luo, Y., Zhou, Y., Yang, X., Min, L., and Tu, C. (2024). 3D-Printed custom-made hemipelvic endoprosthetic reconstruction following periacetabular tumor resection: Utilizing a novel classification system. BMC Musculoskelet. Disord., 25.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1093/ehjci/jey184",
+              "key": "ref_4",
+              "year": "2019",
+              "author": "Brun",
+              "volume": "20",
+              "first-page": "883",
+              "article-title": "Mixed reality holograms for heart surgery planning: First user experience in congenital heart disease",
+              "journal-title": "Eur. Heart J. Cardiovasc. Imaging",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1007/978-3-031-42398-7_2",
+              "key": "ref_5",
+              "year": "2024",
+              "author": "Patel",
+              "volume": "49",
+              "first-page": "19",
+              "article-title": "Current Applications of VR/AR (Virtual Reality/Augmented Reality) in Pediatric Neurosurgery",
+              "journal-title": "Adv. Tech. Stand. Neurosurg.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1111/pan.14793",
+              "key": "ref_6",
+              "year": "2024",
+              "author": "Chamberland",
+              "volume": "34",
+              "first-page": "153",
+              "article-title": "The effect of augmented reality on preoperative anxiety in children and adolescents: A randomized controlled trial",
+              "journal-title": "Paediatr. Anaesth.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1016/j.wneu.2021.11.133",
+              "key": "ref_7",
+              "year": "2022",
+              "author": "Coelho",
+              "volume": "159",
+              "first-page": "27",
+              "article-title": "The Potential Applications of Augmented Reality in Fetoscopic Surgery for Antenatal Treatment of Myelomeningocele",
+              "journal-title": "World Neurosurg.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1007/s11548-021-02526-7",
+              "key": "ref_8",
+              "year": "2022",
+              "author": "Nguyen",
+              "volume": "17",
+              "first-page": "385",
+              "article-title": "HoloUS: Augmented reality visualization of live ultrasound images using HoloLens for ultrasound-guided procedures",
+              "journal-title": "Int. J. Comput. Assist. Radiol. Surg.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.3390/s23063040",
+              "key": "ref_9",
+              "unstructured": "Zari, G., Condino, S., Cutolo, F., and Ferrari, V. (2023). Magic Leap 1 versus Microsoft HoloLens 2 for the Visualization of 3D Content Obtained from Radiological Images. Sensors, 23.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1016/j.compbiomed.2024.108453",
+              "key": "ref_10",
+              "unstructured": "Li, H., Yan, W., Zhao, J., Ji, Y., Qian, L., Ding, H., Zhao, Z., and Wang, G. (2024). Navigate biopsy with ultrasound under augmented reality device: Towards higher system performance. Comput. Biol. Med., 174.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1016/j.jpedsurg.2024.02.023",
+              "key": "ref_11",
+              "year": "2024",
+              "author": "Fitski",
+              "volume": "59",
+              "first-page": "1549",
+              "article-title": "Clinical Application and Further Development of Augmented Reality Guidance for the Surgical Localization of Pediatric Chest Wall Tumors",
+              "journal-title": "J. Pediatr. Surg.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1016/j.jse.2023.09.027",
+              "key": "ref_12",
+              "year": "2024",
+              "author": "Berhouet",
+              "volume": "33",
+              "first-page": "1177",
+              "article-title": "Validation of mixed-reality surgical navigation for glenoid axis pin placement in shoulder arthroplasty using a cadaveric model",
+              "journal-title": "J. Shoulder Elb. Surg.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1016/j.oraloncology.2021.105702",
+              "key": "ref_13",
+              "year": "2022",
+              "author": "Nakamoto",
+              "volume": "125",
+              "first-page": "105702",
+              "article-title": "Phantom study of SPECT/CT augmented reality for intraoperative localization of sentinel lymph nodes in head and neck melanoma",
+              "journal-title": "Oral Oncol.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "key": "ref_14",
+              "year": "2024",
+              "author": "Hong",
+              "volume": "16",
+              "first-page": "e58281",
+              "article-title": "An Image-Based Augmented Reality System for Achieving Accurate Bone Resection in Total Knee Arthroplasty",
+              "journal-title": "Cureus"
+            },
+            {
+              "DOI": "10.1177/20552076241253550",
+              "key": "ref_15",
+              "year": "2024",
+              "author": "Saini",
+              "volume": "10",
+              "first-page": "20552076241253550",
+              "article-title": "Impact of 3D imaging techniques and virtual patients on the accuracy of planning and surgical placement of dental implants: A systematic review",
+              "journal-title": "Digit. Health",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.3389/fsurg.2021.657901",
+              "key": "ref_16",
+              "unstructured": "Cofano, F., Di Perna, G., Bozzaro, M., Longo, A., Marengo, N., Zenga, F., Zullo, N., Cavalieri, M., Damiani, L., and Boges, D.J. (2021). Augmented Reality in Medical Practice: From Spine Surgery to Remote Assistance. Front. Surg., 8.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1097/SCS.0000000000004899",
+              "key": "ref_17",
+              "year": "2019",
+              "author": "Mitsuno",
+              "volume": "30",
+              "first-page": "28",
+              "article-title": "Telementoring Demonstration in Craniofacial Surgery with HoloLens, Skype, and Three-Layer Facial Models",
+              "journal-title": "J. Craniofac. Surg.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1186/s12909-023-04122-6",
+              "key": "ref_18",
+              "unstructured": "Guha, P., Lawson, J., Minty, I., Kinross, J., and Martin, G. (2023). Can mixed reality technologies teach surgical skills better than traditional methods? A prospective randomised feasibility study. BMC Med. Educ., 23.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1016/j.media.2023.102757",
+              "key": "ref_19",
+              "year": "2023",
+              "author": "Gsaxner",
+              "volume": "85",
+              "first-page": "102757",
+              "article-title": "The HoloLens in medicine: A systematic review and taxonomy",
+              "journal-title": "Med. Image Anal.",
+              "doi-asserted-by": "crossref"
+            }
+          ],
+          "short-title": [],
+          "journal-issue": {
+            "issue": "1",
+            "published-online": {
+              "date-parts": [
+                [
+                  2025,
+                  1
+                ]
+              ]
+            }
+          },
+          "alternative-id": [
+            "children12010032"
+          ],
+          "content-domain": {
+            "domain": [],
+            "crossmark-restriction": false
+          },
+          "original-title": [],
+          "container-title": [
+            "Children"
+          ],
+          "reference-count": 19,
+          "published-online": {
+            "date-parts": [
+              [
+                2024,
+                12,
+                28
+              ]
+            ]
+          },
+          "references-count": 19,
+          "short-container-title": [
+            "Children"
+          ],
+          "is-referenced-by-count": 2
+        },
+        "message-type": "work",
+        "message-version": "1.0.0"
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:48:08.226607",
+      "processing_time_ms": 1561
+    },
+    "datacite": {
+      "error": "No matching articles found",
+      "success": false,
+      "timestamp": "2025-07-22T14:48:15.210136",
+      "processing_time_ms": 8532
+    },
+    "openalex": {
+      "data": {
+        "id": "https://openalex.org/W4405940586",
+        "doi": "https://doi.org/10.3390/children12010032",
+        "title": "Advancing Pediatric Surgery: The Use of HoloLens 2 for 3D Anatomical Reconstructions in Preoperative Planning",
+        "open_access": {
+          "is_oa": true,
+          "oa_url": "https://doi.org/10.3390/children12010032",
+          "oa_status": "gold",
+          "any_repository_has_fulltext": false
+        },
+        "cited_by_count": 2,
+        "publication_year": 2024
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:48:08.203856",
+      "processing_time_ms": 1535
+    },
+    "unpaywall": {
+      "data": {
+        "doi": "10.3390/children12010032",
+        "year": 2024,
+        "genre": "journal-article",
+        "is_oa": true,
+        "title": "Advancing Pediatric Surgery: The Use of HoloLens 2 for 3D Anatomical Reconstructions in Preoperative Planning",
+        "doi_url": "https://doi.org/10.3390/children12010032",
+        "oa_status": "gold",
+        "publisher": "MDPI AG",
+        "is_paratext": false,
+        "journal_name": "Children",
+        "journal_issns": "2227-9067",
+        "journal_issn_l": "2227-9067",
+        "published_date": "2024-12-28",
+        "z_authors_summary": {
+          "count": 11,
+          "first_author": ""
+        },
+        "has_repository_copy": true,
+        "oa_locations_summary": {
+          "count": 3,
+          "has_repository": true
+        },
+        "best_oa_location_summary": {
+          "is_best": true,
+          "host_type": "publisher",
+          "url_for_pdf": true
+        },
+        "first_oa_location_summary": {
+          "is_first": true,
+          "host_type": "publisher",
+          "url_for_pdf": true
+        }
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:48:08.157094",
+      "processing_time_ms": 1482
+    },
+    "europe_pmc": {
+      "data": {
+        "id": "39857863",
+        "doi": "10.3390/children12010032",
+        "pmid": "39857863",
+        "inPMC": "Y",
+        "pmcid": "PMC11763531",
+        "title": "Advancing Pediatric Surgery: The Use of HoloLens 2 for 3D Anatomical Reconstructions in Preoperative Planning.",
+        "hasPDF": "Y",
+        "inEPMC": "Y",
+        "source": "MED",
+        "authMan": "N",
+        "hasBook": "N",
+        "hasData": "N",
+        "license": "cc by",
+        "pubYear": "2024",
+        "hasSuppl": "N",
+        "language": "eng",
+        "pageInfo": "32",
+        "pubModel": "Electronic",
+        "authorList": {
+          "author": [
+            {
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-0392-579X"
+              },
+              "fullName": "Di Mitri M",
+              "initials": "M",
+              "lastName": "Di Mitri",
+              "firstName": "Marco",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Pediatric Surgery Department, IRCCS Azienda Ospedaliero, Universitaria di Bologna, Via Massarenti 11, 40138 Bologna, Italy."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Di Carmine A",
+              "initials": "A",
+              "lastName": "Di Carmine",
+              "firstName": "Annalisa",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Pediatric Surgery Department, IRCCS Azienda Ospedaliero, Universitaria di Bologna, Via Massarenti 11, 40138 Bologna, Italy."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "D'Antonio S",
+              "initials": "S",
+              "lastName": "D'Antonio",
+              "firstName": "Simone",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Pediatric Surgery Department, IRCCS Azienda Ospedaliero, Universitaria di Bologna, Via Massarenti 11, 40138 Bologna, Italy."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Capobianco BM",
+              "initials": "BM",
+              "lastName": "Capobianco",
+              "firstName": "Benedetta Maria",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Pediatric Surgery Department, IRCCS Azienda Ospedaliero, Universitaria di Bologna, Via Massarenti 11, 40138 Bologna, Italy."
+                  }
+                ]
+              }
+            },
+            {
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0008-1708-3814"
+              },
+              "fullName": "Bisanti C",
+              "initials": "C",
+              "lastName": "Bisanti",
+              "firstName": "Cristian",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Pediatric Surgery Department, IRCCS Azienda Ospedaliero, Universitaria di Bologna, Via Massarenti 11, 40138 Bologna, Italy."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Collautti E",
+              "initials": "E",
+              "lastName": "Collautti",
+              "firstName": "Edoardo",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Pediatric Surgery Department, IRCCS Azienda Ospedaliero, Universitaria di Bologna, Via Massarenti 11, 40138 Bologna, Italy."
+                  }
+                ]
+              }
+            },
+            {
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-9429-8498"
+              },
+              "fullName": "Cravano SM",
+              "initials": "SM",
+              "lastName": "Cravano",
+              "firstName": "Sara Maria",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Pediatric Surgery Department, IRCCS Azienda Ospedaliero, Universitaria di Bologna, Via Massarenti 11, 40138 Bologna, Italy."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Ruspi F",
+              "initials": "F",
+              "lastName": "Ruspi",
+              "firstName": "Francesca",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Pediatric Surgery Department, IRCCS Azienda Ospedaliero, Universitaria di Bologna, Via Massarenti 11, 40138 Bologna, Italy."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Libri M",
+              "initials": "M",
+              "lastName": "Libri",
+              "firstName": "Michele",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Pediatric Surgery Department, IRCCS Azienda Ospedaliero, Universitaria di Bologna, Via Massarenti 11, 40138 Bologna, Italy."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Gargano T",
+              "initials": "T",
+              "lastName": "Gargano",
+              "firstName": "Tommaso",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Pediatric Surgery Department, IRCCS Azienda Ospedaliero, Universitaria di Bologna, Via Massarenti 11, 40138 Bologna, Italy."
+                  }
+                ]
+              }
+            },
+            {
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-5877-440X"
+              },
+              "fullName": "Lima M",
+              "initials": "M",
+              "lastName": "Lima",
+              "firstName": "Mario",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Pediatric Surgery Department, IRCCS Azienda Ospedaliero, Universitaria di Bologna, Via Massarenti 11, 40138 Bologna, Italy."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "affiliation": "Pediatric Surgery Department, IRCCS Azienda Ospedaliero, Universitaria di Bologna, Via Massarenti 11, 40138 Bologna, Italy.",
+        "epmcAuthMan": "N",
+        "journalInfo": {
+          "issue": "1",
+          "volume": "12",
+          "journal": {
+            "essn": "2227-9067",
+            "issn": "2227-9067",
+            "nlmid": "101648936",
+            "title": "Children (Basel, Switzerland)",
+            "isoabbreviation": "Children (Basel)",
+            "medlineAbbreviation": "Children (Basel)"
+          },
+          "journalIssueId": 3891564,
+          "dateOfPublication": "2024 Dec",
+          "yearOfPublication": 2024,
+          "monthOfPublication": 12,
+          "printPublicationDate": "2024-12-01"
+        },
+        "keywordList": {
+          "keyword": [
+            "Three-dimensional reconstruction",
+            "Preoperative Planning",
+            "Pediatric Surgery",
+            "Augmented Reality",
+            "Innovations",
+            "Mixed Reality",
+            "Hololens 2",
+            "Verima"
+          ]
+        },
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "abstractText": "<h4>Background</h4>In pediatric surgery, a comprehensive knowledge of the child's anatomy is crucial to optimize surgical outcomes and minimize complications. Recent advancements in medical imaging and technology have introduced innovative tools that enhance surgical planning and decision-making.<h4>Methods</h4>This study explores the integration of mixed reality technology, specifically the HoloLens 2 headset, for visualization and interaction with three-dimensional (3D) anatomical reconstructions obtained from computed tomography (CT) scans. Our prospective observational study, conducted at IRCCS (Scientific Hospitalization and Care Institute) Sant'Orsola-Malpighi University Hospital in Bologna, engaged ten pediatric surgeons, who assessed three types of anatomical malformations (splenic cysts, pulmonary cystic adenomatoid malformations, and pyelo-ureteral junction stenosis) and planned surgeries using both traditional 2D CT scans and 3D visualizations via HoloLens 2, followed by completing a questionnaire to evaluate the utility of each of these imaging techniques in surgical planning.<h4>Results</h4>The statistical analysis revealed that the 3D visualizations significantly outperformed the 2D CT scans in clarity and utility (<i>p</i> < 0.05). The results indicated significant improvements in anatomy understanding and surgical precision. The immersive experience provided by HoloLens 2 enabled surgeons to better identify critical landmarks, understand spatial relationships, and prevent surgical challenges. Furthermore, this technology facilitated collaborative decision-making and streamlined surgical workflows.<h4>Conclusions</h4>Despite some challenges in ease of use, HoloLens 2 showed promising results in reducing the learning curve for complex procedures. This study underscores the transformative potential of mixed reality technology in pediatric surgery, advocating for further research and development to integrate these advancements into routine clinical practice.",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-5877-440X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-9429-8498"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-0392-579X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0009-0008-1708-3814"
+            }
+          ]
+        },
+        "authorString": "Di Mitri M, Di Carmine A, D'Antonio S, Capobianco BM, Bisanti C, Collautti E, Cravano SM, Ruspi F, Libri M, Gargano T, Lima M.",
+        "citedByCount": 3,
+        "hasLabsLinks": "N",
+        "isOpenAccess": "Y",
+        "hasReferences": "Y",
+        "dateOfCreation": "2025-01-25",
+        "dateOfRevision": "2025-01-28",
+        "firstIndexDate": "2025-01-28",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC11763531"
+          ]
+        },
+        "hasEvaluations": "N",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "url": "https://doi.org/10.3390/children12010032",
+              "site": "DOI",
+              "availability": "Subscription required",
+              "documentStyle": "doi",
+              "availabilityCode": "S"
+            },
+            {
+              "url": "https://europepmc.org/articles/PMC11763531",
+              "site": "Europe_PMC",
+              "availability": "Open access",
+              "documentStyle": "html",
+              "availabilityCode": "OA"
+            },
+            {
+              "url": "https://europepmc.org/articles/PMC11763531?pdf=render",
+              "site": "Europe_PMC",
+              "availability": "Open access",
+              "documentStyle": "pdf",
+              "availabilityCode": "OA"
+            }
+          ]
+        },
+        "hasTextMinedTerms": "Y",
+        "publicationStatus": "epublish",
+        "firstPublicationDate": "2024-12-28",
+        "fullTextReceivedDate": "2025-01-29",
+        "hasDbCrossReferences": "N",
+        "hasTMAccessionNumbers": "N",
+        "electronicPublicationDate": "2024-12-28"
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:48:08.645531",
+      "processing_time_ms": 1975
+    },
+    "semantic_scholar": {
+      "data": {
+        "year": 2024,
+        "title": "Advancing Pediatric Surgery: The Use of HoloLens 2 for 3D Anatomical Reconstructions in Preoperative Planning",
+        "authors": [
+          {
+            "name": "Marco Di Mitri",
+            "authorId": "66769364"
+          },
+          {
+            "name": "Annalisa Di Carmine",
+            "authorId": "2185806346"
+          },
+          {
+            "name": "S. D’Antonio",
+            "authorId": "1481735278"
+          },
+          {
+            "name": "Benedetta Maria Capobianco",
+            "authorId": "2338184931"
+          },
+          {
+            "name": "Cristian Bisanti",
+            "authorId": "2142842121"
+          },
+          {
+            "name": "Edoardo Collautti",
+            "authorId": "2185804511"
+          },
+          {
+            "name": "S. Cravano",
+            "authorId": "1435996863"
+          },
+          {
+            "name": "Francesca Ruspi",
+            "authorId": "2120813538"
+          },
+          {
+            "name": "M. Libri",
+            "authorId": "5395532"
+          },
+          {
+            "name": "T. Gargano",
+            "authorId": "4781985"
+          },
+          {
+            "name": "Mario Lima",
+            "authorId": "2105625482"
+          }
+        ],
+        "journal": {
+          "name": "Children",
+          "volume": "12"
+        },
+        "paperId": "e1a5bc40c34c39b4f0f25cdc0e14d2300f0b4c5e",
+        "abstract": "Background: In pediatric surgery, a comprehensive knowledge of the child’s anatomy is crucial to optimize surgical outcomes and minimize complications. Recent advancements in medical imaging and technology have introduced innovative tools that enhance surgical planning and decision-making. Methods: This study explores the integration of mixed reality technology, specifically the HoloLens 2 headset, for visualization and interaction with three-dimensional (3D) anatomical reconstructions obtained from computed tomography (CT) scans. Our prospective observational study, conducted at IRCCS (Scientific Hospitalization and Care Institute) Sant’Orsola-Malpighi University Hospital in Bologna, engaged ten pediatric surgeons, who assessed three types of anatomical malformations (splenic cysts, pulmonary cystic adenomatoid malformations, and pyelo-ureteral junction stenosis) and planned surgeries using both traditional 2D CT scans and 3D visualizations via HoloLens 2, followed by completing a questionnaire to evaluate the utility of each of these imaging techniques in surgical planning. Results: The statistical analysis revealed that the 3D visualizations significantly outperformed the 2D CT scans in clarity and utility (p < 0.05). The results indicated significant improvements in anatomy understanding and surgical precision. The immersive experience provided by HoloLens 2 enabled surgeons to better identify critical landmarks, understand spatial relationships, and prevent surgical challenges. Furthermore, this technology facilitated collaborative decision-making and streamlined surgical workflows. Conclusions: Despite some challenges in ease of use, HoloLens 2 showed promising results in reducing the learning curve for complex procedures. This study underscores the transformative potential of mixed reality technology in pediatric surgery, advocating for further research and development to integrate these advancements into routine clinical practice.",
+        "externalIds": {
+          "DOI": "10.3390/children12010032",
+          "PubMed": "39857863",
+          "CorpusId": 275198764,
+          "PubMedCentral": "11763531"
+        },
+        "isOpenAccess": true,
+        "citationCount": 3,
+        "openAccessPdf": {
+          "url": "https://doi.org/10.3390/children12010032",
+          "status": "GOLD",
+          "license": "CCBY",
+          "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11763531, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:48:07.355111",
+      "processing_time_ms": 687
+    }
+  },
+  "questions_json": {
+    "reason": "custom_topics_not_enabled",
+    "success": false,
+    "extraction_method": "disabled",
+    "processing_timestamp": "2025-07-22T14:50:18.728442"
+  },
+  "apis_clean_json": {
+    "timestamp": "2025-07-22T14:49:26.953634",
+    "cost_tracking": {
+      "model": "deepseek-chat",
+      "call_type": "smart_consensus",
+      "timestamp": "2025-07-22T14:49:26.953402",
+      "input_cost": 0.003967,
+      "total_cost": 0.005519,
+      "output_cost": 0.001552,
+      "input_tokens": 14693,
+      "total_tokens": 16104,
+      "output_tokens": 1411,
+      "parsing_error": null,
+      "parsing_successful": true,
+      "processing_time_ms": 71741
+    },
+    "consensus_result": {
+      "DOI": "10.3390/children12010032",
+      "PMID": "39857863",
+      "Year": 2024,
+      "Issue": "1",
+      "PMCID": "PMC11763531",
+      "Pages": "32",
+      "Title": "Advancing Pediatric Surgery: The Use of HoloLens 2 for 3D Anatomical Reconstructions in Preoperative Planning",
+      "PDFUrl": "https://www.mdpi.com/2227-9067/12/1/32/pdf",
+      "Volume": "12",
+      "Authors": [
+        "Di Mitri, Marco",
+        "Di Carmine, Annalisa",
+        "D'Antonio, Simone",
+        "Capobianco, Benedetta Maria",
+        "Bisanti, Cristian",
+        "Collautti, Edoardo",
+        "Cravano, Sara Maria",
+        "Ruspi, Francesca",
+        "Libri, Michele",
+        "Gargano, Tommaso",
+        "Lima, Mario"
+      ],
+      "Journal": "Children",
+      "Abstract": "Background: In pediatric surgery, a comprehensive knowledge of the child’s anatomy is crucial to optimize surgical outcomes and minimize complications. Recent advancements in medical imaging and technology have introduced innovative tools that enhance surgical planning and decision-making. Methods: This study explores the integration of mixed reality technology, specifically the HoloLens 2 headset, for visualization and interaction with three-dimensional (3D) anatomical reconstructions obtained from computed tomography (CT) scans. Our prospective observational study, conducted at the IRCCS (Scientific Hospitalization and Care Institute) Sant’Orsola-Malpighi University Hospital in Bologna, engaged ten pediatric surgeons, who assessed three types of anatomical malformations (splenic cysts, pulmonary cystic adenomatoid malformations, and pyelo-ureteral junction stenosis) and planned surgeries using both traditional 2D CT scans and 3D visualizations via HoloLens 2, followed by completing a questionnaire to evaluate the utility of each of these imaging techniques in surgical planning. Results: The statistical analysis revealed that the 3D visualizations significantly outperformed the 2D CT scans in clarity and utility (p < 0.05). The results indicated significant improvements in anatomy understanding and surgical precision. The immersive experience provided by HoloLens 2 enabled surgeons to better identify critical landmarks, understand spatial relationships, and prevent surgical challenges. Furthermore, this technology facilitated collaborative decision-making and streamlined surgical workflows. Conclusions: Despite some challenges in ease of use, HoloLens 2 showed promising results in reducing the learning curve for complex procedures. This study underscores the transformative potential of mixed reality technology in pediatric surgery, advocating for further research and development to integrate these advancements into routine clinical practice.",
+      "Keywords": [
+        "HoloLens 2",
+        "three-dimensional reconstruction",
+        "Verima",
+        "pediatric surgery",
+        "innovations",
+        "mixed reality",
+        "augmented reality",
+        "preoperative planning",
+        "Three-dimensional reconstruction",
+        "Preoperative Planning",
+        "Augmented Reality",
+        "Innovations",
+        "Mixed Reality"
+      ],
+      "Citations": 3,
+      "Publisher": "MDPI AG",
+      "OpenAccess": true,
+      "confidence_factors": {
+        "source": "Vision-Foundation + API Enhancement",
+        "reasoning": "All API data was validated as coherent with vision data. Enhanced with additional identifiers (PMID, PMCID), citations, open access status, and expanded keywords from multiple sources. Year corrected from vision (2025) to API consensus (2024). Publisher name standardized.",
+        "field_sources": {
+          "doi": "crossref|openalex|semantic_scholar|europe_pmc|unpaywall|pubmed|doaj",
+          "pmid": "europe_pmc|pubmed",
+          "year": "crossref|openalex|unpaywall|pubmed|europe_pmc",
+          "issue": "vision|crossref|europe_pmc|doaj",
+          "pages": "vision|crossref|europe_pmc",
+          "pmcid": "europe_pmc",
+          "title": "vision",
+          "pdfurl": "crossref|unpaywall",
+          "volume": "vision|crossref|europe_pmc|doaj",
+          "authors": "crossref+vision",
+          "journal": "vision",
+          "abstract": "vision|europe_pmc",
+          "keywords": "vision|europe_pmc|doaj",
+          "citations": "semantic_scholar|europe_pmc",
+          "publisher": "vision|crossref|unpaywall|doaj",
+          "openaccess": "semantic_scholar|unpaywall|openalex|europe_pmc"
+        },
+        "enhancement_level": "SIGNIFICANT",
+        "validation_status": "HIGH"
+      },
+      "api_success_summary": {
+        "insights": "Excellent coherence across all successful APIs. Semantic Scholar, Europe PMC, and Crossref provided the most valuable enhancements. Year correction was unanimous across APIs. Failed APIs were expected (arxiv not relevant, datacite not found).",
+        "total_apis": 11,
+        "failed_apis": [
+          "arxiv",
+          "datacite"
+        ],
+        "success_rate": 0.82,
+        "coherent_apis": 9,
+        "coherence_rate": 1.0,
+        "successful_apis": 9
+      }
+    },
+    "processing_time_ms": 80289
+  },
+  "llm_topics_json": {
+    "success": true,
+    "prompt_sent": "You are a scientific research assistant extracting data for academic comparison tables with statistical rigor.\n\nCRITICAL INSTRUCTIONS FOR ACADEMIC COMPARISON:\n\n- SYSTEMATICALLY scan ALL content: text, tables, figures, charts, appendices\n- PRIORITIZE quantitative data while preserving qualitative context\n- When conflicts exist in the paper, prioritize MOST RECENT/AUTHORITATIVE source\n- Extract ALL relevant details mentioned - DON'T truncate important information\n- Include statistical tests results (Z-scores, t-values, chi-square, etc.)\n- Extract accuracy rates, completion rates, success rates with specific numbers\n- Capture comparative data (e.g., \"46% vs 27%\", \"Group A: 64.5%, Group B: 68.2%\")\n- Use proper numeric format: \"p = 0.007\" not \"p = .007\", \"81\" not \"eighty-one\"\n\nCOMPREHENSIVE CAPTURE REQUIREMENTS:\n\n- List ALL hardware components: cameras, sensors, headsets, controllers, phones, tablets, webcams, probes\n- Include ALL software details: platforms, SDKs, libraries, export formats (CSV, JSON), feedback systems\n- Capture ALL measurement instruments: scales, questionnaires, assessment tools (SUS, NASA-TLX, FES-I, MoCA, IKDC, VAS, ABC scale, WHODAS 2.0, etc.)\n- Note ALL technical specifications: resolutions, frame rates, tracking capabilities, joint counts\n- Include ALL study phases: pilot tests, technical validation, user studies, expert evaluations\n- Capture ALL procedural details: training time, calibration steps, data export processes, real-time feedback\n\nCONFLICT RESOLUTION:\n\n- If conflicting information exists, prioritize methods/results over abstract\n- When uncertain, include both: \"X in abstract, Y in methods section\"\n\nExtract the following 7 scientific topics:\n\n1. *study_design*: Extract the PRIMARY study type/design using the most specific and authoritative terminology from the paper's methods section. Recognize equivalent terms: \"RCT\" = \"Randomized controlled trial\", \"Pilot study\" = \"Feasibility pilot study\", \"Cross-sectional\" = \"Observational cross-sectional\", \"User study\" = \"User evaluation study\". When multiple study type descriptions exist, prioritize the most comprehensive version from methods over abstract. Include specific qualifiers when mentioned (e.g., \"multicenter\", \"double-blind\", \"waitlist-controlled\") as these add valuable detail. Format as brief phrase describing core study methodology, avoiding generic terms like \"study\" or \"research\" alone.\n\n2. *methodology*: ONE comprehensive sentence covering: technology + application + key technical details. Include: ALL device models, software platforms, measurement tools, statistical analyses. Capture ALL hardware components mentioned (cameras, sensors, controllers, probes, etc.). Include ALL software features (real-time feedback, data export, tracking capabilities). Mention ALL technical specifications (joint tracking numbers, frame rates, resolutions). Example: \"Microsoft HoloLens 2 with HoloAnatomy platform for 3D anatomical procedural visualization using real-time motion tracking of 25 joints with CSV data export and real-time visual feedback\".\n\n3. *sample_size*: Format: \"X participants/patients\" (use paper's exact terminology). Include TOTAL numbers if multiple groups exist. Include ALL test phases: technical tests, pilot studies, user evaluations. Example: \"25 total: 23 biomedical students + 2 clinical experts; 50 technical validation readings\".\n\n4. *population*: ALL demographic details and characteristics not captured in sample_size. Include age, profession, condition, experience, setting details. Add specific numbers when available. Include recruitment sources and inclusion/exclusion criteria.\n\n5. *primary_outcome*: Include ALL measurement tools, scales, timing, specific metrics, usability criteria (ease of use, realism, anatomical accuracy). List ALL assessment instruments used and functional scales (SUS, NASA-TLX, FES-I, MoCA, IKDC, VAS, ABC scale, WHODAS 2.0, etc.), and evaluation dimensions beyond the primary measures.. Include ALL comparison conditions and timepoints. Example: \"Patient understanding via 5-point Likert scale assessed pre/post intervention, plus SUS usability scores and NASA-TLX workload assessment\".\n\n6. *key_findings*: PRIORITIZE statistical results with practical implications. Format: \"Finding 1: [statistical data + meaning]. Finding 2: [data + context]\". Include ALL significant findings, p-values, effect sizes, accuracy rates, comparative data, accuracy measurements (sub-mm, degrees), specific understanding domains (surgical risks, operative steps, recovery), and detailed performance metrics beyond statistical significance. Present ALL questionnaire results, prototype performance, qualitative benefits. Include ALL cost factors, training requirements, implementation details. Capture ALL comparison groups and their specific results. Be comprehensive - capture complete findings picture. Include ALL technical specifications mentioned: accuracy measurements (sub-mm, degrees).\n\n7. *limitations*: Extract ALL limitations from limitation/discussion sections. Include sample size issues, technical equipment requirements, methodological, practical constraints. Mention ALL equipment needs, calibration requirements, manufacturing variability. Include ALL generalizability issues, validity concerns, implementation barriers. Capture training requirements, cost constraints, specialized equipment needs. Note real-world applicability issues and clinical implementation challenges. Don't summarize - capture complete limitation landscape.\n\nReturn as valid JSON with this EXACT structure:\n\n{\n  \"study_design\": \"string\",\n  \"methodology\": \"string\",\n  \"sample_size\": \"string\",\n  \"population\": \"string\",\n  \"primary_outcome\": \"string\",\n  \"key_findings\": \"string\",\n  \"limitations\": \"string\"\n}",
+    "cost_tracking": {
+      "model": "gpt-4o",
+      "call_type": "scientific_topics_multimodal",
+      "timestamp": "2025-07-22T14:50:17.769146",
+      "input_cost": 0.03607,
+      "total_cost": 0.0387,
+      "output_cost": 0.00263,
+      "input_tokens": 14428,
+      "total_tokens": 14691,
+      "output_tokens": 263
+    },
+    "input_details": {
+      "dpi": 150,
+      "max_tokens": 6000,
+      "model_used": "gpt-4o",
+      "temperature": 0.1,
+      "strategy_used": "vision_all_pages (≤40)",
+      "pdf_total_pages": 12,
+      "image_resolution": "high",
+      "processing_time_ms": 49864,
+      "pdf_pages_processed": 12
+    },
+    "pages_processed": 12,
+    "extracted_topics": {
+      "population": "Pediatric surgeons with at least 5 years of experience in treating splenic cysts, pulmonary cystic adenomatoid malformations, and pyelo-ureteral junction stenosis.",
+      "limitations": "Small number of surgeons and cases analyzed; limitations in the application of HoloLens 2 technology in the preoperative phase.",
+      "methodology": "Microsoft HoloLens 2 with Verima software for 3D anatomical reconstructions using real-time interaction and Likert scale questionnaire for evaluation, with paired t-tests for statistical analysis.",
+      "sample_size": "10 pediatric surgeons",
+      "key_findings": "Finding 1: 3D visualizations significantly improved clarity and utility over 2D CT scans (p < 0.05). Finding 2: Large effect size for usability (d = 1.15) and surgical time (d = 1.4), small effect size for blood loss (d = 0.3).",
+      "study_design": "Prospective observational study",
+      "primary_outcome": "Utility of 3D visualizations assessed via Likert scale questionnaire comparing 2D CT scans and 3D visualizations, with paired t-tests for statistical significance."
+    },
+    "extraction_method": "multimodal_vision",
+    "extraction_quality": {
+      "topics_missing": 0,
+      "topics_extracted": 7
+    },
+    "processing_time_ms": 49864,
+    "raw_openai_response": {
+      "content": "```json\n{\n  \"study_design\": \"Prospective observational study\",\n  \"methodology\": \"Microsoft HoloLens 2 with Verima software for 3D anatomical reconstructions using real-time interaction and Likert scale questionnaire for evaluation, with paired t-tests for statistical analysis.\",\n  \"sample_size\": \"10 pediatric surgeons\",\n  \"population\": \"Pediatric surgeons with at least 5 years of experience in treating splenic cysts, pulmonary cystic adenomatoid malformations, and pyelo-ureteral junction stenosis.\",\n  \"primary_outcome\": \"Utility of 3D visualizations assessed via Likert scale questionnaire comparing 2D CT scans and 3D visualizations, with paired t-tests for statistical significance.\",\n  \"key_findings\": \"Finding 1: 3D visualizations significantly improved clarity and utility over 2D CT scans (p < 0.05). Finding 2: Large effect size for usability (d = 1.15) and surgical time (d = 1.4), small effect size for blood loss (d = 0.3).\",\n  \"limitations\": \"Small number of surgeons and cases analyzed; limitations in the application of HoloLens 2 technology in the preoperative phase.\"\n}\n```",
+      "parsing_error": null,
+      "response_length": 1094,
+      "parsing_successful": true
+    },
+    "processing_timestamp": "2025-07-22T14:50:17.769018"
+  },
+  "processing_metadata": {
+    "filename": "26) Advancing Pediatric Surgery_ The Use of HoloLens 2 for 3D Anatomical Reconstructions in Preoperative Planning.pdf",
+    "article_id": "unknown",
+    "total_phases": 5,
+    "aggregated_at": "2025-07-22T14:50:19.090902",
+    "phases_completed": {
+      "topics": true,
+      "vision": true,
+      "apis_raw": true,
+      "questions": false,
+      "apis_clean": true
+    },
+    "transparency_level": "complete"
+  }
+}

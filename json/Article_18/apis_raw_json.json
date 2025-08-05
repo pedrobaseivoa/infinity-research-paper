@@ -1,0 +1,1185 @@
+{
+  "core": {
+    "error": "No results found in CORE",
+    "success": false,
+    "timestamp": "2025-07-22T14:13:40.092280",
+    "processing_time_ms": 14551
+  },
+  "doaj": {
+    "error": "No DOI available for DOAJ search",
+    "success": false,
+    "timestamp": "2025-07-22T14:13:27.058692",
+    "processing_time_ms": 1509
+  },
+  "arxiv": {
+    "error": "No results found",
+    "success": false,
+    "timestamp": "2025-07-22T14:13:26.758437",
+    "processing_time_ms": 1214
+  },
+  "orcid": {
+    "data": {
+      "person": {
+        "name": {
+          "path": "0000-0002-6105-8666",
+          "source": null,
+          "visibility": "public",
+          "credit-name": {
+            "value": "Prasanna Venkatesh Ramesh"
+          },
+          "family-name": {
+            "value": "Ramesh"
+          },
+          "given-names": {
+            "value": "Prasanna Venkatesh"
+          },
+          "created-date": {
+            "value": 1588775109350
+          },
+          "last-modified-date": {
+            "value": 1604593908553
+          }
+        },
+        "path": "/0000-0002-6105-8666/person",
+        "emails": {
+          "path": "/0000-0002-6105-8666/email",
+          "email": [],
+          "last-modified-date": null
+        },
+        "keywords": {
+          "path": "/0000-0002-6105-8666/keywords",
+          "keyword": [
+            {
+              "path": "/0000-0002-6105-8666/keywords/1908473",
+              "source": {
+                "source-name": {
+                  "value": "Prasanna Venkatesh Ramesh"
+                },
+                "source-orcid": {
+                  "uri": "https://orcid.org/0000-0002-6105-8666",
+                  "host": "orcid.org",
+                  "path": "0000-0002-6105-8666"
+                },
+                "source-client-id": null,
+                "assertion-origin-name": null,
+                "assertion-origin-orcid": null,
+                "assertion-origin-client-id": null
+              },
+              "content": "Glaucomatologist",
+              "put-code": 1908473,
+              "visibility": "public",
+              "created-date": {
+                "value": 1617609404685
+              },
+              "display-index": 3,
+              "last-modified-date": {
+                "value": 1641899572373
+              }
+            },
+            {
+              "path": "/0000-0002-6105-8666/keywords/2219227",
+              "source": {
+                "source-name": {
+                  "value": "Prasanna Venkatesh Ramesh"
+                },
+                "source-orcid": {
+                  "uri": "https://orcid.org/0000-0002-6105-8666",
+                  "host": "orcid.org",
+                  "path": "0000-0002-6105-8666"
+                },
+                "source-client-id": null,
+                "assertion-origin-name": null,
+                "assertion-origin-orcid": null,
+                "assertion-origin-client-id": null
+              },
+              "content": "Researcher",
+              "put-code": 2219227,
+              "visibility": "public",
+              "created-date": {
+                "value": 1641899572370
+              },
+              "display-index": 2,
+              "last-modified-date": {
+                "value": 1641899572370
+              }
+            },
+            {
+              "path": "/0000-0002-6105-8666/keywords/2219226",
+              "source": {
+                "source-name": {
+                  "value": "Prasanna Venkatesh Ramesh"
+                },
+                "source-orcid": {
+                  "uri": "https://orcid.org/0000-0002-6105-8666",
+                  "host": "orcid.org",
+                  "path": "0000-0002-6105-8666"
+                },
+                "source-client-id": null,
+                "assertion-origin-name": null,
+                "assertion-origin-orcid": null,
+                "assertion-origin-client-id": null
+              },
+              "content": "Academic Film Maker",
+              "put-code": 2219226,
+              "visibility": "public",
+              "created-date": {
+                "value": 1641899572368
+              },
+              "display-index": 1,
+              "last-modified-date": {
+                "value": 1641899572368
+              }
+            }
+          ],
+          "last-modified-date": {
+            "value": 1641899572373
+          }
+        },
+        "addresses": {
+          "path": "/0000-0002-6105-8666/address",
+          "address": [
+            {
+              "path": "/0000-0002-6105-8666/address/1861946",
+              "source": {
+                "source-name": {
+                  "value": "Prasanna Venkatesh Ramesh"
+                },
+                "source-orcid": {
+                  "uri": "https://orcid.org/0000-0002-6105-8666",
+                  "host": "orcid.org",
+                  "path": "0000-0002-6105-8666"
+                },
+                "source-client-id": null,
+                "assertion-origin-name": null,
+                "assertion-origin-orcid": null,
+                "assertion-origin-client-id": null
+              },
+              "country": {
+                "value": "IN"
+              },
+              "put-code": 1861946,
+              "visibility": "public",
+              "created-date": {
+                "value": 1604593952508
+              },
+              "display-index": 1,
+              "last-modified-date": {
+                "value": 1604593952508
+              }
+            }
+          ],
+          "last-modified-date": {
+            "value": 1604593952508
+          }
+        },
+        "biography": {
+          "path": "/0000-0002-6105-8666/biography",
+          "content": "MS Ophthalmology (Gold Medalist); DNB (Ophthalmology); MNAMS; Fellowship in Glaucoma Surgery and Research (dr sathyan's): FAICO (Glaucoma) ; FICO (Glaucoma); FAICO (Cataract/Phaco - Gold Medalist); Glaucomatologist; Avid Researcher; Academic Film Maker\n\nHead of Glaucoma and Research, Mahathma Eye Hospital Private Limited Trichy, Tamil Nadu / TNOA Management Committee Member / YOSI Joint Secretary 2024-2026 / YOSI Executive Member 2022-2024 / Published 18 Chapters & 55 Articles in Various PubMed Indexed Journals / Glaucoma Section Editor, Editorial Board Member 2021-2022 for TNOA Journal of Ophthalmic Science and Research / Associate Editor, Editorial Board Member 2022-2023 for TNOA Journal of Ophthalmic Science and Research / Editorial Board Member (General Ophthalmology and Videos), Indian Journal of Ophthalmology 2023-2024 / Managing Editor, Ocular Research Journal / Editor, Newsletter of Teleophthalmology Society of India 2023-2024 / EYEDEA, The Innovator's Nook, Section Editor 2024 (AIOS Times) / Assistant Editor (Glaucoma) - AIOS Dynamic E-book  / Review Board Member for PG Syllabus - Sri Balaji Vidyapeeth University / Total No of Scientific Ophthalmic Presentations - 353 (60 International Presentations) / Chief Instructor - APAO 2023, ASCRS 2025, ASCRS 2024, ASCRS 2022, GSI 2022, GSI 2021, AIOS 2025, AIOS 2024, AIOS 2023, AIOS 2022, AIOS 2021, AIOS 2020, TNOA 2020 & TNOA 2019 / Faculty - WGC, TNOA, AIOS, DOS, GSI, IIRSI, APAO, OSWB, AIOS-YOSI Forum, KOSCON, ASCRS, APGC\n\nRecipient of 2 Gold Medals, 23 Awards in ASCRS, 4 in WGC, 5 in APAO, 17 in IIRSI, 61 in AIOS, 13 in GSI, 19 in TNOA, 1 in LVPEI, 7 in DOS, 12 in YOSI & 1 in Aravind Eye Care System Conferences\n\nReviewer of Indian Journal of Ophthalmology, Journal of Clinical and Diagnostic Research, TNOA Journal of Ophthalmic Science and Research, World Journal of Clinical Cases, Journal of Ophthalmology, Computer Assisted Surgery, Seminars in Ophthalmology, Journal of Scientific Research and Reports, Journal of Advances in Medicine and Medical Research, International Journal of TROPICAL DISEASE & Health, Clinical Case Reports and Reviews, Journal of Surgery and Research, Journal of Pharmaceutical Research International, International Journal of Research and Reports in Hematology, World Journal of Cardiology, Journal of Clinical Ophthalmology and Research, Eye and Vision, World Journal of Gastrointestinal Surgery, World Journal of Gastroenterology, Asian Journal of Research in Infectious Diseases, World Journal of Virology, Journal of Medicine and Health Research, Asian Journal of Case Reports in Medicine and Health, World Journal of Hematology, Clinical Ophthalmology, Ophthalmology Research: An International Journal, Translational Vision Science & Technology, International Journal of General Medicine,  Ophthalmic Research, Expert Review of Ophthalmology, Clinical Case Reports, Therapeutics and Clinical Risk Management, Open Access Emergency Medicine, Journal of International Medical Research, International Journal of Ophthalmology & Ophthalmology and Therapy, Scientific Reports, Asia-Pacific Journal of Ophthalmology, British Journal of Ophthalmology, Therapeutic Advances in Ophthalmology, European Journal of Ophthalmology,  Journal of Glaucoma, BMC Research Notes, Cureus, KJO, AJOCR, DJO, Journal of Ophthalmology & Current Medical Issues",
+          "visibility": "public",
+          "created-date": {
+            "value": 1627387412205
+          },
+          "last-modified-date": {
+            "value": 1752566029097
+          }
+        },
+        "other-names": {
+          "path": "/0000-0002-6105-8666/other-names",
+          "other-name": [
+            {
+              "path": "/0000-0002-6105-8666/other-names/1508563",
+              "source": {
+                "source-name": {
+                  "value": "Prasanna Venkatesh Ramesh"
+                },
+                "source-orcid": {
+                  "uri": "https://orcid.org/0000-0002-6105-8666",
+                  "host": "orcid.org",
+                  "path": "0000-0002-6105-8666"
+                },
+                "source-client-id": null,
+                "assertion-origin-name": null,
+                "assertion-origin-orcid": null,
+                "assertion-origin-client-id": null
+              },
+              "content": "Dr. Prasanna V Ramesh",
+              "put-code": 1508563,
+              "visibility": "public",
+              "created-date": {
+                "value": 1604593969257
+              },
+              "display-index": 1,
+              "last-modified-date": {
+                "value": 1617609389325
+              }
+            }
+          ],
+          "last-modified-date": {
+            "value": 1617609389325
+          }
+        },
+        "researcher-urls": {
+          "path": "/0000-0002-6105-8666/researcher-urls",
+          "researcher-url": [
+            {
+              "url": {
+                "value": "http://youtube.com/playlist?list=plbxm3aqdcgavp77yqdbgqygu2mhdnj0ue"
+              },
+              "path": "/0000-0002-6105-8666/researcher-urls/2574934",
+              "source": {
+                "source-name": {
+                  "value": "Prasanna Venkatesh Ramesh"
+                },
+                "source-orcid": {
+                  "uri": "https://orcid.org/0000-0002-6105-8666",
+                  "host": "orcid.org",
+                  "path": "0000-0002-6105-8666"
+                },
+                "source-client-id": null,
+                "assertion-origin-name": null,
+                "assertion-origin-orcid": null,
+                "assertion-origin-client-id": null
+              },
+              "put-code": 2574934,
+              "url-name": "prasanna's eye tube",
+              "visibility": "public",
+              "created-date": {
+                "value": 1622043019387
+              },
+              "display-index": 4,
+              "last-modified-date": {
+                "value": 1641976804181
+              }
+            },
+            {
+              "url": {
+                "value": "https://www.researchgate.net/profile/prasanna-ramesh-2"
+              },
+              "path": "/0000-0002-6105-8666/researcher-urls/2592699",
+              "source": {
+                "source-name": {
+                  "value": "Prasanna Venkatesh Ramesh"
+                },
+                "source-orcid": {
+                  "uri": "https://orcid.org/0000-0002-6105-8666",
+                  "host": "orcid.org",
+                  "path": "0000-0002-6105-8666"
+                },
+                "source-client-id": null,
+                "assertion-origin-name": null,
+                "assertion-origin-orcid": null,
+                "assertion-origin-client-id": null
+              },
+              "put-code": 2592699,
+              "url-name": "prasanna's rg",
+              "visibility": "public",
+              "created-date": {
+                "value": 1623222881827
+              },
+              "display-index": 3,
+              "last-modified-date": {
+                "value": 1641976804181
+              }
+            },
+            {
+              "url": {
+                "value": "https://publons.com/researcher/4458957/prasanna-venkatesh-ramesh/"
+              },
+              "path": "/0000-0002-6105-8666/researcher-urls/2592703",
+              "source": {
+                "source-name": {
+                  "value": "Prasanna Venkatesh Ramesh"
+                },
+                "source-orcid": {
+                  "uri": "https://orcid.org/0000-0002-6105-8666",
+                  "host": "orcid.org",
+                  "path": "0000-0002-6105-8666"
+                },
+                "source-client-id": null,
+                "assertion-origin-name": null,
+                "assertion-origin-orcid": null,
+                "assertion-origin-client-id": null
+              },
+              "put-code": 2592703,
+              "url-name": "prasanna's publons",
+              "visibility": "public",
+              "created-date": {
+                "value": 1623223118564
+              },
+              "display-index": 2,
+              "last-modified-date": {
+                "value": 1641976804181
+              }
+            },
+            {
+              "url": {
+                "value": "https://www.linkedin.com/in/prasanna-venkatesh-ramesh-173b25205/"
+              },
+              "path": "/0000-0002-6105-8666/researcher-urls/2592739",
+              "source": {
+                "source-name": {
+                  "value": "Prasanna Venkatesh Ramesh"
+                },
+                "source-orcid": {
+                  "uri": "https://orcid.org/0000-0002-6105-8666",
+                  "host": "orcid.org",
+                  "path": "0000-0002-6105-8666"
+                },
+                "source-client-id": null,
+                "assertion-origin-name": null,
+                "assertion-origin-orcid": null,
+                "assertion-origin-client-id": null
+              },
+              "put-code": 2592739,
+              "url-name": "prasanna's linkedin",
+              "visibility": "public",
+              "created-date": {
+                "value": 1623223236881
+              },
+              "display-index": 1,
+              "last-modified-date": {
+                "value": 1641976804181
+              }
+            }
+          ],
+          "last-modified-date": {
+            "value": 1641976804181
+          }
+        },
+        "last-modified-date": {
+          "value": 1725398861041
+        },
+        "external-identifiers": {
+          "path": "/0000-0002-6105-8666/external-identifiers",
+          "last-modified-date": {
+            "value": 1725398861041
+          },
+          "external-identifier": [
+            {
+              "path": "/0000-0002-6105-8666/external-identifiers/2090574",
+              "source": {
+                "source-name": {
+                  "value": "Web of Science Researcher Profile Sync"
+                },
+                "source-orcid": null,
+                "source-client-id": {
+                  "uri": "https://orcid.org/client/APP-1DSJAQCZ1PW1VN5X",
+                  "host": "orcid.org",
+                  "path": "APP-1DSJAQCZ1PW1VN5X"
+                },
+                "assertion-origin-name": null,
+                "assertion-origin-orcid": null,
+                "assertion-origin-client-id": null
+              },
+              "put-code": 2090574,
+              "visibility": "public",
+              "created-date": {
+                "value": 1622288264800
+              },
+              "display-index": 0,
+              "external-id-url": {
+                "value": "https://www.webofscience.com/wos/author/record/AAO-8071-2021"
+              },
+              "external-id-type": "ResearcherID",
+              "external-id-value": "AAO-8071-2021",
+              "last-modified-date": {
+                "value": 1725398861041
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        }
+      },
+      "orcid_id": "0000-0002-6105-8666"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:13:27.008650",
+    "processing_time_ms": 1456
+  },
+  "pubmed": {
+    "data": {
+      "PubmedArticle": [
+        {
+          "MedlineCitation": {
+            "PMID": {
+              "content": "36880748"
+            },
+            "Article": {
+              "Journal": {
+                "Title": "European journal of ophthalmology",
+                "JournalIssue": {
+                  "Issue": "3",
+                  "Volume": "34",
+                  "PubDate": {
+                    "Year": "2024"
+                  }
+                }
+              },
+              "Abstract": {
+                "AbstractText": [
+                  "In this manuscript, we have reported an augmented reality (AR) application named, 'Eye MG AR' innovated by us, to show different anatomical/pathological parts of the eyeball pertaining to glaucoma, from multiple customized angles of the user's choice to simplify glaucoma learning and clinical counseling. It is available free of cost from the Google Play Store for Android users. Procedures ranging from a simple outpatient department procedure (yttrium aluminium garnet peripheral iridotomy) to a complex surgical technique (trabeculectomy/tube surgery) can be explained and counseled with this Android application. Also, complex structures such as the angle of the anterior chamber and optic nerve head, are constructed in advanced real-time three-dimensional (3D) high-resolution confocal images. These 3D models are useful for glaucoma neophytes' immersive learning and 3D patient counseling experiences. This AR tool aims to reinvent the approach to glaucoma counseling with 'Unreal Engine' software and is created in a patient-friendly approach. Incepting 3D pedagogy and counseling with AR in glaucoma with real-time and high-resolution TrueColor confocal images has never been reported in the literature according to our knowledge."
+                ]
+              },
+              "AuthorList": {
+                "Author": [
+                  {
+                    "ForeName": "Prasanna Venkatesh",
+                    "LastName": "Ramesh"
+                  },
+                  {
+                    "ForeName": "Prajnya",
+                    "LastName": "Ray"
+                  },
+                  {
+                    "ForeName": "Tensingh",
+                    "LastName": "Joshua"
+                  },
+                  {
+                    "ForeName": "Aji Kunnath",
+                    "LastName": "Devadas"
+                  },
+                  {
+                    "ForeName": "Prakash Michael",
+                    "LastName": "Raj"
+                  },
+                  {
+                    "ForeName": "Shruthy Vaishali",
+                    "LastName": "Ramesh"
+                  },
+                  {
+                    "ForeName": "Meena Kumari",
+                    "LastName": "Ramesh"
+                  },
+                  {
+                    "ForeName": "Ramesh",
+                    "LastName": "Rajasekaran"
+                  }
+                ]
+              },
+              "Pagination": {
+                "MedlinePgn": "870-873"
+              },
+              "ArticleTitle": "The photoreal new-age innovative pedagogical & counseling tool for glaucoma with 3D augmented reality (Eye MG AR)."
+            }
+          }
+        }
+      ]
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:13:27.240086",
+    "processing_time_ms": 1721
+  },
+  "crossref": {
+    "data": {
+      "status": "ok",
+      "message": {
+        "DOI": "10.1177/11206721231159249",
+        "URL": "https://doi.org/10.1177/11206721231159249",
+        "ISSN": [
+          "1120-6721",
+          "1724-6016"
+        ],
+        "link": [
+          {
+            "URL": "https://journals.sagepub.com/doi/pdf/10.1177/11206721231159249",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://journals.sagepub.com/doi/full-xml/10.1177/11206721231159249",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://journals.sagepub.com/doi/pdf/10.1177/11206721231159249",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "page": "870-873",
+        "type": "journal-article",
+        "issue": "3",
+        "score": 1,
+        "title": [
+          "The photoreal new-age innovative pedagogical &amp; counseling tool for glaucoma with 3D augmented reality (Eye MG AR)"
+        ],
+        "author": [
+          {
+            "given": "Prasanna Venkatesh",
+            "family": "Ramesh",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Department of Glaucoma and Research, Mahathma Eye Hospital Private Limited, Trichy, Tamil Nadu, India"
+              }
+            ]
+          },
+          {
+            "given": "Prajnya",
+            "family": "Ray",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Optometry and Visual Science, Mahathma Eye Hospital Private Limited, Trichy, Tamil Nadu, India"
+              }
+            ]
+          },
+          {
+            "given": "Tensingh",
+            "family": "Joshua",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Research and Animation, Mahathma Centre of Moving Images Private Limited, Trichy, Tamil Nadu, India"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-5583-2926",
+            "given": "Aji Kunnath",
+            "family": "Devadas",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Optometry and Visual Science, Mahathma Eye Hospital Private Limited, Trichy, Tamil Nadu, India"
+              }
+            ],
+            "authenticated-orcid": false
+          },
+          {
+            "given": "Prakash Michael",
+            "family": "Raj",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Research and Animation, Mahathma Centre of Moving Images Private Limited, Trichy, Tamil Nadu, India"
+              }
+            ]
+          },
+          {
+            "given": "Shruthy Vaishali",
+            "family": "Ramesh",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Cataract and Refractive Surgery, Mahathma Eye Hospital Private Limited, Trichy, Tamil Nadu, India"
+              }
+            ]
+          },
+          {
+            "given": "Meena Kumari",
+            "family": "Ramesh",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Cataract and Refractive Surgery, Mahathma Eye Hospital Private Limited, Trichy, Tamil Nadu, India"
+              }
+            ]
+          },
+          {
+            "given": "Ramesh",
+            "family": "Rajasekaran",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Paediatric Ophthalmology and Strabismus, Mahathma Eye Hospital Private Limited, Trichy, Tamil Nadu, India"
+              }
+            ]
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              3,
+              7
+            ]
+          ]
+        },
+        "member": "179",
+        "prefix": "10.1177",
+        "source": "Crossref",
+        "volume": "34",
+        "created": {
+          "date-time": "2023-03-07T13:43:23Z",
+          "timestamp": 1678196603000,
+          "date-parts": [
+            [
+              2023,
+              3,
+              7
+            ]
+          ]
+        },
+        "indexed": {
+          "version": "3.40.4",
+          "date-time": "2025-07-07T01:03:46Z",
+          "timestamp": 1751850226874,
+          "date-parts": [
+            [
+              2025,
+              7,
+              7
+            ]
+          ]
+        },
+        "license": [
+          {
+            "URL": "https://journals.sagepub.com/page/policies/text-and-data-mining-license",
+            "start": {
+              "date-time": "2023-03-07T00:00:00Z",
+              "timestamp": 1678147200000,
+              "date-parts": [
+                [
+                  2023,
+                  3,
+                  7
+                ]
+              ]
+            },
+            "delay-in-days": 0,
+            "content-version": "tdm"
+          }
+        ],
+        "subject": [],
+        "abstract": "<jats:p>In this manuscript, we have reported an augmented reality (AR) application named, ‘Eye MG AR’ innovated by us, to show different anatomical/pathological parts of the eyeball pertaining to glaucoma, from multiple customized angles of the user's choice to simplify glaucoma learning and clinical counseling. It is available free of cost from the Google Play Store for Android users. Procedures ranging from a simple outpatient department procedure (yttrium aluminium garnet peripheral iridotomy) to a complex surgical technique (trabeculectomy/tube surgery) can be explained and counseled with this Android application. Also, complex structures such as the angle of the anterior chamber and optic nerve head, are constructed in advanced real-time three-dimensional (3D) high-resolution confocal images. These 3D models are useful for glaucoma neophytes’ immersive learning and 3D patient counseling experiences. This AR tool aims to reinvent the approach to glaucoma counseling with ‘Unreal Engine’ software and is created in a patient-friendly approach. Incepting 3D pedagogy and counseling with AR in glaucoma with real-time and high-resolution TrueColor confocal images has never been reported in the literature according to our knowledge.</jats:p>",
+        "language": "en",
+        "relation": {},
+        "resource": {
+          "primary": {
+            "URL": "https://journals.sagepub.com/doi/10.1177/11206721231159249"
+          }
+        },
+        "subtitle": [],
+        "deposited": {
+          "date-time": "2025-04-19T12:07:05Z",
+          "timestamp": 1745064425000,
+          "date-parts": [
+            [
+              2025,
+              4,
+              19
+            ]
+          ]
+        },
+        "issn-type": [
+          {
+            "type": "print",
+            "value": "1120-6721"
+          },
+          {
+            "type": "electronic",
+            "value": "1724-6016"
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2023,
+              3,
+              7
+            ]
+          ]
+        },
+        "publisher": "SAGE Publications",
+        "reference": [
+          {
+            "DOI": "10.4103/ijo.IJO_2133_21",
+            "key": "e_1_3_2_2_2",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1097/APO.0000000000000409",
+            "key": "e_1_3_2_3_2",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1364/BOE.405026",
+            "key": "e_1_3_2_4_2",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "key": "e_1_3_2_5_2",
+            "year": "2021",
+            "author": "Stephen L",
+            "volume": "62",
+            "first-page": "1599",
+            "unstructured": "Stephen L, Timothy T, Olanrewaju A, et al. Augmented reality mobile application for glaucoma education in the south bronx. Invest Ophthalmol Vis Sci 2021; 62: 1599.",
+            "article-title": "Augmented reality mobile application for glaucoma education in the south bronx",
+            "journal-title": "Invest Ophthalmol Vis Sci"
+          },
+          {
+            "DOI": "10.5772/intechopen.102510",
+            "key": "e_1_3_2_6_2",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "key": "e_1_3_2_7_2",
+            "unstructured": "Eye MG AR - Apps on Google Play. Accessed November 26 2021. https://play.google.com/store/apps/details?id=com.EyeMG_AR&hl=en&gl=IN"
+          },
+          {
+            "key": "e_1_3_2_8_2",
+            "year": "2020",
+            "author": "Gunasekeran DV",
+            "unstructured": "Gunasekeran DV, Low R, Gunasekeran R, et al. Population eye health education using augmented reality and virtual reality: scalable tools during and beyond COVID-19. BMJ Innov 2020; 0: 1–6.",
+            "article-title": "Population eye health education using augmented reality and virtual reality: scalable tools during and beyond COVID-19",
+            "journal-title": "BMJ Innov"
+          }
+        ],
+        "short-title": [],
+        "journal-issue": {
+          "issue": "3",
+          "published-print": {
+            "date-parts": [
+              [
+                2024,
+                5
+              ]
+            ]
+          }
+        },
+        "update-policy": "https://doi.org/10.1177/sage-journals-update-policy",
+        "alternative-id": [
+          "10.1177/11206721231159249"
+        ],
+        "content-domain": {
+          "domain": [
+            "journals.sagepub.com"
+          ],
+          "crossmark-restriction": true
+        },
+        "original-title": [],
+        "container-title": [
+          "European Journal of Ophthalmology"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2024,
+              5
+            ]
+          ]
+        },
+        "reference-count": 7,
+        "published-online": {
+          "date-parts": [
+            [
+              2023,
+              3,
+              7
+            ]
+          ]
+        },
+        "references-count": 7,
+        "short-container-title": [
+          "European Journal of Ophthalmology"
+        ],
+        "is-referenced-by-count": 5
+      },
+      "message-type": "work",
+      "message-version": "1.0.0"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:13:26.656430",
+    "processing_time_ms": 1138
+  },
+  "datacite": {
+    "error": "No matching articles found",
+    "success": false,
+    "timestamp": "2025-07-22T14:13:34.510961",
+    "processing_time_ms": 8965
+  },
+  "openalex": {
+    "data": {
+      "id": "https://openalex.org/W4323347918",
+      "doi": "https://doi.org/10.1177/11206721231159249",
+      "title": "The photoreal new-age innovative pedagogical &amp; counseling tool for glaucoma with 3D augmented reality (Eye MG AR)",
+      "open_access": {
+        "is_oa": false,
+        "oa_url": null,
+        "oa_status": "closed",
+        "any_repository_has_fulltext": false
+      },
+      "cited_by_count": 5,
+      "publication_year": 2023
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:13:26.997497",
+    "processing_time_ms": 1469
+  },
+  "unpaywall": {
+    "data": {
+      "doi": "10.1177/11206721231159249",
+      "year": 2023,
+      "genre": "journal-article",
+      "is_oa": false,
+      "title": "The photoreal new-age innovative pedagogical &amp; counseling tool for glaucoma with 3D augmented reality (Eye MG AR)",
+      "doi_url": "https://doi.org/10.1177/11206721231159249",
+      "oa_status": "closed",
+      "publisher": "SAGE Publications",
+      "is_paratext": false,
+      "journal_name": "European Journal of Ophthalmology",
+      "journal_issns": "1120-6721,1724-6016",
+      "journal_issn_l": "1120-6721",
+      "published_date": "2023-03-07",
+      "z_authors_summary": {
+        "count": 8,
+        "first_author": ""
+      },
+      "has_repository_copy": false,
+      "oa_locations_summary": {
+        "count": 0,
+        "has_repository": false
+      },
+      "best_oa_location_summary": null,
+      "first_oa_location_summary": null
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:13:27.053653",
+    "processing_time_ms": 1521
+  },
+  "europe_pmc": {
+    "data": {
+      "id": "36880748",
+      "doi": "10.1177/11206721231159249",
+      "pmid": "36880748",
+      "inPMC": "N",
+      "title": "The photoreal new-age innovative pedagogical & counseling tool for glaucoma with 3D augmented reality (Eye MG AR).",
+      "hasPDF": "N",
+      "inEPMC": "N",
+      "source": "MED",
+      "authMan": "N",
+      "hasBook": "N",
+      "hasData": "N",
+      "pubYear": "2024",
+      "hasSuppl": "N",
+      "language": "eng",
+      "pageInfo": "870-873",
+      "pubModel": "Print-Electronic",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Ramesh PV",
+            "initials": "PV",
+            "lastName": "Ramesh",
+            "firstName": "Prasanna Venkatesh",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Glaucoma and Research, Mahathma Eye Hospital Private Limited, Trichy, Tamil Nadu, India."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Ray P",
+            "initials": "P",
+            "lastName": "Ray",
+            "firstName": "Prajnya",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Optometry and Visual Science, Mahathma Eye Hospital Private Limited, Trichy, Tamil Nadu, India."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Joshua T",
+            "initials": "T",
+            "lastName": "Joshua",
+            "firstName": "Tensingh",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Research and Animation, Mahathma Centre of Moving Images Private Limited, Trichy, Tamil Nadu, India."
+                }
+              ]
+            }
+          },
+          {
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0002-5583-2926"
+            },
+            "fullName": "Devadas AK",
+            "initials": "AK",
+            "lastName": "Devadas",
+            "firstName": "Aji Kunnath",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Optometry and Visual Science, Mahathma Eye Hospital Private Limited, Trichy, Tamil Nadu, India."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Raj PM",
+            "initials": "PM",
+            "lastName": "Raj",
+            "firstName": "Prakash Michael",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Research and Animation, Mahathma Centre of Moving Images Private Limited, Trichy, Tamil Nadu, India."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Ramesh SV",
+            "initials": "SV",
+            "lastName": "Ramesh",
+            "firstName": "Shruthy Vaishali",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Cataract and Refractive Surgery, Mahathma Eye Hospital Private Limited, Trichy, Tamil Nadu, India."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Ramesh MK",
+            "initials": "MK",
+            "lastName": "Ramesh",
+            "firstName": "Meena Kumari",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Cataract and Refractive Surgery, Mahathma Eye Hospital Private Limited, Trichy, Tamil Nadu, India."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Rajasekaran R",
+            "initials": "R",
+            "lastName": "Rajasekaran",
+            "firstName": "Ramesh",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Paediatric Ophthalmology and Strabismus, Mahathma Eye Hospital Private Limited, Trichy, Tamil Nadu, India."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "nihAuthMan": "N",
+      "subsetList": {
+        "subset": [
+          {
+            "code": "IM",
+            "name": "Index Medicus"
+          }
+        ]
+      },
+      "affiliation": "Department of Glaucoma and Research, Mahathma Eye Hospital Private Limited, Trichy, Tamil Nadu, India.",
+      "epmcAuthMan": "N",
+      "journalInfo": {
+        "issue": "3",
+        "volume": "34",
+        "journal": {
+          "essn": "1724-6016",
+          "issn": "1120-6721",
+          "nlmid": "9110772",
+          "title": "European journal of ophthalmology",
+          "isoabbreviation": "Eur J Ophthalmol",
+          "medlineAbbreviation": "Eur J Ophthalmol"
+        },
+        "journalIssueId": 3764738,
+        "dateOfPublication": "2024 May",
+        "yearOfPublication": 2024,
+        "monthOfPublication": 5,
+        "printPublicationDate": "2024-05-01"
+      },
+      "keywordList": {
+        "keyword": [
+          "Retina",
+          "glaucoma",
+          "Open-angle Glaucoma",
+          "Neovascular Glaucoma",
+          "Angle-closure Glaucoma",
+          "Diagnostic Techniques",
+          "Neuro Ophthalmology"
+        ]
+      },
+      "pubTypeList": {
+        "pubType": [
+          "Journal Article"
+        ]
+      },
+      "abstractText": "In this manuscript, we have reported an augmented reality (AR) application named, 'Eye MG AR' innovated by us, to show different anatomical/pathological parts of the eyeball pertaining to glaucoma, from multiple customized angles of the user's choice to simplify glaucoma learning and clinical counseling. It is available free of cost from the Google Play Store for Android users. Procedures ranging from a simple outpatient department procedure (yttrium aluminium garnet peripheral iridotomy) to a complex surgical technique (trabeculectomy/tube surgery) can be explained and counseled with this Android application. Also, complex structures such as the angle of the anterior chamber and optic nerve head, are constructed in advanced real-time three-dimensional (3D) high-resolution confocal images. These 3D models are useful for glaucoma neophytes' immersive learning and 3D patient counseling experiences. This AR tool aims to reinvent the approach to glaucoma counseling with 'Unreal Engine' software and is created in a patient-friendly approach. Incepting 3D pedagogy and counseling with AR in glaucoma with real-time and high-resolution TrueColor confocal images has never been reported in the literature according to our knowledge.",
+      "authorIdList": {
+        "authorId": [
+          {
+            "type": "ORCID",
+            "value": "0000-0002-5583-2926"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0002-6105-8666"
+          }
+        ]
+      },
+      "authorString": "Ramesh PV, Ray P, Joshua T, Devadas AK, Raj PM, Ramesh SV, Ramesh MK, Rajasekaran R.",
+      "citedByCount": 1,
+      "hasLabsLinks": "N",
+      "isOpenAccess": "N",
+      "hasReferences": "Y",
+      "dateOfCreation": "2023-03-07",
+      "dateOfRevision": "2024-05-03",
+      "firstIndexDate": "2023-03-08",
+      "hasEvaluations": "N",
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "url": "https://doi.org/10.1177/11206721231159249",
+            "site": "DOI",
+            "availability": "Subscription required",
+            "documentStyle": "doi",
+            "availabilityCode": "S"
+          }
+        ]
+      },
+      "meshHeadingList": {
+        "meshHeading": [
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Humans"
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Glaucoma",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "abbreviation": "PP",
+                  "majorTopic_YN": "N",
+                  "qualifierName": "physiopathology"
+                },
+                {
+                  "abbreviation": "SU",
+                  "majorTopic_YN": "N",
+                  "qualifierName": "surgery"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Imaging, Three-Dimensional"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Counseling"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Ophthalmology",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "abbreviation": "ED",
+                  "majorTopic_YN": "N",
+                  "qualifierName": "education"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Software"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "User-Computer Interface"
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Augmented Reality"
+          }
+        ]
+      },
+      "dateOfCompletion": "2024-05-03",
+      "hasTextMinedTerms": "Y",
+      "publicationStatus": "ppublish",
+      "firstPublicationDate": "2023-03-07",
+      "hasDbCrossReferences": "N",
+      "hasTMAccessionNumbers": "N",
+      "electronicPublicationDate": "2023-03-07"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:13:27.283122",
+    "processing_time_ms": 1752
+  },
+  "semantic_scholar": {
+    "data": {
+      "year": 2023,
+      "title": "The photoreal new-age innovative pedagogical & counseling tool for glaucoma with 3D augmented reality (Eye MG AR)",
+      "authors": [
+        {
+          "name": "Prasanna V Ramesh",
+          "authorId": "117922866"
+        },
+        {
+          "name": "Prajnya Ray",
+          "authorId": "2086934206"
+        },
+        {
+          "name": "Tensingh Joshua",
+          "authorId": "2147356057"
+        },
+        {
+          "name": "A. Devadas",
+          "authorId": "2151474007"
+        },
+        {
+          "name": "P. Raj",
+          "authorId": "2210854482"
+        },
+        {
+          "name": "Shruthy V Ramesh",
+          "authorId": "2040708776"
+        },
+        {
+          "name": "M. Ramesh",
+          "authorId": "2040532844"
+        },
+        {
+          "name": "R. Rajasekaran",
+          "authorId": "2040713441"
+        }
+      ],
+      "journal": {
+        "name": "European Journal of Ophthalmology",
+        "pages": "870 - 873",
+        "volume": "34"
+      },
+      "paperId": "ffc9d5c085ecf9e5a05b539d60e119cc149def18",
+      "abstract": "In this manuscript, we have reported an augmented reality (AR) application named, ‘Eye MG AR’ innovated by us, to show different anatomical/pathological parts of the eyeball pertaining to glaucoma, from multiple customized angles of the user's choice to simplify glaucoma learning and clinical counseling. It is available free of cost from the Google Play Store for Android users. Procedures ranging from a simple outpatient department procedure (yttrium aluminium garnet peripheral iridotomy) to a complex surgical technique (trabeculectomy/tube surgery) can be explained and counseled with this Android application. Also, complex structures such as the angle of the anterior chamber and optic nerve head, are constructed in advanced real-time three-dimensional (3D) high-resolution confocal images. These 3D models are useful for glaucoma neophytes’ immersive learning and 3D patient counseling experiences. This AR tool aims to reinvent the approach to glaucoma counseling with ‘Unreal Engine’ software and is created in a patient-friendly approach. Incepting 3D pedagogy and counseling with AR in glaucoma with real-time and high-resolution TrueColor confocal images has never been reported in the literature according to our knowledge.",
+      "externalIds": {
+        "DOI": "10.1177/11206721231159249",
+        "PubMed": "36880748",
+        "CorpusId": 257377802
+      },
+      "isOpenAccess": false,
+      "citationCount": 4,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1177/11206721231159249?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1177/11206721231159249, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      }
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:13:26.754475",
+    "processing_time_ms": 1226
+  }
+}

@@ -1,0 +1,2393 @@
+{
+  "vision_json": {
+    "source": "gpt-4o-vision",
+    "success": true,
+    "prompt_sent": "Extract ONLY publication metadata from these academic paper pages.\n\nCRITICAL: This data will be sent to 11 external APIs, so format accuracy is essential.\n\nFIELD REQUIREMENTS WITH EXACT FORMATS:\n\n1. **Title**: Clean title for API queries (HIGHEST PRIORITY)\n   - Remove line breaks, extra spaces, formatting\n   - No HTML tags or special characters  \n   - Example: \"Effects of Machine Learning on Healthcare Outcomes\"\n\n2. **Authors**: API-compatible author list (HIGHEST PRIORITY)\n   - Each author as separate string in array\n   - Format: \"FirstName LastName\" or \"F. LastName\"\n   - Clean, no extra punctuation\n   - Example: [\"John Smith\", \"M. Johnson\", \"Sarah Williams\"]\n\n3. **DOI**: Standard DOI format for resolution APIs\n   - Must start with \"10.\" if present\n   - Clean format without URL prefixes\n   - Example: \"10.1234/journal.2024.001\"\n\n4. **Journal**: Clean journal name for database queries\n   - Full journal name preferred over abbreviations\n   - Remove extra formatting, parentheses\n   - Example: \"Nature Medicine\"\n\n5. **Year**: Numeric format for date filtering\n   - 4-digit NUMBER only (not string)\n   - Example: 2024\n\n6. **Volume**: Clean number for bibliographic APIs\n   - Numbers only, no \"Vol.\" prefix\n   - Example: \"15\"\n\n7. **Issue**: Clean number format\n   - Numbers only, no \"No.\" or \"Issue\" prefix\n   - Example: \"3\"\n\n8. **Pages**: Standard page range for citations\n   - Format: \"start-end\" or single page\n   - Example: \"123-135\" or \"45\"\n\n9. **PMID**: PubMed ID for medical APIs\n   - Numbers only, no \"PMID:\" prefix\n   - Example: \"12345678\"\n\n10. **PMCID**: PubMed Central ID for open access papers\n    - Numbers only, no \"PMC\" prefix\n    - Often appears near PMID in biomedical papers\n    - Example: \"9876543\"\n\n11. **Keywords**: API-compatible keyword list\n    - Each keyword as separate string\n    - Research-quality terms, no punctuation\n    - Example: [\"machine learning\", \"healthcare\", \"clinical outcomes\"]\n\n11. **Abstract**: Complete clean text (HIGHEST PRIORITY)\n    - Remove formatting, line breaks, extra spaces\n    - Complete sentences, proper punctuation\n    - Search thoroughly across ALL pages\n    - This is CRITICAL for Semantic Scholar and other APIs\n\n12. **Publisher**: Clean organization name\n    - Official publisher name\n    - Example: \"Elsevier\" or \"Nature Publishing Group\"\n\nABSTRACT EXTRACTION PRIORITY:\n- Look thoroughly across ALL pages for abstract sections\n- Extract COMPLETE text, including multiple paragraphs\n- Check: Abstract, Summary, Introduction summary paragraphs\n- This field is CRITICAL for API enrichment success\n\nReturn JSON format:\n{\n  \"Title\": \"clean title without formatting\",\n  \"Authors\": [\"Author One\", \"Author Two\"],\n  \"DOI\": \"10.xxxx/xxxxx\",\n  \"Journal\": \"clean journal name\", \n  \"Year\": 2024,\n  \"Volume\": \"15\",\n  \"Issue\": \"3\", \n  \"Pages\": \"123-135\",\n  \"Abstract\": \"complete clean abstract text\",\n  \"Keywords\": [\"keyword1\", \"keyword2\"],\n  \"PMID\": \"12345678\",\n  \"PMCID\": \"9876543\",\n  \"Publisher\": \"publisher name\"\n}\n\nReturn null for fields not clearly visible. The Abstract field is MOST IMPORTANT for downstream API success.",
+    "cost_tracking": {
+      "model": "gpt-4o",
+      "call_type": "vision_extraction",
+      "timestamp": "2025-07-22T14:28:57.396187",
+      "input_cost": 0.007725,
+      "total_cost": 0.014265,
+      "output_cost": 0.00654,
+      "input_tokens": 3090,
+      "total_tokens": 3744,
+      "output_tokens": 654
+    },
+    "input_details": {
+      "dpi": 120,
+      "max_tokens": 1500,
+      "model_used": "gpt-4o",
+      "temperature": 0.1,
+      "page_strategy": "strategic",
+      "image_resolution": "high",
+      "processing_time_ms": 24277,
+      "pdf_pages_processed": 3
+    },
+    "extracted_data": {
+      "DOI": "10.1097/j.pain.0000000000003384",
+      "PMID": null,
+      "Year": 2025,
+      "Issue": "3",
+      "PMCID": null,
+      "Pages": "571-586",
+      "Title": "Extended reality used in the treatment of phantom limb pain: a multicenter, double-blind, randomized controlled trial",
+      "Volume": "166",
+      "Authors": [
+        "Eva Lendaro",
+        "Corry K. Van der Sluis",
+        "Liselotte Hermansson",
+        "Lina Bunketorp-Kall",
+        "Helena Burger",
+        "Els Keesom",
+        "Cathrine Widehammar",
+        "Maria Munoz-Nova",
+        "Brian E. McGuire",
+        "Paul O'Reilly",
+        "Eric J. Earley",
+        "Soman Iqbal",
+        "Morten B. Kristoffersen",
+        "Anita Stockselius",
+        "Lena Gudmundsson",
+        "Wendy Hill",
+        "Martin Diers",
+        "Kristi L. Turner",
+        "Thomas Weiss",
+        "Max Ortiz-Catalan"
+      ],
+      "Journal": "Pain",
+      "Abstract": "Phantom limb pain (PLP) represents a significant challenge after amputation. This study investigated the use of phantom motor execution (PME) and phantom motor imagery (PMI) facilitated by extended reality (XR) for the treatment of PLP. Both treatments used XR, but PME involved overt execution of phantom movements, relying on the decoding of motor intent using machine learning to enable real-time control in XR. In contrast, PMI involved mental rehearsal of phantom movements guided by XR. The study hypothesized that PME would be superior to PMI. A multicenter, double-blind, randomized controlled trial was conducted in 9 outpatient clinics across 7 countries. Eighty-one participants with PLP were randomly assigned to PME or PMI training. The primary outcome was the change in PLP, measured by the Pain Rating Index, from baseline to treatment cessation. Secondary outcomes included various aspects related to PLP, such as the rate of clinically meaningful reduction in pain (CMRP; >50% pain decrease). No evidence was found for superiority of overt execution (PME) over imagery (PMI) using XR. PLP decreased by 64.5% and 68.2% in PME and PMI groups, respectively. Thirty-seven PME participants (71%) and 19 PMI participants (68%) experienced CMRP. Positive changes were recorded in all other secondary outcome differences. Pain reduction for PME was larger than previously reported. Despite our initial hypothesis not being supported, PME and PMI, aided by XR, are likely to offer meaningful PLP relief to most users. These findings merit consideration for clinical implementation.",
+      "Keywords": [
+        "phantom limb pain",
+        "phantom motor execution",
+        "virtual reality",
+        "augmented reality",
+        "rehabilitation",
+        "pain management"
+      ],
+      "Publisher": "Wolters Kluwer Health"
+    },
+    "pages_processed": 3,
+    "extraction_matrix": {
+      "_performance_summary": {
+        "total_cost": 0.0,
+        "data_source": "vision_json",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "vision_status": "COMPLETE",
+        "extraction_rate": 84.62,
+        "extraction_source": "gpt-4o-vision",
+        "performance_level": "EXCELLENT",
+        "fields_with_content": 11,
+        "processing_time_seconds": 0,
+        "total_fields_in_response": 13
+      }
+    },
+    "extraction_method": "vision_strategic_strategy",
+    "extraction_quality": {
+      "success_rate": 50.0,
+      "quality_score": 50.0,
+      "successful_fields": 11,
+      "validation_details": {
+        "errors": [],
+        "is_valid": true,
+        "warnings": [],
+        "quality_score": 100,
+        "completeness_score": 100.0
+      },
+      "total_fields_attempted": 13
+    },
+    "processing_time_ms": 24277,
+    "raw_openai_response": {
+      "content": "```json\n{\n  \"Title\": \"Extended reality used in the treatment of phantom limb pain: a multicenter, double-blind, randomized controlled trial\",\n  \"Authors\": [\n    \"Eva Lendaro\",\n    \"Corry K. Van der Sluis\",\n    \"Liselotte Hermansson\",\n    \"Lina Bunketorp-Kall\",\n    \"Helena Burger\",\n    \"Els Keesom\",\n    \"Cathrine Widehammar\",\n    \"Maria Munoz-Nova\",\n    \"Brian E. McGuire\",\n    \"Paul O'Reilly\",\n    \"Eric J. Earley\",\n    \"Soman Iqbal\",\n    \"Morten B. Kristoffersen\",\n    \"Anita Stockselius\",\n    \"Lena Gudmundsson\",\n    \"Wendy Hill\",\n    \"Martin Diers\",\n    \"Kristi L. Turner\",\n    \"Thomas Weiss\",\n    \"Max Ortiz-Catalan\"\n  ],\n  \"DOI\": \"10.1097/j.pain.0000000000003384\",\n  \"Journal\": \"Pain\",\n  \"Year\": 2025,\n  \"Volume\": \"166\",\n  \"Issue\": \"3\",\n  \"Pages\": \"571-586\",\n  \"Abstract\": \"Phantom limb pain (PLP) represents a significant challenge after amputation. This study investigated the use of phantom motor execution (PME) and phantom motor imagery (PMI) facilitated by extended reality (XR) for the treatment of PLP. Both treatments used XR, but PME involved overt execution of phantom movements, relying on the decoding of motor intent using machine learning to enable real-time control in XR. In contrast, PMI involved mental rehearsal of phantom movements guided by XR. The study hypothesized that PME would be superior to PMI. A multicenter, double-blind, randomized controlled trial was conducted in 9 outpatient clinics across 7 countries. Eighty-one participants with PLP were randomly assigned to PME or PMI training. The primary outcome was the change in PLP, measured by the Pain Rating Index, from baseline to treatment cessation. Secondary outcomes included various aspects related to PLP, such as the rate of clinically meaningful reduction in pain (CMRP; >50% pain decrease). No evidence was found for superiority of overt execution (PME) over imagery (PMI) using XR. PLP decreased by 64.5% and 68.2% in PME and PMI groups, respectively. Thirty-seven PME participants (71%) and 19 PMI participants (68%) experienced CMRP. Positive changes were recorded in all other secondary outcome differences. Pain reduction for PME was larger than previously reported. Despite our initial hypothesis not being supported, PME and PMI, aided by XR, are likely to offer meaningful PLP relief to most users. These findings merit consideration for clinical implementation.\",\n  \"Keywords\": [\n    \"phantom limb pain\",\n    \"phantom motor execution\",\n    \"virtual reality\",\n    \"augmented reality\",\n    \"rehabilitation\",\n    \"pain management\"\n  ],\n  \"PMID\": null,\n  \"PMCID\": null,\n  \"Publisher\": \"Wolters Kluwer Health\"\n}\n```",
+      "parsing_error": "Expecting value: line 1 column 1 (char 0)",
+      "response_length": 2619,
+      "parsing_successful": false
+    },
+    "processing_timestamp": "2025-07-22T14:28:57.396175"
+  },
+  "apis_raw_json": {
+    "core": {
+      "data": {
+        "data": {
+          "doi": "10.17605/osf.io/86cbm",
+          "year": 2024,
+          "title": "Extended Reality used in the Treatment of Phantom Limb Pain: A Multicenter, Double-blind, Randomized Controlled Trial.",
+          "authors": [
+            "Eric J. Earley",
+            "Eva Lendaro"
+          ],
+          "core_id": 169654444,
+          "journal": "",
+          "pdf_url": "",
+          "abstract": "code used for the analyses presented in \"Extended reality used in the treatment of phantom limb pain: a multicenter, double-blind, randomized controlled trial,",
+          "repository": "",
+          "open_access": false,
+          "citation_count": 0
+        },
+        "success": true,
+        "strategy": "Exact Title"
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:29:06.980119",
+      "processing_time_ms": 9202
+    },
+    "doaj": {
+      "error": "No DOI available for DOAJ search",
+      "success": false,
+      "timestamp": "2025-07-22T14:28:59.157919",
+      "processing_time_ms": 1377
+    },
+    "arxiv": {
+      "error": "No results found",
+      "success": false,
+      "timestamp": "2025-07-22T14:28:59.494475",
+      "processing_time_ms": 1713
+    },
+    "orcid": {
+      "data": {
+        "person": {
+          "name": {
+            "path": "0000-0001-9545-7633",
+            "source": null,
+            "visibility": "public",
+            "credit-name": null,
+            "family-name": {
+              "value": "Lendaro"
+            },
+            "given-names": {
+              "value": "Eva"
+            },
+            "created-date": {
+              "value": 1479457475576
+            },
+            "last-modified-date": {
+              "value": 1479457475576
+            }
+          },
+          "path": "/0000-0001-9545-7633/person",
+          "emails": {
+            "path": "/0000-0001-9545-7633/email",
+            "email": [],
+            "last-modified-date": null
+          },
+          "keywords": {
+            "path": "/0000-0001-9545-7633/keywords",
+            "keyword": [],
+            "last-modified-date": null
+          },
+          "addresses": {
+            "path": "/0000-0001-9545-7633/address",
+            "address": [],
+            "last-modified-date": null
+          },
+          "biography": null,
+          "other-names": {
+            "path": "/0000-0001-9545-7633/other-names",
+            "other-name": [],
+            "last-modified-date": null
+          },
+          "researcher-urls": {
+            "path": "/0000-0001-9545-7633/researcher-urls",
+            "researcher-url": [],
+            "last-modified-date": null
+          },
+          "last-modified-date": {
+            "value": 1725497487334
+          },
+          "external-identifiers": {
+            "path": "/0000-0001-9545-7633/external-identifiers",
+            "last-modified-date": {
+              "value": 1725497487334
+            },
+            "external-identifier": [
+              {
+                "path": "/0000-0001-9545-7633/external-identifiers/2519544",
+                "source": {
+                  "source-name": {
+                    "value": "Web of Science Researcher Profile Sync"
+                  },
+                  "source-orcid": null,
+                  "source-client-id": {
+                    "uri": "https://orcid.org/client/APP-1DSJAQCZ1PW1VN5X",
+                    "host": "orcid.org",
+                    "path": "APP-1DSJAQCZ1PW1VN5X"
+                  },
+                  "assertion-origin-name": null,
+                  "assertion-origin-orcid": null,
+                  "assertion-origin-client-id": null
+                },
+                "put-code": 2519544,
+                "visibility": "public",
+                "created-date": {
+                  "value": 1656627121114
+                },
+                "display-index": 0,
+                "external-id-url": {
+                  "value": "https://www.webofscience.com/wos/author/record/ABD-3925-2020"
+                },
+                "external-id-type": "ResearcherID",
+                "external-id-value": "ABD-3925-2020",
+                "last-modified-date": {
+                  "value": 1725497487334
+                },
+                "external-id-relationship": "self"
+              }
+            ]
+          }
+        },
+        "orcid_id": "0000-0001-9545-7633"
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:28:59.385011",
+      "processing_time_ms": 1603
+    },
+    "pubmed": {
+      "data": {
+        "PubmedArticle": [
+          {
+            "MedlineCitation": {
+              "PMID": {
+                "content": "39250328"
+              },
+              "Article": {
+                "Journal": {
+                  "Title": "Pain",
+                  "JournalIssue": {
+                    "Issue": "3",
+                    "Volume": "166",
+                    "PubDate": {
+                      "Year": "2025"
+                    }
+                  }
+                },
+                "Abstract": {
+                  "AbstractText": [
+                    "Phantom limb pain (PLP) represents a significant challenge after amputation. This study investigated the use of phantom motor execution (PME) and phantom motor imagery (PMI) facilitated by extended reality (XR) for the treatment of PLP. Both treatments used XR, but PME involved overt execution of phantom movements, relying on the decoding of motor intent using machine learning to enable real-time control in XR. In contrast, PMI involved mental rehearsal of phantom movements guided by XR. The study hypothesized that PME would be superior to PMI. A multicenter, double-blind, randomized controlled trial was conducted in 9 outpatient clinics across 7 countries. Eighty-one participants with PLP were randomly assigned to PME or PMI training. The primary outcome was the change in PLP, measured by the Pain Rating Index, from baseline to treatment cessation. Secondary outcomes included various aspects related to PLP, such as the rate of clinically meaningful reduction in pain (CMRP; >50% pain decrease). No evidence was found for superiority of overt execution (PME) over imagery (PMI) using XR. PLP decreased by 64.5% and 68.2% in PME and PMI groups, respectively. Thirty-seven PME participants (71%) and 19 PMI participants (68%) experienced CMRP. Positive changes were recorded in all other outcomes, without group differences. Pain reduction for PME was larger than previously reported. Despite our initial hypothesis not being confirmed, PME and PMI, aided by XR, are likely to offer meaningful PLP relief to most patients. These findings merit consideration of these therapies as viable treatment options and alternatives to pharmacological treatments."
+                  ]
+                },
+                "AuthorList": {
+                  "Author": [
+                    {
+                      "ForeName": "Eva",
+                      "LastName": "Lendaro"
+                    },
+                    {
+                      "ForeName": "Corry K",
+                      "LastName": "Van der Sluis"
+                    },
+                    {
+                      "ForeName": "Liselotte",
+                      "LastName": "Hermansson"
+                    },
+                    {
+                      "ForeName": "Lina",
+                      "LastName": "Bunketorp-Käll"
+                    },
+                    {
+                      "ForeName": "Helena",
+                      "LastName": "Burger"
+                    },
+                    {
+                      "ForeName": "Els",
+                      "LastName": "Keesom"
+                    },
+                    {
+                      "ForeName": "Cathrine",
+                      "LastName": "Widehammar"
+                    },
+                    {
+                      "ForeName": "Maria",
+                      "LastName": "Munoz-Novoa"
+                    },
+                    {
+                      "ForeName": "Brian E",
+                      "LastName": "McGuire"
+                    },
+                    {
+                      "ForeName": "Paul",
+                      "LastName": "O'Reilly"
+                    },
+                    {
+                      "ForeName": "Eric J",
+                      "LastName": "Earley"
+                    },
+                    {
+                      "ForeName": "Sonam",
+                      "LastName": "Iqbal"
+                    },
+                    {
+                      "ForeName": "Morten B",
+                      "LastName": "Kristoffersen"
+                    },
+                    {
+                      "ForeName": "Anita",
+                      "LastName": "Stockselius"
+                    },
+                    {
+                      "ForeName": "Lena",
+                      "LastName": "Gudmundson"
+                    },
+                    {
+                      "ForeName": "Wendy",
+                      "LastName": "Hill"
+                    },
+                    {
+                      "ForeName": "Martin",
+                      "LastName": "Diers"
+                    },
+                    {
+                      "ForeName": "Kristi L",
+                      "LastName": "Turner"
+                    },
+                    {
+                      "ForeName": "Thomas",
+                      "LastName": "Weiss"
+                    },
+                    {
+                      "ForeName": "Max",
+                      "LastName": "Ortiz-Catalan"
+                    }
+                  ]
+                },
+                "Pagination": {
+                  "MedlinePgn": "571-586"
+                },
+                "ArticleTitle": "Extended reality used in the treatment of phantom limb pain: a multicenter, double-blind, randomized controlled trial."
+              }
+            }
+          }
+        ]
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:28:59.777343",
+      "processing_time_ms": 2009
+    },
+    "crossref": {
+      "data": {
+        "status": "ok",
+        "message": {
+          "DOI": "10.1097/j.pain.0000000000003384",
+          "URL": "https://doi.org/10.1097/j.pain.0000000000003384",
+          "ISSN": [
+            "0304-3959",
+            "1872-6623"
+          ],
+          "link": [
+            {
+              "URL": "https://journals.lww.com/10.1097/j.pain.0000000000003384",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "page": "571-586",
+          "type": "journal-article",
+          "issue": "3",
+          "score": 1,
+          "title": [
+            "Extended reality used in the treatment of phantom limb pain: a multicenter, double-blind, randomized controlled trial"
+          ],
+          "author": [
+            {
+              "given": "Eva",
+              "family": "Lendaro",
+              "sequence": "first",
+              "affiliation": [
+                {
+                  "name": "Department of Electrical Engineering, Chalmers University of Technology, Goteborg, Sweden"
+                },
+                {
+                  "name": "Department of Brain and Cognitive Sciences, McGovern Institute for Brain Research, Massachusetts Institute of Technology, Cambridge, MA, United States"
+                }
+              ]
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0003-2141-8214",
+              "given": "Corry K.",
+              "family": "Van der Sluis",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "University of Groningen, University Medical Center Groningen, Department of Rehabilitation Medicine, Groningen, the Netherlands"
+                }
+              ],
+              "authenticated-orcid": false
+            },
+            {
+              "given": "Liselotte",
+              "family": "Hermansson",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Department of Prosthetics and Orthotics, Faculty of Medicine and Health, Örebro University, Örebro, Sweden"
+                },
+                {
+                  "name": "Faculty of Medicine and Health, University Health Care Research Centre, Örebro University, Örebro, Sweden"
+                }
+              ]
+            },
+            {
+              "given": "Lina",
+              "family": "Bunketorp-Käll",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Department of Health and Rehabilitation, Institute of Neuroscience and Physiology, Sahlgrenska Academy, University of Gothenburg, Gothenburg, Sweden"
+                },
+                {
+                  "name": "Centre for Advanced Reconstruction of Extremities, Sahlgrenska University Hospital, Gothenburg, Sweden"
+                }
+              ]
+            },
+            {
+              "given": "Helena",
+              "family": "Burger",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "University Rehabilitation Institute, Ljubljana, Slovenia"
+                },
+                {
+                  "name": "Faculty of Medicine, University of Ljubljana, Ljubljana, Slovenia"
+                }
+              ]
+            },
+            {
+              "given": "Els",
+              "family": "Keesom",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "University of Groningen, University Medical Center Groningen, Department of Rehabilitation Medicine, Groningen, the Netherlands"
+                },
+                {
+                  "name": "Department of Pediatric Rehabilitation, Treant Hospitals, the Netherlands"
+                }
+              ]
+            },
+            {
+              "given": "Cathrine",
+              "family": "Widehammar",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Faculty of Medicine and Health, University Health Care Research Centre, Örebro University, Örebro, Sweden"
+                }
+              ]
+            },
+            {
+              "given": "Maria",
+              "family": "Munoz-Novoa",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Integrum AB, Mölndal, Sweden"
+                },
+                {
+                  "name": "Center for Bionics and Pain Research, Mölndal, Sweden"
+                }
+              ]
+            },
+            {
+              "given": "Brian E.",
+              "family": "McGuire",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "School of Psychology & Centre for Pain Research, University of Galway, Galway, Ireland"
+                }
+              ]
+            },
+            {
+              "given": "Paul",
+              "family": "O’Reilly",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "School of Psychology & Centre for Pain Research, University of Galway, Galway, Ireland"
+                }
+              ]
+            },
+            {
+              "given": "Eric J.",
+              "family": "Earley",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Department of Electrical Engineering, Chalmers University of Technology, Goteborg, Sweden"
+                },
+                {
+                  "name": "Center for Bionics and Pain Research, Mölndal, Sweden"
+                },
+                {
+                  "name": "Department of Orthopedics, University of Colorado Anschutz Medical Campus, Aurora, CO, United States"
+                },
+                {
+                  "name": "Bone-Anchored Limb Research Group, University of Colorado Anschutz Medical Campus, Aurora, CO, United States"
+                }
+              ]
+            },
+            {
+              "given": "Sonam",
+              "family": "Iqbal",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Integrum AB, Mölndal, Sweden"
+                },
+                {
+                  "name": "Center for Bionics and Pain Research, Mölndal, Sweden"
+                }
+              ]
+            },
+            {
+              "given": "Morten B.",
+              "family": "Kristoffersen",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "University of Groningen, University Medical Center Groningen, Department of Rehabilitation Medicine, Groningen, the Netherlands"
+                },
+                {
+                  "name": "Center for Bionics and Pain Research, Mölndal, Sweden"
+                },
+                {
+                  "name": "Department of Orthopaedics, Institute of Clinical Sciences, Sahlgrenska Academy, University of Gothenburg, Sweden"
+                }
+              ]
+            },
+            {
+              "given": "Anita",
+              "family": "Stockselius",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Rehabcenter Sfären, Bräcke Diakoni, Stockholm, Sweden"
+                }
+              ]
+            },
+            {
+              "given": "Lena",
+              "family": "Gudmundson",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Rehabcenter Sfären, Bräcke Diakoni, Stockholm, Sweden"
+                }
+              ]
+            },
+            {
+              "given": "Wendy",
+              "family": "Hill",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Institute of Biomedical Engineering, University of New Brunswick, Fredericton, NB, Canada"
+                }
+              ]
+            },
+            {
+              "given": "Martin",
+              "family": "Diers",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Department of Psychosomatic Medicine and Psychotherapy, LWL University Hospital, Ruhr Universität Bochum, Germany"
+                }
+              ]
+            },
+            {
+              "given": "Kristi L.",
+              "family": "Turner",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Center for Bionic Medicine, Shirley Ryan Ability Lab, Chicago, IL, United States"
+                }
+              ]
+            },
+            {
+              "given": "Thomas",
+              "family": "Weiss",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Department of Clinical Psychology, Friedrich Schiller University Jena, Jena, Germany"
+                }
+              ]
+            },
+            {
+              "given": "Max",
+              "family": "Ortiz-Catalan",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Department of Electrical Engineering, Chalmers University of Technology, Goteborg, Sweden"
+                },
+                {
+                  "name": "Center for Bionics and Pain Research, Mölndal, Sweden"
+                },
+                {
+                  "name": "Bionics Institute, Melbourne, Australia"
+                },
+                {
+                  "name": "University of Melbourne, Melbourne, Australia"
+                }
+              ]
+            }
+          ],
+          "funder": [
+            {
+              "id": [
+                {
+                  "id": "10.13039/100009389",
+                  "id-type": "DOI",
+                  "asserted-by": "crossref"
+                }
+              ],
+              "DOI": "10.13039/100009389",
+              "name": "Stiftelsen Promobilia",
+              "award": [
+                "19500"
+              ],
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "id": [
+                {
+                  "id": "10.13039/100009389",
+                  "id-type": "DOI",
+                  "asserted-by": "crossref"
+                }
+              ],
+              "DOI": "10.13039/100009389",
+              "name": "Stiftelsen Promobilia",
+              "award": [
+                "F16501"
+              ],
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "id": [
+                {
+                  "id": "10.13039/501100003849",
+                  "id-type": "DOI",
+                  "asserted-by": "crossref"
+                }
+              ],
+              "DOI": "10.13039/501100003849",
+              "name": "IngaBritt och Arne Lundbergs Forskningsstiftelse",
+              "award": [
+                "2020-0"
+              ],
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "id": [
+                {
+                  "id": "10.13039/501100001858",
+                  "id-type": "DOI",
+                  "asserted-by": "crossref"
+                }
+              ],
+              "DOI": "10.13039/501100001858",
+              "name": "VINNOVA",
+              "award": [
+                "2018-03235"
+              ],
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "name": "FundaciÃn GrÃ¼nenthal EspaÃ±a",
+              "award": [
+                "358041552"
+              ]
+            },
+            {
+              "id": [
+                {
+                  "id": "10.13039/501100007135",
+                  "id-type": "DOI",
+                  "asserted-by": "crossref"
+                }
+              ],
+              "DOI": "10.13039/501100007135",
+              "name": "Integrum",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "name": "ALF-agreement",
+              "award": [
+                "725241, 774951 and 965851"
+              ]
+            },
+            {
+              "name": "Swedish state"
+            },
+            {
+              "name": "PersonskadefÃ¶rbundet RTP"
+            },
+            {
+              "id": [
+                {
+                  "id": "10.13039/100014437",
+                  "id-type": "DOI",
+                  "asserted-by": "crossref"
+                }
+              ],
+              "DOI": "10.13039/100014437",
+              "name": "Wenner-Gren Stiftelserna",
+              "award": [
+                "WGF2022-0062"
+              ],
+              "doi-asserted-by": "crossref"
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                5
+              ]
+            ]
+          },
+          "member": "276",
+          "prefix": "10.1097",
+          "source": "Crossref",
+          "volume": "166",
+          "created": {
+            "date-time": "2024-09-09T17:00:23Z",
+            "timestamp": 1725901223000,
+            "date-parts": [
+              [
+                2024,
+                9,
+                9
+              ]
+            ]
+          },
+          "indexed": {
+            "version": "3.37.3",
+            "date-time": "2025-06-19T16:06:59Z",
+            "timestamp": 1750349219630,
+            "date-parts": [
+              [
+                2025,
+                6,
+                19
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "http://creativecommons.org/licenses/by/4.0/",
+              "start": {
+                "date-time": "2024-09-05T00:00:00Z",
+                "timestamp": 1725494400000,
+                "date-parts": [
+                  [
+                    2024,
+                    9,
+                    5
+                  ]
+                ]
+              },
+              "delay-in-days": 0,
+              "content-version": "unspecified"
+            }
+          ],
+          "subject": [],
+          "abstract": "<jats:title>Abstract</jats:title>\n          <jats:p>Phantom limb pain (PLP) represents a significant challenge after amputation. This study investigated the use of phantom motor execution (PME) and phantom motor imagery (PMI) facilitated by extended reality (XR) for the treatment of PLP. Both treatments used XR, but PME involved overt execution of phantom movements, relying on the decoding of motor intent using machine learning to enable real-time control in XR. In contrast, PMI involved mental rehearsal of phantom movements guided by XR. The study hypothesized that PME would be superior to PMI. A multicenter, double-blind, randomized controlled trial was conducted in 9 outpatient clinics across 7 countries. Eighty-one participants with PLP were randomly assigned to PME or PMI training. The primary outcome was the change in PLP, measured by the Pain Rating Index, from baseline to treatment cessation. Secondary outcomes included various aspects related to PLP, such as the rate of clinically meaningful reduction in pain (CMRP; &gt;50% pain decrease). No evidence was found for superiority of overt execution (PME) over imagery (PMI) using XR. PLP decreased by 64.5% and 68.2% in PME and PMI groups, respectively. Thirty-seven PME participants (71%) and 19 PMI participants (68%) experienced CMRP. Positive changes were recorded in all other outcomes, without group differences. Pain reduction for PME was larger than previously reported. Despite our initial hypothesis not being confirmed, PME and PMI, aided by XR, are likely to offer meaningful PLP relief to most patients. These findings merit consideration of these therapies as viable treatment options and alternatives to pharmacological treatments.</jats:p>",
+          "language": "en",
+          "relation": {},
+          "resource": {
+            "primary": {
+              "URL": "https://journals.lww.com/10.1097/j.pain.0000000000003384"
+            }
+          },
+          "subtitle": [],
+          "assertion": [
+            {
+              "name": "received",
+              "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+              },
+              "label": "Received",
+              "value": "2024-01-22"
+            },
+            {
+              "name": "accepted",
+              "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+              },
+              "label": "Accepted",
+              "value": "2024-07-22"
+            }
+          ],
+          "deposited": {
+            "date-time": "2025-02-10T19:01:57Z",
+            "timestamp": 1739214117000,
+            "date-parts": [
+              [
+                2025,
+                2,
+                10
+              ]
+            ]
+          },
+          "issn-type": [
+            {
+              "type": "print",
+              "value": "0304-3959"
+            },
+            {
+              "type": "electronic",
+              "value": "1872-6623"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                5
+              ]
+            ]
+          },
+          "publisher": "Ovid Technologies (Wolters Kluwer Health)",
+          "reference": [
+            {
+              "key": "R1-20250210",
+              "year": "2016",
+              "author": "Alviar",
+              "volume": "10",
+              "first-page": "CD006380",
+              "article-title": "Pharmacologic interventions for treating phantom limb pain",
+              "journal-title": "Cochrane Database Syst Rev"
+            },
+            {
+              "DOI": "10.1001/jama.2022.9930",
+              "key": "R2-20250210",
+              "year": "2022",
+              "author": "Bagg",
+              "volume": "328",
+              "first-page": "430",
+              "article-title": "Effect of graded sensorimotor retraining on pain intensity in patients with chronic low back pain: a randomized clinical trial",
+              "journal-title": "JAMA",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1080/09593985.2017.1288283",
+              "key": "R3-20250210",
+              "year": "2017",
+              "author": "Batsford",
+              "volume": "33",
+              "first-page": "173",
+              "article-title": "Non-pharmacological conservative therapy for phantom limb pain: a systematic review of randomized controlled trials",
+              "journal-title": "Physiother Theor Pract",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1111/j.1526-4637.2010.01048.x",
+              "key": "R4-20250210",
+              "year": "2011",
+              "author": "Beaumont",
+              "volume": "12",
+              "first-page": "289",
+              "article-title": "Decreasing phantom limb pain through observation of action and imagery: a case series",
+              "journal-title": "Pain Med",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1016/j.pain.2010.02.020",
+              "key": "R5-20250210",
+              "year": "2010",
+              "author": "Diers",
+              "volume": "149",
+              "first-page": "296",
+              "article-title": "Mirrored, imagined and executed movements differentially activate sensorimotor cortex in amputees with and without phantom limb pain",
+              "journal-title": "Pain",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1016/j.jpain.2021.09.003",
+              "key": "R6-20250210",
+              "year": "2022",
+              "author": "Diers",
+              "volume": "23",
+              "first-page": "411",
+              "article-title": "The prevalence and characteristics of phantom limb pain and non-painful phantom phenomena in a nationwide survey of 3,374 unilateral limb amputees",
+              "journal-title": "The J Pain",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "key": "R7-20250210",
+              "year": "1967",
+              "author": "Finley",
+              "volume": "48",
+              "first-page": "20",
+              "article-title": "Myocoder-computer study of electromyographic patterns",
+              "journal-title": "Arch Phys Med Rehabil"
+            },
+            {
+              "DOI": "10.2196/26292",
+              "key": "R8-20250210",
+              "year": "2021",
+              "author": "Garcia",
+              "volume": "23",
+              "first-page": "e26292",
+              "article-title": "An 8-Week Self-Administered At-Home Behavioral Skills-Based Virtual Reality Program for Chronic Low Back Pain: Double-Blind, Randomized, Placebo-Controlled Trial Conducted During COVID-19",
+              "journal-title": "J Med Internet Res",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.4103/1673-5374.314288",
+              "key": "R9-20250210",
+              "year": "2022",
+              "author": "Garcia-Pallero",
+              "volume": "17",
+              "first-page": "59",
+              "article-title": "Central nervous system stimulation therapies in phantom limb pain: a systematic review of clinical trials",
+              "journal-title": "Neural Regen Res",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.2196/34402",
+              "key": "R10-20250210",
+              "year": "2022",
+              "author": "Goudman",
+              "volume": "10",
+              "first-page": "e34402",
+              "article-title": "Virtual Reality Applications in Chronic Pain Management: Systematic Review and Meta-analysis",
+              "journal-title": "JMIR Serious Games",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1113/JP276694",
+              "key": "R11-20250210",
+              "year": "2019",
+              "author": "Grosprêtre",
+              "volume": "597",
+              "first-page": "921",
+              "article-title": "Spinal plasticity with motor imagery practice",
+              "journal-title": "J Physiol",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1016/j.ijpsycho.2007.05.009",
+              "key": "R12-20250210",
+              "year": "2007",
+              "author": "Guillot",
+              "volume": "66",
+              "first-page": "18",
+              "article-title": "Muscular responses during motor imagery as a function of muscle contraction types",
+              "journal-title": "Int J psychophysiology: official J Int Organ Psychophysiology",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1186/1743-0003-10-62",
+              "key": "R13-20250210",
+              "year": "2013",
+              "author": "Hargrove",
+              "volume": "10",
+              "first-page": "62",
+              "article-title": "Non-weight-bearing neural control of a powered transfemoral prosthesis",
+              "journal-title": "J neuroengineering Rehabil",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1177/0309364617740230",
+              "key": "R15-20250210",
+              "year": "2018",
+              "author": "Herrador Colmenero",
+              "volume": "42",
+              "first-page": "288",
+              "article-title": "Effectiveness of mirror therapy, motor imagery, and virtual feedback on phantom limb pain following amputation: a systematic review",
+              "journal-title": "Prosthetics orthotics Int",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "key": "R16-20250210",
+              "year": "2024",
+              "author": "Lendaro",
+              "article-title": "Extended reality used in the Treatment of Phantom Limb Pain",
+              "journal-title": "A Multicenter, Double-blind, Randomized Controlled Trial"
+            },
+            {
+              "DOI": "10.1186/s13063-021-05962-7",
+              "key": "R17-20250210",
+              "year": "2022",
+              "author": "Lendaro",
+              "volume": "23",
+              "first-page": "138",
+              "article-title": "Statistical analysis plan for an international, double-blind, randomized controlled clinical trial on the use of phantom motor execution as a treatment for phantom limb pain",
+              "journal-title": "Trials",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1136/bmjopen-2017-021039",
+              "key": "R18-20250210",
+              "year": "2018",
+              "author": "Lendaro",
+              "volume": "8",
+              "first-page": "e021039",
+              "article-title": "Phantom motor execution as a treatment for phantom limb pain: protocol of an international, double-blind, randomised controlled clinical trial",
+              "journal-title": "BMJ Open",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.3389/fneur.2017.00470",
+              "key": "R19-20250210",
+              "year": "2017",
+              "author": "Lendaro",
+              "volume": "8",
+              "first-page": "470",
+              "article-title": "Real-time classification of non-weight bearing lower-limb movements using EMG to facilitate phantom motor execution: engineering and case study application on phantom limb pain",
+              "journal-title": "Front Neurol",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.2217/pmt.10.15",
+              "key": "R20-20250210",
+              "year": "2011",
+              "author": "Li",
+              "volume": "1",
+              "first-page": "147",
+              "article-title": "Virtual reality and pain management: current trends and future directions",
+              "journal-title": "Pain Manag",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1093/brain/awn124",
+              "key": "R21-20250210",
+              "year": "2008",
+              "author": "MacIver",
+              "volume": "131",
+              "first-page": "2181",
+              "article-title": "Phantom limb pain, cortical reorganization and the therapeutic effect of mental imagery",
+              "journal-title": "Brain",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1002/pmrj.12972",
+              "key": "R22-20250210",
+              "year": "2023",
+              "author": "Mauch",
+              "volume": "15",
+              "first-page": "1457",
+              "article-title": "Targeted muscle reinnervation and regenerative peripheral nerve interfaces for pain prophylaxis and treatment: a systematic review",
+              "journal-title": "PM&R",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1111/pme.12283",
+              "key": "R23-20250210",
+              "year": "2014",
+              "author": "McCormick",
+              "volume": "15",
+              "first-page": "292",
+              "article-title": "Phantom limb pain: a systematic neuroanatomical-based review of pharmacologic treatment",
+              "journal-title": "Pain Med",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1016/0304-3959(87)91074-8",
+              "key": "R24-20250210",
+              "year": "1987",
+              "author": "Melzack",
+              "volume": "30",
+              "first-page": "191",
+              "article-title": "The short-form McGill pain questionnaire",
+              "journal-title": "Pain",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1037/h0043424",
+              "key": "R25-20250210",
+              "year": "1962",
+              "author": "Orne",
+              "volume": "17",
+              "first-page": "776",
+              "article-title": "On the social psychology of the psychological experiment: with particular reference to demand characteristics and their implications",
+              "journal-title": "Am Psychol",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.3389/fneur.2018.00748",
+              "key": "R26-20250210",
+              "year": "2018",
+              "author": "Ortiz-Catalan",
+              "volume": "9",
+              "first-page": "748",
+              "article-title": "The stochastic entanglement and phantom motor execution hypotheses: a theoretical framework for the origin and treatment of phantom limb pain",
+              "journal-title": "Front Neurol",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1016/S0140-6736(16)31598-7",
+              "key": "R27-20250210",
+              "year": "2016",
+              "author": "Ortiz-Catalan",
+              "volume": "388",
+              "first-page": "2885",
+              "article-title": "Phantom motor execution facilitated by machine learning and augmented reality as treatment for phantom limb pain: a single group, clinical trial in patients with chronic intractable phantom limb pain",
+              "journal-title": "Lancet (London, England)",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.3389/fneur.2018.00770",
+              "key": "R28-20250210",
+              "year": "2018",
+              "author": "Perry",
+              "volume": "9",
+              "first-page": "770",
+              "article-title": "Clinical trial of the virtual integration environment to treat phantom limb pain with upper extremity amputation",
+              "journal-title": "Front Neurol",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.2147/JPR.S412895",
+              "key": "R29-20250210",
+              "year": "2023",
+              "author": "Pilch",
+              "volume": "16",
+              "first-page": "2747",
+              "article-title": "Interplay between innovation and intersubjectivity: therapists perceptions of phantom motor execution therapy and its effect on phantom limb pain",
+              "journal-title": "J pain Res",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1016/j.neuroimage.2016.01.063",
+              "key": "R30-20250210",
+              "year": "2016",
+              "author": "Raffin",
+              "volume": "130",
+              "first-page": "134",
+              "article-title": "Primary motor cortex changes after amputation correlate with phantom limb pain and the ability to move the phantom limb",
+              "journal-title": "NeuroImage",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1093/brain/awl320",
+              "key": "R31-20250210",
+              "year": "2007",
+              "author": "Reilly",
+              "volume": "130",
+              "first-page": "e66",
+              "article-title": "Reply: persistent hand commands in the motor cortex of amputees' brain",
+              "journal-title": "Brain",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1136/bmj.c332",
+              "key": "R32-20250210",
+              "year": "2010",
+              "author": "Schulz",
+              "volume": "340",
+              "first-page": "c332",
+              "article-title": "CONSORT 2010 Statement: updated guidelines for reporting parallel group randomised trials",
+              "journal-title": "BMJ",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1002/ejp.1657",
+              "key": "R33-20250210",
+              "year": "2021",
+              "author": "Stankevicius",
+              "volume": "25",
+              "first-page": "23",
+              "article-title": "Prevalence and incidence of phantom limb pain, phantom limb sensations and telescoping in amputees: a systematic rapid review",
+              "journal-title": "Eur J Pain",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "key": "R34-20250210",
+              "year": "2022",
+              "author": "Vassantachart",
+              "volume": "19",
+              "first-page": "48",
+              "article-title": "Virtual and augmented reality-based treatments for phantom limb pain: a systematic review",
+              "journal-title": "Innov Clin Neurosci"
+            }
+          ],
+          "short-title": [],
+          "journal-issue": {
+            "issue": "3",
+            "published-print": {
+              "date-parts": [
+                [
+                  2025
+                ]
+              ]
+            }
+          },
+          "update-policy": "https://doi.org/10.1097/lww.0000000000001000",
+          "content-domain": {
+            "domain": [
+              "lww.com",
+              "ovid.com"
+            ],
+            "crossmark-restriction": true
+          },
+          "original-title": [],
+          "container-title": [
+            "Pain"
+          ],
+          "published-print": {
+            "date-parts": [
+              [
+                2025,
+                3
+              ]
+            ]
+          },
+          "reference-count": 33,
+          "published-online": {
+            "date-parts": [
+              [
+                2024,
+                9,
+                5
+              ]
+            ]
+          },
+          "references-count": 33,
+          "short-container-title": [
+            "Pain",
+            "PAIN"
+          ],
+          "is-referenced-by-count": 5
+        },
+        "message-type": "work",
+        "message-version": "1.0.0"
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:28:59.259029",
+      "processing_time_ms": 1491
+    },
+    "datacite": {
+      "data": {
+        "data": {
+          "id": "10.17605/osf.io/86cbm",
+          "type": "dois",
+          "attributes": {
+            "doi": "10.17605/osf.io/86cbm",
+            "url": "https://osf.io/86cbm/",
+            "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjUvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC4xNzYwNS9PU0YuSU8vODZDQk08L2lkZW50aWZpZXI+CiAgPGNyZWF0b3JzPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkVyaWMgSi4gRWFybGV5PC9jcmVhdG9yTmFtZT4KICAgICAgPG5hbWVJZGVudGlmaWVyIG5hbWVJZGVudGlmaWVyU2NoZW1lPSJVUkwiPmh0dHA6Ly9zY2hvbGFyLmdvb2dsZS5jb20vY2l0YXRpb25zP3VzZXI9aU92X3NzNEFBQUFKPC9uYW1lSWRlbnRpZmllcj4KICAgICAgPG5hbWVJZGVudGlmaWVyIG5hbWVJZGVudGlmaWVyU2NoZW1lPSJVUkwiPmh0dHA6Ly93d3cuZXJpY2plYXJsZXkuY29tPC9uYW1lSWRlbnRpZmllcj4KICAgICAgPG5hbWVJZGVudGlmaWVyIG5hbWVJZGVudGlmaWVyU2NoZW1lPSJVUkwiPmh0dHBzOi8vb3NmLmlvLzNnanM1PC9uYW1lSWRlbnRpZmllcj4KICAgICAgPG5hbWVJZGVudGlmaWVyIG5hbWVJZGVudGlmaWVyU2NoZW1lPSJVUkwiPmh0dHBzOi8vd3d3LmxpbmtlZGluLmNvbS9pbi9lcmljamVhcmxleS88L25hbWVJZGVudGlmaWVyPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkV2YSBMZW5kYXJvPC9jcmVhdG9yTmFtZT4KICAgICAgPG5hbWVJZGVudGlmaWVyIG5hbWVJZGVudGlmaWVyU2NoZW1lPSJPUkNJRCI+MDAwMC0wMDAxLTk1NDUtNzYzMzwvbmFtZUlkZW50aWZpZXI+CiAgICAgIDxuYW1lSWRlbnRpZmllciBuYW1lSWRlbnRpZmllclNjaGVtZT0iVVJMIj5odHRwczovL29zZi5pby84Nmd2YTwvbmFtZUlkZW50aWZpZXI+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPkV4dGVuZGVkIFJlYWxpdHkgdXNlZCBpbiB0aGUgVHJlYXRtZW50IG9mIFBoYW50b20gTGltYiBQYWluOiBBIE11bHRpY2VudGVyLCBEb3VibGUtYmxpbmQsIFJhbmRvbWl6ZWQgQ29udHJvbGxlZCBUcmlhbC48L3RpdGxlPgogIDwvdGl0bGVzPgogIDxwdWJsaXNoZXI+T1NGPC9wdWJsaXNoZXI+CiAgPHB1YmxpY2F0aW9uWWVhcj4yMDI0PC9wdWJsaWNhdGlvblllYXI+CiAgPHN1YmplY3RzLz4KICA8Y29udHJpYnV0b3JzPgogICAgPGNvbnRyaWJ1dG9yIGNvbnRyaWJ1dG9yVHlwZT0iSG9zdGluZ0luc3RpdHV0aW9uIj4KICAgICAgPGNvbnRyaWJ1dG9yTmFtZSBuYW1lVHlwZT0iT3JnYW5pemF0aW9uYWwiPkNlbnRlciBmb3IgT3BlbiBTY2llbmNlPC9jb250cmlidXRvck5hbWU+CiAgICAgIDxuYW1lSWRlbnRpZmllciBuYW1lSWRlbnRpZmllclNjaGVtZT0iVVJMIj5odHRwczovL2Nvcy5pby88L25hbWVJZGVudGlmaWVyPgogICAgICA8bmFtZUlkZW50aWZpZXIgbmFtZUlkZW50aWZpZXJTY2hlbWU9IlJPUiI+aHR0cHM6Ly9yb3Iub3JnLzA1ZDVtemEyOTwvbmFtZUlkZW50aWZpZXI+CiAgICA8L2NvbnRyaWJ1dG9yPgogIDwvY29udHJpYnV0b3JzPgogIDxkYXRlcz4KICAgIDxkYXRlIGRhdGVUeXBlPSJDcmVhdGVkIj4yMDIwLTAzLTE1PC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IlVwZGF0ZWQiPjIwMjQtMDktMTY8L2RhdGU+CiAgPC9kYXRlcz4KICA8cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IlRleHQiPlByb2plY3Q8L3Jlc291cmNlVHlwZT4KICA8YWx0ZXJuYXRlSWRlbnRpZmllcnM+CiAgICA8YWx0ZXJuYXRlSWRlbnRpZmllciBhbHRlcm5hdGVJZGVudGlmaWVyVHlwZT0iVVJMIj5odHRwczovL29zZi5pby84NmNibTwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxyaWdodHNMaXN0PgogICAgPHJpZ2h0cyByaWdodHNVUkk9Imh0dHA6Ly9vcGVuc291cmNlLm9yZy9saWNlbnNlcy9NSVQiPk1JVCBMaWNlbnNlPC9yaWdodHM+CiAgPC9yaWdodHNMaXN0PgogIDxkZXNjcmlwdGlvbnM+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJBYnN0cmFjdCI+Y29kZSB1c2VkIGZvciB0aGUgYW5hbHlzZXMgcHJlc2VudGVkIGluICJFeHRlbmRlZCByZWFsaXR5IHVzZWQgaW4gdGhlIHRyZWF0bWVudCBvZiBwaGFudG9tIGxpbWIgcGFpbjogYSBtdWx0aWNlbnRlciwgZG91YmxlLWJsaW5kLCByYW5kb21pemVkIGNvbnRyb2xsZWQgdHJpYWwsIiA8L2Rlc2NyaXB0aW9uPgogIDwvZGVzY3JpcHRpb25zPgogIDxmdW5kaW5nUmVmZXJlbmNlcy8+CiAgPHJlbGF0ZWRJZGVudGlmaWVycy8+CiAgPHJlbGF0ZWRJdGVtcy8+CjwvcmVzb3VyY2U+",
+            "dates": [
+              {
+                "date": "2020-03-15",
+                "dateType": "Created"
+              },
+              {
+                "date": "2024-09-16",
+                "dateType": "Updated"
+              },
+              {
+                "date": "2024",
+                "dateType": "Issued"
+              }
+            ],
+            "sizes": [],
+            "state": "findable",
+            "types": {
+              "ris": "RPRT",
+              "bibtex": "article",
+              "citeproc": "article-journal",
+              "schemaOrg": "ScholarlyArticle",
+              "resourceType": "Project",
+              "resourceTypeGeneral": "Text"
+            },
+            "prefix": "10.17605",
+            "reason": null,
+            "source": "mds",
+            "suffix": "osf.io/86cbm",
+            "titles": [
+              {
+                "title": "Extended Reality used in the Treatment of Phantom Limb Pain: A Multicenter, Double-blind, Randomized Controlled Trial."
+              }
+            ],
+            "created": "2024-08-13T17:21:56Z",
+            "formats": [],
+            "updated": "2024-09-16T22:58:24Z",
+            "version": null,
+            "creators": [
+              {
+                "name": "Earley, Eric J.",
+                "nameType": "Personal",
+                "givenName": "Eric J.",
+                "familyName": "Earley",
+                "affiliation": [],
+                "nameIdentifiers": [
+                  {
+                    "nameIdentifier": "http://scholar.google.com/citations?user=iOv_ss4AAAAJ",
+                    "nameIdentifierScheme": "URL"
+                  },
+                  {
+                    "nameIdentifier": "http://www.ericjearley.com",
+                    "nameIdentifierScheme": "URL"
+                  },
+                  {
+                    "nameIdentifier": "https://osf.io/3gjs5",
+                    "nameIdentifierScheme": "URL"
+                  },
+                  {
+                    "nameIdentifier": "https://www.linkedin.com/in/ericjearley/",
+                    "nameIdentifierScheme": "URL"
+                  }
+                ]
+              },
+              {
+                "name": "Lendaro, Eva",
+                "nameType": "Personal",
+                "givenName": "Eva",
+                "familyName": "Lendaro",
+                "affiliation": [],
+                "nameIdentifiers": [
+                  {
+                    "schemeUri": "https://orcid.org",
+                    "nameIdentifier": "https://orcid.org/0000-0001-9545-7633",
+                    "nameIdentifierScheme": "ORCID"
+                  },
+                  {
+                    "nameIdentifier": "https://osf.io/86gva",
+                    "nameIdentifierScheme": "URL"
+                  }
+                ]
+              }
+            ],
+            "isActive": true,
+            "language": null,
+            "subjects": [],
+            "container": {},
+            "partCount": 0,
+            "published": null,
+            "publisher": {
+              "name": "OSF"
+            },
+            "viewCount": 0,
+            "contentUrl": null,
+            "registered": "2024-08-13T17:21:57Z",
+            "rightsList": [
+              {
+                "rights": "MIT License",
+                "rightsUri": "https://opensource.org/licenses/MIT",
+                "schemeUri": "https://spdx.org/licenses/",
+                "rightsIdentifier": "mit",
+                "rightsIdentifierScheme": "SPDX"
+              }
+            ],
+            "identifiers": [
+              {
+                "identifier": "https://osf.io/86cbm",
+                "identifierType": "URL"
+              }
+            ],
+            "partOfCount": 0,
+            "contributors": [
+              {
+                "name": "Center For Open Science",
+                "nameType": "Organizational",
+                "affiliation": [],
+                "contributorType": "HostingInstitution",
+                "nameIdentifiers": [
+                  {
+                    "nameIdentifier": "https://cos.io/",
+                    "nameIdentifierScheme": "URL"
+                  },
+                  {
+                    "schemeUri": "https://ror.org",
+                    "nameIdentifier": "https://ror.org/05d5mza29",
+                    "nameIdentifierScheme": "ROR"
+                  }
+                ]
+              }
+            ],
+            "descriptions": [
+              {
+                "description": "code used for the analyses presented in \"Extended reality used in the treatment of phantom limb pain: a multicenter, double-blind, randomized controlled trial,\"",
+                "descriptionType": "Abstract"
+              }
+            ],
+            "geoLocations": [],
+            "relatedItems": [],
+            "versionCount": 0,
+            "citationCount": 0,
+            "downloadCount": 0,
+            "schemaVersion": "http://datacite.org/schema/kernel-4",
+            "viewsOverTime": [],
+            "referenceCount": 0,
+            "versionOfCount": 0,
+            "metadataVersion": 6,
+            "publicationYear": 2024,
+            "citationsOverTime": [],
+            "downloadsOverTime": [],
+            "fundingReferences": [],
+            "relatedIdentifiers": [],
+            "alternateIdentifiers": [
+              {
+                "alternateIdentifier": "https://osf.io/86cbm",
+                "alternateIdentifierType": "URL"
+              }
+            ]
+          },
+          "relationships": {
+            "parts": {
+              "data": []
+            },
+            "client": {
+              "data": {
+                "id": "cos.osf",
+                "type": "clients"
+              }
+            },
+            "partOf": {
+              "data": []
+            },
+            "provider": {
+              "data": {
+                "id": "cos",
+                "type": "providers"
+              }
+            },
+            "versions": {
+              "data": []
+            },
+            "citations": {
+              "data": []
+            },
+            "versionOf": {
+              "data": []
+            },
+            "references": {
+              "data": []
+            }
+          }
+        }
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:29:04.119799",
+      "processing_time_ms": 6340
+    },
+    "openalex": {
+      "data": {
+        "id": "https://openalex.org/W4402354588",
+        "doi": "https://doi.org/10.1097/j.pain.0000000000003384",
+        "title": "Extended reality used in the treatment of phantom limb pain: a multicenter, double-blind, randomized controlled trial",
+        "open_access": {
+          "is_oa": false,
+          "oa_url": null,
+          "oa_status": "closed",
+          "any_repository_has_fulltext": false
+        },
+        "cited_by_count": 5,
+        "publication_year": 2024
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:28:59.057679",
+      "processing_time_ms": 1286
+    },
+    "unpaywall": {
+      "data": {
+        "doi": "10.1097/j.pain.0000000000003384",
+        "year": 2024,
+        "genre": "journal-article",
+        "is_oa": true,
+        "title": "Extended reality used in the treatment of phantom limb pain: a multicenter, double-blind, randomized controlled trial",
+        "doi_url": "https://doi.org/10.1097/j.pain.0000000000003384",
+        "oa_status": "hybrid",
+        "publisher": "Ovid Technologies (Wolters Kluwer Health)",
+        "is_paratext": false,
+        "journal_name": "Pain",
+        "journal_issns": "0304-3959,1872-6623",
+        "journal_issn_l": "0304-3959",
+        "published_date": "2024-09-05",
+        "z_authors_summary": {
+          "count": 20,
+          "first_author": ""
+        },
+        "has_repository_copy": true,
+        "oa_locations_summary": {
+          "count": 3,
+          "has_repository": true
+        },
+        "best_oa_location_summary": {
+          "is_best": true,
+          "host_type": "publisher",
+          "url_for_pdf": false
+        },
+        "first_oa_location_summary": {
+          "is_first": true,
+          "host_type": "publisher",
+          "url_for_pdf": false
+        }
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:28:59.348594",
+      "processing_time_ms": 1574
+    },
+    "europe_pmc": {
+      "data": {
+        "id": "39250328",
+        "doi": "10.1097/j.pain.0000000000003384",
+        "pmid": "39250328",
+        "inPMC": "Y",
+        "pmcid": "PMC11808706",
+        "title": "Extended reality used in the treatment of phantom limb pain: a multicenter, double-blind, randomized controlled trial.",
+        "hasPDF": "Y",
+        "inEPMC": "Y",
+        "source": "MED",
+        "authMan": "N",
+        "hasBook": "N",
+        "hasData": "Y",
+        "license": "cc by",
+        "pubYear": "2025",
+        "hasSuppl": "Y",
+        "language": "eng",
+        "pageInfo": "571-586",
+        "pubModel": "Print-Electronic",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Lendaro E",
+              "initials": "E",
+              "lastName": "Lendaro",
+              "firstName": "Eva",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Electrical Engineering, Chalmers University of Technology, Goteborg, Sweden."
+                  },
+                  {
+                    "affiliation": "Department of Brain and Cognitive Sciences, McGovern Institute for Brain Research, Massachusetts Institute of Technology, Cambridge, MA, United States."
+                  }
+                ]
+              }
+            },
+            {
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-2141-8214"
+              },
+              "fullName": "Van der Sluis CK",
+              "initials": "CK",
+              "lastName": "Van der Sluis",
+              "firstName": "Corry K",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "University of Groningen, University Medical Center Groningen, Department of Rehabilitation Medicine, Groningen, the Netherlands."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Hermansson L",
+              "initials": "L",
+              "lastName": "Hermansson",
+              "firstName": "Liselotte",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Prosthetics and Orthotics, Faculty of Medicine and Health, Örebro University, Örebro, Sweden."
+                  },
+                  {
+                    "affiliation": "Faculty of Medicine and Health, University Health Care Research Centre, Örebro University, Örebro, Sweden."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Bunketorp-Käll L",
+              "initials": "L",
+              "lastName": "Bunketorp-Käll",
+              "firstName": "Lina",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Health and Rehabilitation, Institute of Neuroscience and Physiology, Sahlgrenska Academy, University of Gothenburg, Gothenburg, Sweden."
+                  },
+                  {
+                    "affiliation": "Centre for Advanced Reconstruction of Extremities, Sahlgrenska University Hospital, Gothenburg, Sweden."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Burger H",
+              "initials": "H",
+              "lastName": "Burger",
+              "firstName": "Helena",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "University Rehabilitation Institute, Ljubljana, Slovenia."
+                  },
+                  {
+                    "affiliation": "Faculty of Medicine, University of Ljubljana, Ljubljana, Slovenia."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Keesom E",
+              "initials": "E",
+              "lastName": "Keesom",
+              "firstName": "Els",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "University of Groningen, University Medical Center Groningen, Department of Rehabilitation Medicine, Groningen, the Netherlands."
+                  },
+                  {
+                    "affiliation": "Department of Pediatric Rehabilitation, Treant Hospitals, the Netherlands."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Widehammar C",
+              "initials": "C",
+              "lastName": "Widehammar",
+              "firstName": "Cathrine",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Faculty of Medicine and Health, University Health Care Research Centre, Örebro University, Örebro, Sweden."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Munoz-Novoa M",
+              "initials": "M",
+              "lastName": "Munoz-Novoa",
+              "firstName": "Maria",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Integrum AB, Mölndal, Sweden."
+                  },
+                  {
+                    "affiliation": "Center for Bionics and Pain Research, Mölndal, Sweden."
+                  }
+                ]
+              }
+            },
+            {
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-3540-6639"
+              },
+              "fullName": "McGuire BE",
+              "initials": "BE",
+              "lastName": "McGuire",
+              "firstName": "Brian E",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Psychology & Centre for Pain Research, University of Galway, Galway, Ireland."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "O'Reilly P",
+              "initials": "P",
+              "lastName": "O'Reilly",
+              "firstName": "Paul",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Psychology & Centre for Pain Research, University of Galway, Galway, Ireland."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Earley EJ",
+              "initials": "EJ",
+              "lastName": "Earley",
+              "firstName": "Eric J",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Electrical Engineering, Chalmers University of Technology, Goteborg, Sweden."
+                  },
+                  {
+                    "affiliation": "Center for Bionics and Pain Research, Mölndal, Sweden."
+                  },
+                  {
+                    "affiliation": "Department of Orthopedics, University of Colorado Anschutz Medical Campus, Aurora, CO, United States."
+                  },
+                  {
+                    "affiliation": "Bone-Anchored Limb Research Group, University of Colorado Anschutz Medical Campus, Aurora, CO, United States."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Iqbal S",
+              "initials": "S",
+              "lastName": "Iqbal",
+              "firstName": "Sonam",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Integrum AB, Mölndal, Sweden."
+                  },
+                  {
+                    "affiliation": "Center for Bionics and Pain Research, Mölndal, Sweden."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Kristoffersen MB",
+              "initials": "MB",
+              "lastName": "Kristoffersen",
+              "firstName": "Morten B",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "University of Groningen, University Medical Center Groningen, Department of Rehabilitation Medicine, Groningen, the Netherlands."
+                  },
+                  {
+                    "affiliation": "Center for Bionics and Pain Research, Mölndal, Sweden."
+                  },
+                  {
+                    "affiliation": "Department of Orthopaedics, Institute of Clinical Sciences, Sahlgrenska Academy, University of Gothenburg, Sweden."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Stockselius A",
+              "initials": "A",
+              "lastName": "Stockselius",
+              "firstName": "Anita",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Rehabcenter Sfären, Bräcke Diakoni, Stockholm, Sweden."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Gudmundson L",
+              "initials": "L",
+              "lastName": "Gudmundson",
+              "firstName": "Lena",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Rehabcenter Sfären, Bräcke Diakoni, Stockholm, Sweden."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Hill W",
+              "initials": "W",
+              "lastName": "Hill",
+              "firstName": "Wendy",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Institute of Biomedical Engineering, University of New Brunswick, Fredericton, NB, Canada."
+                  }
+                ]
+              }
+            },
+            {
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-3257-7299"
+              },
+              "fullName": "Diers M",
+              "initials": "M",
+              "lastName": "Diers",
+              "firstName": "Martin",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Psychosomatic Medicine and Psychotherapy, LWL University Hospital, Ruhr Universität Bochum, Germany."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Turner KL",
+              "initials": "KL",
+              "lastName": "Turner",
+              "firstName": "Kristi L",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Center for Bionic Medicine, Shirley Ryan Ability Lab, Chicago, IL, United States."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Weiss T",
+              "initials": "T",
+              "lastName": "Weiss",
+              "firstName": "Thomas",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Clinical Psychology, Friedrich Schiller University Jena, Jena, Germany."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Ortiz-Catalan M",
+              "initials": "M",
+              "lastName": "Ortiz-Catalan",
+              "firstName": "Max",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Electrical Engineering, Chalmers University of Technology, Goteborg, Sweden."
+                  },
+                  {
+                    "affiliation": "Center for Bionics and Pain Research, Mölndal, Sweden."
+                  },
+                  {
+                    "affiliation": "Bionics Institute, Melbourne, Australia."
+                  },
+                  {
+                    "affiliation": "University of Melbourne, Melbourne, Australia."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "VINNOVA",
+              "grantId": "2018-03235",
+              "orderIn": 0
+            },
+            {
+              "agency": "Wenner-Gren Stiftelserna",
+              "grantId": "WGF2022-0062",
+              "orderIn": 0
+            },
+            {
+              "agency": "Integrum",
+              "orderIn": 0
+            },
+            {
+              "agency": "IngaBritt och Arne Lundbergs Forskningsstiftelse",
+              "grantId": "2020-0",
+              "orderIn": 0
+            },
+            {
+              "agency": "Stiftelsen Promobilia",
+              "grantId": "F16501",
+              "orderIn": 0
+            },
+            {
+              "agency": "Stiftelsen Promobilia",
+              "grantId": "19500",
+              "orderIn": 0
+            },
+            {
+              "agency": "PersonskadefÃ¶rbundet RTP",
+              "orderIn": 0
+            },
+            {
+              "agency": "Swedish state",
+              "orderIn": 0
+            },
+            {
+              "agency": "ALF-agreement",
+              "grantId": "725241, 774951 and 965851",
+              "orderIn": 0
+            },
+            {
+              "agency": "FundaciÃn GrÃ¼nenthal EspaÃ±a",
+              "grantId": "358041552",
+              "orderIn": 0
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "affiliation": "Department of Electrical Engineering, Chalmers University of Technology, Goteborg, Sweden.",
+        "epmcAuthMan": "N",
+        "journalInfo": {
+          "issue": "3",
+          "volume": "166",
+          "journal": {
+            "essn": "1872-6623",
+            "issn": "0304-3959",
+            "nlmid": "7508686",
+            "title": "Pain",
+            "isoabbreviation": "Pain",
+            "medlineAbbreviation": "Pain"
+          },
+          "journalIssueId": 3900227,
+          "dateOfPublication": "2025 Mar",
+          "yearOfPublication": 2025,
+          "monthOfPublication": 3,
+          "printPublicationDate": "2025-03-01"
+        },
+        "pubTypeList": {
+          "pubType": [
+            "research-article",
+            "Multicenter Study",
+            "Randomized Controlled Trial",
+            "Journal Article"
+          ]
+        },
+        "abstractText": "<h4>Abstract</h4>Phantom limb pain (PLP) represents a significant challenge after amputation. This study investigated the use of phantom motor execution (PME) and phantom motor imagery (PMI) facilitated by extended reality (XR) for the treatment of PLP. Both treatments used XR, but PME involved overt execution of phantom movements, relying on the decoding of motor intent using machine learning to enable real-time control in XR. In contrast, PMI involved mental rehearsal of phantom movements guided by XR. The study hypothesized that PME would be superior to PMI. A multicenter, double-blind, randomized controlled trial was conducted in 9 outpatient clinics across 7 countries. Eighty-one participants with PLP were randomly assigned to PME or PMI training. The primary outcome was the change in PLP, measured by the Pain Rating Index, from baseline to treatment cessation. Secondary outcomes included various aspects related to PLP, such as the rate of clinically meaningful reduction in pain (CMRP; >50% pain decrease). No evidence was found for superiority of overt execution (PME) over imagery (PMI) using XR. PLP decreased by 64.5% and 68.2% in PME and PMI groups, respectively. Thirty-seven PME participants (71%) and 19 PMI participants (68%) experienced CMRP. Positive changes were recorded in all other outcomes, without group differences. Pain reduction for PME was larger than previously reported. Despite our initial hypothesis not being confirmed, PME and PMI, aided by XR, are likely to offer meaningful PLP relief to most patients. These findings merit consideration of these therapies as viable treatment options and alternatives to pharmacological treatments.",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-3257-7299"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-3540-6639"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-2141-8214"
+            }
+          ]
+        },
+        "authorString": "Lendaro E, Van der Sluis CK, Hermansson L, Bunketorp-Käll L, Burger H, Keesom E, Widehammar C, Munoz-Novoa M, McGuire BE, O'Reilly P, Earley EJ, Iqbal S, Kristoffersen MB, Stockselius A, Gudmundson L, Hill W, Diers M, Turner KL, Weiss T, Ortiz-Catalan M.",
+        "citedByCount": 5,
+        "hasLabsLinks": "Y",
+        "isOpenAccess": "Y",
+        "hasReferences": "Y",
+        "dateOfCreation": "2024-09-09",
+        "dateOfRevision": "2025-06-11",
+        "firstIndexDate": "2024-09-10",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC11808706"
+          ]
+        },
+        "hasEvaluations": "N",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "url": "https://doi.org/10.1097/j.pain.0000000000003384",
+              "site": "DOI",
+              "availability": "Subscription required",
+              "documentStyle": "doi",
+              "availabilityCode": "S"
+            },
+            {
+              "url": "https://europepmc.org/articles/PMC11808706",
+              "site": "Europe_PMC",
+              "availability": "Open access",
+              "documentStyle": "html",
+              "availabilityCode": "OA"
+            },
+            {
+              "url": "https://europepmc.org/articles/PMC11808706?pdf=render",
+              "site": "Europe_PMC",
+              "availability": "Open access",
+              "documentStyle": "pdf",
+              "availabilityCode": "OA"
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Humans"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Phantom Limb",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PX",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "psychology"
+                  },
+                  {
+                    "abbreviation": "TH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "therapy"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Pain Measurement"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Treatment Outcome"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Double-Blind Method"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Adult"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Aged"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Middle Aged"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Female"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Male"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Imagery, Psychotherapy",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "dateOfCompletion": "2025-02-10",
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "supporting_data"
+          ]
+        },
+        "hasTextMinedTerms": "Y",
+        "publicationStatus": "ppublish",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "nct"
+          ]
+        },
+        "firstPublicationDate": "2024-09-05",
+        "fullTextReceivedDate": "2025-02-14",
+        "hasDbCrossReferences": "N",
+        "hasTMAccessionNumbers": "Y",
+        "electronicPublicationDate": "2024-09-05"
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:28:59.758413",
+      "processing_time_ms": 1984
+    },
+    "semantic_scholar": {
+      "data": {
+        "year": 2024,
+        "title": "Extended reality used in the treatment of phantom limb pain: a multicenter, double-blind, randomized controlled trial",
+        "authors": [
+          {
+            "name": "E. Lendaro",
+            "authorId": "31678381"
+          },
+          {
+            "name": "C. K. van der Sluis",
+            "authorId": "5465719"
+          },
+          {
+            "name": "L. Hermansson",
+            "authorId": "2071180535"
+          },
+          {
+            "name": "Lina Bunketorp-Käll",
+            "authorId": "2320335064"
+          },
+          {
+            "name": "Helena Burger",
+            "authorId": "2320333856"
+          },
+          {
+            "name": "Els Keesom",
+            "authorId": "2135729528"
+          },
+          {
+            "name": "Cathrine Widehammar",
+            "authorId": "8329582"
+          },
+          {
+            "name": "Maria Munoz-Novoa",
+            "authorId": "2142969124"
+          },
+          {
+            "name": "Brian E McGuire",
+            "authorId": "2290177172"
+          },
+          {
+            "name": "Paul O’Reilly",
+            "authorId": "2360678061"
+          },
+          {
+            "name": "Eric J. Earley",
+            "authorId": "145471412"
+          },
+          {
+            "name": "Sonam Iqbal",
+            "authorId": "2320336010"
+          },
+          {
+            "name": "Morten B. Kristoffersen",
+            "authorId": "2320336404"
+          },
+          {
+            "name": "A. Stockselius",
+            "authorId": "48763397"
+          },
+          {
+            "name": "Lena Gudmundson",
+            "authorId": "1405676622"
+          },
+          {
+            "name": "Wendy Hill",
+            "authorId": "2318934594"
+          },
+          {
+            "name": "Martin Diers",
+            "authorId": "2320339108"
+          },
+          {
+            "name": "Kristi L Turner",
+            "authorId": "2320335835"
+          },
+          {
+            "name": "Thomas Weiss",
+            "authorId": "2320337006"
+          },
+          {
+            "name": "Max Ortiz-Catalan",
+            "authorId": "2254453044"
+          }
+        ],
+        "journal": {
+          "name": "Pain",
+          "pages": "571 - 586",
+          "volume": "166"
+        },
+        "paperId": "9e1911fd680ad0f26ab2a900a2c58af3c2cff988",
+        "abstract": "Supplemental Digital Content is Available in the Text. The use of phantom motor execution and phantom motor imagery aided by extended reality substantially alleviates phantom limb pain and its associated comorbidities. Abstract Phantom limb pain (PLP) represents a significant challenge after amputation. This study investigated the use of phantom motor execution (PME) and phantom motor imagery (PMI) facilitated by extended reality (XR) for the treatment of PLP. Both treatments used XR, but PME involved overt execution of phantom movements, relying on the decoding of motor intent using machine learning to enable real-time control in XR. In contrast, PMI involved mental rehearsal of phantom movements guided by XR. The study hypothesized that PME would be superior to PMI. A multicenter, double-blind, randomized controlled trial was conducted in 9 outpatient clinics across 7 countries. Eighty-one participants with PLP were randomly assigned to PME or PMI training. The primary outcome was the change in PLP, measured by the Pain Rating Index, from baseline to treatment cessation. Secondary outcomes included various aspects related to PLP, such as the rate of clinically meaningful reduction in pain (CMRP; >50% pain decrease). No evidence was found for superiority of overt execution (PME) over imagery (PMI) using XR. PLP decreased by 64.5% and 68.2% in PME and PMI groups, respectively. Thirty-seven PME participants (71%) and 19 PMI participants (68%) experienced CMRP. Positive changes were recorded in all other outcomes, without group differences. Pain reduction for PME was larger than previously reported. Despite our initial hypothesis not being confirmed, PME and PMI, aided by XR, are likely to offer meaningful PLP relief to most patients. These findings merit consideration of these therapies as viable treatment options and alternatives to pharmacological treatments.",
+        "externalIds": {
+          "DOI": "10.1097/j.pain.0000000000003384",
+          "PubMed": "39250328",
+          "CorpusId": 272527950,
+          "PubMedCentral": "11808706"
+        },
+        "isOpenAccess": false,
+        "citationCount": 7,
+        "openAccessPdf": {
+          "url": "",
+          "status": "CLOSED",
+          "license": "CCBY",
+          "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11808706, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:28:58.557337",
+      "processing_time_ms": 787
+    }
+  },
+  "questions_json": {
+    "reason": "custom_topics_not_enabled",
+    "success": false,
+    "extraction_method": "disabled",
+    "processing_timestamp": "2025-07-22T14:31:10.362020"
+  },
+  "apis_clean_json": {
+    "timestamp": "2025-07-22T14:30:14.823523",
+    "cost_tracking": {
+      "model": "deepseek-chat",
+      "call_type": "smart_consensus",
+      "timestamp": "2025-07-22T14:30:14.823327",
+      "input_cost": 0.005872,
+      "total_cost": 0.007331,
+      "output_cost": 0.00146,
+      "input_tokens": 21747,
+      "total_tokens": 23074,
+      "output_tokens": 1327,
+      "parsing_error": null,
+      "parsing_successful": true,
+      "processing_time_ms": 67840
+    },
+    "consensus_result": {
+      "DOI": "10.1097/j.pain.0000000000003384",
+      "PMID": "39250328",
+      "Year": 2025,
+      "Issue": "3",
+      "PMCID": "PMC11808706",
+      "Pages": "571-586",
+      "Title": "Extended reality used in the treatment of phantom limb pain: a multicenter, double-blind, randomized controlled trial",
+      "PDFUrl": null,
+      "Volume": "166",
+      "Authors": [
+        "Lendaro, Eva",
+        "Van der Sluis, Corry K.",
+        "Hermansson, Liselotte",
+        "Bunketorp-Käll, Lina",
+        "Burger, Helena",
+        "Keesom, Els",
+        "Widehammar, Cathrine",
+        "Munoz-Nova, Maria",
+        "McGuire, Brian E.",
+        "O'Reilly, Paul",
+        "Earley, Eric J.",
+        "Iqbal, Soman",
+        "Kristoffersen, Morten B.",
+        "Stockselius, Anita",
+        "Gudmundsson, Lena",
+        "Hill, Wendy",
+        "Diers, Martin",
+        "Turner, Kristi L.",
+        "Weiss, Thomas",
+        "Ortiz-Catalan, Max"
+      ],
+      "Journal": "Pain",
+      "Abstract": "Phantom limb pain (PLP) represents a significant challenge after amputation. This study investigated the use of phantom motor execution (PME) and phantom motor imagery (PMI) facilitated by extended reality (XR) for the treatment of PLP. Both treatments used XR, but PME involved overt execution of phantom movements, relying on the decoding of motor intent using machine learning to enable real-time control in XR. In contrast, PMI involved mental rehearsal of phantom movements guided by XR. The study hypothesized that PME would be superior to PMI. A multicenter, double-blind, randomized controlled trial was conducted in 9 outpatient clinics across 7 countries. Eighty-one participants with PLP were randomly assigned to PME or PMI training. The primary outcome was the change in PLP, measured by the Pain Rating Index, from baseline to treatment cessation. Secondary outcomes included various aspects related to PLP, such as the rate of clinically meaningful reduction in pain (CMRP; >50% pain decrease). No evidence was found for superiority of overt execution (PME) over imagery (PMI) using XR. PLP decreased by 64.5% and 68.2% in PME and PMI groups, respectively. Thirty-seven PME participants (71%) and 19 PMI participants (68%) experienced CMRP. Positive changes were recorded in all other secondary outcome differences. Pain reduction for PME was larger than previously reported. Despite our initial hypothesis not being supported, PME and PMI, aided by XR, are likely to offer meaningful PLP relief to most users. These findings merit consideration for clinical implementation.",
+      "Keywords": [
+        "phantom limb pain",
+        "phantom motor execution",
+        "virtual reality",
+        "augmented reality",
+        "rehabilitation",
+        "pain management"
+      ],
+      "Citations": 7,
+      "Publisher": "Wolters Kluwer Health",
+      "OpenAccess": false,
+      "confidence_factors": {
+        "source": "Vision-Foundation + API Enhancement",
+        "reasoning": "Vision data used as foundation with strong API validation from multiple sources (Crossref, Europe PMC, PubMed, Semantic Scholar). Key enhancements include PMID/PMCID from Europe PMC, citation count from Semantic Scholar, and open access status from Unpaywall. All API data was cross-validated for coherence with vision data.",
+        "field_sources": {
+          "doi": "crossref|europe_pmc|pubmed|semantic_scholar|unpaywall",
+          "pmid": "europe_pmc|pubmed",
+          "year": "crossref|europe_pmc|pubmed|vision",
+          "issue": "crossref|europe_pmc|pubmed|vision",
+          "pages": "crossref|europe_pmc|pubmed|vision",
+          "pmcid": "europe_pmc",
+          "title": "vision",
+          "pdfurl": "europe_pmc",
+          "volume": "crossref|europe_pmc|pubmed|vision",
+          "authors": "crossref+europe_pmc+pubmed+vision",
+          "journal": "vision",
+          "abstract": "europe_pmc+pubmed+vision",
+          "keywords": "vision",
+          "citations": "semantic_scholar",
+          "publisher": "crossref|vision",
+          "openaccess": "unpaywall"
+        },
+        "enhancement_level": "SIGNIFICANT",
+        "validation_status": "HIGH"
+      },
+      "api_success_summary": {
+        "insights": "Strong coherence among major scholarly APIs (Crossref, Europe PMC, PubMed, Semantic Scholar). Europe PMC provided the most comprehensive enhancements including affiliations and funding information. DOAJ failed due to missing DOI, while arXiv had no matches. DataCite and CORE returned supplementary materials rather than the main article.",
+        "total_apis": 11,
+        "failed_apis": [
+          "doaj",
+          "arxiv"
+        ],
+        "success_rate": 0.73,
+        "coherent_apis": 7,
+        "coherence_rate": 0.88,
+        "successful_apis": 8
+      }
+    },
+    "processing_time_ms": 77057
+  },
+  "llm_topics_json": {
+    "success": true,
+    "prompt_sent": "You are a scientific research assistant extracting data for academic comparison tables with statistical rigor.\n\nCRITICAL INSTRUCTIONS FOR ACADEMIC COMPARISON:\n\n- SYSTEMATICALLY scan ALL content: text, tables, figures, charts, appendices\n- PRIORITIZE quantitative data while preserving qualitative context\n- When conflicts exist in the paper, prioritize MOST RECENT/AUTHORITATIVE source\n- Extract ALL relevant details mentioned - DON'T truncate important information\n- Include statistical tests results (Z-scores, t-values, chi-square, etc.)\n- Extract accuracy rates, completion rates, success rates with specific numbers\n- Capture comparative data (e.g., \"46% vs 27%\", \"Group A: 64.5%, Group B: 68.2%\")\n- Use proper numeric format: \"p = 0.007\" not \"p = .007\", \"81\" not \"eighty-one\"\n\nCOMPREHENSIVE CAPTURE REQUIREMENTS:\n\n- List ALL hardware components: cameras, sensors, headsets, controllers, phones, tablets, webcams, probes\n- Include ALL software details: platforms, SDKs, libraries, export formats (CSV, JSON), feedback systems\n- Capture ALL measurement instruments: scales, questionnaires, assessment tools (SUS, NASA-TLX, FES-I, MoCA, IKDC, VAS, ABC scale, WHODAS 2.0, etc.)\n- Note ALL technical specifications: resolutions, frame rates, tracking capabilities, joint counts\n- Include ALL study phases: pilot tests, technical validation, user studies, expert evaluations\n- Capture ALL procedural details: training time, calibration steps, data export processes, real-time feedback\n\nCONFLICT RESOLUTION:\n\n- If conflicting information exists, prioritize methods/results over abstract\n- When uncertain, include both: \"X in abstract, Y in methods section\"\n\nExtract the following 7 scientific topics:\n\n1. *study_design*: Extract the PRIMARY study type/design using the most specific and authoritative terminology from the paper's methods section. Recognize equivalent terms: \"RCT\" = \"Randomized controlled trial\", \"Pilot study\" = \"Feasibility pilot study\", \"Cross-sectional\" = \"Observational cross-sectional\", \"User study\" = \"User evaluation study\". When multiple study type descriptions exist, prioritize the most comprehensive version from methods over abstract. Include specific qualifiers when mentioned (e.g., \"multicenter\", \"double-blind\", \"waitlist-controlled\") as these add valuable detail. Format as brief phrase describing core study methodology, avoiding generic terms like \"study\" or \"research\" alone.\n\n2. *methodology*: ONE comprehensive sentence covering: technology + application + key technical details. Include: ALL device models, software platforms, measurement tools, statistical analyses. Capture ALL hardware components mentioned (cameras, sensors, controllers, probes, etc.). Include ALL software features (real-time feedback, data export, tracking capabilities). Mention ALL technical specifications (joint tracking numbers, frame rates, resolutions). Example: \"Microsoft HoloLens 2 with HoloAnatomy platform for 3D anatomical procedural visualization using real-time motion tracking of 25 joints with CSV data export and real-time visual feedback\".\n\n3. *sample_size*: Format: \"X participants/patients\" (use paper's exact terminology). Include TOTAL numbers if multiple groups exist. Include ALL test phases: technical tests, pilot studies, user evaluations. Example: \"25 total: 23 biomedical students + 2 clinical experts; 50 technical validation readings\".\n\n4. *population*: ALL demographic details and characteristics not captured in sample_size. Include age, profession, condition, experience, setting details. Add specific numbers when available. Include recruitment sources and inclusion/exclusion criteria.\n\n5. *primary_outcome*: Include ALL measurement tools, scales, timing, specific metrics, usability criteria (ease of use, realism, anatomical accuracy). List ALL assessment instruments used and functional scales (SUS, NASA-TLX, FES-I, MoCA, IKDC, VAS, ABC scale, WHODAS 2.0, etc.), and evaluation dimensions beyond the primary measures.. Include ALL comparison conditions and timepoints. Example: \"Patient understanding via 5-point Likert scale assessed pre/post intervention, plus SUS usability scores and NASA-TLX workload assessment\".\n\n6. *key_findings*: PRIORITIZE statistical results with practical implications. Format: \"Finding 1: [statistical data + meaning]. Finding 2: [data + context]\". Include ALL significant findings, p-values, effect sizes, accuracy rates, comparative data, accuracy measurements (sub-mm, degrees), specific understanding domains (surgical risks, operative steps, recovery), and detailed performance metrics beyond statistical significance. Present ALL questionnaire results, prototype performance, qualitative benefits. Include ALL cost factors, training requirements, implementation details. Capture ALL comparison groups and their specific results. Be comprehensive - capture complete findings picture. Include ALL technical specifications mentioned: accuracy measurements (sub-mm, degrees).\n\n7. *limitations*: Extract ALL limitations from limitation/discussion sections. Include sample size issues, technical equipment requirements, methodological, practical constraints. Mention ALL equipment needs, calibration requirements, manufacturing variability. Include ALL generalizability issues, validity concerns, implementation barriers. Capture training requirements, cost constraints, specialized equipment needs. Note real-world applicability issues and clinical implementation challenges. Don't summarize - capture complete limitation landscape.\n\nReturn as valid JSON with this EXACT structure:\n\n{\n  \"study_design\": \"string\",\n  \"methodology\": \"string\",\n  \"sample_size\": \"string\",\n  \"population\": \"string\",\n  \"primary_outcome\": \"string\",\n  \"key_findings\": \"string\",\n  \"limitations\": \"string\"\n}",
+    "cost_tracking": {
+      "model": "gpt-4o",
+      "call_type": "scientific_topics_multimodal",
+      "timestamp": "2025-07-22T14:31:09.244609",
+      "input_cost": 0.03352,
+      "total_cost": 0.03633,
+      "output_cost": 0.00281,
+      "input_tokens": 13408,
+      "total_tokens": 13689,
+      "output_tokens": 281
+    },
+    "input_details": {
+      "dpi": 150,
+      "max_tokens": 6000,
+      "model_used": "gpt-4o",
+      "temperature": 0.1,
+      "strategy_used": "vision_all_pages (≤40)",
+      "pdf_total_pages": 16,
+      "image_resolution": "high",
+      "processing_time_ms": 53396,
+      "pdf_pages_processed": 16
+    },
+    "pages_processed": 16,
+    "extracted_topics": {
+      "population": "Participants aged 58.18 years on average, with chronic phantom limb pain (PLP) persisting beyond 3 months, recruited from 9 outpatient clinics across 7 countries.",
+      "limitations": "Higher than anticipated dropout rate, potential influence of contextual factors, and the need for specialized equipment and training for XR interventions.",
+      "methodology": "Extended reality (XR) using Microsoft HoloLens for phantom motor execution (PME) and phantom motor imagery (PMI) with real-time motion tracking, myoelectric signal decoding, and real-time feedback in virtual environments.",
+      "sample_size": "81 participants: 53 allocated to PME, 28 to PMI",
+      "key_findings": "Finding 1: No significant difference between PME and PMI in PRI change (p = 0.75 ± 0.12). Finding 2: Both groups showed improvements in secondary outcomes like PLP Weighted Pain Distribution (WPD) and PLP Numeric Rating Scale (NRS) with reductions at various time points.",
+      "study_design": "Multicenter, double-blind, randomized controlled trial",
+      "primary_outcome": "Change in PLP intensity measured by the Pain Rating Index (PRI) from the Short-Form McGill Pain Questionnaire (SF-MPQ) between baseline and end of treatment."
+    },
+    "extraction_method": "multimodal_vision",
+    "extraction_quality": {
+      "topics_missing": 0,
+      "topics_extracted": 7
+    },
+    "processing_time_ms": 53396,
+    "raw_openai_response": {
+      "content": "```json\n{\n  \"study_design\": \"Multicenter, double-blind, randomized controlled trial\",\n  \"methodology\": \"Extended reality (XR) using Microsoft HoloLens for phantom motor execution (PME) and phantom motor imagery (PMI) with real-time motion tracking, myoelectric signal decoding, and real-time feedback in virtual environments.\",\n  \"sample_size\": \"81 participants: 53 allocated to PME, 28 to PMI\",\n  \"population\": \"Participants aged 58.18 years on average, with chronic phantom limb pain (PLP) persisting beyond 3 months, recruited from 9 outpatient clinics across 7 countries.\",\n  \"primary_outcome\": \"Change in PLP intensity measured by the Pain Rating Index (PRI) from the Short-Form McGill Pain Questionnaire (SF-MPQ) between baseline and end of treatment.\",\n  \"key_findings\": \"Finding 1: No significant difference between PME and PMI in PRI change (p = 0.75 ± 0.12). Finding 2: Both groups showed improvements in secondary outcomes like PLP Weighted Pain Distribution (WPD) and PLP Numeric Rating Scale (NRS) with reductions at various time points.\",\n  \"limitations\": \"Higher than anticipated dropout rate, potential influence of contextual factors, and the need for specialized equipment and training for XR interventions.\"\n}\n```",
+      "parsing_error": null,
+      "response_length": 1232,
+      "parsing_successful": true
+    },
+    "processing_timestamp": "2025-07-22T14:31:09.244466"
+  },
+  "processing_metadata": {
+    "filename": "13) Extended reality used in the treatment of phantom limb pain.pdf",
+    "article_id": "unknown",
+    "total_phases": 5,
+    "aggregated_at": "2025-07-22T14:31:10.637482",
+    "phases_completed": {
+      "topics": true,
+      "vision": true,
+      "apis_raw": true,
+      "questions": false,
+      "apis_clean": true
+    },
+    "transparency_level": "complete"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "source": "gpt-4o-vision",
+  "success": true,
+  "prompt_sent": "Extract ONLY publication metadata from these academic paper pages.\n\nCRITICAL: This data will be sent to 11 external APIs, so format accuracy is essential.\n\nFIELD REQUIREMENTS WITH EXACT FORMATS:\n\n1. **Title**: Clean title for API queries (HIGHEST PRIORITY)\n   - Remove line breaks, extra spaces, formatting\n   - No HTML tags or special characters  \n   - Example: \"Effects of Machine Learning on Healthcare Outcomes\"\n\n2. **Authors**: API-compatible author list (HIGHEST PRIORITY)\n   - Each author as separate string in array\n   - Format: \"FirstName LastName\" or \"F. LastName\"\n   - Clean, no extra punctuation\n   - Example: [\"John Smith\", \"M. Johnson\", \"Sarah Williams\"]\n\n3. **DOI**: Standard DOI format for resolution APIs\n   - Must start with \"10.\" if present\n   - Clean format without URL prefixes\n   - Example: \"10.1234/journal.2024.001\"\n\n4. **Journal**: Clean journal name for database queries\n   - Full journal name preferred over abbreviations\n   - Remove extra formatting, parentheses\n   - Example: \"Nature Medicine\"\n\n5. **Year**: Numeric format for date filtering\n   - 4-digit NUMBER only (not string)\n   - Example: 2024\n\n6. **Volume**: Clean number for bibliographic APIs\n   - Numbers only, no \"Vol.\" prefix\n   - Example: \"15\"\n\n7. **Issue**: Clean number format\n   - Numbers only, no \"No.\" or \"Issue\" prefix\n   - Example: \"3\"\n\n8. **Pages**: Standard page range for citations\n   - Format: \"start-end\" or single page\n   - Example: \"123-135\" or \"45\"\n\n9. **PMID**: PubMed ID for medical APIs\n   - Numbers only, no \"PMID:\" prefix\n   - Example: \"12345678\"\n\n10. **PMCID**: PubMed Central ID for open access papers\n    - Numbers only, no \"PMC\" prefix\n    - Often appears near PMID in biomedical papers\n    - Example: \"9876543\"\n\n11. **Keywords**: API-compatible keyword list\n    - Each keyword as separate string\n    - Research-quality terms, no punctuation\n    - Example: [\"machine learning\", \"healthcare\", \"clinical outcomes\"]\n\n11. **Abstract**: Complete clean text (HIGHEST PRIORITY)\n    - Remove formatting, line breaks, extra spaces\n    - Complete sentences, proper punctuation\n    - Search thoroughly across ALL pages\n    - This is CRITICAL for Semantic Scholar and other APIs\n\n12. **Publisher**: Clean organization name\n    - Official publisher name\n    - Example: \"Elsevier\" or \"Nature Publishing Group\"\n\nABSTRACT EXTRACTION PRIORITY:\n- Look thoroughly across ALL pages for abstract sections\n- Extract COMPLETE text, including multiple paragraphs\n- Check: Abstract, Summary, Introduction summary paragraphs\n- This field is CRITICAL for API enrichment success\n\nReturn JSON format:\n{\n  \"Title\": \"clean title without formatting\",\n  \"Authors\": [\"Author One\", \"Author Two\"],\n  \"DOI\": \"10.xxxx/xxxxx\",\n  \"Journal\": \"clean journal name\", \n  \"Year\": 2024,\n  \"Volume\": \"15\",\n  \"Issue\": \"3\", \n  \"Pages\": \"123-135\",\n  \"Abstract\": \"complete clean abstract text\",\n  \"Keywords\": [\"keyword1\", \"keyword2\"],\n  \"PMID\": \"12345678\",\n  \"PMCID\": \"9876543\",\n  \"Publisher\": \"publisher name\"\n}\n\nReturn null for fields not clearly visible. The Abstract field is MOST IMPORTANT for downstream API success.",
+  "cost_tracking": {
+    "model": "gpt-4o",
+    "call_type": "vision_extraction",
+    "timestamp": "2025-07-22T14:13:25.048397",
+    "input_cost": 0.007725,
+    "total_cost": 0.012685,
+    "output_cost": 0.00496,
+    "input_tokens": 3090,
+    "total_tokens": 3586,
+    "output_tokens": 496
+  },
+  "input_details": {
+    "dpi": 120,
+    "max_tokens": 1500,
+    "model_used": "gpt-4o",
+    "temperature": 0.1,
+    "page_strategy": "strategic",
+    "image_resolution": "high",
+    "processing_time_ms": 26226,
+    "pdf_pages_processed": 3
+  },
+  "extracted_data": {
+    "DOI": "10.1177/11206721231159249",
+    "PMID": null,
+    "Year": 2024,
+    "Issue": "3",
+    "PMCID": null,
+    "Pages": "870-873",
+    "Title": "The photoreal new-age innovative pedagogical and counseling tool for glaucoma with 3D augmented reality (Eye MG AR)",
+    "Volume": "34",
+    "Authors": [
+      "Prasanna Venkatesh Ramesh",
+      "Prajnya Ray",
+      "Tensigh Joshua",
+      "Aji Kunnath Devadas",
+      "Prakash Michael Raj",
+      "Shruthy Vaishali Ramesh",
+      "Meena Kumari Ramesh",
+      "Ramesh Rajasekaran"
+    ],
+    "Journal": "European Journal of Ophthalmology",
+    "Abstract": "In this manuscript, we have reported an augmented reality (AR) application named, 'Eye MG AR' innovated by us, to show different anatomical/pathological parts of the eyeball pertaining to glaucoma, from multiple customized angles of the user's choice to simplify glaucoma learning and clinical counseling. It is available free of cost from the Google Play Store for Android users. Procedures ranging from a simple outpatient department procedure (yttrium aluminium garnet peripheral iridotomy) to a complex surgical technique (trabeculectomy/tube surgery) can be explained and counseled with this Android application. Also, complex structures such as the angle of the anterior chamber and optic nerve head, are constructed in advanced real-time three-dimensional (3D) high-resolution confocal images. These 3D models are useful for glaucoma neophytes' immersive learning and 3D patient counseling experiences. This tool aims to reinvent the approach to glaucoma counseling with 'Unreal Engine' software and is created in a patient-friendly approach. Incepting 3D pedagogy and counseling with AR in glaucoma with real-time and high-resolution TrueColor confocal images has never been reported in the literature according to our knowledge.",
+    "Keywords": [
+      "Glaucoma",
+      "neuro ophthalmology",
+      "angle-closure glaucoma",
+      "diagnostic techniques",
+      "neovascular glaucoma",
+      "open-angle glaucoma",
+      "retina"
+    ],
+    "Publisher": "Sage"
+  },
+  "pages_processed": 3,
+  "extraction_matrix": {
+    "_performance_summary": {
+      "total_cost": 0.0,
+      "data_source": "vision_json",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "vision_status": "COMPLETE",
+      "extraction_rate": 84.62,
+      "extraction_source": "gpt-4o-vision",
+      "performance_level": "EXCELLENT",
+      "fields_with_content": 11,
+      "processing_time_seconds": 0,
+      "total_fields_in_response": 13
+    }
+  },
+  "extraction_method": "vision_strategic_strategy",
+  "extraction_quality": {
+    "success_rate": 50.0,
+    "quality_score": 50.0,
+    "successful_fields": 11,
+    "validation_details": {
+      "errors": [],
+      "is_valid": true,
+      "warnings": [],
+      "quality_score": 100,
+      "completeness_score": 100.0
+    },
+    "total_fields_attempted": 13
+  },
+  "processing_time_ms": 26226,
+  "raw_openai_response": {
+    "content": "```json\n{\n  \"Title\": \"The photoreal new-age innovative pedagogical and counseling tool for glaucoma with 3D augmented reality (Eye MG AR)\",\n  \"Authors\": [\n    \"Prasanna Venkatesh Ramesh\",\n    \"Prajnya Ray\",\n    \"Tensigh Joshua\",\n    \"Aji Kunnath Devadas\",\n    \"Prakash Michael Raj\",\n    \"Shruthy Vaishali Ramesh\",\n    \"Meena Kumari Ramesh\",\n    \"Ramesh Rajasekaran\"\n  ],\n  \"DOI\": \"10.1177/11206721231159249\",\n  \"Journal\": \"European Journal of Ophthalmology\",\n  \"Year\": 2024,\n  \"Volume\": \"34\",\n  \"Issue\": \"3\",\n  \"Pages\": \"870-873\",\n  \"Abstract\": \"In this manuscript, we have reported an augmented reality (AR) application named, 'Eye MG AR' innovated by us, to show different anatomical/pathological parts of the eyeball pertaining to glaucoma, from multiple customized angles of the user's choice to simplify glaucoma learning and clinical counseling. It is available free of cost from the Google Play Store for Android users. Procedures ranging from a simple outpatient department procedure (yttrium aluminium garnet peripheral iridotomy) to a complex surgical technique (trabeculectomy/tube surgery) can be explained and counseled with this Android application. Also, complex structures such as the angle of the anterior chamber and optic nerve head, are constructed in advanced real-time three-dimensional (3D) high-resolution confocal images. These 3D models are useful for glaucoma neophytes' immersive learning and 3D patient counseling experiences. This tool aims to reinvent the approach to glaucoma counseling with 'Unreal Engine' software and is created in a patient-friendly approach. Incepting 3D pedagogy and counseling with AR in glaucoma with real-time and high-resolution TrueColor confocal images has never been reported in the literature according to our knowledge.\",\n  \"Keywords\": [\n    \"Glaucoma\",\n    \"neuro ophthalmology\",\n    \"angle-closure glaucoma\",\n    \"diagnostic techniques\",\n    \"neovascular glaucoma\",\n    \"open-angle glaucoma\",\n    \"retina\"\n  ],\n  \"PMID\": null,\n  \"PMCID\": null,\n  \"Publisher\": \"Sage\"\n}\n```",
+    "parsing_error": "Expecting value: line 1 column 1 (char 0)",
+    "response_length": 2037,
+    "parsing_successful": false
+  },
+  "processing_timestamp": "2025-07-22T14:13:25.048385"
+}

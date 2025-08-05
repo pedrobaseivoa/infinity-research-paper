@@ -1,0 +1,92 @@
+{
+  "source": "gpt-4o-vision",
+  "success": true,
+  "prompt_sent": "Extract ONLY publication metadata from these academic paper pages.\n\nCRITICAL: This data will be sent to 11 external APIs, so format accuracy is essential.\n\nFIELD REQUIREMENTS WITH EXACT FORMATS:\n\n1. **Title**: Clean title for API queries (HIGHEST PRIORITY)\n   - Remove line breaks, extra spaces, formatting\n   - No HTML tags or special characters  \n   - Example: \"Effects of Machine Learning on Healthcare Outcomes\"\n\n2. **Authors**: API-compatible author list (HIGHEST PRIORITY)\n   - Each author as separate string in array\n   - Format: \"FirstName LastName\" or \"F. LastName\"\n   - Clean, no extra punctuation\n   - Example: [\"John Smith\", \"M. Johnson\", \"Sarah Williams\"]\n\n3. **DOI**: Standard DOI format for resolution APIs\n   - Must start with \"10.\" if present\n   - Clean format without URL prefixes\n   - Example: \"10.1234/journal.2024.001\"\n\n4. **Journal**: Clean journal name for database queries\n   - Full journal name preferred over abbreviations\n   - Remove extra formatting, parentheses\n   - Example: \"Nature Medicine\"\n\n5. **Year**: Numeric format for date filtering\n   - 4-digit NUMBER only (not string)\n   - Example: 2024\n\n6. **Volume**: Clean number for bibliographic APIs\n   - Numbers only, no \"Vol.\" prefix\n   - Example: \"15\"\n\n7. **Issue**: Clean number format\n   - Numbers only, no \"No.\" or \"Issue\" prefix\n   - Example: \"3\"\n\n8. **Pages**: Standard page range for citations\n   - Format: \"start-end\" or single page\n   - Example: \"123-135\" or \"45\"\n\n9. **PMID**: PubMed ID for medical APIs\n   - Numbers only, no \"PMID:\" prefix\n   - Example: \"12345678\"\n\n10. **PMCID**: PubMed Central ID for open access papers\n    - Numbers only, no \"PMC\" prefix\n    - Often appears near PMID in biomedical papers\n    - Example: \"9876543\"\n\n11. **Keywords**: API-compatible keyword list\n    - Each keyword as separate string\n    - Research-quality terms, no punctuation\n    - Example: [\"machine learning\", \"healthcare\", \"clinical outcomes\"]\n\n11. **Abstract**: Complete clean text (HIGHEST PRIORITY)\n    - Remove formatting, line breaks, extra spaces\n    - Complete sentences, proper punctuation\n    - Search thoroughly across ALL pages\n    - This is CRITICAL for Semantic Scholar and other APIs\n\n12. **Publisher**: Clean organization name\n    - Official publisher name\n    - Example: \"Elsevier\" or \"Nature Publishing Group\"\n\nABSTRACT EXTRACTION PRIORITY:\n- Look thoroughly across ALL pages for abstract sections\n- Extract COMPLETE text, including multiple paragraphs\n- Check: Abstract, Summary, Introduction summary paragraphs\n- This field is CRITICAL for API enrichment success\n\nReturn JSON format:\n{\n  \"Title\": \"clean title without formatting\",\n  \"Authors\": [\"Author One\", \"Author Two\"],\n  \"DOI\": \"10.xxxx/xxxxx\",\n  \"Journal\": \"clean journal name\", \n  \"Year\": 2024,\n  \"Volume\": \"15\",\n  \"Issue\": \"3\", \n  \"Pages\": \"123-135\",\n  \"Abstract\": \"complete clean abstract text\",\n  \"Keywords\": [\"keyword1\", \"keyword2\"],\n  \"PMID\": \"12345678\",\n  \"PMCID\": \"9876543\",\n  \"Publisher\": \"publisher name\"\n}\n\nReturn null for fields not clearly visible. The Abstract field is MOST IMPORTANT for downstream API success.",
+  "cost_tracking": {
+    "model": "gpt-4o",
+    "call_type": "vision_extraction",
+    "timestamp": "2025-07-22T14:43:57.077270",
+    "input_cost": 0.007725,
+    "total_cost": 0.010655,
+    "output_cost": 0.00293,
+    "input_tokens": 3090,
+    "total_tokens": 3383,
+    "output_tokens": 293
+  },
+  "input_details": {
+    "dpi": 120,
+    "max_tokens": 1500,
+    "model_used": "gpt-4o",
+    "temperature": 0.1,
+    "page_strategy": "strategic",
+    "image_resolution": "high",
+    "processing_time_ms": 16847,
+    "pdf_pages_processed": 3
+  },
+  "extracted_data": {
+    "DOI": "10.1002/cpe.5526",
+    "PMID": null,
+    "Year": 2020,
+    "Issue": "e5526",
+    "PMCID": null,
+    "Pages": "e5526",
+    "Title": "Augmented reality for botulinum toxin injection",
+    "Volume": "32",
+    "Authors": [
+      "HyoJoon Kim",
+      "SangHui Jeong",
+      "JiHyeon Seo",
+      "InSeok Park",
+      "Hoon Ko",
+      "Seong Yong Moon"
+    ],
+    "Journal": "Concurrency Computation Practice and Experience",
+    "Abstract": "Augmented-reality (AR) devices allow physicians to incorporate data visualization into diagnostic and treatment procedures to improve work efficiency and safety and reduce cost. They are also used to enhance surgical training. In this study, we implemented an AR application for Botox injections using a face recognition algorithm based on deep learning, and we evaluated the recognition accuracy of this application using 27 participants. The accuracy was around 3 mm for all parts of the facial region. The method of increasing surgical efficiency with AR is accurate enough to be used for surgery and provides great potential for further development.",
+    "Keywords": [
+      "augmented reality",
+      "botulinum toxins",
+      "clinical education",
+      "face recognition",
+      "injection technique"
+    ],
+    "Publisher": "Wiley"
+  },
+  "pages_processed": 3,
+  "extraction_matrix": {
+    "_performance_summary": {
+      "total_cost": 0.0,
+      "data_source": "vision_json",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "vision_status": "COMPLETE",
+      "extraction_rate": 84.62,
+      "extraction_source": "gpt-4o-vision",
+      "performance_level": "EXCELLENT",
+      "fields_with_content": 11,
+      "processing_time_seconds": 0,
+      "total_fields_in_response": 13
+    }
+  },
+  "extraction_method": "vision_strategic_strategy",
+  "extraction_quality": {
+    "success_rate": 50.0,
+    "quality_score": 50.0,
+    "successful_fields": 11,
+    "validation_details": {
+      "errors": [],
+      "is_valid": true,
+      "warnings": [],
+      "quality_score": 100,
+      "completeness_score": 100.0
+    },
+    "total_fields_attempted": 13
+  },
+  "processing_time_ms": 16847,
+  "raw_openai_response": {
+    "content": "```json\n{\n  \"Title\": \"Augmented reality for botulinum toxin injection\",\n  \"Authors\": [\"HyoJoon Kim\", \"SangHui Jeong\", \"JiHyeon Seo\", \"InSeok Park\", \"Hoon Ko\", \"Seong Yong Moon\"],\n  \"DOI\": \"10.1002/cpe.5526\",\n  \"Journal\": \"Concurrency Computation Practice and Experience\",\n  \"Year\": 2020,\n  \"Volume\": \"32\",\n  \"Issue\": \"e5526\",\n  \"Pages\": \"e5526\",\n  \"Abstract\": \"Augmented-reality (AR) devices allow physicians to incorporate data visualization into diagnostic and treatment procedures to improve work efficiency and safety and reduce cost. They are also used to enhance surgical training. In this study, we implemented an AR application for Botox injections using a face recognition algorithm based on deep learning, and we evaluated the recognition accuracy of this application using 27 participants. The accuracy was around 3 mm for all parts of the facial region. The method of increasing surgical efficiency with AR is accurate enough to be used for surgery and provides great potential for further development.\",\n  \"Keywords\": [\"augmented reality\", \"botulinum toxins\", \"clinical education\", \"face recognition\", \"injection technique\"],\n  \"PMID\": null,\n  \"PMCID\": null,\n  \"Publisher\": \"Wiley\"\n}\n```",
+    "parsing_error": "Expecting value: line 1 column 1 (char 0)",
+    "response_length": 1200,
+    "parsing_successful": false
+  },
+  "processing_timestamp": "2025-07-22T14:43:57.077259"
+}

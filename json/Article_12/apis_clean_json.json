@@ -1,0 +1,100 @@
+{
+  "timestamp": "2025-07-22T14:30:14.823523",
+  "cost_tracking": {
+    "model": "deepseek-chat",
+    "call_type": "smart_consensus",
+    "timestamp": "2025-07-22T14:30:14.823327",
+    "input_cost": 0.005872,
+    "total_cost": 0.007331,
+    "output_cost": 0.00146,
+    "input_tokens": 21747,
+    "total_tokens": 23074,
+    "output_tokens": 1327,
+    "parsing_error": null,
+    "parsing_successful": true,
+    "processing_time_ms": 67840
+  },
+  "consensus_result": {
+    "DOI": "10.1097/j.pain.0000000000003384",
+    "PMID": "39250328",
+    "Year": 2025,
+    "Issue": "3",
+    "PMCID": "PMC11808706",
+    "Pages": "571-586",
+    "Title": "Extended reality used in the treatment of phantom limb pain: a multicenter, double-blind, randomized controlled trial",
+    "PDFUrl": null,
+    "Volume": "166",
+    "Authors": [
+      "Lendaro, Eva",
+      "Van der Sluis, Corry K.",
+      "Hermansson, Liselotte",
+      "Bunketorp-Käll, Lina",
+      "Burger, Helena",
+      "Keesom, Els",
+      "Widehammar, Cathrine",
+      "Munoz-Nova, Maria",
+      "McGuire, Brian E.",
+      "O'Reilly, Paul",
+      "Earley, Eric J.",
+      "Iqbal, Soman",
+      "Kristoffersen, Morten B.",
+      "Stockselius, Anita",
+      "Gudmundsson, Lena",
+      "Hill, Wendy",
+      "Diers, Martin",
+      "Turner, Kristi L.",
+      "Weiss, Thomas",
+      "Ortiz-Catalan, Max"
+    ],
+    "Journal": "Pain",
+    "Abstract": "Phantom limb pain (PLP) represents a significant challenge after amputation. This study investigated the use of phantom motor execution (PME) and phantom motor imagery (PMI) facilitated by extended reality (XR) for the treatment of PLP. Both treatments used XR, but PME involved overt execution of phantom movements, relying on the decoding of motor intent using machine learning to enable real-time control in XR. In contrast, PMI involved mental rehearsal of phantom movements guided by XR. The study hypothesized that PME would be superior to PMI. A multicenter, double-blind, randomized controlled trial was conducted in 9 outpatient clinics across 7 countries. Eighty-one participants with PLP were randomly assigned to PME or PMI training. The primary outcome was the change in PLP, measured by the Pain Rating Index, from baseline to treatment cessation. Secondary outcomes included various aspects related to PLP, such as the rate of clinically meaningful reduction in pain (CMRP; >50% pain decrease). No evidence was found for superiority of overt execution (PME) over imagery (PMI) using XR. PLP decreased by 64.5% and 68.2% in PME and PMI groups, respectively. Thirty-seven PME participants (71%) and 19 PMI participants (68%) experienced CMRP. Positive changes were recorded in all other secondary outcome differences. Pain reduction for PME was larger than previously reported. Despite our initial hypothesis not being supported, PME and PMI, aided by XR, are likely to offer meaningful PLP relief to most users. These findings merit consideration for clinical implementation.",
+    "Keywords": [
+      "phantom limb pain",
+      "phantom motor execution",
+      "virtual reality",
+      "augmented reality",
+      "rehabilitation",
+      "pain management"
+    ],
+    "Citations": 7,
+    "Publisher": "Wolters Kluwer Health",
+    "OpenAccess": false,
+    "confidence_factors": {
+      "source": "Vision-Foundation + API Enhancement",
+      "reasoning": "Vision data used as foundation with strong API validation from multiple sources (Crossref, Europe PMC, PubMed, Semantic Scholar). Key enhancements include PMID/PMCID from Europe PMC, citation count from Semantic Scholar, and open access status from Unpaywall. All API data was cross-validated for coherence with vision data.",
+      "field_sources": {
+        "doi": "crossref|europe_pmc|pubmed|semantic_scholar|unpaywall",
+        "pmid": "europe_pmc|pubmed",
+        "year": "crossref|europe_pmc|pubmed|vision",
+        "issue": "crossref|europe_pmc|pubmed|vision",
+        "pages": "crossref|europe_pmc|pubmed|vision",
+        "pmcid": "europe_pmc",
+        "title": "vision",
+        "pdfurl": "europe_pmc",
+        "volume": "crossref|europe_pmc|pubmed|vision",
+        "authors": "crossref+europe_pmc+pubmed+vision",
+        "journal": "vision",
+        "abstract": "europe_pmc+pubmed+vision",
+        "keywords": "vision",
+        "citations": "semantic_scholar",
+        "publisher": "crossref|vision",
+        "openaccess": "unpaywall"
+      },
+      "enhancement_level": "SIGNIFICANT",
+      "validation_status": "HIGH"
+    },
+    "api_success_summary": {
+      "insights": "Strong coherence among major scholarly APIs (Crossref, Europe PMC, PubMed, Semantic Scholar). Europe PMC provided the most comprehensive enhancements including affiliations and funding information. DOAJ failed due to missing DOI, while arXiv had no matches. DataCite and CORE returned supplementary materials rather than the main article.",
+      "total_apis": 11,
+      "failed_apis": [
+        "doaj",
+        "arxiv"
+      ],
+      "success_rate": 0.73,
+      "coherent_apis": 7,
+      "coherence_rate": 0.88,
+      "successful_apis": 8
+    }
+  },
+  "processing_time_ms": 77057
+}

@@ -1,0 +1,85 @@
+{
+  "timestamp": "2025-07-22T14:12:02.962712",
+  "cost_tracking": {
+    "model": "deepseek-chat",
+    "call_type": "smart_consensus",
+    "timestamp": "2025-07-22T14:12:02.962538",
+    "input_cost": 0.003311,
+    "total_cost": 0.004818,
+    "output_cost": 0.001507,
+    "input_tokens": 12264,
+    "total_tokens": 13634,
+    "output_tokens": 1370,
+    "parsing_error": null,
+    "parsing_successful": true,
+    "processing_time_ms": 73839
+  },
+  "consensus_result": {
+    "DOI": "10.1016/j.jneumeth.2024.110349",
+    "PMID": "39675675",
+    "Year": 2025,
+    "Issue": null,
+    "PMCID": null,
+    "Pages": "110349",
+    "Title": "Using a mixed-reality headset to elicit and track clinically relevant movement in the clinic",
+    "PDFUrl": "https://doi.org/10.1101/2024.07.07.24310049",
+    "Volume": "415",
+    "Authors": [
+      "Calame, Dylan",
+      "Lester, Evan",
+      "Chiu, Phil",
+      "Seeberger, Lauren"
+    ],
+    "Journal": "Journal of Neuroscience Methods",
+    "Abstract": "Background: 21st century neurology will require scalable and quantitative tools that can improve neurologic evaluations over telehealth and expand access to care. Commercially available mixed-reality headsets allow for simultaneous presentation of stimuli via holograms projected into the real world and objective and quantitative measurement of hand movement, eye movement, and phonation. New method: We created 6 tasks designed to mimic standard neurologic assessments and administered them to a single participant via the Microsoft HoloLens 2 mixed-reality headset. The tasks assessed postural hand tremor, finger tapping, pronation and supination of hands, hand and eye tracking of a center-out task, hand and eye tracking of a random motion task, and vocal assessment. Results: We show the utility of the HoloLens for commonly used neurological exams. First, we demonstrate that headset-derived holograms can project hand movements and objects in 3D space, providing a method to accurately and reproducibly present test stimuli to reduce test-retest variability. Second, we found that participant hand movements closely matched holographic stimuli using a variety of metrics calculated on recorded movement data. Third, we showed that the HoloLens can record and playback exam tasks for visual inspection, sharing with other medical providers, and future analysis. Fourth, we showed that vocal recordings and analysis could be used to profile vocal characteristics over time. Together, this demonstrates the versatility of mixed reality headsets and possible applications for neurological assessment. Conclusions: Administering components of the neurologic exam via a self-contained and commercially available mixed-reality headset has numerous benefits including detailed kinematic quantification, reproducible stimuli presentation from test to test, and can be self-administered expanding access to neurological care and saving hospital time and money.",
+    "Keywords": [
+      "Movement tracking",
+      "Eye movements",
+      "Hand movements",
+      "Neurological exam",
+      "Mixed-reality",
+      "Virtual Reality",
+      "Eye-Tracking Technology",
+      "Psychomotor Performance"
+    ],
+    "Citations": 0,
+    "Publisher": "Elsevier BV",
+    "OpenAccess": false,
+    "confidence_factors": {
+      "source": "Vision-Foundation + API Enhancement",
+      "reasoning": "Vision data used as foundation with strong validation from multiple APIs (Crossref, Europe PMC, PubMed, Semantic Scholar). Key enhancements include: added PMID from Europe PMC/PubMed, confirmed publisher from Crossref/Unpaywall, added citations count from Semantic Scholar, enriched keywords from Europe PMC, and verified open access status from multiple sources.",
+      "field_sources": {
+        "doi": "vision|crossref|openalex|semantic_scholar|europe_pmc|pubmed|unpaywall",
+        "pmid": "europe_pmc|pubmed|semantic_scholar",
+        "year": "crossref|europe_pmc|pubmed",
+        "pages": "vision|crossref|europe_pmc|pubmed",
+        "title": "vision",
+        "pdfurl": "semantic_scholar|europe_pmc",
+        "volume": "vision|crossref|europe_pmc|pubmed",
+        "authors": "vision|europe_pmc|pubmed|crossref|semantic_scholar",
+        "journal": "vision|crossref|openalex|semantic_scholar|europe_pmc|pubmed",
+        "abstract": "vision|europe_pmc|pubmed",
+        "keywords": "vision+europe_pmc",
+        "citations": "semantic_scholar|openalex",
+        "publisher": "vision|crossref|unpaywall",
+        "openaccess": "unpaywall|openalex|semantic_scholar"
+      },
+      "enhancement_level": "SIGNIFICANT",
+      "validation_status": "HIGH"
+    },
+    "api_success_summary": {
+      "insights": "Strong coherence among major scholarly APIs (Crossref, Europe PMC, PubMed, Semantic Scholar) validating vision data. Europe PMC provided valuable MeSH terms and affiliations. Semantic Scholar contributed citation count and open access PDF. Core API returned irrelevant article and was discarded. DOAJ failed due to missing DOI.",
+      "total_apis": 11,
+      "failed_apis": [
+        "doaj",
+        "arxiv",
+        "datacite"
+      ],
+      "success_rate": 0.73,
+      "coherent_apis": 7,
+      "coherence_rate": 0.88,
+      "successful_apis": 8
+    }
+  },
+  "processing_time_ms": 88977
+}

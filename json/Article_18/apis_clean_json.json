@@ -1,0 +1,93 @@
+{
+  "timestamp": "2025-07-22T14:14:46.804800",
+  "cost_tracking": {
+    "model": "deepseek-chat",
+    "call_type": "smart_consensus",
+    "timestamp": "2025-07-22T14:14:46.804655",
+    "input_cost": 0.003429,
+    "total_cost": 0.004864,
+    "output_cost": 0.001435,
+    "input_tokens": 12700,
+    "total_tokens": 14005,
+    "output_tokens": 1305,
+    "parsing_error": null,
+    "parsing_successful": true,
+    "processing_time_ms": 66709
+  },
+  "consensus_result": {
+    "DOI": "10.1177/11206721231159249",
+    "PMID": "36880748",
+    "Year": 2023,
+    "Issue": "3",
+    "PMCID": null,
+    "Pages": "870-873",
+    "Title": "The photoreal new-age innovative pedagogical and counseling tool for glaucoma with 3D augmented reality (Eye MG AR)",
+    "PDFUrl": "https://journals.sagepub.com/doi/pdf/10.1177/11206721231159249",
+    "Volume": "34",
+    "Authors": [
+      "Ramesh, Prasanna Venkatesh",
+      "Ray, Prajnya",
+      "Joshua, Tensigh",
+      "Devadas, Aji Kunnath",
+      "Raj, Prakash Michael",
+      "Ramesh, Shruthy Vaishali",
+      "Ramesh, Meena Kumari",
+      "Rajasekaran, Ramesh"
+    ],
+    "Journal": "European Journal of Ophthalmology",
+    "Abstract": "In this manuscript, we have reported an augmented reality (AR) application named, 'Eye MG AR' innovated by us, to show different anatomical/pathological parts of the eyeball pertaining to glaucoma, from multiple customized angles of the user's choice to simplify glaucoma learning and clinical counseling. It is available free of cost from the Google Play Store for Android users. Procedures ranging from a simple outpatient department procedure (yttrium aluminium garnet peripheral iridotomy) to a complex surgical technique (trabeculectomy/tube surgery) can be explained and counseled with this Android application. Also, complex structures such as the angle of the anterior chamber and optic nerve head, are constructed in advanced real-time three-dimensional (3D) high-resolution confocal images. These 3D models are useful for glaucoma neophytes' immersive learning and 3D patient counseling experiences. This tool aims to reinvent the approach to glaucoma counseling with 'Unreal Engine' software and is created in a patient-friendly approach. Incepting 3D pedagogy and counseling with AR in glaucoma with real-time and high-resolution TrueColor confocal images has never been reported in the literature according to our knowledge.",
+    "Keywords": [
+      "Glaucoma",
+      "neuro ophthalmology",
+      "angle-closure glaucoma",
+      "diagnostic techniques",
+      "neovascular glaucoma",
+      "open-angle glaucoma",
+      "retina",
+      "Augmented Reality",
+      "Imaging, Three-Dimensional",
+      "Counseling"
+    ],
+    "Citations": 5,
+    "Publisher": "SAGE Publications",
+    "OpenAccess": false,
+    "confidence_factors": {
+      "source": "Vision-Foundation + API Enhancement",
+      "reasoning": "Vision data used as foundation with strong API validation from multiple sources. Year corrected from 2024 to 2023 based on API consensus. Keywords enhanced with MeSH terms from Europe PMC. Author order and formatting standardized across sources. OpenAccess status confirmed by multiple APIs.",
+      "field_sources": {
+        "doi": "crossref|openalex|semantic_scholar|europe_pmc|pubmed|unpaywall",
+        "pmid": "europe_pmc|pubmed|semantic_scholar",
+        "year": "crossref|openalex|semantic_scholar|europe_pmc|pubmed|unpaywall",
+        "issue": "vision|crossref|europe_pmc|pubmed",
+        "pages": "vision|crossref|europe_pmc|pubmed",
+        "title": "vision",
+        "pdfurl": "crossref",
+        "volume": "vision|crossref|europe_pmc|pubmed",
+        "authors": "crossref+europe_pmc+pubmed+vision",
+        "journal": "vision|crossref|europe_pmc|pubmed",
+        "abstract": "europe_pmc+vision",
+        "keywords": "europe_pmc+vision",
+        "citations": "openalex|crossref",
+        "publisher": "crossref|unpaywall",
+        "openaccess": "crossref|openalex|unpaywall"
+      },
+      "enhancement_level": "SIGNIFICANT",
+      "validation_status": "HIGH"
+    },
+    "api_success_summary": {
+      "insights": "Strong coherence among major APIs (Crossref, Europe PMC, PubMed, Semantic Scholar) with minor variations in publication dates. Best contributors: Crossref for bibliographic data, Europe PMC for MeSH terms, Semantic Scholar for citations. Vision data was highly accurate and only required minor corrections.",
+      "total_apis": 11,
+      "failed_apis": [
+        "arxiv",
+        "doaj",
+        "datacite",
+        "core"
+      ],
+      "success_rate": 0.73,
+      "coherent_apis": 7,
+      "coherence_rate": 0.88,
+      "successful_apis": 8
+    }
+  },
+  "processing_time_ms": 81288
+}

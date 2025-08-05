@@ -1,0 +1,1312 @@
+{
+  "core": {
+    "data": {
+      "data": {
+        "doi": "10.1016/j.ijmedinf.2019.05.004",
+        "year": 2019,
+        "title": "Design and evaluation of a prototype of augmented reality applied to medical devices",
+        "authors": [
+          "Leticia San Martín-Rodríguez",
+          "Nelia Soto Ruiz",
+          "Paula Escalada-Hernández"
+        ],
+        "core_id": 272932313,
+        "journal": "International Journal of Medical Informatics",
+        "pdf_url": "https://api.elsevier.com/content/article/PII:S1386505618312954?httpAccept=text/plain",
+        "abstract": null,
+        "repository": "",
+        "open_access": false,
+        "citation_count": 0
+      },
+      "success": true,
+      "strategy": "DOI"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:50:55.455108",
+    "processing_time_ms": 3015
+  },
+  "doaj": {
+    "error": "No DOI available for DOAJ search",
+    "success": false,
+    "timestamp": "2025-07-22T14:50:53.558206",
+    "processing_time_ms": 1115
+  },
+  "arxiv": {
+    "error": "No results found",
+    "success": false,
+    "timestamp": "2025-07-22T14:50:53.891654",
+    "processing_time_ms": 1451
+  },
+  "orcid": {
+    "data": {
+      "person": {
+        "name": {
+          "path": "0000-0003-2263-156X",
+          "source": null,
+          "visibility": "public",
+          "credit-name": {
+            "value": "Paula Escalada-Hernández"
+          },
+          "family-name": {
+            "value": "Escalada Hernández"
+          },
+          "given-names": {
+            "value": "Paula"
+          },
+          "created-date": {
+            "value": 1495542752262
+          },
+          "last-modified-date": {
+            "value": 1665326815678
+          }
+        },
+        "path": "/0000-0003-2263-156X/person",
+        "emails": {
+          "path": "/0000-0003-2263-156X/email",
+          "email": [],
+          "last-modified-date": null
+        },
+        "keywords": {
+          "path": "/0000-0003-2263-156X/keywords",
+          "keyword": [
+            {
+              "path": "/0000-0003-2263-156X/keywords/3392639",
+              "source": {
+                "source-name": {
+                  "value": "Paula Escalada-Hernández"
+                },
+                "source-orcid": {
+                  "uri": "https://orcid.org/0000-0003-2263-156X",
+                  "host": "orcid.org",
+                  "path": "0000-0003-2263-156X"
+                },
+                "source-client-id": null,
+                "assertion-origin-name": null,
+                "assertion-origin-orcid": null,
+                "assertion-origin-client-id": null
+              },
+              "content": "Nursing Diagnosis",
+              "put-code": 3392639,
+              "visibility": "public",
+              "created-date": {
+                "value": 1692699473881
+              },
+              "display-index": 3,
+              "last-modified-date": {
+                "value": 1692699473881
+              }
+            },
+            {
+              "path": "/0000-0003-2263-156X/keywords/3392638",
+              "source": {
+                "source-name": {
+                  "value": "Paula Escalada-Hernández"
+                },
+                "source-orcid": {
+                  "uri": "https://orcid.org/0000-0003-2263-156X",
+                  "host": "orcid.org",
+                  "path": "0000-0003-2263-156X"
+                },
+                "source-client-id": null,
+                "assertion-origin-name": null,
+                "assertion-origin-orcid": null,
+                "assertion-origin-client-id": null
+              },
+              "content": "Mental Health",
+              "put-code": 3392638,
+              "visibility": "public",
+              "created-date": {
+                "value": 1692699473879
+              },
+              "display-index": 2,
+              "last-modified-date": {
+                "value": 1692699473879
+              }
+            },
+            {
+              "path": "/0000-0003-2263-156X/keywords/3392637",
+              "source": {
+                "source-name": {
+                  "value": "Paula Escalada-Hernández"
+                },
+                "source-orcid": {
+                  "uri": "https://orcid.org/0000-0003-2263-156X",
+                  "host": "orcid.org",
+                  "path": "0000-0003-2263-156X"
+                },
+                "source-client-id": null,
+                "assertion-origin-name": null,
+                "assertion-origin-orcid": null,
+                "assertion-origin-client-id": null
+              },
+              "content": "Innovation",
+              "put-code": 3392637,
+              "visibility": "public",
+              "created-date": {
+                "value": 1692699473877
+              },
+              "display-index": 1,
+              "last-modified-date": {
+                "value": 1692699473877
+              }
+            }
+          ],
+          "last-modified-date": {
+            "value": 1692699473881
+          }
+        },
+        "addresses": {
+          "path": "/0000-0003-2263-156X/address",
+          "address": [],
+          "last-modified-date": null
+        },
+        "biography": {
+          "path": "/0000-0003-2263-156X/biography",
+          "content": "Paula Escalada-Hernández is an Associate Professor in the Department of Health Sciences of the Public University of Navarre (UPNA), focusing her teaching activity on Nursing Methodology and ICT in Health. She is a researcher at the Research Group on new Nursing practices (INNO-CARE) at UPNA and at the Navarra Institute for Health Research (IdiSNA). Her main lines of research are the standardised nursing languages and the application of new technologies in training and clinical practice in Nursing.",
+          "visibility": "public",
+          "created-date": {
+            "value": 1692697491433
+          },
+          "last-modified-date": {
+            "value": 1698253654921
+          }
+        },
+        "other-names": {
+          "path": "/0000-0003-2263-156X/other-names",
+          "other-name": [],
+          "last-modified-date": null
+        },
+        "researcher-urls": {
+          "path": "/0000-0003-2263-156X/researcher-urls",
+          "researcher-url": [
+            {
+              "url": {
+                "value": "https://twitter.com/Pau_Climbing?s=03"
+              },
+              "path": "/0000-0003-2263-156X/researcher-urls/1160704",
+              "source": {
+                "source-name": {
+                  "value": "Paula Escalada-Hernández"
+                },
+                "source-orcid": {
+                  "uri": "https://orcid.org/0000-0003-2263-156X",
+                  "host": "orcid.org",
+                  "path": "0000-0003-2263-156X"
+                },
+                "source-client-id": null,
+                "assertion-origin-name": null,
+                "assertion-origin-orcid": null,
+                "assertion-origin-client-id": null
+              },
+              "put-code": 1160704,
+              "url-name": "Twitter",
+              "visibility": "public",
+              "created-date": {
+                "value": 1498132827508
+              },
+              "display-index": 5,
+              "last-modified-date": {
+                "value": 1698253703909
+              }
+            },
+            {
+              "url": {
+                "value": "http://www.unavarra.es/pdi?uid=810788"
+              },
+              "path": "/0000-0003-2263-156X/researcher-urls/1160705",
+              "source": {
+                "source-name": {
+                  "value": "Paula Escalada-Hernández"
+                },
+                "source-orcid": {
+                  "uri": "https://orcid.org/0000-0003-2263-156X",
+                  "host": "orcid.org",
+                  "path": "0000-0003-2263-156X"
+                },
+                "source-client-id": null,
+                "assertion-origin-name": null,
+                "assertion-origin-orcid": null,
+                "assertion-origin-client-id": null
+              },
+              "put-code": 1160705,
+              "url-name": "Universidad Pública de Navarra (UPNA): Paula Escalada Hernández",
+              "visibility": "public",
+              "created-date": {
+                "value": 1498132827518
+              },
+              "display-index": 4,
+              "last-modified-date": {
+                "value": 1698253703909
+              }
+            },
+            {
+              "url": {
+                "value": "https://academicos.unavarra.es/CawDOS//jsf/seleccionActividades/seleccionActividades.jsf?id_pers=810788&idioma=es&elmeucv=N"
+              },
+              "path": "/0000-0003-2263-156X/researcher-urls/4071752",
+              "source": {
+                "source-name": {
+                  "value": "Paula Escalada-Hernández"
+                },
+                "source-orcid": {
+                  "uri": "https://orcid.org/0000-0003-2263-156X",
+                  "host": "orcid.org",
+                  "path": "0000-0003-2263-156X"
+                },
+                "source-client-id": null,
+                "assertion-origin-name": null,
+                "assertion-origin-orcid": null,
+                "assertion-origin-client-id": null
+              },
+              "put-code": 4071752,
+              "url-name": "Portal de Producción Científica: Paula Escalada Hernández",
+              "visibility": "public",
+              "created-date": {
+                "value": 1692698096484
+              },
+              "display-index": 3,
+              "last-modified-date": {
+                "value": 1698253703909
+              }
+            },
+            {
+              "url": {
+                "value": "https://scholar.google.es/citations?user=wJevceEAAAAJ&hl=es"
+              },
+              "path": "/0000-0003-2263-156X/researcher-urls/4071741",
+              "source": {
+                "source-name": {
+                  "value": "Paula Escalada-Hernández"
+                },
+                "source-orcid": {
+                  "uri": "https://orcid.org/0000-0003-2263-156X",
+                  "host": "orcid.org",
+                  "path": "0000-0003-2263-156X"
+                },
+                "source-client-id": null,
+                "assertion-origin-name": null,
+                "assertion-origin-orcid": null,
+                "assertion-origin-client-id": null
+              },
+              "put-code": 4071741,
+              "url-name": "Google Scholar",
+              "visibility": "public",
+              "created-date": {
+                "value": 1692697458742
+              },
+              "display-index": 2,
+              "last-modified-date": {
+                "value": 1698253703909
+              }
+            },
+            {
+              "url": {
+                "value": "https://www.unavarra.es/grupo-innocare"
+              },
+              "path": "/0000-0003-2263-156X/researcher-urls/4202124",
+              "source": {
+                "source-name": {
+                  "value": "Paula Escalada-Hernández"
+                },
+                "source-orcid": {
+                  "uri": "https://orcid.org/0000-0003-2263-156X",
+                  "host": "orcid.org",
+                  "path": "0000-0003-2263-156X"
+                },
+                "source-client-id": null,
+                "assertion-origin-name": null,
+                "assertion-origin-orcid": null,
+                "assertion-origin-client-id": null
+              },
+              "put-code": 4202124,
+              "url-name": "InnoCARE Research Group",
+              "visibility": "public",
+              "created-date": {
+                "value": 1698253703900
+              },
+              "display-index": 1,
+              "last-modified-date": {
+                "value": 1698253703900
+              }
+            }
+          ],
+          "last-modified-date": {
+            "value": 1698253703909
+          }
+        },
+        "last-modified-date": {
+          "value": 1698253703909
+        },
+        "external-identifiers": {
+          "path": "/0000-0003-2263-156X/external-identifiers",
+          "last-modified-date": {
+            "value": 1678786142581
+          },
+          "external-identifier": [
+            {
+              "path": "/0000-0003-2263-156X/external-identifiers/1171837",
+              "source": {
+                "source-name": {
+                  "value": "Scopus - Elsevier"
+                },
+                "source-orcid": null,
+                "source-client-id": {
+                  "uri": "https://orcid.org/client/0000-0002-5982-8983",
+                  "host": "orcid.org",
+                  "path": "0000-0002-5982-8983"
+                },
+                "assertion-origin-name": {
+                  "value": "Paula Escalada-Hernández"
+                },
+                "assertion-origin-orcid": {
+                  "uri": "https://orcid.org/0000-0003-2263-156X",
+                  "host": "orcid.org",
+                  "path": "0000-0003-2263-156X"
+                },
+                "assertion-origin-client-id": null
+              },
+              "put-code": 1171837,
+              "visibility": "public",
+              "created-date": {
+                "value": 1539287391997
+              },
+              "display-index": 0,
+              "external-id-url": {
+                "value": "http://www.scopus.com/inward/authorDetails.url?authorID=55769488000&partnerID=MN8TOARS"
+              },
+              "external-id-type": "Scopus Author ID",
+              "external-id-value": "55769488000",
+              "last-modified-date": {
+                "value": 1539287391998
+              },
+              "external-id-relationship": "self"
+            },
+            {
+              "path": "/0000-0003-2263-156X/external-identifiers/2967443",
+              "source": {
+                "source-name": {
+                  "value": "Web of Science Researcher Profile Sync"
+                },
+                "source-orcid": null,
+                "source-client-id": {
+                  "uri": "https://orcid.org/client/APP-1DSJAQCZ1PW1VN5X",
+                  "host": "orcid.org",
+                  "path": "APP-1DSJAQCZ1PW1VN5X"
+                },
+                "assertion-origin-name": null,
+                "assertion-origin-orcid": null,
+                "assertion-origin-client-id": null
+              },
+              "put-code": 2967443,
+              "visibility": "public",
+              "created-date": {
+                "value": 1678786142581
+              },
+              "display-index": 0,
+              "external-id-url": {
+                "value": "https://www.webofscience.com/wos/author/record/GSO-3224-2022"
+              },
+              "external-id-type": "ResearcherID",
+              "external-id-value": "GSO-3224-2022",
+              "last-modified-date": {
+                "value": 1678786142581
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        }
+      },
+      "orcid_id": "0000-0003-2263-156X"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:50:53.928232",
+    "processing_time_ms": 1486
+  },
+  "pubmed": {
+    "data": {
+      "PubmedArticle": [
+        {
+          "MedlineCitation": {
+            "PMID": {
+              "content": "31126843"
+            },
+            "Article": {
+              "Journal": {
+                "Title": "International journal of medical informatics",
+                "JournalIssue": {
+                  "Volume": "128",
+                  "PubDate": {
+                    "Year": "2019"
+                  }
+                }
+              },
+              "Abstract": {
+                "AbstractText": [
+                  "According to current legislation, medical devices have to incorporate all the necessary information to eliminate or greatly minimise any problem associated with their use. However, the physical capacity of the actual device's packaging may frequently not be enough to contain all this information. To address this limitation, this study aimed to design and evaluate a prototype app for mobile devices applying augmented reality technology. The main feature of this kind of technology is combining virtual images with images from the real world.",
+                  "This work, carried out in Spain, was developed in three different phases. 1) Assessment of users' needs: Through a focus group and an online questionnaire, information was obtained about the following aspects: type of medical devices likely to be included in the app, relevant information that should be included and format in which this information should be presented. 2) Development of the prototype: Considering all the functional features identified in the previous phase, the software was developed by a team of professionals specialised in AR technology and applying a user-centred model. 3) Evaluation of the software: functionality and usability were assessed by means of the think-aloud method.",
+                  "1) Assessment of users' needs: a total of 11 nurses participated in the focus group and 280 healthcare professionals answered the questionnaire. Their findings showed that users consider that information about the following aspects of medical devices should be included in the app: instructions for use, indications for use, brief description of the device, special precautions and biocompatibility, image of the content with its components and meaning of icons. 2) Description of the prototype: Once the app has been launched, when the user scans the medical device with the mobile device camera, access to the home screen is activated, where three sections can be found: name of the medical device, image of the device and four icons which provide access to: a brief description of the device, a detailed description of it, the packaging iconography and a video about use of the device. 3) Evaluation of the software: the app was defined by users as \"very intuitive\". They highlighted, as one of its main positive aspects, the chance to obtain information about the medical device just by scanning the object. Additionally, the evaluation performed through the think-aloud method identified potential improvements in the app. These improvements were subsequently implemented to make the prototype more functional.",
+                  "Working with potential prototype users made it possible to identify information considered relevant for these users and to delve into the format which they consider more appropriate to show this information in the prototype. Our results show that AR technology can be used as support for clinical practice."
+                ]
+              },
+              "AuthorList": {
+                "Author": [
+                  {
+                    "ForeName": "Paula",
+                    "LastName": "Escalada-Hernández"
+                  },
+                  {
+                    "ForeName": "Nelia",
+                    "LastName": "Soto Ruiz"
+                  },
+                  {
+                    "ForeName": "Leticia",
+                    "LastName": "San Martín-Rodríguez"
+                  }
+                ]
+              },
+              "Pagination": {
+                "MedlinePgn": "87-92"
+              },
+              "ArticleTitle": "Design and evaluation of a prototype of augmented reality applied to medical devices."
+            }
+          }
+        }
+      ]
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:50:54.201832",
+    "processing_time_ms": 1768
+  },
+  "crossref": {
+    "data": {
+      "status": "ok",
+      "message": {
+        "DOI": "10.1016/j.ijmedinf.2019.05.004",
+        "URL": "https://doi.org/10.1016/j.ijmedinf.2019.05.004",
+        "ISSN": [
+          "1386-5056"
+        ],
+        "link": [
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:S1386505618312954?httpAccept=text/xml",
+            "content-type": "text/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://api.elsevier.com/content/article/PII:S1386505618312954?httpAccept=text/plain",
+            "content-type": "text/plain",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          }
+        ],
+        "page": "87-92",
+        "type": "journal-article",
+        "score": 1,
+        "title": [
+          "Design and evaluation of a prototype of augmented reality applied to medical devices"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0003-2263-156X",
+            "given": "Paula",
+            "family": "Escalada-Hernández",
+            "sequence": "first",
+            "affiliation": [],
+            "authenticated-orcid": false
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-5161-2272",
+            "given": "Nelia",
+            "family": "Soto Ruiz",
+            "sequence": "additional",
+            "affiliation": [],
+            "authenticated-orcid": false
+          },
+          {
+            "given": "Leticia",
+            "family": "San Martín-Rodríguez",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "funder": [
+          {
+            "id": [
+              {
+                "id": "10.13039/100017200",
+                "id-type": "DOI",
+                "asserted-by": "publisher"
+              }
+            ],
+            "DOI": "10.13039/100017200",
+            "name": "Asociación Nacional de Enfermería Coordinadora de Recursos Materiales",
+            "doi-asserted-by": "publisher"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2019,
+              8
+            ]
+          ]
+        },
+        "member": "78",
+        "prefix": "10.1016",
+        "source": "Crossref",
+        "volume": "128",
+        "created": {
+          "date-time": "2019-05-09T18:06:34Z",
+          "timestamp": 1557425194000,
+          "date-parts": [
+            [
+              2019,
+              5,
+              9
+            ]
+          ]
+        },
+        "indexed": {
+          "version": "3.37.3",
+          "date-time": "2025-05-22T05:49:35Z",
+          "timestamp": 1747892975103,
+          "date-parts": [
+            [
+              2025,
+              5,
+              22
+            ]
+          ]
+        },
+        "license": [
+          {
+            "URL": "https://www.elsevier.com/tdm/userlicense/1.0/",
+            "start": {
+              "date-time": "2019-08-01T00:00:00Z",
+              "timestamp": 1564617600000,
+              "date-parts": [
+                [
+                  2019,
+                  8,
+                  1
+                ]
+              ]
+            },
+            "delay-in-days": 0,
+            "content-version": "tdm"
+          }
+        ],
+        "subject": [],
+        "language": "en",
+        "relation": {},
+        "resource": {
+          "primary": {
+            "URL": "https://linkinghub.elsevier.com/retrieve/pii/S1386505618312954"
+          }
+        },
+        "subtitle": [],
+        "assertion": [
+          {
+            "name": "publisher",
+            "label": "This article is maintained by",
+            "value": "Elsevier"
+          },
+          {
+            "name": "articletitle",
+            "label": "Article Title",
+            "value": "Design and evaluation of a prototype of augmented reality applied to medical devices"
+          },
+          {
+            "name": "journaltitle",
+            "label": "Journal Title",
+            "value": "International Journal of Medical Informatics"
+          },
+          {
+            "name": "articlelink",
+            "label": "CrossRef DOI link to publisher maintained version",
+            "value": "https://doi.org/10.1016/j.ijmedinf.2019.05.004"
+          },
+          {
+            "name": "content_type",
+            "label": "Content Type",
+            "value": "article"
+          },
+          {
+            "name": "copyright",
+            "label": "Copyright",
+            "value": "© 2019 Elsevier B.V. All rights reserved."
+          }
+        ],
+        "deposited": {
+          "date-time": "2022-07-11T14:05:33Z",
+          "timestamp": 1657548333000,
+          "date-parts": [
+            [
+              2022,
+              7,
+              11
+            ]
+          ]
+        },
+        "issn-type": [
+          {
+            "type": "print",
+            "value": "1386-5056"
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2019,
+              8
+            ]
+          ]
+        },
+        "publisher": "Elsevier BV",
+        "reference": [
+          {
+            "key": "10.1016/j.ijmedinf.2019.05.004_bib0005",
+            "year": "2017",
+            "series-title": "Global Atlas of Medical Devices"
+          },
+          {
+            "key": "10.1016/j.ijmedinf.2019.05.004_bib0010",
+            "year": "2017",
+            "series-title": "WHO Global Model Regulatory Framework for Medical Devices Including in Vitro Diagnostic Medical Devices"
+          },
+          {
+            "key": "10.1016/j.ijmedinf.2019.05.004_bib0015",
+            "year": "2012",
+            "series-title": "Study Group 1 of the Global Harmonization Task Force, Definition of the Terms ‘Medical Device’ and ‘In Vitro Diagnostic (IVD) Medical Device,’"
+          },
+          {
+            "key": "10.1016/j.ijmedinf.2019.05.004_bib0020",
+            "year": "2014",
+            "series-title": "Medical Devices – Adverse Incidents Reported to MHRA 2011 to 2013"
+          },
+          {
+            "key": "10.1016/j.ijmedinf.2019.05.004_bib0025",
+            "year": "2011",
+            "series-title": "Report on Devices Adverse Incidents in 2010"
+          },
+          {
+            "DOI": "10.1177/1356262214556550",
+            "key": "10.1016/j.ijmedinf.2019.05.004_bib0030",
+            "year": "2014",
+            "author": "Blandford",
+            "volume": "20",
+            "first-page": "107",
+            "article-title": "Patient safety and interactive medical devices: Realigning work as imagined and work as done",
+            "journal-title": "Clin. Risk",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "key": "10.1016/j.ijmedinf.2019.05.004_bib0035",
+            "year": "2006",
+            "author": "Rados",
+            "volume": "40",
+            "first-page": "58",
+            "article-title": "Medical device and radiological health regulations come of age",
+            "journal-title": "FDA Consum. Mag."
+          },
+          {
+            "DOI": "10.1056/NEJMp1114865",
+            "key": "10.1016/j.ijmedinf.2019.05.004_bib0040",
+            "year": "2012",
+            "author": "Resnic",
+            "volume": "366",
+            "first-page": "875",
+            "article-title": "Postmarketing surveillance of medical devices — Filling in the gaps",
+            "journal-title": "N. Engl. J. Med.",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "key": "10.1016/j.ijmedinf.2019.05.004_bib0045",
+            "year": "2019",
+            "author": "Craig",
+            "first-page": "56",
+            "article-title": "The need for greater reporting of medical device incidents",
+            "journal-title": "Eur. Med. J."
+          },
+          {
+            "DOI": "10.1097/QMH.0b013e3181f9ee66",
+            "key": "10.1016/j.ijmedinf.2019.05.004_bib0050",
+            "year": "2010",
+            "author": "Wagner",
+            "volume": "19",
+            "first-page": "304",
+            "article-title": "Risks in the application of medical devices: human factors in the medical environment",
+            "journal-title": "Qual. Manag. Health Care",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "key": "10.1016/j.ijmedinf.2019.05.004_bib0055",
+            "year": "2016",
+            "series-title": "ISO 13485:2016. Medical Devices - Quality Management Systems - Requirements for Regulatory Purposes"
+          },
+          {
+            "key": "10.1016/j.ijmedinf.2019.05.004_bib0060",
+            "year": "2009",
+            "series-title": "Real Decreto 1591/2009, De 16 De Octubre, Por El Que Se Regulan Los Productos sanitarios., BOE No 268"
+          },
+          {
+            "key": "10.1016/j.ijmedinf.2019.05.004_bib0065",
+            "year": "2017"
+          },
+          {
+            "DOI": "10.1162/pres.1997.6.4.355",
+            "key": "10.1016/j.ijmedinf.2019.05.004_bib0070",
+            "year": "1997",
+            "author": "Azuma",
+            "volume": "6",
+            "first-page": "355",
+            "article-title": "A survey of augmented reality",
+            "journal-title": "Presence Teleoperators Virtual Environ.",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "key": "10.1016/j.ijmedinf.2019.05.004_bib0075",
+            "year": "2011",
+            "author": "Preda",
+            "first-page": "1",
+            "series-title": "MPEG Vision, Position and Technologies for Augmented Reality, Iso/Iec Jtc1 Sc29 Wg11 N12096"
+          },
+          {
+            "DOI": "10.1109/ISMAR.2017.29",
+            "key": "10.1016/j.ijmedinf.2019.05.004_bib0080",
+            "year": "2017",
+            "author": "Chen",
+            "first-page": "123",
+            "article-title": "Recent developments and future challenges in medical mixed reality",
+            "journal-title": "2017 IEEE Int. Symp. Mix. Augment. Real.",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.7717/peerj.697",
+            "key": "10.1016/j.ijmedinf.2019.05.004_bib0085",
+            "year": "2014",
+            "author": "Nifakos",
+            "volume": "2",
+            "first-page": "e697",
+            "article-title": "Combining physical and virtual contexts through augmented reality: design and evaluation of a prototype using a drug box as a marker for antibiotic training",
+            "journal-title": "PeerJ.",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "key": "10.1016/j.ijmedinf.2019.05.004_bib0090",
+            "year": "1992",
+            "author": "Martin",
+            "series-title": "Rapid Application Development"
+          },
+          {
+            "DOI": "10.1057/palgrave.ejis.3000325",
+            "key": "10.1016/j.ijmedinf.2019.05.004_bib0095",
+            "year": "1999",
+            "author": "Beynon-Davies",
+            "volume": "1",
+            "first-page": "211",
+            "article-title": "Rapid application development (RAD): an empirical review",
+            "journal-title": "Eur. J. Inf. Syst.",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "key": "10.1016/j.ijmedinf.2019.05.004_bib0100",
+            "year": "2010",
+            "author": "Ruparelia",
+            "volume": "35",
+            "first-page": "8",
+            "article-title": "Software development lifecycle models, ACM SIGSOFT softw",
+            "journal-title": "Eng. Notes."
+          },
+          {
+            "key": "10.1016/j.ijmedinf.2019.05.004_bib0105",
+            "year": "2014",
+            "author": "Miles",
+            "series-title": "Qualitative Data Analysis : a Methods Sourcebook"
+          },
+          {
+            "key": "10.1016/j.ijmedinf.2019.05.004_bib0110",
+            "year": "2010",
+            "series-title": "ISO 9241-210:2010. Ergonomics of Human-system Interaction - Part 210: Human-centred Design for Interactive Systems"
+          },
+          {
+            "key": "10.1016/j.ijmedinf.2019.05.004_bib0115",
+            "year": "2004",
+            "author": "Moustakis",
+            "first-page": "59",
+            "series-title": "Proc. Ninth Int. Conf. Inf. Qual.",
+            "article-title": "Website quality assessment criteria"
+          },
+          {
+            "key": "10.1016/j.ijmedinf.2019.05.004_bib0120",
+            "year": "1993",
+            "author": "Nielsen",
+            "series-title": "Usability Engineering"
+          },
+          {
+            "key": "10.1016/j.ijmedinf.2019.05.004_bib0125",
+            "year": "2018",
+            "author": "Andrews",
+            "series-title": "Human-Computer Interaction"
+          },
+          {
+            "key": "10.1016/j.ijmedinf.2019.05.004_bib0130",
+            "year": "1992",
+            "author": "Preece",
+            "series-title": "A Guide to Usability"
+          },
+          {
+            "DOI": "10.1111/j.1365-2044.2008.05607.x",
+            "key": "10.1016/j.ijmedinf.2019.05.004_bib0135",
+            "year": "2008",
+            "author": "Thomas",
+            "volume": "63",
+            "first-page": "1193",
+            "article-title": "Patient safety incidents associated with equipment in critical care: a review of reports to the UK National Patient Safety Agency",
+            "journal-title": "Anaesthesia",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1017/S026646231800020X",
+            "key": "10.1016/j.ijmedinf.2019.05.004_bib0140",
+            "year": "2018",
+            "author": "Porte",
+            "volume": "34",
+            "first-page": "218",
+            "article-title": "Exploring medical devices: the use of risk assessment tools and their link with training in hospitals",
+            "journal-title": "Int. J. Technol. Assess. Health Care",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1097/JCE.0b013e3182a90445",
+            "key": "10.1016/j.ijmedinf.2019.05.004_bib0145",
+            "year": "2013",
+            "author": "Tawfik",
+            "volume": "38",
+            "article-title": "A fuzzy logic model for medical equipment risk classification",
+            "journal-title": "J. Clin. Eng.",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1136/qshc.2004.010322",
+            "key": "10.1016/j.ijmedinf.2019.05.004_bib0150",
+            "year": "2004",
+            "author": "Karsh",
+            "volume": "13",
+            "first-page": "388",
+            "article-title": "Beyond usability: designing effective technology implementation systems to promote patient safety",
+            "journal-title": "Qual. Saf. Heal. Care.",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1016/j.hlpt.2018.02.001",
+            "key": "10.1016/j.ijmedinf.2019.05.004_bib0155",
+            "year": "2018",
+            "author": "Porte",
+            "volume": "7",
+            "first-page": "166",
+            "article-title": "Hospitals need more guidance on implementing guidelines for the safe use of medical devices",
+            "journal-title": "Heal. Policy Technol.",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1016/j.jbi.2016.02.002",
+            "key": "10.1016/j.ijmedinf.2019.05.004_bib0160",
+            "year": "2016",
+            "author": "Schnall",
+            "volume": "60",
+            "first-page": "243",
+            "article-title": "A user-centered model for designing consumer mobile health (mHealth) applications (apps)",
+            "journal-title": "J. Biomed. Inform.",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1371/journal.pone.0112392",
+            "key": "10.1016/j.ijmedinf.2019.05.004_bib0165",
+            "year": "2014",
+            "author": "Kübler",
+            "volume": "9",
+            "first-page": "1",
+            "article-title": "The user-centered design as novel perspective for evaluating the usability of BCI-controlled applications",
+            "journal-title": "PLoS One",
+            "doi-asserted-by": "crossref"
+          }
+        ],
+        "short-title": [],
+        "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+        "alternative-id": [
+          "S1386505618312954"
+        ],
+        "content-domain": {
+          "domain": [
+            "clinicalkey.fr",
+            "clinicalkey.jp",
+            "clinicalkey.es",
+            "clinicalkey.com.au",
+            "clinicalkey.com",
+            "elsevier.com",
+            "sciencedirect.com"
+          ],
+          "crossmark-restriction": true
+        },
+        "original-title": [],
+        "container-title": [
+          "International Journal of Medical Informatics"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2019,
+              8
+            ]
+          ]
+        },
+        "reference-count": 33,
+        "references-count": 33,
+        "special_numbering": "C",
+        "short-container-title": [
+          "International Journal of Medical Informatics"
+        ],
+        "is-referenced-by-count": 28
+      },
+      "message-type": "work",
+      "message-version": "1.0.0"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:50:53.884257",
+    "processing_time_ms": 1450
+  },
+  "datacite": {
+    "error": "No matching articles found",
+    "success": false,
+    "timestamp": "2025-07-22T14:51:04.000048",
+    "processing_time_ms": 11559
+  },
+  "openalex": {
+    "data": {
+      "id": "https://openalex.org/W2944138162",
+      "doi": "https://doi.org/10.1016/j.ijmedinf.2019.05.004",
+      "title": "Design and evaluation of a prototype of augmented reality applied to medical devices",
+      "open_access": {
+        "is_oa": false,
+        "oa_url": null,
+        "oa_status": "closed",
+        "any_repository_has_fulltext": false
+      },
+      "cited_by_count": 32,
+      "publication_year": 2019
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:50:53.893485",
+    "processing_time_ms": 1456
+  },
+  "unpaywall": {
+    "data": {
+      "doi": "10.1016/j.ijmedinf.2019.05.004",
+      "year": 2019,
+      "genre": "journal-article",
+      "is_oa": false,
+      "title": "Design and evaluation of a prototype of augmented reality applied to medical devices",
+      "doi_url": "https://doi.org/10.1016/j.ijmedinf.2019.05.004",
+      "oa_status": "closed",
+      "publisher": "Elsevier BV",
+      "is_paratext": false,
+      "journal_name": "International Journal of Medical Informatics",
+      "journal_issns": "1386-5056,1872-8243",
+      "journal_issn_l": "1386-5056",
+      "published_date": "2019-05-09",
+      "z_authors_summary": {
+        "count": 3,
+        "first_author": ""
+      },
+      "has_repository_copy": false,
+      "oa_locations_summary": {
+        "count": 0,
+        "has_repository": false
+      },
+      "best_oa_location_summary": null,
+      "first_oa_location_summary": null
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:50:53.559501",
+    "processing_time_ms": 1119
+  },
+  "europe_pmc": {
+    "data": {
+      "id": "31126843",
+      "doi": "10.1016/j.ijmedinf.2019.05.004",
+      "pmid": "31126843",
+      "inPMC": "N",
+      "title": "Design and evaluation of a prototype of augmented reality applied to medical devices.",
+      "hasPDF": "N",
+      "inEPMC": "N",
+      "source": "MED",
+      "authMan": "N",
+      "hasBook": "N",
+      "hasData": "N",
+      "pubYear": "2019",
+      "hasSuppl": "N",
+      "language": "eng",
+      "pageInfo": "87-92",
+      "pubModel": "Print-Electronic",
+      "authorList": {
+        "author": [
+          {
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0003-2263-156X"
+            },
+            "fullName": "Escalada-Hernández P",
+            "initials": "P",
+            "lastName": "Escalada-Hernández",
+            "firstName": "Paula",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Public University of Navarre, Avda. Barañain, 31008, Pamplonan, Spain."
+                }
+              ]
+            }
+          },
+          {
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0002-5161-2272"
+            },
+            "fullName": "Soto Ruiz N",
+            "initials": "N",
+            "lastName": "Soto Ruiz",
+            "firstName": "Nelia",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Public University of Navarre, Avda. Barañain, 31008, Pamplonan, Spain. Electronic address: nelia.soto@unavarra.es."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "San Martín-Rodríguez L",
+            "initials": "L",
+            "lastName": "San Martín-Rodríguez",
+            "firstName": "Leticia",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Health Sciences, Public University of Navarre Avda. Barañain, s/n; 31008 Pamplona (Navarra) - Spain."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "grantsList": {
+        "grant": [
+          {
+            "agency": "Asociación Nacional de Enfermería Coordinadora de Recursos Materiales",
+            "orderIn": 0
+          }
+        ]
+      },
+      "nihAuthMan": "N",
+      "subsetList": {
+        "subset": [
+          {
+            "code": "IM",
+            "name": "Index Medicus"
+          }
+        ]
+      },
+      "affiliation": "Public University of Navarre, Avda. Barañain, 31008, Pamplonan, Spain.",
+      "epmcAuthMan": "N",
+      "journalInfo": {
+        "volume": "128",
+        "journal": {
+          "essn": "1872-8243",
+          "issn": "1386-5056",
+          "nlmid": "9711057",
+          "title": "International journal of medical informatics",
+          "isoabbreviation": "Int J Med Inform",
+          "medlineAbbreviation": "Int J Med Inform"
+        },
+        "journalIssueId": 2823066,
+        "dateOfPublication": "2019 Aug",
+        "yearOfPublication": 2019,
+        "monthOfPublication": 8,
+        "printPublicationDate": "2019-08-01"
+      },
+      "keywordList": {
+        "keyword": [
+          "Medical Device",
+          "Mobile Device",
+          "Augmented Reality",
+          "Medical Informatics Application"
+        ]
+      },
+      "pubTypeList": {
+        "pubType": [
+          "Research Support, Non-U.S. Gov't",
+          "Evaluation Study",
+          "Journal Article"
+        ]
+      },
+      "abstractText": "<h4>Background</h4>According to current legislation, medical devices have to incorporate all the necessary information to eliminate or greatly minimise any problem associated with their use. However, the physical capacity of the actual device's packaging may frequently not be enough to contain all this information. To address this limitation, this study aimed to design and evaluate a prototype app for mobile devices applying augmented reality technology. The main feature of this kind of technology is combining virtual images with images from the real world.<h4>Methods</h4>This work, carried out in Spain, was developed in three different phases. 1) Assessment of users' needs: Through a focus group and an online questionnaire, information was obtained about the following aspects: type of medical devices likely to be included in the app, relevant information that should be included and format in which this information should be presented. 2) Development of the prototype: Considering all the functional features identified in the previous phase, the software was developed by a team of professionals specialised in AR technology and applying a user-centred model. 3) Evaluation of the software: functionality and usability were assessed by means of the think-aloud method.<h4>Results</h4>1) Assessment of users' needs: a total of 11 nurses participated in the focus group and 280 healthcare professionals answered the questionnaire. Their findings showed that users consider that information about the following aspects of medical devices should be included in the app: instructions for use, indications for use, brief description of the device, special precautions and biocompatibility, image of the content with its components and meaning of icons. 2) Description of the prototype: Once the app has been launched, when the user scans the medical device with the mobile device camera, access to the home screen is activated, where three sections can be found: name of the medical device, image of the device and four icons which provide access to: a brief description of the device, a detailed description of it, the packaging iconography and a video about use of the device. 3) Evaluation of the software: the app was defined by users as \"very intuitive\". They highlighted, as one of its main positive aspects, the chance to obtain information about the medical device just by scanning the object. Additionally, the evaluation performed through the think-aloud method identified potential improvements in the app. These improvements were subsequently implemented to make the prototype more functional.<h4>Conclusion</h4>Working with potential prototype users made it possible to identify information considered relevant for these users and to delve into the format which they consider more appropriate to show this information in the prototype. Our results show that AR technology can be used as support for clinical practice.",
+      "authorIdList": {
+        "authorId": [
+          {
+            "type": "ORCID",
+            "value": "0000-0002-5161-2272"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0003-2263-156X"
+          }
+        ]
+      },
+      "authorString": "Escalada-Hernández P, Soto Ruiz N, San Martín-Rodríguez L.",
+      "citedByCount": 7,
+      "hasLabsLinks": "Y",
+      "isOpenAccess": "N",
+      "hasReferences": "N",
+      "dateOfCreation": "2019-05-26",
+      "dateOfRevision": "2019-12-10",
+      "firstIndexDate": "2019-05-26",
+      "hasEvaluations": "N",
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "url": "https://doi.org/10.1016/j.ijmedinf.2019.05.004",
+            "site": "DOI",
+            "availability": "Subscription required",
+            "documentStyle": "doi",
+            "availabilityCode": "S"
+          }
+        ]
+      },
+      "meshHeadingList": {
+        "meshHeading": [
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Humans"
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Equipment Design"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Equipment and Supplies",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "abbreviation": "ST",
+                  "majorTopic_YN": "Y",
+                  "qualifierName": "standards"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Software"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Adult"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Health Personnel",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "abbreviation": "SN",
+                  "majorTopic_YN": "Y",
+                  "qualifierName": "statistics & numerical data"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Spain"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Mobile Applications",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "abbreviation": "SN",
+                  "majorTopic_YN": "Y",
+                  "qualifierName": "statistics & numerical data"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "dateOfCompletion": "2019-11-08",
+      "dataLinksTagsList": {
+        "dataLinkstag": [
+          "altmetrics"
+        ]
+      },
+      "hasTextMinedTerms": "N",
+      "publicationStatus": "ppublish",
+      "firstPublicationDate": "2019-05-09",
+      "hasDbCrossReferences": "N",
+      "hasTMAccessionNumbers": "N",
+      "electronicPublicationDate": "2019-05-09"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:50:54.203202",
+    "processing_time_ms": 1764
+  },
+  "semantic_scholar": {
+    "data": {
+      "year": 2019,
+      "title": "Design and evaluation of a prototype of augmented reality applied to medical devices",
+      "authors": [
+        {
+          "name": "P. Escalada-Hernández",
+          "authorId": "83494642"
+        },
+        {
+          "name": "Nelia Soto Ruiz",
+          "authorId": "147705002"
+        },
+        {
+          "name": "Leticia San Martín-Rodríguez",
+          "authorId": "84528532"
+        }
+      ],
+      "journal": {
+        "name": "International journal of medical informatics",
+        "pages": "\n          87-92\n        ",
+        "volume": "128"
+      },
+      "paperId": "7c26dd945687f83d797ddc216beb2ecbcdc20385",
+      "abstract": null,
+      "externalIds": {
+        "DOI": "10.1016/j.ijmedinf.2019.05.004",
+        "MAG": "2944138162",
+        "DBLP": "journals/ijmi/Escalada-Hernandez19",
+        "PubMed": "31126843",
+        "CorpusId": 164218172
+      },
+      "isOpenAccess": false,
+      "citationCount": 32,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.ijmedinf.2019.05.004?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.ijmedinf.2019.05.004, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      }
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:50:53.059186",
+    "processing_time_ms": 622
+  }
+}

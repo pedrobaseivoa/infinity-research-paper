@@ -1,0 +1,91 @@
+{
+  "source": "gpt-4o-vision",
+  "success": true,
+  "prompt_sent": "Extract ONLY publication metadata from these academic paper pages.\n\nCRITICAL: This data will be sent to 11 external APIs, so format accuracy is essential.\n\nFIELD REQUIREMENTS WITH EXACT FORMATS:\n\n1. **Title**: Clean title for API queries (HIGHEST PRIORITY)\n   - Remove line breaks, extra spaces, formatting\n   - No HTML tags or special characters  \n   - Example: \"Effects of Machine Learning on Healthcare Outcomes\"\n\n2. **Authors**: API-compatible author list (HIGHEST PRIORITY)\n   - Each author as separate string in array\n   - Format: \"FirstName LastName\" or \"F. LastName\"\n   - Clean, no extra punctuation\n   - Example: [\"John Smith\", \"M. Johnson\", \"Sarah Williams\"]\n\n3. **DOI**: Standard DOI format for resolution APIs\n   - Must start with \"10.\" if present\n   - Clean format without URL prefixes\n   - Example: \"10.1234/journal.2024.001\"\n\n4. **Journal**: Clean journal name for database queries\n   - Full journal name preferred over abbreviations\n   - Remove extra formatting, parentheses\n   - Example: \"Nature Medicine\"\n\n5. **Year**: Numeric format for date filtering\n   - 4-digit NUMBER only (not string)\n   - Example: 2024\n\n6. **Volume**: Clean number for bibliographic APIs\n   - Numbers only, no \"Vol.\" prefix\n   - Example: \"15\"\n\n7. **Issue**: Clean number format\n   - Numbers only, no \"No.\" or \"Issue\" prefix\n   - Example: \"3\"\n\n8. **Pages**: Standard page range for citations\n   - Format: \"start-end\" or single page\n   - Example: \"123-135\" or \"45\"\n\n9. **PMID**: PubMed ID for medical APIs\n   - Numbers only, no \"PMID:\" prefix\n   - Example: \"12345678\"\n\n10. **PMCID**: PubMed Central ID for open access papers\n    - Numbers only, no \"PMC\" prefix\n    - Often appears near PMID in biomedical papers\n    - Example: \"9876543\"\n\n11. **Keywords**: API-compatible keyword list\n    - Each keyword as separate string\n    - Research-quality terms, no punctuation\n    - Example: [\"machine learning\", \"healthcare\", \"clinical outcomes\"]\n\n11. **Abstract**: Complete clean text (HIGHEST PRIORITY)\n    - Remove formatting, line breaks, extra spaces\n    - Complete sentences, proper punctuation\n    - Search thoroughly across ALL pages\n    - This is CRITICAL for Semantic Scholar and other APIs\n\n12. **Publisher**: Clean organization name\n    - Official publisher name\n    - Example: \"Elsevier\" or \"Nature Publishing Group\"\n\nABSTRACT EXTRACTION PRIORITY:\n- Look thoroughly across ALL pages for abstract sections\n- Extract COMPLETE text, including multiple paragraphs\n- Check: Abstract, Summary, Introduction summary paragraphs\n- This field is CRITICAL for API enrichment success\n\nReturn JSON format:\n{\n  \"Title\": \"clean title without formatting\",\n  \"Authors\": [\"Author One\", \"Author Two\"],\n  \"DOI\": \"10.xxxx/xxxxx\",\n  \"Journal\": \"clean journal name\", \n  \"Year\": 2024,\n  \"Volume\": \"15\",\n  \"Issue\": \"3\", \n  \"Pages\": \"123-135\",\n  \"Abstract\": \"complete clean abstract text\",\n  \"Keywords\": [\"keyword1\", \"keyword2\"],\n  \"PMID\": \"12345678\",\n  \"PMCID\": \"9876543\",\n  \"Publisher\": \"publisher name\"\n}\n\nReturn null for fields not clearly visible. The Abstract field is MOST IMPORTANT for downstream API success.",
+  "cost_tracking": {
+    "model": "gpt-4o",
+    "call_type": "vision_extraction",
+    "timestamp": "2025-07-22T14:18:42.931722",
+    "input_cost": 0.007725,
+    "total_cost": 0.012525,
+    "output_cost": 0.0048,
+    "input_tokens": 3090,
+    "total_tokens": 3570,
+    "output_tokens": 480
+  },
+  "input_details": {
+    "dpi": 120,
+    "max_tokens": 1500,
+    "model_used": "gpt-4o",
+    "temperature": 0.1,
+    "page_strategy": "strategic",
+    "image_resolution": "high",
+    "processing_time_ms": 23241,
+    "pdf_pages_processed": 3
+  },
+  "extracted_data": {
+    "DOI": "10.1007/s10916-018-1100-9",
+    "PMID": null,
+    "Year": 2018,
+    "Issue": "11",
+    "PMCID": null,
+    "Pages": "246",
+    "Title": "Patient-Tailored Augmented Reality Games for Assessing Upper Extremity Motor Impairments in Parkinson’s Disease and Stroke",
+    "Volume": "42",
+    "Authors": [
+      "Paulina J. M. Bank",
+      "Marina A. Cidota",
+      "P. Elma Ouwehand",
+      "Stephan G. Lukosch"
+    ],
+    "Journal": "Journal of Medical Systems",
+    "Abstract": "In clinical practice, upper extremity motor impairments are commonly assessed with disease-specific, subjectively scored and low-resolution rating scales that often do not consider the variations in tasks and environment that are essential aspects of daily life. Augmented reality (AR) systems with contactless tracking of the hand and upper body offer opportunities for objective quantification of motor (dys)function in a challenging, engaging and patient-tailored environment. In this study, we explore the potential of AR for evaluating 1) speed and goal-directedness of movements within the individually determined interaction space, 2) adaptation of hand opening to objects of different sizes, and 3) obstacle avoidance in healthy individuals (N=10) and two highly prevalent neurological conditions (N=10 patients with Parkinson’s Disease and N=10 stroke patients). We successfully implemented three AR games to evaluate these key aspects of motor function. As expected, PD patients moved slower than controls and needed more time for task completion. No differences were observed between stroke patients and controls, perhaps because motor impairments in this patient group were relatively mild. Importantly, usability of our AR system was good and considerably improved compared to our previous study due to more natural and patient-tailored interaction. Although this study highlights the potential of AR for assessing motor impairments in patients with neurological conditions and provide starting points for further improvement, there are still many steps to be taken towards application in clinical practice.",
+    "Keywords": [
+      "augmented reality",
+      "engagement",
+      "upper extremity",
+      "motor function",
+      "Parkinson’s disease",
+      "stroke"
+    ],
+    "Publisher": "Springer"
+  },
+  "pages_processed": 3,
+  "extraction_matrix": {
+    "_performance_summary": {
+      "total_cost": 0.0,
+      "data_source": "vision_json",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "vision_status": "COMPLETE",
+      "extraction_rate": 84.62,
+      "extraction_source": "gpt-4o-vision",
+      "performance_level": "EXCELLENT",
+      "fields_with_content": 11,
+      "processing_time_seconds": 0,
+      "total_fields_in_response": 13
+    }
+  },
+  "extraction_method": "vision_strategic_strategy",
+  "extraction_quality": {
+    "success_rate": 50.0,
+    "quality_score": 50.0,
+    "successful_fields": 11,
+    "validation_details": {
+      "errors": [],
+      "is_valid": true,
+      "warnings": [],
+      "quality_score": 100,
+      "completeness_score": 100.0
+    },
+    "total_fields_attempted": 13
+  },
+  "processing_time_ms": 23241,
+  "raw_openai_response": {
+    "content": "```json\n{\n  \"Title\": \"Patient-Tailored Augmented Reality Games for Assessing Upper Extremity Motor Impairments in Parkinson’s Disease and Stroke\",\n  \"Authors\": [\"Paulina J. M. Bank\", \"Marina A. Cidota\", \"P. Elma Ouwehand\", \"Stephan G. Lukosch\"],\n  \"DOI\": \"10.1007/s10916-018-1100-9\",\n  \"Journal\": \"Journal of Medical Systems\",\n  \"Year\": 2018,\n  \"Volume\": \"42\",\n  \"Issue\": \"11\",\n  \"Pages\": \"246\",\n  \"Abstract\": \"In clinical practice, upper extremity motor impairments are commonly assessed with disease-specific, subjectively scored and low-resolution rating scales that often do not consider the variations in tasks and environment that are essential aspects of daily life. Augmented reality (AR) systems with contactless tracking of the hand and upper body offer opportunities for objective quantification of motor (dys)function in a challenging, engaging and patient-tailored environment. In this study, we explore the potential of AR for evaluating 1) speed and goal-directedness of movements within the individually determined interaction space, 2) adaptation of hand opening to objects of different sizes, and 3) obstacle avoidance in healthy individuals (N=10) and two highly prevalent neurological conditions (N=10 patients with Parkinson’s Disease and N=10 stroke patients). We successfully implemented three AR games to evaluate these key aspects of motor function. As expected, PD patients moved slower than controls and needed more time for task completion. No differences were observed between stroke patients and controls, perhaps because motor impairments in this patient group were relatively mild. Importantly, usability of our AR system was good and considerably improved compared to our previous study due to more natural and patient-tailored interaction. Although this study highlights the potential of AR for assessing motor impairments in patients with neurological conditions and provide starting points for further improvement, there are still many steps to be taken towards application in clinical practice.\",\n  \"Keywords\": [\"augmented reality\", \"engagement\", \"upper extremity\", \"motor function\", \"Parkinson’s disease\", \"stroke\"],\n  \"PMID\": null,\n  \"PMCID\": null,\n  \"Publisher\": \"Springer\"\n}\n```",
+    "parsing_error": "Expecting value: line 1 column 1 (char 0)",
+    "response_length": 2219,
+    "parsing_successful": false
+  },
+  "processing_timestamp": "2025-07-22T14:18:42.931712"
+}

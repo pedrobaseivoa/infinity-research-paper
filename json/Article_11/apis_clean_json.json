@@ -1,0 +1,77 @@
+{
+  "timestamp": "2025-07-22T14:32:32.264635",
+  "cost_tracking": {
+    "model": "deepseek-chat",
+    "call_type": "smart_consensus",
+    "timestamp": "2025-07-22T14:32:32.264412",
+    "input_cost": 0.0019,
+    "total_cost": 0.003126,
+    "output_cost": 0.001225,
+    "input_tokens": 7038,
+    "total_tokens": 8152,
+    "output_tokens": 1114,
+    "parsing_error": null,
+    "parsing_successful": true,
+    "processing_time_ms": 57613
+  },
+  "consensus_result": {
+    "DOI": "10.3390/informatics12020042",
+    "PMID": null,
+    "Year": 2025,
+    "Issue": null,
+    "PMCID": null,
+    "Pages": null,
+    "Title": "Enhanced Preoperative Pancreatoduodenectomy Patient Education Using Mixed Reality Technology: A Randomized Controlled Pilot Study",
+    "PDFUrl": "https://doi.org/10.3390/informatics12020042",
+    "Volume": null,
+    "Authors": [
+      "Heard, Jessica",
+      "Murdock, Paul",
+      "Malo, Juan S.",
+      "Lim, Joseph",
+      "Mukharjee, Sourodip",
+      "Jeyarajah, D. Rohan"
+    ],
+    "Journal": "Informatics",
+    "Abstract": "(1) Background: Mixed Reality (MR) technology, such as the HoloLens, offers a novel approach to preoperative education. This study evaluates its feasibility and effectiveness in improving patient comprehension and comfort during informed consent for pancreatoduodenectomy. (2) Methods: A single-center, randomized, controlled pilot study was conducted between February and May 2023. Patients recommended for pancreatoduodenectomy were randomized into a control group receiving standard education or an intervention group using the HoloLens. Pre- and post-intervention surveys assessed patient understanding and comfort. (3) Results: Nineteen patients participated (8 HoloLens, 11 control). Both groups showed improved comprehension post-intervention, but only the HoloLens group demonstrated a statistically significant increase (Z = -2.524, p = 0.012). MR users had a greater understanding of surgical steps compared to controls, and 75% of participants in both groups reported high comfort levels with the surgery. MR integration was feasible and did not disrupt clinical workflow. (4) Conclusions: These findings suggest that MR can enhance preoperative education for complex procedures. However, limitations include the small sample size and single-center design, necessitating larger studies to confirm its broader applicability. MR-based education represents a promising tool to improve patient engagement and comprehension in surgical decision making.",
+    "Keywords": null,
+    "Citations": 0,
+    "Publisher": null,
+    "OpenAccess": true,
+    "confidence_factors": {
+      "source": "Vision-Foundation + API Enhancement",
+      "reasoning": "Semantic Scholar provided coherent DOI, journal, year, and enhanced abstract that matches vision data. OpenAlex confirmed title but had different DOI (discarded as less coherent). Vision authors preferred with Semantic Scholar name formatting. Abstract merged for completeness.",
+      "field_sources": {
+        "doi": "semantic_scholar",
+        "year": "semantic_scholar",
+        "title": "vision|semantic_scholar|openalex",
+        "pdfurl": "semantic_scholar",
+        "authors": "vision+semantic_scholar",
+        "journal": "semantic_scholar",
+        "abstract": "semantic_scholar+vision",
+        "citations": "semantic_scholar",
+        "openaccess": "semantic_scholar"
+      },
+      "enhancement_level": "SIGNIFICANT",
+      "validation_status": "HIGH"
+    },
+    "api_success_summary": {
+      "insights": "Semantic Scholar was the only fully coherent API source, providing DOI, journal, and enhanced metadata. OpenAlex had conflicting DOI (SSRN) and was discarded. DataCite had different title/type (conference talk) and was not coherent. ORCID provided author info but no paper metadata. Most APIs failed due to missing DOI.",
+      "total_apis": 11,
+      "failed_apis": [
+        "unpaywall",
+        "core",
+        "doaj",
+        "arxiv",
+        "europe_pmc",
+        "crossref",
+        "pubmed"
+      ],
+      "success_rate": 0.36,
+      "coherent_apis": 1,
+      "coherence_rate": 0.25,
+      "successful_apis": 4
+    }
+  },
+  "processing_time_ms": 64453
+}

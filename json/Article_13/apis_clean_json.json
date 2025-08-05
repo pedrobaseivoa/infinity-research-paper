@@ -1,0 +1,97 @@
+{
+  "timestamp": "2025-07-22T14:27:39.519647",
+  "cost_tracking": {
+    "model": "deepseek-chat",
+    "call_type": "smart_consensus",
+    "timestamp": "2025-07-22T14:27:39.519403",
+    "input_cost": 0.005658,
+    "total_cost": 0.007215,
+    "output_cost": 0.001557,
+    "input_tokens": 20957,
+    "total_tokens": 22372,
+    "output_tokens": 1415,
+    "parsing_error": null,
+    "parsing_successful": true,
+    "processing_time_ms": 72290
+  },
+  "consensus_result": {
+    "DOI": "10.1093/ageing/afae214",
+    "PMID": "39373575",
+    "Year": 2024,
+    "Issue": "4",
+    "PMCID": "PMC11457341",
+    "Pages": "1-11",
+    "Title": "Feasibility and acceptability of the HOLOBalance telerehabilitation system compared with standard care for older adults at risk of falls: the HOLOBalance assessor blinded pilot randomised controlled study",
+    "PDFUrl": "https://doi.org/10.1093/ageing/afae214",
+    "Volume": "53",
+    "Authors": [
+      "Pavlou, Marousa",
+      "Flavell, Carol Ann",
+      "Gourtani, Fariba Mostajeran",
+      "Nikitas, Christos",
+      "Kikidis, Dimitris",
+      "Bibas, Athanasios",
+      "Gatsios, Dimitris",
+      "Tsakanikas, Vassilis",
+      "Fotiadis, Dimitrios I",
+      "Koutsouris, Dimitrios",
+      "Steinicke, Frank",
+      "Walz, Isabelle Daniela",
+      "Maurer, Christoph",
+      "Papadopoulou, Sofia",
+      "Tsoukatos, Michalis",
+      "Pardalis, Athanasios",
+      "Bamiou, Doris-Eva"
+    ],
+    "Journal": "Age and Ageing",
+    "Abstract": "Background: Falls have high socioeconomic costs. Information and communication technologies may support provision and monitoring of multisensory (MSR) physiotherapy programmes. The HOLOBalance platform used augmented reality holograms to provide patient-centred, individualised MSR. Objectives: To determine the platform's safety, acceptability and feasibility, investigate functional gait and dynamic balance benefits and provide data for a definitive trial. Design and setting: Single-blinded pilot randomised controlled feasibility study. Interventions were conducted at clinical sites or participants' homes in three European countries. Participants: Community-dwelling older adults (median age 73 years; 64.2% female) at risk of falls were enrolled (May 2020-August 2021). Methods: Participants were randomised to an 8-week clinic or home-based telerehabilitation MSR or OTAGO (control group) programme. Compliance, satisfaction, and adverse events determined feasibility. Clinical outcomes, assessed (blinded) within one-week prior to and post-intervention, included functional gait assessment (FGA), Mini BESTest and cognitive function. Results: Randomisation to completion rate was 76.15% with 109 participants recruited (n = 289 screened). Drop-out rate was similar between groups. Adverse events were reported (n = 3) in the control group. Sixty-nine percent would recommend the HOLOBalance intervention. Findings were similar for the home and clinic-based arms of each intervention; data was combined for analysis. FGA (95%CI [1.63, 4.19]) and Mini-BESTest (95%CI [1.46, 3.93]) showed greater improvement in the HOLOBalance group with a clinically meaningful change of 4/30 noted for the FGA. Conclusions: HOLOBalance was feasible to implement and acceptable to older adults at risk of falls, with FGA and Mini-BEST improvements exceeding those for the OTAGO programme. A definitive trial is warranted.",
+    "Keywords": [
+      "augmented reality",
+      "balance rehabilitation",
+      "older adults",
+      "falls risk",
+      "older people"
+    ],
+    "Citations": 5,
+    "Publisher": "Oxford University Press",
+    "OpenAccess": true,
+    "confidence_factors": {
+      "source": "Vision-Foundation + API Enhancement",
+      "reasoning": "Vision data used as foundation with strong API validation from multiple sources. Enhanced with PMID, PMCID, citation count, and open access status from coherent API sources. Author list formatting improved using Crossref/EuropePMC data while maintaining original order.",
+      "field_sources": {
+        "doi": "crossref|openalex|semantic_scholar|europe_pmc|pubmed",
+        "pmid": "europe_pmc|pubmed",
+        "year": "vision",
+        "issue": "vision",
+        "pages": "vision",
+        "pmcid": "europe_pmc",
+        "title": "vision",
+        "pdfurl": "semantic_scholar|unpaywall",
+        "volume": "vision",
+        "authors": "crossref+europe_pmc+pubmed+vision",
+        "journal": "vision",
+        "abstract": "vision",
+        "keywords": "vision",
+        "citations": "openalex",
+        "publisher": "vision",
+        "openaccess": "openalex|unpaywall|europe_pmc"
+      },
+      "enhancement_level": "SIGNIFICANT",
+      "validation_status": "HIGH"
+    },
+    "api_success_summary": {
+      "insights": "Strong coherence among major APIs (Crossref, EuropePMC, PubMed, Semantic Scholar, OpenAlex) validating vision data. Best contributors were EuropePMC and Crossref for detailed metadata. DOAJ failed due to missing DOI, arXiv and DataCite had no matches. Citation data from OpenAlex was preferred over Semantic Scholar due to higher count.",
+      "total_apis": 11,
+      "failed_apis": [
+        "doaj",
+        "arxiv",
+        "datacite"
+      ],
+      "success_rate": 0.73,
+      "coherent_apis": 7,
+      "coherence_rate": 0.88,
+      "successful_apis": 8
+    }
+  },
+  "processing_time_ms": 81713
+}

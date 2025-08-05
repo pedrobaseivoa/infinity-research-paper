@@ -1,0 +1,49 @@
+{
+  "success": true,
+  "prompt_sent": "You are a scientific research assistant extracting data for academic comparison tables with statistical rigor.\n\nCRITICAL INSTRUCTIONS FOR ACADEMIC COMPARISON:\n\n- SYSTEMATICALLY scan ALL content: text, tables, figures, charts, appendices\n- PRIORITIZE quantitative data while preserving qualitative context\n- When conflicts exist in the paper, prioritize MOST RECENT/AUTHORITATIVE source\n- Extract ALL relevant details mentioned - DON'T truncate important information\n- Include statistical tests results (Z-scores, t-values, chi-square, etc.)\n- Extract accuracy rates, completion rates, success rates with specific numbers\n- Capture comparative data (e.g., \"46% vs 27%\", \"Group A: 64.5%, Group B: 68.2%\")\n- Use proper numeric format: \"p = 0.007\" not \"p = .007\", \"81\" not \"eighty-one\"\n\nCOMPREHENSIVE CAPTURE REQUIREMENTS:\n\n- List ALL hardware components: cameras, sensors, headsets, controllers, phones, tablets, webcams, probes\n- Include ALL software details: platforms, SDKs, libraries, export formats (CSV, JSON), feedback systems\n- Capture ALL measurement instruments: scales, questionnaires, assessment tools (SUS, NASA-TLX, FES-I, MoCA, IKDC, VAS, ABC scale, WHODAS 2.0, etc.)\n- Note ALL technical specifications: resolutions, frame rates, tracking capabilities, joint counts\n- Include ALL study phases: pilot tests, technical validation, user studies, expert evaluations\n- Capture ALL procedural details: training time, calibration steps, data export processes, real-time feedback\n\nCONFLICT RESOLUTION:\n\n- If conflicting information exists, prioritize methods/results over abstract\n- When uncertain, include both: \"X in abstract, Y in methods section\"\n\nExtract the following 7 scientific topics:\n\n1. *study_design*: Extract the PRIMARY study type/design using the most specific and authoritative terminology from the paper's methods section. Recognize equivalent terms: \"RCT\" = \"Randomized controlled trial\", \"Pilot study\" = \"Feasibility pilot study\", \"Cross-sectional\" = \"Observational cross-sectional\", \"User study\" = \"User evaluation study\". When multiple study type descriptions exist, prioritize the most comprehensive version from methods over abstract. Include specific qualifiers when mentioned (e.g., \"multicenter\", \"double-blind\", \"waitlist-controlled\") as these add valuable detail. Format as brief phrase describing core study methodology, avoiding generic terms like \"study\" or \"research\" alone.\n\n2. *methodology*: ONE comprehensive sentence covering: technology + application + key technical details. Include: ALL device models, software platforms, measurement tools, statistical analyses. Capture ALL hardware components mentioned (cameras, sensors, controllers, probes, etc.). Include ALL software features (real-time feedback, data export, tracking capabilities). Mention ALL technical specifications (joint tracking numbers, frame rates, resolutions). Example: \"Microsoft HoloLens 2 with HoloAnatomy platform for 3D anatomical procedural visualization using real-time motion tracking of 25 joints with CSV data export and real-time visual feedback\".\n\n3. *sample_size*: Format: \"X participants/patients\" (use paper's exact terminology). Include TOTAL numbers if multiple groups exist. Include ALL test phases: technical tests, pilot studies, user evaluations. Example: \"25 total: 23 biomedical students + 2 clinical experts; 50 technical validation readings\".\n\n4. *population*: ALL demographic details and characteristics not captured in sample_size. Include age, profession, condition, experience, setting details. Add specific numbers when available. Include recruitment sources and inclusion/exclusion criteria.\n\n5. *primary_outcome*: Include ALL measurement tools, scales, timing, specific metrics, usability criteria (ease of use, realism, anatomical accuracy). List ALL assessment instruments used and functional scales (SUS, NASA-TLX, FES-I, MoCA, IKDC, VAS, ABC scale, WHODAS 2.0, etc.), and evaluation dimensions beyond the primary measures.. Include ALL comparison conditions and timepoints. Example: \"Patient understanding via 5-point Likert scale assessed pre/post intervention, plus SUS usability scores and NASA-TLX workload assessment\".\n\n6. *key_findings*: PRIORITIZE statistical results with practical implications. Format: \"Finding 1: [statistical data + meaning]. Finding 2: [data + context]\". Include ALL significant findings, p-values, effect sizes, accuracy rates, comparative data, accuracy measurements (sub-mm, degrees), specific understanding domains (surgical risks, operative steps, recovery), and detailed performance metrics beyond statistical significance. Present ALL questionnaire results, prototype performance, qualitative benefits. Include ALL cost factors, training requirements, implementation details. Capture ALL comparison groups and their specific results. Be comprehensive - capture complete findings picture. Include ALL technical specifications mentioned: accuracy measurements (sub-mm, degrees).\n\n7. *limitations*: Extract ALL limitations from limitation/discussion sections. Include sample size issues, technical equipment requirements, methodological, practical constraints. Mention ALL equipment needs, calibration requirements, manufacturing variability. Include ALL generalizability issues, validity concerns, implementation barriers. Capture training requirements, cost constraints, specialized equipment needs. Note real-world applicability issues and clinical implementation challenges. Don't summarize - capture complete limitation landscape.\n\nReturn as valid JSON with this EXACT structure:\n\n{\n  \"study_design\": \"string\",\n  \"methodology\": \"string\",\n  \"sample_size\": \"string\",\n  \"population\": \"string\",\n  \"primary_outcome\": \"string\",\n  \"key_findings\": \"string\",\n  \"limitations\": \"string\"\n}",
+  "cost_tracking": {
+    "model": "gpt-4o",
+    "call_type": "scientific_topics_multimodal",
+    "timestamp": "2025-07-22T14:31:09.244609",
+    "input_cost": 0.03352,
+    "total_cost": 0.03633,
+    "output_cost": 0.00281,
+    "input_tokens": 13408,
+    "total_tokens": 13689,
+    "output_tokens": 281
+  },
+  "input_details": {
+    "dpi": 150,
+    "max_tokens": 6000,
+    "model_used": "gpt-4o",
+    "temperature": 0.1,
+    "strategy_used": "vision_all_pages (≤40)",
+    "pdf_total_pages": 16,
+    "image_resolution": "high",
+    "processing_time_ms": 53396,
+    "pdf_pages_processed": 16
+  },
+  "pages_processed": 16,
+  "extracted_topics": {
+    "population": "Participants aged 58.18 years on average, with chronic phantom limb pain (PLP) persisting beyond 3 months, recruited from 9 outpatient clinics across 7 countries.",
+    "limitations": "Higher than anticipated dropout rate, potential influence of contextual factors, and the need for specialized equipment and training for XR interventions.",
+    "methodology": "Extended reality (XR) using Microsoft HoloLens for phantom motor execution (PME) and phantom motor imagery (PMI) with real-time motion tracking, myoelectric signal decoding, and real-time feedback in virtual environments.",
+    "sample_size": "81 participants: 53 allocated to PME, 28 to PMI",
+    "key_findings": "Finding 1: No significant difference between PME and PMI in PRI change (p = 0.75 ± 0.12). Finding 2: Both groups showed improvements in secondary outcomes like PLP Weighted Pain Distribution (WPD) and PLP Numeric Rating Scale (NRS) with reductions at various time points.",
+    "study_design": "Multicenter, double-blind, randomized controlled trial",
+    "primary_outcome": "Change in PLP intensity measured by the Pain Rating Index (PRI) from the Short-Form McGill Pain Questionnaire (SF-MPQ) between baseline and end of treatment."
+  },
+  "extraction_method": "multimodal_vision",
+  "extraction_quality": {
+    "topics_missing": 0,
+    "topics_extracted": 7
+  },
+  "processing_time_ms": 53396,
+  "raw_openai_response": {
+    "content": "```json\n{\n  \"study_design\": \"Multicenter, double-blind, randomized controlled trial\",\n  \"methodology\": \"Extended reality (XR) using Microsoft HoloLens for phantom motor execution (PME) and phantom motor imagery (PMI) with real-time motion tracking, myoelectric signal decoding, and real-time feedback in virtual environments.\",\n  \"sample_size\": \"81 participants: 53 allocated to PME, 28 to PMI\",\n  \"population\": \"Participants aged 58.18 years on average, with chronic phantom limb pain (PLP) persisting beyond 3 months, recruited from 9 outpatient clinics across 7 countries.\",\n  \"primary_outcome\": \"Change in PLP intensity measured by the Pain Rating Index (PRI) from the Short-Form McGill Pain Questionnaire (SF-MPQ) between baseline and end of treatment.\",\n  \"key_findings\": \"Finding 1: No significant difference between PME and PMI in PRI change (p = 0.75 ± 0.12). Finding 2: Both groups showed improvements in secondary outcomes like PLP Weighted Pain Distribution (WPD) and PLP Numeric Rating Scale (NRS) with reductions at various time points.\",\n  \"limitations\": \"Higher than anticipated dropout rate, potential influence of contextual factors, and the need for specialized equipment and training for XR interventions.\"\n}\n```",
+    "parsing_error": null,
+    "response_length": 1232,
+    "parsing_successful": true
+  },
+  "processing_timestamp": "2025-07-22T14:31:09.244466"
+}

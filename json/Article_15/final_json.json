@@ -1,0 +1,741 @@
+{
+  "vision_json": {
+    "source": "gpt-4o-vision",
+    "success": true,
+    "prompt_sent": "Extract ONLY publication metadata from these academic paper pages.\n\nCRITICAL: This data will be sent to 11 external APIs, so format accuracy is essential.\n\nFIELD REQUIREMENTS WITH EXACT FORMATS:\n\n1. **Title**: Clean title for API queries (HIGHEST PRIORITY)\n   - Remove line breaks, extra spaces, formatting\n   - No HTML tags or special characters  \n   - Example: \"Effects of Machine Learning on Healthcare Outcomes\"\n\n2. **Authors**: API-compatible author list (HIGHEST PRIORITY)\n   - Each author as separate string in array\n   - Format: \"FirstName LastName\" or \"F. LastName\"\n   - Clean, no extra punctuation\n   - Example: [\"John Smith\", \"M. Johnson\", \"Sarah Williams\"]\n\n3. **DOI**: Standard DOI format for resolution APIs\n   - Must start with \"10.\" if present\n   - Clean format without URL prefixes\n   - Example: \"10.1234/journal.2024.001\"\n\n4. **Journal**: Clean journal name for database queries\n   - Full journal name preferred over abbreviations\n   - Remove extra formatting, parentheses\n   - Example: \"Nature Medicine\"\n\n5. **Year**: Numeric format for date filtering\n   - 4-digit NUMBER only (not string)\n   - Example: 2024\n\n6. **Volume**: Clean number for bibliographic APIs\n   - Numbers only, no \"Vol.\" prefix\n   - Example: \"15\"\n\n7. **Issue**: Clean number format\n   - Numbers only, no \"No.\" or \"Issue\" prefix\n   - Example: \"3\"\n\n8. **Pages**: Standard page range for citations\n   - Format: \"start-end\" or single page\n   - Example: \"123-135\" or \"45\"\n\n9. **PMID**: PubMed ID for medical APIs\n   - Numbers only, no \"PMID:\" prefix\n   - Example: \"12345678\"\n\n10. **PMCID**: PubMed Central ID for open access papers\n    - Numbers only, no \"PMC\" prefix\n    - Often appears near PMID in biomedical papers\n    - Example: \"9876543\"\n\n11. **Keywords**: API-compatible keyword list\n    - Each keyword as separate string\n    - Research-quality terms, no punctuation\n    - Example: [\"machine learning\", \"healthcare\", \"clinical outcomes\"]\n\n11. **Abstract**: Complete clean text (HIGHEST PRIORITY)\n    - Remove formatting, line breaks, extra spaces\n    - Complete sentences, proper punctuation\n    - Search thoroughly across ALL pages\n    - This is CRITICAL for Semantic Scholar and other APIs\n\n12. **Publisher**: Clean organization name\n    - Official publisher name\n    - Example: \"Elsevier\" or \"Nature Publishing Group\"\n\nABSTRACT EXTRACTION PRIORITY:\n- Look thoroughly across ALL pages for abstract sections\n- Extract COMPLETE text, including multiple paragraphs\n- Check: Abstract, Summary, Introduction summary paragraphs\n- This field is CRITICAL for API enrichment success\n\nReturn JSON format:\n{\n  \"Title\": \"clean title without formatting\",\n  \"Authors\": [\"Author One\", \"Author Two\"],\n  \"DOI\": \"10.xxxx/xxxxx\",\n  \"Journal\": \"clean journal name\", \n  \"Year\": 2024,\n  \"Volume\": \"15\",\n  \"Issue\": \"3\", \n  \"Pages\": \"123-135\",\n  \"Abstract\": \"complete clean abstract text\",\n  \"Keywords\": [\"keyword1\", \"keyword2\"],\n  \"PMID\": \"12345678\",\n  \"PMCID\": \"9876543\",\n  \"Publisher\": \"publisher name\"\n}\n\nReturn null for fields not clearly visible. The Abstract field is MOST IMPORTANT for downstream API success.",
+    "cost_tracking": {
+      "model": "gpt-4o",
+      "call_type": "vision_extraction",
+      "timestamp": "2025-07-22T14:21:13.427037",
+      "input_cost": 0.010275,
+      "total_cost": 0.013935,
+      "output_cost": 0.00366,
+      "input_tokens": 4110,
+      "total_tokens": 4476,
+      "output_tokens": 366
+    },
+    "input_details": {
+      "dpi": 120,
+      "max_tokens": 1500,
+      "model_used": "gpt-4o",
+      "temperature": 0.1,
+      "page_strategy": "strategic",
+      "image_resolution": "high",
+      "processing_time_ms": 24175,
+      "pdf_pages_processed": 3
+    },
+    "extracted_data": {
+      "DOI": null,
+      "PMID": null,
+      "Year": null,
+      "Issue": null,
+      "PMCID": null,
+      "Pages": null,
+      "Title": "HoloPOCUS: Portable Mixed-Reality 3D Ultrasound Tracking, Reconstruction and Overlay",
+      "Volume": null,
+      "Authors": [
+        "Kian Wei Ng",
+        "Yujia Gao",
+        "Shaheryar Mohammed Furqan",
+        "Zachery Yeo",
+        "Joel Lau",
+        "Kee Yuan Ngiam",
+        "Eng Tat Khoo"
+      ],
+      "Journal": null,
+      "Abstract": "Ultrasound (US) imaging provides a safe and accessible solution to procedural guidance and diagnostic imaging. The effective usage of conventional 2D US for interventional guidance requires extensive experience to project the image plane onto the patient, and the interpretation of images in diagnostics suffers from high intra- and inter-user variability. 3D US reconstruction allows for more consistent diagnosis and interpretation, but existing solutions are limited in terms of equipment and applicability in real-time navigation. To address these issues, we propose HoloPOCUS — a mixed reality US system (MR-US) that overlays rich US information onto the user’s vision in a point-of-care setting. HoloPOCUS extends existing MR-US methods beyond placing a US plane in the user’s vision to include a 3D reconstruction and projection that can aid in procedural guidance using conventional probes. We validated a tracking pipeline that demonstrates higher accuracy compared to existing MR-US works. Furthermore, user studies conducted via a phantom task showed significant improvements in navigation duration when using our proposed methods.",
+      "Keywords": [
+        "mixed reality",
+        "3D ultrasound",
+        "interventional guidance",
+        "tracking"
+      ],
+      "Publisher": null
+    },
+    "pages_processed": 3,
+    "extraction_matrix": {
+      "_performance_summary": {
+        "total_cost": 0.0,
+        "data_source": "vision_json",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "vision_status": "COMPLETE",
+        "extraction_rate": 30.77,
+        "extraction_source": "gpt-4o-vision",
+        "performance_level": "POOR",
+        "fields_with_content": 4,
+        "processing_time_seconds": 0,
+        "total_fields_in_response": 13
+      }
+    },
+    "extraction_method": "vision_strategic_strategy",
+    "extraction_quality": {
+      "success_rate": 50.0,
+      "quality_score": 50.0,
+      "successful_fields": 4,
+      "validation_details": {
+        "errors": [],
+        "is_valid": true,
+        "warnings": [
+          "Missing important field: DOI",
+          "Missing important field: Journal",
+          "Missing important field: Year"
+        ],
+        "quality_score": 60,
+        "completeness_score": 50.0
+      },
+      "total_fields_attempted": 13
+    },
+    "processing_time_ms": 24175,
+    "raw_openai_response": {
+      "content": "```json\n{\n  \"Title\": \"HoloPOCUS: Portable Mixed-Reality 3D Ultrasound Tracking, Reconstruction and Overlay\",\n  \"Authors\": [\"Kian Wei Ng\", \"Yujia Gao\", \"Shaheryar Mohammed Furqan\", \"Zachery Yeo\", \"Joel Lau\", \"Kee Yuan Ngiam\", \"Eng Tat Khoo\"],\n  \"DOI\": null,\n  \"Journal\": null,\n  \"Year\": null,\n  \"Volume\": null,\n  \"Issue\": null,\n  \"Pages\": null,\n  \"Abstract\": \"Ultrasound (US) imaging provides a safe and accessible solution to procedural guidance and diagnostic imaging. The effective usage of conventional 2D US for interventional guidance requires extensive experience to project the image plane onto the patient, and the interpretation of images in diagnostics suffers from high intra- and inter-user variability. 3D US reconstruction allows for more consistent diagnosis and interpretation, but existing solutions are limited in terms of equipment and applicability in real-time navigation. To address these issues, we propose HoloPOCUS — a mixed reality US system (MR-US) that overlays rich US information onto the user’s vision in a point-of-care setting. HoloPOCUS extends existing MR-US methods beyond placing a US plane in the user’s vision to include a 3D reconstruction and projection that can aid in procedural guidance using conventional probes. We validated a tracking pipeline that demonstrates higher accuracy compared to existing MR-US works. Furthermore, user studies conducted via a phantom task showed significant improvements in navigation duration when using our proposed methods.\",\n  \"Keywords\": [\"mixed reality\", \"3D ultrasound\", \"interventional guidance\", \"tracking\"],\n  \"PMID\": null,\n  \"PMCID\": null,\n  \"Publisher\": null\n}\n```",
+      "parsing_error": "Expecting value: line 1 column 1 (char 0)",
+      "response_length": 1651,
+      "parsing_successful": false
+    },
+    "processing_timestamp": "2025-07-22T14:21:13.427023"
+  },
+  "apis_raw_json": {
+    "core": {
+      "error": "CORE API exception: 'NoneType' object has no attribute 'strip'",
+      "success": false,
+      "timestamp": "2025-07-22T14:21:13.784090",
+      "processing_time_ms": 0
+    },
+    "doaj": {
+      "error": "No DOI available for DOAJ search",
+      "success": false,
+      "timestamp": "2025-07-22T14:21:13.793368",
+      "processing_time_ms": 1
+    },
+    "arxiv": {
+      "error": "No results found",
+      "success": false,
+      "timestamp": "2025-07-22T14:21:14.562992",
+      "processing_time_ms": 774
+    },
+    "orcid": {
+      "data": {
+        "person": {
+          "name": {
+            "path": "0000-0002-3485-1191",
+            "source": null,
+            "visibility": "public",
+            "credit-name": null,
+            "family-name": {
+              "value": "Ng"
+            },
+            "given-names": {
+              "value": "Kian Wei"
+            },
+            "created-date": {
+              "value": 1670229815451
+            },
+            "last-modified-date": {
+              "value": 1670229815451
+            }
+          },
+          "path": "/0000-0002-3485-1191/person",
+          "emails": {
+            "path": "/0000-0002-3485-1191/email",
+            "email": [],
+            "last-modified-date": null
+          },
+          "keywords": {
+            "path": "/0000-0002-3485-1191/keywords",
+            "keyword": [],
+            "last-modified-date": null
+          },
+          "addresses": {
+            "path": "/0000-0002-3485-1191/address",
+            "address": [],
+            "last-modified-date": null
+          },
+          "biography": null,
+          "other-names": {
+            "path": "/0000-0002-3485-1191/other-names",
+            "other-name": [],
+            "last-modified-date": null
+          },
+          "researcher-urls": {
+            "path": "/0000-0002-3485-1191/researcher-urls",
+            "researcher-url": [],
+            "last-modified-date": null
+          },
+          "last-modified-date": null,
+          "external-identifiers": {
+            "path": "/0000-0002-3485-1191/external-identifiers",
+            "last-modified-date": null,
+            "external-identifier": []
+          }
+        },
+        "orcid_id": "0000-0002-3485-1191"
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:21:14.797784",
+      "processing_time_ms": 1008
+    },
+    "pubmed": {
+      "error": "No results found",
+      "success": false,
+      "timestamp": "2025-07-22T14:21:21.481998",
+      "processing_time_ms": 7707
+    },
+    "crossref": {
+      "data": {
+        "status": "ok",
+        "message": {
+          "DOI": "10.1007/978-3-031-44521-7_11",
+          "page": "111-120",
+          "title": [
+            "HoloPOCUS: Portable Mixed-Reality 3D Ultrasound Tracking, Reconstruction and Overlay"
+          ],
+          "author": [
+            {
+              "ORCID": "https://orcid.org/0000-0002-3485-1191",
+              "given": "Kian Wei",
+              "family": "Ng",
+              "sequence": "first",
+              "affiliation": [],
+              "authenticated-orcid": false
+            },
+            {
+              "given": "Yujia",
+              "family": "Gao",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Mohammed Shaheryar",
+              "family": "Furqan",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Zachery",
+              "family": "Yeo",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Joel",
+              "family": "Lau",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Kee Yuan",
+              "family": "Ngiam",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0003-1295-3506",
+              "given": "Eng Tat",
+              "family": "Khoo",
+              "sequence": "additional",
+              "affiliation": [],
+              "authenticated-orcid": false
+            }
+          ],
+          "publisher": "Springer Nature Switzerland",
+          "container-title": [
+            "Lecture Notes in Computer Science",
+            "Simplifying Medical Ultrasound"
+          ],
+          "published-print": {
+            "date-parts": [
+              [
+                2023
+              ]
+            ]
+          },
+          "published-online": {
+            "date-parts": [
+              [
+                2023,
+                10,
+                1
+              ]
+            ]
+          }
+        }
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:21:18.133174",
+      "processing_time_ms": 4360
+    },
+    "datacite": {
+      "data": {
+        "data": {
+          "id": "10.48550/arxiv.2308.13823",
+          "type": "dois",
+          "attributes": {
+            "doi": "10.48550/arxiv.2308.13823",
+            "url": "https://arxiv.org/abs/2308.13823",
+            "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4yMzA4LjEzODIzPC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MjMwOC4xMzgyMzwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5OZywgS2lhbiBXZWk8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPktpYW4gV2VpPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPk5nPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkdhbywgWXVqaWE8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPll1amlhPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkdhbzwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5GdXJxYW4sIFNoYWhlcnlhciBNb2hhbW1lZDwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+U2hhaGVyeWFyIE1vaGFtbWVkPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkZ1cnFhbjwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5ZZW8sIFphY2hlcnk8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPlphY2hlcnk8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+WWVvPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkxhdSwgSm9lbDwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+Sm9lbDwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5MYXU8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+TmdpYW0sIEtlZSBZdWFuPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5LZWUgWXVhbjwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5OZ2lhbTwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5LaG9vLCBFbmcgVGF0PC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5FbmcgVGF0PC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPktob288L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPkhvbG9QT0NVUzogUG9ydGFibGUgTWl4ZWQtUmVhbGl0eSAzRCBVbHRyYXNvdW5kIFRyYWNraW5nLCBSZWNvbnN0cnVjdGlvbiBhbmQgT3ZlcmxheTwvdGl0bGU+CiAgPC90aXRsZXM+CiAgPHB1Ymxpc2hlcj5hclhpdjwvcHVibGlzaGVyPgogIDxwdWJsaWNhdGlvblllYXI+MjAyMzwvcHVibGljYXRpb25ZZWFyPgogIDxzdWJqZWN0cz4KICAgIDxzdWJqZWN0IHhtbDpsYW5nPSJlbiIgc3ViamVjdFNjaGVtZT0iYXJYaXYiPkNvbXB1dGVyIFZpc2lvbiBhbmQgUGF0dGVybiBSZWNvZ25pdGlvbiAoY3MuQ1YpPC9zdWJqZWN0PgogICAgPHN1YmplY3QgeG1sOmxhbmc9ImVuIiBzdWJqZWN0U2NoZW1lPSJhclhpdiI+SHVtYW4tQ29tcHV0ZXIgSW50ZXJhY3Rpb24gKGNzLkhDKTwvc3ViamVjdD4KICAgIDxzdWJqZWN0IHN1YmplY3RTY2hlbWU9IkZpZWxkcyBvZiBTY2llbmNlIGFuZCBUZWNobm9sb2d5IChGT1MpIj5GT1M6IENvbXB1dGVyIGFuZCBpbmZvcm1hdGlvbiBzY2llbmNlczwvc3ViamVjdD4KICA8L3N1YmplY3RzPgogIDxkYXRlcz4KICAgIDxkYXRlIGRhdGVUeXBlPSJTdWJtaXR0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjEiPjIwMjMtMDgtMjZUMDk6Mjg6MjBaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IlVwZGF0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjEiPjIwMjMtMDgtMjlUMDA6MTM6MTFaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IkF2YWlsYWJsZSIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyMy0wODwvZGF0ZT4KICA8L2RhdGVzPgogIDxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iUHJlcHJpbnQiPkFydGljbGU8L3Jlc291cmNlVHlwZT4KICA8dmVyc2lvbj4xPC92ZXJzaW9uPgogIDxyaWdodHNMaXN0PgogICAgPHJpZ2h0cyByaWdodHNVUkk9Imh0dHA6Ly9hcnhpdi5vcmcvbGljZW5zZXMvbm9uZXhjbHVzaXZlLWRpc3RyaWIvMS4wLyI+YXJYaXYub3JnIHBlcnBldHVhbCwgbm9uLWV4Y2x1c2l2ZSBsaWNlbnNlPC9yaWdodHM+CiAgPC9yaWdodHNMaXN0PgogIDxkZXNjcmlwdGlvbnM+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJBYnN0cmFjdCI+VWx0cmFzb3VuZCAoVVMpIGltYWdpbmcgcHJvdmlkZXMgYSBzYWZlIGFuZCBhY2Nlc3NpYmxlIHNvbHV0aW9uIHRvIHByb2NlZHVyYWwgZ3VpZGFuY2UgYW5kIGRpYWdub3N0aWMgaW1hZ2luZy4gVGhlIGVmZmVjdGl2ZSB1c2FnZSBvZiBjb252ZW50aW9uYWwgMkQgVVMgZm9yIGludGVydmVudGlvbmFsIGd1aWRhbmNlIHJlcXVpcmVzIGV4dGVuc2l2ZSBleHBlcmllbmNlIHRvIHByb2plY3QgdGhlIGltYWdlIHBsYW5lIG9udG8gdGhlIHBhdGllbnQsIGFuZCB0aGUgaW50ZXJwcmV0YXRpb24gb2YgaW1hZ2VzIGluIGRpYWdub3N0aWNzIHN1ZmZlcnMgZnJvbSBoaWdoIGludHJhLSBhbmQgaW50ZXItdXNlciB2YXJpYWJpbGl0eS4gM0QgVVMgcmVjb25zdHJ1Y3Rpb24gYWxsb3dzIGZvciBtb3JlIGNvbnNpc3RlbnQgZGlhZ25vc2lzIGFuZCBpbnRlcnByZXRhdGlvbiwgYnV0IGV4aXN0aW5nIHNvbHV0aW9ucyBhcmUgbGltaXRlZCBpbiB0ZXJtcyBvZiBlcXVpcG1lbnQgYW5kIGFwcGxpY2FiaWxpdHkgaW4gcmVhbC10aW1lIG5hdmlnYXRpb24uIFRvIGFkZHJlc3MgdGhlc2UgaXNzdWVzLCB3ZSBwcm9wb3NlIEhvbG9QT0NVUyAtIGEgbWl4ZWQgcmVhbGl0eSBVUyBzeXN0ZW0gKE1SLVVTKSB0aGF0IG92ZXJsYXlzIHJpY2ggVVMgaW5mb3JtYXRpb24gb250byB0aGUgdXNlcidzIHZpc2lvbiBpbiBhIHBvaW50LW9mLWNhcmUgc2V0dGluZy4gSG9sb1BPQ1VTIGV4dGVuZHMgZXhpc3RpbmcgTVItVVMgbWV0aG9kcyBiZXlvbmQgcGxhY2luZyBhIFVTIHBsYW5lIGluIHRoZSB1c2VyJ3MgdmlzaW9uIHRvIGluY2x1ZGUgYSAzRCByZWNvbnN0cnVjdGlvbiBhbmQgcHJvamVjdGlvbiB0aGF0IGNhbiBhaWQgaW4gcHJvY2VkdXJhbCBndWlkYW5jZSB1c2luZyBjb252ZW50aW9uYWwgcHJvYmVzLiBXZSB2YWxpZGF0ZWQgYSB0cmFja2luZyBwaXBlbGluZSB0aGF0IGRlbW9uc3RyYXRlcyBoaWdoZXIgYWNjdXJhY3kgY29tcGFyZWQgdG8gZXhpc3RpbmcgTVItVVMgd29ya3MuIEZ1cnRoZXJtb3JlLCB1c2VyIHN0dWRpZXMgY29uZHVjdGVkIHZpYSBhIHBoYW50b20gdGFzayBzaG93ZWQgc2lnbmlmaWNhbnQgaW1wcm92ZW1lbnRzIGluIG5hdmlnYXRpb24gZHVyYXRpb24gd2hlbiB1c2luZyBvdXIgcHJvcG9zZWQgbWV0aG9kcy48L2Rlc2NyaXB0aW9uPgogICAgPGRlc2NyaXB0aW9uIGRlc2NyaXB0aW9uVHlwZT0iT3RoZXIiPkFjY2VwdGVkIGluICJUaGUgNHRoIEludGVybmF0aW9uYWwgV29ya3Nob3Agb2YgQWR2YW5jZXMgaW4gU2ltcGxpZnlpbmcgTWVkaWNhbCBVbHRyYVNvdW5kIiAoQVNNVVMpIC0gYSB3b3Jrc2hvcCBoZWxkIGluIGNvbmp1bmN0aW9uIHdpdGggTUlDQ0FJIDIwMjM8L2Rlc2NyaXB0aW9uPgogIDwvZGVzY3JpcHRpb25zPgo8L3Jlc291cmNlPg==",
+            "dates": [
+              {
+                "date": "2023-08-26T09:28:20Z",
+                "dateType": "Submitted",
+                "dateInformation": "v1"
+              },
+              {
+                "date": "2023-08-29T00:13:11Z",
+                "dateType": "Updated",
+                "dateInformation": "v1"
+              },
+              {
+                "date": "2023-08",
+                "dateType": "Available",
+                "dateInformation": "v1"
+              },
+              {
+                "date": "2023",
+                "dateType": "Issued"
+              }
+            ],
+            "sizes": [],
+            "state": "findable",
+            "types": {
+              "ris": "GEN",
+              "bibtex": "misc",
+              "citeproc": "article",
+              "schemaOrg": "CreativeWork",
+              "resourceType": "Article",
+              "resourceTypeGeneral": "Preprint"
+            },
+            "prefix": "10.48550",
+            "reason": null,
+            "source": "mds",
+            "suffix": "arxiv.2308.13823",
+            "titles": [
+              {
+                "title": "HoloPOCUS: Portable Mixed-Reality 3D Ultrasound Tracking, Reconstruction and Overlay"
+              }
+            ],
+            "created": "2023-08-29T02:05:31Z",
+            "formats": [],
+            "updated": "2023-08-29T02:05:32Z",
+            "version": "1",
+            "creators": [
+              {
+                "name": "Ng, Kian Wei",
+                "nameType": "Personal",
+                "givenName": "Kian Wei",
+                "familyName": "Ng",
+                "affiliation": [],
+                "nameIdentifiers": []
+              },
+              {
+                "name": "Gao, Yujia",
+                "nameType": "Personal",
+                "givenName": "Yujia",
+                "familyName": "Gao",
+                "affiliation": [],
+                "nameIdentifiers": []
+              },
+              {
+                "name": "Furqan, Shaheryar Mohammed",
+                "nameType": "Personal",
+                "givenName": "Shaheryar Mohammed",
+                "familyName": "Furqan",
+                "affiliation": [],
+                "nameIdentifiers": []
+              },
+              {
+                "name": "Yeo, Zachery",
+                "nameType": "Personal",
+                "givenName": "Zachery",
+                "familyName": "Yeo",
+                "affiliation": [],
+                "nameIdentifiers": []
+              },
+              {
+                "name": "Lau, Joel",
+                "nameType": "Personal",
+                "givenName": "Joel",
+                "familyName": "Lau",
+                "affiliation": [],
+                "nameIdentifiers": []
+              },
+              {
+                "name": "Ngiam, Kee Yuan",
+                "nameType": "Personal",
+                "givenName": "Kee Yuan",
+                "familyName": "Ngiam",
+                "affiliation": [],
+                "nameIdentifiers": []
+              },
+              {
+                "name": "Khoo, Eng Tat",
+                "nameType": "Personal",
+                "givenName": "Eng Tat",
+                "familyName": "Khoo",
+                "affiliation": [],
+                "nameIdentifiers": []
+              }
+            ],
+            "isActive": true,
+            "language": null,
+            "subjects": [
+              {
+                "lang": "en",
+                "subject": "Computer Vision and Pattern Recognition (cs.CV)",
+                "subjectScheme": "arXiv"
+              },
+              {
+                "lang": "en",
+                "subject": "Human-Computer Interaction (cs.HC)",
+                "subjectScheme": "arXiv"
+              },
+              {
+                "subject": "FOS: Computer and information sciences",
+                "subjectScheme": "Fields of Science and Technology (FOS)"
+              },
+              {
+                "subject": "FOS: Computer and information sciences",
+                "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+                "subjectScheme": "Fields of Science and Technology (FOS)"
+              }
+            ],
+            "container": {},
+            "partCount": 0,
+            "published": null,
+            "publisher": {
+              "name": "arXiv"
+            },
+            "viewCount": 0,
+            "contentUrl": null,
+            "registered": "2023-08-29T02:05:32Z",
+            "rightsList": [
+              {
+                "rights": "arXiv.org perpetual, non-exclusive license",
+                "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+              }
+            ],
+            "identifiers": [
+              {
+                "identifier": "2308.13823",
+                "identifierType": "arXiv"
+              }
+            ],
+            "partOfCount": 0,
+            "contributors": [],
+            "descriptions": [
+              {
+                "description": "Ultrasound (US) imaging provides a safe and accessible solution to procedural guidance and diagnostic imaging. The effective usage of conventional 2D US for interventional guidance requires extensive experience to project the image plane onto the patient, and the interpretation of images in diagnostics suffers from high intra- and inter-user variability. 3D US reconstruction allows for more consistent diagnosis and interpretation, but existing solutions are limited in terms of equipment and applicability in real-time navigation. To address these issues, we propose HoloPOCUS - a mixed reality US system (MR-US) that overlays rich US information onto the user's vision in a point-of-care setting. HoloPOCUS extends existing MR-US methods beyond placing a US plane in the user's vision to include a 3D reconstruction and projection that can aid in procedural guidance using conventional probes. We validated a tracking pipeline that demonstrates higher accuracy compared to existing MR-US works. Furthermore, user studies conducted via a phantom task showed significant improvements in navigation duration when using our proposed methods.",
+                "descriptionType": "Abstract"
+              },
+              {
+                "description": "Accepted in \"The 4th International Workshop of Advances in Simplifying Medical UltraSound\" (ASMUS) - a workshop held in conjunction with MICCAI 2023",
+                "descriptionType": "Other"
+              }
+            ],
+            "geoLocations": [],
+            "relatedItems": [],
+            "versionCount": 0,
+            "citationCount": 0,
+            "downloadCount": 0,
+            "schemaVersion": "http://datacite.org/schema/kernel-4",
+            "viewsOverTime": [],
+            "referenceCount": 0,
+            "versionOfCount": 0,
+            "metadataVersion": 0,
+            "publicationYear": 2023,
+            "citationsOverTime": [],
+            "downloadsOverTime": [],
+            "fundingReferences": [],
+            "relatedIdentifiers": [],
+            "alternateIdentifiers": [
+              {
+                "alternateIdentifier": "2308.13823",
+                "alternateIdentifierType": "arXiv"
+              }
+            ]
+          },
+          "relationships": {
+            "parts": {
+              "data": []
+            },
+            "client": {
+              "data": {
+                "id": "arxiv.content",
+                "type": "clients"
+              }
+            },
+            "partOf": {
+              "data": []
+            },
+            "provider": {
+              "data": {
+                "id": "arxiv",
+                "type": "providers"
+              }
+            },
+            "versions": {
+              "data": []
+            },
+            "citations": {
+              "data": []
+            },
+            "versionOf": {
+              "data": []
+            },
+            "references": {
+              "data": []
+            }
+          }
+        }
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:21:16.776329",
+      "processing_time_ms": 2989
+    },
+    "openalex": {
+      "data": {
+        "id": "https://openalex.org/W4386270096",
+        "doi": "https://doi.org/10.48550/arxiv.2308.13823",
+        "title": "HoloPOCUS: Portable Mixed-Reality 3D Ultrasound Tracking, Reconstruction and Overlay",
+        "open_access": {
+          "is_oa": true,
+          "oa_url": "https://arxiv.org/abs/2308.13823",
+          "oa_status": "green",
+          "any_repository_has_fulltext": true
+        },
+        "cited_by_count": 0,
+        "publication_year": 2023
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:21:15.575105",
+      "processing_time_ms": 1797
+    },
+    "unpaywall": {
+      "error": "No DOI provided",
+      "success": false,
+      "timestamp": "2025-07-22T14:21:13.783969",
+      "processing_time_ms": 3
+    },
+    "europe_pmc": {
+      "error": "No results found",
+      "success": false,
+      "timestamp": "2025-07-22T14:21:15.051143",
+      "processing_time_ms": 1272
+    },
+    "semantic_scholar": {
+      "data": {
+        "year": 2023,
+        "title": "HoloPOCUS: Portable Mixed-Reality 3D Ultrasound Tracking, Reconstruction and Overlay",
+        "authors": [
+          {
+            "name": "Kian Wei Ng",
+            "authorId": "36845315"
+          },
+          {
+            "name": "Yujia Gao",
+            "authorId": "2296728171"
+          },
+          {
+            "name": "Shaheryar Mohammed Furqan",
+            "authorId": "2363057634"
+          },
+          {
+            "name": "Z. Yeo",
+            "authorId": "46363705"
+          },
+          {
+            "name": "Joel Lau",
+            "authorId": "2061669012"
+          },
+          {
+            "name": "K. Ngiam",
+            "authorId": "7452993"
+          },
+          {
+            "name": "E. Khoo",
+            "authorId": "31971463"
+          }
+        ],
+        "journal": {
+          "name": "ArXiv",
+          "volume": "abs/2308.13823"
+        },
+        "paperId": "839652a2430cb2098767a2a66b86846d49333a8b",
+        "abstract": "Ultrasound (US) imaging provides a safe and accessible solution to procedural guidance and diagnostic imaging. The effective usage of conventional 2D US for interventional guidance requires extensive experience to project the image plane onto the patient, and the interpretation of images in diagnostics suffers from high intra- and inter-user variability. 3D US reconstruction allows for more consistent diagnosis and interpretation, but existing solutions are limited in terms of equipment and applicability in real-time navigation. To address these issues, we propose HoloPOCUS - a mixed reality US system (MR-US) that overlays rich US information onto the user's vision in a point-of-care setting. HoloPOCUS extends existing MR-US methods beyond placing a US plane in the user's vision to include a 3D reconstruction and projection that can aid in procedural guidance using conventional probes. We validated a tracking pipeline that demonstrates higher accuracy compared to existing MR-US works. Furthermore, user studies conducted via a phantom task showed significant improvements in navigation duration when using our proposed methods.",
+        "externalIds": {
+          "DOI": "10.48550/arXiv.2308.13823",
+          "DBLP": "conf/miccai/NgGFYLNK23",
+          "ArXiv": "2308.13823",
+          "CorpusId": 261242676
+        },
+        "isOpenAccess": true,
+        "citationCount": 0,
+        "openAccessPdf": {
+          "url": "https://arxiv.org/pdf/2308.13823",
+          "status": "CLOSED",
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2308.13823, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:21:14.165016",
+      "processing_time_ms": 389
+    }
+  },
+  "questions_json": {
+    "reason": "custom_topics_not_enabled",
+    "success": false,
+    "extraction_method": "disabled",
+    "processing_timestamp": "2025-07-22T14:23:01.404782"
+  },
+  "apis_clean_json": {
+    "timestamp": "2025-07-22T14:22:20.858893",
+    "cost_tracking": {
+      "model": "deepseek-chat",
+      "call_type": "smart_consensus",
+      "timestamp": "2025-07-22T14:22:20.858687",
+      "input_cost": 0.002469,
+      "total_cost": 0.003778,
+      "output_cost": 0.001309,
+      "input_tokens": 9143,
+      "total_tokens": 10333,
+      "output_tokens": 1190,
+      "parsing_error": null,
+      "parsing_successful": true,
+      "processing_time_ms": 59374
+    },
+    "consensus_result": {
+      "DOI": "10.1007/978-3-031-44521-7_11",
+      "PMID": null,
+      "Year": 2023,
+      "Issue": null,
+      "PMCID": null,
+      "Pages": "111-120",
+      "Title": "HoloPOCUS: Portable Mixed-Reality 3D Ultrasound Tracking, Reconstruction and Overlay",
+      "PDFUrl": "https://arxiv.org/pdf/2308.13823",
+      "Volume": null,
+      "Authors": [
+        "Ng, Kian Wei",
+        "Gao, Yujia",
+        "Furqan, Shaheryar Mohammed",
+        "Yeo, Zachery",
+        "Lau, Joel",
+        "Ngiam, Kee Yuan",
+        "Khoo, Eng Tat"
+      ],
+      "Journal": "Lecture Notes in Computer Science: Simplifying Medical Ultrasound",
+      "Abstract": "Ultrasound (US) imaging provides a safe and accessible solution to procedural guidance and diagnostic imaging. The effective usage of conventional 2D US for interventional guidance requires extensive experience to project the image plane onto the patient, and the interpretation of images in diagnostics suffers from high intra- and inter-user variability. 3D US reconstruction allows for more consistent diagnosis and interpretation, but existing solutions are limited in terms of equipment and applicability in real-time navigation. To address these issues, we propose HoloPOCUS - a mixed reality US system (MR-US) that overlays rich US information onto the user's vision in a point-of-care setting. HoloPOCUS extends existing MR-US methods beyond placing a US plane in the user's vision to include a 3D reconstruction and projection that can aid in procedural guidance using conventional probes. We validated a tracking pipeline that demonstrates higher accuracy compared to existing MR-US works. Furthermore, user studies conducted via a phantom task showed significant improvements in navigation duration when using our proposed methods.",
+      "Keywords": [
+        "mixed reality",
+        "3D ultrasound",
+        "interventional guidance",
+        "tracking",
+        "Computer Vision and Pattern Recognition",
+        "Human-Computer Interaction"
+      ],
+      "Citations": 0,
+      "Publisher": "Springer Nature Switzerland",
+      "OpenAccess": true,
+      "confidence_factors": {
+        "source": "Vision-Foundation + API Enhancement",
+        "reasoning": "All API sources (Semantic Scholar, DataCite, Crossref) consistently validated the vision data. Crossref provided the most complete metadata including journal details and pages. Keywords were enriched from DataCite's subject fields. Open access status and PDF URL were confirmed by multiple sources.",
+        "field_sources": {
+          "doi": "crossref|semantic_scholar|datacite",
+          "year": "crossref|semantic_scholar|datacite",
+          "pages": "crossref",
+          "title": "vision|semantic_scholar|datacite|crossref",
+          "pdfurl": "semantic_scholar",
+          "authors": "vision|semantic_scholar|datacite|crossref",
+          "journal": "crossref+semantic_scholar",
+          "abstract": "vision|semantic_scholar|datacite",
+          "keywords": "vision+datacite",
+          "citations": "semantic_scholar|openalex",
+          "publisher": "crossref|datacite",
+          "openaccess": "semantic_scholar|openalex"
+        },
+        "enhancement_level": "SIGNIFICANT",
+        "validation_status": "HIGH"
+      },
+      "api_success_summary": {
+        "insights": "Semantic Scholar, DataCite, Crossref, and OpenAlex provided coherent data that enhanced vision-extracted metadata. Most failures were due to missing DOI (Unpaywall, DOAJ) or no results found (arXiv, Europe PMC, PubMed). CORE API failed with an internal error.",
+        "total_apis": 11,
+        "failed_apis": [
+          "core",
+          "unpaywall",
+          "doaj",
+          "arxiv",
+          "europe_pmc",
+          "pubmed"
+        ],
+        "success_rate": 0.45,
+        "coherent_apis": 4,
+        "coherence_rate": 0.8,
+        "successful_apis": 5
+      }
+    },
+    "processing_time_ms": 67087
+  },
+  "llm_topics_json": {
+    "success": true,
+    "prompt_sent": "You are a scientific research assistant extracting data for academic comparison tables with statistical rigor.\n\nCRITICAL INSTRUCTIONS FOR ACADEMIC COMPARISON:\n\n- SYSTEMATICALLY scan ALL content: text, tables, figures, charts, appendices\n- PRIORITIZE quantitative data while preserving qualitative context\n- When conflicts exist in the paper, prioritize MOST RECENT/AUTHORITATIVE source\n- Extract ALL relevant details mentioned - DON'T truncate important information\n- Include statistical tests results (Z-scores, t-values, chi-square, etc.)\n- Extract accuracy rates, completion rates, success rates with specific numbers\n- Capture comparative data (e.g., \"46% vs 27%\", \"Group A: 64.5%, Group B: 68.2%\")\n- Use proper numeric format: \"p = 0.007\" not \"p = .007\", \"81\" not \"eighty-one\"\n\nCOMPREHENSIVE CAPTURE REQUIREMENTS:\n\n- List ALL hardware components: cameras, sensors, headsets, controllers, phones, tablets, webcams, probes\n- Include ALL software details: platforms, SDKs, libraries, export formats (CSV, JSON), feedback systems\n- Capture ALL measurement instruments: scales, questionnaires, assessment tools (SUS, NASA-TLX, FES-I, MoCA, IKDC, VAS, ABC scale, WHODAS 2.0, etc.)\n- Note ALL technical specifications: resolutions, frame rates, tracking capabilities, joint counts\n- Include ALL study phases: pilot tests, technical validation, user studies, expert evaluations\n- Capture ALL procedural details: training time, calibration steps, data export processes, real-time feedback\n\nCONFLICT RESOLUTION:\n\n- If conflicting information exists, prioritize methods/results over abstract\n- When uncertain, include both: \"X in abstract, Y in methods section\"\n\nExtract the following 7 scientific topics:\n\n1. *study_design*: Extract the PRIMARY study type/design using the most specific and authoritative terminology from the paper's methods section. Recognize equivalent terms: \"RCT\" = \"Randomized controlled trial\", \"Pilot study\" = \"Feasibility pilot study\", \"Cross-sectional\" = \"Observational cross-sectional\", \"User study\" = \"User evaluation study\". When multiple study type descriptions exist, prioritize the most comprehensive version from methods over abstract. Include specific qualifiers when mentioned (e.g., \"multicenter\", \"double-blind\", \"waitlist-controlled\") as these add valuable detail. Format as brief phrase describing core study methodology, avoiding generic terms like \"study\" or \"research\" alone.\n\n2. *methodology*: ONE comprehensive sentence covering: technology + application + key technical details. Include: ALL device models, software platforms, measurement tools, statistical analyses. Capture ALL hardware components mentioned (cameras, sensors, controllers, probes, etc.). Include ALL software features (real-time feedback, data export, tracking capabilities). Mention ALL technical specifications (joint tracking numbers, frame rates, resolutions). Example: \"Microsoft HoloLens 2 with HoloAnatomy platform for 3D anatomical procedural visualization using real-time motion tracking of 25 joints with CSV data export and real-time visual feedback\".\n\n3. *sample_size*: Format: \"X participants/patients\" (use paper's exact terminology). Include TOTAL numbers if multiple groups exist. Include ALL test phases: technical tests, pilot studies, user evaluations. Example: \"25 total: 23 biomedical students + 2 clinical experts; 50 technical validation readings\".\n\n4. *population*: ALL demographic details and characteristics not captured in sample_size. Include age, profession, condition, experience, setting details. Add specific numbers when available. Include recruitment sources and inclusion/exclusion criteria.\n\n5. *primary_outcome*: Include ALL measurement tools, scales, timing, specific metrics, usability criteria (ease of use, realism, anatomical accuracy). List ALL assessment instruments used and functional scales (SUS, NASA-TLX, FES-I, MoCA, IKDC, VAS, ABC scale, WHODAS 2.0, etc.), and evaluation dimensions beyond the primary measures.. Include ALL comparison conditions and timepoints. Example: \"Patient understanding via 5-point Likert scale assessed pre/post intervention, plus SUS usability scores and NASA-TLX workload assessment\".\n\n6. *key_findings*: PRIORITIZE statistical results with practical implications. Format: \"Finding 1: [statistical data + meaning]. Finding 2: [data + context]\". Include ALL significant findings, p-values, effect sizes, accuracy rates, comparative data, accuracy measurements (sub-mm, degrees), specific understanding domains (surgical risks, operative steps, recovery), and detailed performance metrics beyond statistical significance. Present ALL questionnaire results, prototype performance, qualitative benefits. Include ALL cost factors, training requirements, implementation details. Capture ALL comparison groups and their specific results. Be comprehensive - capture complete findings picture. Include ALL technical specifications mentioned: accuracy measurements (sub-mm, degrees).\n\n7. *limitations*: Extract ALL limitations from limitation/discussion sections. Include sample size issues, technical equipment requirements, methodological, practical constraints. Mention ALL equipment needs, calibration requirements, manufacturing variability. Include ALL generalizability issues, validity concerns, implementation barriers. Capture training requirements, cost constraints, specialized equipment needs. Note real-world applicability issues and clinical implementation challenges. Don't summarize - capture complete limitation landscape.\n\nReturn as valid JSON with this EXACT structure:\n\n{\n  \"study_design\": \"string\",\n  \"methodology\": \"string\",\n  \"sample_size\": \"string\",\n  \"population\": \"string\",\n  \"primary_outcome\": \"string\",\n  \"key_findings\": \"string\",\n  \"limitations\": \"string\"\n}",
+    "cost_tracking": {
+      "model": "gpt-4o",
+      "call_type": "scientific_topics_multimodal",
+      "timestamp": "2025-07-22T14:23:00.141152",
+      "input_cost": 0.033308,
+      "total_cost": 0.037028,
+      "output_cost": 0.00372,
+      "input_tokens": 13323,
+      "total_tokens": 13695,
+      "output_tokens": 372
+    },
+    "input_details": {
+      "dpi": 150,
+      "max_tokens": 6000,
+      "model_used": "gpt-4o",
+      "temperature": 0.1,
+      "strategy_used": "vision_all_pages (≤40)",
+      "pdf_total_pages": 11,
+      "image_resolution": "high",
+      "processing_time_ms": 38334,
+      "pdf_pages_processed": 11
+    },
+    "pages_processed": 11,
+    "extracted_topics": {
+      "population": "Novices with no medical training and experts with at least 5 years of postgraduate experience in ultrasound guidance; recruited for a simulated biopsy task.",
+      "limitations": "Limited sample size; potential inaccuracies from optical system; need for specialized equipment like HoloLens 2 and ArUco markers; generalizability to real-world clinical settings not fully established; cost and training requirements for implementation.",
+      "methodology": "Microsoft HoloLens 2 with stereo ArUco markers for 3D ultrasound reconstruction using real-time tracking and projection with a linear probe (Mindray DC-80A, L14-5WE) and SonoStarMed 128E wireless probe, processed on i9-12900H CPU laptop with Unity, gRPC, and MRTK, streaming data to iPhone 12 Mini.",
+      "sample_size": "24 total: 12 novices + 12 experts",
+      "key_findings": "Finding 1: 3D MR-US method significantly reduced task time for novices (37.1 ± 12.5 s, p = 0.0249) and experts (35.0 ± 8.8 s, p = 0.0022) compared to conventional US. Finding 2: 2D overlay method showed no significant time reduction for novices (51.6 ± 19.7 s, p = 0.1838) and experts (58.1 ± 25.1 s, p = 0.1253).",
+      "study_design": "User study with phantom biopsy task",
+      "primary_outcome": "Time taken to complete phantom biopsy task using 2D and 3D MR-US methods compared to conventional US, with statistical analysis using paired two-tailed t-test."
+    },
+    "extraction_method": "multimodal_vision",
+    "extraction_quality": {
+      "topics_missing": 0,
+      "topics_extracted": 7
+    },
+    "processing_time_ms": 38334,
+    "raw_openai_response": {
+      "content": "```json\n{\n  \"study_design\": \"User study with phantom biopsy task\",\n  \"methodology\": \"Microsoft HoloLens 2 with stereo ArUco markers for 3D ultrasound reconstruction using real-time tracking and projection with a linear probe (Mindray DC-80A, L14-5WE) and SonoStarMed 128E wireless probe, processed on i9-12900H CPU laptop with Unity, gRPC, and MRTK, streaming data to iPhone 12 Mini.\",\n  \"sample_size\": \"24 total: 12 novices + 12 experts\",\n  \"population\": \"Novices with no medical training and experts with at least 5 years of postgraduate experience in ultrasound guidance; recruited for a simulated biopsy task.\",\n  \"primary_outcome\": \"Time taken to complete phantom biopsy task using 2D and 3D MR-US methods compared to conventional US, with statistical analysis using paired two-tailed t-test.\",\n  \"key_findings\": \"Finding 1: 3D MR-US method significantly reduced task time for novices (37.1 ± 12.5 s, p = 0.0249) and experts (35.0 ± 8.8 s, p = 0.0022) compared to conventional US. Finding 2: 2D overlay method showed no significant time reduction for novices (51.6 ± 19.7 s, p = 0.1838) and experts (58.1 ± 25.1 s, p = 0.1253).\",\n  \"limitations\": \"Limited sample size; potential inaccuracies from optical system; need for specialized equipment like HoloLens 2 and ArUco markers; generalizability to real-world clinical settings not fully established; cost and training requirements for implementation.\"\n}\n```",
+      "parsing_error": null,
+      "response_length": 1413,
+      "parsing_successful": true
+    },
+    "processing_timestamp": "2025-07-22T14:23:00.141004"
+  },
+  "processing_metadata": {
+    "filename": "10) HoloPOCUS_ Portable Mixed-Reality 3D Ultrasound Tracking, Reconstruction and Overlay.pdf",
+    "article_id": "unknown",
+    "total_phases": 5,
+    "aggregated_at": "2025-07-22T14:23:01.757820",
+    "phases_completed": {
+      "topics": true,
+      "vision": true,
+      "apis_raw": true,
+      "questions": false,
+      "apis_clean": true
+    },
+    "transparency_level": "complete"
+  }
+}

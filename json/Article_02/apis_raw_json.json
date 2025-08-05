@@ -1,0 +1,637 @@
+{
+  "core": {
+    "error": "No results found in CORE",
+    "success": false,
+    "timestamp": "2025-07-22T14:53:27.385288",
+    "processing_time_ms": 14828
+  },
+  "doaj": {
+    "error": "No DOI available for DOAJ search",
+    "success": false,
+    "timestamp": "2025-07-22T14:53:13.899403",
+    "processing_time_ms": 1337
+  },
+  "arxiv": {
+    "error": "No results found",
+    "success": false,
+    "timestamp": "2025-07-22T14:53:14.083990",
+    "processing_time_ms": 1526
+  },
+  "orcid": {
+    "data": {
+      "person": {
+        "name": {
+          "path": "0000-0001-9475-4994",
+          "source": null,
+          "visibility": "public",
+          "credit-name": null,
+          "family-name": {
+            "value": "Zhang"
+          },
+          "given-names": {
+            "value": "Nan-nan"
+          },
+          "created-date": {
+            "value": 1541335278915
+          },
+          "last-modified-date": {
+            "value": 1541335279142
+          }
+        },
+        "path": "/0000-0001-9475-4994/person",
+        "emails": {
+          "path": "/0000-0001-9475-4994/email",
+          "email": [],
+          "last-modified-date": null
+        },
+        "keywords": {
+          "path": "/0000-0001-9475-4994/keywords",
+          "keyword": [],
+          "last-modified-date": null
+        },
+        "addresses": {
+          "path": "/0000-0001-9475-4994/address",
+          "address": [],
+          "last-modified-date": null
+        },
+        "biography": null,
+        "other-names": {
+          "path": "/0000-0001-9475-4994/other-names",
+          "other-name": [],
+          "last-modified-date": null
+        },
+        "researcher-urls": {
+          "path": "/0000-0001-9475-4994/researcher-urls",
+          "researcher-url": [],
+          "last-modified-date": null
+        },
+        "last-modified-date": null,
+        "external-identifiers": {
+          "path": "/0000-0001-9475-4994/external-identifiers",
+          "last-modified-date": null,
+          "external-identifier": []
+        }
+      },
+      "orcid_id": "0000-0001-9475-4994"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:53:13.996646",
+    "processing_time_ms": 1434
+  },
+  "pubmed": {
+    "error": "No results found",
+    "success": false,
+    "timestamp": "2025-07-22T14:53:18.777243",
+    "processing_time_ms": 6229
+  },
+  "crossref": {
+    "data": {
+      "status": "ok",
+      "message": {
+        "DOI": "10.1109/thms.2024.3432735",
+        "URL": "https://doi.org/10.1109/thms.2024.3432735",
+        "ISSN": [
+          "2168-2291",
+          "2168-2305"
+        ],
+        "link": [
+          {
+            "URL": "http://xplorestaging.ieee.org/ielx8/6221037/10684406/10622100.pdf?arnumber=10622100",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "page": "589-598",
+        "type": "journal-article",
+        "issue": "5",
+        "score": 1,
+        "title": [
+          "ARMedicalSketch: Exploring 3D Sketching for Medical Image Using True 2D-3D Interlinked Visualization and Interaction"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-3476-2201",
+            "given": "Nan",
+            "family": "Zhang",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Department of Biomedical Engineering, School of Medicine, Tsinghua University, Beijing, China"
+              }
+            ],
+            "authenticated-orcid": false
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-9242-2408",
+            "given": "Tianqi",
+            "family": "Huang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "School of Biomedical Engineering, Shanghai Jiao Tong University, Shanghai, China"
+              }
+            ],
+            "authenticated-orcid": false
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-3847-9347",
+            "given": "Hongen",
+            "family": "Liao",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Biomedical Engineering, School of Medicine, Tsinghua University, Beijing, China"
+              }
+            ],
+            "authenticated-orcid": false
+          }
+        ],
+        "funder": [
+          {
+            "id": [
+              {
+                "id": "10.13039/501100001809",
+                "id-type": "DOI",
+                "asserted-by": "publisher"
+              }
+            ],
+            "DOI": "10.13039/501100001809",
+            "name": "National Natural Science Foundation of China",
+            "award": [
+              "U22A2051",
+              "82027807",
+              "62101305"
+            ],
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "name": "National Key Research and Development Program of China",
+            "award": [
+              "2022YFC2405200"
+            ]
+          },
+          {
+            "name": "Intelligent Healthcare Tsinghua University",
+            "award": [
+              "2022ZLB001"
+            ]
+          },
+          {
+            "name": "Tsinghua-Foshan Innovation Special Fund",
+            "award": [
+              "2021THFS0104"
+            ]
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              10
+            ]
+          ]
+        },
+        "member": "263",
+        "prefix": "10.1109",
+        "source": "Crossref",
+        "volume": "54",
+        "created": {
+          "date-time": "2024-08-02T17:27:22Z",
+          "timestamp": 1722619642000,
+          "date-parts": [
+            [
+              2024,
+              8,
+              2
+            ]
+          ]
+        },
+        "indexed": {
+          "version": "3.37.3",
+          "date-time": "2025-07-05T04:48:26Z",
+          "timestamp": 1751690906472,
+          "date-parts": [
+            [
+              2025,
+              7,
+              5
+            ]
+          ]
+        },
+        "license": [
+          {
+            "URL": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html",
+            "start": {
+              "date-time": "2024-10-01T00:00:00Z",
+              "timestamp": 1727740800000,
+              "date-parts": [
+                [
+                  2024,
+                  10,
+                  1
+                ]
+              ]
+            },
+            "delay-in-days": 0,
+            "content-version": "vor"
+          },
+          {
+            "URL": "https://doi.org/10.15223/policy-029",
+            "start": {
+              "date-time": "2024-10-01T00:00:00Z",
+              "timestamp": 1727740800000,
+              "date-parts": [
+                [
+                  2024,
+                  10,
+                  1
+                ]
+              ]
+            },
+            "delay-in-days": 0,
+            "content-version": "stm-asf"
+          },
+          {
+            "URL": "https://doi.org/10.15223/policy-037",
+            "start": {
+              "date-time": "2024-10-01T00:00:00Z",
+              "timestamp": 1727740800000,
+              "date-parts": [
+                [
+                  2024,
+                  10,
+                  1
+                ]
+              ]
+            },
+            "delay-in-days": 0,
+            "content-version": "stm-asf"
+          }
+        ],
+        "subject": [],
+        "relation": {},
+        "resource": {
+          "primary": {
+            "URL": "https://ieeexplore.ieee.org/document/10622100/"
+          }
+        },
+        "subtitle": [],
+        "deposited": {
+          "date-time": "2024-11-05T18:34:39Z",
+          "timestamp": 1730831679000,
+          "date-parts": [
+            [
+              2024,
+              11,
+              5
+            ]
+          ]
+        },
+        "issn-type": [
+          {
+            "type": "print",
+            "value": "2168-2291"
+          },
+          {
+            "type": "electronic",
+            "value": "2168-2305"
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2024,
+              10
+            ]
+          ]
+        },
+        "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+        "reference": [
+          {
+            "DOI": "10.1145/3290607.3312847",
+            "key": "ref1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1109/TLT.2022.3227100",
+            "key": "ref2",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1145/210079.210087",
+            "key": "ref3",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1145/3313831.3376628",
+            "key": "ref4",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1001/archsurg.139.2.170",
+            "key": "ref5",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1111/cgf.13710",
+            "key": "ref6",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1145/3359996.3364254",
+            "key": "ref7",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1201/9781420036879",
+            "key": "ref8",
+            "year": "2000",
+            "author": "Spitzer",
+            "volume-title": "Digital Avionics Handbook",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "key": "ref9",
+            "year": "2016",
+            "issue": "6",
+            "author": "Gao",
+            "volume": "28",
+            "first-page": "896",
+            "article-title": "A review on development of head mounted display",
+            "journal-title": "J. Comput.-Aided Des. Comput. Graph."
+          },
+          {
+            "DOI": "10.1109/JPROC.2017.2648796",
+            "key": "ref10",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1002/sdtp.14444",
+            "key": "ref11",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1109/TBME.2010.2040278",
+            "key": "ref12",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1364/JOSAA.452915",
+            "key": "ref13",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1145/3072959.3073624",
+            "key": "ref14",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1364/OE.23.006533",
+            "key": "ref15",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1364/AO.33.007453",
+            "key": "ref16",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1109/2.910892",
+            "key": "ref17",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1109/TVCG.2007.1060",
+            "key": "ref18",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1145/1449715.1449740",
+            "key": "ref19",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1145/1185657.1185770",
+            "key": "ref20",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1145/364338.364370",
+            "key": "ref21",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1145/3173574.3173759",
+            "key": "ref22",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1145/3411764.3445302",
+            "key": "ref23",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1145/985692.985767",
+            "key": "ref24",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1145/3411764.3445158",
+            "key": "ref25",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "key": "ref26",
+            "author": "Saalfeld",
+            "first-page": "123",
+            "volume-title": "Proc. VCBMMedViz",
+            "article-title": "Semi-immersive 3D sketching of vascular structures for medical education"
+          },
+          {
+            "key": "ref27",
+            "author": "Saalfeld",
+            "first-page": "5",
+            "volume-title": "Proc. Eurographics (Dirk Bartz Prize)",
+            "article-title": "Sketching and annotating vascular structures to support medical teaching, treatment planning and patient education"
+          },
+          {
+            "DOI": "10.1111/cgf.12193",
+            "key": "ref28",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1111/j.1467-8659.2010.01803.x",
+            "key": "ref29",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1145/3009939.3009956",
+            "key": "ref30",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.5948/upo9781614440260.011",
+            "key": "ref31",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1016/S0166-4115(08)62386-9",
+            "key": "ref32",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1007/s11605-019-04214-z",
+            "key": "ref33",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.3390/app11167323",
+            "key": "ref34",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1007/s00464-009-0740-8",
+            "key": "ref35",
+            "doi-asserted-by": "publisher"
+          }
+        ],
+        "short-title": [],
+        "journal-issue": {
+          "issue": "5"
+        },
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "original-title": [],
+        "container-title": [
+          "IEEE Transactions on Human-Machine Systems"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2024,
+              10
+            ]
+          ]
+        },
+        "reference-count": 35,
+        "references-count": 35,
+        "short-container-title": [
+          "IEEE Trans. Human-Mach. Syst."
+        ],
+        "is-referenced-by-count": 1
+      },
+      "message-type": "work",
+      "message-version": "1.0.0"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:53:13.878834",
+    "processing_time_ms": 1332
+  },
+  "datacite": {
+    "error": "No matching articles found",
+    "success": false,
+    "timestamp": "2025-07-22T14:53:21.076509",
+    "processing_time_ms": 8518
+  },
+  "openalex": {
+    "data": {
+      "id": "https://openalex.org/W4401247280",
+      "doi": "https://doi.org/10.1109/thms.2024.3432735",
+      "title": "ARMedicalSketch: Exploring 3D Sketching for Medical Image Using True 2D-3D Interlinked Visualization and Interaction",
+      "open_access": {
+        "is_oa": false,
+        "oa_url": null,
+        "oa_status": "closed",
+        "any_repository_has_fulltext": false
+      },
+      "cited_by_count": 0,
+      "publication_year": 2024
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:53:13.752971",
+    "processing_time_ms": 1202
+  },
+  "unpaywall": {
+    "data": {
+      "doi": "10.1109/thms.2024.3432735",
+      "year": 2024,
+      "genre": "journal-article",
+      "is_oa": false,
+      "title": "ARMedicalSketch: Exploring 3D Sketching for Medical Image Using True 2D-3D Interlinked Visualization and Interaction",
+      "doi_url": "https://doi.org/10.1109/thms.2024.3432735",
+      "oa_status": "closed",
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "is_paratext": false,
+      "journal_name": "IEEE Transactions on Human-Machine Systems",
+      "journal_issns": "2168-2291,2168-2305",
+      "journal_issn_l": "2168-2291",
+      "published_date": "2024-08-02",
+      "z_authors_summary": {
+        "count": 3,
+        "first_author": ""
+      },
+      "has_repository_copy": false,
+      "oa_locations_summary": {
+        "count": 0,
+        "has_repository": false
+      },
+      "best_oa_location_summary": null,
+      "first_oa_location_summary": null
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:53:14.020442",
+    "processing_time_ms": 1465
+  },
+  "europe_pmc": {
+    "error": "No results found",
+    "success": false,
+    "timestamp": "2025-07-22T14:53:14.286742",
+    "processing_time_ms": 1734
+  },
+  "semantic_scholar": {
+    "data": {
+      "year": 2024,
+      "title": "ARMedicalSketch: Exploring 3D Sketching for Medical Image Using True 2D-3D Interlinked Visualization and Interaction",
+      "authors": [
+        {
+          "name": "Nan Zhang",
+          "authorId": "2153284083"
+        },
+        {
+          "name": "Tianqi Huang",
+          "authorId": "144200237"
+        },
+        {
+          "name": "Hongen Liao",
+          "authorId": "2254309703"
+        }
+      ],
+      "journal": {
+        "name": "IEEE Transactions on Human-Machine Systems",
+        "pages": "589-598",
+        "volume": "54"
+      },
+      "paperId": "05c87560ba379b350fa9de8ab4392275c0dfab23",
+      "abstract": "In traditional clinical practice, doctors often have to deal with 3D information based on 2D-displayed medical images. There is a considerable mismatch between the 2D and 3D dimensions in image interaction during clinical diagnosis, making image manipulation challenging and time-consuming. In this study, we explored 3D sketching for medical images using true 2D-3D interlinked visualization and interaction, presenting a novel AR environment named ARMedicalSketch. It supports image display enhancement preprocessing and 3D interaction tasks for original 3D medical images. Our interaction interface, based on 3D autostereoscopic display technology, provides both floating 3D display and 2D tablet display while enabling glasses-free visualization. We presented a method of 2D-3D interlinked visualization and interaction, employing synchronized projection visualization and a virtual synchronized interactive plane to establish an integrated relationship between 2D and 3D displays. Additionally, we utilized gesture sensors and a 2D touch tablet to capture the user's hand information for convenient interaction. We constructed the prototype and conducted a user study involving 23 students and 2 clinical experts. The controlled study compared our proposed system with a 2D display prototype, showing enhanced efficiency in interacting with medical images while maintaining 2D interaction accuracy, particularly in tasks involving strong 3D spatial correlation. In the future, we aim to further enhance the interaction precision and application scenarios of ARMedicalSketch.",
+      "externalIds": {
+        "DOI": "10.1109/THMS.2024.3432735",
+        "DBLP": "journals/thms/ZhangHL24",
+        "CorpusId": 271681932
+      },
+      "isOpenAccess": false,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/THMS.2024.3432735?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/THMS.2024.3432735, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      }
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:53:13.671126",
+    "processing_time_ms": 1122
+  }
+}

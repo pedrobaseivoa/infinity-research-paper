@@ -1,0 +1,86 @@
+{
+  "timestamp": "2025-07-22T14:45:00.062273",
+  "cost_tracking": {
+    "model": "deepseek-chat",
+    "call_type": "smart_consensus",
+    "timestamp": "2025-07-22T14:45:00.061403",
+    "input_cost": 0.002,
+    "total_cost": 0.003088,
+    "output_cost": 0.001088,
+    "input_tokens": 7408,
+    "total_tokens": 8397,
+    "output_tokens": 989,
+    "parsing_error": null,
+    "parsing_successful": true,
+    "processing_time_ms": 53037
+  },
+  "consensus_result": {
+    "DOI": "10.1002/cpe.5526",
+    "PMID": null,
+    "Year": 2020,
+    "Issue": "18",
+    "PMCID": null,
+    "Pages": "e5526",
+    "Title": "Augmented reality for botulinum toxin injection",
+    "PDFUrl": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/cpe.5526",
+    "Volume": "32",
+    "Authors": [
+      "Kim, HyoJoon",
+      "Jeong, SangHui",
+      "Seo, JiHyeon",
+      "Park, InSeok",
+      "Ko, Hoon",
+      "Moon, Seong Yong"
+    ],
+    "Journal": "Concurrency and Computation: Practice and Experience",
+    "Abstract": "Augmented-reality (AR) devices allow physicians to incorporate data visualization into diagnostic and treatment procedures to improve work efficiency and safety and reduce cost. They are also used to enhance surgical training. In this study, we implemented an AR application for Botox injections using a face recognition algorithm based on deep learning, and we evaluated the recognition accuracy of this application using 27 participants. The accuracy was around 3 mm for all parts of the facial region. The method of increasing surgical efficiency with AR is accurate enough to be used for surgery and provides great potential for further development.",
+    "Keywords": [
+      "augmented reality",
+      "botulinum toxins",
+      "clinical education",
+      "face recognition",
+      "injection technique"
+    ],
+    "Citations": 8,
+    "Publisher": "Wiley",
+    "OpenAccess": false,
+    "confidence_factors": {
+      "source": "Vision-Foundation + API Enhancement",
+      "reasoning": "Used vision as foundation with significant enhancements from multiple coherent API sources. Crossref provided most reliable metadata including issue number, publication dates, and PDF URL. OpenAlex provided updated citation count. All API data was validated against vision foundation.",
+      "field_sources": {
+        "doi": "crossref|openalex|semantic_scholar|unpaywall",
+        "year": "crossref|unpaywall+vision",
+        "issue": "crossref",
+        "pages": "vision",
+        "title": "vision",
+        "pdfurl": "crossref",
+        "volume": "crossref|semantic_scholar|vision",
+        "authors": "crossref+vision",
+        "journal": "crossref|semantic_scholar|unpaywall",
+        "abstract": "crossref|semantic_scholar|vision",
+        "keywords": "vision",
+        "citations": "openalex",
+        "publisher": "crossref|unpaywall|vision",
+        "openaccess": "crossref|openalex|unpaywall"
+      },
+      "enhancement_level": "SIGNIFICANT",
+      "validation_status": "HIGH"
+    },
+    "api_success_summary": {
+      "insights": "Crossref, Semantic Scholar, OpenAlex, and Unpaywall provided the most valuable enhancements with high coherence. ORCID provided limited author info. Core had inconsistent year data. Multiple APIs failed to find this article (likely due to being a Wiley publication).",
+      "total_apis": 11,
+      "failed_apis": [
+        "doaj",
+        "arxiv",
+        "europe_pmc",
+        "pubmed",
+        "datacite"
+      ],
+      "success_rate": 0.55,
+      "coherent_apis": 5,
+      "coherence_rate": 0.83,
+      "successful_apis": 6
+    }
+  },
+  "processing_time_ms": 62524
+}

@@ -1,0 +1,100 @@
+{
+  "source": "gpt-4o-vision",
+  "success": true,
+  "prompt_sent": "Extract ONLY publication metadata from these academic paper pages.\n\nCRITICAL: This data will be sent to 11 external APIs, so format accuracy is essential.\n\nFIELD REQUIREMENTS WITH EXACT FORMATS:\n\n1. **Title**: Clean title for API queries (HIGHEST PRIORITY)\n   - Remove line breaks, extra spaces, formatting\n   - No HTML tags or special characters  \n   - Example: \"Effects of Machine Learning on Healthcare Outcomes\"\n\n2. **Authors**: API-compatible author list (HIGHEST PRIORITY)\n   - Each author as separate string in array\n   - Format: \"FirstName LastName\" or \"F. LastName\"\n   - Clean, no extra punctuation\n   - Example: [\"John Smith\", \"M. Johnson\", \"Sarah Williams\"]\n\n3. **DOI**: Standard DOI format for resolution APIs\n   - Must start with \"10.\" if present\n   - Clean format without URL prefixes\n   - Example: \"10.1234/journal.2024.001\"\n\n4. **Journal**: Clean journal name for database queries\n   - Full journal name preferred over abbreviations\n   - Remove extra formatting, parentheses\n   - Example: \"Nature Medicine\"\n\n5. **Year**: Numeric format for date filtering\n   - 4-digit NUMBER only (not string)\n   - Example: 2024\n\n6. **Volume**: Clean number for bibliographic APIs\n   - Numbers only, no \"Vol.\" prefix\n   - Example: \"15\"\n\n7. **Issue**: Clean number format\n   - Numbers only, no \"No.\" or \"Issue\" prefix\n   - Example: \"3\"\n\n8. **Pages**: Standard page range for citations\n   - Format: \"start-end\" or single page\n   - Example: \"123-135\" or \"45\"\n\n9. **PMID**: PubMed ID for medical APIs\n   - Numbers only, no \"PMID:\" prefix\n   - Example: \"12345678\"\n\n10. **PMCID**: PubMed Central ID for open access papers\n    - Numbers only, no \"PMC\" prefix\n    - Often appears near PMID in biomedical papers\n    - Example: \"9876543\"\n\n11. **Keywords**: API-compatible keyword list\n    - Each keyword as separate string\n    - Research-quality terms, no punctuation\n    - Example: [\"machine learning\", \"healthcare\", \"clinical outcomes\"]\n\n11. **Abstract**: Complete clean text (HIGHEST PRIORITY)\n    - Remove formatting, line breaks, extra spaces\n    - Complete sentences, proper punctuation\n    - Search thoroughly across ALL pages\n    - This is CRITICAL for Semantic Scholar and other APIs\n\n12. **Publisher**: Clean organization name\n    - Official publisher name\n    - Example: \"Elsevier\" or \"Nature Publishing Group\"\n\nABSTRACT EXTRACTION PRIORITY:\n- Look thoroughly across ALL pages for abstract sections\n- Extract COMPLETE text, including multiple paragraphs\n- Check: Abstract, Summary, Introduction summary paragraphs\n- This field is CRITICAL for API enrichment success\n\nReturn JSON format:\n{\n  \"Title\": \"clean title without formatting\",\n  \"Authors\": [\"Author One\", \"Author Two\"],\n  \"DOI\": \"10.xxxx/xxxxx\",\n  \"Journal\": \"clean journal name\", \n  \"Year\": 2024,\n  \"Volume\": \"15\",\n  \"Issue\": \"3\", \n  \"Pages\": \"123-135\",\n  \"Abstract\": \"complete clean abstract text\",\n  \"Keywords\": [\"keyword1\", \"keyword2\"],\n  \"PMID\": \"12345678\",\n  \"PMCID\": \"9876543\",\n  \"Publisher\": \"publisher name\"\n}\n\nReturn null for fields not clearly visible. The Abstract field is MOST IMPORTANT for downstream API success.",
+  "cost_tracking": {
+    "model": "gpt-4o",
+    "call_type": "vision_extraction",
+    "timestamp": "2025-07-22T14:48:06.405310",
+    "input_cost": 0.010275,
+    "total_cost": 0.016335,
+    "output_cost": 0.00606,
+    "input_tokens": 4110,
+    "total_tokens": 4716,
+    "output_tokens": 606
+  },
+  "input_details": {
+    "dpi": 120,
+    "max_tokens": 1500,
+    "model_used": "gpt-4o",
+    "temperature": 0.1,
+    "page_strategy": "strategic",
+    "image_resolution": "high",
+    "processing_time_ms": 25606,
+    "pdf_pages_processed": 3
+  },
+  "extracted_data": {
+    "DOI": "10.3390/children12010032",
+    "PMID": null,
+    "Year": 2025,
+    "Issue": "1",
+    "PMCID": null,
+    "Pages": "32",
+    "Title": "Advancing Pediatric Surgery: The Use of HoloLens 2 for 3D Anatomical Reconstructions in Preoperative Planning",
+    "Volume": "12",
+    "Authors": [
+      "Marco Di Mitri",
+      "Annalisa Di Carmine",
+      "Simone D'Antonio",
+      "Benedetta Maria Capobianco",
+      "Cristian Bisanti",
+      "Edoardo Collautti",
+      "Sara Maria Cravano",
+      "Francesca Ruspi",
+      "Michele Libri",
+      "Tommaso Gargano",
+      "Mario Lima"
+    ],
+    "Journal": "Children",
+    "Abstract": "Background: In pediatric surgery, a comprehensive knowledge of the child’s anatomy is crucial to optimize surgical outcomes and minimize complications. Recent advancements in medical imaging and technology have introduced innovative tools that enhance surgical planning and decision-making. Methods: This study explores the integration of mixed reality technology, specifically the HoloLens 2 headset, for visualization and interaction with three-dimensional (3D) anatomical reconstructions obtained from computed tomography (CT) scans. Our prospective observational study, conducted at the IRCCS (Scientific Hospitalization and Care Institute) Sant’Orsola-Malpighi University Hospital in Bologna, engaged ten pediatric surgeons, who assessed three types of anatomical malformations (splenic cysts, pulmonary cystic adenomatoid malformations, and pyelo-ureteral junction stenosis) and planned surgeries using both traditional 2D CT scans and 3D visualizations via HoloLens 2, followed by completing a questionnaire to evaluate the utility of each of these imaging techniques in surgical planning. Results: The statistical analysis revealed that the 3D visualizations significantly outperformed the 2D CT scans in clarity and utility (p < 0.05). The results indicated significant improvements in anatomy understanding and surgical precision. The immersive experience provided by HoloLens 2 enabled surgeons to better identify critical landmarks, understand spatial relationships, and prevent surgical challenges. Furthermore, this technology facilitated collaborative decision-making and streamlined surgical workflows. Conclusions: Despite some challenges in ease of use, HoloLens 2 showed promising results in reducing the learning curve for complex procedures. This study underscores the transformative potential of mixed reality technology in pediatric surgery, advocating for further research and development to integrate these advancements into routine clinical practice.",
+    "Keywords": [
+      "HoloLens 2",
+      "three-dimensional reconstruction",
+      "Verima",
+      "pediatric surgery",
+      "innovations",
+      "mixed reality",
+      "augmented reality",
+      "preoperative planning"
+    ],
+    "Publisher": "MDPI"
+  },
+  "pages_processed": 3,
+  "extraction_matrix": {
+    "_performance_summary": {
+      "total_cost": 0.0,
+      "data_source": "vision_json",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "vision_status": "COMPLETE",
+      "extraction_rate": 84.62,
+      "extraction_source": "gpt-4o-vision",
+      "performance_level": "EXCELLENT",
+      "fields_with_content": 11,
+      "processing_time_seconds": 0,
+      "total_fields_in_response": 13
+    }
+  },
+  "extraction_method": "vision_strategic_strategy",
+  "extraction_quality": {
+    "success_rate": 50.0,
+    "quality_score": 50.0,
+    "successful_fields": 11,
+    "validation_details": {
+      "errors": [],
+      "is_valid": true,
+      "warnings": [],
+      "quality_score": 100,
+      "completeness_score": 100.0
+    },
+    "total_fields_attempted": 13
+  },
+  "processing_time_ms": 25606,
+  "raw_openai_response": {
+    "content": "```json\n{\n  \"Title\": \"Advancing Pediatric Surgery: The Use of HoloLens 2 for 3D Anatomical Reconstructions in Preoperative Planning\",\n  \"Authors\": [\n    \"Marco Di Mitri\",\n    \"Annalisa Di Carmine\",\n    \"Simone D'Antonio\",\n    \"Benedetta Maria Capobianco\",\n    \"Cristian Bisanti\",\n    \"Edoardo Collautti\",\n    \"Sara Maria Cravano\",\n    \"Francesca Ruspi\",\n    \"Michele Libri\",\n    \"Tommaso Gargano\",\n    \"Mario Lima\"\n  ],\n  \"DOI\": \"10.3390/children12010032\",\n  \"Journal\": \"Children\",\n  \"Year\": 2025,\n  \"Volume\": \"12\",\n  \"Issue\": \"1\",\n  \"Pages\": \"32\",\n  \"Abstract\": \"Background: In pediatric surgery, a comprehensive knowledge of the child’s anatomy is crucial to optimize surgical outcomes and minimize complications. Recent advancements in medical imaging and technology have introduced innovative tools that enhance surgical planning and decision-making. Methods: This study explores the integration of mixed reality technology, specifically the HoloLens 2 headset, for visualization and interaction with three-dimensional (3D) anatomical reconstructions obtained from computed tomography (CT) scans. Our prospective observational study, conducted at the IRCCS (Scientific Hospitalization and Care Institute) Sant’Orsola-Malpighi University Hospital in Bologna, engaged ten pediatric surgeons, who assessed three types of anatomical malformations (splenic cysts, pulmonary cystic adenomatoid malformations, and pyelo-ureteral junction stenosis) and planned surgeries using both traditional 2D CT scans and 3D visualizations via HoloLens 2, followed by completing a questionnaire to evaluate the utility of each of these imaging techniques in surgical planning. Results: The statistical analysis revealed that the 3D visualizations significantly outperformed the 2D CT scans in clarity and utility (p < 0.05). The results indicated significant improvements in anatomy understanding and surgical precision. The immersive experience provided by HoloLens 2 enabled surgeons to better identify critical landmarks, understand spatial relationships, and prevent surgical challenges. Furthermore, this technology facilitated collaborative decision-making and streamlined surgical workflows. Conclusions: Despite some challenges in ease of use, HoloLens 2 showed promising results in reducing the learning curve for complex procedures. This study underscores the transformative potential of mixed reality technology in pediatric surgery, advocating for further research and development to integrate these advancements into routine clinical practice.\",\n  \"Keywords\": [\n    \"HoloLens 2\",\n    \"three-dimensional reconstruction\",\n    \"Verima\",\n    \"pediatric surgery\",\n    \"innovations\",\n    \"mixed reality\",\n    \"augmented reality\",\n    \"preoperative planning\"\n  ],\n  \"PMID\": null,\n  \"PMCID\": null,\n  \"Publisher\": \"MDPI\"\n}\n```",
+    "parsing_error": "Expecting value: line 1 column 1 (char 0)",
+    "response_length": 2814,
+    "parsing_successful": false
+  },
+  "processing_timestamp": "2025-07-22T14:48:06.405300"
+}

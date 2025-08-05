@@ -1,0 +1,984 @@
+{
+  "core": {
+    "error": "No results found in CORE",
+    "success": false,
+    "timestamp": "2025-07-22T14:23:47.824612",
+    "processing_time_ms": 16663
+  },
+  "doaj": {
+    "error": "No DOI available for DOAJ search",
+    "success": false,
+    "timestamp": "2025-07-22T14:23:32.768408",
+    "processing_time_ms": 1605
+  },
+  "arxiv": {
+    "error": "No results found",
+    "success": false,
+    "timestamp": "2025-07-22T14:23:32.761972",
+    "processing_time_ms": 1600
+  },
+  "orcid": {
+    "data": {
+      "person": {
+        "name": {
+          "path": "0000-0002-3457-4227",
+          "source": null,
+          "visibility": "public",
+          "credit-name": null,
+          "family-name": {
+            "value": "Weibel"
+          },
+          "given-names": {
+            "value": "Nadir"
+          },
+          "created-date": {
+            "value": 1460758638829
+          },
+          "last-modified-date": {
+            "value": 1460758638829
+          }
+        },
+        "path": "/0000-0002-3457-4227/person",
+        "emails": {
+          "path": "/0000-0002-3457-4227/email",
+          "email": [],
+          "last-modified-date": null
+        },
+        "keywords": {
+          "path": "/0000-0002-3457-4227/keywords",
+          "keyword": [],
+          "last-modified-date": null
+        },
+        "addresses": {
+          "path": "/0000-0002-3457-4227/address",
+          "address": [
+            {
+              "path": "/0000-0002-3457-4227/address/142707",
+              "source": {
+                "source-name": {
+                  "value": "Nadir Weibel"
+                },
+                "source-orcid": {
+                  "uri": "https://orcid.org/0000-0002-3457-4227",
+                  "host": "orcid.org",
+                  "path": "0000-0002-3457-4227"
+                },
+                "source-client-id": null,
+                "assertion-origin-name": null,
+                "assertion-origin-orcid": null,
+                "assertion-origin-client-id": null
+              },
+              "country": {
+                "value": "US"
+              },
+              "put-code": 142707,
+              "visibility": "public",
+              "created-date": {
+                "value": 1453659347944
+              },
+              "display-index": 0,
+              "last-modified-date": {
+                "value": 1465226976952
+              }
+            }
+          ],
+          "last-modified-date": {
+            "value": 1465226976952
+          }
+        },
+        "biography": {
+          "path": "/0000-0002-3457-4227/biography",
+          "content": "I am a Professor in the Department of Computer Science and Engineering, and the Associate Faculty Director of the Design Lab at UC San Diego. I am also appointed as a Research Health Science Specialist at the VA San Diego Health System. My work on Human-Centered Computing is situated at the intersection of computer science, cognitive science, communication, health and social sciences. I am a computer scientist who investigates tools, techniques and infrastructure supporting the deployment of innovative interactive multimodal and tangible devices in context, and an ethnographer creating an using novel methods for studying and quantifying the cognitive consequences of the introduction of this technology in the everyday life.\n\nMy main interests ranges from software engineering to human computer interaction, including mobile health, computer supported cooperative work, social media, medical informatics, mobile and ubiquitous computing. \n\nIn my current work I am developing theory and methods, designing representations, implementing prototypes, and evaluating the effectiveness of interactive multimodal physical-digital systems such as pen-based and touch-based devices, depth-cameras, and mobile devices in the setting of critical populations such as healthcare and education.\n\nI am currently Co-Investigator on several funded research projects from the National Institute of Health (NIH), the National Science Foundation (NSF), and the Agency for Healthcare Research and Quality (AHRQ)",
+          "visibility": "public",
+          "created-date": {
+            "value": 1460758638831
+          },
+          "last-modified-date": {
+            "value": 1717089167413
+          }
+        },
+        "other-names": {
+          "path": "/0000-0002-3457-4227/other-names",
+          "other-name": [],
+          "last-modified-date": null
+        },
+        "researcher-urls": {
+          "path": "/0000-0002-3457-4227/researcher-urls",
+          "researcher-url": [
+            {
+              "url": {
+                "value": "weibel.ucsd.edu"
+              },
+              "path": "/0000-0002-3457-4227/researcher-urls/330493",
+              "source": {
+                "source-name": {
+                  "value": "Nadir Weibel"
+                },
+                "source-orcid": {
+                  "uri": "https://orcid.org/0000-0002-3457-4227",
+                  "host": "orcid.org",
+                  "path": "0000-0002-3457-4227"
+                },
+                "source-client-id": null,
+                "assertion-origin-name": null,
+                "assertion-origin-orcid": null,
+                "assertion-origin-client-id": null
+              },
+              "put-code": 330493,
+              "url-name": null,
+              "visibility": "public",
+              "created-date": {
+                "value": 1406095233394
+              },
+              "display-index": 0,
+              "last-modified-date": {
+                "value": 1406095233394
+              }
+            }
+          ],
+          "last-modified-date": {
+            "value": 1406095233394
+          }
+        },
+        "last-modified-date": {
+          "value": 1465226976952
+        },
+        "external-identifiers": {
+          "path": "/0000-0002-3457-4227/external-identifiers",
+          "last-modified-date": null,
+          "external-identifier": []
+        }
+      },
+      "orcid_id": "0000-0002-3457-4227"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:23:32.691726",
+    "processing_time_ms": 1525
+  },
+  "pubmed": {
+    "data": {
+      "PubmedArticle": [
+        {
+          "MedlineCitation": {
+            "PMID": {
+              "content": "38995868"
+            },
+            "Article": {
+              "Journal": {
+                "Title": "Telemedicine journal and e-health : the official journal of the American Telemedicine Association",
+                "JournalIssue": {
+                  "Issue": "10",
+                  "Volume": "30",
+                  "PubDate": {
+                    "Year": "2024"
+                  }
+                }
+              },
+              "AuthorList": {
+                "Author": [
+                  {
+                    "ForeName": "Nadir",
+                    "LastName": "Weibel"
+                  },
+                  {
+                    "ForeName": "Ben",
+                    "LastName": "Alwood"
+                  },
+                  {
+                    "ForeName": "Vishwajith",
+                    "LastName": "Ramesh"
+                  },
+                  {
+                    "ForeName": "Weichen",
+                    "LastName": "Liu"
+                  },
+                  {
+                    "ForeName": "Dawn M",
+                    "LastName": "Meyer"
+                  },
+                  {
+                    "ForeName": "Teri",
+                    "LastName": "McQuaid"
+                  },
+                  {
+                    "ForeName": "Emily St",
+                    "LastName": "Germain"
+                  },
+                  {
+                    "ForeName": "Brett C",
+                    "LastName": "Meyer"
+                  }
+                ]
+              },
+              "Pagination": {
+                "MedlinePgn": "2583-2591"
+              },
+              "ArticleTitle": "Holo-Stroke: Assessing for Immersive Stroke Care Through Stroke Hologram Teleportation."
+            }
+          }
+        }
+      ]
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:23:32.907256",
+    "processing_time_ms": 1752
+  },
+  "crossref": {
+    "data": {
+      "status": "ok",
+      "message": {
+        "DOI": "10.1089/tmj.2024.0229",
+        "URL": "https://doi.org/10.1089/tmj.2024.0229",
+        "ISSN": [
+          "1530-5627",
+          "1556-3669"
+        ],
+        "link": [
+          {
+            "URL": "https://www.liebertpub.com/doi/full-xml/10.1089/tmj.2024.0229",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://www.liebertpub.com/doi/pdf/10.1089/tmj.2024.0229",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "page": "2583-2591",
+        "type": "journal-article",
+        "issue": "10",
+        "score": 1,
+        "title": [
+          "Holo-Stroke: Assessing for Immersive Stroke Care Through Stroke Hologram Teleportation"
+        ],
+        "author": [
+          {
+            "given": "Nadir",
+            "family": "Weibel",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Department of Computer Science and Engineering & Design Lab, University of California, San Diego, California, USA."
+              }
+            ]
+          },
+          {
+            "given": "Ben",
+            "family": "Alwood",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "College of Medicine, University of Florida, Jacksonville, Florida, USA."
+              }
+            ]
+          },
+          {
+            "given": "Vishwajith",
+            "family": "Ramesh",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Computer Science and Engineering & Design Lab, University of California, San Diego, California, USA."
+              }
+            ]
+          },
+          {
+            "given": "Weichen",
+            "family": "Liu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Mathematics, University of California, San Diego, California, USA."
+              }
+            ]
+          },
+          {
+            "given": "Dawn M.",
+            "family": "Meyer",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Neurosciences, University of California, San Diego, California, USA."
+              }
+            ]
+          },
+          {
+            "given": "Teri",
+            "family": "McQuaid",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Neurosciences, University of California, San Diego, California, USA."
+              }
+            ]
+          },
+          {
+            "given": "Emily St",
+            "family": "Germain",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Telehealth Program, University of California, San Diego, California, USA."
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-2877-1187",
+            "given": "Brett C.",
+            "family": "Meyer",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Neurosciences, University of California, San Diego, California, USA."
+              }
+            ],
+            "authenticated-orcid": false
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              10,
+              1
+            ]
+          ]
+        },
+        "member": "278",
+        "prefix": "10.1089",
+        "source": "Crossref",
+        "volume": "30",
+        "created": {
+          "date-time": "2024-07-12T17:06:55Z",
+          "timestamp": 1720804015000,
+          "date-parts": [
+            [
+              2024,
+              7,
+              12
+            ]
+          ]
+        },
+        "indexed": {
+          "version": "3.40.5",
+          "date-time": "2025-05-27T04:55:37Z",
+          "timestamp": 1748321737021,
+          "date-parts": [
+            [
+              2025,
+              5,
+              27
+            ]
+          ]
+        },
+        "license": [
+          {
+            "URL": "https://www.liebertpub.com/nv/resources-tools/text-and-data-mining-policy/121/",
+            "start": {
+              "date-time": "2024-10-01T00:00:00Z",
+              "timestamp": 1727740800000,
+              "date-parts": [
+                [
+                  2024,
+                  10,
+                  1
+                ]
+              ]
+            },
+            "delay-in-days": 0,
+            "content-version": "tdm"
+          }
+        ],
+        "subject": [],
+        "language": "en",
+        "relation": {},
+        "resource": {
+          "primary": {
+            "URL": "https://www.liebertpub.com/doi/10.1089/tmj.2024.0229"
+          }
+        },
+        "subtitle": [],
+        "deposited": {
+          "date-time": "2024-10-11T20:18:23Z",
+          "timestamp": 1728677903000,
+          "date-parts": [
+            [
+              2024,
+              10,
+              11
+            ]
+          ]
+        },
+        "issn-type": [
+          {
+            "type": "print",
+            "value": "1530-5627"
+          },
+          {
+            "type": "electronic",
+            "value": "1556-3669"
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2024,
+              10,
+              1
+            ]
+          ]
+        },
+        "publisher": "Mary Ann Liebert Inc",
+        "reference": [
+          {
+            "DOI": "10.1212/01.WNL.0000154601.26653.E7",
+            "key": "B1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1016/S1474-4422(08)70171-6",
+            "key": "B2",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.3390/s22207709",
+            "key": "B3",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.3390/jimaging8070203",
+            "key": "B4",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1111/iju.14907",
+            "key": "B5",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1155/2021/9717184",
+            "key": "B6",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1007/s11548-021-02526-7",
+            "key": "B7",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.2196/35674",
+            "key": "B8",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1145/2984511.2984517",
+            "key": "B13",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1016/j.bjps.2022.10.012",
+            "key": "B14",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1016/j.surg.2022.06.034",
+            "key": "B16",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1145/3334480.3383169",
+            "key": "B17",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1161/STROKEAHA.120.029993",
+            "key": "B18",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1145/3411764.3445576",
+            "key": "B19",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1109/3DUI.2017.7893357",
+            "key": "B20",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1109/VR.2019.8797719",
+            "key": "B21",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1001/jamanetworkopen.2021.45824",
+            "key": "B22",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1212/WNL.0b013e318270401d",
+            "key": "B23",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1016/j.neulet.2020.134974",
+            "key": "B24",
+            "doi-asserted-by": "publisher"
+          }
+        ],
+        "short-title": [],
+        "journal-issue": {
+          "issue": "10",
+          "published-print": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                1
+              ]
+            ]
+          }
+        },
+        "alternative-id": [
+          "10.1089/tmj.2024.0229"
+        ],
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "original-title": [],
+        "container-title": [
+          "Telemedicine and e-Health"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2024,
+              10,
+              1
+            ]
+          ]
+        },
+        "reference-count": 19,
+        "references-count": 19,
+        "short-container-title": [
+          "Telemedicine and e-Health"
+        ],
+        "is-referenced-by-count": 2
+      },
+      "message-type": "work",
+      "message-version": "1.0.0"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:23:32.603451",
+    "processing_time_ms": 1449
+  },
+  "datacite": {
+    "error": "No matching articles found",
+    "success": false,
+    "timestamp": "2025-07-22T14:23:40.040604",
+    "processing_time_ms": 8878
+  },
+  "openalex": {
+    "data": {
+      "id": "https://openalex.org/W4400580381",
+      "doi": "https://doi.org/10.1089/tmj.2024.0229",
+      "title": "Holo-Stroke: Assessing for Immersive Stroke Care Through Stroke Hologram Teleportation",
+      "open_access": {
+        "is_oa": false,
+        "oa_url": null,
+        "oa_status": "closed",
+        "any_repository_has_fulltext": false
+      },
+      "cited_by_count": 1,
+      "publication_year": 2024
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:23:32.359672",
+    "processing_time_ms": 1202
+  },
+  "unpaywall": {
+    "data": {
+      "doi": "10.1089/tmj.2024.0229",
+      "year": 2024,
+      "genre": "journal-article",
+      "is_oa": false,
+      "title": "Holo-Stroke: Assessing for Immersive Stroke Care Through Stroke Hologram Teleportation",
+      "doi_url": "https://doi.org/10.1089/tmj.2024.0229",
+      "oa_status": "closed",
+      "publisher": "Mary Ann Liebert Inc",
+      "is_paratext": false,
+      "journal_name": "Telemedicine Journal and e-Health",
+      "journal_issns": "1530-5627,1556-3669",
+      "journal_issn_l": "1530-5627",
+      "published_date": "2024-07-12",
+      "z_authors_summary": {
+        "count": 8,
+        "first_author": ""
+      },
+      "has_repository_copy": false,
+      "oa_locations_summary": {
+        "count": 0,
+        "has_repository": false
+      },
+      "best_oa_location_summary": null,
+      "first_oa_location_summary": null
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:23:32.661835",
+    "processing_time_ms": 1502
+  },
+  "europe_pmc": {
+    "data": {
+      "id": "38995868",
+      "doi": "10.1089/tmj.2024.0229",
+      "pmid": "38995868",
+      "inPMC": "N",
+      "title": "Holo-Stroke: Assessing for Immersive Stroke Care Through Stroke Hologram Teleportation.",
+      "hasPDF": "N",
+      "inEPMC": "N",
+      "source": "MED",
+      "authMan": "N",
+      "hasBook": "N",
+      "hasData": "N",
+      "pubYear": "2024",
+      "hasSuppl": "N",
+      "language": "eng",
+      "pageInfo": "2583-2591",
+      "pubModel": "Print-Electronic",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Weibel N",
+            "initials": "N",
+            "lastName": "Weibel",
+            "firstName": "Nadir",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Computer Science and Engineering & Design Lab, University of California, San Diego, California, USA."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Alwood B",
+            "initials": "B",
+            "lastName": "Alwood",
+            "firstName": "Ben",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "College of Medicine, University of Florida, Jacksonville, Florida, USA."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Ramesh V",
+            "initials": "V",
+            "lastName": "Ramesh",
+            "firstName": "Vishwajith",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Computer Science and Engineering & Design Lab, University of California, San Diego, California, USA."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Liu W",
+            "initials": "W",
+            "lastName": "Liu",
+            "firstName": "Weichen",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Mathematics, University of California, San Diego, California, USA."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Meyer DM",
+            "initials": "DM",
+            "lastName": "Meyer",
+            "firstName": "Dawn M",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Neurosciences, University of California, San Diego, California, USA."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "McQuaid T",
+            "initials": "T",
+            "lastName": "McQuaid",
+            "firstName": "Teri",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Neurosciences, University of California, San Diego, California, USA."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Germain ES",
+            "initials": "ES",
+            "lastName": "Germain",
+            "firstName": "Emily St",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Telehealth Program, University of California, San Diego, California, USA."
+                }
+              ]
+            }
+          },
+          {
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0002-2877-1187"
+            },
+            "fullName": "Meyer BC",
+            "initials": "BC",
+            "lastName": "Meyer",
+            "firstName": "Brett C",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Neurosciences, University of California, San Diego, California, USA."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "nihAuthMan": "N",
+      "subsetList": {
+        "subset": [
+          {
+            "code": "IM",
+            "name": "Index Medicus"
+          }
+        ]
+      },
+      "affiliation": "Department of Computer Science and Engineering & Design Lab, University of California, San Diego, California, USA.",
+      "epmcAuthMan": "N",
+      "journalInfo": {
+        "issue": "10",
+        "volume": "30",
+        "journal": {
+          "essn": "1556-3669",
+          "issn": "1530-5627",
+          "nlmid": "100959949",
+          "title": "Telemedicine journal and e-health : the official journal of the American Telemedicine Association",
+          "isoabbreviation": "Telemed J E Health",
+          "medlineAbbreviation": "Telemed J E Health"
+        },
+        "journalIssueId": 3839371,
+        "dateOfPublication": "2024 Oct",
+        "yearOfPublication": 2024,
+        "monthOfPublication": 10,
+        "printPublicationDate": "2024-10-01"
+      },
+      "keywordList": {
+        "keyword": [
+          "Immersion",
+          "Satisfaction",
+          "Telemedicine",
+          "Augmented Reality",
+          "Hologram",
+          "Tele-stroke"
+        ]
+      },
+      "pubTypeList": {
+        "pubType": [
+          "Journal Article"
+        ]
+      },
+      "abstractText": "<b>Background:</b> Augmented reality enables the wearer to see both their physical environment and virtual objects. Holograms could allow 3D video of providers to be transmitted to distant sites, allowing patients to interact with virtual providers as if they are in the same physical space. Our aim was to determine if Tele-Stroke augmented with Holo-Stroke, compared with Tele-Stroke alone, could improve satisfaction and perception of immersion for the patient. <b>Methods:</b> Kinect cameras positioned at 90-degree intervals around the hub practitioner were used. Cameras streamed real-time optical video to a unity point-cloud program where the data were stitched together in a 360-degree view. The resultant hologram was positioned in 3D space and was visible through the head-mounted display by the patient. Radiology images were shared in Tele-Stroke and via hologram. Likert satisfaction questions were administered. Wilcoxon signed-rank testing was used. <b>Results:</b> Each of the 30 neurology clinic participants scored both Tele-Stroke and Holo-Stroke. Out of these, 29 patients completed the assessments (1 failure owing to computer reboot). Average age was 52 years, with 53.3% of the patients being female, 70.0% being White, and 13.3% being Hispanic. Likert scale score median \"Overall\" was 32 Tele-Stroke versus 48 Holo-Stroke (<i>p</i> < 0.00001), \"Immersion\" was 5 versus 10 (<i>p</i> < 0.00001), \"Beneficial Technique\" was 6 versus 10 (<i>p</i> < 0.00001), and \"Ability to See Images\" was 5 versus 10 (<i>p</i> < 0.00001). <b>Discussion:</b> Holo-Stroke 3D holographic Tele-Stroke exams resulted in feasibility, satisfaction, and high perception of immersion for the patient. Patients were enthusiastic for the more immersive, personal discussion with their provider and a robust way to experience radiology images. Though further assessments are needed, Holo-Stroke can help the provider \"be there, not just see there!\"",
+      "authorIdList": {
+        "authorId": [
+          {
+            "type": "ORCID",
+            "value": "0000-0002-2877-1187"
+          }
+        ]
+      },
+      "authorString": "Weibel N, Alwood B, Ramesh V, Liu W, Meyer DM, McQuaid T, Germain ES, Meyer BC.",
+      "citedByCount": 1,
+      "hasLabsLinks": "Y",
+      "isOpenAccess": "N",
+      "hasReferences": "Y",
+      "dateOfCreation": "2024-07-12",
+      "dateOfRevision": "2025-07-08",
+      "firstIndexDate": "2024-07-13",
+      "hasEvaluations": "N",
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "url": "https://doi.org/10.1089/tmj.2024.0229",
+            "site": "DOI",
+            "availability": "Subscription required",
+            "documentStyle": "doi",
+            "availabilityCode": "S"
+          }
+        ]
+      },
+      "meshHeadingList": {
+        "meshHeading": [
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Humans"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Imaging, Three-Dimensional"
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Holography",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "abbreviation": "MT",
+                  "majorTopic_YN": "N",
+                  "qualifierName": "methods"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Telemedicine"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Adult"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Aged"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Middle Aged"
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Patient Satisfaction"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Female"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Male"
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Stroke",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "abbreviation": "CO",
+                  "majorTopic_YN": "N",
+                  "qualifierName": "complications"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Augmented Reality"
+          }
+        ]
+      },
+      "dateOfCompletion": "2024-10-11",
+      "dataLinksTagsList": {
+        "dataLinkstag": [
+          "altmetrics"
+        ]
+      },
+      "hasTextMinedTerms": "Y",
+      "publicationStatus": "ppublish",
+      "firstPublicationDate": "2024-07-12",
+      "hasDbCrossReferences": "N",
+      "hasTMAccessionNumbers": "N",
+      "electronicPublicationDate": "2024-07-12"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:23:32.912465",
+    "processing_time_ms": 1755
+  },
+  "semantic_scholar": {
+    "data": {
+      "year": 2024,
+      "title": "Holo-Stroke: Assessing for Immersive Stroke Care Through Stroke Hologram Teleportation.",
+      "authors": [
+        {
+          "name": "Nadir Weibel",
+          "authorId": "2310881781"
+        },
+        {
+          "name": "Ben Alwood",
+          "authorId": "2310881715"
+        },
+        {
+          "name": "V. Ramesh",
+          "authorId": "145568635"
+        },
+        {
+          "name": "Weichen Liu",
+          "authorId": "2311086787"
+        },
+        {
+          "name": "Dawn M. Meyer",
+          "authorId": "2323667267"
+        },
+        {
+          "name": "Teri McQuaid",
+          "authorId": "2310881283"
+        },
+        {
+          "name": "Emily St Germain",
+          "authorId": "2310881587"
+        },
+        {
+          "name": "Brett C. Meyer",
+          "authorId": "2282468564"
+        }
+      ],
+      "journal": {
+        "name": "Telemedicine journal and e-health : the official journal of the American Telemedicine Association"
+      },
+      "paperId": "869bea6bcc35f408339ecfbd5e2d14f039671701",
+      "abstract": "Background: Augmented reality enables the wearer to see both their physical environment and virtual objects. Holograms could allow 3D video of providers to be transmitted to distant sites, allowing patients to interact with virtual providers as if they are in the same physical space. Our aim was to determine if Tele-Stroke augmented with Holo-Stroke, compared with Tele-Stroke alone, could improve satisfaction and perception of immersion for the patient. Methods: Kinect cameras positioned at 90-degree intervals around the hub practitioner were used. Cameras streamed real-time optical video to a unity point-cloud program where the data were stitched together in a 360-degree view. The resultant hologram was positioned in 3D space and was visible through the head-mounted display by the patient. Radiology images were shared in Tele-Stroke and via hologram. Likert satisfaction questions were administered. Wilcoxon signed-rank testing was used. Results: Each of the 30 neurology clinic participants scored both Tele-Stroke and Holo-Stroke. Out of these, 29 patients completed the assessments (1 failure owing to computer reboot). Average age was 52 years, with 53.3% of the patients being female, 70.0% being White, and 13.3% being Hispanic. Likert scale score median \"Overall\" was 32 Tele-Stroke versus 48 Holo-Stroke (p < 0.00001), \"Immersion\" was 5 versus 10 (p < 0.00001), \"Beneficial Technique\" was 6 versus 10 (p < 0.00001), and \"Ability to See Images\" was 5 versus 10 (p < 0.00001). Discussion: Holo-Stroke 3D holographic Tele-Stroke exams resulted in feasibility, satisfaction, and high perception of immersion for the patient. Patients were enthusiastic for the more immersive, personal discussion with their provider and a robust way to experience radiology images. Though further assessments are needed, Holo-Stroke can help the provider \"be there, not just see there!\"",
+      "externalIds": {
+        "DOI": "10.1089/tmj.2024.0229",
+        "PubMed": "38995868",
+        "CorpusId": 271120463
+      },
+      "isOpenAccess": false,
+      "citationCount": 2,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1089/tmj.2024.0229?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1089/tmj.2024.0229, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      }
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:23:32.358209",
+    "processing_time_ms": 1199
+  }
+}

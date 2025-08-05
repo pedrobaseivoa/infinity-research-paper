@@ -1,0 +1,487 @@
+{
+  "core": {
+    "error": "CORE API exception: 'NoneType' object has no attribute 'strip'",
+    "success": false,
+    "timestamp": "2025-07-22T14:21:13.784090",
+    "processing_time_ms": 0
+  },
+  "doaj": {
+    "error": "No DOI available for DOAJ search",
+    "success": false,
+    "timestamp": "2025-07-22T14:21:13.793368",
+    "processing_time_ms": 1
+  },
+  "arxiv": {
+    "error": "No results found",
+    "success": false,
+    "timestamp": "2025-07-22T14:21:14.562992",
+    "processing_time_ms": 774
+  },
+  "orcid": {
+    "data": {
+      "person": {
+        "name": {
+          "path": "0000-0002-3485-1191",
+          "source": null,
+          "visibility": "public",
+          "credit-name": null,
+          "family-name": {
+            "value": "Ng"
+          },
+          "given-names": {
+            "value": "Kian Wei"
+          },
+          "created-date": {
+            "value": 1670229815451
+          },
+          "last-modified-date": {
+            "value": 1670229815451
+          }
+        },
+        "path": "/0000-0002-3485-1191/person",
+        "emails": {
+          "path": "/0000-0002-3485-1191/email",
+          "email": [],
+          "last-modified-date": null
+        },
+        "keywords": {
+          "path": "/0000-0002-3485-1191/keywords",
+          "keyword": [],
+          "last-modified-date": null
+        },
+        "addresses": {
+          "path": "/0000-0002-3485-1191/address",
+          "address": [],
+          "last-modified-date": null
+        },
+        "biography": null,
+        "other-names": {
+          "path": "/0000-0002-3485-1191/other-names",
+          "other-name": [],
+          "last-modified-date": null
+        },
+        "researcher-urls": {
+          "path": "/0000-0002-3485-1191/researcher-urls",
+          "researcher-url": [],
+          "last-modified-date": null
+        },
+        "last-modified-date": null,
+        "external-identifiers": {
+          "path": "/0000-0002-3485-1191/external-identifiers",
+          "last-modified-date": null,
+          "external-identifier": []
+        }
+      },
+      "orcid_id": "0000-0002-3485-1191"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:21:14.797784",
+    "processing_time_ms": 1008
+  },
+  "pubmed": {
+    "error": "No results found",
+    "success": false,
+    "timestamp": "2025-07-22T14:21:21.481998",
+    "processing_time_ms": 7707
+  },
+  "crossref": {
+    "data": {
+      "status": "ok",
+      "message": {
+        "DOI": "10.1007/978-3-031-44521-7_11",
+        "page": "111-120",
+        "title": [
+          "HoloPOCUS: Portable Mixed-Reality 3D Ultrasound Tracking, Reconstruction and Overlay"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-3485-1191",
+            "given": "Kian Wei",
+            "family": "Ng",
+            "sequence": "first",
+            "affiliation": [],
+            "authenticated-orcid": false
+          },
+          {
+            "given": "Yujia",
+            "family": "Gao",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Mohammed Shaheryar",
+            "family": "Furqan",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Zachery",
+            "family": "Yeo",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Joel",
+            "family": "Lau",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Kee Yuan",
+            "family": "Ngiam",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-1295-3506",
+            "given": "Eng Tat",
+            "family": "Khoo",
+            "sequence": "additional",
+            "affiliation": [],
+            "authenticated-orcid": false
+          }
+        ],
+        "publisher": "Springer Nature Switzerland",
+        "container-title": [
+          "Lecture Notes in Computer Science",
+          "Simplifying Medical Ultrasound"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2023
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2023,
+              10,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:21:18.133174",
+    "processing_time_ms": 4360
+  },
+  "datacite": {
+    "data": {
+      "data": {
+        "id": "10.48550/arxiv.2308.13823",
+        "type": "dois",
+        "attributes": {
+          "doi": "10.48550/arxiv.2308.13823",
+          "url": "https://arxiv.org/abs/2308.13823",
+          "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC40ODU1MC9BUlhJVi4yMzA4LjEzODIzPC9pZGVudGlmaWVyPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJhclhpdiI+MjMwOC4xMzgyMzwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5OZywgS2lhbiBXZWk8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPktpYW4gV2VpPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPk5nPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkdhbywgWXVqaWE8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPll1amlhPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkdhbzwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5GdXJxYW4sIFNoYWhlcnlhciBNb2hhbW1lZDwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+U2hhaGVyeWFyIE1vaGFtbWVkPC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPkZ1cnFhbjwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5ZZW8sIFphY2hlcnk8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPlphY2hlcnk8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+WWVvPC9mYW1pbHlOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPkxhdSwgSm9lbDwvY3JlYXRvck5hbWU+CiAgICAgIDxnaXZlbk5hbWU+Sm9lbDwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5MYXU8L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lIG5hbWVUeXBlPSJQZXJzb25hbCI+TmdpYW0sIEtlZSBZdWFuPC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5LZWUgWXVhbjwvZ2l2ZW5OYW1lPgogICAgICA8ZmFtaWx5TmFtZT5OZ2lhbTwvZmFtaWx5TmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9IlBlcnNvbmFsIj5LaG9vLCBFbmcgVGF0PC9jcmVhdG9yTmFtZT4KICAgICAgPGdpdmVuTmFtZT5FbmcgVGF0PC9naXZlbk5hbWU+CiAgICAgIDxmYW1pbHlOYW1lPktob288L2ZhbWlseU5hbWU+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPkhvbG9QT0NVUzogUG9ydGFibGUgTWl4ZWQtUmVhbGl0eSAzRCBVbHRyYXNvdW5kIFRyYWNraW5nLCBSZWNvbnN0cnVjdGlvbiBhbmQgT3ZlcmxheTwvdGl0bGU+CiAgPC90aXRsZXM+CiAgPHB1Ymxpc2hlcj5hclhpdjwvcHVibGlzaGVyPgogIDxwdWJsaWNhdGlvblllYXI+MjAyMzwvcHVibGljYXRpb25ZZWFyPgogIDxzdWJqZWN0cz4KICAgIDxzdWJqZWN0IHhtbDpsYW5nPSJlbiIgc3ViamVjdFNjaGVtZT0iYXJYaXYiPkNvbXB1dGVyIFZpc2lvbiBhbmQgUGF0dGVybiBSZWNvZ25pdGlvbiAoY3MuQ1YpPC9zdWJqZWN0PgogICAgPHN1YmplY3QgeG1sOmxhbmc9ImVuIiBzdWJqZWN0U2NoZW1lPSJhclhpdiI+SHVtYW4tQ29tcHV0ZXIgSW50ZXJhY3Rpb24gKGNzLkhDKTwvc3ViamVjdD4KICAgIDxzdWJqZWN0IHN1YmplY3RTY2hlbWU9IkZpZWxkcyBvZiBTY2llbmNlIGFuZCBUZWNobm9sb2d5IChGT1MpIj5GT1M6IENvbXB1dGVyIGFuZCBpbmZvcm1hdGlvbiBzY2llbmNlczwvc3ViamVjdD4KICA8L3N1YmplY3RzPgogIDxkYXRlcz4KICAgIDxkYXRlIGRhdGVUeXBlPSJTdWJtaXR0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjEiPjIwMjMtMDgtMjZUMDk6Mjg6MjBaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IlVwZGF0ZWQiIGRhdGVJbmZvcm1hdGlvbj0idjEiPjIwMjMtMDgtMjlUMDA6MTM6MTFaPC9kYXRlPgogICAgPGRhdGUgZGF0ZVR5cGU9IkF2YWlsYWJsZSIgZGF0ZUluZm9ybWF0aW9uPSJ2MSI+MjAyMy0wODwvZGF0ZT4KICA8L2RhdGVzPgogIDxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iUHJlcHJpbnQiPkFydGljbGU8L3Jlc291cmNlVHlwZT4KICA8dmVyc2lvbj4xPC92ZXJzaW9uPgogIDxyaWdodHNMaXN0PgogICAgPHJpZ2h0cyByaWdodHNVUkk9Imh0dHA6Ly9hcnhpdi5vcmcvbGljZW5zZXMvbm9uZXhjbHVzaXZlLWRpc3RyaWIvMS4wLyI+YXJYaXYub3JnIHBlcnBldHVhbCwgbm9uLWV4Y2x1c2l2ZSBsaWNlbnNlPC9yaWdodHM+CiAgPC9yaWdodHNMaXN0PgogIDxkZXNjcmlwdGlvbnM+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJBYnN0cmFjdCI+VWx0cmFzb3VuZCAoVVMpIGltYWdpbmcgcHJvdmlkZXMgYSBzYWZlIGFuZCBhY2Nlc3NpYmxlIHNvbHV0aW9uIHRvIHByb2NlZHVyYWwgZ3VpZGFuY2UgYW5kIGRpYWdub3N0aWMgaW1hZ2luZy4gVGhlIGVmZmVjdGl2ZSB1c2FnZSBvZiBjb252ZW50aW9uYWwgMkQgVVMgZm9yIGludGVydmVudGlvbmFsIGd1aWRhbmNlIHJlcXVpcmVzIGV4dGVuc2l2ZSBleHBlcmllbmNlIHRvIHByb2plY3QgdGhlIGltYWdlIHBsYW5lIG9udG8gdGhlIHBhdGllbnQsIGFuZCB0aGUgaW50ZXJwcmV0YXRpb24gb2YgaW1hZ2VzIGluIGRpYWdub3N0aWNzIHN1ZmZlcnMgZnJvbSBoaWdoIGludHJhLSBhbmQgaW50ZXItdXNlciB2YXJpYWJpbGl0eS4gM0QgVVMgcmVjb25zdHJ1Y3Rpb24gYWxsb3dzIGZvciBtb3JlIGNvbnNpc3RlbnQgZGlhZ25vc2lzIGFuZCBpbnRlcnByZXRhdGlvbiwgYnV0IGV4aXN0aW5nIHNvbHV0aW9ucyBhcmUgbGltaXRlZCBpbiB0ZXJtcyBvZiBlcXVpcG1lbnQgYW5kIGFwcGxpY2FiaWxpdHkgaW4gcmVhbC10aW1lIG5hdmlnYXRpb24uIFRvIGFkZHJlc3MgdGhlc2UgaXNzdWVzLCB3ZSBwcm9wb3NlIEhvbG9QT0NVUyAtIGEgbWl4ZWQgcmVhbGl0eSBVUyBzeXN0ZW0gKE1SLVVTKSB0aGF0IG92ZXJsYXlzIHJpY2ggVVMgaW5mb3JtYXRpb24gb250byB0aGUgdXNlcidzIHZpc2lvbiBpbiBhIHBvaW50LW9mLWNhcmUgc2V0dGluZy4gSG9sb1BPQ1VTIGV4dGVuZHMgZXhpc3RpbmcgTVItVVMgbWV0aG9kcyBiZXlvbmQgcGxhY2luZyBhIFVTIHBsYW5lIGluIHRoZSB1c2VyJ3MgdmlzaW9uIHRvIGluY2x1ZGUgYSAzRCByZWNvbnN0cnVjdGlvbiBhbmQgcHJvamVjdGlvbiB0aGF0IGNhbiBhaWQgaW4gcHJvY2VkdXJhbCBndWlkYW5jZSB1c2luZyBjb252ZW50aW9uYWwgcHJvYmVzLiBXZSB2YWxpZGF0ZWQgYSB0cmFja2luZyBwaXBlbGluZSB0aGF0IGRlbW9uc3RyYXRlcyBoaWdoZXIgYWNjdXJhY3kgY29tcGFyZWQgdG8gZXhpc3RpbmcgTVItVVMgd29ya3MuIEZ1cnRoZXJtb3JlLCB1c2VyIHN0dWRpZXMgY29uZHVjdGVkIHZpYSBhIHBoYW50b20gdGFzayBzaG93ZWQgc2lnbmlmaWNhbnQgaW1wcm92ZW1lbnRzIGluIG5hdmlnYXRpb24gZHVyYXRpb24gd2hlbiB1c2luZyBvdXIgcHJvcG9zZWQgbWV0aG9kcy48L2Rlc2NyaXB0aW9uPgogICAgPGRlc2NyaXB0aW9uIGRlc2NyaXB0aW9uVHlwZT0iT3RoZXIiPkFjY2VwdGVkIGluICJUaGUgNHRoIEludGVybmF0aW9uYWwgV29ya3Nob3Agb2YgQWR2YW5jZXMgaW4gU2ltcGxpZnlpbmcgTWVkaWNhbCBVbHRyYVNvdW5kIiAoQVNNVVMpIC0gYSB3b3Jrc2hvcCBoZWxkIGluIGNvbmp1bmN0aW9uIHdpdGggTUlDQ0FJIDIwMjM8L2Rlc2NyaXB0aW9uPgogIDwvZGVzY3JpcHRpb25zPgo8L3Jlc291cmNlPg==",
+          "dates": [
+            {
+              "date": "2023-08-26T09:28:20Z",
+              "dateType": "Submitted",
+              "dateInformation": "v1"
+            },
+            {
+              "date": "2023-08-29T00:13:11Z",
+              "dateType": "Updated",
+              "dateInformation": "v1"
+            },
+            {
+              "date": "2023-08",
+              "dateType": "Available",
+              "dateInformation": "v1"
+            },
+            {
+              "date": "2023",
+              "dateType": "Issued"
+            }
+          ],
+          "sizes": [],
+          "state": "findable",
+          "types": {
+            "ris": "GEN",
+            "bibtex": "misc",
+            "citeproc": "article",
+            "schemaOrg": "CreativeWork",
+            "resourceType": "Article",
+            "resourceTypeGeneral": "Preprint"
+          },
+          "prefix": "10.48550",
+          "reason": null,
+          "source": "mds",
+          "suffix": "arxiv.2308.13823",
+          "titles": [
+            {
+              "title": "HoloPOCUS: Portable Mixed-Reality 3D Ultrasound Tracking, Reconstruction and Overlay"
+            }
+          ],
+          "created": "2023-08-29T02:05:31Z",
+          "formats": [],
+          "updated": "2023-08-29T02:05:32Z",
+          "version": "1",
+          "creators": [
+            {
+              "name": "Ng, Kian Wei",
+              "nameType": "Personal",
+              "givenName": "Kian Wei",
+              "familyName": "Ng",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Gao, Yujia",
+              "nameType": "Personal",
+              "givenName": "Yujia",
+              "familyName": "Gao",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Furqan, Shaheryar Mohammed",
+              "nameType": "Personal",
+              "givenName": "Shaheryar Mohammed",
+              "familyName": "Furqan",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Yeo, Zachery",
+              "nameType": "Personal",
+              "givenName": "Zachery",
+              "familyName": "Yeo",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Lau, Joel",
+              "nameType": "Personal",
+              "givenName": "Joel",
+              "familyName": "Lau",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Ngiam, Kee Yuan",
+              "nameType": "Personal",
+              "givenName": "Kee Yuan",
+              "familyName": "Ngiam",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Khoo, Eng Tat",
+              "nameType": "Personal",
+              "givenName": "Eng Tat",
+              "familyName": "Khoo",
+              "affiliation": [],
+              "nameIdentifiers": []
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "subjects": [
+            {
+              "lang": "en",
+              "subject": "Computer Vision and Pattern Recognition (cs.CV)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "lang": "en",
+              "subject": "Human-Computer Interaction (cs.HC)",
+              "subjectScheme": "arXiv"
+            },
+            {
+              "subject": "FOS: Computer and information sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "subject": "FOS: Computer and information sciences",
+              "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            }
+          ],
+          "container": {},
+          "partCount": 0,
+          "published": null,
+          "publisher": {
+            "name": "arXiv"
+          },
+          "viewCount": 0,
+          "contentUrl": null,
+          "registered": "2023-08-29T02:05:32Z",
+          "rightsList": [
+            {
+              "rights": "arXiv.org perpetual, non-exclusive license",
+              "rightsUri": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+            }
+          ],
+          "identifiers": [
+            {
+              "identifier": "2308.13823",
+              "identifierType": "arXiv"
+            }
+          ],
+          "partOfCount": 0,
+          "contributors": [],
+          "descriptions": [
+            {
+              "description": "Ultrasound (US) imaging provides a safe and accessible solution to procedural guidance and diagnostic imaging. The effective usage of conventional 2D US for interventional guidance requires extensive experience to project the image plane onto the patient, and the interpretation of images in diagnostics suffers from high intra- and inter-user variability. 3D US reconstruction allows for more consistent diagnosis and interpretation, but existing solutions are limited in terms of equipment and applicability in real-time navigation. To address these issues, we propose HoloPOCUS - a mixed reality US system (MR-US) that overlays rich US information onto the user's vision in a point-of-care setting. HoloPOCUS extends existing MR-US methods beyond placing a US plane in the user's vision to include a 3D reconstruction and projection that can aid in procedural guidance using conventional probes. We validated a tracking pipeline that demonstrates higher accuracy compared to existing MR-US works. Furthermore, user studies conducted via a phantom task showed significant improvements in navigation duration when using our proposed methods.",
+              "descriptionType": "Abstract"
+            },
+            {
+              "description": "Accepted in \"The 4th International Workshop of Advances in Simplifying Medical UltraSound\" (ASMUS) - a workshop held in conjunction with MICCAI 2023",
+              "descriptionType": "Other"
+            }
+          ],
+          "geoLocations": [],
+          "relatedItems": [],
+          "versionCount": 0,
+          "citationCount": 0,
+          "downloadCount": 0,
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "viewsOverTime": [],
+          "referenceCount": 0,
+          "versionOfCount": 0,
+          "metadataVersion": 0,
+          "publicationYear": 2023,
+          "citationsOverTime": [],
+          "downloadsOverTime": [],
+          "fundingReferences": [],
+          "relatedIdentifiers": [],
+          "alternateIdentifiers": [
+            {
+              "alternateIdentifier": "2308.13823",
+              "alternateIdentifierType": "arXiv"
+            }
+          ]
+        },
+        "relationships": {
+          "parts": {
+            "data": []
+          },
+          "client": {
+            "data": {
+              "id": "arxiv.content",
+              "type": "clients"
+            }
+          },
+          "partOf": {
+            "data": []
+          },
+          "provider": {
+            "data": {
+              "id": "arxiv",
+              "type": "providers"
+            }
+          },
+          "versions": {
+            "data": []
+          },
+          "citations": {
+            "data": []
+          },
+          "versionOf": {
+            "data": []
+          },
+          "references": {
+            "data": []
+          }
+        }
+      }
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:21:16.776329",
+    "processing_time_ms": 2989
+  },
+  "openalex": {
+    "data": {
+      "id": "https://openalex.org/W4386270096",
+      "doi": "https://doi.org/10.48550/arxiv.2308.13823",
+      "title": "HoloPOCUS: Portable Mixed-Reality 3D Ultrasound Tracking, Reconstruction and Overlay",
+      "open_access": {
+        "is_oa": true,
+        "oa_url": "https://arxiv.org/abs/2308.13823",
+        "oa_status": "green",
+        "any_repository_has_fulltext": true
+      },
+      "cited_by_count": 0,
+      "publication_year": 2023
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:21:15.575105",
+    "processing_time_ms": 1797
+  },
+  "unpaywall": {
+    "error": "No DOI provided",
+    "success": false,
+    "timestamp": "2025-07-22T14:21:13.783969",
+    "processing_time_ms": 3
+  },
+  "europe_pmc": {
+    "error": "No results found",
+    "success": false,
+    "timestamp": "2025-07-22T14:21:15.051143",
+    "processing_time_ms": 1272
+  },
+  "semantic_scholar": {
+    "data": {
+      "year": 2023,
+      "title": "HoloPOCUS: Portable Mixed-Reality 3D Ultrasound Tracking, Reconstruction and Overlay",
+      "authors": [
+        {
+          "name": "Kian Wei Ng",
+          "authorId": "36845315"
+        },
+        {
+          "name": "Yujia Gao",
+          "authorId": "2296728171"
+        },
+        {
+          "name": "Shaheryar Mohammed Furqan",
+          "authorId": "2363057634"
+        },
+        {
+          "name": "Z. Yeo",
+          "authorId": "46363705"
+        },
+        {
+          "name": "Joel Lau",
+          "authorId": "2061669012"
+        },
+        {
+          "name": "K. Ngiam",
+          "authorId": "7452993"
+        },
+        {
+          "name": "E. Khoo",
+          "authorId": "31971463"
+        }
+      ],
+      "journal": {
+        "name": "ArXiv",
+        "volume": "abs/2308.13823"
+      },
+      "paperId": "839652a2430cb2098767a2a66b86846d49333a8b",
+      "abstract": "Ultrasound (US) imaging provides a safe and accessible solution to procedural guidance and diagnostic imaging. The effective usage of conventional 2D US for interventional guidance requires extensive experience to project the image plane onto the patient, and the interpretation of images in diagnostics suffers from high intra- and inter-user variability. 3D US reconstruction allows for more consistent diagnosis and interpretation, but existing solutions are limited in terms of equipment and applicability in real-time navigation. To address these issues, we propose HoloPOCUS - a mixed reality US system (MR-US) that overlays rich US information onto the user's vision in a point-of-care setting. HoloPOCUS extends existing MR-US methods beyond placing a US plane in the user's vision to include a 3D reconstruction and projection that can aid in procedural guidance using conventional probes. We validated a tracking pipeline that demonstrates higher accuracy compared to existing MR-US works. Furthermore, user studies conducted via a phantom task showed significant improvements in navigation duration when using our proposed methods.",
+      "externalIds": {
+        "DOI": "10.48550/arXiv.2308.13823",
+        "DBLP": "conf/miccai/NgGFYLNK23",
+        "ArXiv": "2308.13823",
+        "CorpusId": 261242676
+      },
+      "isOpenAccess": true,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2308.13823",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2308.13823, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      }
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:21:14.165016",
+    "processing_time_ms": 389
+  }
+}

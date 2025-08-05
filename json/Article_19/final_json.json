@@ -1,0 +1,1388 @@
+{
+  "vision_json": {
+    "source": "gpt-4o-vision",
+    "success": true,
+    "prompt_sent": "Extract ONLY publication metadata from these academic paper pages.\n\nCRITICAL: This data will be sent to 11 external APIs, so format accuracy is essential.\n\nFIELD REQUIREMENTS WITH EXACT FORMATS:\n\n1. **Title**: Clean title for API queries (HIGHEST PRIORITY)\n   - Remove line breaks, extra spaces, formatting\n   - No HTML tags or special characters  \n   - Example: \"Effects of Machine Learning on Healthcare Outcomes\"\n\n2. **Authors**: API-compatible author list (HIGHEST PRIORITY)\n   - Each author as separate string in array\n   - Format: \"FirstName LastName\" or \"F. LastName\"\n   - Clean, no extra punctuation\n   - Example: [\"John Smith\", \"M. Johnson\", \"Sarah Williams\"]\n\n3. **DOI**: Standard DOI format for resolution APIs\n   - Must start with \"10.\" if present\n   - Clean format without URL prefixes\n   - Example: \"10.1234/journal.2024.001\"\n\n4. **Journal**: Clean journal name for database queries\n   - Full journal name preferred over abbreviations\n   - Remove extra formatting, parentheses\n   - Example: \"Nature Medicine\"\n\n5. **Year**: Numeric format for date filtering\n   - 4-digit NUMBER only (not string)\n   - Example: 2024\n\n6. **Volume**: Clean number for bibliographic APIs\n   - Numbers only, no \"Vol.\" prefix\n   - Example: \"15\"\n\n7. **Issue**: Clean number format\n   - Numbers only, no \"No.\" or \"Issue\" prefix\n   - Example: \"3\"\n\n8. **Pages**: Standard page range for citations\n   - Format: \"start-end\" or single page\n   - Example: \"123-135\" or \"45\"\n\n9. **PMID**: PubMed ID for medical APIs\n   - Numbers only, no \"PMID:\" prefix\n   - Example: \"12345678\"\n\n10. **PMCID**: PubMed Central ID for open access papers\n    - Numbers only, no \"PMC\" prefix\n    - Often appears near PMID in biomedical papers\n    - Example: \"9876543\"\n\n11. **Keywords**: API-compatible keyword list\n    - Each keyword as separate string\n    - Research-quality terms, no punctuation\n    - Example: [\"machine learning\", \"healthcare\", \"clinical outcomes\"]\n\n11. **Abstract**: Complete clean text (HIGHEST PRIORITY)\n    - Remove formatting, line breaks, extra spaces\n    - Complete sentences, proper punctuation\n    - Search thoroughly across ALL pages\n    - This is CRITICAL for Semantic Scholar and other APIs\n\n12. **Publisher**: Clean organization name\n    - Official publisher name\n    - Example: \"Elsevier\" or \"Nature Publishing Group\"\n\nABSTRACT EXTRACTION PRIORITY:\n- Look thoroughly across ALL pages for abstract sections\n- Extract COMPLETE text, including multiple paragraphs\n- Check: Abstract, Summary, Introduction summary paragraphs\n- This field is CRITICAL for API enrichment success\n\nReturn JSON format:\n{\n  \"Title\": \"clean title without formatting\",\n  \"Authors\": [\"Author One\", \"Author Two\"],\n  \"DOI\": \"10.xxxx/xxxxx\",\n  \"Journal\": \"clean journal name\", \n  \"Year\": 2024,\n  \"Volume\": \"15\",\n  \"Issue\": \"3\", \n  \"Pages\": \"123-135\",\n  \"Abstract\": \"complete clean abstract text\",\n  \"Keywords\": [\"keyword1\", \"keyword2\"],\n  \"PMID\": \"12345678\",\n  \"PMCID\": \"9876543\",\n  \"Publisher\": \"publisher name\"\n}\n\nReturn null for fields not clearly visible. The Abstract field is MOST IMPORTANT for downstream API success.",
+    "cost_tracking": {
+      "model": "gpt-4o",
+      "call_type": "vision_extraction",
+      "timestamp": "2025-07-22T14:10:33.658897",
+      "input_cost": 0.007725,
+      "total_cost": 0.012975,
+      "output_cost": 0.00525,
+      "input_tokens": 3090,
+      "total_tokens": 3615,
+      "output_tokens": 525
+    },
+    "input_details": {
+      "dpi": 120,
+      "max_tokens": 1500,
+      "model_used": "gpt-4o",
+      "temperature": 0.1,
+      "page_strategy": "strategic",
+      "image_resolution": "high",
+      "processing_time_ms": 30344,
+      "pdf_pages_processed": 3
+    },
+    "extracted_data": {
+      "DOI": "10.1016/j.jneumeth.2024.110349",
+      "PMID": null,
+      "Year": 2025,
+      "Issue": null,
+      "PMCID": null,
+      "Pages": "110349",
+      "Title": "Using a mixed-reality headset to elicit and track clinically relevant movement in the clinic",
+      "Volume": "415",
+      "Authors": [
+        "Dylan Calame",
+        "Evan Lester",
+        "Phil Chiu",
+        "Lauren Seeberger"
+      ],
+      "Journal": "Journal of Neuroscience Methods",
+      "Abstract": "Background: 21st century neurology will require scalable and quantitative tools that can improve neurologic evaluations over telehealth and expand access to care. Commercially available mixed-reality headsets allow for simultaneous presentation of stimuli via holograms projected into the real world and objective and quantitative measurement of hand movement, eye movement, and phonation. New method: We created 6 tasks designed to mimic standard neurologic assessments and administered them to a single participant via the Microsoft HoloLens 2 mixed-reality headset. The tasks assessed postural hand tremor, finger tapping, pronation and supination of hands, hand and eye tracking of a center-out task, hand and eye tracking of a random motion task, and vocal assessment. Results: We show the utility of the HoloLens for commonly used neurological exams. First, we demonstrate that headset-derived holograms can project hand movements and objects in 3D space, providing a method to accurately and reproducibly present test stimuli to reduce test-retest variability. Second, we found that participant hand movements closely matched holographic stimuli using a variety of metrics calculated on recorded movement data. Third, we showed that the HoloLens can record and playback exam tasks for visual inspection, sharing with other medical providers, and future analysis. Fourth, we showed that vocal recordings and analysis could be used to profile vocal characteristics over time. Together, this demonstrates the versatility of mixed reality headsets and possible applications for neurological assessment. Conclusions: Administering components of the neurologic exam via a self-contained and commercially available mixed-reality headset has numerous benefits including detailed kinematic quantification, reproducible stimuli presentation from test to test, and can be self-administered expanding access to neurological care and saving hospital time and money.",
+      "Keywords": [
+        "Movement tracking",
+        "Eye movements",
+        "Hand movements",
+        "Neurological exam",
+        "Mixed-reality"
+      ],
+      "Publisher": "Elsevier B.V."
+    },
+    "pages_processed": 3,
+    "extraction_matrix": {
+      "_performance_summary": {
+        "total_cost": 0.0,
+        "data_source": "vision_json",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "vision_status": "COMPLETE",
+        "extraction_rate": 76.92,
+        "extraction_source": "gpt-4o-vision",
+        "performance_level": "GOOD",
+        "fields_with_content": 10,
+        "processing_time_seconds": 0,
+        "total_fields_in_response": 13
+      }
+    },
+    "extraction_method": "vision_strategic_strategy",
+    "extraction_quality": {
+      "success_rate": 50.0,
+      "quality_score": 50.0,
+      "successful_fields": 10,
+      "validation_details": {
+        "errors": [],
+        "is_valid": true,
+        "warnings": [],
+        "quality_score": 100,
+        "completeness_score": 100.0
+      },
+      "total_fields_attempted": 13
+    },
+    "processing_time_ms": 30344,
+    "raw_openai_response": {
+      "content": "```json\n{\n  \"Title\": \"Using a mixed-reality headset to elicit and track clinically relevant movement in the clinic\",\n  \"Authors\": [\"Dylan Calame\", \"Evan Lester\", \"Phil Chiu\", \"Lauren Seeberger\"],\n  \"DOI\": \"10.1016/j.jneumeth.2024.110349\",\n  \"Journal\": \"Journal of Neuroscience Methods\",\n  \"Year\": 2025,\n  \"Volume\": \"415\",\n  \"Issue\": null,\n  \"Pages\": \"110349\",\n  \"Abstract\": \"Background: 21st century neurology will require scalable and quantitative tools that can improve neurologic evaluations over telehealth and expand access to care. Commercially available mixed-reality headsets allow for simultaneous presentation of stimuli via holograms projected into the real world and objective and quantitative measurement of hand movement, eye movement, and phonation. New method: We created 6 tasks designed to mimic standard neurologic assessments and administered them to a single participant via the Microsoft HoloLens 2 mixed-reality headset. The tasks assessed postural hand tremor, finger tapping, pronation and supination of hands, hand and eye tracking of a center-out task, hand and eye tracking of a random motion task, and vocal assessment. Results: We show the utility of the HoloLens for commonly used neurological exams. First, we demonstrate that headset-derived holograms can project hand movements and objects in 3D space, providing a method to accurately and reproducibly present test stimuli to reduce test-retest variability. Second, we found that participant hand movements closely matched holographic stimuli using a variety of metrics calculated on recorded movement data. Third, we showed that the HoloLens can record and playback exam tasks for visual inspection, sharing with other medical providers, and future analysis. Fourth, we showed that vocal recordings and analysis could be used to profile vocal characteristics over time. Together, this demonstrates the versatility of mixed reality headsets and possible applications for neurological assessment. Conclusions: Administering components of the neurologic exam via a self-contained and commercially available mixed-reality headset has numerous benefits including detailed kinematic quantification, reproducible stimuli presentation from test to test, and can be self-administered expanding access to neurological care and saving hospital time and money.\",\n  \"Keywords\": [\"Movement tracking\", \"Eye movements\", \"Hand movements\", \"Neurological exam\", \"Mixed-reality\"],\n  \"PMID\": null,\n  \"PMCID\": null,\n  \"Publisher\": \"Elsevier B.V.\"\n}\n```",
+      "parsing_error": "Expecting value: line 1 column 1 (char 0)",
+      "response_length": 2516,
+      "parsing_successful": false
+    },
+    "processing_timestamp": "2025-07-22T14:10:33.658886"
+  },
+  "apis_raw_json": {
+    "core": {
+      "data": {
+        "data": {
+          "doi": "10.26190/unsworks/24582",
+          "year": 2022,
+          "title": "Explaining Self-Motion Perception using Virtual Reality in Patients with Ocular Disease",
+          "authors": [
+            "Luu, Wilson "
+          ],
+          "core_id": 137370439,
+          "journal": "",
+          "pdf_url": "https://unsworks.unsw.edu.au/bitstreams/81c17adb-d930-434f-b252-b2d8608578c2/download",
+          "abstract": "Safe mobility requires accurate object and self-motion perception. This involves processing retinal motion generated by optic flow (which change with eye and head movements) and correctly integrating this with vestibular and proprioceptive cues. Poor sensory feedback of self-motion can lead to increased risks of accidents which impacts quality of life. This is further problematic for those with visual deficits, such as central or peripheral vision loss or impaired binocular vision. The expansion of healthcare into using virtual reality (VR) has allowed the assessment of sensory and motor performance in a safe environment. An advantage of VR is its ability to generate vection (perceived illusory self-motion) and presence (sense of being ‘there’). However, a limitation is the potential to develop cybersickness.\n\nInitially, the project examined how binocular vision influences vection in a virtual environment. Observers with or without stereopsis (ability to judge depth binocularly) were asked to compare their perceptual experiences based on psychophysical judgements of magnitude estimation. The findings suggest that the absence of stereopsis impairs accurate judgement of self-motion and reduces perceived presence, however, it was protective for cybersickness.\n\nThe project then examined the impact of central and peripheral vision loss on self-motion perception by comparing those with age-related macular degeneration (AMD) and glaucoma respectively. Effects of these visual deficits on sensory conflicts involving visual-vestibular interactions was then assessed. Sensory conflict was imposed by altering the gain of simulated head linear head position and angular orientation to be either compatible or incompatible with head movement in two separate experiments. Fixation was used to control gaze during changes in angular head orientation. Vection and presence was higher in those with AMD, compared with those with glaucoma, indicating the importance of regional specificity in visual deficits on self-motion perception.\n\nAcross studies, vection and presence were predominantly visually mediated despite changes in visual-vestibular sensory conflict. The vestibular system, however, appeared to play a larger role in developing cybersickness. The altered perception of self-motion may worsen mobility, particularly with disease progression. We therefore provide a framework and recommendations for a multidisciplinary patient-centric model of care to maximise quality of life",
+          "repository": "",
+          "open_access": false,
+          "citation_count": 0
+        },
+        "success": true,
+        "strategy": "Title Field"
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:10:49.117602",
+      "processing_time_ms": 15107
+    },
+    "doaj": {
+      "error": "No DOI available for DOAJ search",
+      "success": false,
+      "timestamp": "2025-07-22T14:10:35.155853",
+      "processing_time_ms": 1138
+    },
+    "arxiv": {
+      "error": "No results found",
+      "success": false,
+      "timestamp": "2025-07-22T14:10:35.462221",
+      "processing_time_ms": 1451
+    },
+    "orcid": {
+      "data": {
+        "person": {
+          "name": {
+            "path": "0000-0003-0364-8737",
+            "source": null,
+            "visibility": "public",
+            "credit-name": null,
+            "family-name": {
+              "value": "Calame"
+            },
+            "given-names": {
+              "value": "Dylan"
+            },
+            "created-date": {
+              "value": 1624483336828
+            },
+            "last-modified-date": {
+              "value": 1624483336828
+            }
+          },
+          "path": "/0000-0003-0364-8737/person",
+          "emails": {
+            "path": "/0000-0003-0364-8737/email",
+            "email": [],
+            "last-modified-date": null
+          },
+          "keywords": {
+            "path": "/0000-0003-0364-8737/keywords",
+            "keyword": [],
+            "last-modified-date": null
+          },
+          "addresses": {
+            "path": "/0000-0003-0364-8737/address",
+            "address": [],
+            "last-modified-date": null
+          },
+          "biography": null,
+          "other-names": {
+            "path": "/0000-0003-0364-8737/other-names",
+            "other-name": [],
+            "last-modified-date": null
+          },
+          "researcher-urls": {
+            "path": "/0000-0003-0364-8737/researcher-urls",
+            "researcher-url": [],
+            "last-modified-date": null
+          },
+          "last-modified-date": null,
+          "external-identifiers": {
+            "path": "/0000-0003-0364-8737/external-identifiers",
+            "last-modified-date": null,
+            "external-identifier": []
+          }
+        },
+        "orcid_id": "0000-0003-0364-8737"
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:10:35.398276",
+      "processing_time_ms": 1378
+    },
+    "pubmed": {
+      "data": {
+        "PubmedArticle": [
+          {
+            "MedlineCitation": {
+              "PMID": {
+                "content": "39675675"
+              },
+              "Article": {
+                "Journal": {
+                  "Title": "Journal of neuroscience methods",
+                  "JournalIssue": {
+                    "Volume": "415",
+                    "PubDate": {
+                      "Year": "2025"
+                    }
+                  }
+                },
+                "Abstract": {
+                  "AbstractText": [
+                    "21st century neurology will require scalable and quantitative tools that can improve neurologic evaluations over telehealth and expand access to care. Commercially available mixed-reality headsets allow for simultaneous presentation of stimuli via holograms projected into the real world and objective and quantitative measurement of hand movement, eye movement, and phonation.",
+                    "We created 6 tasks designed to mimic standard neurologic assessments and administered them to a single participant via the Microsoft HoloLens 2 mixed-reality headset. The tasks assessed postural hand tremor, finger tapping, pronation and supination of hands, hand and eye tracking of a center-out task, hand and eye tracking of a random motion task, and vocal assessment.",
+                    "We show the utility of the HoloLens for commonly used neurological exams. First, we demonstrate that headset-derived holograms can project hand movements and objects in 3D space, providing a method to accurately and reproducibly present test stimuli to reduce test-test variability. Second, we found that participant hand movements closely matched holographic stimuli using a variety of metrics calculated on recorded movement data. Third, we showed that the HoloLens can record and playback exam tasks for visual inspection, sharing with other medical providers, and future analysis. Fourth, we showed that vocal recordings and analysis could be used to profile vocal characteristics over time. Together, this demonstrates the versatility of mixed reality headsets and possible applications for neurological assessment.",
+                    "Administering components of the neurologic exam via a self-contained and commercially available mixed-reality headset has numerous benefits including detailed kinematic quantification, reproducible stimuli presentation from test to test, and can be self-administered expanding access to neurological care and saving hospital time and money."
+                  ]
+                },
+                "AuthorList": {
+                  "Author": [
+                    {
+                      "ForeName": "Dylan",
+                      "LastName": "Calame"
+                    },
+                    {
+                      "ForeName": "Evan",
+                      "LastName": "Lester"
+                    },
+                    {
+                      "ForeName": "Phil",
+                      "LastName": "Chiu"
+                    },
+                    {
+                      "ForeName": "Lauren",
+                      "LastName": "Seeberger"
+                    }
+                  ]
+                },
+                "Pagination": {
+                  "MedlinePgn": "110349"
+                },
+                "ArticleTitle": "Using a mixed-reality headset to elicit and track clinically relevant movement in the clinic."
+              }
+            }
+          }
+        ]
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:10:35.617243",
+      "processing_time_ms": 1629
+    },
+    "crossref": {
+      "data": {
+        "status": "ok",
+        "message": {
+          "DOI": "10.1016/j.jneumeth.2024.110349",
+          "URL": "https://doi.org/10.1016/j.jneumeth.2024.110349",
+          "ISSN": [
+            "0165-0270"
+          ],
+          "link": [
+            {
+              "URL": "https://api.elsevier.com/content/article/PII:S0165027024002942?httpAccept=text/xml",
+              "content-type": "text/xml",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://api.elsevier.com/content/article/PII:S0165027024002942?httpAccept=text/plain",
+              "content-type": "text/plain",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            }
+          ],
+          "page": "110349",
+          "type": "journal-article",
+          "score": 1,
+          "title": [
+            "Using a mixed-reality headset to elicit and track clinically relevant movement in the clinic"
+          ],
+          "author": [
+            {
+              "given": "Dylan",
+              "family": "Calame",
+              "sequence": "first",
+              "affiliation": []
+            },
+            {
+              "given": "Evan",
+              "family": "Lester",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Phil",
+              "family": "Chiu",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Lauren",
+              "family": "Seeberger",
+              "sequence": "additional",
+              "affiliation": []
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2025,
+                3
+              ]
+            ]
+          },
+          "member": "78",
+          "prefix": "10.1016",
+          "source": "Crossref",
+          "volume": "415",
+          "created": {
+            "date-time": "2024-12-14T03:00:34Z",
+            "timestamp": 1734145234000,
+            "date-parts": [
+              [
+                2024,
+                12,
+                14
+              ]
+            ]
+          },
+          "indexed": {
+            "version": "3.41.0",
+            "date-time": "2025-06-26T04:14:23Z",
+            "timestamp": 1750911263532,
+            "date-parts": [
+              [
+                2025,
+                6,
+                26
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "https://www.elsevier.com/tdm/userlicense/1.0/",
+              "start": {
+                "date-time": "2025-03-01T00:00:00Z",
+                "timestamp": 1740787200000,
+                "date-parts": [
+                  [
+                    2025,
+                    3,
+                    1
+                  ]
+                ]
+              },
+              "delay-in-days": 0,
+              "content-version": "tdm"
+            },
+            {
+              "URL": "https://www.elsevier.com/legal/tdmrep-license",
+              "start": {
+                "date-time": "2025-03-01T00:00:00Z",
+                "timestamp": 1740787200000,
+                "date-parts": [
+                  [
+                    2025,
+                    3,
+                    1
+                  ]
+                ]
+              },
+              "delay-in-days": 0,
+              "content-version": "tdm"
+            },
+            {
+              "URL": "https://doi.org/10.15223/policy-017",
+              "start": {
+                "date-time": "2025-03-01T00:00:00Z",
+                "timestamp": 1740787200000,
+                "date-parts": [
+                  [
+                    2025,
+                    3,
+                    1
+                  ]
+                ]
+              },
+              "delay-in-days": 0,
+              "content-version": "stm-asf"
+            },
+            {
+              "URL": "https://doi.org/10.15223/policy-037",
+              "start": {
+                "date-time": "2025-03-01T00:00:00Z",
+                "timestamp": 1740787200000,
+                "date-parts": [
+                  [
+                    2025,
+                    3,
+                    1
+                  ]
+                ]
+              },
+              "delay-in-days": 0,
+              "content-version": "stm-asf"
+            },
+            {
+              "URL": "https://doi.org/10.15223/policy-012",
+              "start": {
+                "date-time": "2025-03-01T00:00:00Z",
+                "timestamp": 1740787200000,
+                "date-parts": [
+                  [
+                    2025,
+                    3,
+                    1
+                  ]
+                ]
+              },
+              "delay-in-days": 0,
+              "content-version": "stm-asf"
+            },
+            {
+              "URL": "https://doi.org/10.15223/policy-029",
+              "start": {
+                "date-time": "2025-03-01T00:00:00Z",
+                "timestamp": 1740787200000,
+                "date-parts": [
+                  [
+                    2025,
+                    3,
+                    1
+                  ]
+                ]
+              },
+              "delay-in-days": 0,
+              "content-version": "stm-asf"
+            },
+            {
+              "URL": "https://doi.org/10.15223/policy-004",
+              "start": {
+                "date-time": "2025-03-01T00:00:00Z",
+                "timestamp": 1740787200000,
+                "date-parts": [
+                  [
+                    2025,
+                    3,
+                    1
+                  ]
+                ]
+              },
+              "delay-in-days": 0,
+              "content-version": "stm-asf"
+            }
+          ],
+          "subject": [],
+          "language": "en",
+          "relation": {
+            "has-preprint": [
+              {
+                "id": "10.1101/2024.07.07.24310049",
+                "id-type": "doi",
+                "asserted-by": "object"
+              }
+            ]
+          },
+          "resource": {
+            "primary": {
+              "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0165027024002942"
+            }
+          },
+          "subtitle": [],
+          "assertion": [
+            {
+              "name": "publisher",
+              "label": "This article is maintained by",
+              "value": "Elsevier"
+            },
+            {
+              "name": "articletitle",
+              "label": "Article Title",
+              "value": "Using a mixed-reality headset to elicit and track clinically relevant movement in the clinic"
+            },
+            {
+              "name": "journaltitle",
+              "label": "Journal Title",
+              "value": "Journal of Neuroscience Methods"
+            },
+            {
+              "name": "articlelink",
+              "label": "CrossRef DOI link to publisher maintained version",
+              "value": "https://doi.org/10.1016/j.jneumeth.2024.110349"
+            },
+            {
+              "name": "content_type",
+              "label": "Content Type",
+              "value": "article"
+            },
+            {
+              "name": "copyright",
+              "label": "Copyright",
+              "value": "© 2024 Published by Elsevier B.V."
+            }
+          ],
+          "deposited": {
+            "date-time": "2025-02-23T18:52:28Z",
+            "timestamp": 1740336748000,
+            "date-parts": [
+              [
+                2025,
+                2,
+                23
+              ]
+            ]
+          },
+          "issn-type": [
+            {
+              "type": "print",
+              "value": "0165-0270"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2025,
+                3
+              ]
+            ]
+          },
+          "publisher": "Elsevier BV",
+          "reference": [
+            {
+              "DOI": "10.1002/mds.870130308",
+              "key": "10.1016/j.jneumeth.2024.110349_bib1",
+              "year": "1998",
+              "author": "Agostino",
+              "volume": "13",
+              "first-page": "418",
+              "article-title": "Clinical impairment of sequential finger movements in Parkinson’s disease",
+              "journal-title": "Mov. Disord.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "key": "10.1016/j.jneumeth.2024.110349_bib2",
+              "unstructured": "Boersma, P. Praat, A System for Doing Phonetics by Computer. (2002)."
+            },
+            {
+              "key": "10.1016/j.jneumeth.2024.110349_bib3",
+              "year": "1999",
+              "issue": "6",
+              "author": "Charles",
+              "volume": "59",
+              "first-page": "1565",
+              "article-title": "Classification of tremor and update on treatment",
+              "journal-title": "Am. Fam. Physician"
+            },
+            {
+              "DOI": "10.1016/j.jocn.2015.10.053",
+              "key": "10.1016/j.jneumeth.2024.110349_bib4",
+              "year": "2016",
+              "author": "Djurić-Jovičić",
+              "volume": "30",
+              "first-page": "49",
+              "article-title": "Finger tapping analysis in patients with Parkinson’s disease and atypical parkinsonism",
+              "journal-title": "J. Clin. Neurosci.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.3389/fpsyg.2018.02132",
+              "key": "10.1016/j.jneumeth.2024.110349_bib5",
+              "year": "2018",
+              "author": "Duzmanska",
+              "volume": "9",
+              "article-title": "Can simulator sickness be avoided? A review on temporal aspects of simulator sickness",
+              "journal-title": "Front. Psychol.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1016/j.parkreldis.2022.01.017",
+              "key": "10.1016/j.jneumeth.2024.110349_bib6",
+              "year": "2022",
+              "author": "Esper",
+              "volume": "96",
+              "first-page": "38",
+              "article-title": "Necessity and feasibility of remote tele-programming of deep brain stimulation systems in Parkinson’s disease",
+              "journal-title": "Park. Relat. Disord.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "key": "10.1016/j.jneumeth.2024.110349_bib7",
+              "unstructured": "Fahn, S., Marsden, C., Calne, D., Goldstein, M. & Editors. Members of the UPDRS Development Committee. in Recent Developments in Parkinson’s Disease, Vol 2. 153–163, 293–304 (Macmillan Health Care Information, Florham Park, NJ, 1987)."
+            },
+            {
+              "DOI": "10.1212/WNL.0b013e31829d8783",
+              "key": "10.1016/j.jneumeth.2024.110349_bib8",
+              "unstructured": "Freeman, W.D., Vatz, K.A., Griggs, R.C. & Pedley, T. The Workforce Task Force Report Clinical Implications for Neurology. 〈www.neurology.org〉 (2013).",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1016/j.autneu.2016.12.004",
+              "key": "10.1016/j.jneumeth.2024.110349_bib9",
+              "year": "2017",
+              "author": "Gavgani",
+              "volume": "203",
+              "first-page": "41",
+              "article-title": "Profiling subjective symptoms and autonomic changes associated with cybersickness",
+              "journal-title": "Auton. Neurosci.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "key": "10.1016/j.jneumeth.2024.110349_bib10",
+              "year": "2017",
+              "author": "Goodlett",
+              "first-page": "191",
+              "series-title": "Conn’s Translational Neuroscience",
+              "article-title": "The Cerebellum"
+            },
+            {
+              "DOI": "10.1038/s41598-021-96485-3",
+              "key": "10.1016/j.jneumeth.2024.110349_bib11",
+              "year": "2021",
+              "author": "Gulde",
+              "volume": "11",
+              "first-page": "17095",
+              "article-title": "State and trait of finger tapping performance in multiple sclerosis",
+              "journal-title": "Sci. Rep.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1016/j.future.2018.08.049",
+              "key": "10.1016/j.jneumeth.2024.110349_bib12",
+              "year": "2019",
+              "author": "Guna",
+              "volume": "91",
+              "first-page": "263",
+              "article-title": "Influence of video content type on users’ virtual reality sickness perception and physiological response",
+              "journal-title": "Future Gener. Comput. Syst.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1016/j.wocn.2018.07.001",
+              "key": "10.1016/j.jneumeth.2024.110349_bib13",
+              "year": "2018",
+              "author": "Jadoul",
+              "volume": "71",
+              "first-page": "1",
+              "article-title": "Introducing parselmouth: a python interface to praat",
+              "journal-title": "J. Phon.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.3389/frvir.2021.759682",
+              "key": "10.1016/j.jneumeth.2024.110349_bib14",
+              "year": "2021",
+              "author": "Lawson",
+              "volume": "2",
+              "article-title": "Editorial: cybersickness in virtual reality and augmented reality",
+              "journal-title": "Front. Virtual Real.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1212/WNL.0000000000012111",
+              "key": "10.1016/j.jneumeth.2024.110349_bib15",
+              "year": "2021",
+              "author": "Majersik",
+              "volume": "96",
+              "first-page": "1122",
+              "article-title": "A shortage of neurologists – we must act now",
+              "journal-title": "Neurology",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1212/WNL.41.9.1476",
+              "key": "10.1016/j.jneumeth.2024.110349_bib16",
+              "year": "1991",
+              "author": "Montgomery",
+              "volume": "41",
+              "first-page": "1476",
+              "article-title": "Reaction time and movement velocity abnormalities in Parkinson’s disease under different task conditions",
+              "journal-title": "Neurology",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1080/0013791X.2017.1294718",
+              "key": "10.1016/j.jneumeth.2024.110349_bib17",
+              "year": "2017",
+              "author": "Muñoz",
+              "volume": "62",
+              "first-page": "180",
+              "article-title": "Evaluating the cost-effectiveness of an early detection of Parkinson’s disease through innovative technology",
+              "journal-title": "Eng. Econ.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1152/jn.2000.83.2.639",
+              "key": "10.1016/j.jneumeth.2024.110349_bib18",
+              "year": "2000",
+              "issue": "2",
+              "author": "Neggers",
+              "volume": "83",
+              "first-page": "639",
+              "article-title": "Ocular gaze is anchored to the target of an ongoing pointing movement",
+              "journal-title": "J. Neurophysiol.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1007/s00415-018-8841-8",
+              "key": "10.1016/j.jneumeth.2024.110349_bib19",
+              "year": "2018",
+              "author": "Roalf",
+              "volume": "265",
+              "first-page": "1365",
+              "article-title": "Quantitative assessment of finger tapping characteristics in mild cognitive impairment, Alzheimer’s disease, and Parkinson’s disease",
+              "journal-title": "J. Neurol.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "key": "10.1016/j.jneumeth.2024.110349_bib20",
+              "year": "2009",
+              "author": "Sato",
+              "volume": "61",
+              "first-page": "591",
+              "article-title": "Reliability of the Japanese version of the scale for the assessment and rating of ataxia (SARA)",
+              "journal-title": "Brain Nerve"
+            },
+            {
+              "DOI": "10.1186/s12883-017-0829-y",
+              "key": "10.1016/j.jneumeth.2024.110349_bib21",
+              "year": "2017",
+              "author": "Shirani",
+              "volume": "17",
+              "article-title": "Finger tapping impairments are highly sensitive for evaluating upper motor neuron lesions",
+              "journal-title": "BMC Neurol.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1002/mds.870120214",
+              "key": "10.1016/j.jneumeth.2024.110349_bib22",
+              "year": "1997",
+              "author": "Siesling",
+              "volume": "12",
+              "first-page": "229",
+              "article-title": "A shortened version of the motor section of the Unified Huntington’s Disease Rating Scale",
+              "journal-title": "Mov. Disord.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "key": "10.1016/j.jneumeth.2024.110349_bib23",
+              "year": "2021",
+              "author": "Simonet",
+              "volume": "11",
+              "first-page": "1901",
+              "article-title": "Slow motion analysis of repetitive tapping (SMART) test: measuring Bradykinesia in recently diagnosed parkinson’s disease and idiopathic anosmia",
+              "journal-title": "J. Park. Dis."
+            },
+            {
+              "DOI": "10.1016/j.jvoice.2010.01.002",
+              "key": "10.1016/j.jneumeth.2024.110349_bib24",
+              "year": "2011",
+              "author": "Skodda",
+              "volume": "25",
+              "first-page": "725",
+              "article-title": "Acoustical analysis of speech in progressive Supranuclear palsy",
+              "journal-title": "J. Voice",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.3389/fneur.2013.00051",
+              "key": "10.1016/j.jneumeth.2024.110349_bib25",
+              "year": "2013",
+              "author": "Sternberg",
+              "volume": "4",
+              "article-title": "Postural and intention tremors: a detailed clinical study of essential tremor vs. Parkinson’s Disease",
+              "journal-title": "Front. Neurol.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1038/ncpneuro0426",
+              "key": "10.1016/j.jneumeth.2024.110349_bib26",
+              "year": "2007",
+              "author": "Subramony",
+              "volume": "3",
+              "first-page": "136",
+              "article-title": "SARA—a new clinical scale for the assessment and rating of ataxia",
+              "journal-title": "Nat. Clin. Pr. Neurol.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1016/j.protcy.2013.12.124",
+              "key": "10.1016/j.jneumeth.2024.110349_bib27",
+              "year": "2013",
+              "author": "Teixeira",
+              "volume": "9",
+              "first-page": "1112",
+              "article-title": "Vocal acoustic analysis – Jitter, Shimmer and HNR parameters",
+              "journal-title": "Procedia Technol.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1002/mds.21544",
+              "key": "10.1016/j.jneumeth.2024.110349_bib28",
+              "year": "2007",
+              "author": "Weyer",
+              "volume": "22",
+              "first-page": "1633",
+              "article-title": "Reliability and validity of the scale for the assessment and rating of ataxia: a study in 64 ataxia patients",
+              "journal-title": "Mov. Disord.",
+              "doi-asserted-by": "crossref"
+            },
+            {
+              "DOI": "10.1123/jab.15.3.318",
+              "key": "10.1016/j.jneumeth.2024.110349_bib29",
+              "year": "1999",
+              "author": "Yu",
+              "volume": "15",
+              "first-page": "318",
+              "article-title": "Estimate of the optimum cut- off frequency for the Butterworth low-pass digital filter",
+              "journal-title": "J. Appl. Biomech.",
+              "doi-asserted-by": "crossref"
+            }
+          ],
+          "short-title": [],
+          "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+          "alternative-id": [
+            "S0165027024002942"
+          ],
+          "article-number": "110349",
+          "content-domain": {
+            "domain": [
+              "elsevier.com",
+              "sciencedirect.com"
+            ],
+            "crossmark-restriction": true
+          },
+          "original-title": [],
+          "container-title": [
+            "Journal of Neuroscience Methods"
+          ],
+          "published-print": {
+            "date-parts": [
+              [
+                2025,
+                3
+              ]
+            ]
+          },
+          "reference-count": 29,
+          "references-count": 29,
+          "special_numbering": "C",
+          "short-container-title": [
+            "Journal of Neuroscience Methods"
+          ],
+          "is-referenced-by-count": 0
+        },
+        "message-type": "work",
+        "message-version": "1.0.0"
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:10:35.492142",
+      "processing_time_ms": 1504
+    },
+    "datacite": {
+      "error": "No matching articles found",
+      "success": false,
+      "timestamp": "2025-07-22T14:10:43.315053",
+      "processing_time_ms": 9302
+    },
+    "openalex": {
+      "data": {
+        "id": "https://openalex.org/W4405355881",
+        "doi": "https://doi.org/10.1016/j.jneumeth.2024.110349",
+        "title": "Using a mixed-reality headset to elicit and track clinically relevant movement in the clinic.",
+        "open_access": {
+          "is_oa": false,
+          "oa_url": null,
+          "oa_status": "closed",
+          "any_repository_has_fulltext": false
+        },
+        "cited_by_count": 0,
+        "publication_year": 2024
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:10:35.517956",
+      "processing_time_ms": 1519
+    },
+    "unpaywall": {
+      "data": {
+        "doi": "10.1016/j.jneumeth.2024.110349",
+        "year": 2024,
+        "genre": "journal-article",
+        "is_oa": false,
+        "title": "Using a mixed-reality headset to elicit and track clinically relevant movement in the clinic",
+        "doi_url": "https://doi.org/10.1016/j.jneumeth.2024.110349",
+        "oa_status": "closed",
+        "publisher": "Elsevier BV",
+        "is_paratext": false,
+        "journal_name": "Journal of Neuroscience Methods",
+        "journal_issns": "0165-0270,1872-678X",
+        "journal_issn_l": "0165-0270",
+        "published_date": "2024-12-14",
+        "z_authors_summary": {
+          "count": 4,
+          "first_author": ""
+        },
+        "has_repository_copy": false,
+        "oa_locations_summary": {
+          "count": 0,
+          "has_repository": false
+        },
+        "best_oa_location_summary": null,
+        "first_oa_location_summary": null
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:10:35.490034",
+      "processing_time_ms": 1483
+    },
+    "europe_pmc": {
+      "data": {
+        "id": "39675675",
+        "doi": "10.1016/j.jneumeth.2024.110349",
+        "pmid": "39675675",
+        "inPMC": "N",
+        "title": "Using a mixed-reality headset to elicit and track clinically relevant movement in the clinic.",
+        "hasPDF": "N",
+        "inEPMC": "N",
+        "source": "MED",
+        "authMan": "N",
+        "hasBook": "N",
+        "hasData": "N",
+        "pubYear": "2025",
+        "hasSuppl": "N",
+        "language": "eng",
+        "pageInfo": "110349",
+        "pubModel": "Print-Electronic",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Calame D",
+              "initials": "D",
+              "lastName": "Calame",
+              "firstName": "Dylan",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurology, University of California Los Angeles, Los Angeles, CA, USA. Electronic address: dcalame@mednet.ucla.edu."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Lester E",
+              "initials": "E",
+              "lastName": "Lester",
+              "firstName": "Evan",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Medicine, Weill Cornell, New York City, NY, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Chiu P",
+              "initials": "P",
+              "lastName": "Chiu",
+              "firstName": "Phil"
+            },
+            {
+              "fullName": "Seeberger L",
+              "initials": "L",
+              "lastName": "Seeberger",
+              "firstName": "Lauren",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Charleston Area Medical Center, Charleston, WV, USA."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "affiliation": "Department of Neurology, University of California Los Angeles, Los Angeles, CA, USA. Electronic address: dcalame@mednet.ucla.edu.",
+        "epmcAuthMan": "N",
+        "journalInfo": {
+          "volume": "415",
+          "journal": {
+            "essn": "1872-678X",
+            "issn": "0165-0270",
+            "nlmid": "7905558",
+            "title": "Journal of neuroscience methods",
+            "isoabbreviation": "J Neurosci Methods",
+            "medlineAbbreviation": "J Neurosci Methods"
+          },
+          "journalIssueId": 3892452,
+          "dateOfPublication": "2025 Mar",
+          "yearOfPublication": 2025,
+          "monthOfPublication": 3,
+          "printPublicationDate": "2025-03-01"
+        },
+        "keywordList": {
+          "keyword": [
+            "Eye movements",
+            "Hand Movements",
+            "Movement Tracking",
+            "Mixed-reality",
+            "Neurological Exam"
+          ]
+        },
+        "pubTypeList": {
+          "pubType": [
+            "Journal Article"
+          ]
+        },
+        "abstractText": "<h4>Background</h4>21st century neurology will require scalable and quantitative tools that can improve neurologic evaluations over telehealth and expand access to care. Commercially available mixed-reality headsets allow for simultaneous presentation of stimuli via holograms projected into the real world and objective and quantitative measurement of hand movement, eye movement, and phonation.<h4>New method</h4>We created 6 tasks designed to mimic standard neurologic assessments and administered them to a single participant via the Microsoft HoloLens 2 mixed-reality headset. The tasks assessed postural hand tremor, finger tapping, pronation and supination of hands, hand and eye tracking of a center-out task, hand and eye tracking of a random motion task, and vocal assessment.<h4>Results</h4>We show the utility of the HoloLens for commonly used neurological exams. First, we demonstrate that headset-derived holograms can project hand movements and objects in 3D space, providing a method to accurately and reproducibly present test stimuli to reduce test-test variability. Second, we found that participant hand movements closely matched holographic stimuli using a variety of metrics calculated on recorded movement data. Third, we showed that the HoloLens can record and playback exam tasks for visual inspection, sharing with other medical providers, and future analysis. Fourth, we showed that vocal recordings and analysis could be used to profile vocal characteristics over time. Together, this demonstrates the versatility of mixed reality headsets and possible applications for neurological assessment.<h4>Conclusions</h4>Administering components of the neurologic exam via a self-contained and commercially available mixed-reality headset has numerous benefits including detailed kinematic quantification, reproducible stimuli presentation from test to test, and can be self-administered expanding access to neurological care and saving hospital time and money.",
+        "authorString": "Calame D, Lester E, Chiu P, Seeberger L.",
+        "citedByCount": 0,
+        "hasLabsLinks": "N",
+        "isOpenAccess": "N",
+        "hasReferences": "Y",
+        "dateOfCreation": "2024-12-15",
+        "dateOfRevision": "2025-04-27",
+        "firstIndexDate": "2024-12-16",
+        "hasEvaluations": "N",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "url": "https://doi.org/10.1101/2024.07.07.24310049",
+              "site": "Unpaywall",
+              "availability": "Free",
+              "documentStyle": "doi",
+              "availabilityCode": "F"
+            },
+            {
+              "url": "https://doi.org/10.1016/j.jneumeth.2024.110349",
+              "site": "DOI",
+              "availability": "Subscription required",
+              "documentStyle": "doi",
+              "availabilityCode": "S"
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Hand",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Humans"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Neurologic Examination",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "IS",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "instrumentation"
+                  },
+                  {
+                    "abbreviation": "MT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Eye Movements",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Psychomotor Performance",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Movement",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "PH",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Adult"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Female"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Male"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Virtual Reality"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Eye-Tracking Technology",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "IS",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "instrumentation"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "dateOfCompletion": "2025-04-27",
+        "hasTextMinedTerms": "N",
+        "publicationStatus": "ppublish",
+        "firstPublicationDate": "2024-12-14",
+        "hasDbCrossReferences": "N",
+        "commentCorrectionList": {
+          "commentCorrection": [
+            {
+              "id": "39040166",
+              "type": "Update of",
+              "source": "MED",
+              "orderIn": 1,
+              "reference": "medRxiv. 2024 Jul 08:2024.07.07.24310049. doi: 10.1101/2024.07.07.24310049."
+            },
+            {
+              "id": "PPR878092",
+              "note": "CrossRef Pre-print loader",
+              "type": "Preprint in",
+              "source": "PPR",
+              "orderIn": 10002
+            }
+          ]
+        },
+        "hasTMAccessionNumbers": "N",
+        "electronicPublicationDate": "2024-12-14"
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:10:35.837451",
+      "processing_time_ms": 1837
+    },
+    "semantic_scholar": {
+      "data": {
+        "year": 2024,
+        "title": "Using a mixed-reality headset to elicit and track clinically relevant movement in the clinic",
+        "authors": [
+          {
+            "name": "Dylan Calame",
+            "authorId": "2313285608"
+          },
+          {
+            "name": "Evan Lester",
+            "authorId": "2335530632"
+          },
+          {
+            "name": "Phil Chiu",
+            "authorId": "2313275595"
+          },
+          {
+            "name": "Lauren Seeberger",
+            "authorId": "2313282633"
+          }
+        ],
+        "journal": {
+          "name": "Journal of Neuroscience Methods",
+          "volume": "415"
+        },
+        "paperId": "a2eef04dfccc3c76ccaaacc5a93f198e30450184",
+        "abstract": null,
+        "externalIds": {
+          "DOI": "10.1016/j.jneumeth.2024.110349",
+          "PubMed": "39675675",
+          "CorpusId": 274773682
+        },
+        "isOpenAccess": true,
+        "citationCount": 0,
+        "openAccessPdf": {
+          "url": "https://doi.org/10.1101/2024.07.07.24310049",
+          "status": "GREEN",
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.jneumeth.2024.110349?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.jneumeth.2024.110349, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:10:34.455325",
+      "processing_time_ms": 457
+    }
+  },
+  "questions_json": {
+    "reason": "custom_topics_not_enabled",
+    "success": false,
+    "extraction_method": "disabled",
+    "processing_timestamp": "2025-07-22T14:12:55.180857"
+  },
+  "apis_clean_json": {
+    "timestamp": "2025-07-22T14:12:02.962712",
+    "cost_tracking": {
+      "model": "deepseek-chat",
+      "call_type": "smart_consensus",
+      "timestamp": "2025-07-22T14:12:02.962538",
+      "input_cost": 0.003311,
+      "total_cost": 0.004818,
+      "output_cost": 0.001507,
+      "input_tokens": 12264,
+      "total_tokens": 13634,
+      "output_tokens": 1370,
+      "parsing_error": null,
+      "parsing_successful": true,
+      "processing_time_ms": 73839
+    },
+    "consensus_result": {
+      "DOI": "10.1016/j.jneumeth.2024.110349",
+      "PMID": "39675675",
+      "Year": 2025,
+      "Issue": null,
+      "PMCID": null,
+      "Pages": "110349",
+      "Title": "Using a mixed-reality headset to elicit and track clinically relevant movement in the clinic",
+      "PDFUrl": "https://doi.org/10.1101/2024.07.07.24310049",
+      "Volume": "415",
+      "Authors": [
+        "Calame, Dylan",
+        "Lester, Evan",
+        "Chiu, Phil",
+        "Seeberger, Lauren"
+      ],
+      "Journal": "Journal of Neuroscience Methods",
+      "Abstract": "Background: 21st century neurology will require scalable and quantitative tools that can improve neurologic evaluations over telehealth and expand access to care. Commercially available mixed-reality headsets allow for simultaneous presentation of stimuli via holograms projected into the real world and objective and quantitative measurement of hand movement, eye movement, and phonation. New method: We created 6 tasks designed to mimic standard neurologic assessments and administered them to a single participant via the Microsoft HoloLens 2 mixed-reality headset. The tasks assessed postural hand tremor, finger tapping, pronation and supination of hands, hand and eye tracking of a center-out task, hand and eye tracking of a random motion task, and vocal assessment. Results: We show the utility of the HoloLens for commonly used neurological exams. First, we demonstrate that headset-derived holograms can project hand movements and objects in 3D space, providing a method to accurately and reproducibly present test stimuli to reduce test-retest variability. Second, we found that participant hand movements closely matched holographic stimuli using a variety of metrics calculated on recorded movement data. Third, we showed that the HoloLens can record and playback exam tasks for visual inspection, sharing with other medical providers, and future analysis. Fourth, we showed that vocal recordings and analysis could be used to profile vocal characteristics over time. Together, this demonstrates the versatility of mixed reality headsets and possible applications for neurological assessment. Conclusions: Administering components of the neurologic exam via a self-contained and commercially available mixed-reality headset has numerous benefits including detailed kinematic quantification, reproducible stimuli presentation from test to test, and can be self-administered expanding access to neurological care and saving hospital time and money.",
+      "Keywords": [
+        "Movement tracking",
+        "Eye movements",
+        "Hand movements",
+        "Neurological exam",
+        "Mixed-reality",
+        "Virtual Reality",
+        "Eye-Tracking Technology",
+        "Psychomotor Performance"
+      ],
+      "Citations": 0,
+      "Publisher": "Elsevier BV",
+      "OpenAccess": false,
+      "confidence_factors": {
+        "source": "Vision-Foundation + API Enhancement",
+        "reasoning": "Vision data used as foundation with strong validation from multiple APIs (Crossref, Europe PMC, PubMed, Semantic Scholar). Key enhancements include: added PMID from Europe PMC/PubMed, confirmed publisher from Crossref/Unpaywall, added citations count from Semantic Scholar, enriched keywords from Europe PMC, and verified open access status from multiple sources.",
+        "field_sources": {
+          "doi": "vision|crossref|openalex|semantic_scholar|europe_pmc|pubmed|unpaywall",
+          "pmid": "europe_pmc|pubmed|semantic_scholar",
+          "year": "crossref|europe_pmc|pubmed",
+          "pages": "vision|crossref|europe_pmc|pubmed",
+          "title": "vision",
+          "pdfurl": "semantic_scholar|europe_pmc",
+          "volume": "vision|crossref|europe_pmc|pubmed",
+          "authors": "vision|europe_pmc|pubmed|crossref|semantic_scholar",
+          "journal": "vision|crossref|openalex|semantic_scholar|europe_pmc|pubmed",
+          "abstract": "vision|europe_pmc|pubmed",
+          "keywords": "vision+europe_pmc",
+          "citations": "semantic_scholar|openalex",
+          "publisher": "vision|crossref|unpaywall",
+          "openaccess": "unpaywall|openalex|semantic_scholar"
+        },
+        "enhancement_level": "SIGNIFICANT",
+        "validation_status": "HIGH"
+      },
+      "api_success_summary": {
+        "insights": "Strong coherence among major scholarly APIs (Crossref, Europe PMC, PubMed, Semantic Scholar) validating vision data. Europe PMC provided valuable MeSH terms and affiliations. Semantic Scholar contributed citation count and open access PDF. Core API returned irrelevant article and was discarded. DOAJ failed due to missing DOI.",
+        "total_apis": 11,
+        "failed_apis": [
+          "doaj",
+          "arxiv",
+          "datacite"
+        ],
+        "success_rate": 0.73,
+        "coherent_apis": 7,
+        "coherence_rate": 0.88,
+        "successful_apis": 8
+      }
+    },
+    "processing_time_ms": 88977
+  },
+  "llm_topics_json": {
+    "success": true,
+    "prompt_sent": "You are a scientific research assistant extracting data for academic comparison tables with statistical rigor.\n\nCRITICAL INSTRUCTIONS FOR ACADEMIC COMPARISON:\n\n- SYSTEMATICALLY scan ALL content: text, tables, figures, charts, appendices\n- PRIORITIZE quantitative data while preserving qualitative context\n- When conflicts exist in the paper, prioritize MOST RECENT/AUTHORITATIVE source\n- Extract ALL relevant details mentioned - DON'T truncate important information\n- Include statistical tests results (Z-scores, t-values, chi-square, etc.)\n- Extract accuracy rates, completion rates, success rates with specific numbers\n- Capture comparative data (e.g., \"46% vs 27%\", \"Group A: 64.5%, Group B: 68.2%\")\n- Use proper numeric format: \"p = 0.007\" not \"p = .007\", \"81\" not \"eighty-one\"\n\nCOMPREHENSIVE CAPTURE REQUIREMENTS:\n\n- List ALL hardware components: cameras, sensors, headsets, controllers, phones, tablets, webcams, probes\n- Include ALL software details: platforms, SDKs, libraries, export formats (CSV, JSON), feedback systems\n- Capture ALL measurement instruments: scales, questionnaires, assessment tools (SUS, NASA-TLX, FES-I, MoCA, IKDC, VAS, ABC scale, WHODAS 2.0, etc.)\n- Note ALL technical specifications: resolutions, frame rates, tracking capabilities, joint counts\n- Include ALL study phases: pilot tests, technical validation, user studies, expert evaluations\n- Capture ALL procedural details: training time, calibration steps, data export processes, real-time feedback\n\nCONFLICT RESOLUTION:\n\n- If conflicting information exists, prioritize methods/results over abstract\n- When uncertain, include both: \"X in abstract, Y in methods section\"\n\nExtract the following 7 scientific topics:\n\n1. *study_design*: Extract the PRIMARY study type/design using the most specific and authoritative terminology from the paper's methods section. Recognize equivalent terms: \"RCT\" = \"Randomized controlled trial\", \"Pilot study\" = \"Feasibility pilot study\", \"Cross-sectional\" = \"Observational cross-sectional\", \"User study\" = \"User evaluation study\". When multiple study type descriptions exist, prioritize the most comprehensive version from methods over abstract. Include specific qualifiers when mentioned (e.g., \"multicenter\", \"double-blind\", \"waitlist-controlled\") as these add valuable detail. Format as brief phrase describing core study methodology, avoiding generic terms like \"study\" or \"research\" alone.\n\n2. *methodology*: ONE comprehensive sentence covering: technology + application + key technical details. Include: ALL device models, software platforms, measurement tools, statistical analyses. Capture ALL hardware components mentioned (cameras, sensors, controllers, probes, etc.). Include ALL software features (real-time feedback, data export, tracking capabilities). Mention ALL technical specifications (joint tracking numbers, frame rates, resolutions). Example: \"Microsoft HoloLens 2 with HoloAnatomy platform for 3D anatomical procedural visualization using real-time motion tracking of 25 joints with CSV data export and real-time visual feedback\".\n\n3. *sample_size*: Format: \"X participants/patients\" (use paper's exact terminology). Include TOTAL numbers if multiple groups exist. Include ALL test phases: technical tests, pilot studies, user evaluations. Example: \"25 total: 23 biomedical students + 2 clinical experts; 50 technical validation readings\".\n\n4. *population*: ALL demographic details and characteristics not captured in sample_size. Include age, profession, condition, experience, setting details. Add specific numbers when available. Include recruitment sources and inclusion/exclusion criteria.\n\n5. *primary_outcome*: Include ALL measurement tools, scales, timing, specific metrics, usability criteria (ease of use, realism, anatomical accuracy). List ALL assessment instruments used and functional scales (SUS, NASA-TLX, FES-I, MoCA, IKDC, VAS, ABC scale, WHODAS 2.0, etc.), and evaluation dimensions beyond the primary measures.. Include ALL comparison conditions and timepoints. Example: \"Patient understanding via 5-point Likert scale assessed pre/post intervention, plus SUS usability scores and NASA-TLX workload assessment\".\n\n6. *key_findings*: PRIORITIZE statistical results with practical implications. Format: \"Finding 1: [statistical data + meaning]. Finding 2: [data + context]\". Include ALL significant findings, p-values, effect sizes, accuracy rates, comparative data, accuracy measurements (sub-mm, degrees), specific understanding domains (surgical risks, operative steps, recovery), and detailed performance metrics beyond statistical significance. Present ALL questionnaire results, prototype performance, qualitative benefits. Include ALL cost factors, training requirements, implementation details. Capture ALL comparison groups and their specific results. Be comprehensive - capture complete findings picture. Include ALL technical specifications mentioned: accuracy measurements (sub-mm, degrees).\n\n7. *limitations*: Extract ALL limitations from limitation/discussion sections. Include sample size issues, technical equipment requirements, methodological, practical constraints. Mention ALL equipment needs, calibration requirements, manufacturing variability. Include ALL generalizability issues, validity concerns, implementation barriers. Capture training requirements, cost constraints, specialized equipment needs. Note real-world applicability issues and clinical implementation challenges. Don't summarize - capture complete limitation landscape.\n\nReturn as valid JSON with this EXACT structure:\n\n{\n  \"study_design\": \"string\",\n  \"methodology\": \"string\",\n  \"sample_size\": \"string\",\n  \"population\": \"string\",\n  \"primary_outcome\": \"string\",\n  \"key_findings\": \"string\",\n  \"limitations\": \"string\"\n}",
+    "cost_tracking": {
+      "model": "gpt-4o",
+      "call_type": "scientific_topics_multimodal",
+      "timestamp": "2025-07-22T14:12:54.232049",
+      "input_cost": 0.022045,
+      "total_cost": 0.025685,
+      "output_cost": 0.00364,
+      "input_tokens": 8818,
+      "total_tokens": 9182,
+      "output_tokens": 364
+    },
+    "input_details": {
+      "dpi": 150,
+      "max_tokens": 6000,
+      "model_used": "gpt-4o",
+      "temperature": 0.1,
+      "strategy_used": "vision_all_pages (≤40)",
+      "pdf_total_pages": 10,
+      "image_resolution": "high",
+      "processing_time_ms": 50283,
+      "pdf_pages_processed": 10
+    },
+    "pages_processed": 10,
+    "extracted_topics": {
+      "population": "Healthy adult without diagnosed movement disorder, recruited for proof of concept in a clinical setting.",
+      "limitations": "Single participant limits generalizability; requires Microsoft HoloLens 2 and trained staff; potential variability in holographic display calibration; limited to controlled clinical settings; high cost of equipment.",
+      "methodology": "Microsoft HoloLens 2 with Unity platform for neurological task simulation using real-time tracking of 26 hand joints, eye gaze, and voice with data export in .wav format and CSV, including visual feedback and holographic displays.",
+      "sample_size": "1 healthy participant",
+      "key_findings": "Finding 1: Right hand tremor speed = 0.0147 ± 0.0086 m/s, acceleration = 0.549 ± 0.293 m/s²; left hand speed = 0.0197 ± 0.0131 m/s, acceleration = 0.786 ± 0.486 m/s². Finding 2: Tap amplitude slope for right hand = -2.48 × 10⁻⁴, p-value = 0.10; left hand = -3.27 × 10⁻⁴, p-value = 0.001. Finding 3: Turn angle amplitude for right hand = 0.376 ± 0.097 degrees, left hand = 0.410 ± 0.033 degrees.",
+      "study_design": "Single participant mixed-reality headset evaluation",
+      "primary_outcome": "Quantification of hand movement using speed, acceleration, and PSD; vocal analysis using Praat for speaking time, intensity, F0 pitch, shimmer, and jitter; task performance metrics including reaction time and accuracy."
+    },
+    "extraction_method": "multimodal_vision",
+    "extraction_quality": {
+      "topics_missing": 0,
+      "topics_extracted": 7
+    },
+    "processing_time_ms": 50283,
+    "raw_openai_response": {
+      "content": "```json\n{\n  \"study_design\": \"Single participant mixed-reality headset evaluation\",\n  \"methodology\": \"Microsoft HoloLens 2 with Unity platform for neurological task simulation using real-time tracking of 26 hand joints, eye gaze, and voice with data export in .wav format and CSV, including visual feedback and holographic displays.\",\n  \"sample_size\": \"1 healthy participant\",\n  \"population\": \"Healthy adult without diagnosed movement disorder, recruited for proof of concept in a clinical setting.\",\n  \"primary_outcome\": \"Quantification of hand movement using speed, acceleration, and PSD; vocal analysis using Praat for speaking time, intensity, F0 pitch, shimmer, and jitter; task performance metrics including reaction time and accuracy.\",\n  \"key_findings\": \"Finding 1: Right hand tremor speed = 0.0147 ± 0.0086 m/s, acceleration = 0.549 ± 0.293 m/s²; left hand speed = 0.0197 ± 0.0131 m/s, acceleration = 0.786 ± 0.486 m/s². Finding 2: Tap amplitude slope for right hand = -2.48 × 10⁻⁴, p-value = 0.10; left hand = -3.27 × 10⁻⁴, p-value = 0.001. Finding 3: Turn angle amplitude for right hand = 0.376 ± 0.097 degrees, left hand = 0.410 ± 0.033 degrees.\",\n  \"limitations\": \"Single participant limits generalizability; requires Microsoft HoloLens 2 and trained staff; potential variability in holographic display calibration; limited to controlled clinical settings; high cost of equipment.\"\n}\n```",
+      "parsing_error": null,
+      "response_length": 1399,
+      "parsing_successful": true
+    },
+    "processing_timestamp": "2025-07-22T14:12:54.231912"
+  },
+  "processing_metadata": {
+    "filename": "1) Using a mixed-reality headset to elicit and track clinically relevant movement in the clinic.pdf",
+    "article_id": "unknown",
+    "total_phases": 5,
+    "aggregated_at": "2025-07-22T14:12:55.435874",
+    "phases_completed": {
+      "topics": true,
+      "vision": true,
+      "apis_raw": true,
+      "questions": false,
+      "apis_clean": true
+    },
+    "transparency_level": "complete"
+  }
+}

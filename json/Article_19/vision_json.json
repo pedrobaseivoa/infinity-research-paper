@@ -1,0 +1,90 @@
+{
+  "source": "gpt-4o-vision",
+  "success": true,
+  "prompt_sent": "Extract ONLY publication metadata from these academic paper pages.\n\nCRITICAL: This data will be sent to 11 external APIs, so format accuracy is essential.\n\nFIELD REQUIREMENTS WITH EXACT FORMATS:\n\n1. **Title**: Clean title for API queries (HIGHEST PRIORITY)\n   - Remove line breaks, extra spaces, formatting\n   - No HTML tags or special characters  \n   - Example: \"Effects of Machine Learning on Healthcare Outcomes\"\n\n2. **Authors**: API-compatible author list (HIGHEST PRIORITY)\n   - Each author as separate string in array\n   - Format: \"FirstName LastName\" or \"F. LastName\"\n   - Clean, no extra punctuation\n   - Example: [\"John Smith\", \"M. Johnson\", \"Sarah Williams\"]\n\n3. **DOI**: Standard DOI format for resolution APIs\n   - Must start with \"10.\" if present\n   - Clean format without URL prefixes\n   - Example: \"10.1234/journal.2024.001\"\n\n4. **Journal**: Clean journal name for database queries\n   - Full journal name preferred over abbreviations\n   - Remove extra formatting, parentheses\n   - Example: \"Nature Medicine\"\n\n5. **Year**: Numeric format for date filtering\n   - 4-digit NUMBER only (not string)\n   - Example: 2024\n\n6. **Volume**: Clean number for bibliographic APIs\n   - Numbers only, no \"Vol.\" prefix\n   - Example: \"15\"\n\n7. **Issue**: Clean number format\n   - Numbers only, no \"No.\" or \"Issue\" prefix\n   - Example: \"3\"\n\n8. **Pages**: Standard page range for citations\n   - Format: \"start-end\" or single page\n   - Example: \"123-135\" or \"45\"\n\n9. **PMID**: PubMed ID for medical APIs\n   - Numbers only, no \"PMID:\" prefix\n   - Example: \"12345678\"\n\n10. **PMCID**: PubMed Central ID for open access papers\n    - Numbers only, no \"PMC\" prefix\n    - Often appears near PMID in biomedical papers\n    - Example: \"9876543\"\n\n11. **Keywords**: API-compatible keyword list\n    - Each keyword as separate string\n    - Research-quality terms, no punctuation\n    - Example: [\"machine learning\", \"healthcare\", \"clinical outcomes\"]\n\n11. **Abstract**: Complete clean text (HIGHEST PRIORITY)\n    - Remove formatting, line breaks, extra spaces\n    - Complete sentences, proper punctuation\n    - Search thoroughly across ALL pages\n    - This is CRITICAL for Semantic Scholar and other APIs\n\n12. **Publisher**: Clean organization name\n    - Official publisher name\n    - Example: \"Elsevier\" or \"Nature Publishing Group\"\n\nABSTRACT EXTRACTION PRIORITY:\n- Look thoroughly across ALL pages for abstract sections\n- Extract COMPLETE text, including multiple paragraphs\n- Check: Abstract, Summary, Introduction summary paragraphs\n- This field is CRITICAL for API enrichment success\n\nReturn JSON format:\n{\n  \"Title\": \"clean title without formatting\",\n  \"Authors\": [\"Author One\", \"Author Two\"],\n  \"DOI\": \"10.xxxx/xxxxx\",\n  \"Journal\": \"clean journal name\", \n  \"Year\": 2024,\n  \"Volume\": \"15\",\n  \"Issue\": \"3\", \n  \"Pages\": \"123-135\",\n  \"Abstract\": \"complete clean abstract text\",\n  \"Keywords\": [\"keyword1\", \"keyword2\"],\n  \"PMID\": \"12345678\",\n  \"PMCID\": \"9876543\",\n  \"Publisher\": \"publisher name\"\n}\n\nReturn null for fields not clearly visible. The Abstract field is MOST IMPORTANT for downstream API success.",
+  "cost_tracking": {
+    "model": "gpt-4o",
+    "call_type": "vision_extraction",
+    "timestamp": "2025-07-22T14:10:33.658897",
+    "input_cost": 0.007725,
+    "total_cost": 0.012975,
+    "output_cost": 0.00525,
+    "input_tokens": 3090,
+    "total_tokens": 3615,
+    "output_tokens": 525
+  },
+  "input_details": {
+    "dpi": 120,
+    "max_tokens": 1500,
+    "model_used": "gpt-4o",
+    "temperature": 0.1,
+    "page_strategy": "strategic",
+    "image_resolution": "high",
+    "processing_time_ms": 30344,
+    "pdf_pages_processed": 3
+  },
+  "extracted_data": {
+    "DOI": "10.1016/j.jneumeth.2024.110349",
+    "PMID": null,
+    "Year": 2025,
+    "Issue": null,
+    "PMCID": null,
+    "Pages": "110349",
+    "Title": "Using a mixed-reality headset to elicit and track clinically relevant movement in the clinic",
+    "Volume": "415",
+    "Authors": [
+      "Dylan Calame",
+      "Evan Lester",
+      "Phil Chiu",
+      "Lauren Seeberger"
+    ],
+    "Journal": "Journal of Neuroscience Methods",
+    "Abstract": "Background: 21st century neurology will require scalable and quantitative tools that can improve neurologic evaluations over telehealth and expand access to care. Commercially available mixed-reality headsets allow for simultaneous presentation of stimuli via holograms projected into the real world and objective and quantitative measurement of hand movement, eye movement, and phonation. New method: We created 6 tasks designed to mimic standard neurologic assessments and administered them to a single participant via the Microsoft HoloLens 2 mixed-reality headset. The tasks assessed postural hand tremor, finger tapping, pronation and supination of hands, hand and eye tracking of a center-out task, hand and eye tracking of a random motion task, and vocal assessment. Results: We show the utility of the HoloLens for commonly used neurological exams. First, we demonstrate that headset-derived holograms can project hand movements and objects in 3D space, providing a method to accurately and reproducibly present test stimuli to reduce test-retest variability. Second, we found that participant hand movements closely matched holographic stimuli using a variety of metrics calculated on recorded movement data. Third, we showed that the HoloLens can record and playback exam tasks for visual inspection, sharing with other medical providers, and future analysis. Fourth, we showed that vocal recordings and analysis could be used to profile vocal characteristics over time. Together, this demonstrates the versatility of mixed reality headsets and possible applications for neurological assessment. Conclusions: Administering components of the neurologic exam via a self-contained and commercially available mixed-reality headset has numerous benefits including detailed kinematic quantification, reproducible stimuli presentation from test to test, and can be self-administered expanding access to neurological care and saving hospital time and money.",
+    "Keywords": [
+      "Movement tracking",
+      "Eye movements",
+      "Hand movements",
+      "Neurological exam",
+      "Mixed-reality"
+    ],
+    "Publisher": "Elsevier B.V."
+  },
+  "pages_processed": 3,
+  "extraction_matrix": {
+    "_performance_summary": {
+      "total_cost": 0.0,
+      "data_source": "vision_json",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "vision_status": "COMPLETE",
+      "extraction_rate": 76.92,
+      "extraction_source": "gpt-4o-vision",
+      "performance_level": "GOOD",
+      "fields_with_content": 10,
+      "processing_time_seconds": 0,
+      "total_fields_in_response": 13
+    }
+  },
+  "extraction_method": "vision_strategic_strategy",
+  "extraction_quality": {
+    "success_rate": 50.0,
+    "quality_score": 50.0,
+    "successful_fields": 10,
+    "validation_details": {
+      "errors": [],
+      "is_valid": true,
+      "warnings": [],
+      "quality_score": 100,
+      "completeness_score": 100.0
+    },
+    "total_fields_attempted": 13
+  },
+  "processing_time_ms": 30344,
+  "raw_openai_response": {
+    "content": "```json\n{\n  \"Title\": \"Using a mixed-reality headset to elicit and track clinically relevant movement in the clinic\",\n  \"Authors\": [\"Dylan Calame\", \"Evan Lester\", \"Phil Chiu\", \"Lauren Seeberger\"],\n  \"DOI\": \"10.1016/j.jneumeth.2024.110349\",\n  \"Journal\": \"Journal of Neuroscience Methods\",\n  \"Year\": 2025,\n  \"Volume\": \"415\",\n  \"Issue\": null,\n  \"Pages\": \"110349\",\n  \"Abstract\": \"Background: 21st century neurology will require scalable and quantitative tools that can improve neurologic evaluations over telehealth and expand access to care. Commercially available mixed-reality headsets allow for simultaneous presentation of stimuli via holograms projected into the real world and objective and quantitative measurement of hand movement, eye movement, and phonation. New method: We created 6 tasks designed to mimic standard neurologic assessments and administered them to a single participant via the Microsoft HoloLens 2 mixed-reality headset. The tasks assessed postural hand tremor, finger tapping, pronation and supination of hands, hand and eye tracking of a center-out task, hand and eye tracking of a random motion task, and vocal assessment. Results: We show the utility of the HoloLens for commonly used neurological exams. First, we demonstrate that headset-derived holograms can project hand movements and objects in 3D space, providing a method to accurately and reproducibly present test stimuli to reduce test-retest variability. Second, we found that participant hand movements closely matched holographic stimuli using a variety of metrics calculated on recorded movement data. Third, we showed that the HoloLens can record and playback exam tasks for visual inspection, sharing with other medical providers, and future analysis. Fourth, we showed that vocal recordings and analysis could be used to profile vocal characteristics over time. Together, this demonstrates the versatility of mixed reality headsets and possible applications for neurological assessment. Conclusions: Administering components of the neurologic exam via a self-contained and commercially available mixed-reality headset has numerous benefits including detailed kinematic quantification, reproducible stimuli presentation from test to test, and can be self-administered expanding access to neurological care and saving hospital time and money.\",\n  \"Keywords\": [\"Movement tracking\", \"Eye movements\", \"Hand movements\", \"Neurological exam\", \"Mixed-reality\"],\n  \"PMID\": null,\n  \"PMCID\": null,\n  \"Publisher\": \"Elsevier B.V.\"\n}\n```",
+    "parsing_error": "Expecting value: line 1 column 1 (char 0)",
+    "response_length": 2516,
+    "parsing_successful": false
+  },
+  "processing_timestamp": "2025-07-22T14:10:33.658886"
+}

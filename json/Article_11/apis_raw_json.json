@@ -1,0 +1,312 @@
+{
+  "core": {
+    "error": "CORE API exception: 'NoneType' object has no attribute 'strip'",
+    "success": false,
+    "timestamp": "2025-07-22T14:31:27.821718",
+    "processing_time_ms": 0
+  },
+  "doaj": {
+    "error": "No DOI available for DOAJ search",
+    "success": false,
+    "timestamp": "2025-07-22T14:31:27.826806",
+    "processing_time_ms": 3
+  },
+  "arxiv": {
+    "error": "No results found",
+    "success": false,
+    "timestamp": "2025-07-22T14:31:28.868590",
+    "processing_time_ms": 1046
+  },
+  "orcid": {
+    "data": {
+      "person": {
+        "name": {
+          "path": "0000-0002-2778-7590",
+          "source": null,
+          "visibility": "public",
+          "credit-name": null,
+          "family-name": {
+            "value": "Heard"
+          },
+          "given-names": {
+            "value": "Jessica"
+          },
+          "created-date": {
+            "value": 1460758227033
+          },
+          "last-modified-date": {
+            "value": 1460758227033
+          }
+        },
+        "path": "/0000-0002-2778-7590/person",
+        "emails": {
+          "path": "/0000-0002-2778-7590/email",
+          "email": [],
+          "last-modified-date": null
+        },
+        "keywords": {
+          "path": "/0000-0002-2778-7590/keywords",
+          "keyword": [],
+          "last-modified-date": null
+        },
+        "addresses": {
+          "path": "/0000-0002-2778-7590/address",
+          "address": [],
+          "last-modified-date": null
+        },
+        "biography": null,
+        "other-names": {
+          "path": "/0000-0002-2778-7590/other-names",
+          "other-name": [],
+          "last-modified-date": null
+        },
+        "researcher-urls": {
+          "path": "/0000-0002-2778-7590/researcher-urls",
+          "researcher-url": [],
+          "last-modified-date": null
+        },
+        "last-modified-date": null,
+        "external-identifiers": {
+          "path": "/0000-0002-2778-7590/external-identifiers",
+          "last-modified-date": null,
+          "external-identifier": []
+        }
+      },
+      "orcid_id": "0000-0002-2778-7590"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:31:28.801076",
+    "processing_time_ms": 976
+  },
+  "pubmed": {
+    "error": "No results found",
+    "success": false,
+    "timestamp": "2025-07-22T14:31:34.647779",
+    "processing_time_ms": 6834
+  },
+  "crossref": {
+    "error": "timeout_5s",
+    "success": false,
+    "timestamp": "2025-07-22T14:31:33.360405",
+    "processing_time_ms": 5548
+  },
+  "datacite": {
+    "data": {
+      "data": {
+        "id": "10.48448/g9qq-bg33",
+        "type": "dois",
+        "attributes": {
+          "doi": "10.48448/g9qq-bg33",
+          "url": "https://underline.io/lecture/105902-enhanced-preoperative-pancreatoduodenectomy-patient-education-using-mixed-reality-technology-a-randomized-controlled-trial",
+          "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00L21ldGFkYXRhLnhzZCI+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuNDg0NDgvRzlRUS1CRzMzPC9pZGVudGlmaWVyPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWUgbmFtZVR5cGU9Ik9yZ2FuaXphdGlvbmFsIj5BbWVyaWNhbiBNZWRpY2FsIEFzc29jaWF0aW9uIDIwMjQ8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZSBuYW1lVHlwZT0iUGVyc29uYWwiPk11cmRvY2ssIFBhdWw8L2NyZWF0b3JOYW1lPgogICAgICA8Z2l2ZW5OYW1lPlBhdWw8L2dpdmVuTmFtZT4KICAgICAgPGZhbWlseU5hbWU+TXVyZG9jazwvZmFtaWx5TmFtZT4KICAgICAgPGFmZmlsaWF0aW9uLz4KICAgIDwvY3JlYXRvcj4KICA8L2NyZWF0b3JzPgogIDx0aXRsZXM+CiAgICA8dGl0bGU+RW5oYW5jZWQgUHJlb3BlcmF0aXZlIFBhbmNyZWF0b2R1b2RlbmVjdG9teSBQYXRpZW50IEVkdWNhdGlvbiBVc2luZyBNaXhlZCBSZWFsaXR5IFRlY2hub2xvZ3k6IEEgUmFuZG9taXplZCBDb250cm9sbGVkIFRyaWFsPC90aXRsZT4KICA8L3RpdGxlcz4KICA8cHVibGlzaGVyPlVuZGVybGluZSBTY2llbmNlIEluYy48L3B1Ymxpc2hlcj4KICA8cHVibGljYXRpb25ZZWFyPjIwMjQ8L3B1YmxpY2F0aW9uWWVhcj4KICA8cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IkF1ZGlvdmlzdWFsIj5Db25mZXJlbmNlIHRhbGs8L3Jlc291cmNlVHlwZT4KICA8c3ViamVjdHM+CiAgICA8c3ViamVjdD5NZWRpY2luZTwvc3ViamVjdD4KICA8L3N1YmplY3RzPgogIDxkYXRlcz4KICAgIDxkYXRlIGRhdGVUeXBlPSJBdmFpbGFibGUiPjIwMjQtMTAtMTBUMTY6MDA6MDBaPC9kYXRlPgogIDwvZGF0ZXM+CiAgPHNpemVzLz4KICA8Zm9ybWF0cy8+CiAgPHZlcnNpb24vPgogIDxkZXNjcmlwdGlvbnM+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJBYnN0cmFjdCI+UHVycG9zZTogVGhpcyBzdHVkeSBpbnZlc3RpZ2F0ZXMgdGhlIGZlYXNpYmlsaXR5LCBlZmZlY3RpdmVuZXNzLCBhbmQgcGF0aWVudCByZXNwb25zZSB0byB1c2luZyBNaXhlZCBSZWFsaXR5IChNUikgdGVjaG5vbG9neSwgc3BlY2lmaWNhbGx5IHRoZSBIb2xvTGVucywgZm9yIHByZW9wZXJhdGl2ZSBlZHVjYXRpb24gaW4gcGF0aWVudHMgcmVxdWlyaW5nIHBhbmNyZWF0b2R1b2RlbmVjdG9teS4gSXQgYWltcyB0byBkZXRlcm1pbmUgaWYgTVIgaW1wcm92ZXMgcGF0aWVudCB1bmRlcnN0YW5kaW5nLCBjb21mb3J0LCBhbmQgY29tcHJlaGVuc2lvbiBkdXJpbmcgaW5mb3JtZWQgY29uc2VudCBjb21wYXJlZCB0byB0cmFkaXRpb25hbCBtZXRob2RzLiBNZXRob2RzOiBBIHNpbmdsZSBjZW50ZXIgcmFuZG9taXplZCBjb250cm9sbGVkIHBpbG90IHN0dWR5IHdhcyBjb25kdWN0ZWQgd2l0aCBwYXRpZW50cyByZWNvbW1lbmRlZCBmb3IgcGFuY3JlYXRvZHVvZGVuZWN0b215IGR1ZSB0byBwYW5jcmVhdGljIG1hc3MgYmV0d2VlbiBGZWJydWFyeSBhbmQgTWF5IDIwMjMuIEV4Y2x1c2lvbiBjcml0ZXJpYSBpbmNsdWRlZCBhZ2UgdW5kZXIgMTgsIGxhY2sgb2YgRW5nbGlzaCBmbHVlbmN5LCBvciBzZXZlcmUgdmlzdWFsL2hlYXJpbmcgaW1wYWlybWVudHMuIFBhcnRpY2lwYW50cyBjb21wbGV0ZWQgcHJlLSBhbmQgcG9zdC1pbnRlcnZlbnRpb24gc3VydmV5cyBhc3Nlc3NpbmcgdGhlaXIgdW5kZXJzdGFuZGluZyBvZiB0aGVpciBjb25kaXRpb24gYW5kIGNhcmUuIFRoZSBjb250cm9sIGdyb3VwIHJlY2VpdmVkIHN0YW5kYXJkIGVkdWNhdGlvbiwgd2hpbGUgdGhlIGludGVydmVudGlvbiBncm91cCB1c2VkIHRoZSBIb2xvTGVucy4gUmVzdWx0czogTmluZXRlZW4gcGF0aWVudHMgcGFydGljaXBhdGVkLCB3aXRoIGVpZ2h0IGluIHRoZSBIb2xvTGVucyBncm91cC4gQm90aCBncm91cHMgc2hvd2VkIGltcHJvdmVkIHVuZGVyc3RhbmRpbmcgcG9zdC1pbnRlcnZlbnRpb24sIGJ1dCBvbmx5IHRoZSBIb2xvTGVucyBncm91cCBoYWQgYSBzdGF0aXN0aWNhbGx5IHNpZ25pZmljYW50IGluY3JlYXNlIGluIG92ZXJhbGwgY29tcHJlaGVuc2lvbiAoWj0gLTIuNTI0LCBwPSAwLjAxMikuIFRoZSBIb2xvTGVucyBncm91cCBhbHNvIGhhZCBhIHNpZ25pZmljYW50IGltcHJvdmVtZW50IGluIHVuZGVyc3RhbmRpbmcgc3VyZ2ljYWwgc3RlcHMgYW5kIG90aGVyIGFzcGVjdHMgY29tcGFyZWQgdG8gY29udHJvbHMuIEhpZ2ggY29tZm9ydCBsZXZlbHMgd2l0aCB0aGUgcGxhbm5lZCBzdXJnZXJ5IHdlcmUgcmVwb3J0ZWQgYnkgNzUlIG9mIHBhcnRpY2lwYW50cyBpbiBib3RoIGdyb3Vwcy4gQ29uY2x1c2lvbnM6IE1SIHRlY2hub2xvZ3ksIHN1Y2ggYXMgdGhlIEhvbG9MZW5zLCBjYW4gc2lnbmlmaWNhbnRseSBlbmhhbmNlIHBhdGllbnQgdW5kZXJzdGFuZGluZyBhbmQgY29tZm9ydCBpbiBwcmVvcGVyYXRpdmUgZWR1Y2F0aW9uIGZvciBjb21wbGV4IHN1cmdlcmllcy4gSXRzIGludGVncmF0aW9uIGludG8gY2xpbmljYWwgcHJhY3RpY2Ugd2FzIGZlYXNpYmxlIGFuZCBub24tZGlzcnVwdGl2ZSwgc3VnZ2VzdGluZyBicm9hZGVyIGFwcGxpY2FiaWxpdHkuIFRoZSBzbWFsbCBzYW1wbGUgc2l6ZSBhbmQgc2luZ2xlLWNlbnRlciBkZXNpZ24gbGltaXQgZ2VuZXJhbGl6YWJpbGl0eSwgbmVjZXNzaXRhdGluZyBsYXJnZXIgc3R1ZGllcyB0byBjb25maXJtIHRoZXNlIGZpbmRpbmdzIGFuZCBhc3Nlc3MgdGhlIGZ1bGwgaW1wYWN0IG9mIE1SIG9uIHBhdGllbnQgc3VyZ2ljYWwgZWR1Y2F0aW9uLjwvZGVzY3JpcHRpb24+CiAgPC9kZXNjcmlwdGlvbnM+CjwvcmVzb3VyY2U+Cg==",
+          "dates": [
+            {
+              "date": "2024-10-10T16:00:00Z",
+              "dateType": "Available"
+            }
+          ],
+          "sizes": [],
+          "state": "findable",
+          "types": {
+            "ris": "MPCT",
+            "bibtex": "misc",
+            "citeproc": "article",
+            "schemaOrg": "MediaObject",
+            "resourceType": "Conference talk",
+            "resourceTypeGeneral": "Audiovisual"
+          },
+          "prefix": "10.48448",
+          "reason": null,
+          "source": "api",
+          "suffix": "g9qq-bg33",
+          "titles": [
+            {
+              "title": "Enhanced Preoperative Pancreatoduodenectomy Patient Education Using Mixed Reality Technology: A Randomized Controlled Trial"
+            }
+          ],
+          "created": "2024-11-12T13:34:48Z",
+          "formats": [],
+          "updated": "2024-12-06T13:44:38Z",
+          "version": null,
+          "creators": [
+            {
+              "name": "American Medical Association 2024",
+              "nameType": "Organizational",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Murdock, Paul",
+              "nameType": "Personal",
+              "givenName": "Paul",
+              "familyName": "Murdock",
+              "affiliation": [
+                {}
+              ],
+              "nameIdentifiers": []
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "subjects": [
+            {
+              "subject": "Medicine"
+            }
+          ],
+          "container": {},
+          "partCount": 0,
+          "published": null,
+          "publisher": {
+            "name": "Underline Science Inc."
+          },
+          "viewCount": 0,
+          "contentUrl": [],
+          "registered": "2024-11-12T13:34:48Z",
+          "rightsList": [],
+          "identifiers": [],
+          "partOfCount": 0,
+          "contributors": [],
+          "descriptions": [
+            {
+              "description": "Purpose: This study investigates the feasibility, effectiveness, and patient response to using Mixed Reality (MR) technology, specifically the HoloLens, for preoperative education in patients requiring pancreatoduodenectomy. It aims to determine if MR improves patient understanding, comfort, and comprehension during informed consent compared to traditional methods. Methods: A single center randomized controlled pilot study was conducted with patients recommended for pancreatoduodenectomy due to pancreatic mass between February and May 2023. Exclusion criteria included age under 18, lack of English fluency, or severe visual/hearing impairments. Participants completed pre- and post-intervention surveys assessing their understanding of their condition and care. The control group received standard education, while the intervention group used the HoloLens. Results: Nineteen patients participated, with eight in the HoloLens group. Both groups showed improved understanding post-intervention, but only the HoloLens group had a statistically significant increase in overall comprehension (Z= -2.524, p= 0.012). The HoloLens group also had a significant improvement in understanding surgical steps and other aspects compared to controls. High comfort levels with the planned surgery were reported by 75% of participants in both groups. Conclusions: MR technology, such as the HoloLens, can significantly enhance patient understanding and comfort in preoperative education for complex surgeries. Its integration into clinical practice was feasible and non-disruptive, suggesting broader applicability. The small sample size and single-center design limit generalizability, necessitating larger studies to confirm these findings and assess the full impact of MR on patient surgical education.",
+              "descriptionType": "Abstract"
+            }
+          ],
+          "geoLocations": [],
+          "relatedItems": [],
+          "versionCount": 0,
+          "citationCount": 0,
+          "downloadCount": 0,
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "viewsOverTime": [],
+          "referenceCount": 0,
+          "versionOfCount": 0,
+          "metadataVersion": 1,
+          "publicationYear": 2024,
+          "citationsOverTime": [],
+          "downloadsOverTime": [],
+          "fundingReferences": [],
+          "relatedIdentifiers": [],
+          "alternateIdentifiers": []
+        },
+        "relationships": {
+          "parts": {
+            "data": []
+          },
+          "client": {
+            "data": {
+              "id": "undsci.oopmau",
+              "type": "clients"
+            }
+          },
+          "partOf": {
+            "data": []
+          },
+          "provider": {
+            "data": {
+              "id": "undsci",
+              "type": "providers"
+            }
+          },
+          "versions": {
+            "data": []
+          },
+          "citations": {
+            "data": []
+          },
+          "versionOf": {
+            "data": []
+          },
+          "references": {
+            "data": []
+          }
+        }
+      }
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:31:32.307834",
+    "processing_time_ms": 4485
+  },
+  "openalex": {
+    "data": {
+      "id": "https://openalex.org/W4407398246",
+      "doi": "https://doi.org/10.2139/ssrn.5126976",
+      "title": "Enhanced Preoperative Pancreatoduodenectomy Patient Education Using Mixed Reality Technology: A Randomized Controlled Pilot Study",
+      "open_access": {
+        "is_oa": false,
+        "oa_url": null,
+        "oa_status": "closed",
+        "any_repository_has_fulltext": false
+      },
+      "cited_by_count": 0,
+      "publication_year": 2025
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:31:30.824955",
+    "processing_time_ms": 3008
+  },
+  "unpaywall": {
+    "error": "No DOI provided",
+    "success": false,
+    "timestamp": "2025-07-22T14:31:27.821441",
+    "processing_time_ms": 1
+  },
+  "europe_pmc": {
+    "error": "No results found",
+    "success": false,
+    "timestamp": "2025-07-22T14:31:29.158935",
+    "processing_time_ms": 1340
+  },
+  "semantic_scholar": {
+    "data": {
+      "year": 2025,
+      "title": "Enhanced Preoperative Pancreatoduodenectomy Patient Education Using Mixed Reality Technology: A Randomized Controlled Pilot Study",
+      "authors": [
+        {
+          "name": "Jessica Heard",
+          "authorId": "2313894963"
+        },
+        {
+          "name": "Paul Murdock",
+          "authorId": "2341507757"
+        },
+        {
+          "name": "Juan Malo",
+          "authorId": "2299982579"
+        },
+        {
+          "name": "Joseph Lim",
+          "authorId": "2300044327"
+        },
+        {
+          "name": "Sourodip Mukharjee",
+          "authorId": "2284615012"
+        },
+        {
+          "name": "Rohan Jeyarajah",
+          "authorId": "2247255186"
+        }
+      ],
+      "journal": {
+        "name": "Informatics"
+      },
+      "paperId": "6fb764af5ae16c26dd064b2b3d64730dccf30525",
+      "abstract": "(1) Background: Mixed Reality (MR) technology, such as the HoloLens, offers a novel approach to preoperative education. This study evaluates its feasibility and effectiveness in improving patient comprehension and comfort during informed consent for pancreatoduodenectomy. (2) Methods: A single-center, randomized, controlled pilot study was conducted between February and May 2023. Patients recommended for pancreatoduodenectomy were randomized into a control group receiving standard education or an intervention group using the HoloLens. Pre- and post-intervention surveys assessed patient understanding and comfort. (3) Results: Nineteen patients participated (8 HoloLens, 11 control). Both groups showed improved comprehension post-intervention, but only the HoloLens group demonstrated a statistically significant increase (Z = −2.524, p = 0.012). MR users had a greater understanding of surgical steps compared to controls, and 75% of participants in both groups reported high comfort levels with the surgery. MR integration was feasible and did not disrupt clinical workflow. (4) Conclusions: These findings suggest that MR can enhance preoperative education for complex procedures. However, limitations include the small sample size and single-center design, necessitating larger studies to confirm its broader applicability. MR-based education represents a promising tool to improve patient engagement and comprehension in surgical decision making.",
+      "externalIds": {
+        "DOI": "10.3390/informatics12020042",
+        "CorpusId": 278039001
+      },
+      "isOpenAccess": true,
+      "citationCount": 0,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.3390/informatics12020042",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/informatics12020042?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/informatics12020042, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      }
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:31:28.555639",
+    "processing_time_ms": 740
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "timestamp": "2025-07-22T14:52:10.307872",
+  "cost_tracking": {
+    "model": "deepseek-chat",
+    "call_type": "smart_consensus",
+    "timestamp": "2025-07-22T14:52:10.307727",
+    "input_cost": 0.003835,
+    "total_cost": 0.005252,
+    "output_cost": 0.001417,
+    "input_tokens": 14205,
+    "total_tokens": 15493,
+    "output_tokens": 1288,
+    "parsing_error": null,
+    "parsing_successful": true,
+    "processing_time_ms": 66254
+  },
+  "consensus_result": {
+    "DOI": "10.1016/j.ijmedinf.2019.05.004",
+    "PMID": "31126843",
+    "Year": 2019,
+    "Issue": null,
+    "PMCID": null,
+    "Pages": "87-92",
+    "Title": "Design and evaluation of a prototype of augmented reality applied to medical devices",
+    "PDFUrl": null,
+    "Volume": "128",
+    "Authors": [
+      "Escalada-Hernández, Paula",
+      "Soto Ruiz, Nelia",
+      "San Martín-Rodríguez, Leticia"
+    ],
+    "Journal": "International Journal of Medical Informatics",
+    "Abstract": "Background: According to current legislation, medical devices have to incorporate all the necessary information to eliminate or greatly minimise any problem associated with their use. However, the physical capacity of the actual device's packaging may frequently not be enough to contain all this information. To address this limitation, this study aimed to design and evaluate a prototype app for mobile devices applying augmented reality technology. The main feature of this kind of technology is combining virtual images with images from the real world. Methods: This work, carried out in Spain, was developed in three different phases. 1) Assessment of users' needs: Through a focus group and an online questionnaire, information was obtained about the following aspects: type of medical devices likely to be included in the app, relevant information that should be included and format in which this information should be presented. 2) Development of the prototype: Considering all the functional features identified in the previous phase, the software was developed by a team of professionals specialised in AR technology and through a user-centred methodology. 3) Evaluation of the software: the app was defined by users as 'very intuitive'. They highlighted, as one of its main positive aspects, the chance to obtain information about the medical device just by scanning the object. Additionally, the evaluation performed through the think-aloud method identified potential improvements in the app. These improvements were subsequently implemented to make the prototype more functional. Conclusion: Working with potential prototype users made it possible to identify information considered relevant for these users and to delve into the format which they consider more appropriate to show this information in the prototype. Our results show that AR technology can be used as support for clinical practice.",
+    "Keywords": [
+      "Medical device",
+      "Augmented Reality",
+      "Medical Informatics Application",
+      "Mobile device"
+    ],
+    "Citations": 32,
+    "Publisher": "Elsevier BV",
+    "OpenAccess": false,
+    "confidence_factors": {
+      "source": "Vision-Foundation + API Enhancement",
+      "reasoning": "Vision data used as foundation with strong API validation from multiple sources. Enhanced with PMID from PubMed/EuropePMC, citation count from Semantic Scholar/OpenAlex, and publisher details from Crossref/Unpaywall. All API data confirmed to refer to same article via DOI/title/author matching.",
+      "field_sources": {
+        "doi": "vision|crossref|openalex|semantic_scholar|europe_pmc|pubmed|core",
+        "pmid": "europe_pmc|pubmed",
+        "year": "vision|crossref|openalex|semantic_scholar|europe_pmc|pubmed|core",
+        "pages": "vision|crossref|semantic_scholar|europe_pmc|pubmed",
+        "title": "vision|crossref|openalex|semantic_scholar|europe_pmc|pubmed|core",
+        "volume": "vision|crossref|semantic_scholar|europe_pmc|pubmed",
+        "authors": "vision+crossref+semantic_scholar+europe_pmc+pubmed",
+        "journal": "vision|crossref|openalex|semantic_scholar|europe_pmc|pubmed|core",
+        "abstract": "vision+europe_pmc+pubmed",
+        "keywords": "vision+europe_pmc",
+        "citations": "openalex|semantic_scholar",
+        "publisher": "vision+unpaywall+crossref",
+        "openaccess": "openalex|unpaywall"
+      },
+      "enhancement_level": "SIGNIFICANT",
+      "validation_status": "HIGH"
+    },
+    "api_success_summary": {
+      "insights": "Strong coherence across successful APIs (Crossref, OpenAlex, Semantic Scholar, EuropePMC, PubMed, Unpaywall, ORCID, CORE). DOAJ failed due to missing DOI, arXiv/Datacite had no matches. Best contributors: EuropePMC for detailed metadata, Semantic Scholar/OpenAlex for citations, Crossref for publisher details.",
+      "total_apis": 11,
+      "failed_apis": [
+        "doaj",
+        "arxiv",
+        "datacite"
+      ],
+      "success_rate": 0.73,
+      "coherent_apis": 8,
+      "coherence_rate": 1.0,
+      "successful_apis": 8
+    }
+  },
+  "processing_time_ms": 77875
+}

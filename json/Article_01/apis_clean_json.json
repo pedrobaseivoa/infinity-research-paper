@@ -1,0 +1,91 @@
+{
+  "timestamp": "2025-07-22T14:56:56.024421",
+  "cost_tracking": {
+    "model": "deepseek-chat",
+    "call_type": "smart_consensus",
+    "timestamp": "2025-07-22T14:56:56.024222",
+    "input_cost": 0.004341,
+    "total_cost": 0.005781,
+    "output_cost": 0.00144,
+    "input_tokens": 16078,
+    "total_tokens": 17387,
+    "output_tokens": 1309,
+    "parsing_error": null,
+    "parsing_successful": true,
+    "processing_time_ms": 68445
+  },
+  "consensus_result": {
+    "DOI": "10.1002/rcs.2366",
+    "PMID": "35034415",
+    "Year": 2022,
+    "Issue": "3",
+    "PMCID": null,
+    "Pages": "e2366",
+    "Title": "Smartglass augmented reality-assisted targeted prostate biopsy using cognitive point-of-care fusion technology",
+    "PDFUrl": "https://doi.org/10.1002/rcs.2366",
+    "Volume": "18",
+    "Authors": [
+      "Sparwasser, Peter",
+      "Haack, Maximilian",
+      "Epple, Stefan",
+      "Frey, Lisa",
+      "Zeymer, Steffen",
+      "Dotzauer, Robert",
+      "Jungmann, Florian",
+      "Böhm, Katharina",
+      "Höfner, Thomas",
+      "Tsaur, Igor",
+      "Haferkamp, Axel",
+      "Borgmann, Hendrik"
+    ],
+    "Journal": "The International Journal of Medical Robotics and Computer Assisted Surgery",
+    "Abstract": "Introduction: MRI-guided targeted biopsy has become standard of care for diagnosis of prostate cancer, with establishment of several biopsy techniques and platforms. Augmented reality smart glasses have emerged as novel technology to support image-guided interventions. We aimed to investigate its usage while prostate biopsy. Methods: MRI with PIRADS-lesions ≥3 was uploaded to smart glasses (Vuzix Blade) and augmented reality smart glasses-assisted targeted biopsy (SMART-TB) of the prostate was performed using cognitive fusion technology at the point of care. Detection rates were compared to systematic biopsy. Feasibility for SMART-TB was assessed (10 domains from bad [1] to excellent [10]). Results: SMART-TB was performed for four patients. Prostate cancer detection was more likely for SMART-TB (46%; 13/28) than for systematic biopsy (27%; 13/48). Feasibility scores were high [8-10] for practicality, multitasking, execution speed, comfort and device weight and low [1-4] for handling, battery and image quality. Median execution time: 28 min; Investment cost smart glass: 1017 USD. Conclusion: First description of SMART-TB demonstrated convenient feasibility. This novel technology might enhance diagnosis of prostate cancer in future.",
+    "Keywords": [
+      "augmented reality",
+      "prostate biopsy",
+      "prostate cancer",
+      "smart glasses",
+      "Vuzix Blade"
+    ],
+    "Citations": 12,
+    "Publisher": "John Wiley & Sons Ltd",
+    "OpenAccess": true,
+    "confidence_factors": {
+      "source": "Vision-Foundation + API Enhancement",
+      "reasoning": "Vision data used as foundation with strong API validation from multiple sources. Key enhancements include: added PMID from PubMed/EuropePMC, citation count from OpenAlex/SemanticScholar, confirmed OpenAccess status, and standardized issue/pages format from PubMed/EuropePMC. All API data was cross-validated for coherence.",
+      "field_sources": {
+        "doi": "crossref|openalex|semantic_scholar|unpaywall|vision",
+        "pmid": "pubmed|europe_pmc|semantic_scholar",
+        "year": "crossref|openalex|semantic_scholar|unpaywall|vision",
+        "issue": "crossref|europe_pmc|pubmed",
+        "pages": "pubmed|europe_pmc",
+        "title": "vision",
+        "pdfurl": "semantic_scholar|unpaywall",
+        "volume": "crossref|europe_pmc|pubmed|vision",
+        "authors": "crossref|europe_pmc|pubmed|vision",
+        "journal": "crossref|europe_pmc|pubmed|vision",
+        "abstract": "europe_pmc+vision",
+        "keywords": "europe_pmc+vision",
+        "citations": "openalex|semantic_scholar",
+        "publisher": "crossref|unpaywall|vision",
+        "openaccess": "openalex|semantic_scholar|unpaywall"
+      },
+      "enhancement_level": "SIGNIFICANT",
+      "validation_status": "HIGH"
+    },
+    "api_success_summary": {
+      "insights": "Strong coherence across successful APIs (Crossref, OpenAlex, SemanticScholar, EuropePMC, Unpaywall, PubMed, ORCID, CORE). DOAJ failed due to missing DOI, arXiv had no matches, and DataCite returned a different record. Best contributors were Crossref and EuropePMC for bibliographic details, OpenAlex/SemanticScholar for citations, and PubMed/EuropePMC for medical metadata.",
+      "total_apis": 11,
+      "failed_apis": [
+        "doaj",
+        "arxiv",
+        "datacite"
+      ],
+      "success_rate": 0.73,
+      "coherent_apis": 8,
+      "coherence_rate": 1.0,
+      "successful_apis": 8
+    }
+  },
+  "processing_time_ms": 74195
+}

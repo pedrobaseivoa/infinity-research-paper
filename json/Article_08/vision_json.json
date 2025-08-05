@@ -1,0 +1,93 @@
+{
+  "source": "gpt-4o-vision",
+  "success": true,
+  "prompt_sent": "Extract ONLY publication metadata from these academic paper pages.\n\nCRITICAL: This data will be sent to 11 external APIs, so format accuracy is essential.\n\nFIELD REQUIREMENTS WITH EXACT FORMATS:\n\n1. **Title**: Clean title for API queries (HIGHEST PRIORITY)\n   - Remove line breaks, extra spaces, formatting\n   - No HTML tags or special characters  \n   - Example: \"Effects of Machine Learning on Healthcare Outcomes\"\n\n2. **Authors**: API-compatible author list (HIGHEST PRIORITY)\n   - Each author as separate string in array\n   - Format: \"FirstName LastName\" or \"F. LastName\"\n   - Clean, no extra punctuation\n   - Example: [\"John Smith\", \"M. Johnson\", \"Sarah Williams\"]\n\n3. **DOI**: Standard DOI format for resolution APIs\n   - Must start with \"10.\" if present\n   - Clean format without URL prefixes\n   - Example: \"10.1234/journal.2024.001\"\n\n4. **Journal**: Clean journal name for database queries\n   - Full journal name preferred over abbreviations\n   - Remove extra formatting, parentheses\n   - Example: \"Nature Medicine\"\n\n5. **Year**: Numeric format for date filtering\n   - 4-digit NUMBER only (not string)\n   - Example: 2024\n\n6. **Volume**: Clean number for bibliographic APIs\n   - Numbers only, no \"Vol.\" prefix\n   - Example: \"15\"\n\n7. **Issue**: Clean number format\n   - Numbers only, no \"No.\" or \"Issue\" prefix\n   - Example: \"3\"\n\n8. **Pages**: Standard page range for citations\n   - Format: \"start-end\" or single page\n   - Example: \"123-135\" or \"45\"\n\n9. **PMID**: PubMed ID for medical APIs\n   - Numbers only, no \"PMID:\" prefix\n   - Example: \"12345678\"\n\n10. **PMCID**: PubMed Central ID for open access papers\n    - Numbers only, no \"PMC\" prefix\n    - Often appears near PMID in biomedical papers\n    - Example: \"9876543\"\n\n11. **Keywords**: API-compatible keyword list\n    - Each keyword as separate string\n    - Research-quality terms, no punctuation\n    - Example: [\"machine learning\", \"healthcare\", \"clinical outcomes\"]\n\n11. **Abstract**: Complete clean text (HIGHEST PRIORITY)\n    - Remove formatting, line breaks, extra spaces\n    - Complete sentences, proper punctuation\n    - Search thoroughly across ALL pages\n    - This is CRITICAL for Semantic Scholar and other APIs\n\n12. **Publisher**: Clean organization name\n    - Official publisher name\n    - Example: \"Elsevier\" or \"Nature Publishing Group\"\n\nABSTRACT EXTRACTION PRIORITY:\n- Look thoroughly across ALL pages for abstract sections\n- Extract COMPLETE text, including multiple paragraphs\n- Check: Abstract, Summary, Introduction summary paragraphs\n- This field is CRITICAL for API enrichment success\n\nReturn JSON format:\n{\n  \"Title\": \"clean title without formatting\",\n  \"Authors\": [\"Author One\", \"Author Two\"],\n  \"DOI\": \"10.xxxx/xxxxx\",\n  \"Journal\": \"clean journal name\", \n  \"Year\": 2024,\n  \"Volume\": \"15\",\n  \"Issue\": \"3\", \n  \"Pages\": \"123-135\",\n  \"Abstract\": \"complete clean abstract text\",\n  \"Keywords\": [\"keyword1\", \"keyword2\"],\n  \"PMID\": \"12345678\",\n  \"PMCID\": \"9876543\",\n  \"Publisher\": \"publisher name\"\n}\n\nReturn null for fields not clearly visible. The Abstract field is MOST IMPORTANT for downstream API success.",
+  "cost_tracking": {
+    "model": "gpt-4o",
+    "call_type": "vision_extraction",
+    "timestamp": "2025-07-22T14:38:39.630613",
+    "input_cost": 0.007725,
+    "total_cost": 0.013795,
+    "output_cost": 0.00607,
+    "input_tokens": 3090,
+    "total_tokens": 3697,
+    "output_tokens": 607
+  },
+  "input_details": {
+    "dpi": 120,
+    "max_tokens": 1500,
+    "model_used": "gpt-4o",
+    "temperature": 0.1,
+    "page_strategy": "strategic",
+    "image_resolution": "high",
+    "processing_time_ms": 27821,
+    "pdf_pages_processed": 3
+  },
+  "extracted_data": {
+    "DOI": "10.1002/pmrj.12883",
+    "PMID": null,
+    "Year": 2023,
+    "Issue": "7",
+    "PMCID": null,
+    "Pages": "891-898",
+    "Title": "Comparison of in-person and synchronous remote musculoskeletal exam using augmented reality and haptics: A pilot study",
+    "Volume": "15",
+    "Authors": [
+      "Aleks Borresen",
+      "Keerthana Chakka",
+      "Richard Wu",
+      "Chung-Kuang Lin",
+      "Cody Wolfe",
+      "Balakrishnan Prabhakaran",
+      "Thiru M. Annaswamy"
+    ],
+    "Journal": "PM&R",
+    "Abstract": "Introduction: Utilization of telemedicine for health care delivery increased rapidly during the coronavirus disease 2019 (COVID-19) pandemic. However, physical examination during telehealth visits remains limited. A novel telerehabilitation system—The Augmented Reality-based Telerehabilitation System with Haptics (ARTESH)—shows promise for performing synchronous, remote musculoskeletal examination. Objective: To assess the potential of ARTESH in remotely examining upper extremity passive range of motion (PROM) and maximum isometric strength (MIS). Design: In this cross-sectional pilot study, we compared the in-person (reference standard) and remote evaluations (ARTESH) of participants’ upper extremity PROM and MIS in 10 shoulder and arm movements. The evaluators were blinded to each other’s results. Setting: Participants underwent in-person evaluations at a Veterans Affairs hospital’s outpatient Physical Medicine and Rehabilitation (PM&R) clinic, and underwent remote examination using ARTESH with the evaluator located at a research lab 30 miles away, connected via a high-speed network. Patients: Fifteen participants with upper extremity pain and/or weakness. Interventions: Not applicable. Main Outcome Measures: Inter-rater agreement between in-person and remote evaluations on 10 PROM and MIS movements and presence/absence of pain with movement was calculated. Results: The highest inter-rater agreements were noted in shoulder abduction and protraction PROM (kappa (κ) = 0.44, confidence interval (CI): −0.1 to 1.0), and in elbow flexion, shoulder abduction, and shoulder protraction MIS (κ = 0.63, CI: 0 to 1.0). Conclusions: This pilot study suggests that synchronous tele-physical examination using the ARTESH system with augmented reality and haptics has the potential to provide enhanced value to existing telemedicine platforms. With the additional technological and procedural improvements and with an adequately powered study, the accuracy of ARTESH-enabled remote tele-physical examinations can be better evaluated.",
+    "Keywords": [
+      "telemedicine",
+      "augmented reality",
+      "haptics",
+      "musculoskeletal examination",
+      "remote evaluation"
+    ],
+    "Publisher": "American Academy of Physical Medicine and Rehabilitation"
+  },
+  "pages_processed": 3,
+  "extraction_matrix": {
+    "_performance_summary": {
+      "total_cost": 0.0,
+      "data_source": "vision_json",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "vision_status": "COMPLETE",
+      "extraction_rate": 84.62,
+      "extraction_source": "gpt-4o-vision",
+      "performance_level": "EXCELLENT",
+      "fields_with_content": 11,
+      "processing_time_seconds": 0,
+      "total_fields_in_response": 13
+    }
+  },
+  "extraction_method": "vision_strategic_strategy",
+  "extraction_quality": {
+    "success_rate": 50.0,
+    "quality_score": 50.0,
+    "successful_fields": 11,
+    "validation_details": {
+      "errors": [],
+      "is_valid": true,
+      "warnings": [],
+      "quality_score": 100,
+      "completeness_score": 100.0
+    },
+    "total_fields_attempted": 13
+  },
+  "processing_time_ms": 27821,
+  "raw_openai_response": {
+    "content": "```json\n{\n  \"Title\": \"Comparison of in-person and synchronous remote musculoskeletal exam using augmented reality and haptics: A pilot study\",\n  \"Authors\": [\"Aleks Borresen\", \"Keerthana Chakka\", \"Richard Wu\", \"Chung-Kuang Lin\", \"Cody Wolfe\", \"Balakrishnan Prabhakaran\", \"Thiru M. Annaswamy\"],\n  \"DOI\": \"10.1002/pmrj.12883\",\n  \"Journal\": \"PM&R\",\n  \"Year\": 2023,\n  \"Volume\": \"15\",\n  \"Issue\": \"7\",\n  \"Pages\": \"891-898\",\n  \"Abstract\": \"Introduction: Utilization of telemedicine for health care delivery increased rapidly during the coronavirus disease 2019 (COVID-19) pandemic. However, physical examination during telehealth visits remains limited. A novel telerehabilitation system—The Augmented Reality-based Telerehabilitation System with Haptics (ARTESH)—shows promise for performing synchronous, remote musculoskeletal examination. Objective: To assess the potential of ARTESH in remotely examining upper extremity passive range of motion (PROM) and maximum isometric strength (MIS). Design: In this cross-sectional pilot study, we compared the in-person (reference standard) and remote evaluations (ARTESH) of participants’ upper extremity PROM and MIS in 10 shoulder and arm movements. The evaluators were blinded to each other’s results. Setting: Participants underwent in-person evaluations at a Veterans Affairs hospital’s outpatient Physical Medicine and Rehabilitation (PM&R) clinic, and underwent remote examination using ARTESH with the evaluator located at a research lab 30 miles away, connected via a high-speed network. Patients: Fifteen participants with upper extremity pain and/or weakness. Interventions: Not applicable. Main Outcome Measures: Inter-rater agreement between in-person and remote evaluations on 10 PROM and MIS movements and presence/absence of pain with movement was calculated. Results: The highest inter-rater agreements were noted in shoulder abduction and protraction PROM (kappa (κ) = 0.44, confidence interval (CI): −0.1 to 1.0), and in elbow flexion, shoulder abduction, and shoulder protraction MIS (κ = 0.63, CI: 0 to 1.0). Conclusions: This pilot study suggests that synchronous tele-physical examination using the ARTESH system with augmented reality and haptics has the potential to provide enhanced value to existing telemedicine platforms. With the additional technological and procedural improvements and with an adequately powered study, the accuracy of ARTESH-enabled remote tele-physical examinations can be better evaluated.\",\n  \"Keywords\": [\"telemedicine\", \"augmented reality\", \"haptics\", \"musculoskeletal examination\", \"remote evaluation\"],\n  \"PMID\": null,\n  \"PMCID\": null,\n  \"Publisher\": \"American Academy of Physical Medicine and Rehabilitation\"\n}\n```",
+    "parsing_error": "Expecting value: line 1 column 1 (char 0)",
+    "response_length": 2709,
+    "parsing_successful": false
+  },
+  "processing_timestamp": "2025-07-22T14:38:39.630599"
+}

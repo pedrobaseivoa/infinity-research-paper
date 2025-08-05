@@ -1,0 +1,95 @@
+{
+  "source": "gpt-4o-vision",
+  "success": true,
+  "prompt_sent": "Extract ONLY publication metadata from these academic paper pages.\n\nCRITICAL: This data will be sent to 11 external APIs, so format accuracy is essential.\n\nFIELD REQUIREMENTS WITH EXACT FORMATS:\n\n1. **Title**: Clean title for API queries (HIGHEST PRIORITY)\n   - Remove line breaks, extra spaces, formatting\n   - No HTML tags or special characters  \n   - Example: \"Effects of Machine Learning on Healthcare Outcomes\"\n\n2. **Authors**: API-compatible author list (HIGHEST PRIORITY)\n   - Each author as separate string in array\n   - Format: \"FirstName LastName\" or \"F. LastName\"\n   - Clean, no extra punctuation\n   - Example: [\"John Smith\", \"M. Johnson\", \"Sarah Williams\"]\n\n3. **DOI**: Standard DOI format for resolution APIs\n   - Must start with \"10.\" if present\n   - Clean format without URL prefixes\n   - Example: \"10.1234/journal.2024.001\"\n\n4. **Journal**: Clean journal name for database queries\n   - Full journal name preferred over abbreviations\n   - Remove extra formatting, parentheses\n   - Example: \"Nature Medicine\"\n\n5. **Year**: Numeric format for date filtering\n   - 4-digit NUMBER only (not string)\n   - Example: 2024\n\n6. **Volume**: Clean number for bibliographic APIs\n   - Numbers only, no \"Vol.\" prefix\n   - Example: \"15\"\n\n7. **Issue**: Clean number format\n   - Numbers only, no \"No.\" or \"Issue\" prefix\n   - Example: \"3\"\n\n8. **Pages**: Standard page range for citations\n   - Format: \"start-end\" or single page\n   - Example: \"123-135\" or \"45\"\n\n9. **PMID**: PubMed ID for medical APIs\n   - Numbers only, no \"PMID:\" prefix\n   - Example: \"12345678\"\n\n10. **PMCID**: PubMed Central ID for open access papers\n    - Numbers only, no \"PMC\" prefix\n    - Often appears near PMID in biomedical papers\n    - Example: \"9876543\"\n\n11. **Keywords**: API-compatible keyword list\n    - Each keyword as separate string\n    - Research-quality terms, no punctuation\n    - Example: [\"machine learning\", \"healthcare\", \"clinical outcomes\"]\n\n11. **Abstract**: Complete clean text (HIGHEST PRIORITY)\n    - Remove formatting, line breaks, extra spaces\n    - Complete sentences, proper punctuation\n    - Search thoroughly across ALL pages\n    - This is CRITICAL for Semantic Scholar and other APIs\n\n12. **Publisher**: Clean organization name\n    - Official publisher name\n    - Example: \"Elsevier\" or \"Nature Publishing Group\"\n\nABSTRACT EXTRACTION PRIORITY:\n- Look thoroughly across ALL pages for abstract sections\n- Extract COMPLETE text, including multiple paragraphs\n- Check: Abstract, Summary, Introduction summary paragraphs\n- This field is CRITICAL for API enrichment success\n\nReturn JSON format:\n{\n  \"Title\": \"clean title without formatting\",\n  \"Authors\": [\"Author One\", \"Author Two\"],\n  \"DOI\": \"10.xxxx/xxxxx\",\n  \"Journal\": \"clean journal name\", \n  \"Year\": 2024,\n  \"Volume\": \"15\",\n  \"Issue\": \"3\", \n  \"Pages\": \"123-135\",\n  \"Abstract\": \"complete clean abstract text\",\n  \"Keywords\": [\"keyword1\", \"keyword2\"],\n  \"PMID\": \"12345678\",\n  \"PMCID\": \"9876543\",\n  \"Publisher\": \"publisher name\"\n}\n\nReturn null for fields not clearly visible. The Abstract field is MOST IMPORTANT for downstream API success.",
+  "cost_tracking": {
+    "model": "gpt-4o",
+    "call_type": "vision_extraction",
+    "timestamp": "2025-07-22T14:23:30.836392",
+    "input_cost": 0.007725,
+    "total_cost": 0.011925,
+    "output_cost": 0.0042,
+    "input_tokens": 3090,
+    "total_tokens": 3510,
+    "output_tokens": 420
+  },
+  "input_details": {
+    "dpi": 120,
+    "max_tokens": 1500,
+    "model_used": "gpt-4o",
+    "temperature": 0.1,
+    "page_strategy": "strategic",
+    "image_resolution": "high",
+    "processing_time_ms": 24952,
+    "pdf_pages_processed": 3
+  },
+  "extracted_data": {
+    "DOI": "10.1089/tmj.2024.0229",
+    "PMID": null,
+    "Year": 2024,
+    "Issue": "10",
+    "PMCID": null,
+    "Pages": "2583-2591",
+    "Title": "Holo-Stroke: Assessing for Immersive Stroke Care Through Stroke Hologram Teleportation",
+    "Volume": "30",
+    "Authors": [
+      "Nadir Weibel",
+      "Ben Alwood",
+      "Vishwajith Ramesh",
+      "Weichen Liu",
+      "Dawn M. Meyer",
+      "Teri McQuaid",
+      "Emily St Germain",
+      "Brett C. Meyer"
+    ],
+    "Journal": "Telemedicine and e-Health",
+    "Abstract": "Background: Augmented reality enables the wearer to see both their physical environment and virtual objects. Holograms could allow 3D video of providers to be transmitted to distant sites, allowing patients to interact with virtual providers as if they are in the same physical space. Our aim was to determine if Tele-Stroke augmented with Holo-Stroke, compared with Tele-Stroke alone, could improve satisfaction and perception of immersion for the patient. Methods: Kinect cameras positioned at 90-degree intervals around the hub practitioner were used. Cameras streamed real-time optical video to a unity point-cloud program where the data were stitched together in a 360-degree view. The resultant hologram was positioned in 3D space and was visible through the head-mounted display by the patient. Radiology images were shared in Tele-Stroke and via hologram. Likert satisfaction questions were administered. Wilcoxon signed-rank testing was used.",
+    "Keywords": [
+      "Tele-Stroke",
+      "hologram",
+      "augmented reality",
+      "satisfaction",
+      "immersion",
+      "telemedicine"
+    ],
+    "Publisher": "Mary Ann Liebert, Inc."
+  },
+  "pages_processed": 3,
+  "extraction_matrix": {
+    "_performance_summary": {
+      "total_cost": 0.0,
+      "data_source": "vision_json",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "vision_status": "COMPLETE",
+      "extraction_rate": 84.62,
+      "extraction_source": "gpt-4o-vision",
+      "performance_level": "EXCELLENT",
+      "fields_with_content": 11,
+      "processing_time_seconds": 0,
+      "total_fields_in_response": 13
+    }
+  },
+  "extraction_method": "vision_strategic_strategy",
+  "extraction_quality": {
+    "success_rate": 50.0,
+    "quality_score": 50.0,
+    "successful_fields": 11,
+    "validation_details": {
+      "errors": [],
+      "is_valid": true,
+      "warnings": [],
+      "quality_score": 100,
+      "completeness_score": 100.0
+    },
+    "total_fields_attempted": 13
+  },
+  "processing_time_ms": 24952,
+  "raw_openai_response": {
+    "content": "```json\n{\n  \"Title\": \"Holo-Stroke: Assessing for Immersive Stroke Care Through Stroke Hologram Teleportation\",\n  \"Authors\": [\n    \"Nadir Weibel\",\n    \"Ben Alwood\",\n    \"Vishwajith Ramesh\",\n    \"Weichen Liu\",\n    \"Dawn M. Meyer\",\n    \"Teri McQuaid\",\n    \"Emily St Germain\",\n    \"Brett C. Meyer\"\n  ],\n  \"DOI\": \"10.1089/tmj.2024.0229\",\n  \"Journal\": \"Telemedicine and e-Health\",\n  \"Year\": 2024,\n  \"Volume\": \"30\",\n  \"Issue\": \"10\",\n  \"Pages\": \"2583-2591\",\n  \"Abstract\": \"Background: Augmented reality enables the wearer to see both their physical environment and virtual objects. Holograms could allow 3D video of providers to be transmitted to distant sites, allowing patients to interact with virtual providers as if they are in the same physical space. Our aim was to determine if Tele-Stroke augmented with Holo-Stroke, compared with Tele-Stroke alone, could improve satisfaction and perception of immersion for the patient. Methods: Kinect cameras positioned at 90-degree intervals around the hub practitioner were used. Cameras streamed real-time optical video to a unity point-cloud program where the data were stitched together in a 360-degree view. The resultant hologram was positioned in 3D space and was visible through the head-mounted display by the patient. Radiology images were shared in Tele-Stroke and via hologram. Likert satisfaction questions were administered. Wilcoxon signed-rank testing was used.\",\n  \"Keywords\": [\n    \"Tele-Stroke\",\n    \"hologram\",\n    \"augmented reality\",\n    \"satisfaction\",\n    \"immersion\",\n    \"telemedicine\"\n  ],\n  \"PMID\": null,\n  \"PMCID\": null,\n  \"Publisher\": \"Mary Ann Liebert, Inc.\"\n}\n```",
+    "parsing_error": "Expecting value: line 1 column 1 (char 0)",
+    "response_length": 1634,
+    "parsing_successful": false
+  },
+  "processing_timestamp": "2025-07-22T14:23:30.836381"
+}

@@ -1,0 +1,1282 @@
+{
+  "core": {
+    "data": {
+      "data": {
+        "doi": null,
+        "year": 2017,
+        "title": "A COMPARISON BETWEEN MOTIVATIONS AND PERSONALITY TRAITS IN RELIGIOUS TOURISTS AND CRUISE SHIP TOURISTS",
+        "authors": [
+          "DI NUOVO, Santo",
+          "Garro,M",
+          "Scaffidi Abbate, C"
+        ],
+        "core_id": 45272149,
+        "journal": "",
+        "pdf_url": "https://core.ac.uk/download/141697790.pdf",
+        "abstract": "The purpose of this paper is to analyze the motivations and the personality traits that characterize tourists who\r\nchoose religious travels versus cruises. Participating in the research were 683 Italian tourists (345 males and 338\r\nfemales, age range 18–63 years); 483 who went to a pilgrimage travel and 200 who chose a cruise ship in the\r\nMediterranean Sea. Both groups of tourists completed the Travel Motivation Scale and the Big Five\r\nQuestionnaire. Results show that different motivations and personality traits characterize the different types of\r\ntourists and, further, that motivations for traveling are predicted by specific —some similar, other divergent—\r\npersonality trait",
+        "repository": "",
+        "open_access": false,
+        "citation_count": 0
+      },
+      "success": true,
+      "strategy": "Title Field"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:38:51.035414",
+    "processing_time_ms": 11020
+  },
+  "doaj": {
+    "error": "No DOI available for DOAJ search",
+    "success": false,
+    "timestamp": "2025-07-22T14:38:40.454699",
+    "processing_time_ms": 431
+  },
+  "arxiv": {
+    "error": "No results found",
+    "success": false,
+    "timestamp": "2025-07-22T14:38:41.263719",
+    "processing_time_ms": 1245
+  },
+  "orcid": {
+    "data": {
+      "person": {
+        "name": {
+          "path": "0000-0002-0209-9011",
+          "source": null,
+          "visibility": "public",
+          "credit-name": null,
+          "family-name": {
+            "value": "Borresen"
+          },
+          "given-names": {
+            "value": "Aleks"
+          },
+          "created-date": {
+            "value": 1621865770816
+          },
+          "last-modified-date": {
+            "value": 1621876210995
+          }
+        },
+        "path": "/0000-0002-0209-9011/person",
+        "emails": {
+          "path": "/0000-0002-0209-9011/email",
+          "email": [],
+          "last-modified-date": null
+        },
+        "keywords": {
+          "path": "/0000-0002-0209-9011/keywords",
+          "keyword": [],
+          "last-modified-date": null
+        },
+        "addresses": {
+          "path": "/0000-0002-0209-9011/address",
+          "address": [
+            {
+              "path": "/0000-0002-0209-9011/address/2100676",
+              "source": {
+                "source-name": {
+                  "value": "Aleks Borresen"
+                },
+                "source-orcid": {
+                  "uri": "https://orcid.org/0000-0002-0209-9011",
+                  "host": "orcid.org",
+                  "path": "0000-0002-0209-9011"
+                },
+                "source-client-id": null,
+                "assertion-origin-name": null,
+                "assertion-origin-orcid": null,
+                "assertion-origin-client-id": null
+              },
+              "country": {
+                "value": "US"
+              },
+              "put-code": 2100676,
+              "visibility": "public",
+              "created-date": {
+                "value": 1621875250337
+              },
+              "display-index": 1,
+              "last-modified-date": {
+                "value": 1621875250337
+              }
+            }
+          ],
+          "last-modified-date": {
+            "value": 1621875250337
+          }
+        },
+        "biography": null,
+        "other-names": {
+          "path": "/0000-0002-0209-9011/other-names",
+          "other-name": [
+            {
+              "path": "/0000-0002-0209-9011/other-names/1611527",
+              "source": {
+                "source-name": {
+                  "value": "Aleks Borresen"
+                },
+                "source-orcid": {
+                  "uri": "https://orcid.org/0000-0002-0209-9011",
+                  "host": "orcid.org",
+                  "path": "0000-0002-0209-9011"
+                },
+                "source-client-id": null,
+                "assertion-origin-name": null,
+                "assertion-origin-orcid": null,
+                "assertion-origin-client-id": null
+              },
+              "content": "Aleksander Borresen",
+              "put-code": 1611527,
+              "visibility": "public",
+              "created-date": {
+                "value": 1621875241928
+              },
+              "display-index": 1,
+              "last-modified-date": {
+                "value": 1621876217252
+              }
+            }
+          ],
+          "last-modified-date": {
+            "value": 1621876217252
+          }
+        },
+        "researcher-urls": {
+          "path": "/0000-0002-0209-9011/researcher-urls",
+          "researcher-url": [],
+          "last-modified-date": null
+        },
+        "last-modified-date": {
+          "value": 1621876217252
+        },
+        "external-identifiers": {
+          "path": "/0000-0002-0209-9011/external-identifiers",
+          "last-modified-date": null,
+          "external-identifier": []
+        }
+      },
+      "orcid_id": "0000-0002-0209-9011"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:38:41.416339",
+    "processing_time_ms": 1393
+  },
+  "pubmed": {
+    "data": {
+      "PubmedArticle": [
+        {
+          "MedlineCitation": {
+            "PMID": {
+              "content": "36197806"
+            },
+            "Article": {
+              "Journal": {
+                "Title": "PM & R : the journal of injury, function, and rehabilitation",
+                "JournalIssue": {
+                  "Issue": "7",
+                  "Volume": "15",
+                  "PubDate": {
+                    "Year": "2023"
+                  }
+                }
+              },
+              "Abstract": {
+                "AbstractText": [
+                  "Utilization of telemedicine for health care delivery increased rapidly during the coronavirus disease 2019 (COVID-19) pandemic. However, physical examination during telehealth visits remains limited. A novel telerehabilitation system-The Augmented Reality-based Telerehabilitation System with Haptics (ARTESH)-shows promise for performing synchronous, remote musculoskeletal examination.",
+                  "To assess the potential of ARTESH in remotely examining upper extremity passive range of motion (PROM) and maximum isometric strength (MIS).",
+                  "In this cross-sectional pilot study, we compared the in-person (reference standard) and remote evaluations (ARTESH) of participants' upper extremity PROM and MIS in 10 shoulder and arm movements. The evaluators were blinded to each other's results.",
+                  "Participants underwent in-person evaluations at a Veterans Affairs hospital's outpatient Physical Medicine and Rehabilitation (PM&R) clinic, and underwent remote examination using ARTESH with the evaluator located at a research lab 30 miles away, connected via a high-speed network.",
+                  "Fifteen participants with upper extremity pain and/or weakness.",
+                  "Not applicable.",
+                  "Inter-rater agreement between in-person and remote evaluations on 10 PROM and MIS movements and presence/absence of pain with movement was calculated.",
+                  "The highest inter-rater agreements were noted in shoulder abduction and protraction PROM (kappa (κ) = 0.44, confidence interval (CI): -0.1 to 1.0), and in elbow flexion, shoulder abduction, and shoulder protraction MIS (κ = 0.63, CI: 0 to 1.0).",
+                  "This pilot study suggests that synchronous tele-physical examination using the ARTESH system with augmented reality and haptics has the potential to provide enhanced value to existing telemedicine platforms. With the additional technological and procedural improvements and with an adequately powered study, the accuracy of ARTESH-enabled remote tele-physical examinations can be better evaluated."
+                ]
+              },
+              "AuthorList": {
+                "Author": [
+                  {
+                    "ForeName": "Aleks",
+                    "LastName": "Borresen"
+                  },
+                  {
+                    "ForeName": "Keerthana",
+                    "LastName": "Chakka"
+                  },
+                  {
+                    "ForeName": "Richard",
+                    "LastName": "Wu"
+                  },
+                  {
+                    "ForeName": "Chung-Kuang",
+                    "LastName": "Lin"
+                  },
+                  {
+                    "ForeName": "Cody",
+                    "LastName": "Wolfe"
+                  },
+                  {
+                    "ForeName": "Balakrishnan",
+                    "LastName": "Prabhakaran"
+                  },
+                  {
+                    "ForeName": "Thiru M",
+                    "LastName": "Annaswamy"
+                  }
+                ]
+              },
+              "Pagination": {
+                "MedlinePgn": "891-898"
+              },
+              "ArticleTitle": "Comparison of in-person and synchronous remote musculoskeletal exam using augmented reality and haptics: A pilot study."
+            }
+          }
+        }
+      ]
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:38:41.511588",
+    "processing_time_ms": 1503
+  },
+  "crossref": {
+    "data": {
+      "status": "ok",
+      "message": {
+        "DOI": "10.1002/pmrj.12883",
+        "URL": "https://doi.org/10.1002/pmrj.12883",
+        "ISSN": [
+          "1934-1482",
+          "1934-1563"
+        ],
+        "link": [
+          {
+            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/pmrj.12883",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/pmrj.12883",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://onlinelibrary.wiley.com/doi/am-pdf/10.1002/pmrj.12883",
+            "content-type": "application/pdf",
+            "content-version": "am",
+            "intended-application": "syndication"
+          },
+          {
+            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/pmrj.12883",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "page": "891-898",
+        "type": "journal-article",
+        "issue": "7",
+        "score": 1,
+        "title": [
+          "Comparison of in‐person and synchronous remote musculoskeletal exam using augmented reality and haptics: A pilot study"
+        ],
+        "author": [
+          {
+            "given": "Aleks",
+            "family": "Borresen",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Department of Physical Medicine and Rehabilitation University of Alabama at Birmingham  Birmingham Alabama USA"
+              }
+            ]
+          },
+          {
+            "given": "Keerthana",
+            "family": "Chakka",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "UT Southwestern Medical School  Dallas Texas USA"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-1904-1203",
+            "given": "Richard",
+            "family": "Wu",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "UT Southwestern Medical School  Dallas Texas USA"
+              }
+            ],
+            "authenticated-orcid": false
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-4811-7473",
+            "given": "Chung‐Kuang",
+            "family": "Lin",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Riverside Community Hospital  Riverside California USA"
+              }
+            ],
+            "authenticated-orcid": false
+          },
+          {
+            "given": "Cody",
+            "family": "Wolfe",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Neurosurgery UT Southwestern Medical Center  Dallas Texas USA"
+              }
+            ]
+          },
+          {
+            "given": "Balakrishnan",
+            "family": "Prabhakaran",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Computer Science, Erik Jonsson School of Engineering and Computer Science The University of Texas at Dallas  Richardson Texas USA"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-3969-9221",
+            "given": "Thiru M.",
+            "family": "Annaswamy",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "PM&amp;R Service, VA North Texas Health Care System, Department of PM&amp;R UT Southwestern Medical Center  Dallas Texas USA"
+              }
+            ],
+            "authenticated-orcid": false
+          }
+        ],
+        "funder": [
+          {
+            "id": [
+              {
+                "id": "10.13039/100000001",
+                "id-type": "DOI",
+                "asserted-by": "publisher"
+              }
+            ],
+            "DOI": "10.13039/100000001",
+            "name": "National Science Foundation",
+            "award": [
+              "CNS‐1012975 CFDA Number 47.070"
+            ],
+            "doi-asserted-by": "publisher"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              10,
+              5
+            ]
+          ]
+        },
+        "member": "311",
+        "prefix": "10.1002",
+        "source": "Crossref",
+        "volume": "15",
+        "archive": [
+          "Portico"
+        ],
+        "created": {
+          "date-time": "2022-08-03T10:05:46Z",
+          "timestamp": 1659521146000,
+          "date-parts": [
+            [
+              2022,
+              8,
+              3
+            ]
+          ]
+        },
+        "indexed": {
+          "version": "3.40.5",
+          "date-time": "2025-06-20T18:26:29Z",
+          "timestamp": 1750443989971,
+          "date-parts": [
+            [
+              2025,
+              6,
+              20
+            ]
+          ]
+        },
+        "license": [
+          {
+            "URL": "http://onlinelibrary.wiley.com/termsAndConditions#am",
+            "start": {
+              "date-time": "2023-08-03T00:00:00Z",
+              "timestamp": 1691020800000,
+              "date-parts": [
+                [
+                  2023,
+                  8,
+                  3
+                ]
+              ]
+            },
+            "delay-in-days": 302,
+            "content-version": "am"
+          },
+          {
+            "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor",
+            "start": {
+              "date-time": "2022-10-05T00:00:00Z",
+              "timestamp": 1664928000000,
+              "date-parts": [
+                [
+                  2022,
+                  10,
+                  5
+                ]
+              ]
+            },
+            "delay-in-days": 0,
+            "content-version": "vor"
+          }
+        ],
+        "subject": [],
+        "abstract": "<jats:title>Abstract</jats:title><jats:sec><jats:title>Introduction</jats:title><jats:p>Utilization of telemedicine for health care delivery increased rapidly during the coronavirus disease 2019 (COVID‐19) pandemic. However, physical examination during telehealth visits remains limited. A novel telerehabilitation system—The Augmented Reality‐based Telerehabilitation System with Haptics (ARTESH)—shows promise for performing synchronous, remote musculoskeletal examination.</jats:p></jats:sec><jats:sec><jats:title>Objective</jats:title><jats:p>To assess the potential of ARTESH in remotely examining upper extremity passive range of motion (PROM) and maximum isometric strength (MIS).</jats:p></jats:sec><jats:sec><jats:title>Design</jats:title><jats:p>In this cross‐sectional pilot study, we compared the in‐person (reference standard) and remote evaluations (ARTESH) of participants' upper extremity PROM and MIS in 10 shoulder and arm movements. The evaluators were blinded to each other's results.</jats:p></jats:sec><jats:sec><jats:title>Setting</jats:title><jats:p>Participants underwent in‐person evaluations at a Veterans Affairs hospital's outpatient Physical Medicine and Rehabilitation (PM&amp;R) clinic, and underwent remote examination using ARTESH with the evaluator located at a research lab 30 miles away, connected via a high‐speed network.</jats:p></jats:sec><jats:sec><jats:title>Patients</jats:title><jats:p>Fifteen participants with upper extremity pain and/or weakness.</jats:p></jats:sec><jats:sec><jats:title>Interventions</jats:title><jats:p>Not applicable.</jats:p></jats:sec><jats:sec><jats:title>Main Outcome Measures</jats:title><jats:p>Inter‐rater agreement between in‐person and remote evaluations on 10 PROM and MIS movements and presence/absence of pain with movement was calculated.</jats:p></jats:sec><jats:sec><jats:title>Results</jats:title><jats:p>The highest inter‐rater agreements were noted in shoulder abduction and protraction PROM (kappa (<jats:italic>κ</jats:italic>) = 0.44, confidence interval (CI): −0.1 to 1.0), and in elbow flexion, shoulder abduction, and shoulder protraction MIS (<jats:italic>κ</jats:italic> = 0.63, CI: 0 to 1.0).</jats:p></jats:sec><jats:sec><jats:title>Conclusions</jats:title><jats:p>This pilot study suggests that synchronous tele‐physical examination using the ARTESH system with augmented reality and haptics has the potential to provide enhanced value to existing telemedicine platforms. With the additional technological and procedural improvements and with an adequately powered study, the accuracy of ARTESH‐enabled remote tele‐physical examinations can be better evaluated.</jats:p></jats:sec>",
+        "language": "en",
+        "relation": {},
+        "resource": {
+          "primary": {
+            "URL": "https://onlinelibrary.wiley.com/doi/10.1002/pmrj.12883"
+          }
+        },
+        "subtitle": [],
+        "assertion": [
+          {
+            "name": "received",
+            "group": {
+              "name": "publication_history",
+              "label": "Publication History"
+            },
+            "label": "Received",
+            "order": 0,
+            "value": "2021-05-24"
+          },
+          {
+            "name": "accepted",
+            "group": {
+              "name": "publication_history",
+              "label": "Publication History"
+            },
+            "label": "Accepted",
+            "order": 1,
+            "value": "2022-06-03"
+          },
+          {
+            "name": "published",
+            "group": {
+              "name": "publication_history",
+              "label": "Publication History"
+            },
+            "label": "Published",
+            "order": 2,
+            "value": "2022-10-05"
+          }
+        ],
+        "deposited": {
+          "date-time": "2023-08-17T15:34:51Z",
+          "timestamp": 1692286491000,
+          "date-parts": [
+            [
+              2023,
+              8,
+              17
+            ]
+          ]
+        },
+        "issn-type": [
+          {
+            "type": "print",
+            "value": "1934-1482"
+          },
+          {
+            "type": "electronic",
+            "value": "1934-1563"
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2022,
+              10,
+              5
+            ]
+          ]
+        },
+        "publisher": "Wiley",
+        "reference": [
+          {
+            "DOI": "10.2196/22280",
+            "key": "e_1_2_9_2_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.15585/mmwr.mm6943a3",
+            "key": "e_1_2_9_3_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1016/j.mayocp.2020.06.052",
+            "key": "e_1_2_9_4_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1002/pmrj.12422",
+            "key": "e_1_2_9_5_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.23736/S1973-9087.20.06331-5",
+            "key": "e_1_2_9_6_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1016/j.mcna.2018.01.002",
+            "key": "e_1_2_9_7_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1016/j.wem.2020.09.009",
+            "key": "e_1_2_9_8_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "key": "e_1_2_9_9_1",
+            "year": "1991",
+            "issue": "3",
+            "author": "Garshnek V",
+            "volume": "8",
+            "first-page": "311",
+            "article-title": "Applications of space communications technology to critical human needs: rescue, disaster relief, and remote medical assistance",
+            "journal-title": "Space Commun"
+          },
+          {
+            "key": "e_1_2_9_10_1",
+            "year": "2008",
+            "author": "Merrell RC",
+            "volume": "131",
+            "first-page": "99",
+            "article-title": "Telemedicine in extreme conditions: disasters, war, remote sites",
+            "journal-title": "Stud Health Technol Inform"
+          },
+          {
+            "DOI": "10.2196/jmir.9458",
+            "key": "e_1_2_9_11_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1258/1357633042614294",
+            "key": "e_1_2_9_12_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1089/tmj.1.1998.4.19",
+            "key": "e_1_2_9_13_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "key": "e_1_2_9_14_1",
+            "year": "2002",
+            "issue": "7",
+            "author": "Grigoriev AI",
+            "volume": "73",
+            "first-page": "688",
+            "article-title": "Telemedicine and spaceflight",
+            "journal-title": "Aviat Space Environ Med"
+          },
+          {
+            "DOI": "10.1089/153056201300093813",
+            "key": "e_1_2_9_15_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.2106/JBJS.20.00609",
+            "key": "e_1_2_9_16_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1002/pmrj.12380",
+            "key": "e_1_2_9_17_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1007/s11936-019-0722-7",
+            "key": "e_1_2_9_18_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1177/1357633X15572201",
+            "key": "e_1_2_9_19_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1177/0269215516645148",
+            "key": "e_1_2_9_20_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1016/j.msard.2015.06.011",
+            "key": "e_1_2_9_21_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1016/j.jstrokecerebrovasdis.2015.09.014",
+            "key": "e_1_2_9_22_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1080/10749357.2016.1192361",
+            "key": "e_1_2_9_23_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1108/01439910410566362",
+            "key": "e_1_2_9_24_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1615/CritRevBiomedEng.2016016046",
+            "key": "e_1_2_9_25_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1186/s12984-015-0055-z",
+            "key": "e_1_2_9_26_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "key": "e_1_2_9_27_1",
+            "year": "2012",
+            "author": "Delden AL",
+            "volume": "2012",
+            "article-title": "A systematic review of bilateral upper limb training devices for poststroke rehabilitation",
+            "journal-title": "Stroke Res Treat"
+          },
+          {
+            "DOI": "10.1186/1743-0003-1-10",
+            "key": "e_1_2_9_28_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1080/10400435.2016.1230153",
+            "key": "e_1_2_9_29_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.3390/s19235193",
+            "key": "e_1_2_9_30_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "key": "e_1_2_9_31_1",
+            "year": "2017",
+            "issue": "3",
+            "author": "Meng L",
+            "volume": "41",
+            "first-page": "189",
+            "article-title": "Design of wearable telerehabilitation device based on micro‐sensors",
+            "journal-title": "Zhongguo Yi Liao Qi Xie Za Zhi"
+          },
+          {
+            "key": "e_1_2_9_32_1",
+            "year": "2018",
+            "issue": "9",
+            "author": "Porciuncula F",
+            "volume": "10",
+            "first-page": "S220",
+            "article-title": "Wearable movement sensors for rehabilitation: a focused review of technological and clinical advances",
+            "journal-title": "PM R"
+          },
+          {
+            "DOI": "10.3389/fneur.2020.611453",
+            "key": "e_1_2_9_33_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.5195/ijt.2019.6275",
+            "key": "e_1_2_9_34_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "key": "e_1_2_9_35_1",
+            "year": "2017",
+            "issue": "2",
+            "author": "Ohta M",
+            "volume": "23",
+            "first-page": "119",
+            "article-title": "How accurate are first visit diagnoses using synchronous video visits with physicians?",
+            "journal-title": "Telemed J e‐Health Off J Am Telemed Assoc"
+          },
+          {
+            "DOI": "10.1145/3123266.3123395",
+            "key": "e_1_2_9_36_1",
+            "unstructured": "TianY RaghuramanS AnnaswamyT BorresenA NahrstedtK PrabhakaranB.H‐TIME: Haptic‐enabled Tele‐Immersive Musculoskeletal Examination. Proceedings of the 25th ACM international conference on Multimedia;2017; Mountain View California USA.",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1109/ISM.2014.64",
+            "key": "e_1_2_9_37_1",
+            "unstructured": "VenkatramanK RaghuramanS TianY PrabhakaranB NahrstedtK AnnaswamyT.Quantifying and Improving User Quality of Experience in Immersive Tele‐Rehabilitation. Paper presented at: 2014 IEEE International Symposium on Multimedia; 10–12 Dec.2014.",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "key": "e_1_2_9_38_1",
+            "year": "2012",
+            "issue": "1",
+            "author": "Schutte J",
+            "volume": "4",
+            "first-page": "15",
+            "article-title": "Evaluation of a telerehabilitation system for community‐based rehabilitation",
+            "journal-title": "Int J Telerehab"
+          },
+          {
+            "DOI": "10.2307/2529310",
+            "key": "e_1_2_9_39_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1016/S0894-1130(12)80014-7",
+            "key": "e_1_2_9_40_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1067/mse.2002.119852",
+            "key": "e_1_2_9_41_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "key": "e_1_2_9_42_1",
+            "year": "2021",
+            "author": "Naqvi U",
+            "volume-title": "StatPearls"
+          },
+          {
+            "DOI": "10.1016/j.pmrj.2009.05.003",
+            "key": "e_1_2_9_43_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1097/JOM.0b013e3181f4396b",
+            "key": "e_1_2_9_44_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1371/journal.pone.0202338",
+            "key": "e_1_2_9_45_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1093/ptj/85.3.257",
+            "key": "e_1_2_9_46_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "key": "e_1_2_9_47_1",
+            "unstructured": "Commission FC.Broadband deployment report. In: (FCC) FCC ed. Washington D.C.2021."
+          },
+          {
+            "DOI": "10.1016/j.dhjo.2020.100973",
+            "key": "e_1_2_9_48_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1370/afm.2633",
+            "key": "e_1_2_9_49_1",
+            "doi-asserted-by": "publisher"
+          }
+        ],
+        "short-title": [],
+        "journal-issue": {
+          "issue": "7",
+          "published-print": {
+            "date-parts": [
+              [
+                2023,
+                7
+              ]
+            ]
+          }
+        },
+        "update-policy": "https://doi.org/10.1002/crossmark_policy",
+        "alternative-id": [
+          "10.1002/pmrj.12883"
+        ],
+        "content-domain": {
+          "domain": [
+            "onlinelibrary.wiley.com"
+          ],
+          "crossmark-restriction": true
+        },
+        "original-title": [],
+        "container-title": [
+          "PM&amp;R"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2023,
+              7
+            ]
+          ]
+        },
+        "reference-count": 48,
+        "published-online": {
+          "date-parts": [
+            [
+              2022,
+              10,
+              5
+            ]
+          ]
+        },
+        "references-count": 48,
+        "short-container-title": [
+          "PM&amp;R"
+        ],
+        "is-referenced-by-count": 7
+      },
+      "message-type": "work",
+      "message-version": "1.0.0"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:38:41.254191",
+    "processing_time_ms": 1246
+  },
+  "datacite": {
+    "error": "No matching articles found",
+    "success": false,
+    "timestamp": "2025-07-22T14:38:48.579588",
+    "processing_time_ms": 8556
+  },
+  "openalex": {
+    "data": {
+      "id": "https://openalex.org/W4289544542",
+      "doi": "https://doi.org/10.1002/pmrj.12883",
+      "title": "Comparison of in‐person and synchronous remote musculoskeletal exam using augmented reality and haptics: A pilot study",
+      "open_access": {
+        "is_oa": true,
+        "oa_url": "https://rss.onlinelibrary.wiley.com/doi/am-pdf/10.1002/pmrj.12883",
+        "oa_status": "bronze",
+        "any_repository_has_fulltext": false
+      },
+      "cited_by_count": 8,
+      "publication_year": 2022
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:38:41.427140",
+    "processing_time_ms": 1417
+  },
+  "unpaywall": {
+    "data": {
+      "doi": "10.1002/pmrj.12883",
+      "year": 2022,
+      "genre": "journal-article",
+      "is_oa": false,
+      "title": "Comparison of in‐person and synchronous remote musculoskeletal exam using augmented reality and haptics: A pilot study",
+      "doi_url": "https://doi.org/10.1002/pmrj.12883",
+      "oa_status": "closed",
+      "publisher": "Wiley",
+      "is_paratext": false,
+      "journal_name": "PM&R",
+      "journal_issns": "1934-1482,1934-1563",
+      "journal_issn_l": "1934-1482",
+      "published_date": "2022-08-03",
+      "z_authors_summary": {
+        "count": 7,
+        "first_author": ""
+      },
+      "has_repository_copy": false,
+      "oa_locations_summary": {
+        "count": 0,
+        "has_repository": false
+      },
+      "best_oa_location_summary": null,
+      "first_oa_location_summary": null
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:38:41.153897",
+    "processing_time_ms": 1139
+  },
+  "europe_pmc": {
+    "data": {
+      "id": "36197806",
+      "doi": "10.1002/pmrj.12883",
+      "pmid": "36197806",
+      "inPMC": "N",
+      "title": "Comparison of in-person and synchronous remote musculoskeletal exam using augmented reality and haptics: A pilot study.",
+      "hasPDF": "N",
+      "inEPMC": "N",
+      "source": "MED",
+      "authMan": "N",
+      "hasBook": "N",
+      "hasData": "N",
+      "pubYear": "2023",
+      "hasSuppl": "N",
+      "language": "eng",
+      "pageInfo": "891-898",
+      "pubModel": "Print-Electronic",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Borresen A",
+            "initials": "A",
+            "lastName": "Borresen",
+            "firstName": "Aleks",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Physical Medicine and Rehabilitation, University of Alabama at Birmingham, Birmingham, Alabama, USA."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Chakka K",
+            "initials": "K",
+            "lastName": "Chakka",
+            "firstName": "Keerthana",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "UT Southwestern Medical School, Dallas, Texas, USA."
+                }
+              ]
+            }
+          },
+          {
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0002-1904-1203"
+            },
+            "fullName": "Wu R",
+            "initials": "R",
+            "lastName": "Wu",
+            "firstName": "Richard",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "UT Southwestern Medical School, Dallas, Texas, USA."
+                }
+              ]
+            }
+          },
+          {
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0002-4811-7473"
+            },
+            "fullName": "Lin CK",
+            "initials": "CK",
+            "lastName": "Lin",
+            "firstName": "Chung-Kuang",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Riverside Community Hospital, Riverside, California, USA."
+                }
+              ]
+            }
+          },
+          {
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0003-3996-5582"
+            },
+            "fullName": "Wolfe C",
+            "initials": "C",
+            "lastName": "Wolfe",
+            "firstName": "Cody",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Neurosurgery, UT Southwestern Medical Center, Dallas, Texas, USA."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Prabhakaran B",
+            "initials": "B",
+            "lastName": "Prabhakaran",
+            "firstName": "Balakrishnan",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Computer Science, Erik Jonsson School of Engineering and Computer Science, The University of Texas at Dallas, Richardson, Texas, USA."
+                }
+              ]
+            }
+          },
+          {
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0002-3969-9221"
+            },
+            "fullName": "Annaswamy TM",
+            "initials": "TM",
+            "lastName": "Annaswamy",
+            "firstName": "Thiru M",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "PM&R Service, VA North Texas Health Care System, Department of PM&R, UT Southwestern Medical Center, Dallas, Texas, USA."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "grantsList": {
+        "grant": [
+          {
+            "agency": "National Science Foundation",
+            "grantId": "CNS‐1012975 CFDA Number 47.070",
+            "orderIn": 0
+          }
+        ]
+      },
+      "nihAuthMan": "N",
+      "subsetList": {
+        "subset": [
+          {
+            "code": "IM",
+            "name": "Index Medicus"
+          }
+        ]
+      },
+      "affiliation": "Department of Physical Medicine and Rehabilitation, University of Alabama at Birmingham, Birmingham, Alabama, USA.",
+      "epmcAuthMan": "N",
+      "journalInfo": {
+        "issue": "7",
+        "volume": "15",
+        "journal": {
+          "essn": "1934-1563",
+          "issn": "1934-1482",
+          "nlmid": "101491319",
+          "title": "PM & R : the journal of injury, function, and rehabilitation",
+          "isoabbreviation": "PM R",
+          "medlineAbbreviation": "PM R"
+        },
+        "journalIssueId": 3605385,
+        "dateOfPublication": "2023 Jul",
+        "yearOfPublication": 2023,
+        "monthOfPublication": 7,
+        "printPublicationDate": "2023-07-01"
+      },
+      "pubTypeList": {
+        "pubType": [
+          "Research Support, U.S. Gov't, Non-P.H.S.",
+          "Journal Article"
+        ]
+      },
+      "abstractText": "<h4>Introduction</h4>Utilization of telemedicine for health care delivery increased rapidly during the coronavirus disease 2019 (COVID-19) pandemic. However, physical examination during telehealth visits remains limited. A novel telerehabilitation system-The Augmented Reality-based Telerehabilitation System with Haptics (ARTESH)-shows promise for performing synchronous, remote musculoskeletal examination.<h4>Objective</h4>To assess the potential of ARTESH in remotely examining upper extremity passive range of motion (PROM) and maximum isometric strength (MIS).<h4>Design</h4>In this cross-sectional pilot study, we compared the in-person (reference standard) and remote evaluations (ARTESH) of participants' upper extremity PROM and MIS in 10 shoulder and arm movements. The evaluators were blinded to each other's results.<h4>Setting</h4>Participants underwent in-person evaluations at a Veterans Affairs hospital's outpatient Physical Medicine and Rehabilitation (PM&R) clinic, and underwent remote examination using ARTESH with the evaluator located at a research lab 30 miles away, connected via a high-speed network.<h4>Patients</h4>Fifteen participants with upper extremity pain and/or weakness.<h4>Interventions</h4>Not applicable.<h4>Main outcome measures</h4>Inter-rater agreement between in-person and remote evaluations on 10 PROM and MIS movements and presence/absence of pain with movement was calculated.<h4>Results</h4>The highest inter-rater agreements were noted in shoulder abduction and protraction PROM (kappa (κ) = 0.44, confidence interval (CI): -0.1 to 1.0), and in elbow flexion, shoulder abduction, and shoulder protraction MIS (κ = 0.63, CI: 0 to 1.0).<h4>Conclusions</h4>This pilot study suggests that synchronous tele-physical examination using the ARTESH system with augmented reality and haptics has the potential to provide enhanced value to existing telemedicine platforms. With the additional technological and procedural improvements and with an adequately powered study, the accuracy of ARTESH-enabled remote tele-physical examinations can be better evaluated.",
+      "authorIdList": {
+        "authorId": [
+          {
+            "type": "ORCID",
+            "value": "0000-0002-1904-1203"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0002-3969-9221"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0002-4811-7473"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0003-3996-5582"
+          }
+        ]
+      },
+      "authorString": "Borresen A, Chakka K, Wu R, Lin CK, Wolfe C, Prabhakaran B, Annaswamy TM.",
+      "citedByCount": 5,
+      "hasLabsLinks": "Y",
+      "isOpenAccess": "N",
+      "hasReferences": "Y",
+      "dateOfCreation": "2022-10-05",
+      "dateOfRevision": "2023-10-18",
+      "firstIndexDate": "2022-10-06",
+      "hasEvaluations": "N",
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "url": "https://doi.org/10.1002/pmrj.12883",
+            "site": "DOI",
+            "availability": "Subscription required",
+            "documentStyle": "doi",
+            "availabilityCode": "S"
+          }
+        ]
+      },
+      "meshHeadingList": {
+        "meshHeading": [
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Humans"
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Musculoskeletal Diseases",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "abbreviation": "DI",
+                  "majorTopic_YN": "N",
+                  "qualifierName": "diagnosis"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Physical Examination",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "abbreviation": "MT",
+                  "majorTopic_YN": "N",
+                  "qualifierName": "methods"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Cross-Sectional Studies"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Pilot Projects"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Reproducibility of Results"
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Telemedicine"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Aged"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Middle Aged"
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Office Visits"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Male"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Augmented Reality"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Haptic Technology"
+          }
+        ]
+      },
+      "dateOfCompletion": "2023-10-18",
+      "dataLinksTagsList": {
+        "dataLinkstag": [
+          "altmetrics"
+        ]
+      },
+      "hasTextMinedTerms": "Y",
+      "publicationStatus": "ppublish",
+      "firstPublicationDate": "2022-10-05",
+      "hasDbCrossReferences": "N",
+      "hasTMAccessionNumbers": "N",
+      "electronicPublicationDate": "2022-10-05"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:38:41.710625",
+    "processing_time_ms": 1699
+  },
+  "semantic_scholar": {
+    "data": {
+      "year": 2022,
+      "title": "Comparison of in‐person and synchronous remote musculoskeletal exam using augmented reality and haptics: A pilot study",
+      "authors": [
+        {
+          "name": "Aleksander Borresen",
+          "authorId": "40380570"
+        },
+        {
+          "name": "Keerthana Chakka",
+          "authorId": "1753390373"
+        },
+        {
+          "name": "Richard Wu",
+          "authorId": "2180626458"
+        },
+        {
+          "name": "Chung-Kuang Lin",
+          "authorId": "2734259"
+        },
+        {
+          "name": "Cody Wolfe",
+          "authorId": "2057443258"
+        },
+        {
+          "name": "B. Prabhakaran",
+          "authorId": "2065149705"
+        },
+        {
+          "name": "T. Annaswamy",
+          "authorId": "2805660"
+        }
+      ],
+      "journal": {
+        "name": "PM&R",
+        "pages": "891 - 898",
+        "volume": "15"
+      },
+      "paperId": "9de29439713461ab2dd9c20cd7809dfb52625d75",
+      "abstract": "Utilization of telemedicine for health care delivery increased rapidly during the coronavirus disease 2019 (COVID‐19) pandemic. However, physical examination during telehealth visits remains limited. A novel telerehabilitation system—The Augmented Reality‐based Telerehabilitation System with Haptics (ARTESH)—shows promise for performing synchronous, remote musculoskeletal examination.",
+      "externalIds": {
+        "DOI": "10.1002/pmrj.12883",
+        "PubMed": "36197806",
+        "CorpusId": 251340054
+      },
+      "isOpenAccess": true,
+      "citationCount": 7,
+      "openAccessPdf": {
+        "url": "https://rss.onlinelibrary.wiley.com/doi/am-pdf/10.1002/pmrj.12883",
+        "status": "BRONZE",
+        "license": "publisher-specific, author manuscript",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1002/pmrj.12883?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1002/pmrj.12883, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      }
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:38:40.180647",
+    "processing_time_ms": 171
+  }
+}

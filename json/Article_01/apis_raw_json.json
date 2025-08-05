@@ -1,0 +1,1457 @@
+{
+  "core": {
+    "data": {
+      "data": {
+        "doi": "10.25358/openscience-8632",
+        "year": 2022,
+        "title": "Smartglass augmented reality-assisted targeted prostate biopsy using cognitive point-of-care fusion technology",
+        "authors": [
+          "Borgmann, Hendrik",
+          "Böhm, Katharina",
+          "Dotzauer, Robert",
+          "Epple, Stefan",
+          "Frey, Lisa",
+          "Haack, Maximilian",
+          "Haferkamp, Axel",
+          "Höfner, Thomas",
+          "Jungmann, Florian",
+          "Sparwasser, Peter",
+          "Tsaur, Igor",
+          "Zeymer, Steffen"
+        ],
+        "core_id": 160528078,
+        "journal": "International Journal of Medical Robotics and Computer Assisted Surgery",
+        "pdf_url": "https://core.ac.uk/download/621760727.pdf",
+        "abstract": "Introduction\r\nMRI-guided targeted biopsy has become standard of care for diagnosis of prostate cancer, with establishment of several biopsy techniques and platforms. Augmented reality smart glasses have emerged as novel technology to support image-guided interventions. We aimed to investigate its usage while prostate biopsy.\r\n\r\nMethods\r\nMRI with PIRADS-lesions ≥3 was uploaded to smart glasses (Vuzix BladeR) and augmented reality smart glasses-assisted targeted biopsy (SMART-TB) of the prostate was performed using cognitive fusion technology at the point of care. Detection rates were compared to systematic biopsy. Feasibility for SMART-TB was assessed (10 domains from bad [1] to excellent [10]).\r\n\r\nResults\r\nSMART-TB was performed for four patients. Prostate cancer detection was more likely for SMART-TB (46%; 13/28) than for systematic biopsy (27%; 13/48). Feasibility scores were high [8–10] for practicality, multitasking, execution speed, comfort and device weight and low [1–4] for handling, battery and image quality. Median execution time: 28 min; Investment cost smart glass: 1017 USD.\r\n\r\nConclusion\r\nFirst description of SMART-TB demonstrated convenient feasibility. This novel technology might enhance diagnosis of prostate cancer in future",
+        "repository": "",
+        "open_access": false,
+        "citation_count": 0
+      },
+      "success": true,
+      "strategy": "Exact Title"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:55:47.576136",
+    "processing_time_ms": 5725
+  },
+  "doaj": {
+    "error": "No DOI available for DOAJ search",
+    "success": false,
+    "timestamp": "2025-07-22T14:55:42.860890",
+    "processing_time_ms": 1004
+  },
+  "arxiv": {
+    "error": "No results found",
+    "success": false,
+    "timestamp": "2025-07-22T14:55:43.370283",
+    "processing_time_ms": 1518
+  },
+  "orcid": {
+    "data": {
+      "person": {
+        "name": {
+          "path": "0000-0002-8469-8113",
+          "source": null,
+          "visibility": "public",
+          "credit-name": null,
+          "family-name": {
+            "value": "Sparwasser"
+          },
+          "given-names": {
+            "value": "Peter"
+          },
+          "created-date": {
+            "value": 1616507024988
+          },
+          "last-modified-date": {
+            "value": 1616507024988
+          }
+        },
+        "path": "/0000-0002-8469-8113/person",
+        "emails": {
+          "path": "/0000-0002-8469-8113/email",
+          "email": [],
+          "last-modified-date": null
+        },
+        "keywords": {
+          "path": "/0000-0002-8469-8113/keywords",
+          "keyword": [],
+          "last-modified-date": null
+        },
+        "addresses": {
+          "path": "/0000-0002-8469-8113/address",
+          "address": [],
+          "last-modified-date": null
+        },
+        "biography": null,
+        "other-names": {
+          "path": "/0000-0002-8469-8113/other-names",
+          "other-name": [],
+          "last-modified-date": null
+        },
+        "researcher-urls": {
+          "path": "/0000-0002-8469-8113/researcher-urls",
+          "researcher-url": [],
+          "last-modified-date": null
+        },
+        "last-modified-date": null,
+        "external-identifiers": {
+          "path": "/0000-0002-8469-8113/external-identifiers",
+          "last-modified-date": null,
+          "external-identifier": []
+        }
+      },
+      "orcid_id": "0000-0002-8469-8113"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:55:43.453267",
+    "processing_time_ms": 1593
+  },
+  "pubmed": {
+    "data": {
+      "PubmedArticle": [
+        {
+          "MedlineCitation": {
+            "PMID": {
+              "content": "35034415"
+            },
+            "Article": {
+              "Journal": {
+                "Title": "The international journal of medical robotics + computer assisted surgery : MRCAS",
+                "JournalIssue": {
+                  "Issue": "3",
+                  "Volume": "18",
+                  "PubDate": {
+                    "Year": "2022"
+                  }
+                }
+              },
+              "Abstract": {
+                "AbstractText": [
+                  "MRI-guided targeted biopsy has become standard of care for diagnosis of prostate cancer, with establishment of several biopsy techniques and platforms. Augmented reality smart glasses have emerged as novel technology to support image-guided interventions. We aimed to investigate its usage while prostate biopsy.",
+                  "MRI with PIRADS-lesions ≥3 was uploaded to smart glasses (Vuzix Blade",
+                  "SMART-TB was performed for four patients. Prostate cancer detection was more likely for SMART-TB (46%; 13/28) than for systematic biopsy (27%; 13/48). Feasibility scores were high [8-10] for practicality, multitasking, execution speed, comfort and device weight and low [1-4] for handling, battery and image quality. Median execution time: 28 min; Investment cost smart glass: 1017 USD.",
+                  "First description of SMART-TB demonstrated convenient feasibility. This novel technology might enhance diagnosis of prostate cancer in future."
+                ]
+              },
+              "AuthorList": {
+                "Author": [
+                  {
+                    "ForeName": "Peter",
+                    "LastName": "Sparwasser"
+                  },
+                  {
+                    "ForeName": "Maximilian",
+                    "LastName": "Haack"
+                  },
+                  {
+                    "ForeName": "Stefan",
+                    "LastName": "Epple"
+                  },
+                  {
+                    "ForeName": "Lisa",
+                    "LastName": "Frey"
+                  },
+                  {
+                    "ForeName": "Steffen",
+                    "LastName": "Zeymer"
+                  },
+                  {
+                    "ForeName": "Robert",
+                    "LastName": "Dotzauer"
+                  },
+                  {
+                    "ForeName": "Florian",
+                    "LastName": "Jungmann"
+                  },
+                  {
+                    "ForeName": "Katharina",
+                    "LastName": "Böhm"
+                  },
+                  {
+                    "ForeName": "Thomas",
+                    "LastName": "Höfner"
+                  },
+                  {
+                    "ForeName": "Igor",
+                    "LastName": "Tsaur"
+                  },
+                  {
+                    "ForeName": "Axel",
+                    "LastName": "Haferkamp"
+                  },
+                  {
+                    "ForeName": "Hendrik",
+                    "LastName": "Borgmann"
+                  }
+                ]
+              },
+              "Pagination": {
+                "MedlinePgn": "e2366"
+              },
+              "ArticleTitle": "Smartglass augmented reality-assisted targeted prostate biopsy using cognitive point-of-care fusion technology."
+            }
+          }
+        }
+      ]
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:55:43.513967",
+    "processing_time_ms": 1679
+  },
+  "crossref": {
+    "data": {
+      "status": "ok",
+      "message": {
+        "DOI": "10.1002/rcs.2366",
+        "URL": "https://doi.org/10.1002/rcs.2366",
+        "ISSN": [
+          "1478-5951",
+          "1478-596X"
+        ],
+        "link": [
+          {
+            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/rcs.2366",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/rcs.2366",
+            "content-type": "application/xml",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/rcs.2366",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "type": "journal-article",
+        "issue": "3",
+        "score": 1,
+        "title": [
+          "Smartglass augmented reality‐assisted targeted prostate biopsy using cognitive point‐of‐care fusion technology"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-8469-8113",
+            "given": "Peter",
+            "family": "Sparwasser",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Department of Urology University Medical Center Johannes Gutenberg University  Mainz Germany"
+              }
+            ],
+            "authenticated-orcid": false
+          },
+          {
+            "given": "Maximilian",
+            "family": "Haack",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Urology University Medical Center Johannes Gutenberg University  Mainz Germany"
+              }
+            ]
+          },
+          {
+            "given": "Stefan",
+            "family": "Epple",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Urology University Medical Center Johannes Gutenberg University  Mainz Germany"
+              }
+            ]
+          },
+          {
+            "given": "Lisa",
+            "family": "Frey",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Urology University Medical Center Johannes Gutenberg University  Mainz Germany"
+              }
+            ]
+          },
+          {
+            "given": "Steffen",
+            "family": "Zeymer",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Urology University Medical Center Johannes Gutenberg University  Mainz Germany"
+              }
+            ]
+          },
+          {
+            "given": "Robert",
+            "family": "Dotzauer",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Urology University Medical Center Johannes Gutenberg University  Mainz Germany"
+              }
+            ]
+          },
+          {
+            "given": "Florian",
+            "family": "Jungmann",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Radiology University Medical Center Johannes Gutenberg University  Mainz Germany"
+              }
+            ]
+          },
+          {
+            "given": "Katharina",
+            "family": "Böhm",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Urology University Medical Center Johannes Gutenberg University  Mainz Germany"
+              }
+            ]
+          },
+          {
+            "given": "Thomas",
+            "family": "Höfner",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Urology University Medical Center Johannes Gutenberg University  Mainz Germany"
+              }
+            ]
+          },
+          {
+            "given": "Igor",
+            "family": "Tsaur",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Urology University Medical Center Johannes Gutenberg University  Mainz Germany"
+              }
+            ]
+          },
+          {
+            "given": "Axel",
+            "family": "Haferkamp",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Urology University Medical Center Johannes Gutenberg University  Mainz Germany"
+              }
+            ]
+          },
+          {
+            "given": "Hendrik",
+            "family": "Borgmann",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Urology University Medical Center Johannes Gutenberg University  Mainz Germany"
+              }
+            ]
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2022,
+              1,
+              25
+            ]
+          ]
+        },
+        "member": "311",
+        "prefix": "10.1002",
+        "source": "Crossref",
+        "volume": "18",
+        "archive": [
+          "Portico"
+        ],
+        "created": {
+          "date-time": "2022-01-16T13:28:13Z",
+          "timestamp": 1642339693000,
+          "date-parts": [
+            [
+              2022,
+              1,
+              16
+            ]
+          ]
+        },
+        "indexed": {
+          "version": "3.40.5",
+          "date-time": "2025-07-12T01:19:59Z",
+          "timestamp": 1752283199178,
+          "date-parts": [
+            [
+              2025,
+              7,
+              12
+            ]
+          ]
+        },
+        "license": [
+          {
+            "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+            "start": {
+              "date-time": "2022-01-25T00:00:00Z",
+              "timestamp": 1643068800000,
+              "date-parts": [
+                [
+                  2022,
+                  1,
+                  25
+                ]
+              ]
+            },
+            "delay-in-days": 0,
+            "content-version": "vor"
+          }
+        ],
+        "subject": [],
+        "abstract": "<jats:title>Abstract</jats:title><jats:sec><jats:title>Introduction</jats:title><jats:p>MRI‐guided targeted biopsy has become standard of care for diagnosis of prostate cancer, with establishment of several biopsy techniques and platforms. Augmented reality smart glasses have emerged as novel technology to support image‐guided interventions. We aimed to investigate its usage while prostate biopsy.</jats:p></jats:sec><jats:sec><jats:title>Methods</jats:title><jats:p>MRI with PIRADS‐lesions ≥3 was uploaded to smart glasses (Vuzix Blade<jats:sup>R</jats:sup>) and augmented reality smart glasses‐assisted targeted biopsy (SMART‐TB) of the prostate was performed using cognitive fusion technology at the point of care. Detection rates were compared to systematic biopsy. Feasibility for SMART‐TB was assessed (10 domains from bad [1] to excellent [10]).</jats:p></jats:sec><jats:sec><jats:title>Results</jats:title><jats:p>SMART‐TB was performed for four patients. Prostate cancer detection was more likely for SMART‐TB (46%; 13/28) than for systematic biopsy (27%; 13/48). Feasibility scores were high [8–10] for practicality, multitasking, execution speed, comfort and device weight and low [1–4] for handling, battery and image quality. Median execution time: 28 min; Investment cost smart glass: 1017 USD.</jats:p></jats:sec><jats:sec><jats:title>Conclusion</jats:title><jats:p>First description of SMART‐TB demonstrated convenient feasibility. This novel technology might enhance diagnosis of prostate cancer in future.</jats:p></jats:sec>",
+        "language": "en",
+        "relation": {},
+        "resource": {
+          "primary": {
+            "URL": "https://onlinelibrary.wiley.com/doi/10.1002/rcs.2366"
+          }
+        },
+        "subtitle": [],
+        "assertion": [
+          {
+            "name": "received",
+            "group": {
+              "name": "publication_history",
+              "label": "Publication History"
+            },
+            "label": "Received",
+            "order": 0,
+            "value": "2021-09-22"
+          },
+          {
+            "name": "accepted",
+            "group": {
+              "name": "publication_history",
+              "label": "Publication History"
+            },
+            "label": "Accepted",
+            "order": 1,
+            "value": "2022-01-07"
+          },
+          {
+            "name": "published",
+            "group": {
+              "name": "publication_history",
+              "label": "Publication History"
+            },
+            "label": "Published",
+            "order": 2,
+            "value": "2022-01-25"
+          }
+        ],
+        "deposited": {
+          "date-time": "2023-08-25T14:53:45Z",
+          "timestamp": 1692975225000,
+          "date-parts": [
+            [
+              2023,
+              8,
+              25
+            ]
+          ]
+        },
+        "issn-type": [
+          {
+            "type": "print",
+            "value": "1478-5951"
+          },
+          {
+            "type": "electronic",
+            "value": "1478-596X"
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2022,
+              1,
+              25
+            ]
+          ]
+        },
+        "publisher": "Wiley",
+        "reference": [
+          {
+            "DOI": "10.1016/j.cct.2015.02.008",
+            "key": "e_1_2_10_2_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "key": "e_1_2_10_3_1",
+            "year": "2019",
+            "author": "DrostFrank‐Jan H",
+            "volume": "4",
+            "first-page": "4",
+            "article-title": "Prostate MRI, with or without MRI‐targeted biopsy, and systematic biopsy for detecting prostate cancer",
+            "journal-title": "Cochrane Database Syst Rev"
+          },
+          {
+            "DOI": "10.1016/j.eururo.2016.07.041",
+            "key": "e_1_2_10_4_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1097/JU.0000000000001639",
+            "key": "e_1_2_10_5_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1055/a-0759-0029",
+            "key": "e_1_2_10_6_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1007/s00345-016-1956-6",
+            "key": "e_1_2_10_7_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1111/iju.14204",
+            "key": "e_1_2_10_8_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "key": "e_1_2_10_9_1",
+            "unstructured": "EAU Guidelines. Edn. Presented at the EAU Congress Amsterdam 2020. ISBN 978‐94‐92671‐07‐3."
+          },
+          {
+            "DOI": "10.1016/j.eururo.2015.08.052",
+            "key": "e_1_2_10_10_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "key": "e_1_2_10_11_1",
+            "volume-title": "Vuzix Blade Hardware details"
+          },
+          {
+            "DOI": "10.1155/2020/8851964",
+            "key": "e_1_2_10_12_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "key": "e_1_2_10_13_1",
+            "year": "2018",
+            "issue": "3",
+            "author": "García‐Cruz E",
+            "volume": "42",
+            "first-page": "207",
+            "article-title": "Testing Smart Glasses in urology: clinical and surgical potential applications",
+            "journal-title": "Actas Urol Esp"
+          },
+          {
+            "DOI": "10.1007/s00345-019-02711-z",
+            "key": "e_1_2_10_14_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.21037/tau.2017.03.77",
+            "key": "e_1_2_10_15_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1016/j.eururo.2014.03.002",
+            "key": "e_1_2_10_16_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1016/j.juro.2016.03.149",
+            "key": "e_1_2_10_17_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1148/radiol.2017161684",
+            "key": "e_1_2_10_18_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1159/000499264",
+            "key": "e_1_2_10_19_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1016/S1470-2045(18)30569-2",
+            "key": "e_1_2_10_20_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1007/s00330-020-06929-z",
+            "key": "e_1_2_10_21_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.2214/AJR.18.20571",
+            "key": "e_1_2_10_22_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1109/TBME.2016.2582734",
+            "key": "e_1_2_10_23_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "key": "e_1_2_10_24_1",
+            "year": "2020",
+            "issue": "20",
+            "author": "Wang S",
+            "volume": "2405",
+            "first-page": "30215",
+            "article-title": "The use of three‐dimensional visualization techniques for prostate procedures: a systematic review",
+            "journal-title": "Eur Urol Focus"
+          },
+          {
+            "DOI": "10.1080/00140139.2019.1582805",
+            "key": "e_1_2_10_25_1",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "key": "e_1_2_10_26_1",
+            "unstructured": "MooreCM KasivisvanathanV EggenerS et al. Standards of reporting for MRI‐targeted biopsy studies (START) of the prostate: recommendations from an International Working Group."
+          },
+          {
+            "key": "e_1_2_10_27_1",
+            "unstructured": "Urologic Oncology Fellow. (SUO). University of Toronto. Princess Margaret Cancer Centre; Rouviere et al. Accessed January 16 2021.https://www.urotoday.com/conference‐highlights/esou18/esou18‐prostate‐cancer/101471‐esou18‐cognitive‐prostate‐biopsy.html"
+          },
+          {
+            "DOI": "10.1007/s11255-017-1642-7",
+            "key": "e_1_2_10_28_1",
+            "doi-asserted-by": "publisher"
+          }
+        ],
+        "short-title": [],
+        "journal-issue": {
+          "issue": "3",
+          "published-print": {
+            "date-parts": [
+              [
+                2022,
+                6
+              ]
+            ]
+          }
+        },
+        "update-policy": "https://doi.org/10.1002/crossmark_policy",
+        "alternative-id": [
+          "10.1002/rcs.2366"
+        ],
+        "content-domain": {
+          "domain": [
+            "onlinelibrary.wiley.com"
+          ],
+          "crossmark-restriction": true
+        },
+        "original-title": [],
+        "container-title": [
+          "The International Journal of Medical Robotics and Computer Assisted Surgery"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2022,
+              6
+            ]
+          ]
+        },
+        "reference-count": 27,
+        "published-online": {
+          "date-parts": [
+            [
+              2022,
+              1,
+              25
+            ]
+          ]
+        },
+        "references-count": 27,
+        "short-container-title": [
+          "Robotics Computer Surgery"
+        ],
+        "is-referenced-by-count": 11
+      },
+      "message-type": "work",
+      "message-version": "1.0.0"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:55:43.198441",
+    "processing_time_ms": 1367
+  },
+  "datacite": {
+    "data": {
+      "data": {
+        "id": "10.25358/openscience-8632",
+        "type": "dois",
+        "attributes": {
+          "doi": "10.25358/openscience-8632",
+          "url": "https://openscience.ub.uni-mainz.de/handle/20.500.12030/8648",
+          "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeG1sbnM6ZHNwYWNlPSJodHRwOi8vd3d3LmRzcGFjZS5vcmcveG1sbnMvZHNwYWNlL2RpbSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjMvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC4yNTM1OC9PUEVOU0NJRU5DRS04NjMyPC9pZGVudGlmaWVyPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+U3Bhcndhc3NlciwgUGV0ZXI8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5IYWFjaywgTWF4aW1pbGlhbjwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPkVwcGxlLCBTdGVmYW48L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogICAgPGNyZWF0b3I+CiAgICAgIDxjcmVhdG9yTmFtZT5GcmV5LCBMaXNhPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+WmV5bWVyLCBTdGVmZmVuPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+RG90emF1ZXIsIFJvYmVydDwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPkp1bmdtYW5uLCBGbG9yaWFuPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+QsO2aG0sIEthdGhhcmluYTwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPkjDtmZuZXIsIFRob21hczwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPlRzYXVyLCBJZ29yPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+SGFmZXJrYW1wLCBBeGVsPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+Qm9yZ21hbm4sIEhlbmRyaWs8L2NyZWF0b3JOYW1lPgogICAgPC9jcmVhdG9yPgogIDwvY3JlYXRvcnM+CiAgPHRpdGxlcz4KICAgIDx0aXRsZT5TbWFydGdsYXNzIGF1Z21lbnRlZCByZWFsaXR5LWFzc2lzdGVkIHRhcmdldGVkIHByb3N0YXRlIGJpb3BzeSB1c2luZyBjb2duaXRpdmUgcG9pbnQtb2YtY2FyZSBmdXNpb24gdGVjaG5vbG9neTwvdGl0bGU+CiAgPC90aXRsZXM+CiAgPHB1Ymxpc2hlcj5XaWxleTwvcHVibGlzaGVyPgogIDxwdWJsaWNhdGlvblllYXI+MjAyMjwvcHVibGljYXRpb25ZZWFyPgogIDxzdWJqZWN0cz4KICAgIDxzdWJqZWN0IHN1YmplY3RTY2hlbWU9IkREQyI+NjEwIE1lZGl6aW48L3N1YmplY3Q+CiAgICA8c3ViamVjdCBzdWJqZWN0U2NoZW1lPSJEREMiPjYxMCBNZWRpY2FsIHNjaWVuY2VzPC9zdWJqZWN0PgogIDwvc3ViamVjdHM+CiAgPGNvbnRyaWJ1dG9ycz4KICAgIDxjb250cmlidXRvciBjb250cmlidXRvclR5cGU9IkRhdGFNYW5hZ2VyIj4KICAgICAgPGNvbnRyaWJ1dG9yTmFtZT5Kb2hhbm5lcyBHdXRlbmJlcmctVW5pdmVyc2l0w6R0IE1haW56PC9jb250cmlidXRvck5hbWU+CiAgICA8L2NvbnRyaWJ1dG9yPgogICAgPGNvbnRyaWJ1dG9yIGNvbnRyaWJ1dG9yVHlwZT0iSG9zdGluZ0luc3RpdHV0aW9uIj4KICAgICAgPGNvbnRyaWJ1dG9yTmFtZT5Kb2hhbm5lcyBHdXRlbmJlcmctVW5pdmVyc2l0w6R0IE1haW56PC9jb250cmlidXRvck5hbWU+CiAgICA8L2NvbnRyaWJ1dG9yPgogIDwvY29udHJpYnV0b3JzPgogIDxkYXRlcz4KICAgIDxkYXRlIGRhdGVUeXBlPSJBY2NlcHRlZCI+MjAyMy0wMS0yNDwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJBdmFpbGFibGUiPjIwMjMtMDEtMjQ8L2RhdGU+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iSXNzdWVkIj4yMDIyPC9kYXRlPgogIDwvZGF0ZXM+CiAgPGxhbmd1YWdlPmVuZzwvbGFuZ3VhZ2U+CiAgPHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJUZXh0Ij5aZWl0c2NocmlmdGVuYXVmc2F0ejwvcmVzb3VyY2VUeXBlPgogIDxhbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxhbHRlcm5hdGVJZGVudGlmaWVyIGFsdGVybmF0ZUlkZW50aWZpZXJUeXBlPSJIYW5kbGUiPmh0dHBzOi8vb3BlbnNjaWVuY2UudWIudW5pLW1haW56LmRlL2hhbmRsZS8yMC41MDAuMTIwMzAvODY0ODwvYWx0ZXJuYXRlSWRlbnRpZmllcj4KICA8L2FsdGVybmF0ZUlkZW50aWZpZXJzPgogIDxyaWdodHNMaXN0PgogICAgPHJpZ2h0cz5DQyBCWS1OQy1ORDwvcmlnaHRzPgogICAgPHJpZ2h0cyByaWdodHNVUkk9Imh0dHBzOi8vY3JlYXRpdmVjb21tb25zLm9yZy9saWNlbnNlcy9ieS1uYy1uZC80LjAvIi8+CiAgPC9yaWdodHNMaXN0Pgo8L3Jlc291cmNlPg==",
+          "dates": [
+            {
+              "date": "2023-01-24",
+              "dateType": "Accepted"
+            },
+            {
+              "date": "2023-01-24",
+              "dateType": "Available"
+            },
+            {
+              "date": "2022",
+              "dateType": "Issued"
+            }
+          ],
+          "sizes": [],
+          "state": "findable",
+          "types": {
+            "ris": "RPRT",
+            "bibtex": "article",
+            "citeproc": "article-journal",
+            "schemaOrg": "ScholarlyArticle",
+            "resourceType": "Zeitschriftenaufsatz",
+            "resourceTypeGeneral": "Text"
+          },
+          "prefix": "10.25358",
+          "reason": null,
+          "source": "mds",
+          "suffix": "openscience-8632",
+          "titles": [
+            {
+              "title": "Smartglass augmented reality-assisted targeted prostate biopsy using cognitive point-of-care fusion technology"
+            }
+          ],
+          "created": "2023-01-25T00:02:24Z",
+          "formats": [],
+          "updated": "2023-01-25T00:02:24Z",
+          "version": null,
+          "creators": [
+            {
+              "name": "Sparwasser, Peter",
+              "nameType": "Personal",
+              "givenName": "Peter",
+              "familyName": "Sparwasser",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Haack, Maximilian",
+              "nameType": "Personal",
+              "givenName": "Maximilian",
+              "familyName": "Haack",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Epple, Stefan",
+              "nameType": "Personal",
+              "givenName": "Stefan",
+              "familyName": "Epple",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Frey, Lisa",
+              "nameType": "Personal",
+              "givenName": "Lisa",
+              "familyName": "Frey",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Zeymer, Steffen",
+              "nameType": "Personal",
+              "givenName": "Steffen",
+              "familyName": "Zeymer",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Dotzauer, Robert",
+              "nameType": "Personal",
+              "givenName": "Robert",
+              "familyName": "Dotzauer",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Jungmann, Florian",
+              "nameType": "Personal",
+              "givenName": "Florian",
+              "familyName": "Jungmann",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Böhm, Katharina",
+              "nameType": "Personal",
+              "givenName": "Katharina",
+              "familyName": "Böhm",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Höfner, Thomas",
+              "nameType": "Personal",
+              "givenName": "Thomas",
+              "familyName": "Höfner",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Tsaur, Igor",
+              "nameType": "Personal",
+              "givenName": "Igor",
+              "familyName": "Tsaur",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Haferkamp, Axel",
+              "nameType": "Personal",
+              "givenName": "Axel",
+              "familyName": "Haferkamp",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Borgmann, Hendrik",
+              "nameType": "Personal",
+              "givenName": "Hendrik",
+              "familyName": "Borgmann",
+              "affiliation": [],
+              "nameIdentifiers": []
+            }
+          ],
+          "isActive": true,
+          "language": "en",
+          "subjects": [
+            {
+              "subject": "610 Medizin",
+              "subjectScheme": "DDC"
+            },
+            {
+              "subject": "610 Medical sciences",
+              "subjectScheme": "DDC"
+            }
+          ],
+          "container": {},
+          "partCount": 0,
+          "published": null,
+          "publisher": {
+            "name": "Wiley"
+          },
+          "viewCount": 0,
+          "contentUrl": null,
+          "registered": "2023-01-25T00:02:24Z",
+          "rightsList": [
+            {
+              "rights": "CC BY-NC-ND"
+            },
+            {
+              "rights": "Creative Commons Attribution Non Commercial No Derivatives 4.0 International",
+              "rightsUri": "https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode",
+              "schemeUri": "https://spdx.org/licenses/",
+              "rightsIdentifier": "cc-by-nc-nd-4.0",
+              "rightsIdentifierScheme": "SPDX"
+            }
+          ],
+          "identifiers": [],
+          "partOfCount": 0,
+          "contributors": [
+            {
+              "name": "Mainz, Johannes Gutenberg-Universität",
+              "nameType": "Personal",
+              "givenName": "Johannes Gutenberg-Universität",
+              "familyName": "Mainz",
+              "affiliation": [],
+              "contributorType": "DataManager",
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Mainz, Johannes Gutenberg-Universität",
+              "nameType": "Personal",
+              "givenName": "Johannes Gutenberg-Universität",
+              "familyName": "Mainz",
+              "affiliation": [],
+              "contributorType": "HostingInstitution",
+              "nameIdentifiers": []
+            }
+          ],
+          "descriptions": [],
+          "geoLocations": [],
+          "relatedItems": [],
+          "versionCount": 0,
+          "citationCount": 0,
+          "downloadCount": 0,
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "viewsOverTime": [],
+          "referenceCount": 0,
+          "versionOfCount": 0,
+          "metadataVersion": 0,
+          "publicationYear": 2022,
+          "citationsOverTime": [],
+          "downloadsOverTime": [],
+          "fundingReferences": [],
+          "relatedIdentifiers": [],
+          "alternateIdentifiers": []
+        },
+        "relationships": {
+          "parts": {
+            "data": []
+          },
+          "client": {
+            "data": {
+              "id": "subgoe.ubmainz",
+              "type": "clients"
+            }
+          },
+          "partOf": {
+            "data": []
+          },
+          "provider": {
+            "data": {
+              "id": "lula",
+              "type": "providers"
+            }
+          },
+          "versions": {
+            "data": []
+          },
+          "citations": {
+            "data": []
+          },
+          "versionOf": {
+            "data": []
+          },
+          "references": {
+            "data": []
+          }
+        }
+      }
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:55:46.035461",
+    "processing_time_ms": 4183
+  },
+  "openalex": {
+    "data": {
+      "id": "https://openalex.org/W4206144401",
+      "doi": "https://doi.org/10.1002/rcs.2366",
+      "title": "Smartglass augmented reality‐assisted targeted prostate biopsy using cognitive point‐of‐care fusion technology",
+      "open_access": {
+        "is_oa": true,
+        "oa_url": "https://doi.org/10.1002/rcs.2366",
+        "oa_status": "hybrid",
+        "any_repository_has_fulltext": false
+      },
+      "cited_by_count": 12,
+      "publication_year": 2022
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:55:43.054824",
+    "processing_time_ms": 1214
+  },
+  "unpaywall": {
+    "data": {
+      "doi": "10.1002/rcs.2366",
+      "year": 2022,
+      "genre": "journal-article",
+      "is_oa": true,
+      "title": "Smartglass augmented reality‐assisted targeted prostate biopsy using cognitive point‐of‐care fusion technology",
+      "doi_url": "https://doi.org/10.1002/rcs.2366",
+      "oa_status": "hybrid",
+      "publisher": "Wiley",
+      "is_paratext": false,
+      "journal_name": "International Journal of Medical Robotics and Computer Assisted Surgery",
+      "journal_issns": "1478-5951,1478-596X",
+      "journal_issn_l": "1478-5951",
+      "published_date": "2022-01-16",
+      "z_authors_summary": {
+        "count": 12,
+        "first_author": ""
+      },
+      "has_repository_copy": false,
+      "oa_locations_summary": {
+        "count": 1,
+        "has_repository": false
+      },
+      "best_oa_location_summary": {
+        "is_best": true,
+        "host_type": "publisher",
+        "url_for_pdf": true
+      },
+      "first_oa_location_summary": {
+        "is_first": true,
+        "host_type": "publisher",
+        "url_for_pdf": true
+      }
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:55:43.157118",
+    "processing_time_ms": 1308
+  },
+  "europe_pmc": {
+    "data": {
+      "id": "35034415",
+      "doi": "10.1002/rcs.2366",
+      "pmid": "35034415",
+      "inPMC": "N",
+      "title": "Smartglass augmented reality-assisted targeted prostate biopsy using cognitive point-of-care fusion technology.",
+      "hasPDF": "N",
+      "inEPMC": "N",
+      "source": "MED",
+      "authMan": "N",
+      "hasBook": "N",
+      "hasData": "N",
+      "license": "cc by-nc-nd",
+      "pubYear": "2022",
+      "hasSuppl": "N",
+      "language": "eng",
+      "pageInfo": "e2366",
+      "pubModel": "Print-Electronic",
+      "authorList": {
+        "author": [
+          {
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0002-8469-8113"
+            },
+            "fullName": "Sparwasser P",
+            "initials": "P",
+            "lastName": "Sparwasser",
+            "firstName": "Peter",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Urology, University Medical Center, Johannes Gutenberg University, Mainz, Germany."
+                }
+              ]
+            }
+          },
+          {
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0003-0957-2219"
+            },
+            "fullName": "Haack M",
+            "initials": "M",
+            "lastName": "Haack",
+            "firstName": "Maximilian",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Urology, University Medical Center, Johannes Gutenberg University, Mainz, Germany."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Epple S",
+            "initials": "S",
+            "lastName": "Epple",
+            "firstName": "Stefan",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Urology, University Medical Center, Johannes Gutenberg University, Mainz, Germany."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Frey L",
+            "initials": "L",
+            "lastName": "Frey",
+            "firstName": "Lisa",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Urology, University Medical Center, Johannes Gutenberg University, Mainz, Germany."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Zeymer S",
+            "initials": "S",
+            "lastName": "Zeymer",
+            "firstName": "Steffen",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Urology, University Medical Center, Johannes Gutenberg University, Mainz, Germany."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Dotzauer R",
+            "initials": "R",
+            "lastName": "Dotzauer",
+            "firstName": "Robert",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Urology, University Medical Center, Johannes Gutenberg University, Mainz, Germany."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Jungmann F",
+            "initials": "F",
+            "lastName": "Jungmann",
+            "firstName": "Florian",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Radiology, University Medical Center, Johannes Gutenberg University, Mainz, Germany."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Böhm K",
+            "initials": "K",
+            "lastName": "Böhm",
+            "firstName": "Katharina",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Urology, University Medical Center, Johannes Gutenberg University, Mainz, Germany."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Höfner T",
+            "initials": "T",
+            "lastName": "Höfner",
+            "firstName": "Thomas",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Urology, University Medical Center, Johannes Gutenberg University, Mainz, Germany."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Tsaur I",
+            "initials": "I",
+            "lastName": "Tsaur",
+            "firstName": "Igor",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Urology, University Medical Center, Johannes Gutenberg University, Mainz, Germany."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Haferkamp A",
+            "initials": "A",
+            "lastName": "Haferkamp",
+            "firstName": "Axel",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Urology, University Medical Center, Johannes Gutenberg University, Mainz, Germany."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Borgmann H",
+            "initials": "H",
+            "lastName": "Borgmann",
+            "firstName": "Hendrik",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Urology, University Medical Center, Johannes Gutenberg University, Mainz, Germany."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "nihAuthMan": "N",
+      "subsetList": {
+        "subset": [
+          {
+            "code": "IM",
+            "name": "Index Medicus"
+          }
+        ]
+      },
+      "affiliation": "Department of Urology, University Medical Center, Johannes Gutenberg University, Mainz, Germany.",
+      "epmcAuthMan": "N",
+      "journalInfo": {
+        "issue": "3",
+        "volume": "18",
+        "journal": {
+          "essn": "1478-596X",
+          "issn": "1478-5951",
+          "nlmid": "101250764",
+          "title": "The international journal of medical robotics + computer assisted surgery : MRCAS",
+          "isoabbreviation": "Int J Med Robot",
+          "medlineAbbreviation": "Int J Med Robot"
+        },
+        "journalIssueId": 3347002,
+        "dateOfPublication": "2022 Jun",
+        "yearOfPublication": 2022,
+        "monthOfPublication": 6,
+        "printPublicationDate": "2022-06-01"
+      },
+      "keywordList": {
+        "keyword": [
+          "prostate cancer",
+          "Prostate Biopsy",
+          "Augmented Reality",
+          "Smart Glasses",
+          "Vuzix Blade"
+        ]
+      },
+      "pubTypeList": {
+        "pubType": [
+          "Journal Article"
+        ]
+      },
+      "abstractText": "<h4>Introduction</h4>MRI-guided targeted biopsy has become standard of care for diagnosis of prostate cancer, with establishment of several biopsy techniques and platforms. Augmented reality smart glasses have emerged as novel technology to support image-guided interventions. We aimed to investigate its usage while prostate biopsy.<h4>Methods</h4>MRI with PIRADS-lesions ≥3 was uploaded to smart glasses (Vuzix Blade<sup>R</sup> ) and augmented reality smart glasses-assisted targeted biopsy (SMART-TB) of the prostate was performed using cognitive fusion technology at the point of care. Detection rates were compared to systematic biopsy. Feasibility for SMART-TB was assessed (10 domains from bad [1] to excellent [10]).<h4>Results</h4>SMART-TB was performed for four patients. Prostate cancer detection was more likely for SMART-TB (46%; 13/28) than for systematic biopsy (27%; 13/48). Feasibility scores were high [8-10] for practicality, multitasking, execution speed, comfort and device weight and low [1-4] for handling, battery and image quality. Median execution time: 28 min; Investment cost smart glass: 1017 USD.<h4>Conclusion</h4>First description of SMART-TB demonstrated convenient feasibility. This novel technology might enhance diagnosis of prostate cancer in future.",
+      "authorIdList": {
+        "authorId": [
+          {
+            "type": "ORCID",
+            "value": "0000-0002-8469-8113"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0003-0957-2219"
+          }
+        ]
+      },
+      "authorString": "Sparwasser P, Haack M, Epple S, Frey L, Zeymer S, Dotzauer R, Jungmann F, Böhm K, Höfner T, Tsaur I, Haferkamp A, Borgmann H.",
+      "citedByCount": 10,
+      "hasLabsLinks": "Y",
+      "isOpenAccess": "N",
+      "hasReferences": "Y",
+      "dateOfCreation": "2022-01-16",
+      "dateOfRevision": "2022-04-26",
+      "firstIndexDate": "2022-01-18",
+      "hasEvaluations": "N",
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "url": "https://doi.org/10.1002/rcs.2366",
+            "site": "Unpaywall",
+            "availability": "Open access",
+            "documentStyle": "doi",
+            "availabilityCode": "OA"
+          },
+          {
+            "url": "https://doi.org/10.1002/rcs.2366",
+            "site": "DOI",
+            "availability": "Subscription required",
+            "documentStyle": "doi",
+            "availabilityCode": "S"
+          }
+        ]
+      },
+      "meshHeadingList": {
+        "meshHeading": [
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Prostate",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "abbreviation": "DG",
+                  "majorTopic_YN": "N",
+                  "qualifierName": "diagnostic imaging"
+                },
+                {
+                  "abbreviation": "PA",
+                  "majorTopic_YN": "N",
+                  "qualifierName": "pathology"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Humans"
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Prostatic Neoplasms",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "abbreviation": "DG",
+                  "majorTopic_YN": "N",
+                  "qualifierName": "diagnostic imaging"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Magnetic Resonance Imaging",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "abbreviation": "MT",
+                  "majorTopic_YN": "N",
+                  "qualifierName": "methods"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Cognition"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Technology"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Point-of-Care Systems"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Male"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Image-Guided Biopsy",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "abbreviation": "MT",
+                  "majorTopic_YN": "N",
+                  "qualifierName": "methods"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Augmented Reality"
+          }
+        ]
+      },
+      "dateOfCompletion": "2022-04-26",
+      "dataLinksTagsList": {
+        "dataLinkstag": [
+          "altmetrics"
+        ]
+      },
+      "hasTextMinedTerms": "Y",
+      "publicationStatus": "ppublish",
+      "firstPublicationDate": "2022-01-25",
+      "hasDbCrossReferences": "N",
+      "hasTMAccessionNumbers": "N",
+      "electronicPublicationDate": "2022-01-25"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:55:43.697014",
+    "processing_time_ms": 1852
+  },
+  "semantic_scholar": {
+    "data": {
+      "year": 2022,
+      "title": "Smartglass augmented reality‐assisted targeted prostate biopsy using cognitive point‐of‐care fusion technology",
+      "authors": [
+        {
+          "name": "P. Sparwasser",
+          "authorId": "52147478"
+        },
+        {
+          "name": "M. Haack",
+          "authorId": "1581336324"
+        },
+        {
+          "name": "Stefan Epple",
+          "authorId": "2286238300"
+        },
+        {
+          "name": "L. Frey",
+          "authorId": "2238577181"
+        },
+        {
+          "name": "Steffen Zeymer",
+          "authorId": "2286213214"
+        },
+        {
+          "name": "R. Dotzauer",
+          "authorId": "51201731"
+        },
+        {
+          "name": "Florian Jungmann",
+          "authorId": "2284194618"
+        },
+        {
+          "name": "Katharina Böhm",
+          "authorId": "2286261687"
+        },
+        {
+          "name": "T. Höfner",
+          "authorId": "6942928"
+        },
+        {
+          "name": "I. Tsaur",
+          "authorId": "2252389820"
+        },
+        {
+          "name": "A. Haferkamp",
+          "authorId": "2238765725"
+        },
+        {
+          "name": "Hendrik Borgmann",
+          "authorId": "2240893493"
+        }
+      ],
+      "journal": {
+        "name": "The International Journal of Medical Robotics and Computer Assisted Surgery",
+        "volume": "18"
+      },
+      "paperId": "c8f5c2e6301504c9aa271e2c0f44e7b46d39d699",
+      "abstract": "MRI‐guided targeted biopsy has become standard of care for diagnosis of prostate cancer, with establishment of several biopsy techniques and platforms. Augmented reality smart glasses have emerged as novel technology to support image‐guided interventions. We aimed to investigate its usage while prostate biopsy.",
+      "externalIds": {
+        "DOI": "10.1002/rcs.2366",
+        "PubMed": "35034415",
+        "CorpusId": 246007923
+      },
+      "isOpenAccess": true,
+      "citationCount": 11,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1002/rcs.2366",
+        "status": "HYBRID",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1002/rcs.2366?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1002/rcs.2366, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      }
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:55:42.753740",
+    "processing_time_ms": 919
+  }
+}

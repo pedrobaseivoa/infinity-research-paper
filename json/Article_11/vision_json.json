@@ -1,0 +1,90 @@
+{
+  "source": "gpt-4o-vision",
+  "success": true,
+  "prompt_sent": "Extract ONLY publication metadata from these academic paper pages.\n\nCRITICAL: This data will be sent to 11 external APIs, so format accuracy is essential.\n\nFIELD REQUIREMENTS WITH EXACT FORMATS:\n\n1. **Title**: Clean title for API queries (HIGHEST PRIORITY)\n   - Remove line breaks, extra spaces, formatting\n   - No HTML tags or special characters  \n   - Example: \"Effects of Machine Learning on Healthcare Outcomes\"\n\n2. **Authors**: API-compatible author list (HIGHEST PRIORITY)\n   - Each author as separate string in array\n   - Format: \"FirstName LastName\" or \"F. LastName\"\n   - Clean, no extra punctuation\n   - Example: [\"John Smith\", \"M. Johnson\", \"Sarah Williams\"]\n\n3. **DOI**: Standard DOI format for resolution APIs\n   - Must start with \"10.\" if present\n   - Clean format without URL prefixes\n   - Example: \"10.1234/journal.2024.001\"\n\n4. **Journal**: Clean journal name for database queries\n   - Full journal name preferred over abbreviations\n   - Remove extra formatting, parentheses\n   - Example: \"Nature Medicine\"\n\n5. **Year**: Numeric format for date filtering\n   - 4-digit NUMBER only (not string)\n   - Example: 2024\n\n6. **Volume**: Clean number for bibliographic APIs\n   - Numbers only, no \"Vol.\" prefix\n   - Example: \"15\"\n\n7. **Issue**: Clean number format\n   - Numbers only, no \"No.\" or \"Issue\" prefix\n   - Example: \"3\"\n\n8. **Pages**: Standard page range for citations\n   - Format: \"start-end\" or single page\n   - Example: \"123-135\" or \"45\"\n\n9. **PMID**: PubMed ID for medical APIs\n   - Numbers only, no \"PMID:\" prefix\n   - Example: \"12345678\"\n\n10. **PMCID**: PubMed Central ID for open access papers\n    - Numbers only, no \"PMC\" prefix\n    - Often appears near PMID in biomedical papers\n    - Example: \"9876543\"\n\n11. **Keywords**: API-compatible keyword list\n    - Each keyword as separate string\n    - Research-quality terms, no punctuation\n    - Example: [\"machine learning\", \"healthcare\", \"clinical outcomes\"]\n\n11. **Abstract**: Complete clean text (HIGHEST PRIORITY)\n    - Remove formatting, line breaks, extra spaces\n    - Complete sentences, proper punctuation\n    - Search thoroughly across ALL pages\n    - This is CRITICAL for Semantic Scholar and other APIs\n\n12. **Publisher**: Clean organization name\n    - Official publisher name\n    - Example: \"Elsevier\" or \"Nature Publishing Group\"\n\nABSTRACT EXTRACTION PRIORITY:\n- Look thoroughly across ALL pages for abstract sections\n- Extract COMPLETE text, including multiple paragraphs\n- Check: Abstract, Summary, Introduction summary paragraphs\n- This field is CRITICAL for API enrichment success\n\nReturn JSON format:\n{\n  \"Title\": \"clean title without formatting\",\n  \"Authors\": [\"Author One\", \"Author Two\"],\n  \"DOI\": \"10.xxxx/xxxxx\",\n  \"Journal\": \"clean journal name\", \n  \"Year\": 2024,\n  \"Volume\": \"15\",\n  \"Issue\": \"3\", \n  \"Pages\": \"123-135\",\n  \"Abstract\": \"complete clean abstract text\",\n  \"Keywords\": [\"keyword1\", \"keyword2\"],\n  \"PMID\": \"12345678\",\n  \"PMCID\": \"9876543\",\n  \"Publisher\": \"publisher name\"\n}\n\nReturn null for fields not clearly visible. The Abstract field is MOST IMPORTANT for downstream API success.",
+  "cost_tracking": {
+    "model": "gpt-4o",
+    "call_type": "vision_extraction",
+    "timestamp": "2025-07-22T14:31:27.484378",
+    "input_cost": 0.007725,
+    "total_cost": 0.010325,
+    "output_cost": 0.0026,
+    "input_tokens": 3090,
+    "total_tokens": 3350,
+    "output_tokens": 260
+  },
+  "input_details": {
+    "dpi": 120,
+    "max_tokens": 1500,
+    "model_used": "gpt-4o",
+    "temperature": 0.1,
+    "page_strategy": "strategic",
+    "image_resolution": "high",
+    "processing_time_ms": 11836,
+    "pdf_pages_processed": 3
+  },
+  "extracted_data": {
+    "DOI": null,
+    "PMID": null,
+    "Year": null,
+    "Issue": null,
+    "PMCID": null,
+    "Pages": null,
+    "Title": "Enhanced Preoperative Pancreatoduodenectomy Patient Education Using Mixed Reality Technology: A Randomized Controlled Pilot Study",
+    "Volume": null,
+    "Authors": [
+      "Jessica Heard",
+      "Paul Murdock",
+      "Juan S. Malo",
+      "Joseph Lim",
+      "Sourodip Mukharjee",
+      "D. Rohan Jeyarajah"
+    ],
+    "Journal": null,
+    "Abstract": "Purpose: This study investigates the feasibility, effectiveness, and patient response to using Mixed Reality (MR) technology, specifically the HoloLens, for preoperative education in patients requiring pancreatoduodenectomy. It aims to determine if MR improves patient understanding, comfort, and comprehension during informed consent compared to traditional methods. Methods: A single center randomized controlled pilot study was conducted with patients recommended for pancreatoduodenectomy due to pancreatic mass between February and May 2023. Exclusion criteria included age under 18, lack of English fluency, or severe visual/hearing",
+    "Keywords": null,
+    "Publisher": null
+  },
+  "pages_processed": 3,
+  "extraction_matrix": {
+    "_performance_summary": {
+      "total_cost": 0.0,
+      "data_source": "vision_json",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "vision_status": "COMPLETE",
+      "extraction_rate": 23.08,
+      "extraction_source": "gpt-4o-vision",
+      "performance_level": "POOR",
+      "fields_with_content": 3,
+      "processing_time_seconds": 0,
+      "total_fields_in_response": 13
+    }
+  },
+  "extraction_method": "vision_strategic_strategy",
+  "extraction_quality": {
+    "success_rate": 50.0,
+    "quality_score": 50.0,
+    "successful_fields": 3,
+    "validation_details": {
+      "errors": [],
+      "is_valid": true,
+      "warnings": [
+        "Missing important field: DOI",
+        "Missing important field: Journal",
+        "Missing important field: Year"
+      ],
+      "quality_score": 60,
+      "completeness_score": 50.0
+    },
+    "total_fields_attempted": 13
+  },
+  "processing_time_ms": 11836,
+  "raw_openai_response": {
+    "content": "```json\n{\n  \"Title\": \"Enhanced Preoperative Pancreatoduodenectomy Patient Education Using Mixed Reality Technology: A Randomized Controlled Pilot Study\",\n  \"Authors\": [\"Jessica Heard\", \"Paul Murdock\", \"Juan S. Malo\", \"Joseph Lim\", \"Sourodip Mukharjee\", \"D. Rohan Jeyarajah\"],\n  \"DOI\": null,\n  \"Journal\": null,\n  \"Year\": null,\n  \"Volume\": null,\n  \"Issue\": null,\n  \"Pages\": null,\n  \"Abstract\": \"Purpose: This study investigates the feasibility, effectiveness, and patient response to using Mixed Reality (MR) technology, specifically the HoloLens, for preoperative education in patients requiring pancreatoduodenectomy. It aims to determine if MR improves patient understanding, comfort, and comprehension during informed consent compared to traditional methods. Methods: A single center randomized controlled pilot study was conducted with patients recommended for pancreatoduodenectomy due to pancreatic mass between February and May 2023. Exclusion criteria included age under 18, lack of English fluency, or severe visual/hearing\",\n  \"Keywords\": null,\n  \"PMID\": null,\n  \"PMCID\": null,\n  \"Publisher\": null\n}\n```",
+    "parsing_error": "Expecting value: line 1 column 1 (char 0)",
+    "response_length": 1112,
+    "parsing_successful": false
+  },
+  "processing_timestamp": "2025-07-22T14:31:27.484363"
+}

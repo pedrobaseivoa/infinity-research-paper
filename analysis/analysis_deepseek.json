@@ -1,0 +1,1161 @@
+[
+  {
+    "article_number": 1,
+    "fields": {
+      "Author, Year, Study Type": {
+        "infinity_content": "Sparwasser et al., 2022, Pilot proof-of-concept study",
+        "manual_content": "Sparwasser et al., 2023, Pilot Study",
+        "analysis": {
+          "author_classification": "A",
+          "year_classification": "D",
+          "study_type_classification": "B",
+          "justification": "Author: Exact match. Year: Different years (2022 vs 2023). Study Type: Manual 'Pilot Study' is present in Infinity as 'Pilot proof-of-concept study', with additional detail.",
+          "problems_identified": "Year: 2022 vs 2023"
+        }
+      },
+      "Methodology": {
+        "infinity_content": "Vuzix Blade smart glasses with cognitive point-of-care fusion technology for augmented reality-assisted targeted prostate biopsy using real-time motion tracking, HD camera, and micro SD storage with feasibility assessed via 10-domain scoring system.",
+        "manual_content": "Magic Leap 1 smart glasses projected MRI-identified lesion location in real-time",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info on smart glasses projecting MRI data is present in Infinity, which adds details on technology and feasibility assessment.",
+          "problems_identified": "None"
+        }
+      },
+      "Sample Size (n), Population Characteristics": {
+        "infinity_content": "4 patients; Patients with confirmed prostate cancer diagnosis, median age 66.25 years (range 61–77), undergoing biopsy for the first or second time.",
+        "manual_content": "4 Patients undergoing prostate biopsy with MRI visible lesions",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info present in Infinity with additional details on age and biopsy history",
+          "problems_identified": "None"
+        }
+      },
+      "Outcome Measure": {
+        "infinity_content": "Prostate cancer detection rates compared between SMART-TB and systematic biopsy; feasibility assessed using 10-domain scoring (execution speed, comfort, device weight, etc.).",
+        "manual_content": "AR-assisted cancer detection rate",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info on AR-assisted cancer detection is implied in Infinity's comparison of detection rates, with additional details on feasibility assessment.",
+          "problems_identified": "None"
+        }
+      },
+      "Key Findings": {
+        "infinity_content": "Finding 1: SMART-TB showed higher detection rates (46.42%) compared to systematic biopsy (27.1%). Finding 2: Feasibility scores were high (8–10) for practicality, multitasking, execution speed, comfort, and device weight. Finding 3: Median execution time was 28 minutes with no major postoperative complications.",
+        "manual_content": "Prostate cancer detection was more likely for AR systems than systematic biopsy (46% to 27%). High feasibility scores. Median execution time: 28 min. Users reported that AR display was non-intrusive and intuitive",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual information is present in Infinity with additional details like feasibility scores and execution time specifics.",
+          "problems_identified": "None"
+        }
+      },
+      "Limitations": {
+        "infinity_content": "Small sample size, single surgeon performing all procedures, potential bias due to lack of blinding, low image quality of virtual see-through display, and limited generalizability due to pilot nature of study.",
+        "manual_content": "Manual registration required; limited field of view; need for specialized equipment",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual limitations are present in Infinity, but Infinity adds details like 'small sample size' and 'single surgeon'.",
+          "problems_identified": "None"
+        }
+      }
+    }
+  },
+  {
+    "article_number": 2,
+    "fields": {
+      "Author, Year, Study Type": {
+        "infinity_content": "Zhang et al., 2024, User evaluation study with control group",
+        "manual_content": "Zhang et al., 2021, Comparative Study",
+        "analysis": {
+          "author_classification": "A",
+          "year_classification": "D",
+          "study_type_classification": "C",
+          "justification": "Author: Exact match. Year: Different years (2021 vs 2024). Study Type: Partially matching (Comparative Study vs User evaluation study with control group).",
+          "problems_identified": "Year: 2021 vs 2024. Study Type: Comparative Study vs User evaluation study with control group."
+        }
+      },
+      "Methodology": {
+        "infinity_content": "The study utilized a novel AR environment named ARMedicalSketch with a 3D autostereoscopic display and 2D tablet for medical image sketching, employing gesture recognition and a virtual synchronized interactive plane, with technical specifications including a liquid crystal display panel resolution of 3840 x 2160 and 1920 x 1080, and a GeForce GTX 1660Ti GPU.",
+        "manual_content": "ARMedicalSketch, a novel augmented reality (AR) system designed for 3D sketching and interaction with medical images.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info on ARMedicalSketch is present in Infinity, which adds technical details like display resolution and GPU.",
+          "problems_identified": "None"
+        }
+      },
+      "Sample Size (n), Population Characteristics": {
+        "infinity_content": "23 volunteers; Biomedical engineering students aged 21 to 33, including 13 males and 10 females, with no expertise in organ diagnosis of medical images.",
+        "manual_content": "25; 23 biomedical engineering students (user study) 2 clinical experts (orthopedic and neurosurgeon)",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual information IS present in Infinity, but Infinity provides additional relevant details/data",
+          "problems_identified": "None"
+        }
+      },
+      "Outcome Measure": {
+        "infinity_content": "System usability assessed via SUS, workload via NASA-TLX, and sketching efficiency and accuracy measured through completion time and positional deviation in 3D medical tasks.",
+        "manual_content": "Efficiency and accuracy in medical sketching tasks System usability (SUS) and workload (NASA-TLX)",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info on usability, workload, efficiency, and accuracy is present in Infinity, which adds details like SUS, NASA-TLX, completion time, and positional deviation.",
+          "problems_identified": "None"
+        }
+      },
+      "Key Findings": {
+        "infinity_content": "Finding 1: Prototype 1 showed significant improvement in completion time for Task 2 (p < 0.01). Finding 2: SUS scores indicated high system usability (81.6/4 for Prototype 1, 76.8/2 for Prototype 2, p < 0.01). Finding 3: Interaction accuracy was consistent across prototypes, with Prototype 1 showing slightly more accurate spatial representation.",
+        "manual_content": "Improved sketching efficiency and accuracy for medical images, especially in complex 3D tasks. ​System Usability: Prototype 1 (ARMedicalSketch) scored higher in usability and satisfaction compared to Prototype 2 (traditional 2D system). Workload: Lower cognitive burden for users interacting with ARMedicalSketch",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info on improved sketching efficiency, usability, and workload is present in Infinity, which adds quantitative details like p-values and SUS scores.",
+          "problems_identified": "None"
+        }
+      },
+      "Limitations": {
+        "infinity_content": "Limitations include the need for further improvements in the accuracy of the prototype, coarse positioning information at the fingertip, and the requirement for specialized equipment like 3D autostereoscopic displays and gesture recognition devices.",
+        "manual_content": "Small, non-clinical sample; prototype stage only; not yet tested in active outpatient clinical workflow.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual limitations are present in Infinity with additional details on equipment and accuracy needs.",
+          "problems_identified": "None"
+        }
+      }
+    }
+  },
+  {
+    "article_number": 3,
+    "fields": {
+      "Author, Year, Study Type": {
+        "infinity_content": "Escalada-Hernández et al., 2019, Prototype evaluation study with focus group and questionnaire",
+        "manual_content": "Escalada-Henrández et al., 2021, Pilot Study",
+        "analysis": {
+          "author_classification": "A",
+          "year_classification": "D",
+          "study_type_classification": "C",
+          "justification": "Author: Exact match. Year: Different years (2019 vs 2021). Study Type: Similar but not identical (Prototype evaluation study vs Pilot Study).",
+          "problems_identified": "Year: 2019 vs 2021. Study Type: Prototype evaluation study vs Pilot Study"
+        }
+      },
+      "Methodology": {
+        "infinity_content": "Prototype app for mobile devices using augmented reality with Android system, developed using Rapid Application Development methodology, evaluated through focus groups and think-aloud method, with SPSS v.24 for statistical analysis.",
+        "manual_content": "Mobile AR application prototype for displaying detailed information about medical devices using image recognition",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info is present in Infinity, which adds details on development methodology and evaluation techniques.",
+          "problems_identified": "None"
+        }
+      },
+      "Sample Size (n), Population Characteristics": {
+        "infinity_content": "291 total: 11 focus group participants + 280 healthcare professionals; Healthcare professionals including nurses, assistants, physicians, working in hospital, primary health care, nursing homes, and other settings; mean age 44.1 years (SD = 10.6).",
+        "manual_content": "11 nurses, and 6 nurses for usability testing; 280 healthcare professionals",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info present in Infinity with additional details on healthcare professionals' settings and mean age.",
+          "problems_identified": "None"
+        }
+      },
+      "Outcome Measure": {
+        "infinity_content": "Usability and functionality assessed via think-aloud method, user needs via questionnaire, with SPSS v.24 for descriptive statistics.",
+        "manual_content": "User-perceived utility Usability and navigability Accuracy and clarity of information delivery",
+        "analysis": {
+          "classification": "B",
+          "justification": "Infinity includes all manual info (usability, functionality, user needs) with added detail (SPSS v.24, descriptive stats).",
+          "problems_identified": "None"
+        }
+      },
+      "Key Findings": {
+        "infinity_content": "Finding 1: Instructions for use rated most important (mean = 4.51/5). Finding 2: Video format preferred by 40.3% for device information. Finding 3: App usability rated as 'very intuitive' by users, facilitating device information access.",
+        "manual_content": "AR improved users' ability to interact with unfamiliar equipment; Described as “very intuitive”.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info on intuitiveness is present in Infinity, which adds quantitative data on format preference and usability ratings.",
+          "problems_identified": "None"
+        }
+      },
+      "Limitations": {
+        "infinity_content": "Data must be updated into the app by potential administrators, requiring significant input; customization needed for clinical context; requires continuous maintenance work.",
+        "manual_content": "Prototype phase only; tested in a simulated environment; limited to a few types of medical equipment.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual information is present in Infinity, but Infinity provides additional relevant details/data.",
+          "problems_identified": "None"
+        }
+      }
+    }
+  },
+  {
+    "article_number": 4,
+    "fields": {
+      "Author, Year, Study Type": {
+        "infinity_content": "Di Mitri et al., 2024, Prospective observational study",
+        "manual_content": "Di Mitri et al., 2023, Cohort Prospective",
+        "analysis": {
+          "author_classification": "A",
+          "year_classification": "C",
+          "study_type_classification": "B",
+          "justification": "Author: Exact match. Year: Manual says 2023, automated says 2024. Study Type: Both indicate prospective, but automated provides more detail (observational study).",
+          "problems_identified": "Year mismatch (2023 vs 2024)"
+        }
+      },
+      "Methodology": {
+        "infinity_content": "Microsoft HoloLens 2 with Verima software for 3D anatomical reconstructions using real-time interaction and Likert scale questionnaire for evaluation, with paired t-tests for statistical analysis.",
+        "manual_content": "Use of HoloLens 2 to visualize 3D anatomical reconstructions from imaging data to assist in complex pediatric surgical planning.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info on HoloLens 2 use is present in Infinity, which adds details on Verima software, Likert scale, and statistical methods.",
+          "problems_identified": "None"
+        }
+      },
+      "Sample Size (n), Population Characteristics": {
+        "infinity_content": "10 pediatric surgeons; Pediatric surgeons with at least 5 years of experience in treating splenic cysts, pulmonary cystic adenomatoid malformations, and pyelo-ureteral junction stenosis.",
+        "manual_content": "10 pediatric surgeons evaluated the tool across various surgical cases.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info on 10 pediatric surgeons is present in Infinity, which adds details on their experience and specialties.",
+          "problems_identified": "None"
+        }
+      },
+      "Outcome Measure": {
+        "infinity_content": "Utility of 3D visualizations assessed via Likert scale questionnaire comparing 2D CT scans and 3D visualizations, with paired t-tests for statistical significance.",
+        "manual_content": "Perceived utility, ease of use, realism, anatomical accuracy, and value for surgical planning.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info on utility is present in Infinity, which adds quantitative detail (Likert scale, t-tests).",
+          "problems_identified": "None"
+        }
+      },
+      "Key Findings": {
+        "infinity_content": "Finding 1: 3D visualizations significantly improved clarity and utility over 2D CT scans (p < 0.05). Finding 2: Large effect size for usability (d = 1.15) and surgical time (d = 1.4), small effect size for blood loss (d = 0.3).",
+        "manual_content": "3D visualizations improved anatomical clarity compared to 2D CT scans, supporting better surgical planning and risk reduction. They also accelerated learning for complex procedures and enhanced team collaboration and decision-making",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info on 3D benefits is present in Infinity, which adds quantitative details (p-values, effect sizes).",
+          "problems_identified": "None"
+        }
+      },
+      "Limitations": {
+        "infinity_content": "Small number of surgeons and cases analyzed; limitations in the application of HoloLens 2 technology in the preoperative phase.",
+        "manual_content": "Small sample size, no clinical outcome measures, reliance on preprocessed imaging data; need for specialized equipment",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual limitations are present in Infinity, which adds detail on HoloLens 2 application.",
+          "problems_identified": "None"
+        }
+      }
+    }
+  },
+  {
+    "article_number": 5,
+    "fields": {
+      "Author, Year, Study Type": {
+        "infinity_content": "Chamberlain et al., 2016, Case study with technical validation and user testing",
+        "manual_content": "Chamberlain et al., 2016, Pilot Study",
+        "analysis": {
+          "author_classification": "A",
+          "year_classification": "A",
+          "study_type_classification": "C",
+          "justification": "Author: Exact match. Year: Exact match. Study Type: Different but related terms (Pilot Study vs Case study with technical validation and user testing).",
+          "problems_identified": "None"
+        }
+      },
+      "Methodology": {
+        "infinity_content": "Android smartphones using Vuforia Augmented Reality SDK for PEFR measurement with Cipla Breath-O-Meter, CSV data export, and real-time visual feedback.",
+        "manual_content": "Using an Android app developed with the Vuforia™ SDK, the system detected a custom-printed sticker attached to a peak flow meter to measure PEFR, provided real-time visual feedback, saved readings in CSV format, and allowed data export for analysis.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info is present in Infinity with additional details like CSV export and real-time feedback.",
+          "problems_identified": "None"
+        }
+      },
+      "Sample Size (n), Population Characteristics": {
+        "infinity_content": "Technical validation: 10 measurements; User testing: 2 nurses, 1 doctor; Conducted in Indian hospitals and clinics; participants included doctors and nurses with minimal training.",
+        "manual_content": "3  Technical test: 50 readings; Field test: 3 clinicians (1 doctor, 2 nurses)",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual information IS present in Infinity, but Infinity provides additional relevant details/data",
+          "problems_identified": "None"
+        }
+      },
+      "Outcome Measure": {
+        "infinity_content": "Accuracy of PEFR readings compared to manual readings, assessed via Bland-Altman plot; usability evaluated through user feedback.",
+        "manual_content": "Accuracy of automated AR-based readings vs manual readings Usability metrics: task completion time, training requirements",
+        "analysis": {
+          "classification": "B",
+          "justification": "Infinity includes accuracy and usability details from manual extraction, with added quantitative data (Bland-Altman plot, user feedback).",
+          "problems_identified": "None"
+        }
+      },
+      "Key Findings": {
+        "infinity_content": "Finding 1: Mean error of 5.8 L/min in technical validation with correlation of 0.99. Finding 2: User testing showed 90% of readings within 20 L/min of actual value, median recording time 17.5 seconds.",
+        "manual_content": "The system showed 96% accuracy within acceptable error (<20 L/min) and strong agreement with manual readings. It required minimal training, was low-cost, and avoided the need for electronics. Drawbacks included autofocus delays, camera angle sensitivity, and higher errors at high flow rates.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info on accuracy and agreement is present in Infinity, which adds quantitative details like mean error and correlation.",
+          "problems_identified": "None"
+        }
+      },
+      "Limitations": {
+        "infinity_content": "Camera focus issues, sticker location affecting accuracy, minimal training provided, need for calibration routine, variability in readings due to phone camera differences.",
+        "manual_content": "Camera autofocus delays, sticker placement affecting accuracy, minimal user training, errors at high PEFR values, the need for calibration, and manufacturing variability.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual information is present in Infinity with additional relevant details on variability due to phone camera differences.",
+          "problems_identified": "None"
+        }
+      }
+    }
+  },
+  {
+    "article_number": 6,
+    "fields": {
+      "Author, Year, Study Type": {
+        "infinity_content": "Kim et al., 2020, Implementation study with technical validation",
+        "manual_content": "Kim et al., 2020, Pilot Study",
+        "analysis": {
+          "author_classification": "A",
+          "year_classification": "A",
+          "study_type_classification": "C",
+          "justification": "Author: Exact match. Year: Exact match. Study Type: Different but related terms (Implementation study vs Pilot Study).",
+          "problems_identified": "None"
+        }
+      },
+      "Methodology": {
+        "infinity_content": "Unity3D-based AR application for Botox injection using Android devices with face recognition via OpenCV and Dlib libraries, employing Histogram of Oriented Gradients for landmark extraction and Delaunay triangulation for facial mapping, with real-time feedback and error measurement using IBM SPSS Statistics v.22.",
+        "manual_content": "Android-based AR app using facial recognition (Dlib + OpenCV) to overlay Botox injection guides on patient faces.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info is present in Infinity, which adds details like libraries used, facial mapping method, and real-time feedback.",
+          "problems_identified": "None"
+        }
+      },
+      "Sample Size (n), Population Characteristics": {
+        "infinity_content": "28 participants; Patients from Chosun University dental hospital; inclusion criteria not specified.",
+        "manual_content": "28 Healthy adult volunteers , static simulation in a studio setting with controlled head positioning.",
+        "analysis": {
+          "classification": "C",
+          "justification": "Both report 28 participants, but population characteristics differ (patients vs healthy volunteers).",
+          "problems_identified": "Population characteristics differ (patients vs healthy volunteers)."
+        }
+      },
+      "Outcome Measure": {
+        "infinity_content": "Recognition accuracy of facial landmarks measured in mm, with error analysis using paired T-test for frontal and side recognition.",
+        "manual_content": "Accuracy of AR landmark recognition for Botox injection points",
+        "analysis": {
+          "classification": "B",
+          "justification": "Automated extraction includes manual info (accuracy of AR landmarks) and adds detail (mm precision, error analysis).",
+          "problems_identified": "None"
+        }
+      },
+      "Key Findings": {
+        "infinity_content": "Finding 1: Error measurements ranged from 0.0 mm to 3.0 mm, with an average of 0.40 ± 0.25 mm, indicating satisfactory accuracy for clinical practice. Finding 2: Statistically significant differences in frontal vs. side recognition accuracy (p < 0.05), with better accuracy from the front.",
+        "manual_content": "Mean error of 0.40 ± 0.25 mm for frontal views, with errors ranging from 0.0 to 3.0 mm across all angles. Accuracy varied by view, except for downward tilt, but was considered acceptable for Botox and filler procedures.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info present in Infinity with additional details like statistical significance and view-specific accuracy.",
+          "problems_identified": "None"
+        }
+      },
+      "Limitations": {
+        "infinity_content": "Limited to patients with little practical experience; actual facial muscle data difficult to extract from MRI; AR app should be used with caution until facial-feature data can be mapped to AR overlay; generalizability limited due to specific equipment requirements.",
+        "manual_content": "Use of standard model rather than patient-specific anatomy. No integration of real-time medical imaging Not suitable for use as a navigation system; more of a visual guide.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual limitations are present in Infinity, but Infinity adds specific details about MRI data extraction and AR app usage.",
+          "problems_identified": "None"
+        }
+      }
+    }
+  },
+  {
+    "article_number": 7,
+    "fields": {
+      "Author, Year, Study Type": {
+        "infinity_content": "Muurling et al., 2023, Cross-sectional observational study",
+        "manual_content": "Muurling et al., 2023, Cross-sectional study",
+        "analysis": {
+          "author_classification": "A",
+          "year_classification": "A",
+          "study_type_classification": "B",
+          "justification": "Author: Exact match. Year: Exact match. Study Type: Manual 'Cross-sectional study' is present in Infinity, but Infinity provides additional detail 'Cross-sectional observational study'.",
+          "problems_identified": "None"
+        }
+      },
+      "Methodology": {
+        "infinity_content": "Altoida Digital Neuro Signature platform on iOS devices for AR-based cognitive and IADL assessment using accelerometer, gyroscope, and ground truth data with real-time feedback and data export capabilities.",
+        "manual_content": "AR-based app (Altoids) to assess cognitive functions related to instrumental activities of daily living (IADLs) in early Alzheimer’s disease, through spatial tasks like object placement and fire drill simulations on smartphones and tablets.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info on AR-based cognitive assessment is present in Infinity, which adds details on sensors and real-time feedback.",
+          "problems_identified": "None"
+        }
+      },
+      "Sample Size (n), Population Characteristics": {
+        "infinity_content": "121 participants; Community-dwelling adults over 50 years with healthy controls, preclinical AD, and prodromal AD; recruited from 12 European study sites.",
+        "manual_content": "121 community-dwelling adults aged >50 from 13 European study sites, with exclusions for conditions affecting cognition or daily functioning.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info present in Infinity with additional details on participant types and recruitment sites.",
+          "problems_identified": "None"
+        }
+      },
+      "Outcome Measure": {
+        "infinity_content": "Digital score from AR app compared with clinical cognitive scores (MMSE, DSST, verbal fluency, Boston naming test) and A-IADL score, assessed in-clinic and at-home.",
+        "manual_content": "AR-derived digital score. Cognitive score (composite). A-IADL questionnaire score. Classification performance of AR vs standard tests. Feasibility and reliability of home testing. Test-retest reliability. Association with standard cognitive tests",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info present in Infinity with additional details on cognitive and A-IADL scores, and home testing feasibility.",
+          "problems_identified": "None"
+        }
+      },
+      "Key Findings": {
+        "infinity_content": "Finding 1: Digital score significantly distinguished HC from preAD and proAD (p < 0.001). Finding 2: Digital in-clinic score correlated with cognitive score (Spearman’s rho = 0.56, p < 0.001). Finding 3: A-IADL score correlation (rho = 0.43, p < 0.001). Finding 4: Test-retest reliability for at-home tests ICC = 0.48 (95% CI = 0.29–0.65).",
+        "manual_content": "The study found that the AR app effectively distinguished healthy controls from preclinical and prodromal AD participants, outperforming standard cognitive tests in detecting preclinical AD. At-home testing was feasible, with moderate correlation to in-clinic results, and no learning effects were observed. .",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info is present in Infinity with additional quantitative details (p-values, correlations, ICC).",
+          "problems_identified": "None"
+        }
+      },
+      "Limitations": {
+        "infinity_content": "Small sample size, exclusion of non-iOS users, technical issues with app updates, and potential biases due to remote testing environment. Generalizability limited by participant selection and device compatibility.",
+        "manual_content": "Poor test-retest reliability (esp. iOS); varied app versions; technical issues; unstandardized devices; potential cognitive bias at home.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual limitations are present in Infinity with additional details on participant specifics and technical issues.",
+          "problems_identified": "None"
+        }
+      }
+    }
+  },
+  {
+    "article_number": 8,
+    "fields": {
+      "Author, Year, Study Type": {
+        "infinity_content": "Borresen et al., 2023, Cross-sectional pilot study",
+        "manual_content": "Borreson et al., 2023, Cross-sectional pilot study",
+        "analysis": {
+          "author_classification": "C",
+          "year_classification": "A",
+          "study_type_classification": "A",
+          "justification": "Author: Minor spelling difference (Borresen vs Borreson). Year: Exact match. Study Type: Exact match.",
+          "problems_identified": "Author: Spelling difference (Borresen vs Borreson)"
+        }
+      },
+      "Methodology": {
+        "infinity_content": "ARTESH system using two Xbox Kinect RGB-D cameras, one haptic controller, a 3D-capable TV, active 3D glasses, and a computer for remote examination of upper extremity strength and ROM with real-time data transmission over high-speed Internet, using Unity game engine for 3D environment rendering.",
+        "manual_content": "Two Xbox Kinect RGB-D cameras, Force dimension Omega.3 haptic controller, and 3D-capable television and active 3D glasses used with software for real-time force and movement tracking.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual information is present in Infinity, but Infinity provides additional relevant details like the use of Unity game engine and real-time data transmission over high-speed Internet.",
+          "problems_identified": "None"
+        }
+      },
+      "Sample Size (n), Population Characteristics": {
+        "infinity_content": "15 participants; All male veterans, average age 63 years, with upper extremity pain and/or weakness, recruited from hospital-based PM&R, Physical Therapy, or Occupational Therapy clinics.",
+        "manual_content": "15 Participant male veterans with upper extremity impairment (average age: 63)",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual information is present in Infinity, but Infinity provides additional relevant details such as recruitment sources and specific symptoms.",
+          "problems_identified": "None"
+        }
+      },
+      "Outcome Measure": {
+        "infinity_content": "Inter-rater agreement between in-person and remote evaluations on 10 PROM and MIS movements using kappa statistics with 95% confidence intervals.",
+        "manual_content": "Inter-rater agreement between remote (ARTESH) and in-person examinations on PROM and maximum isometric strength (MIS)",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info present in Infinity with additional details on kappa statistics and confidence intervals",
+          "problems_identified": "None"
+        }
+      },
+      "Key Findings": {
+        "infinity_content": "Finding 1: Highest inter-rater agreements in shoulder abduction and protraction PROM (kappa = 0.44, CI: -0.1 to 1.0). Finding 2: Elbow flexion, shoulder abduction, and shoulder protraction MIS (kappa = 0.63, CI: 0 to 1.0).",
+        "manual_content": "ARTESH showed promising agreement with in-person exams.",
+        "analysis": {
+          "classification": "E",
+          "justification": "Automated and manual extractions describe different aspects of the study's findings without conflict.",
+          "problems_identified": "None"
+        }
+      },
+      "Limitations": {
+        "infinity_content": "Small sample size (n = 15) limits generalizability; high-speed Internet required; binary grading of PROM and MIS not clinically accepted; ARTESH system under development and not commercially available.",
+        "manual_content": "Limitations in movement volume and force capability of haptic devices; requires specialized equipment and high-speed internet.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual limitations are present in Infinity, but Infinity adds details like sample size and system status.",
+          "problems_identified": "None"
+        }
+      }
+    }
+  },
+  {
+    "article_number": 9,
+    "fields": {
+      "Author, Year, Study Type": {
+        "infinity_content": "Wang et al., 2023, Single-center, prospective, randomized controlled trial",
+        "manual_content": "Wang et al., 2023, Protocol for prospective RCT",
+        "analysis": {
+          "author_classification": "A",
+          "year_classification": "A",
+          "study_type_classification": "B",
+          "justification": "Author: Exact match. Year: Exact match. Study Type: Manual provides 'Protocol for prospective RCT' while Infinity provides 'Single-center, prospective, randomized controlled trial', which includes additional detail.",
+          "problems_identified": "None"
+        }
+      },
+      "Methodology": {
+        "infinity_content": "Smartphone-based augmented reality platform for digital rehabilitation using computer vision for real-time motion tracking with 1280x720 resolution and 30 fps, providing auditory and visual feedback with CNN-based human pose detection.",
+        "manual_content": "Smartphone-based AR integrity with computer vision; Allows for interactive feedback and 3D skeletal tracking.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info present in Infinity with additional details like resolution, fps, and CNN-based detection.",
+          "problems_identified": "None"
+        }
+      },
+      "Sample Size (n), Population Characteristics": {
+        "infinity_content": "64 participants: 32 experimental group + 32 control group; Adults with isolated longitudinal meniscus injuries confirmed via MRI, undergoing arthroscopic examination and scheduled for meniscus repair; inclusion criteria include physical activity-related injuries.",
+        "manual_content": "64 Patients with isolated longitudinal meniscus tears",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info present in Infinity with additional details on group composition and inclusion criteria.",
+          "problems_identified": "None"
+        }
+      },
+      "Outcome Measure": {
+        "infinity_content": "Clinical knee function evaluated using IKDC and VAS scores at 2, 6, 12, and 24 weeks post-surgery, with return-to-play assessment based on RTP status and radiographic evaluation at 1 day, 4, and 6 months post-surgery.",
+        "manual_content": "Improvement in knee function, and pain reduction",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info on knee function and pain reduction is present in Infinity, which adds specific scores and timelines.",
+          "problems_identified": "None"
+        }
+      },
+      "Key Findings": {
+        "infinity_content": "Finding 1: IKDC score improvement of at least 10.6 points indicates significant clinical benefit. Finding 2: PASS threshold of 57.9 points or higher confirms patient satisfaction with symptom state.",
+        "manual_content": "Not applicable",
+        "analysis": {
+          "classification": "F",
+          "justification": "Manual extraction is 'Not applicable', making it incomparable with automated extraction.",
+          "problems_identified": "None"
+        }
+      },
+      "Limitations": {
+        "infinity_content": "Blinding not feasible for patients and interveners; potential bias in subjective assessments; reliance on smartphone technology may limit generalizability; sample size calculated for pilot study with potential 20% dropout rate.",
+        "manual_content": "Not Evaluated",
+        "analysis": {
+          "classification": "F",
+          "justification": "Manual extraction not evaluated, no data to compare",
+          "problems_identified": "None"
+        }
+      }
+    }
+  },
+  {
+    "article_number": 10,
+    "fields": {
+      "Author, Year, Study Type": {
+        "infinity_content": "Yeo et al., 2021, Prospective, multi-center, single-blinded, two-armed randomized controlled trial",
+        "manual_content": "Yeo et al., 2021, Protocol for Multi-Center RCT",
+        "analysis": {
+          "author_classification": "A",
+          "year_classification": "A",
+          "study_type_classification": "B",
+          "justification": "Author: Exact match. Year: Exact match. Study Type: Manual provides basic info, Infinity adds detailed design.",
+          "problems_identified": "None"
+        }
+      },
+      "Methodology": {
+        "infinity_content": "UINCARE Home+ system with 3D depth camera and motion sensors for interactive AR-based telerehabilitation, using real-time feedback and monitoring, with data export capabilities.",
+        "manual_content": "Home-based interactive UINCARE Home_ device with real time motion tracking. Real time motion tracking of 25 joints; Exercise guidance and real-time performance feedback; Remote monitoring by researchers via platform.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info present in Infinity with additional details like 3D depth camera and data export capabilities.",
+          "problems_identified": "None"
+        }
+      },
+      "Sample Size (n), Population Characteristics": {
+        "infinity_content": "100 participants; Patients with stage I or II adhesive capsulitis, aged 19 years or above, recruited at physical medicine and rehabilitation clinics.",
+        "manual_content": "100 Patients with stage I or II adhesive capsulitis",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual information is present in Infinity, with additional relevant details about age and recruitment location.",
+          "problems_identified": "None"
+        }
+      },
+      "Outcome Measure": {
+        "infinity_content": "Change in passive range of motion (PROM) of the affected shoulder joint from baseline to 12 weeks after baseline assessment, measured with electronic goniometer.",
+        "manual_content": "Change in passive range of motion (PROM) of the affected shoulder",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info is present in Infinity with additional details on measurement method and timeframe",
+          "problems_identified": "None"
+        }
+      },
+      "Key Findings": {
+        "infinity_content": "Finding 1: Expected significant difference in PROM between intervention and control groups with a significance level of 5% and 80% statistical power. Finding 2: Secondary outcomes include active ROM, pain intensity, quality of life, and shoulder disability using SPADI, SF-36, EQ-5D-5L, and COPM.",
+        "manual_content": "Not applicable",
+        "analysis": {
+          "classification": "F",
+          "justification": "Manual extraction is not applicable, making comparison impossible.",
+          "problems_identified": "None"
+        }
+      },
+      "Limitations": {
+        "infinity_content": "Potential sample size limitations, requirement for specialized equipment (UINCARE Home+), and generalizability issues due to specific patient population. Implementation challenges in real-world settings and need for patient compliance with home exercises.",
+        "manual_content": "Not evaluated.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual limitations not evaluated, but automated provides detailed limitations including sample size, equipment, generalizability, implementation challenges, and patient compliance.",
+          "problems_identified": "None"
+        }
+      }
+    }
+  },
+  {
+    "article_number": 11,
+    "fields": {
+      "Author, Year, Study Type": {
+        "infinity_content": "Heard et al., 2025, Single-center randomized controlled pilot study",
+        "manual_content": "Heard et al., 2024, Randomized control pilot study",
+        "analysis": {
+          "author_classification": "A",
+          "year_classification": "D",
+          "study_type_classification": "A",
+          "justification": "Author: Exact match. Year: Different years (2024 vs 2025). Study Type: Same essential information, similar level of detail.",
+          "problems_identified": "Year: 2024 (Manual) vs 2025 (Automated)"
+        }
+      },
+      "Methodology": {
+        "infinity_content": "Microsoft HoloLens with HoloAnatomy platform for preoperative education using 3D holographic visualization with pre- and post-intervention surveys and Mann-Whitney U tests for statistical analysis.",
+        "manual_content": "Microsoft HoloLens 2 used alongside HoloAnatomy platform for 3D anatomical procedural visualization",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info is present in automated extraction, which adds details like surveys and statistical tests.",
+          "problems_identified": "None"
+        }
+      },
+      "Sample Size (n), Population Characteristics": {
+        "infinity_content": "19 patients; Patients recommended for pancreatoduodenectomy due to pancreatic mass, median age 67 years, recruited between February and May 2023, exclusion criteria included age under 18, lack of English fluency, severe visual/hearing impairments.",
+        "manual_content": "19 Patients undergoing preoperative education for planned pancreatoduodenectomy",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info present in Infinity with additional details like median age and exclusion criteria",
+          "problems_identified": "None"
+        }
+      },
+      "Outcome Measure": {
+        "infinity_content": "Patient understanding assessed via 5-point Likert scale pre/post intervention, with Z-scores and p-values for comprehension and comfort levels.",
+        "manual_content": "Patient understanding and comfort regarding their diagnoses and surgical procedures assessed via pre- and post-intervention surgery (5 point Likert Scale)",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info on patient understanding and comfort is present in Infinity, which adds Z-scores and p-values.",
+          "problems_identified": "None"
+        }
+      },
+      "Key Findings": {
+        "infinity_content": "Finding 1: HoloLens group showed significant improvement in comprehension (Z = -2.524, p = 0.012). Finding 2: HoloLens group had significant improvement in understanding surgical steps (Z = -2.46, p = 0.014). Finding 3: 75% of participants reported high comfort levels with planned surgery.",
+        "manual_content": "AR groups showed statistically significant improvements to overall comprehension (Z =-2.524, p= 0.012); Specifically in understanding surgical risks, operative steps, and recovery",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info on AR groups' improvements is present in Infinity, which adds specific details on comprehension and comfort levels.",
+          "problems_identified": "None"
+        }
+      },
+      "Limitations": {
+        "infinity_content": "Small sample size and single-center design limit generalizability; only included English-speaking patients without severe impairments; did not assess long-term outcomes or broader demographic groups.",
+        "manual_content": "No major disruptions noted; need for specialized equipment–AR Headsets.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info on limitations is present in Infinity, which adds details on sample size, center design, and patient inclusion criteria.",
+          "problems_identified": "None"
+        }
+      }
+    }
+  },
+  {
+    "article_number": 12,
+    "fields": {
+      "Author, Year, Study Type": {
+        "infinity_content": "Lendaro et al., 2025, Multicenter, double-blind, randomized controlled trial",
+        "manual_content": "Lendaro et al., 2025,  RCT Study",
+        "analysis": {
+          "author_classification": "A",
+          "year_classification": "A",
+          "study_type_classification": "B",
+          "justification": "Author: Exact match. Year: Exact match. Study Type: Manual 'RCT Study' is present in Infinity as 'Multicenter, double-blind, randomized controlled trial', which provides additional detail.",
+          "problems_identified": "None"
+        }
+      },
+      "Methodology": {
+        "infinity_content": "Extended reality (XR) using Microsoft HoloLens for phantom motor execution (PME) and phantom motor imagery (PMI) with real-time motion tracking, myoelectric signal decoding, and real-time feedback in virtual environments.",
+        "manual_content": "- Wearable AR and VR device ; using surface electrodes, computer displays, and virtual imbs with AR markers",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info on wearable AR/VR and surface electrodes is present in Infinity, which adds details on XR, HoloLens, PME/PMI, and real-time feedback.",
+          "problems_identified": "None"
+        }
+      },
+      "Sample Size (n), Population Characteristics": {
+        "infinity_content": "81 participants: 53 allocated to PME, 28 to PMI; Participants aged 58.18 years on average, with chronic phantom limb pain (PLP) persisting beyond 3 months, recruited from 9 outpatient clinics across 7 countries.",
+        "manual_content": "81 Participants with phantom limb pain (PLP); adult amputees with chronic PLP",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info is present in Infinity with additional details like age, allocation, and recruitment sites.",
+          "problems_identified": "None"
+        }
+      },
+      "Outcome Measure": {
+        "infinity_content": "Change in PLP intensity measured by the Pain Rating Index (PRI) from the Short-Form McGill Pain Questionnaire (SF-MPQ) between baseline and end of treatment.",
+        "manual_content": "Change in Phantom limb pain (Pain Rating Index, PRI from short-form mcgill pain questionnaire)",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info present in Infinity with additional detail on measurement tool and time points",
+          "problems_identified": "None"
+        }
+      },
+      "Key Findings": {
+        "infinity_content": "Finding 1: No significant difference between PME and PMI in PRI change (p = 0.75 ± 0.12). Finding 2: Both groups showed improvements in secondary outcomes like PLP Weighted Pain Distribution (WPD) and PLP Numeric Rating Scale (NRS) with reductions at various time points.",
+        "manual_content": "PLP decreased by 64.5% (PME: Overt phantom movement) and 68.2% (PMI: mental imagery of phantom movement); 71%(PME) and 68%(PMI) achieved clinically meaningful pain reduction (>50%).",
+        "analysis": {
+          "classification": "C",
+          "justification": "Automated extraction mentions improvements in PLP but lacks specific percentages and clinically meaningful reduction details from manual extraction.",
+          "problems_identified": "None"
+        }
+      },
+      "Limitations": {
+        "infinity_content": "Higher than anticipated dropout rate, potential influence of contextual factors, and the need for specialized equipment and training for XR interventions.",
+        "manual_content": "Therapists had to undergo training; minimal learning curve; need for specialized equipment.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info on training and equipment is present in Infinity, which adds details on dropout rate and contextual factors.",
+          "problems_identified": "None"
+        }
+      }
+    }
+  },
+  {
+    "article_number": 13,
+    "fields": {
+      "Author, Year, Study Type": {
+        "infinity_content": "Pavlou et al., 2024, Assessor blinded pilot randomised controlled study",
+        "manual_content": "Pavlou et al., 2024, Pilot RCT Study",
+        "analysis": {
+          "author_classification": "A",
+          "year_classification": "A",
+          "study_type_classification": "B",
+          "justification": "Author: Exact match. Year: Exact match. Study Type: Manual 'Pilot RCT Study' is present in Infinity as 'Assessor blinded pilot randomised controlled study', with additional detail.",
+          "problems_identified": "None"
+        }
+      },
+      "Methodology": {
+        "infinity_content": "HOLOBalance platform using augmented reality for multisensory rehabilitation with IMU sensors, electronic dashboard for real-time feedback, and data export capabilities.",
+        "manual_content": "AR headsets, inertial measurement unit sensors, and pressure-measuring insoles with HOLOBalance system.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info (AR headsets, IMU sensors, pressure insoles) is present in Infinity, which adds details like electronic dashboard and data export.",
+          "problems_identified": "None"
+        }
+      },
+      "Sample Size (n), Population Characteristics": {
+        "infinity_content": "109 participants; Community-dwelling older adults aged 65-80 at risk of falls, median age 73 years, 64.2% female, recruited from academic clinics in Germany, Greece, and the UK.",
+        "manual_content": "109 Older adults(median age: 73) at risk for falls",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info present in Infinity with additional details like age range, gender %, and recruitment sites",
+          "problems_identified": "None"
+        }
+      },
+      "Outcome Measure": {
+        "infinity_content": "Functional gait assessment (FGA), Mini BESTest, cognitive function (MoCA), and subjective measures like FES-I and ABC scale assessed pre/post intervention.",
+        "manual_content": "Feasibility, acceptability, and safety; Functional gait assessment (FGA), mini-balance evaluation systems test (Mini-BESTest), cognitive function (MoCA) , fear of falling (FES-I), disability(WHODAS 2.0), balance confidence (ABC scale)",
+        "analysis": {
+          "classification": "C",
+          "justification": "Manual includes feasibility, acceptability, safety, and WHODAS 2.0 not in automated extraction.",
+          "problems_identified": "Missing feasibility, acceptability, safety, WHODAS 2.0 in automated extraction."
+        }
+      },
+      "Key Findings": {
+        "infinity_content": "Finding 1: Randomisation to completion rate was 76.15% with 69% recommending the HOLOBalance system. Finding 2: Greater improvement in FGA (95%CI [1.63, 4.19]) and Mini-BESTest (95%CI [1.46, 3.93]) for HOLOBalance vs OTAGO.",
+        "manual_content": "76.15% completion rate; 69% of participants would recommend HOLOBalance; FGA and Mini-BESTest scores showed more improvement in AR group compared to control.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual information is present in Infinity with additional quantitative details (95% CIs).",
+          "problems_identified": "None"
+        }
+      },
+      "Limitations": {
+        "infinity_content": "Sample size limitations, technical issues with sensors and headsets, generalizability concerns due to COVID-19 restrictions, and need for specialised equipment and training.",
+        "manual_content": "Technical difficulties experienced by 27% of participants (connection issues, sensor problems); need for specialized equipment–AR Headsets.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info on technical difficulties and specialized equipment is present in Infinity, which adds more details like COVID-19 impact and training needs.",
+          "problems_identified": "None"
+        }
+      }
+    }
+  },
+  {
+    "article_number": 14,
+    "fields": {
+      "Author, Year, Study Type": {
+        "infinity_content": "Weibel et al., 2024, Randomized controlled trial with matched-pair comparisons",
+        "manual_content": "Weibel et al., 2024, Prospective User Study",
+        "analysis": {
+          "author_classification": "A",
+          "year_classification": "A",
+          "study_type_classification": "C",
+          "justification": "Author: Exact match. Year: Exact match. Study Type: Manual extraction provides 'Prospective User Study' while automated extraction provides 'Randomized controlled trial with matched-pair comparisons', which are different but not conflicting descriptions of the study type.",
+          "problems_identified": "None"
+        }
+      },
+      "Methodology": {
+        "infinity_content": "Microsoft HoloLens 2 with 4x Microsoft Azure-Kinect cameras for 3D hologram telepresence using real-time optical video data with depth detection, stitched into a 360-degree view, with HIPAA-compliant Zoom for Tele-Stroke setup and TeamSpeak3 audio for communication.",
+        "manual_content": "HoloLens 2-based mixed reality system for real-time 2D/3D ultrasound guidance using stereo camera fiducial tracking and volume reconstruction",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info on HoloLens 2 and real-time guidance is present in Infinity, which adds details on telepresence and compliance.",
+          "problems_identified": "None"
+        }
+      },
+      "Sample Size (n), Population Characteristics": {
+        "infinity_content": "30 participants; Neurology clinic patients, average age 52 years, 53.3% female, 70.0% White, 13.3% Hispanic, nonacute/nonemergent neurological concerns, excluded if unable to consent or had severe conditions.",
+        "manual_content": "29 Non-acute neurology clinic patients",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info on non-acute neurology clinic patients is present in Infinity, which adds details like age, gender, and ethnicity.",
+          "problems_identified": "None"
+        }
+      },
+      "Outcome Measure": {
+        "infinity_content": "Satisfaction and immersion assessed via 5-question Likert scale (range 0-10) for 'Overall', 'Immersion', 'Beneficial Technique', 'Ability to See Images', and 'Caring Provider', with Wilcoxon signed-rank testing.",
+        "manual_content": "Patient-rated satisfaction and immersion (5-point Likert scale); comparison between Tele-stroke and Holo-stroke",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info present in Infinity with additional quantitative detail (Likert scale range, Wilcoxon test)",
+          "problems_identified": "None"
+        }
+      },
+      "Key Findings": {
+        "infinity_content": "Finding 1: Holo-Stroke scored higher on all satisfaction measures compared to Tele-Stroke, with 'Overall' scores 48 vs 32 (p < 0.00001). Finding 2: 'Immersion' scores were 5 vs 10 (p < 0.00001), 'Beneficial Technique' 6 vs 10 (p < 0.00001), 'Ability to See Images' 5 vs 10 (p < 0.00001). Finding 3: Holo-Stroke had a 92.93% satisfaction rate vs 57.07% for Tele-Stroke.",
+        "manual_content": "Holo-stroke significantly outperformed tele-stroke on all metrics (e.g., median score: 48 vs 32, p< .00001); high immersion and clarity in image and provider interaction.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual information is present in Infinity with additional quantitative details and p-values provided.",
+          "problems_identified": "None"
+        }
+      },
+      "Limitations": {
+        "infinity_content": "Small sample size, limited to nonacute cases, potential bias from seeing both technologies, not suitable for severe cases, technical requirements for hologram setup, potential dizziness reported by two patients.",
+        "manual_content": "None noted; need for specialized equipment–AR Headsets.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual limitations are noted in Infinity with additional details on sample size, case types, and technical issues.",
+          "problems_identified": "None"
+        }
+      }
+    }
+  },
+  {
+    "article_number": 15,
+    "fields": {
+      "Author, Year, Study Type": {
+        "infinity_content": "Ng et al., 2023, User study with phantom biopsy task",
+        "manual_content": "Ng et al., 2022, Experimental Prototype with simulated user study",
+        "analysis": {
+          "author_classification": "A",
+          "year_classification": "D",
+          "study_type_classification": "C",
+          "justification": "Author: Exact match. Year: Different years (2022 vs 2023). Study Type: Similar but not identical (Experimental Prototype vs User study with phantom biopsy task).",
+          "problems_identified": "Year: 2022 vs 2023. Study Type: Experimental Prototype vs User study with phantom biopsy task."
+        }
+      },
+      "Methodology": {
+        "infinity_content": "Microsoft HoloLens 2 with stereo ArUco markers for 3D ultrasound reconstruction using real-time tracking and projection with a linear probe (Mindray DC-80A, L14-5WE) and SonoStarMed 128E wireless probe, processed on i9-12900H CPU laptop with Unity, gRPC, and MRTK, streaming data to iPhone 12 Mini.",
+        "manual_content": "Real-time 3D holographic provider \"teleportation\" via HoloLens 2 using Azure Kinect cameras and Unity",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info on HoloLens 2 and Unity is present in Infinity, which adds details on tracking, probes, and processing.",
+          "problems_identified": "None"
+        }
+      },
+      "Sample Size (n), Population Characteristics": {
+        "infinity_content": "24 total: 12 novices + 12 experts; Novices with no medical training and experts with at least 5 years of postgraduate experience in ultrasound guidance; recruited for a simulated biopsy task.",
+        "manual_content": "24; 12 novices, 12 experts with >5 years experience in US-guided procedures.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual information is present in Infinity, with additional details on participant training and experience.",
+          "problems_identified": "None"
+        }
+      },
+      "Outcome Measure": {
+        "infinity_content": "Time taken to complete phantom biopsy task using 2D and 3D MR-US methods compared to conventional US, with statistical analysis using paired two-tailed t-test.",
+        "manual_content": "Time to complete phantom biopsy; Accuracy",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info on time and accuracy is present in Infinity, which adds statistical analysis details.",
+          "problems_identified": "None"
+        }
+      },
+      "Key Findings": {
+        "infinity_content": "Finding 1: 3D MR-US method significantly reduced task time for novices (37.1 ± 12.5 s, p = 0.0249) and experts (35.0 ± 8.8 s, p = 0.0022) compared to conventional US. Finding 2: 2D overlay method showed no significant time reduction for novices (51.6 ± 19.7 s, p = 0.1838) and experts (58.1 ± 25.1 s, p = 0.1253).",
+        "manual_content": "AR reduced task time significantly for both novices and experts; tracking showed sub-mm accuracy",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info on AR reducing task time is present in Infinity, which adds specific data on methods and p-values.",
+          "problems_identified": "None"
+        }
+      },
+      "Limitations": {
+        "infinity_content": "Limited sample size; potential inaccuracies from optical system; need for specialized equipment like HoloLens 2 and ArUco markers; generalizability to real-world clinical settings not fully established; cost and training requirements for implementation.",
+        "manual_content": "Need for specialized equipment.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual information is present in Infinity with additional relevant details on limitations.",
+          "problems_identified": "None"
+        }
+      }
+    }
+  },
+  {
+    "article_number": 16,
+    "fields": {
+      "Author, Year, Study Type": {
+        "infinity_content": "Bank et al., 2018, Observational cross-sectional study",
+        "manual_content": "Bank et Al., 2018, Observational Feasibility Study",
+        "analysis": {
+          "author_classification": "A",
+          "year_classification": "A",
+          "study_type_classification": "C",
+          "justification": "Author: Exact match. Year: Exact match. Study Type: Partial match, 'cross-sectional' vs 'feasibility' but both observational.",
+          "problems_identified": "None"
+        }
+      },
+      "Methodology": {
+        "infinity_content": "AIRO II head-mounted display with Leap Motion for contactless tracking and Logitech C922 Pro Stream Webcam for marker recognition; Microsoft Kinect v2 sensor for body tracking; Unity3D for software integration; data processed using MATLAB; real-time visual feedback and CSV data export.",
+        "manual_content": "Three customized AR exercise games used to assess upper extremity motor function; used wearable AR hardware with marker tracking and contactless hand tracking. Hardware used: AIRO II optical see-through HMD, Leap Motion sensor, Logitech C922 webcam, Microsoft Kinect v2 sensor.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual information IS present in Infinity, but Infinity provides additional relevant details/data",
+          "problems_identified": "None"
+        }
+      },
+      "Sample Size (n), Population Characteristics": {
+        "infinity_content": "30 participants: 10 PD patients, 10 stroke patients, 10 healthy controls; PD patients (mean age 60.8, disease duration 11.9 years), stroke patients (>12 weeks post-stroke, mean age 60.5), healthy controls (mean age 61.6); recruited from outpatient clinics; able to lift arms above shoulder level.",
+        "manual_content": "30; 10 patients with Parkinson's Disease; 10 stroke patients with >12 weeks post-stroke; 10 age-matched healthy controls",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info present in automated extraction with additional details like mean age and disease duration.",
+          "problems_identified": "None"
+        }
+      },
+      "Outcome Measure": {
+        "infinity_content": "Motor function assessed via maximum reach distance, success rate, movement speed, and relative path length; usability evaluated using SUS and NASA-TLX; engagement assessed with GEQ.",
+        "manual_content": "Maximum reach distance; speed, goal-directedness, hand opening, and obstacle avoidance; Usability (System Usability Scale), task load (NASA-TLX), presence, and engagement.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info present in Infinity with additional details like relative path length and GEQ for engagement.",
+          "problems_identified": "None"
+        }
+      },
+      "Key Findings": {
+        "infinity_content": "Finding 1: PD patients showed reduced maximum reach distance (F(3,51) = 4.6, p = 0.007, η² = 0.21). Finding 2: Melody Cubes task showed significant differences in hand opening (F(2,36) = 22.8, p < 0.001, η² = 0.56). Finding 3: Hungry Squirrel task success rate was lower in scenario VO (100 [94–100%], p = 0.01).",
+        "manual_content": "AR games were feasible, engaging, and usable; Movement differences between groups were detected using AR.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info on movement differences is present in Infinity's findings, with additional quantitative details.",
+          "problems_identified": "None"
+        }
+      },
+      "Limitations": {
+        "infinity_content": "Small sample size; limited field of view in HMD; potential ceiling effects in MRD; need for larger studies to improve sensitivity; requirement for patients to lift arms above shoulder level may exclude some stroke patients.",
+        "manual_content": "Limited field of view, ceiling/floor effects depending on impairment levels; need for specialized equipment",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual limitations are present in Infinity with additional details on sample size and patient requirements.",
+          "problems_identified": "None"
+        }
+      }
+    }
+  },
+  {
+    "article_number": 17,
+    "fields": {
+      "Author, Year, Study Type": {
+        "infinity_content": "Hardeman et al., 2024, Waitlist-controlled clinical feasibility trial",
+        "manual_content": "Hardeman et al., 2024,  Prospective clinical feasibility study",
+        "analysis": {
+          "author_classification": "A",
+          "year_classification": "A",
+          "study_type_classification": "C",
+          "justification": "Author: Exact match. Year: Exact match. Study Type: Partial match, different descriptors but both indicate feasibility study.",
+          "problems_identified": "None"
+        }
+      },
+      "Methodology": {
+        "infinity_content": "Magic Leap 2 and HoloLens 2 AR glasses with Reality DTx platform for home-based gait-and-balance exergaming using real-time motion tracking and remote monitoring with SLAM technology, CSV data export, and real-time feedback.",
+        "manual_content": "Tethered Magic Leap 2 or untethered Microsoft HoloLens 2 with real-time feedback, gamified exercises, and remote monitoring via web portal.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info present in Infinity with additional details like SLAM tech and CSV export",
+          "problems_identified": "None"
+        }
+      },
+      "Sample Size (n), Population Characteristics": {
+        "infinity_content": "24 participants; People with Parkinson's disease, aged 18 or older, Hoehn and Yahr stages 2–4, Dutch language proficiency, experiencing gait/balance impairments.",
+        "manual_content": "24 Volunteers with Parkinson's disease (Hoehn & Yahr stages 2-4)",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual information is present in Infinity, but Infinity provides additional relevant details such as age, language proficiency, and specific impairments.",
+          "problems_identified": "None"
+        }
+      },
+      "Outcome Measure": {
+        "infinity_content": "Feasibility assessed via safety (adverse events), adherence (exercise frequency, duration, repetitions), and user experience (26-item User-Experience Questionnaire) at t0, t1, t2; gait and balance outcomes using Mini-BESTest, Timed Up-and-Go, Lindop Parkinson's Assessment, and walking adaptability tests.",
+        "manual_content": "User experience, adherence, safety, Gait and balance improvement.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info (user experience, adherence, safety, gait/balance) is present in Infinity, which adds detailed measures/tests.",
+          "problems_identified": "None"
+        }
+      },
+      "Key Findings": {
+        "infinity_content": "Finding 1: Feasibility expressed in safety (adverse events), adherence (exercise frequency, duration, repetitions), and user experience (26-item User-Experience Questionnaire). Finding 2: Potential efficacy assessed via gait and balance outcomes (Mini-BESTest, Timed Up-and-Go, Lindop Parkinson's Assessment, walking adaptability).",
+        "manual_content": "Not Applicable",
+        "analysis": {
+          "classification": "F",
+          "justification": "Manual extraction is 'Not Applicable', making it incomparable with automated extraction.",
+          "problems_identified": "None"
+        }
+      },
+      "Limitations": {
+        "infinity_content": "Sample size limited to 24 due to feasibility constraints; potential equipment variability between AR glasses; generalizability limited to Dutch-speaking pwPD; reliance on self-reported adherence data; potential bias in user experience feedback.",
+        "manual_content": "Device weight (HoloLens), tethering (Magic Leap), and technical learning curve; Need initial Wi-Fi setup and AR environment configuration. Specs differ across AR glasses.need for specialized equipment–AR Hardware.",
+        "analysis": {
+          "classification": "C",
+          "justification": "Automated extraction mentions general limitations but lacks specific details like device weight, tethering, and technical learning curve from manual extraction.",
+          "problems_identified": "None"
+        }
+      }
+    }
+  },
+  {
+    "article_number": 18,
+    "fields": {
+      "Author, Year, Study Type": {
+        "infinity_content": "Ramesh et al., 2023, Observational cross-sectional study",
+        "manual_content": "Ramesh et al.,2024, Perspective Study with User-Survey-based analysis",
+        "analysis": {
+          "author_classification": "A",
+          "year_classification": "D",
+          "study_type_classification": "D",
+          "justification": "Author: Exact match. Year: Different years (2023 vs 2024). Study Type: Different study types (Observational cross-sectional vs Perspective Study with User-Survey-based analysis).",
+          "problems_identified": "Year: 2023 vs 2024. Study Type: Observational cross-sectional vs Perspective Study with User-Survey-based analysis."
+        }
+      },
+      "Methodology": {
+        "infinity_content": "Eye MG AR application using Android smartphones with Unreal Engine for 3D anatomical visualization, featuring real-time high-resolution confocal images and TruColor imaging with real-time visual feedback.",
+        "manual_content": "Consumer smartphones used with marker-based AR using printed template and camera-based tracking.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info is present in Infinity, but Infinity adds details like real-time high-resolution confocal images and TruColor imaging.",
+          "problems_identified": "None"
+        }
+      },
+      "Sample Size (n), Population Characteristics": {
+        "infinity_content": "100 participants; Glaucoma patients and neophytes; inclusion criteria not specified.",
+        "manual_content": "100; Details not given",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual extraction lacks details, but automated extraction includes population specifics (Glaucoma patients and neophytes).",
+          "problems_identified": "None"
+        }
+      },
+      "Outcome Measure": {
+        "infinity_content": "Understanding of anatomical implications of glaucoma assessed via survey with p < 0.05 for statistical significance.",
+        "manual_content": "Patient understanding of glaucoma anatomy and pathology. Effectiveness of AR-based counseling in clinics",
+        "analysis": {
+          "classification": "C",
+          "justification": "Automated extraction mentions understanding of anatomical implications of glaucoma, but lacks detail on AR-based counseling effectiveness.",
+          "problems_identified": "None"
+        }
+      },
+      "Key Findings": {
+        "infinity_content": "Finding 1: With AR, 43 rated 'Excellent' for angle structure understanding vs 5 without AR (p = 0.001). Finding 2: Pathological changes understanding rated 'Excellent' by 44 with AR vs 5 without AR (p < 0.001).",
+        "manual_content": "Statistically significant improvement in comprehension scores for all evaluated domains",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info is present in Infinity with additional quantitative details (p-values).",
+          "problems_identified": "None"
+        }
+      },
+      "Limitations": {
+        "infinity_content": "Requires Android devices with specific hardware (compass, rear-facing camera, gyroscope, GPS, accelerometer) and Android 7.0 or later. Generalizability limited by technology access and user familiarity with AR.",
+        "manual_content": "The AR module on IOS is behind a paywall. AR template needs to be printed and used",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info on AR module paywall and template printing is present in Infinity's hardware and OS requirements, with added details on device specifics.",
+          "problems_identified": "None"
+        }
+      }
+    }
+  },
+  {
+    "article_number": 19,
+    "fields": {
+      "Author, Year, Study Type": {
+        "infinity_content": "Calame et al., 2025, Single participant mixed-reality headset evaluation",
+        "manual_content": "Calame et al.,2025, Proof-of-concept Pilot Study",
+        "analysis": {
+          "author_classification": "A",
+          "year_classification": "A",
+          "study_type_classification": "B",
+          "justification": "Author: Exact match. Year: Exact match. Study Type: Manual 'Proof-of-concept Pilot Study' is present in Infinity as 'Single participant mixed-reality headset evaluation', which provides additional detail.",
+          "problems_identified": "None"
+        }
+      },
+      "Methodology": {
+        "infinity_content": "Microsoft HoloLens 2 with Unity platform for neurological task simulation using real-time tracking of 26 hand joints, eye gaze, and voice with data export in .wav format and CSV, including visual feedback and holographic displays.",
+        "manual_content": "Microsoft HoloLens 2 used for eye tracking, hand tracking, and voice analysis.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info on HoloLens 2 usage is present in Infinity, which adds details like Unity platform, 26 hand joints, and data formats.",
+          "problems_identified": "None"
+        }
+      },
+      "Sample Size (n), Population Characteristics": {
+        "infinity_content": "1 healthy participant; Healthy adult without diagnosed movement disorder, recruited for proof of concept in a clinical setting.",
+        "manual_content": "1 healthy volunteer (non-naïve, no diagnosed movement disorder)",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual info present in Infinity with additional detail (clinical setting, proof of concept).",
+          "problems_identified": "None"
+        }
+      },
+      "Outcome Measure": {
+        "infinity_content": "Quantification of hand movement using speed, acceleration, and PSD; vocal analysis using Praat for speaking time, intensity, F0 pitch, shimmer, and jitter; task performance metrics including reaction time and accuracy.",
+        "manual_content": "Hand, eye, and voice metrics during standardized neurological tasks: tremor frequency, tap amplitude/time, turn angle, reaction time, tortuosity, vocal pitch, jitter/shimmer.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual hand, eye, and voice metrics are present in automated extraction, which also includes additional details like PSD and task performance metrics.",
+          "problems_identified": "None"
+        }
+      },
+      "Key Findings": {
+        "infinity_content": "Finding 1: Right hand tremor speed = 0.0147 ± 0.0086 m/s, acceleration = 0.549 ± 0.293 m/s²; left hand speed = 0.0197 ± 0.0131 m/s, acceleration = 0.786 ± 0.486 m/s². Finding 2: Tap amplitude slope for right hand = -2.48 × 10⁻⁴, p-value = 0.10; left hand = -3.27 × 10⁻⁴, p-value = 0.001. Finding 3: Turn angle amplitude for right hand = 0.376 ± 0.097 degrees, left hand = 0.410 ± 0.033 degrees.",
+        "manual_content": "All tasks were successfully captured and analyzed using the headset. The movement and vocal features showed high fidelity tracking, like external metronome stimuli.",
+        "analysis": {
+          "classification": "E",
+          "justification": "Automated extraction focuses on quantitative hand movement data, while manual extraction mentions general tracking fidelity without specifics.",
+          "problems_identified": "None"
+        }
+      },
+      "Limitations": {
+        "infinity_content": "Single participant limits generalizability; requires Microsoft HoloLens 2 and trained staff; potential variability in holographic display calibration; limited to controlled clinical settings; high cost of equipment.",
+        "manual_content": "None noted other than the need for specialized equipment–HoloLens 2.",
+        "analysis": {
+          "classification": "B",
+          "justification": "Manual limitations are noted in Infinity with additional details on equipment and setting constraints.",
+          "problems_identified": "None"
+        }
+      }
+    }
+  }
+]

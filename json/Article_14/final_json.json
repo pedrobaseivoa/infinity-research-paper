@@ -1,0 +1,1242 @@
+{
+  "vision_json": {
+    "source": "gpt-4o-vision",
+    "success": true,
+    "prompt_sent": "Extract ONLY publication metadata from these academic paper pages.\n\nCRITICAL: This data will be sent to 11 external APIs, so format accuracy is essential.\n\nFIELD REQUIREMENTS WITH EXACT FORMATS:\n\n1. **Title**: Clean title for API queries (HIGHEST PRIORITY)\n   - Remove line breaks, extra spaces, formatting\n   - No HTML tags or special characters  \n   - Example: \"Effects of Machine Learning on Healthcare Outcomes\"\n\n2. **Authors**: API-compatible author list (HIGHEST PRIORITY)\n   - Each author as separate string in array\n   - Format: \"FirstName LastName\" or \"F. LastName\"\n   - Clean, no extra punctuation\n   - Example: [\"John Smith\", \"M. Johnson\", \"Sarah Williams\"]\n\n3. **DOI**: Standard DOI format for resolution APIs\n   - Must start with \"10.\" if present\n   - Clean format without URL prefixes\n   - Example: \"10.1234/journal.2024.001\"\n\n4. **Journal**: Clean journal name for database queries\n   - Full journal name preferred over abbreviations\n   - Remove extra formatting, parentheses\n   - Example: \"Nature Medicine\"\n\n5. **Year**: Numeric format for date filtering\n   - 4-digit NUMBER only (not string)\n   - Example: 2024\n\n6. **Volume**: Clean number for bibliographic APIs\n   - Numbers only, no \"Vol.\" prefix\n   - Example: \"15\"\n\n7. **Issue**: Clean number format\n   - Numbers only, no \"No.\" or \"Issue\" prefix\n   - Example: \"3\"\n\n8. **Pages**: Standard page range for citations\n   - Format: \"start-end\" or single page\n   - Example: \"123-135\" or \"45\"\n\n9. **PMID**: PubMed ID for medical APIs\n   - Numbers only, no \"PMID:\" prefix\n   - Example: \"12345678\"\n\n10. **PMCID**: PubMed Central ID for open access papers\n    - Numbers only, no \"PMC\" prefix\n    - Often appears near PMID in biomedical papers\n    - Example: \"9876543\"\n\n11. **Keywords**: API-compatible keyword list\n    - Each keyword as separate string\n    - Research-quality terms, no punctuation\n    - Example: [\"machine learning\", \"healthcare\", \"clinical outcomes\"]\n\n11. **Abstract**: Complete clean text (HIGHEST PRIORITY)\n    - Remove formatting, line breaks, extra spaces\n    - Complete sentences, proper punctuation\n    - Search thoroughly across ALL pages\n    - This is CRITICAL for Semantic Scholar and other APIs\n\n12. **Publisher**: Clean organization name\n    - Official publisher name\n    - Example: \"Elsevier\" or \"Nature Publishing Group\"\n\nABSTRACT EXTRACTION PRIORITY:\n- Look thoroughly across ALL pages for abstract sections\n- Extract COMPLETE text, including multiple paragraphs\n- Check: Abstract, Summary, Introduction summary paragraphs\n- This field is CRITICAL for API enrichment success\n\nReturn JSON format:\n{\n  \"Title\": \"clean title without formatting\",\n  \"Authors\": [\"Author One\", \"Author Two\"],\n  \"DOI\": \"10.xxxx/xxxxx\",\n  \"Journal\": \"clean journal name\", \n  \"Year\": 2024,\n  \"Volume\": \"15\",\n  \"Issue\": \"3\", \n  \"Pages\": \"123-135\",\n  \"Abstract\": \"complete clean abstract text\",\n  \"Keywords\": [\"keyword1\", \"keyword2\"],\n  \"PMID\": \"12345678\",\n  \"PMCID\": \"9876543\",\n  \"Publisher\": \"publisher name\"\n}\n\nReturn null for fields not clearly visible. The Abstract field is MOST IMPORTANT for downstream API success.",
+    "cost_tracking": {
+      "model": "gpt-4o",
+      "call_type": "vision_extraction",
+      "timestamp": "2025-07-22T14:23:30.836392",
+      "input_cost": 0.007725,
+      "total_cost": 0.011925,
+      "output_cost": 0.0042,
+      "input_tokens": 3090,
+      "total_tokens": 3510,
+      "output_tokens": 420
+    },
+    "input_details": {
+      "dpi": 120,
+      "max_tokens": 1500,
+      "model_used": "gpt-4o",
+      "temperature": 0.1,
+      "page_strategy": "strategic",
+      "image_resolution": "high",
+      "processing_time_ms": 24952,
+      "pdf_pages_processed": 3
+    },
+    "extracted_data": {
+      "DOI": "10.1089/tmj.2024.0229",
+      "PMID": null,
+      "Year": 2024,
+      "Issue": "10",
+      "PMCID": null,
+      "Pages": "2583-2591",
+      "Title": "Holo-Stroke: Assessing for Immersive Stroke Care Through Stroke Hologram Teleportation",
+      "Volume": "30",
+      "Authors": [
+        "Nadir Weibel",
+        "Ben Alwood",
+        "Vishwajith Ramesh",
+        "Weichen Liu",
+        "Dawn M. Meyer",
+        "Teri McQuaid",
+        "Emily St Germain",
+        "Brett C. Meyer"
+      ],
+      "Journal": "Telemedicine and e-Health",
+      "Abstract": "Background: Augmented reality enables the wearer to see both their physical environment and virtual objects. Holograms could allow 3D video of providers to be transmitted to distant sites, allowing patients to interact with virtual providers as if they are in the same physical space. Our aim was to determine if Tele-Stroke augmented with Holo-Stroke, compared with Tele-Stroke alone, could improve satisfaction and perception of immersion for the patient. Methods: Kinect cameras positioned at 90-degree intervals around the hub practitioner were used. Cameras streamed real-time optical video to a unity point-cloud program where the data were stitched together in a 360-degree view. The resultant hologram was positioned in 3D space and was visible through the head-mounted display by the patient. Radiology images were shared in Tele-Stroke and via hologram. Likert satisfaction questions were administered. Wilcoxon signed-rank testing was used.",
+      "Keywords": [
+        "Tele-Stroke",
+        "hologram",
+        "augmented reality",
+        "satisfaction",
+        "immersion",
+        "telemedicine"
+      ],
+      "Publisher": "Mary Ann Liebert, Inc."
+    },
+    "pages_processed": 3,
+    "extraction_matrix": {
+      "_performance_summary": {
+        "total_cost": 0.0,
+        "data_source": "vision_json",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "vision_status": "COMPLETE",
+        "extraction_rate": 84.62,
+        "extraction_source": "gpt-4o-vision",
+        "performance_level": "EXCELLENT",
+        "fields_with_content": 11,
+        "processing_time_seconds": 0,
+        "total_fields_in_response": 13
+      }
+    },
+    "extraction_method": "vision_strategic_strategy",
+    "extraction_quality": {
+      "success_rate": 50.0,
+      "quality_score": 50.0,
+      "successful_fields": 11,
+      "validation_details": {
+        "errors": [],
+        "is_valid": true,
+        "warnings": [],
+        "quality_score": 100,
+        "completeness_score": 100.0
+      },
+      "total_fields_attempted": 13
+    },
+    "processing_time_ms": 24952,
+    "raw_openai_response": {
+      "content": "```json\n{\n  \"Title\": \"Holo-Stroke: Assessing for Immersive Stroke Care Through Stroke Hologram Teleportation\",\n  \"Authors\": [\n    \"Nadir Weibel\",\n    \"Ben Alwood\",\n    \"Vishwajith Ramesh\",\n    \"Weichen Liu\",\n    \"Dawn M. Meyer\",\n    \"Teri McQuaid\",\n    \"Emily St Germain\",\n    \"Brett C. Meyer\"\n  ],\n  \"DOI\": \"10.1089/tmj.2024.0229\",\n  \"Journal\": \"Telemedicine and e-Health\",\n  \"Year\": 2024,\n  \"Volume\": \"30\",\n  \"Issue\": \"10\",\n  \"Pages\": \"2583-2591\",\n  \"Abstract\": \"Background: Augmented reality enables the wearer to see both their physical environment and virtual objects. Holograms could allow 3D video of providers to be transmitted to distant sites, allowing patients to interact with virtual providers as if they are in the same physical space. Our aim was to determine if Tele-Stroke augmented with Holo-Stroke, compared with Tele-Stroke alone, could improve satisfaction and perception of immersion for the patient. Methods: Kinect cameras positioned at 90-degree intervals around the hub practitioner were used. Cameras streamed real-time optical video to a unity point-cloud program where the data were stitched together in a 360-degree view. The resultant hologram was positioned in 3D space and was visible through the head-mounted display by the patient. Radiology images were shared in Tele-Stroke and via hologram. Likert satisfaction questions were administered. Wilcoxon signed-rank testing was used.\",\n  \"Keywords\": [\n    \"Tele-Stroke\",\n    \"hologram\",\n    \"augmented reality\",\n    \"satisfaction\",\n    \"immersion\",\n    \"telemedicine\"\n  ],\n  \"PMID\": null,\n  \"PMCID\": null,\n  \"Publisher\": \"Mary Ann Liebert, Inc.\"\n}\n```",
+      "parsing_error": "Expecting value: line 1 column 1 (char 0)",
+      "response_length": 1634,
+      "parsing_successful": false
+    },
+    "processing_timestamp": "2025-07-22T14:23:30.836381"
+  },
+  "apis_raw_json": {
+    "core": {
+      "error": "No results found in CORE",
+      "success": false,
+      "timestamp": "2025-07-22T14:23:47.824612",
+      "processing_time_ms": 16663
+    },
+    "doaj": {
+      "error": "No DOI available for DOAJ search",
+      "success": false,
+      "timestamp": "2025-07-22T14:23:32.768408",
+      "processing_time_ms": 1605
+    },
+    "arxiv": {
+      "error": "No results found",
+      "success": false,
+      "timestamp": "2025-07-22T14:23:32.761972",
+      "processing_time_ms": 1600
+    },
+    "orcid": {
+      "data": {
+        "person": {
+          "name": {
+            "path": "0000-0002-3457-4227",
+            "source": null,
+            "visibility": "public",
+            "credit-name": null,
+            "family-name": {
+              "value": "Weibel"
+            },
+            "given-names": {
+              "value": "Nadir"
+            },
+            "created-date": {
+              "value": 1460758638829
+            },
+            "last-modified-date": {
+              "value": 1460758638829
+            }
+          },
+          "path": "/0000-0002-3457-4227/person",
+          "emails": {
+            "path": "/0000-0002-3457-4227/email",
+            "email": [],
+            "last-modified-date": null
+          },
+          "keywords": {
+            "path": "/0000-0002-3457-4227/keywords",
+            "keyword": [],
+            "last-modified-date": null
+          },
+          "addresses": {
+            "path": "/0000-0002-3457-4227/address",
+            "address": [
+              {
+                "path": "/0000-0002-3457-4227/address/142707",
+                "source": {
+                  "source-name": {
+                    "value": "Nadir Weibel"
+                  },
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0002-3457-4227",
+                    "host": "orcid.org",
+                    "path": "0000-0002-3457-4227"
+                  },
+                  "source-client-id": null,
+                  "assertion-origin-name": null,
+                  "assertion-origin-orcid": null,
+                  "assertion-origin-client-id": null
+                },
+                "country": {
+                  "value": "US"
+                },
+                "put-code": 142707,
+                "visibility": "public",
+                "created-date": {
+                  "value": 1453659347944
+                },
+                "display-index": 0,
+                "last-modified-date": {
+                  "value": 1465226976952
+                }
+              }
+            ],
+            "last-modified-date": {
+              "value": 1465226976952
+            }
+          },
+          "biography": {
+            "path": "/0000-0002-3457-4227/biography",
+            "content": "I am a Professor in the Department of Computer Science and Engineering, and the Associate Faculty Director of the Design Lab at UC San Diego. I am also appointed as a Research Health Science Specialist at the VA San Diego Health System. My work on Human-Centered Computing is situated at the intersection of computer science, cognitive science, communication, health and social sciences. I am a computer scientist who investigates tools, techniques and infrastructure supporting the deployment of innovative interactive multimodal and tangible devices in context, and an ethnographer creating an using novel methods for studying and quantifying the cognitive consequences of the introduction of this technology in the everyday life.\n\nMy main interests ranges from software engineering to human computer interaction, including mobile health, computer supported cooperative work, social media, medical informatics, mobile and ubiquitous computing. \n\nIn my current work I am developing theory and methods, designing representations, implementing prototypes, and evaluating the effectiveness of interactive multimodal physical-digital systems such as pen-based and touch-based devices, depth-cameras, and mobile devices in the setting of critical populations such as healthcare and education.\n\nI am currently Co-Investigator on several funded research projects from the National Institute of Health (NIH), the National Science Foundation (NSF), and the Agency for Healthcare Research and Quality (AHRQ)",
+            "visibility": "public",
+            "created-date": {
+              "value": 1460758638831
+            },
+            "last-modified-date": {
+              "value": 1717089167413
+            }
+          },
+          "other-names": {
+            "path": "/0000-0002-3457-4227/other-names",
+            "other-name": [],
+            "last-modified-date": null
+          },
+          "researcher-urls": {
+            "path": "/0000-0002-3457-4227/researcher-urls",
+            "researcher-url": [
+              {
+                "url": {
+                  "value": "weibel.ucsd.edu"
+                },
+                "path": "/0000-0002-3457-4227/researcher-urls/330493",
+                "source": {
+                  "source-name": {
+                    "value": "Nadir Weibel"
+                  },
+                  "source-orcid": {
+                    "uri": "https://orcid.org/0000-0002-3457-4227",
+                    "host": "orcid.org",
+                    "path": "0000-0002-3457-4227"
+                  },
+                  "source-client-id": null,
+                  "assertion-origin-name": null,
+                  "assertion-origin-orcid": null,
+                  "assertion-origin-client-id": null
+                },
+                "put-code": 330493,
+                "url-name": null,
+                "visibility": "public",
+                "created-date": {
+                  "value": 1406095233394
+                },
+                "display-index": 0,
+                "last-modified-date": {
+                  "value": 1406095233394
+                }
+              }
+            ],
+            "last-modified-date": {
+              "value": 1406095233394
+            }
+          },
+          "last-modified-date": {
+            "value": 1465226976952
+          },
+          "external-identifiers": {
+            "path": "/0000-0002-3457-4227/external-identifiers",
+            "last-modified-date": null,
+            "external-identifier": []
+          }
+        },
+        "orcid_id": "0000-0002-3457-4227"
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:23:32.691726",
+      "processing_time_ms": 1525
+    },
+    "pubmed": {
+      "data": {
+        "PubmedArticle": [
+          {
+            "MedlineCitation": {
+              "PMID": {
+                "content": "38995868"
+              },
+              "Article": {
+                "Journal": {
+                  "Title": "Telemedicine journal and e-health : the official journal of the American Telemedicine Association",
+                  "JournalIssue": {
+                    "Issue": "10",
+                    "Volume": "30",
+                    "PubDate": {
+                      "Year": "2024"
+                    }
+                  }
+                },
+                "AuthorList": {
+                  "Author": [
+                    {
+                      "ForeName": "Nadir",
+                      "LastName": "Weibel"
+                    },
+                    {
+                      "ForeName": "Ben",
+                      "LastName": "Alwood"
+                    },
+                    {
+                      "ForeName": "Vishwajith",
+                      "LastName": "Ramesh"
+                    },
+                    {
+                      "ForeName": "Weichen",
+                      "LastName": "Liu"
+                    },
+                    {
+                      "ForeName": "Dawn M",
+                      "LastName": "Meyer"
+                    },
+                    {
+                      "ForeName": "Teri",
+                      "LastName": "McQuaid"
+                    },
+                    {
+                      "ForeName": "Emily St",
+                      "LastName": "Germain"
+                    },
+                    {
+                      "ForeName": "Brett C",
+                      "LastName": "Meyer"
+                    }
+                  ]
+                },
+                "Pagination": {
+                  "MedlinePgn": "2583-2591"
+                },
+                "ArticleTitle": "Holo-Stroke: Assessing for Immersive Stroke Care Through Stroke Hologram Teleportation."
+              }
+            }
+          }
+        ]
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:23:32.907256",
+      "processing_time_ms": 1752
+    },
+    "crossref": {
+      "data": {
+        "status": "ok",
+        "message": {
+          "DOI": "10.1089/tmj.2024.0229",
+          "URL": "https://doi.org/10.1089/tmj.2024.0229",
+          "ISSN": [
+            "1530-5627",
+            "1556-3669"
+          ],
+          "link": [
+            {
+              "URL": "https://www.liebertpub.com/doi/full-xml/10.1089/tmj.2024.0229",
+              "content-type": "application/xml",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://www.liebertpub.com/doi/pdf/10.1089/tmj.2024.0229",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "page": "2583-2591",
+          "type": "journal-article",
+          "issue": "10",
+          "score": 1,
+          "title": [
+            "Holo-Stroke: Assessing for Immersive Stroke Care Through Stroke Hologram Teleportation"
+          ],
+          "author": [
+            {
+              "given": "Nadir",
+              "family": "Weibel",
+              "sequence": "first",
+              "affiliation": [
+                {
+                  "name": "Department of Computer Science and Engineering & Design Lab, University of California, San Diego, California, USA."
+                }
+              ]
+            },
+            {
+              "given": "Ben",
+              "family": "Alwood",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "College of Medicine, University of Florida, Jacksonville, Florida, USA."
+                }
+              ]
+            },
+            {
+              "given": "Vishwajith",
+              "family": "Ramesh",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Department of Computer Science and Engineering & Design Lab, University of California, San Diego, California, USA."
+                }
+              ]
+            },
+            {
+              "given": "Weichen",
+              "family": "Liu",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Department of Mathematics, University of California, San Diego, California, USA."
+                }
+              ]
+            },
+            {
+              "given": "Dawn M.",
+              "family": "Meyer",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Department of Neurosciences, University of California, San Diego, California, USA."
+                }
+              ]
+            },
+            {
+              "given": "Teri",
+              "family": "McQuaid",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Department of Neurosciences, University of California, San Diego, California, USA."
+                }
+              ]
+            },
+            {
+              "given": "Emily St",
+              "family": "Germain",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Telehealth Program, University of California, San Diego, California, USA."
+                }
+              ]
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-2877-1187",
+              "given": "Brett C.",
+              "family": "Meyer",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Department of Neurosciences, University of California, San Diego, California, USA."
+                }
+              ],
+              "authenticated-orcid": false
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                1
+              ]
+            ]
+          },
+          "member": "278",
+          "prefix": "10.1089",
+          "source": "Crossref",
+          "volume": "30",
+          "created": {
+            "date-time": "2024-07-12T17:06:55Z",
+            "timestamp": 1720804015000,
+            "date-parts": [
+              [
+                2024,
+                7,
+                12
+              ]
+            ]
+          },
+          "indexed": {
+            "version": "3.40.5",
+            "date-time": "2025-05-27T04:55:37Z",
+            "timestamp": 1748321737021,
+            "date-parts": [
+              [
+                2025,
+                5,
+                27
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "https://www.liebertpub.com/nv/resources-tools/text-and-data-mining-policy/121/",
+              "start": {
+                "date-time": "2024-10-01T00:00:00Z",
+                "timestamp": 1727740800000,
+                "date-parts": [
+                  [
+                    2024,
+                    10,
+                    1
+                  ]
+                ]
+              },
+              "delay-in-days": 0,
+              "content-version": "tdm"
+            }
+          ],
+          "subject": [],
+          "language": "en",
+          "relation": {},
+          "resource": {
+            "primary": {
+              "URL": "https://www.liebertpub.com/doi/10.1089/tmj.2024.0229"
+            }
+          },
+          "subtitle": [],
+          "deposited": {
+            "date-time": "2024-10-11T20:18:23Z",
+            "timestamp": 1728677903000,
+            "date-parts": [
+              [
+                2024,
+                10,
+                11
+              ]
+            ]
+          },
+          "issn-type": [
+            {
+              "type": "print",
+              "value": "1530-5627"
+            },
+            {
+              "type": "electronic",
+              "value": "1556-3669"
+            }
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                1
+              ]
+            ]
+          },
+          "publisher": "Mary Ann Liebert Inc",
+          "reference": [
+            {
+              "DOI": "10.1212/01.WNL.0000154601.26653.E7",
+              "key": "B1",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1016/S1474-4422(08)70171-6",
+              "key": "B2",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.3390/s22207709",
+              "key": "B3",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.3390/jimaging8070203",
+              "key": "B4",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1111/iju.14907",
+              "key": "B5",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1155/2021/9717184",
+              "key": "B6",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1007/s11548-021-02526-7",
+              "key": "B7",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.2196/35674",
+              "key": "B8",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1145/2984511.2984517",
+              "key": "B13",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1016/j.bjps.2022.10.012",
+              "key": "B14",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1016/j.surg.2022.06.034",
+              "key": "B16",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1145/3334480.3383169",
+              "key": "B17",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1161/STROKEAHA.120.029993",
+              "key": "B18",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1145/3411764.3445576",
+              "key": "B19",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1109/3DUI.2017.7893357",
+              "key": "B20",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1109/VR.2019.8797719",
+              "key": "B21",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1001/jamanetworkopen.2021.45824",
+              "key": "B22",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1212/WNL.0b013e318270401d",
+              "key": "B23",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1016/j.neulet.2020.134974",
+              "key": "B24",
+              "doi-asserted-by": "publisher"
+            }
+          ],
+          "short-title": [],
+          "journal-issue": {
+            "issue": "10",
+            "published-print": {
+              "date-parts": [
+                [
+                  2024,
+                  10,
+                  1
+                ]
+              ]
+            }
+          },
+          "alternative-id": [
+            "10.1089/tmj.2024.0229"
+          ],
+          "content-domain": {
+            "domain": [],
+            "crossmark-restriction": false
+          },
+          "original-title": [],
+          "container-title": [
+            "Telemedicine and e-Health"
+          ],
+          "published-print": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                1
+              ]
+            ]
+          },
+          "reference-count": 19,
+          "references-count": 19,
+          "short-container-title": [
+            "Telemedicine and e-Health"
+          ],
+          "is-referenced-by-count": 2
+        },
+        "message-type": "work",
+        "message-version": "1.0.0"
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:23:32.603451",
+      "processing_time_ms": 1449
+    },
+    "datacite": {
+      "error": "No matching articles found",
+      "success": false,
+      "timestamp": "2025-07-22T14:23:40.040604",
+      "processing_time_ms": 8878
+    },
+    "openalex": {
+      "data": {
+        "id": "https://openalex.org/W4400580381",
+        "doi": "https://doi.org/10.1089/tmj.2024.0229",
+        "title": "Holo-Stroke: Assessing for Immersive Stroke Care Through Stroke Hologram Teleportation",
+        "open_access": {
+          "is_oa": false,
+          "oa_url": null,
+          "oa_status": "closed",
+          "any_repository_has_fulltext": false
+        },
+        "cited_by_count": 1,
+        "publication_year": 2024
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:23:32.359672",
+      "processing_time_ms": 1202
+    },
+    "unpaywall": {
+      "data": {
+        "doi": "10.1089/tmj.2024.0229",
+        "year": 2024,
+        "genre": "journal-article",
+        "is_oa": false,
+        "title": "Holo-Stroke: Assessing for Immersive Stroke Care Through Stroke Hologram Teleportation",
+        "doi_url": "https://doi.org/10.1089/tmj.2024.0229",
+        "oa_status": "closed",
+        "publisher": "Mary Ann Liebert Inc",
+        "is_paratext": false,
+        "journal_name": "Telemedicine Journal and e-Health",
+        "journal_issns": "1530-5627,1556-3669",
+        "journal_issn_l": "1530-5627",
+        "published_date": "2024-07-12",
+        "z_authors_summary": {
+          "count": 8,
+          "first_author": ""
+        },
+        "has_repository_copy": false,
+        "oa_locations_summary": {
+          "count": 0,
+          "has_repository": false
+        },
+        "best_oa_location_summary": null,
+        "first_oa_location_summary": null
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:23:32.661835",
+      "processing_time_ms": 1502
+    },
+    "europe_pmc": {
+      "data": {
+        "id": "38995868",
+        "doi": "10.1089/tmj.2024.0229",
+        "pmid": "38995868",
+        "inPMC": "N",
+        "title": "Holo-Stroke: Assessing for Immersive Stroke Care Through Stroke Hologram Teleportation.",
+        "hasPDF": "N",
+        "inEPMC": "N",
+        "source": "MED",
+        "authMan": "N",
+        "hasBook": "N",
+        "hasData": "N",
+        "pubYear": "2024",
+        "hasSuppl": "N",
+        "language": "eng",
+        "pageInfo": "2583-2591",
+        "pubModel": "Print-Electronic",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Weibel N",
+              "initials": "N",
+              "lastName": "Weibel",
+              "firstName": "Nadir",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Computer Science and Engineering & Design Lab, University of California, San Diego, California, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Alwood B",
+              "initials": "B",
+              "lastName": "Alwood",
+              "firstName": "Ben",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "College of Medicine, University of Florida, Jacksonville, Florida, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Ramesh V",
+              "initials": "V",
+              "lastName": "Ramesh",
+              "firstName": "Vishwajith",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Computer Science and Engineering & Design Lab, University of California, San Diego, California, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Liu W",
+              "initials": "W",
+              "lastName": "Liu",
+              "firstName": "Weichen",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Mathematics, University of California, San Diego, California, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Meyer DM",
+              "initials": "DM",
+              "lastName": "Meyer",
+              "firstName": "Dawn M",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurosciences, University of California, San Diego, California, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "McQuaid T",
+              "initials": "T",
+              "lastName": "McQuaid",
+              "firstName": "Teri",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurosciences, University of California, San Diego, California, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Germain ES",
+              "initials": "ES",
+              "lastName": "Germain",
+              "firstName": "Emily St",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Telehealth Program, University of California, San Diego, California, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-2877-1187"
+              },
+              "fullName": "Meyer BC",
+              "initials": "BC",
+              "lastName": "Meyer",
+              "firstName": "Brett C",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Department of Neurosciences, University of California, San Diego, California, USA."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "nihAuthMan": "N",
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "affiliation": "Department of Computer Science and Engineering & Design Lab, University of California, San Diego, California, USA.",
+        "epmcAuthMan": "N",
+        "journalInfo": {
+          "issue": "10",
+          "volume": "30",
+          "journal": {
+            "essn": "1556-3669",
+            "issn": "1530-5627",
+            "nlmid": "100959949",
+            "title": "Telemedicine journal and e-health : the official journal of the American Telemedicine Association",
+            "isoabbreviation": "Telemed J E Health",
+            "medlineAbbreviation": "Telemed J E Health"
+          },
+          "journalIssueId": 3839371,
+          "dateOfPublication": "2024 Oct",
+          "yearOfPublication": 2024,
+          "monthOfPublication": 10,
+          "printPublicationDate": "2024-10-01"
+        },
+        "keywordList": {
+          "keyword": [
+            "Immersion",
+            "Satisfaction",
+            "Telemedicine",
+            "Augmented Reality",
+            "Hologram",
+            "Tele-stroke"
+          ]
+        },
+        "pubTypeList": {
+          "pubType": [
+            "Journal Article"
+          ]
+        },
+        "abstractText": "<b>Background:</b> Augmented reality enables the wearer to see both their physical environment and virtual objects. Holograms could allow 3D video of providers to be transmitted to distant sites, allowing patients to interact with virtual providers as if they are in the same physical space. Our aim was to determine if Tele-Stroke augmented with Holo-Stroke, compared with Tele-Stroke alone, could improve satisfaction and perception of immersion for the patient. <b>Methods:</b> Kinect cameras positioned at 90-degree intervals around the hub practitioner were used. Cameras streamed real-time optical video to a unity point-cloud program where the data were stitched together in a 360-degree view. The resultant hologram was positioned in 3D space and was visible through the head-mounted display by the patient. Radiology images were shared in Tele-Stroke and via hologram. Likert satisfaction questions were administered. Wilcoxon signed-rank testing was used. <b>Results:</b> Each of the 30 neurology clinic participants scored both Tele-Stroke and Holo-Stroke. Out of these, 29 patients completed the assessments (1 failure owing to computer reboot). Average age was 52 years, with 53.3% of the patients being female, 70.0% being White, and 13.3% being Hispanic. Likert scale score median \"Overall\" was 32 Tele-Stroke versus 48 Holo-Stroke (<i>p</i> < 0.00001), \"Immersion\" was 5 versus 10 (<i>p</i> < 0.00001), \"Beneficial Technique\" was 6 versus 10 (<i>p</i> < 0.00001), and \"Ability to See Images\" was 5 versus 10 (<i>p</i> < 0.00001). <b>Discussion:</b> Holo-Stroke 3D holographic Tele-Stroke exams resulted in feasibility, satisfaction, and high perception of immersion for the patient. Patients were enthusiastic for the more immersive, personal discussion with their provider and a robust way to experience radiology images. Though further assessments are needed, Holo-Stroke can help the provider \"be there, not just see there!\"",
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-2877-1187"
+            }
+          ]
+        },
+        "authorString": "Weibel N, Alwood B, Ramesh V, Liu W, Meyer DM, McQuaid T, Germain ES, Meyer BC.",
+        "citedByCount": 1,
+        "hasLabsLinks": "Y",
+        "isOpenAccess": "N",
+        "hasReferences": "Y",
+        "dateOfCreation": "2024-07-12",
+        "dateOfRevision": "2025-07-08",
+        "firstIndexDate": "2024-07-13",
+        "hasEvaluations": "N",
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "url": "https://doi.org/10.1089/tmj.2024.0229",
+              "site": "DOI",
+              "availability": "Subscription required",
+              "documentStyle": "doi",
+              "availabilityCode": "S"
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Humans"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Imaging, Three-Dimensional"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Holography",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "MT",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "methods"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Telemedicine"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Adult"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Aged"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Middle Aged"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Patient Satisfaction"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Female"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Male"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Stroke",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "abbreviation": "CO",
+                    "majorTopic_YN": "N",
+                    "qualifierName": "complications"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Augmented Reality"
+            }
+          ]
+        },
+        "dateOfCompletion": "2024-10-11",
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "hasTextMinedTerms": "Y",
+        "publicationStatus": "ppublish",
+        "firstPublicationDate": "2024-07-12",
+        "hasDbCrossReferences": "N",
+        "hasTMAccessionNumbers": "N",
+        "electronicPublicationDate": "2024-07-12"
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:23:32.912465",
+      "processing_time_ms": 1755
+    },
+    "semantic_scholar": {
+      "data": {
+        "year": 2024,
+        "title": "Holo-Stroke: Assessing for Immersive Stroke Care Through Stroke Hologram Teleportation.",
+        "authors": [
+          {
+            "name": "Nadir Weibel",
+            "authorId": "2310881781"
+          },
+          {
+            "name": "Ben Alwood",
+            "authorId": "2310881715"
+          },
+          {
+            "name": "V. Ramesh",
+            "authorId": "145568635"
+          },
+          {
+            "name": "Weichen Liu",
+            "authorId": "2311086787"
+          },
+          {
+            "name": "Dawn M. Meyer",
+            "authorId": "2323667267"
+          },
+          {
+            "name": "Teri McQuaid",
+            "authorId": "2310881283"
+          },
+          {
+            "name": "Emily St Germain",
+            "authorId": "2310881587"
+          },
+          {
+            "name": "Brett C. Meyer",
+            "authorId": "2282468564"
+          }
+        ],
+        "journal": {
+          "name": "Telemedicine journal and e-health : the official journal of the American Telemedicine Association"
+        },
+        "paperId": "869bea6bcc35f408339ecfbd5e2d14f039671701",
+        "abstract": "Background: Augmented reality enables the wearer to see both their physical environment and virtual objects. Holograms could allow 3D video of providers to be transmitted to distant sites, allowing patients to interact with virtual providers as if they are in the same physical space. Our aim was to determine if Tele-Stroke augmented with Holo-Stroke, compared with Tele-Stroke alone, could improve satisfaction and perception of immersion for the patient. Methods: Kinect cameras positioned at 90-degree intervals around the hub practitioner were used. Cameras streamed real-time optical video to a unity point-cloud program where the data were stitched together in a 360-degree view. The resultant hologram was positioned in 3D space and was visible through the head-mounted display by the patient. Radiology images were shared in Tele-Stroke and via hologram. Likert satisfaction questions were administered. Wilcoxon signed-rank testing was used. Results: Each of the 30 neurology clinic participants scored both Tele-Stroke and Holo-Stroke. Out of these, 29 patients completed the assessments (1 failure owing to computer reboot). Average age was 52 years, with 53.3% of the patients being female, 70.0% being White, and 13.3% being Hispanic. Likert scale score median \"Overall\" was 32 Tele-Stroke versus 48 Holo-Stroke (p < 0.00001), \"Immersion\" was 5 versus 10 (p < 0.00001), \"Beneficial Technique\" was 6 versus 10 (p < 0.00001), and \"Ability to See Images\" was 5 versus 10 (p < 0.00001). Discussion: Holo-Stroke 3D holographic Tele-Stroke exams resulted in feasibility, satisfaction, and high perception of immersion for the patient. Patients were enthusiastic for the more immersive, personal discussion with their provider and a robust way to experience radiology images. Though further assessments are needed, Holo-Stroke can help the provider \"be there, not just see there!\"",
+        "externalIds": {
+          "DOI": "10.1089/tmj.2024.0229",
+          "PubMed": "38995868",
+          "CorpusId": 271120463
+        },
+        "isOpenAccess": false,
+        "citationCount": 2,
+        "openAccessPdf": {
+          "url": "",
+          "status": null,
+          "license": null,
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1089/tmj.2024.0229?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1089/tmj.2024.0229, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:23:32.358209",
+      "processing_time_ms": 1199
+    }
+  },
+  "questions_json": {
+    "reason": "custom_topics_not_enabled",
+    "success": false,
+    "extraction_method": "disabled",
+    "processing_timestamp": "2025-07-22T14:25:41.783799"
+  },
+  "apis_clean_json": {
+    "timestamp": "2025-07-22T14:24:57.418221",
+    "cost_tracking": {
+      "model": "deepseek-chat",
+      "call_type": "smart_consensus",
+      "timestamp": "2025-07-22T14:24:57.418069",
+      "input_cost": 0.002655,
+      "total_cost": 0.004218,
+      "output_cost": 0.001563,
+      "input_tokens": 9832,
+      "total_tokens": 11253,
+      "output_tokens": 1421,
+      "parsing_error": null,
+      "parsing_successful": true,
+      "processing_time_ms": 69591
+    },
+    "consensus_result": {
+      "DOI": "10.1089/tmj.2024.0229",
+      "PMID": "38995868",
+      "Year": 2024,
+      "Issue": "10",
+      "PMCID": null,
+      "Pages": "2583-2591",
+      "Title": "Holo-Stroke: Assessing for Immersive Stroke Care Through Stroke Hologram Teleportation",
+      "PDFUrl": null,
+      "Volume": "30",
+      "Authors": [
+        "Weibel, Nadir",
+        "Alwood, Ben",
+        "Ramesh, Vishwajith",
+        "Liu, Weichen",
+        "Meyer, Dawn M.",
+        "McQuaid, Teri",
+        "Germain, Emily St",
+        "Meyer, Brett C."
+      ],
+      "Journal": "Telemedicine and e-Health",
+      "Abstract": "Background: Augmented reality enables the wearer to see both their physical environment and virtual objects. Holograms could allow 3D video of providers to be transmitted to distant sites, allowing patients to interact with virtual providers as if they are in the same physical space. Our aim was to determine if Tele-Stroke augmented with Holo-Stroke, compared with Tele-Stroke alone, could improve satisfaction and perception of immersion for the patient. Methods: Kinect cameras positioned at 90-degree intervals around the hub practitioner were used. Cameras streamed real-time optical video to a unity point-cloud program where the data were stitched together in a 360-degree view. The resultant hologram was positioned in 3D space and was visible through the head-mounted display by the patient. Radiology images were shared in Tele-Stroke and via hologram. Likert satisfaction questions were administered. Wilcoxon signed-rank testing was used. Results: Each of the 30 neurology clinic participants scored both Tele-Stroke and Holo-Stroke. Out of these, 29 patients completed the assessments (1 failure owing to computer reboot). Average age was 52 years, with 53.3% of the patients being female, 70.0% being White, and 13.3% being Hispanic. Likert scale score median \"Overall\" was 32 Tele-Stroke versus 48 Holo-Stroke (p < 0.00001), \"Immersion\" was 5 versus 10 (p < 0.00001), \"Beneficial Technique\" was 6 versus 10 (p < 0.00001), and \"Ability to See Images\" was 5 versus 10 (p < 0.00001). Discussion: Holo-Stroke 3D holographic Tele-Stroke exams resulted in feasibility, satisfaction, and high perception of immersion for the patient. Patients were enthusiastic for the more immersive, personal discussion with their provider and a robust way to experience radiology images. Though further assessments are needed, Holo-Stroke can help the provider \"be there, not just see there!\"",
+      "Keywords": [
+        "Tele-Stroke",
+        "hologram",
+        "augmented reality",
+        "satisfaction",
+        "immersion",
+        "telemedicine",
+        "Imaging, Three-Dimensional",
+        "Holography",
+        "Patient Satisfaction",
+        "Stroke"
+      ],
+      "Citations": 2,
+      "Publisher": "Mary Ann Liebert, Inc.",
+      "OpenAccess": false,
+      "confidence_factors": {
+        "source": "Vision-Foundation + API Enhancement",
+        "reasoning": "Vision data used as foundation with strong API validation across multiple sources. Enhanced abstract from europe_pmc/semantic_scholar, added PMID and citation counts from semantic_scholar, expanded keywords from MeSH terms, and confirmed publisher consistency. All API data was coherent with vision foundation.",
+        "field_sources": {
+          "doi": "crossref|openalex|semantic_scholar|europe_pmc|pubmed|unpaywall",
+          "pmid": "europe_pmc|pubmed|semantic_scholar",
+          "year": "vision|crossref|openalex|semantic_scholar|europe_pmc|pubmed|unpaywall",
+          "issue": "vision|crossref|europe_pmc|pubmed",
+          "pages": "vision|crossref|europe_pmc|pubmed",
+          "title": "vision",
+          "volume": "vision|crossref|europe_pmc|pubmed",
+          "authors": "crossref+europe_pmc+pubmed+semantic_scholar+vision",
+          "journal": "vision",
+          "abstract": "europe_pmc+semantic_scholar+vision",
+          "keywords": "europe_pmc+vision",
+          "citations": "semantic_scholar|openalex",
+          "publisher": "vision|crossref|unpaywall",
+          "openaccess": "openalex|semantic_scholar|unpaywall"
+        },
+        "enhancement_level": "SIGNIFICANT",
+        "validation_status": "HIGH"
+      },
+      "api_success_summary": {
+        "insights": "Strong coherence across successful APIs (crossref, openalex, semantic_scholar, europe_pmc, pubmed, unpaywall, orcid). Most valuable enhancements came from europe_pmc (abstract extension, MeSH keywords) and semantic_scholar (citations, PMID). Failures were expected as article is not in arXiv/DOAJ/CORE/Datacite.",
+        "total_apis": 11,
+        "failed_apis": [
+          "arxiv",
+          "doaj",
+          "datacite",
+          "core"
+        ],
+        "success_rate": 0.73,
+        "coherent_apis": 8,
+        "coherence_rate": 1.0,
+        "successful_apis": 8
+      }
+    },
+    "processing_time_ms": 86265
+  },
+  "llm_topics_json": {
+    "success": true,
+    "prompt_sent": "You are a scientific research assistant extracting data for academic comparison tables with statistical rigor.\n\nCRITICAL INSTRUCTIONS FOR ACADEMIC COMPARISON:\n\n- SYSTEMATICALLY scan ALL content: text, tables, figures, charts, appendices\n- PRIORITIZE quantitative data while preserving qualitative context\n- When conflicts exist in the paper, prioritize MOST RECENT/AUTHORITATIVE source\n- Extract ALL relevant details mentioned - DON'T truncate important information\n- Include statistical tests results (Z-scores, t-values, chi-square, etc.)\n- Extract accuracy rates, completion rates, success rates with specific numbers\n- Capture comparative data (e.g., \"46% vs 27%\", \"Group A: 64.5%, Group B: 68.2%\")\n- Use proper numeric format: \"p = 0.007\" not \"p = .007\", \"81\" not \"eighty-one\"\n\nCOMPREHENSIVE CAPTURE REQUIREMENTS:\n\n- List ALL hardware components: cameras, sensors, headsets, controllers, phones, tablets, webcams, probes\n- Include ALL software details: platforms, SDKs, libraries, export formats (CSV, JSON), feedback systems\n- Capture ALL measurement instruments: scales, questionnaires, assessment tools (SUS, NASA-TLX, FES-I, MoCA, IKDC, VAS, ABC scale, WHODAS 2.0, etc.)\n- Note ALL technical specifications: resolutions, frame rates, tracking capabilities, joint counts\n- Include ALL study phases: pilot tests, technical validation, user studies, expert evaluations\n- Capture ALL procedural details: training time, calibration steps, data export processes, real-time feedback\n\nCONFLICT RESOLUTION:\n\n- If conflicting information exists, prioritize methods/results over abstract\n- When uncertain, include both: \"X in abstract, Y in methods section\"\n\nExtract the following 7 scientific topics:\n\n1. *study_design*: Extract the PRIMARY study type/design using the most specific and authoritative terminology from the paper's methods section. Recognize equivalent terms: \"RCT\" = \"Randomized controlled trial\", \"Pilot study\" = \"Feasibility pilot study\", \"Cross-sectional\" = \"Observational cross-sectional\", \"User study\" = \"User evaluation study\". When multiple study type descriptions exist, prioritize the most comprehensive version from methods over abstract. Include specific qualifiers when mentioned (e.g., \"multicenter\", \"double-blind\", \"waitlist-controlled\") as these add valuable detail. Format as brief phrase describing core study methodology, avoiding generic terms like \"study\" or \"research\" alone.\n\n2. *methodology*: ONE comprehensive sentence covering: technology + application + key technical details. Include: ALL device models, software platforms, measurement tools, statistical analyses. Capture ALL hardware components mentioned (cameras, sensors, controllers, probes, etc.). Include ALL software features (real-time feedback, data export, tracking capabilities). Mention ALL technical specifications (joint tracking numbers, frame rates, resolutions). Example: \"Microsoft HoloLens 2 with HoloAnatomy platform for 3D anatomical procedural visualization using real-time motion tracking of 25 joints with CSV data export and real-time visual feedback\".\n\n3. *sample_size*: Format: \"X participants/patients\" (use paper's exact terminology). Include TOTAL numbers if multiple groups exist. Include ALL test phases: technical tests, pilot studies, user evaluations. Example: \"25 total: 23 biomedical students + 2 clinical experts; 50 technical validation readings\".\n\n4. *population*: ALL demographic details and characteristics not captured in sample_size. Include age, profession, condition, experience, setting details. Add specific numbers when available. Include recruitment sources and inclusion/exclusion criteria.\n\n5. *primary_outcome*: Include ALL measurement tools, scales, timing, specific metrics, usability criteria (ease of use, realism, anatomical accuracy). List ALL assessment instruments used and functional scales (SUS, NASA-TLX, FES-I, MoCA, IKDC, VAS, ABC scale, WHODAS 2.0, etc.), and evaluation dimensions beyond the primary measures.. Include ALL comparison conditions and timepoints. Example: \"Patient understanding via 5-point Likert scale assessed pre/post intervention, plus SUS usability scores and NASA-TLX workload assessment\".\n\n6. *key_findings*: PRIORITIZE statistical results with practical implications. Format: \"Finding 1: [statistical data + meaning]. Finding 2: [data + context]\". Include ALL significant findings, p-values, effect sizes, accuracy rates, comparative data, accuracy measurements (sub-mm, degrees), specific understanding domains (surgical risks, operative steps, recovery), and detailed performance metrics beyond statistical significance. Present ALL questionnaire results, prototype performance, qualitative benefits. Include ALL cost factors, training requirements, implementation details. Capture ALL comparison groups and their specific results. Be comprehensive - capture complete findings picture. Include ALL technical specifications mentioned: accuracy measurements (sub-mm, degrees).\n\n7. *limitations*: Extract ALL limitations from limitation/discussion sections. Include sample size issues, technical equipment requirements, methodological, practical constraints. Mention ALL equipment needs, calibration requirements, manufacturing variability. Include ALL generalizability issues, validity concerns, implementation barriers. Capture training requirements, cost constraints, specialized equipment needs. Note real-world applicability issues and clinical implementation challenges. Don't summarize - capture complete limitation landscape.\n\nReturn as valid JSON with this EXACT structure:\n\n{\n  \"study_design\": \"string\",\n  \"methodology\": \"string\",\n  \"sample_size\": \"string\",\n  \"population\": \"string\",\n  \"primary_outcome\": \"string\",\n  \"key_findings\": \"string\",\n  \"limitations\": \"string\"\n}",
+    "cost_tracking": {
+      "model": "gpt-4o",
+      "call_type": "scientific_topics_multimodal",
+      "timestamp": "2025-07-22T14:25:40.859986",
+      "input_cost": 0.020133,
+      "total_cost": 0.024053,
+      "output_cost": 0.00392,
+      "input_tokens": 8053,
+      "total_tokens": 8445,
+      "output_tokens": 392
+    },
+    "input_details": {
+      "dpi": 150,
+      "max_tokens": 6000,
+      "model_used": "gpt-4o",
+      "temperature": 0.1,
+      "strategy_used": "vision_all_pages (≤40)",
+      "pdf_total_pages": 9,
+      "image_resolution": "high",
+      "processing_time_ms": 42461,
+      "pdf_pages_processed": 9
+    },
+    "pages_processed": 9,
+    "extracted_topics": {
+      "population": "Neurology clinic patients, average age 52 years, 53.3% female, 70.0% White, 13.3% Hispanic, nonacute/nonemergent neurological concerns, excluded if unable to consent or had severe conditions.",
+      "limitations": "Small sample size, limited to nonacute cases, potential bias from seeing both technologies, not suitable for severe cases, technical requirements for hologram setup, potential dizziness reported by two patients.",
+      "methodology": "Microsoft HoloLens 2 with 4x Microsoft Azure-Kinect cameras for 3D hologram telepresence using real-time optical video data with depth detection, stitched into a 360-degree view, with HIPAA-compliant Zoom for Tele-Stroke setup and TeamSpeak3 audio for communication.",
+      "sample_size": "30 participants",
+      "key_findings": "Finding 1: Holo-Stroke scored higher on all satisfaction measures compared to Tele-Stroke, with 'Overall' scores 48 vs 32 (p < 0.00001). Finding 2: 'Immersion' scores were 5 vs 10 (p < 0.00001), 'Beneficial Technique' 6 vs 10 (p < 0.00001), 'Ability to See Images' 5 vs 10 (p < 0.00001). Finding 3: Holo-Stroke had a 92.93% satisfaction rate vs 57.07% for Tele-Stroke.",
+      "study_design": "Randomized controlled trial with matched-pair comparisons",
+      "primary_outcome": "Satisfaction and immersion assessed via 5-question Likert scale (range 0-10) for 'Overall', 'Immersion', 'Beneficial Technique', 'Ability to See Images', and 'Caring Provider', with Wilcoxon signed-rank testing."
+    },
+    "extraction_method": "multimodal_vision",
+    "extraction_quality": {
+      "topics_missing": 0,
+      "topics_extracted": 7
+    },
+    "processing_time_ms": 42461,
+    "raw_openai_response": {
+      "content": "```json\n{\n  \"study_design\": \"Randomized controlled trial with matched-pair comparisons\",\n  \"methodology\": \"Microsoft HoloLens 2 with 4x Microsoft Azure-Kinect cameras for 3D hologram telepresence using real-time optical video data with depth detection, stitched into a 360-degree view, with HIPAA-compliant Zoom for Tele-Stroke setup and TeamSpeak3 audio for communication.\",\n  \"sample_size\": \"30 participants\",\n  \"population\": \"Neurology clinic patients, average age 52 years, 53.3% female, 70.0% White, 13.3% Hispanic, nonacute/nonemergent neurological concerns, excluded if unable to consent or had severe conditions.\",\n  \"primary_outcome\": \"Satisfaction and immersion assessed via 5-question Likert scale (range 0-10) for 'Overall', 'Immersion', 'Beneficial Technique', 'Ability to See Images', and 'Caring Provider', with Wilcoxon signed-rank testing.\",\n  \"key_findings\": \"Finding 1: Holo-Stroke scored higher on all satisfaction measures compared to Tele-Stroke, with 'Overall' scores 48 vs 32 (p < 0.00001). Finding 2: 'Immersion' scores were 5 vs 10 (p < 0.00001), 'Beneficial Technique' 6 vs 10 (p < 0.00001), 'Ability to See Images' 5 vs 10 (p < 0.00001). Finding 3: Holo-Stroke had a 92.93% satisfaction rate vs 57.07% for Tele-Stroke.\",\n  \"limitations\": \"Small sample size, limited to nonacute cases, potential bias from seeing both technologies, not suitable for severe cases, technical requirements for hologram setup, potential dizziness reported by two patients.\"\n}\n```",
+      "parsing_error": null,
+      "response_length": 1485,
+      "parsing_successful": true
+    },
+    "processing_timestamp": "2025-07-22T14:25:40.859867"
+  },
+  "processing_metadata": {
+    "filename": "11) HoloStroke Assessing for Immersive Stroke Care Through Stroke Hologram Teleportation.pdf",
+    "article_id": "unknown",
+    "total_phases": 5,
+    "aggregated_at": "2025-07-22T14:25:42.088364",
+    "phases_completed": {
+      "topics": true,
+      "vision": true,
+      "apis_raw": true,
+      "questions": false,
+      "apis_clean": true
+    },
+    "transparency_level": "complete"
+  }
+}

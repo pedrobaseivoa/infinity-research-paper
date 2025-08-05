@@ -1,0 +1,103 @@
+{
+  "source": "gpt-4o-vision",
+  "success": true,
+  "prompt_sent": "Extract ONLY publication metadata from these academic paper pages.\n\nCRITICAL: This data will be sent to 11 external APIs, so format accuracy is essential.\n\nFIELD REQUIREMENTS WITH EXACT FORMATS:\n\n1. **Title**: Clean title for API queries (HIGHEST PRIORITY)\n   - Remove line breaks, extra spaces, formatting\n   - No HTML tags or special characters  \n   - Example: \"Effects of Machine Learning on Healthcare Outcomes\"\n\n2. **Authors**: API-compatible author list (HIGHEST PRIORITY)\n   - Each author as separate string in array\n   - Format: \"FirstName LastName\" or \"F. LastName\"\n   - Clean, no extra punctuation\n   - Example: [\"John Smith\", \"M. Johnson\", \"Sarah Williams\"]\n\n3. **DOI**: Standard DOI format for resolution APIs\n   - Must start with \"10.\" if present\n   - Clean format without URL prefixes\n   - Example: \"10.1234/journal.2024.001\"\n\n4. **Journal**: Clean journal name for database queries\n   - Full journal name preferred over abbreviations\n   - Remove extra formatting, parentheses\n   - Example: \"Nature Medicine\"\n\n5. **Year**: Numeric format for date filtering\n   - 4-digit NUMBER only (not string)\n   - Example: 2024\n\n6. **Volume**: Clean number for bibliographic APIs\n   - Numbers only, no \"Vol.\" prefix\n   - Example: \"15\"\n\n7. **Issue**: Clean number format\n   - Numbers only, no \"No.\" or \"Issue\" prefix\n   - Example: \"3\"\n\n8. **Pages**: Standard page range for citations\n   - Format: \"start-end\" or single page\n   - Example: \"123-135\" or \"45\"\n\n9. **PMID**: PubMed ID for medical APIs\n   - Numbers only, no \"PMID:\" prefix\n   - Example: \"12345678\"\n\n10. **PMCID**: PubMed Central ID for open access papers\n    - Numbers only, no \"PMC\" prefix\n    - Often appears near PMID in biomedical papers\n    - Example: \"9876543\"\n\n11. **Keywords**: API-compatible keyword list\n    - Each keyword as separate string\n    - Research-quality terms, no punctuation\n    - Example: [\"machine learning\", \"healthcare\", \"clinical outcomes\"]\n\n11. **Abstract**: Complete clean text (HIGHEST PRIORITY)\n    - Remove formatting, line breaks, extra spaces\n    - Complete sentences, proper punctuation\n    - Search thoroughly across ALL pages\n    - This is CRITICAL for Semantic Scholar and other APIs\n\n12. **Publisher**: Clean organization name\n    - Official publisher name\n    - Example: \"Elsevier\" or \"Nature Publishing Group\"\n\nABSTRACT EXTRACTION PRIORITY:\n- Look thoroughly across ALL pages for abstract sections\n- Extract COMPLETE text, including multiple paragraphs\n- Check: Abstract, Summary, Introduction summary paragraphs\n- This field is CRITICAL for API enrichment success\n\nReturn JSON format:\n{\n  \"Title\": \"clean title without formatting\",\n  \"Authors\": [\"Author One\", \"Author Two\"],\n  \"DOI\": \"10.xxxx/xxxxx\",\n  \"Journal\": \"clean journal name\", \n  \"Year\": 2024,\n  \"Volume\": \"15\",\n  \"Issue\": \"3\", \n  \"Pages\": \"123-135\",\n  \"Abstract\": \"complete clean abstract text\",\n  \"Keywords\": [\"keyword1\", \"keyword2\"],\n  \"PMID\": \"12345678\",\n  \"PMCID\": \"9876543\",\n  \"Publisher\": \"publisher name\"\n}\n\nReturn null for fields not clearly visible. The Abstract field is MOST IMPORTANT for downstream API success.",
+  "cost_tracking": {
+    "model": "gpt-4o",
+    "call_type": "vision_extraction",
+    "timestamp": "2025-07-22T14:41:18.843217",
+    "input_cost": 0.007725,
+    "total_cost": 0.014935,
+    "output_cost": 0.00721,
+    "input_tokens": 3090,
+    "total_tokens": 3811,
+    "output_tokens": 721
+  },
+  "input_details": {
+    "dpi": 120,
+    "max_tokens": 1500,
+    "model_used": "gpt-4o",
+    "temperature": 0.1,
+    "page_strategy": "strategic",
+    "image_resolution": "high",
+    "processing_time_ms": 26517,
+    "pdf_pages_processed": 3
+  },
+  "extracted_data": {
+    "DOI": "10.1038/s41746-023-00978-6",
+    "PMID": null,
+    "Year": 2023,
+    "Issue": null,
+    "PMCID": null,
+    "Pages": "234",
+    "Title": "Augmented reality versus standard tests to assess cognition and function in early Alzheimer’s disease",
+    "Volume": "6",
+    "Authors": [
+      "Marijn Muurling",
+      "Casper de Boer",
+      "Srinivasan Vairavan",
+      "Robbert L. Harms",
+      "Antonella Santuccione Chadha",
+      "Ioannis Tarnanas",
+      "Estefania Vilarino Luís",
+      "Dorota Religa",
+      "Martha Therese Gjestsen",
+      "Samantha Galluzzi",
+      "Marta Ibarria Sala",
+      "Ivan Koychev",
+      "Lucrezia Hausner",
+      "Mara Gkioka",
+      "Dag Aarsland",
+      "Pieter Jelle Visser",
+      "Anna-Katharine Brem"
+    ],
+    "Journal": "npj Digital Medicine",
+    "Abstract": "Augmented reality (AR) apps, in which the virtual and real world are combined, can recreate instrumental activities of daily living (IADL) and are therefore promising to measure cognition needed for IADL in early Alzheimer’s disease (AD) both in the clinic and in the home settings. The primary aim of this study was to distinguish and classify healthy controls (HC) from participants with AD pathology in an early AD stage using an AR app. The secondary aims were to test the association of the app with clinical cognitive and functional tests and investigate the feasibility of at-home testing using AR. We furthermore investigated the test-retest reliability and potential learning effects of the task. The digital score from the AR app could significantly distinguish HC from preclinical AD (preAD) and prodromal AD (proAD), and preAD from proAD, both with in-clinic and at-home tests. For the classification of the proAD group, the digital score (AUCin-clinic = 0.84 [0.75–0.93], AUCat-home = 0.77 [0.61–0.93]) was as good as the cognitive score (AUCin-clinic = 0.85 [0.78–0.93]), while for classifying the preAD group, the digital score (AUCin-clinic = 0.66 [0.53–0.78], AUCat-home = 0.76 [0.61–0.91]) was superior to the cognitive score (AUC = 0.55 [0.42–0.68]). In-clinic and at-home tests moderately correlated (rho = 0.57, p < 0.001). The digital score was associated with the clinical cognitive score (rho = 0.56, p < 0.001). No learning effects were found. Here we report the AR app distinguishes HC from otherwise healthy Aβ-positive individuals, both in the outpatient setting and at home, which is currently not possible with standard cognitive tests.",
+    "Keywords": [
+      "augmented reality",
+      "cognition",
+      "Alzheimer’s disease",
+      "instrumental activities of daily living",
+      "digital health"
+    ],
+    "Publisher": "Springer Nature"
+  },
+  "pages_processed": 3,
+  "extraction_matrix": {
+    "_performance_summary": {
+      "total_cost": 0.0,
+      "data_source": "vision_json",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "vision_status": "COMPLETE",
+      "extraction_rate": 76.92,
+      "extraction_source": "gpt-4o-vision",
+      "performance_level": "GOOD",
+      "fields_with_content": 10,
+      "processing_time_seconds": 0,
+      "total_fields_in_response": 13
+    }
+  },
+  "extraction_method": "vision_strategic_strategy",
+  "extraction_quality": {
+    "success_rate": 50.0,
+    "quality_score": 50.0,
+    "successful_fields": 10,
+    "validation_details": {
+      "errors": [],
+      "is_valid": true,
+      "warnings": [],
+      "quality_score": 100,
+      "completeness_score": 100.0
+    },
+    "total_fields_attempted": 13
+  },
+  "processing_time_ms": 26517,
+  "raw_openai_response": {
+    "content": "```json\n{\n  \"Title\": \"Augmented reality versus standard tests to assess cognition and function in early Alzheimer’s disease\",\n  \"Authors\": [\n    \"Marijn Muurling\",\n    \"Casper de Boer\",\n    \"Srinivasan Vairavan\",\n    \"Robbert L. Harms\",\n    \"Antonella Santuccione Chadha\",\n    \"Ioannis Tarnanas\",\n    \"Estefania Vilarino Luís\",\n    \"Dorota Religa\",\n    \"Martha Therese Gjestsen\",\n    \"Samantha Galluzzi\",\n    \"Marta Ibarria Sala\",\n    \"Ivan Koychev\",\n    \"Lucrezia Hausner\",\n    \"Mara Gkioka\",\n    \"Dag Aarsland\",\n    \"Pieter Jelle Visser\",\n    \"Anna-Katharine Brem\"\n  ],\n  \"DOI\": \"10.1038/s41746-023-00978-6\",\n  \"Journal\": \"npj Digital Medicine\",\n  \"Year\": 2023,\n  \"Volume\": \"6\",\n  \"Issue\": null,\n  \"Pages\": \"234\",\n  \"Abstract\": \"Augmented reality (AR) apps, in which the virtual and real world are combined, can recreate instrumental activities of daily living (IADL) and are therefore promising to measure cognition needed for IADL in early Alzheimer’s disease (AD) both in the clinic and in the home settings. The primary aim of this study was to distinguish and classify healthy controls (HC) from participants with AD pathology in an early AD stage using an AR app. The secondary aims were to test the association of the app with clinical cognitive and functional tests and investigate the feasibility of at-home testing using AR. We furthermore investigated the test-retest reliability and potential learning effects of the task. The digital score from the AR app could significantly distinguish HC from preclinical AD (preAD) and prodromal AD (proAD), and preAD from proAD, both with in-clinic and at-home tests. For the classification of the proAD group, the digital score (AUCin-clinic = 0.84 [0.75–0.93], AUCat-home = 0.77 [0.61–0.93]) was as good as the cognitive score (AUCin-clinic = 0.85 [0.78–0.93]), while for classifying the preAD group, the digital score (AUCin-clinic = 0.66 [0.53–0.78], AUCat-home = 0.76 [0.61–0.91]) was superior to the cognitive score (AUC = 0.55 [0.42–0.68]). In-clinic and at-home tests moderately correlated (rho = 0.57, p < 0.001). The digital score was associated with the clinical cognitive score (rho = 0.56, p < 0.001). No learning effects were found. Here we report the AR app distinguishes HC from otherwise healthy Aβ-positive individuals, both in the outpatient setting and at home, which is currently not possible with standard cognitive tests.\",\n  \"Keywords\": [\n    \"augmented reality\",\n    \"cognition\",\n    \"Alzheimer’s disease\",\n    \"instrumental activities of daily living\",\n    \"digital health\"\n  ],\n  \"PMID\": null,\n  \"PMCID\": null,\n  \"Publisher\": \"Springer Nature\"\n}\n```",
+    "parsing_error": "Expecting value: line 1 column 1 (char 0)",
+    "response_length": 2629,
+    "parsing_successful": false
+  },
+  "processing_timestamp": "2025-07-22T14:41:18.843202"
+}

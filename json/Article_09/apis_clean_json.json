@@ -1,0 +1,87 @@
+{
+  "timestamp": "2025-07-22T14:37:31.095812",
+  "cost_tracking": {
+    "model": "deepseek-chat",
+    "call_type": "smart_consensus",
+    "timestamp": "2025-07-22T14:37:31.095608",
+    "input_cost": 0.003978,
+    "total_cost": 0.005395,
+    "output_cost": 0.001417,
+    "input_tokens": 14735,
+    "total_tokens": 16023,
+    "output_tokens": 1288,
+    "parsing_error": null,
+    "parsing_successful": true,
+    "processing_time_ms": 69399
+  },
+  "consensus_result": {
+    "DOI": "10.1186/s13018-023-04367-3",
+    "PMID": "38057846",
+    "Year": 2023,
+    "Issue": "1",
+    "PMCID": "PMC10701936",
+    "Pages": "936",
+    "Title": "Effectiveness of a digital rehabilitation program based on computer vision and augmented reality for isolated meniscus injury: protocol for a prospective randomized controlled trial",
+    "PDFUrl": "https://josr-online.biomedcentral.com/counter/pdf/10.1186/s13018-023-04367-3",
+    "Volume": "18",
+    "Authors": [
+      "Wang, Li",
+      "Chen, Xi",
+      "Deng, Qian",
+      "You, MingKe",
+      "Xu, Yang",
+      "Liu, Di",
+      "Lin, Ye",
+      "Li, PengCheng",
+      "Li, Jian"
+    ],
+    "Journal": "Journal of Orthopaedic Surgery and Research",
+    "Abstract": "Background The lack of access to physical therapists in developing countries and rural areas poses a significant challenge in supervising postsurgical rehabilitation, potentially impeding desirable outcomes following surgical interventions. For this reason, this study aims to evaluate the feasibility, safety, and effectiveness of utilizing a digital rehabilitation program based on computer vision and augmented reality in comparison with traditional care for patients who will undergo isolated meniscus repair, since to date, there is no literature on this topic. Methods This study intends to enroll two groups of participants, each to be provided with informed consent before undergoing randomization into either the experimental or control group. The experimental group will undergo a digital rehabilitation program utilizing computer vision and augmented reality (AR) technology following their surgical procedure, while the control group will receive conventional care, involving in-clinic physical therapy sessions weekly. Both groups will adhere to a standardized rehabilitation protocol over a six-month duration. Follow-up assessments will be conducted at various intervals, including preoperatively, and at 2 weeks, 6 weeks, 12 weeks, and 24 weeks postoperatively. Imaging assessments and return-to-play evaluations will be conducted during the final follow-up. Clinical functionality will be assessed based on improvements in International Knee Documentation Committee (IKDC) and Visual Analog Scale (VAS) scores. Registration number ChiCTR2300070582.",
+    "Keywords": [
+      "Computer vision",
+      "Augmented reality",
+      "Meniscus",
+      "Rehabilitation"
+    ],
+    "Citations": 2,
+    "Publisher": "Springer Science and Business Media LLC",
+    "OpenAccess": true,
+    "confidence_factors": {
+      "source": "Vision-Foundation + API Enhancement",
+      "reasoning": "Vision data used as foundation with significant enhancements from multiple coherent API sources. All critical fields (DOI, PMID, PMCID) validated across multiple authoritative sources. Abstract expanded from EuropePMC/PubMed versions. Publisher corrected from BMC to Springer based on Crossref/Unpaywall.",
+      "field_sources": {
+        "doi": "crossref|openalex|semantic_scholar|europe_pmc|pubmed|vision",
+        "pmid": "europe_pmc|pubmed",
+        "year": "vision",
+        "issue": "crossref|europe_pmc|pubmed",
+        "pages": "europe_pmc|pubmed",
+        "pmcid": "europe_pmc",
+        "title": "vision",
+        "pdfurl": "semantic_scholar|unpaywall|europe_pmc",
+        "volume": "vision",
+        "authors": "crossref|europe_pmc|pubmed|vision",
+        "journal": "vision",
+        "abstract": "europe_pmc|pubmed|vision",
+        "keywords": "doaj|europe_pmc|vision",
+        "citations": "semantic_scholar",
+        "publisher": "crossref|unpaywall",
+        "openaccess": "crossref|openalex|semantic_scholar|unpaywall|europe_pmc"
+      },
+      "enhancement_level": "SIGNIFICANT",
+      "validation_status": "HIGH"
+    },
+    "api_success_summary": {
+      "insights": "Excellent data coherence with 8/9 successful APIs confirming core metadata. Crossref, EuropePMC and Semantic Scholar provided the most valuable enhancements. Core API returned wrong article (different DOI). Publisher information corrected from vision data based on authoritative sources.",
+      "total_apis": 11,
+      "failed_apis": [
+        "arxiv",
+        "datacite"
+      ],
+      "success_rate": 0.82,
+      "coherent_apis": 8,
+      "coherence_rate": 0.89,
+      "successful_apis": 9
+    }
+  },
+  "processing_time_ms": 80299
+}

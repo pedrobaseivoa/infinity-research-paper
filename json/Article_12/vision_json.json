@@ -1,0 +1,107 @@
+{
+  "source": "gpt-4o-vision",
+  "success": true,
+  "prompt_sent": "Extract ONLY publication metadata from these academic paper pages.\n\nCRITICAL: This data will be sent to 11 external APIs, so format accuracy is essential.\n\nFIELD REQUIREMENTS WITH EXACT FORMATS:\n\n1. **Title**: Clean title for API queries (HIGHEST PRIORITY)\n   - Remove line breaks, extra spaces, formatting\n   - No HTML tags or special characters  \n   - Example: \"Effects of Machine Learning on Healthcare Outcomes\"\n\n2. **Authors**: API-compatible author list (HIGHEST PRIORITY)\n   - Each author as separate string in array\n   - Format: \"FirstName LastName\" or \"F. LastName\"\n   - Clean, no extra punctuation\n   - Example: [\"John Smith\", \"M. Johnson\", \"Sarah Williams\"]\n\n3. **DOI**: Standard DOI format for resolution APIs\n   - Must start with \"10.\" if present\n   - Clean format without URL prefixes\n   - Example: \"10.1234/journal.2024.001\"\n\n4. **Journal**: Clean journal name for database queries\n   - Full journal name preferred over abbreviations\n   - Remove extra formatting, parentheses\n   - Example: \"Nature Medicine\"\n\n5. **Year**: Numeric format for date filtering\n   - 4-digit NUMBER only (not string)\n   - Example: 2024\n\n6. **Volume**: Clean number for bibliographic APIs\n   - Numbers only, no \"Vol.\" prefix\n   - Example: \"15\"\n\n7. **Issue**: Clean number format\n   - Numbers only, no \"No.\" or \"Issue\" prefix\n   - Example: \"3\"\n\n8. **Pages**: Standard page range for citations\n   - Format: \"start-end\" or single page\n   - Example: \"123-135\" or \"45\"\n\n9. **PMID**: PubMed ID for medical APIs\n   - Numbers only, no \"PMID:\" prefix\n   - Example: \"12345678\"\n\n10. **PMCID**: PubMed Central ID for open access papers\n    - Numbers only, no \"PMC\" prefix\n    - Often appears near PMID in biomedical papers\n    - Example: \"9876543\"\n\n11. **Keywords**: API-compatible keyword list\n    - Each keyword as separate string\n    - Research-quality terms, no punctuation\n    - Example: [\"machine learning\", \"healthcare\", \"clinical outcomes\"]\n\n11. **Abstract**: Complete clean text (HIGHEST PRIORITY)\n    - Remove formatting, line breaks, extra spaces\n    - Complete sentences, proper punctuation\n    - Search thoroughly across ALL pages\n    - This is CRITICAL for Semantic Scholar and other APIs\n\n12. **Publisher**: Clean organization name\n    - Official publisher name\n    - Example: \"Elsevier\" or \"Nature Publishing Group\"\n\nABSTRACT EXTRACTION PRIORITY:\n- Look thoroughly across ALL pages for abstract sections\n- Extract COMPLETE text, including multiple paragraphs\n- Check: Abstract, Summary, Introduction summary paragraphs\n- This field is CRITICAL for API enrichment success\n\nReturn JSON format:\n{\n  \"Title\": \"clean title without formatting\",\n  \"Authors\": [\"Author One\", \"Author Two\"],\n  \"DOI\": \"10.xxxx/xxxxx\",\n  \"Journal\": \"clean journal name\", \n  \"Year\": 2024,\n  \"Volume\": \"15\",\n  \"Issue\": \"3\", \n  \"Pages\": \"123-135\",\n  \"Abstract\": \"complete clean abstract text\",\n  \"Keywords\": [\"keyword1\", \"keyword2\"],\n  \"PMID\": \"12345678\",\n  \"PMCID\": \"9876543\",\n  \"Publisher\": \"publisher name\"\n}\n\nReturn null for fields not clearly visible. The Abstract field is MOST IMPORTANT for downstream API success.",
+  "cost_tracking": {
+    "model": "gpt-4o",
+    "call_type": "vision_extraction",
+    "timestamp": "2025-07-22T14:28:57.396187",
+    "input_cost": 0.007725,
+    "total_cost": 0.014265,
+    "output_cost": 0.00654,
+    "input_tokens": 3090,
+    "total_tokens": 3744,
+    "output_tokens": 654
+  },
+  "input_details": {
+    "dpi": 120,
+    "max_tokens": 1500,
+    "model_used": "gpt-4o",
+    "temperature": 0.1,
+    "page_strategy": "strategic",
+    "image_resolution": "high",
+    "processing_time_ms": 24277,
+    "pdf_pages_processed": 3
+  },
+  "extracted_data": {
+    "DOI": "10.1097/j.pain.0000000000003384",
+    "PMID": null,
+    "Year": 2025,
+    "Issue": "3",
+    "PMCID": null,
+    "Pages": "571-586",
+    "Title": "Extended reality used in the treatment of phantom limb pain: a multicenter, double-blind, randomized controlled trial",
+    "Volume": "166",
+    "Authors": [
+      "Eva Lendaro",
+      "Corry K. Van der Sluis",
+      "Liselotte Hermansson",
+      "Lina Bunketorp-Kall",
+      "Helena Burger",
+      "Els Keesom",
+      "Cathrine Widehammar",
+      "Maria Munoz-Nova",
+      "Brian E. McGuire",
+      "Paul O'Reilly",
+      "Eric J. Earley",
+      "Soman Iqbal",
+      "Morten B. Kristoffersen",
+      "Anita Stockselius",
+      "Lena Gudmundsson",
+      "Wendy Hill",
+      "Martin Diers",
+      "Kristi L. Turner",
+      "Thomas Weiss",
+      "Max Ortiz-Catalan"
+    ],
+    "Journal": "Pain",
+    "Abstract": "Phantom limb pain (PLP) represents a significant challenge after amputation. This study investigated the use of phantom motor execution (PME) and phantom motor imagery (PMI) facilitated by extended reality (XR) for the treatment of PLP. Both treatments used XR, but PME involved overt execution of phantom movements, relying on the decoding of motor intent using machine learning to enable real-time control in XR. In contrast, PMI involved mental rehearsal of phantom movements guided by XR. The study hypothesized that PME would be superior to PMI. A multicenter, double-blind, randomized controlled trial was conducted in 9 outpatient clinics across 7 countries. Eighty-one participants with PLP were randomly assigned to PME or PMI training. The primary outcome was the change in PLP, measured by the Pain Rating Index, from baseline to treatment cessation. Secondary outcomes included various aspects related to PLP, such as the rate of clinically meaningful reduction in pain (CMRP; >50% pain decrease). No evidence was found for superiority of overt execution (PME) over imagery (PMI) using XR. PLP decreased by 64.5% and 68.2% in PME and PMI groups, respectively. Thirty-seven PME participants (71%) and 19 PMI participants (68%) experienced CMRP. Positive changes were recorded in all other secondary outcome differences. Pain reduction for PME was larger than previously reported. Despite our initial hypothesis not being supported, PME and PMI, aided by XR, are likely to offer meaningful PLP relief to most users. These findings merit consideration for clinical implementation.",
+    "Keywords": [
+      "phantom limb pain",
+      "phantom motor execution",
+      "virtual reality",
+      "augmented reality",
+      "rehabilitation",
+      "pain management"
+    ],
+    "Publisher": "Wolters Kluwer Health"
+  },
+  "pages_processed": 3,
+  "extraction_matrix": {
+    "_performance_summary": {
+      "total_cost": 0.0,
+      "data_source": "vision_json",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "vision_status": "COMPLETE",
+      "extraction_rate": 84.62,
+      "extraction_source": "gpt-4o-vision",
+      "performance_level": "EXCELLENT",
+      "fields_with_content": 11,
+      "processing_time_seconds": 0,
+      "total_fields_in_response": 13
+    }
+  },
+  "extraction_method": "vision_strategic_strategy",
+  "extraction_quality": {
+    "success_rate": 50.0,
+    "quality_score": 50.0,
+    "successful_fields": 11,
+    "validation_details": {
+      "errors": [],
+      "is_valid": true,
+      "warnings": [],
+      "quality_score": 100,
+      "completeness_score": 100.0
+    },
+    "total_fields_attempted": 13
+  },
+  "processing_time_ms": 24277,
+  "raw_openai_response": {
+    "content": "```json\n{\n  \"Title\": \"Extended reality used in the treatment of phantom limb pain: a multicenter, double-blind, randomized controlled trial\",\n  \"Authors\": [\n    \"Eva Lendaro\",\n    \"Corry K. Van der Sluis\",\n    \"Liselotte Hermansson\",\n    \"Lina Bunketorp-Kall\",\n    \"Helena Burger\",\n    \"Els Keesom\",\n    \"Cathrine Widehammar\",\n    \"Maria Munoz-Nova\",\n    \"Brian E. McGuire\",\n    \"Paul O'Reilly\",\n    \"Eric J. Earley\",\n    \"Soman Iqbal\",\n    \"Morten B. Kristoffersen\",\n    \"Anita Stockselius\",\n    \"Lena Gudmundsson\",\n    \"Wendy Hill\",\n    \"Martin Diers\",\n    \"Kristi L. Turner\",\n    \"Thomas Weiss\",\n    \"Max Ortiz-Catalan\"\n  ],\n  \"DOI\": \"10.1097/j.pain.0000000000003384\",\n  \"Journal\": \"Pain\",\n  \"Year\": 2025,\n  \"Volume\": \"166\",\n  \"Issue\": \"3\",\n  \"Pages\": \"571-586\",\n  \"Abstract\": \"Phantom limb pain (PLP) represents a significant challenge after amputation. This study investigated the use of phantom motor execution (PME) and phantom motor imagery (PMI) facilitated by extended reality (XR) for the treatment of PLP. Both treatments used XR, but PME involved overt execution of phantom movements, relying on the decoding of motor intent using machine learning to enable real-time control in XR. In contrast, PMI involved mental rehearsal of phantom movements guided by XR. The study hypothesized that PME would be superior to PMI. A multicenter, double-blind, randomized controlled trial was conducted in 9 outpatient clinics across 7 countries. Eighty-one participants with PLP were randomly assigned to PME or PMI training. The primary outcome was the change in PLP, measured by the Pain Rating Index, from baseline to treatment cessation. Secondary outcomes included various aspects related to PLP, such as the rate of clinically meaningful reduction in pain (CMRP; >50% pain decrease). No evidence was found for superiority of overt execution (PME) over imagery (PMI) using XR. PLP decreased by 64.5% and 68.2% in PME and PMI groups, respectively. Thirty-seven PME participants (71%) and 19 PMI participants (68%) experienced CMRP. Positive changes were recorded in all other secondary outcome differences. Pain reduction for PME was larger than previously reported. Despite our initial hypothesis not being supported, PME and PMI, aided by XR, are likely to offer meaningful PLP relief to most users. These findings merit consideration for clinical implementation.\",\n  \"Keywords\": [\n    \"phantom limb pain\",\n    \"phantom motor execution\",\n    \"virtual reality\",\n    \"augmented reality\",\n    \"rehabilitation\",\n    \"pain management\"\n  ],\n  \"PMID\": null,\n  \"PMCID\": null,\n  \"Publisher\": \"Wolters Kluwer Health\"\n}\n```",
+    "parsing_error": "Expecting value: line 1 column 1 (char 0)",
+    "response_length": 2619,
+    "parsing_successful": false
+  },
+  "processing_timestamp": "2025-07-22T14:28:57.396175"
+}

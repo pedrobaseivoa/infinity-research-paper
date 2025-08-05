@@ -1,0 +1,1547 @@
+{
+  "core": {
+    "data": {
+      "data": {
+        "doi": "10.1186/s12891-021-04261-1",
+        "year": 2021,
+        "title": "Effectiveness of interactive augmented reality-based telerehabilitation in patients with adhesive capsulitis: protocol for a multi-center randomized controlled trial",
+        "authors": [
+          "Do, Jong Geol",
+          "Hwang, Ji Hye",
+          "Lee, Jong In",
+          "Lim, Jae-Young",
+          "Lim, Ji Young",
+          "Yeo, Seung Mi"
+        ],
+        "core_id": 148022699,
+        "journal": "BMC Musculoskeletal Disorders",
+        "pdf_url": "https://core.ac.uk/download/567568036.pdf",
+        "abstract": "Background\r\n                As the primary treatment for adhesive capsulitis, intensive and accurate home exercise is as important as physical therapy in hospitals. Augmented reality (AR)-based telerehabilitation has been implemented recently in various musculoskeletal conditions to increase patient compliance and enable patients to exercise with the correct posture. The objective of this study is to present a protocol for investigating the additive effect of interactive AR-based telerehabilitation in comparison with the usual care for patients with adhesive capsulitis.\r\n        \r\n                Methods\r\n                This study presents the protocol of a prospective, multi-center, single-blinded, two-armed randomized controlled trial (RCT). One hundred patients with stage I or II adhesive capsulitis will be recruited at the physical medicine and rehabilitation clinic. Patients will be randomly divided into two groups with 1:1 allocation. The intervention group will receive 3 months of hospital-based physical therapy in conjunction with home-based telerehabilitation. The control group will receive 3 months of hospital-based physical therapy in conjunction with a home-based exercise described in a brochure provided by the hospital. The primary outcome will be the change in passive range of motion (ROM) of the affected shoulder joint from baseline to 12 weeks after baseline assessment. The secondary outcomes will be active ROM, pain measured with the numeric rating scale, shoulder pain and disability index, 36-Item Short Form Survey, EuroQoL-5D-5L, and Canadian Occupational Performance Measure.\r\n              \r\n             Discussion\r\n                This will be the first RCT study protocol to investigate the effect of telerehabilitation in patients with adhesive capsulitis. The result of this RCT will determine whether AR-based telerehabilitation is more effective than a brochure-based home exercise program and will provide evidence of the usefulness of telerehabilitation using hardware (IoT) and software (monitoring platform) technologies to develop digital therapeutics for the future.\r\n            \r\n                Trial registration\r\n                This trial was retrospectively registered at the \r\n                  Clinicaltrials.gov\r\n                  \r\n                 website on 20 March 2020, with the identifier \r\n                  NCT04316130This research was reviewed by external peers during funding process and is being financially supported by a grant from the Korea Health Technology R&D Project through the Korea Health Industry Development Institute, funded by the Ministry of Health & Welfare, Republic of Korea (grant number: HI19C0781). The funding body supports the design of the study and collection, participant support costs, and publication fee",
+        "repository": "",
+        "open_access": false,
+        "citation_count": 0
+      },
+      "success": true,
+      "strategy": "DOI"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:33:50.335170",
+    "processing_time_ms": 2874
+  },
+  "doaj": {
+    "data": {
+      "found": true,
+      "total": 1,
+      "results": [
+        {
+          "id": "2783b4291ce44e649a644fa7daa39fa3",
+          "bibjson": {
+            "link": [
+              {
+                "url": "https://doi.org/10.1186/s12891-021-04261-1",
+                "type": "fulltext",
+                "content_type": "HTML"
+              }
+            ],
+            "year": "2021",
+            "month": "4",
+            "title": "Effectiveness of interactive augmented reality-based telerehabilitation in patients with adhesive capsulitis: protocol for a multi-center randomized controlled trial",
+            "author": [
+              {
+                "name": "Seung Mi Yeo",
+                "affiliation": "Department of Physical and Rehabilitation Medicine, Samsung Medical Center, Sungkyunkwan University School of Medicine"
+              },
+              {
+                "name": "Ji Young Lim",
+                "affiliation": "Department of Physical Therapy, General School of Medical Sciences, Konyang University"
+              },
+              {
+                "name": "Jong Geol Do",
+                "affiliation": "Department of Physical and Rehabilitation Medicine, Samsung Medical Center, Sungkyunkwan University School of Medicine"
+              },
+              {
+                "name": "Jae-Young Lim",
+                "affiliation": "Department of Rehabilitation Medicine, Seoul National University College of Medicine, Seoul National University Bundang Hospital"
+              },
+              {
+                "name": "Jong In Lee",
+                "affiliation": "Department of Rehabilitation Medicine, Seoul St. Mary’s Hospital, College of Medicine, The Catholic University of Korea"
+              },
+              {
+                "name": "Ji Hye Hwang",
+                "affiliation": "Department of Physical and Rehabilitation Medicine, Samsung Medical Center, Sungkyunkwan University School of Medicine"
+              }
+            ],
+            "journal": {
+              "issns": [
+                "1471-2474"
+              ],
+              "title": "BMC Musculoskeletal Disorders",
+              "number": "1",
+              "volume": "22",
+              "country": "GB",
+              "language": [
+                "EN"
+              ],
+              "publisher": "BMC"
+            },
+            "subject": [
+              {
+                "code": "RC925-935",
+                "term": "Diseases of the musculoskeletal system",
+                "scheme": "LCC"
+              }
+            ],
+            "abstract": "Abstract Background As the primary treatment for adhesive capsulitis, intensive and accurate home exercise is as important as physical therapy in hospitals. Augmented reality (AR)-based telerehabilitation has been implemented recently in various musculoskeletal conditions to increase patient compliance and enable patients to exercise with the correct posture. The objective of this study is to present a protocol for investigating the additive effect of interactive AR-based telerehabilitation in comparison with the usual care for patients with adhesive capsulitis. Methods This study presents the protocol of a prospective, multi-center, single-blinded, two-armed randomized controlled trial (RCT). One hundred patients with stage I or II adhesive capsulitis will be recruited at the physical medicine and rehabilitation clinic. Patients will be randomly divided into two groups with 1:1 allocation. The intervention group will receive 3 months of hospital-based physical therapy in conjunction with home-based telerehabilitation. The control group will receive 3 months of hospital-based physical therapy in conjunction with a home-based exercise described in a brochure provided by the hospital. The primary outcome will be the change in passive range of motion (ROM) of the affected shoulder joint from baseline to 12 weeks after baseline assessment. The secondary outcomes will be active ROM, pain measured with the numeric rating scale, shoulder pain and disability index, 36-Item Short Form Survey, EuroQoL-5D-5L, and Canadian Occupational Performance Measure. Discussion This will be the first RCT study protocol to investigate the effect of telerehabilitation in patients with adhesive capsulitis. The result of this RCT will determine whether AR-based telerehabilitation is more effective than a brochure-based home exercise program and will provide evidence of the usefulness of “telerehabilitation” using hardware (IoT) and software (monitoring platform) technologies to develop “digital therapeutics” for the future. Trial registration This trial was retrospectively registered at the Clinicaltrials.gov website on 20 March 2020, with the identifier NCT04316130 .",
+            "end_page": "9",
+            "keywords": [
+              "Adhesive capsulitis",
+              "Telerehabilitation",
+              "Multi-center randomized controlled trial",
+              "Augmented reality"
+            ],
+            "identifier": [
+              {
+                "id": "10.1186/s12891-021-04261-1",
+                "type": "doi"
+              },
+              {
+                "id": "1471-2474",
+                "type": "eissn"
+              }
+            ],
+            "start_page": "1"
+          },
+          "created_date": "2021-05-02T12:18:13Z",
+          "last_updated": "2022-12-21T22:42:44Z"
+        }
+      ]
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:33:48.658089",
+    "processing_time_ms": 1186
+  },
+  "arxiv": {
+    "error": "No results found",
+    "success": false,
+    "timestamp": "2025-07-22T14:33:49.055093",
+    "processing_time_ms": 1591
+  },
+  "orcid": {
+    "data": {
+      "person": {
+        "name": {
+          "path": "0000-0002-9633-6179",
+          "source": null,
+          "visibility": "public",
+          "credit-name": null,
+          "family-name": {
+            "value": "Yeo"
+          },
+          "given-names": {
+            "value": "Seung Mi"
+          },
+          "created-date": {
+            "value": 1523796704228
+          },
+          "last-modified-date": {
+            "value": 1567643570018
+          }
+        },
+        "path": "/0000-0002-9633-6179/person",
+        "emails": {
+          "path": "/0000-0002-9633-6179/email",
+          "email": [],
+          "last-modified-date": null
+        },
+        "keywords": {
+          "path": "/0000-0002-9633-6179/keywords",
+          "keyword": [],
+          "last-modified-date": null
+        },
+        "addresses": {
+          "path": "/0000-0002-9633-6179/address",
+          "address": [],
+          "last-modified-date": null
+        },
+        "biography": null,
+        "other-names": {
+          "path": "/0000-0002-9633-6179/other-names",
+          "other-name": [],
+          "last-modified-date": null
+        },
+        "researcher-urls": {
+          "path": "/0000-0002-9633-6179/researcher-urls",
+          "researcher-url": [],
+          "last-modified-date": null
+        },
+        "last-modified-date": null,
+        "external-identifiers": {
+          "path": "/0000-0002-9633-6179/external-identifiers",
+          "last-modified-date": null,
+          "external-identifier": []
+        }
+      },
+      "orcid_id": "0000-0002-9633-6179"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:33:48.997484",
+    "processing_time_ms": 1520
+  },
+  "pubmed": {
+    "data": {
+      "PubmedArticle": [
+        {
+          "MedlineCitation": {
+            "PMID": {
+              "content": "33902546"
+            },
+            "Article": {
+              "Journal": {
+                "Title": "BMC musculoskeletal disorders",
+                "JournalIssue": {
+                  "Issue": "1",
+                  "Volume": "22",
+                  "PubDate": {
+                    "Year": "2021"
+                  }
+                }
+              },
+              "Abstract": {
+                "AbstractText": [
+                  "As the primary treatment for adhesive capsulitis, intensive and accurate home exercise is as important as physical therapy in hospitals. Augmented reality (AR)-based telerehabilitation has been implemented recently in various musculoskeletal conditions to increase patient compliance and enable patients to exercise with the correct posture. The objective of this study is to present a protocol for investigating the additive effect of interactive AR-based telerehabilitation in comparison with the usual care for patients with adhesive capsulitis.",
+                  "This study presents the protocol of a prospective, multi-center, single-blinded, two-armed randomized controlled trial (RCT). One hundred patients with stage I or II adhesive capsulitis will be recruited at the physical medicine and rehabilitation clinic. Patients will be randomly divided into two groups with 1:1 allocation. The intervention group will receive 3 months of hospital-based physical therapy in conjunction with home-based telerehabilitation. The control group will receive 3 months of hospital-based physical therapy in conjunction with a home-based exercise described in a brochure provided by the hospital. The primary outcome will be the change in passive range of motion (ROM) of the affected shoulder joint from baseline to 12 weeks after baseline assessment. The secondary outcomes will be active ROM, pain measured with the numeric rating scale, shoulder pain and disability index, 36-Item Short Form Survey, EuroQoL-5D-5L, and Canadian Occupational Performance Measure.",
+                  "This will be the first RCT study protocol to investigate the effect of telerehabilitation in patients with adhesive capsulitis. The result of this RCT will determine whether AR-based telerehabilitation is more effective than a brochure-based home exercise program and will provide evidence of the usefulness of \"telerehabilitation\" using hardware (IoT) and software (monitoring platform) technologies to develop \"digital therapeutics\" for the future.",
+                  "This trial was retrospectively registered at the Clinicaltrials.gov website on 20 March 2020, with the identifier NCT04316130 ."
+                ]
+              },
+              "AuthorList": {
+                "Author": [
+                  {
+                    "ForeName": "Seung Mi",
+                    "LastName": "Yeo"
+                  },
+                  {
+                    "ForeName": "Ji Young",
+                    "LastName": "Lim"
+                  },
+                  {
+                    "ForeName": "Jong Geol",
+                    "LastName": "Do"
+                  },
+                  {
+                    "ForeName": "Jae-Young",
+                    "LastName": "Lim"
+                  },
+                  {
+                    "ForeName": "Jong",
+                    "LastName": "In Lee"
+                  },
+                  {
+                    "ForeName": "Ji Hye",
+                    "LastName": "Hwang"
+                  }
+                ]
+              },
+              "Pagination": {
+                "MedlinePgn": "386"
+              },
+              "ArticleTitle": "Effectiveness of interactive augmented reality-based telerehabilitation in patients with adhesive capsulitis: protocol for a multi-center randomized controlled trial."
+            }
+          }
+        }
+      ]
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:33:49.556133",
+    "processing_time_ms": 2107
+  },
+  "crossref": {
+    "data": {
+      "status": "ok",
+      "message": {
+        "DOI": "10.1186/s12891-021-04261-1",
+        "URL": "https://doi.org/10.1186/s12891-021-04261-1",
+        "ISSN": [
+          "1471-2474"
+        ],
+        "link": [
+          {
+            "URL": "https://link.springer.com/content/pdf/10.1186/s12891-021-04261-1.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://link.springer.com/article/10.1186/s12891-021-04261-1/fulltext.html",
+            "content-type": "text/html",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://link.springer.com/content/pdf/10.1186/s12891-021-04261-1.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "type": "journal-article",
+        "issue": "1",
+        "score": 1,
+        "title": [
+          "Effectiveness of interactive augmented reality-based telerehabilitation in patients with adhesive capsulitis: protocol for a multi-center randomized controlled trial"
+        ],
+        "author": [
+          {
+            "given": "Seung Mi",
+            "family": "Yeo",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Ji Young",
+            "family": "Lim",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Jong Geol",
+            "family": "Do",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Jae-Young",
+            "family": "Lim",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Jong",
+            "family": "In Lee",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-8176-3354",
+            "given": "Ji Hye",
+            "family": "Hwang",
+            "sequence": "additional",
+            "affiliation": [],
+            "authenticated-orcid": false
+          }
+        ],
+        "funder": [
+          {
+            "id": [
+              {
+                "id": "10.13039/501100003710",
+                "id-type": "DOI",
+                "asserted-by": "publisher"
+              }
+            ],
+            "DOI": "10.13039/501100003710",
+            "name": "Korea Health Industry Development Institute",
+            "award": [
+              "HI19C0781"
+            ],
+            "doi-asserted-by": "publisher"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2021,
+              4,
+              26
+            ]
+          ]
+        },
+        "member": "297",
+        "prefix": "10.1186",
+        "source": "Crossref",
+        "volume": "22",
+        "created": {
+          "date-time": "2021-04-26T15:07:58Z",
+          "timestamp": 1619449678000,
+          "date-parts": [
+            [
+              2021,
+              4,
+              26
+            ]
+          ]
+        },
+        "indexed": {
+          "version": "3.37.3",
+          "date-time": "2025-07-04T08:49:46Z",
+          "timestamp": 1751618986165,
+          "date-parts": [
+            [
+              2025,
+              7,
+              4
+            ]
+          ]
+        },
+        "license": [
+          {
+            "URL": "http://creativecommons.org/licenses/by/4.0/",
+            "start": {
+              "date-time": "2021-04-26T00:00:00Z",
+              "timestamp": 1619395200000,
+              "date-parts": [
+                [
+                  2021,
+                  4,
+                  26
+                ]
+              ]
+            },
+            "delay-in-days": 0,
+            "content-version": "tdm"
+          },
+          {
+            "URL": "http://creativecommons.org/licenses/by/4.0/",
+            "start": {
+              "date-time": "2021-04-26T00:00:00Z",
+              "timestamp": 1619395200000,
+              "date-parts": [
+                [
+                  2021,
+                  4,
+                  26
+                ]
+              ]
+            },
+            "delay-in-days": 0,
+            "content-version": "vor"
+          }
+        ],
+        "subject": [],
+        "abstract": "<jats:title>Abstract</jats:title><jats:sec>\n                <jats:title>Background</jats:title>\n                <jats:p>As the primary treatment for adhesive capsulitis, intensive and accurate home exercise is as important as physical therapy in hospitals. Augmented reality (AR)-based telerehabilitation has been implemented recently in various musculoskeletal conditions to increase patient compliance and enable patients to exercise with the correct posture. The objective of this study is to present a protocol for investigating the additive effect of interactive AR-based telerehabilitation in comparison with the usual care for patients with adhesive capsulitis.</jats:p>\n              </jats:sec><jats:sec>\n                <jats:title>Methods</jats:title>\n                <jats:p>This study presents the protocol of a prospective, multi-center, single-blinded, two-armed randomized controlled trial (RCT). One hundred patients with stage I or II adhesive capsulitis will be recruited at the physical medicine and rehabilitation clinic. Patients will be randomly divided into two groups with 1:1 allocation. The intervention group will receive 3 months of hospital-based physical therapy in conjunction with home-based telerehabilitation. The control group will receive 3 months of hospital-based physical therapy in conjunction with a home-based exercise described in a brochure provided by the hospital. The primary outcome will be the change in passive range of motion (ROM) of the affected shoulder joint from baseline to 12 weeks after baseline assessment. The secondary outcomes will be active ROM, pain measured with the numeric rating scale, shoulder pain and disability index, 36-Item Short Form Survey, EuroQoL-5D-5L, and Canadian Occupational Performance Measure.</jats:p>\n              </jats:sec><jats:sec>\n                <jats:title>Discussion</jats:title>\n                <jats:p>This will be the first RCT study protocol to investigate the effect of telerehabilitation in patients with adhesive capsulitis. The result of this RCT will determine whether AR-based telerehabilitation is more effective than a brochure-based home exercise program and will provide evidence of the usefulness of “telerehabilitation” using hardware (IoT) and software (monitoring platform) technologies to develop “digital therapeutics” for the future.</jats:p>\n              </jats:sec><jats:sec>\n                <jats:title>Trial registration</jats:title>\n                <jats:p>This trial was retrospectively registered at the <jats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"uri\" xlink:href=\"http://clinicaltrials.gov\">Clinicaltrials.gov</jats:ext-link> website on 20 March 2020, with the identifier <jats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"uri\" xlink:href=\"https://clinicaltrials.gov/ct2/show/NCT04316130\">NCT04316130</jats:ext-link>.</jats:p>\n              </jats:sec>",
+        "language": "en",
+        "relation": {},
+        "resource": {
+          "primary": {
+            "URL": "https://bmcmusculoskeletdisord.biomedcentral.com/articles/10.1186/s12891-021-04261-1"
+          }
+        },
+        "subtitle": [],
+        "assertion": [
+          {
+            "name": "received",
+            "group": {
+              "name": "ArticleHistory",
+              "label": "Article History"
+            },
+            "label": "Received",
+            "order": 1,
+            "value": "19 February 2021"
+          },
+          {
+            "name": "accepted",
+            "group": {
+              "name": "ArticleHistory",
+              "label": "Article History"
+            },
+            "label": "Accepted",
+            "order": 2,
+            "value": "14 April 2021"
+          },
+          {
+            "name": "first_online",
+            "group": {
+              "name": "ArticleHistory",
+              "label": "Article History"
+            },
+            "label": "First Online",
+            "order": 3,
+            "value": "26 April 2021"
+          },
+          {
+            "name": "Ethics",
+            "group": {
+              "name": "EthicsHeading",
+              "label": "Declarations"
+            },
+            "order": 1
+          },
+          {
+            "name": "Ethics",
+            "group": {
+              "name": "EthicsHeading",
+              "label": "Ethics approval and consent to participate"
+            },
+            "order": 2,
+            "value": "The study was approved by the Institutional Review Board for Clinical trial, Samsung Medical Center (No. SMC-2019-05-021) and Seoul St. Mary’s Hospital (KC20ENDE0254). A written informed consent will be obtained from the patient."
+          },
+          {
+            "name": "Ethics",
+            "group": {
+              "name": "EthicsHeading",
+              "label": "Consent for publication"
+            },
+            "order": 3,
+            "value": "Not applicable."
+          },
+          {
+            "name": "Ethics",
+            "group": {
+              "name": "EthicsHeading",
+              "label": "Competing interests"
+            },
+            "order": 4,
+            "value": "The authors declare that they have no competing interests."
+          }
+        ],
+        "deposited": {
+          "date-time": "2021-04-26T15:13:20Z",
+          "timestamp": 1619450000000,
+          "date-parts": [
+            [
+              2021,
+              4,
+              26
+            ]
+          ]
+        },
+        "issn-type": [
+          {
+            "type": "electronic",
+            "value": "1471-2474"
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2021,
+              4,
+              26
+            ]
+          ]
+        },
+        "publisher": "Springer Science and Business Media LLC",
+        "reference": [
+          {
+            "DOI": "10.5435/00124635-201109000-00004",
+            "key": "4261_CR1",
+            "year": "2011",
+            "issue": "9",
+            "author": "AS Neviaser",
+            "volume": "19",
+            "first-page": "536",
+            "unstructured": "Neviaser AS, Neviaser RJ. Adhesive capsulitis of the shoulder. J Am Acad Orthop Surg. 2011;19(9):536–42. https://doi.org/10.5435/00124635-201109000-00004.",
+            "journal-title": "J Am Acad Orthop Surg",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "key": "4261_CR2",
+            "year": "2019",
+            "issue": "5",
+            "author": "J Ramirez",
+            "volume": "99",
+            "first-page": "297",
+            "unstructured": "Ramirez J. Adhesive capsulitis: diagnosis and management. Am Fam Physician. 2019;99(5):297–300.",
+            "journal-title": "Am Fam Physician"
+          },
+          {
+            "DOI": "10.1007/s12178-008-9031-6",
+            "key": "4261_CR3",
+            "year": "2008",
+            "issue": "3",
+            "author": "RC Manske",
+            "volume": "1",
+            "first-page": "180",
+            "unstructured": "Manske RC, Prohaska D. Diagnosis and management of adhesive capsulitis. Curr Rev Musculoskelet Med. 2008;1(3):180–9. https://doi.org/10.1007/s12178-008-9031-6.",
+            "journal-title": "Curr Rev Musculoskelet Med",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "key": "4261_CR4",
+            "year": "1978",
+            "issue": "4",
+            "author": "RG Grey",
+            "volume": "60",
+            "first-page": "564",
+            "unstructured": "Grey RG. The natural history of \"idiopathic\" frozen shoulder. J Bone Joint Surg Am. 1978;60(4):564.",
+            "journal-title": "J Bone Joint Surg Am"
+          },
+          {
+            "DOI": "10.2106/00004623-199274050-00013",
+            "key": "4261_CR5",
+            "year": "1992",
+            "issue": "5",
+            "author": "B Shaffer",
+            "volume": "74",
+            "first-page": "738",
+            "unstructured": "Shaffer B, Tibone JE, Kerlan RK. Frozen shoulder. A long-term follow-up. J Bone Joint Surg Am. 1992;74(5):738–46. https://doi.org/10.2106/00004623-199274050-00013.",
+            "journal-title": "J Bone Joint Surg Am",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1016/j.jse.2007.05.009",
+            "key": "4261_CR6",
+            "year": "2008",
+            "issue": "2",
+            "author": "C Hand",
+            "volume": "17",
+            "first-page": "231",
+            "unstructured": "Hand C, Clipsham K, Rees JL, Carr AJ. Long-term outcome of frozen shoulder. J Shoulder Elb Surg. 2008;17(2):231–6. https://doi.org/10.1016/j.jse.2007.05.009.",
+            "journal-title": "J Shoulder Elb Surg",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1016/j.physio.2016.05.009",
+            "key": "4261_CR7",
+            "year": "2017",
+            "issue": "1",
+            "author": "CK Wong",
+            "volume": "103",
+            "first-page": "40",
+            "unstructured": "Wong CK, Levine WN, Deo K, Kesting RS, Mercer EA, Schram GA, et al. Natural history of frozen shoulder: fact or fiction? A systematic review. Physiotherapy. 2017;103(1):40–7. https://doi.org/10.1016/j.physio.2016.05.009.",
+            "journal-title": "Physiotherapy",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1016/j.physio.2009.09.003",
+            "key": "4261_CR8",
+            "year": "2010",
+            "issue": "2",
+            "author": "V Blanchard",
+            "volume": "96",
+            "first-page": "95",
+            "unstructured": "Blanchard V, Barr S, Cerisola FL. The effectiveness of corticosteroid injections compared with physiotherapeutic interventions for adhesive capsulitis: a systematic review. Physiotherapy. 2010;96(2):95–107. https://doi.org/10.1016/j.physio.2009.09.003.",
+            "journal-title": "Physiotherapy",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.3233/BMR-130443",
+            "key": "4261_CR9",
+            "year": "2014",
+            "issue": "3",
+            "author": "TK Jain",
+            "volume": "27",
+            "first-page": "247",
+            "unstructured": "Jain TK, Sharma NK. The effectiveness of physiotherapeutic interventions in treatment of frozen shoulder/adhesive capsulitis: a systematic review. J Back Musculoskelet Rehabil. 2014;27(3):247–73. https://doi.org/10.3233/BMR-130443.",
+            "journal-title": "J Back Musculoskelet Rehabil",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1007/s10067-010-1525-0",
+            "key": "4261_CR10",
+            "year": "2010",
+            "issue": "12",
+            "author": "K Tanaka",
+            "volume": "29",
+            "first-page": "1439",
+            "unstructured": "Tanaka K, Saura R, Takahashi N, Hiura Y, Hashimoto R. Joint mobilization versus self-exercises for limited glenohumeral joint mobility: randomized controlled study of management of rehabilitation. Clin Rheumatol. 2010;29(12):1439–44. https://doi.org/10.1007/s10067-010-1525-0.",
+            "journal-title": "Clin Rheumatol",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1258/135763307781458886",
+            "key": "4261_CR11",
+            "year": "2007",
+            "issue": "5",
+            "author": "TG Russell",
+            "volume": "13",
+            "first-page": "217",
+            "unstructured": "Russell TG. Physical rehabilitation using telemedicine. J Telemed Telecare. 2007;13(5):217–20. https://doi.org/10.1258/135763307781458886.",
+            "journal-title": "J Telemed Telecare",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1177/0269215516645148",
+            "key": "4261_CR12",
+            "year": "2017",
+            "issue": "5",
+            "author": "MA Cottrell",
+            "volume": "31",
+            "first-page": "625",
+            "unstructured": "Cottrell MA, Galea OA, O'Leary SP, Hill AJ, Russell TG. Real-time telerehabilitation for the treatment of musculoskeletal conditions is effective and comparable to standard practice: a systematic review and meta-analysis. Clin Rehabil. 2017;31(5):625–38. https://doi.org/10.1177/0269215516645148.",
+            "journal-title": "Clin Rehabil",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1136/bmj.e7586",
+            "key": "4261_CR13",
+            "unstructured": "Chan A-W, Tetzlaff JM, Gøtzsche PC, Altman DG, Mann H, Berlin JA, et al. SPIRIT 2013 explanation and elaboration: guidance for protocols of clinical trials. BMJ. 2013;346(jan08 15). https://doi.org/10.1136/bmj.e7586.",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.2519/jospt.2013.0302",
+            "key": "4261_CR14",
+            "year": "2013",
+            "issue": "5",
+            "author": "MJ Kelley",
+            "volume": "43",
+            "first-page": "A1",
+            "unstructured": "Kelley MJ, Shaffer MA, Kuhn JE, Michener LA, Seitz AL, Uhl TL, et al. Shoulder pain and mobility deficits: adhesive capsulitis: clinical practice guidelines linked to the international classification of functioning, disability, and health from the Orthopaedic section of the American Physical Therapy Association. J Orthop Sports Phys Ther. 2013;43(5):A1–A31. https://doi.org/10.2519/jospt.2013.0302.",
+            "journal-title": "J Orthop Sports Phys Ther",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1177/0363546509348048",
+            "key": "4261_CR15",
+            "year": "2010",
+            "issue": "11",
+            "author": "AS Neviaser",
+            "volume": "38",
+            "first-page": "2346",
+            "unstructured": "Neviaser AS, Hannafin JA. Adhesive capsulitis: a review of current treatment. Am J Sports Med. 2010;38(11):2346–56. https://doi.org/10.1177/0363546509348048.",
+            "journal-title": "Am J Sports Med",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1111/j.1530-7085.2003.03034.x",
+            "key": "4261_CR16",
+            "year": "2003",
+            "issue": "4",
+            "author": "CT Hartrick",
+            "volume": "3",
+            "first-page": "310",
+            "unstructured": "Hartrick CT, Kovan JP, Shapiro S. The numeric rating scale for clinical pain measurement: a ratio measure? Pain Practice. 2003;3(4):310–6. https://doi.org/10.1111/j.1530-7085.2003.03034.x.",
+            "journal-title": "Pain Practice",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1002/art.1790040403",
+            "key": "4261_CR17",
+            "year": "1991",
+            "issue": "4",
+            "author": "KE Roach",
+            "volume": "4",
+            "first-page": "143",
+            "unstructured": "Roach KE, Budiman-Mak E, Songsiridej N, Lertratanakul Y. Development of a shoulder pain and disability index. Arthritis Rheumatism. 1991;4(4):143–9. https://doi.org/10.1002/art.1790040403.",
+            "journal-title": "Arthritis Rheumatism",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1097/00005650-199206000-00002",
+            "key": "4261_CR18",
+            "year": "1992",
+            "issue": "6",
+            "author": "JE Ware Jr",
+            "volume": "30",
+            "first-page": "473",
+            "unstructured": "Ware JE Jr, Sherbourne CD. The MOS 36-item short-form health survey (SF-36): I. Conceptual framework and item selection. Med Care. 1992;30(6):473–83. https://doi.org/10.1097/00005650-199206000-00002.",
+            "journal-title": "Med Care",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1007/s11136-015-1205-2",
+            "key": "4261_CR19",
+            "year": "2016",
+            "issue": "7",
+            "author": "SH Kim",
+            "volume": "25",
+            "first-page": "1845",
+            "unstructured": "Kim SH, Ahn J, Ock M, Shin S, Park J, Luo N, et al. The EQ-5D-5L valuation study in Korea. Qual Life Res. 2016;25(7):1845–52. https://doi.org/10.1007/s11136-015-1205-2.",
+            "journal-title": "Qual Life Res",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1177/000841740006700105",
+            "key": "4261_CR20",
+            "year": "2000",
+            "issue": "1",
+            "author": "MA McColl",
+            "volume": "67",
+            "first-page": "22",
+            "unstructured": "McColl MA, Paterson M, Davies D, Doubt L, Law M. Validity and community utility of the Canadian occupational performance measure. Can J Occup Ther. 2000;67(1):22–30. https://doi.org/10.1177/000841740006700105.",
+            "journal-title": "Can J Occup Ther",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1016/j.apmr.2012.10.002",
+            "key": "4261_CR21",
+            "year": "2013",
+            "issue": "2",
+            "author": "KD Park",
+            "volume": "94",
+            "first-page": "264",
+            "unstructured": "Park KD, Nam H-S, Lee JK, Kim YJ, Park Y. Treatment effects of ultrasound-guided capsular distension with hyaluronic acid in adhesive capsulitis of the shoulder. Arch Phys Med Rehabil. 2013;94(2):264–70. https://doi.org/10.1016/j.apmr.2012.10.002.",
+            "journal-title": "Arch Phys Med Rehabil",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1016/j.physio.2013.08.006",
+            "key": "4261_CR22",
+            "year": "2014",
+            "issue": "3",
+            "author": "M Ibrahim",
+            "volume": "100",
+            "first-page": "228",
+            "unstructured": "Ibrahim M, Donatelli R, Hellman M, Echternach J. Efficacy of a static progressive stretch device as an adjunct to physical therapy in treating adhesive capsulitis of the shoulder: a prospective, randomised study. Physiotherapy. 2014;100(3):228–34. https://doi.org/10.1016/j.physio.2013.08.006.",
+            "journal-title": "Physiotherapy",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1016/j.apmr.2012.01.021",
+            "key": "4261_CR23",
+            "year": "2012",
+            "issue": "6",
+            "author": "L-F Hsieh",
+            "volume": "93",
+            "first-page": "957",
+            "unstructured": "Hsieh L-F, Hsu W-C, Lin Y-J, Chang H-L, Chen C-C, Huang V. Addition of intra-articular hyaluronate injection to physical therapy program produces no extra benefits in patients with adhesive capsulitis of the shoulder: a randomized controlled trial. Arch Phys Med Rehabil. 2012;93(6):957–64. https://doi.org/10.1016/j.apmr.2012.01.021.",
+            "journal-title": "Arch Phys Med Rehabil",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1016/j.pmrj.2017.06.004",
+            "key": "4261_CR24",
+            "year": "2018",
+            "issue": "1",
+            "author": "JH Ahn",
+            "volume": "10",
+            "first-page": "19",
+            "unstructured": "Ahn JH, Lee D-H, Kang H, Lee MY, Kang DR, Yoon S-H. Early intra-articular corticosteroid injection improves pain and function in adhesive capsulitis of the shoulder: 1-year retrospective longitudinal study. PM&R. 2018;10(1):19–27. https://doi.org/10.1016/j.pmrj.2017.06.004.",
+            "journal-title": "PM&R",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1177/0269215515597294",
+            "key": "4261_CR25",
+            "year": "2016",
+            "issue": "8",
+            "author": "D Çelik",
+            "volume": "30",
+            "first-page": "786",
+            "unstructured": "Çelik D, Kaya Mutlu E. Does adding mobilization to stretching improve outcomes for people with frozen shoulder? A randomized controlled clinical trial. Clin Rehabil. 2016;30(8):786–94. https://doi.org/10.1177/0269215515597294.",
+            "journal-title": "Clin Rehabil",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.2519/jospt.2013.0302",
+            "key": "4261_CR26",
+            "year": "2013",
+            "issue": "5",
+            "author": "MJ Kelley",
+            "volume": "43",
+            "first-page": "A1",
+            "unstructured": "Kelley MJ, Shaffer MA, Kuhn JE, Michener LA, Seitz AL, Uhl TL, et al. Shoulder pain and mobility deficits: adhesive capsulitis. J Orthop Sports Phys Ther. 2013;43(5):A1–31. https://doi.org/10.2519/jospt.2013.0302.",
+            "journal-title": "J Orthop Sports Phys Ther",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.2196/17032",
+            "key": "4261_CR27",
+            "year": "2020",
+            "issue": "7",
+            "author": "YP Chen",
+            "volume": "22",
+            "first-page": "e17032",
+            "unstructured": "Chen YP, Lin CY, Tsai MJ, Chuang TY, Lee OK. Wearable motion sensor device to facilitate rehabilitation in patients with shoulder adhesive capsulitis: pilot study to assess feasibility. J Med Internet Res. 2020;22(7):e17032. https://doi.org/10.2196/17032.",
+            "journal-title": "J Med Internet Res",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "key": "4261_CR28",
+            "year": "2019",
+            "author": "J Cui",
+            "volume": "2019",
+            "first-page": "7681237",
+            "unstructured": "Cui J, Yeh SC, Lee SH. Wearable sensors integrated with virtual reality: a self-guided healthcare system measuring shoulder joint mobility for frozen shoulder. J Healthc Eng. 2019;2019:7681237.",
+            "journal-title": "J Healthc Eng"
+          }
+        ],
+        "short-title": [],
+        "journal-issue": {
+          "issue": "1",
+          "published-print": {
+            "date-parts": [
+              [
+                2021,
+                12
+              ]
+            ]
+          }
+        },
+        "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+        "alternative-id": [
+          "4261"
+        ],
+        "article-number": "386",
+        "content-domain": {
+          "domain": [
+            "link.springer.com"
+          ],
+          "crossmark-restriction": false
+        },
+        "original-title": [],
+        "container-title": [
+          "BMC Musculoskeletal Disorders"
+        ],
+        "published-print": {
+          "date-parts": [
+            [
+              2021,
+              12
+            ]
+          ]
+        },
+        "reference-count": 28,
+        "published-online": {
+          "date-parts": [
+            [
+              2021,
+              4,
+              26
+            ]
+          ]
+        },
+        "references-count": 28,
+        "short-container-title": [
+          "BMC Musculoskelet Disord"
+        ],
+        "is-referenced-by-count": 21
+      },
+      "message-type": "work",
+      "message-version": "1.0.0"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:33:48.858097",
+    "processing_time_ms": 1410
+  },
+  "datacite": {
+    "data": {
+      "data": {
+        "id": "10.6084/m9.figshare.14490106.v1",
+        "type": "dois",
+        "attributes": {
+          "doi": "10.6084/m9.figshare.14490106.v1",
+          "url": "https://springernature.figshare.com/articles/journal_contribution/Additional_file_3_of_Effectiveness_of_interactive_augmented_reality-based_telerehabilitation_in_patients_with_adhesive_capsulitis_protocol_for_a_multi-center_randomized_controlled_trial/14490106/1",
+          "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtNCBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC00LjEvbWV0YWRhdGEueHNkIj4KICA8aWRlbnRpZmllciBpZGVudGlmaWVyVHlwZT0iRE9JIj4xMC42MDg0L005LkZJR1NIQVJFLjE0NDkwMTA2LlYxPC9pZGVudGlmaWVyPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+U2V1bmcgTWkgWWVvPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+SmkgWW91bmcgTGltPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+Sm9uZyBHZW9sIERvPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+SmFlLVlvdW5nIExpbTwvY3JlYXRvck5hbWU+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPkpvbmcgSW4gTGVlPC9jcmVhdG9yTmFtZT4KICAgIDwvY3JlYXRvcj4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+SmkgSHllIEh3YW5nPC9jcmVhdG9yTmFtZT4KICAgICAgPG5hbWVJZGVudGlmaWVyIG5hbWVJZGVudGlmaWVyU2NoZW1lPSJPUkNJRCIgc2NoZW1lVVJJPSJodHRwOi8vb3JjaWQub3JnIj4wMDAwLTAwMDItODE3Ni0zMzU0PC9uYW1lSWRlbnRpZmllcj4KICAgIDwvY3JlYXRvcj4KICA8L2NyZWF0b3JzPgogIDx0aXRsZXM+CiAgICA8dGl0bGU+QWRkaXRpb25hbCBmaWxlIDMgb2YgRWZmZWN0aXZlbmVzcyBvZiBpbnRlcmFjdGl2ZSBhdWdtZW50ZWQgcmVhbGl0eS1iYXNlZCB0ZWxlcmVoYWJpbGl0YXRpb24gaW4gcGF0aWVudHMgd2l0aCBhZGhlc2l2ZSBjYXBzdWxpdGlzOiBwcm90b2NvbCBmb3IgYSBtdWx0aS1jZW50ZXIgcmFuZG9taXplZCBjb250cm9sbGVkIHRyaWFsPC90aXRsZT4KICA8L3RpdGxlcz4KICA8ZGVzY3JpcHRpb25zPgogICAgPGRlc2NyaXB0aW9uIGRlc2NyaXB0aW9uVHlwZT0iQWJzdHJhY3QiPkFkZGl0aW9uYWwgZmlsZSAzLiBTYXRpc2ZhY3Rpb24gcXVlc3Rpb25uYWlyZS48L2Rlc2NyaXB0aW9uPgogIDwvZGVzY3JpcHRpb25zPgogIDxzdWJqZWN0cz4KICAgIDxzdWJqZWN0Pk1lZGljaW5lPC9zdWJqZWN0PgogICAgPHN1YmplY3Q+U29jaW9sb2d5PC9zdWJqZWN0PgogICAgPHN1YmplY3Qgc2NoZW1lVVJJPSJodHRwOi8vd3d3LmFicy5nb3YuYXUvYXVzc3RhdHMvYWJzQC5uc2YvMC82QkI0MjdBQjk2OTZDMjI1Q0EyNTc0MTgwMDA0NDYzRSIgc3ViamVjdFNjaGVtZT0iRk9SIj42OTk5OSBCaW9sb2dpY2FsIFNjaWVuY2VzIG5vdCBlbHNld2hlcmUgY2xhc3NpZmllZDwvc3ViamVjdD4KICA8L3N1YmplY3RzPgogIDxwdWJsaXNoZXI+Zmlnc2hhcmU8L3B1Ymxpc2hlcj4KICA8cHVibGljYXRpb25ZZWFyPjIwMjE8L3B1YmxpY2F0aW9uWWVhcj4KICA8ZGF0ZXM+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iQ3JlYXRlZCI+MjAyMS0wNC0yNzwvZGF0ZT4KICAgIDxkYXRlIGRhdGVUeXBlPSJVcGRhdGVkIj4yMDIxLTA0LTI3PC9kYXRlPgogIDwvZGF0ZXM+CiAgPHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJUZXh0Ij5Kb3VybmFsIGNvbnRyaWJ1dGlvbjwvcmVzb3VyY2VUeXBlPgogIDxzaXplcz4KICAgIDxzaXplPjE2ODUzIEJ5dGVzPC9zaXplPgogIDwvc2l6ZXM+CiAgPHJlbGF0ZWRJZGVudGlmaWVycz4KICAgIDxyZWxhdGVkSWRlbnRpZmllciByZWxhdGVkSWRlbnRpZmllclR5cGU9IkRPSSIgcmVsYXRpb25UeXBlPSJJc1N1cHBsZW1lbnRUbyI+MTAuMTE4Ni9zMTI4OTEtMDIxLTA0MjYxLTE8L3JlbGF0ZWRJZGVudGlmaWVyPgogICAgPHJlbGF0ZWRJZGVudGlmaWVyIHJlbGF0ZWRJZGVudGlmaWVyVHlwZT0iRE9JIiByZWxhdGlvblR5cGU9IklzSWRlbnRpY2FsVG8iPjEwLjYwODQvbTkuZmlnc2hhcmUuMTQ0OTAxMDY8L3JlbGF0ZWRJZGVudGlmaWVyPgogIDwvcmVsYXRlZElkZW50aWZpZXJzPgogIDxyaWdodHNMaXN0PgogICAgPHJpZ2h0cyByaWdodHNVUkk9Imh0dHBzOi8vY3JlYXRpdmVjb21tb25zLm9yZy9saWNlbnNlcy9ieS80LjAvIj5DQyBCWSArIENDMDwvcmlnaHRzPgogIDwvcmlnaHRzTGlzdD4KPC9yZXNvdXJjZT4=",
+          "dates": [
+            {
+              "date": "2021-04-27",
+              "dateType": "Created"
+            },
+            {
+              "date": "2021-04-27",
+              "dateType": "Updated"
+            },
+            {
+              "date": "2021",
+              "dateType": "Issued"
+            }
+          ],
+          "sizes": [
+            "16853 Bytes"
+          ],
+          "state": "findable",
+          "types": {
+            "ris": "RPRT",
+            "bibtex": "article",
+            "citeproc": "article-journal",
+            "schemaOrg": "ScholarlyArticle",
+            "resourceType": "Journal contribution",
+            "resourceTypeGeneral": "Text"
+          },
+          "prefix": "10.6084",
+          "reason": null,
+          "source": "mds",
+          "suffix": "m9.figshare.14490106.v1",
+          "titles": [
+            {
+              "title": "Additional file 3 of Effectiveness of interactive augmented reality-based telerehabilitation in patients with adhesive capsulitis: protocol for a multi-center randomized controlled trial"
+            }
+          ],
+          "created": "2021-04-27T03:58:39Z",
+          "formats": [],
+          "updated": "2021-04-27T03:58:46Z",
+          "version": null,
+          "creators": [
+            {
+              "name": "Yeo, Seung Mi",
+              "nameType": "Personal",
+              "givenName": "Seung Mi",
+              "familyName": "Yeo",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Lim, Ji Young",
+              "nameType": "Personal",
+              "givenName": "Ji Young",
+              "familyName": "Lim",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Do, Jong Geol",
+              "nameType": "Personal",
+              "givenName": "Jong Geol",
+              "familyName": "Do",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Lim, Jae-Young",
+              "nameType": "Personal",
+              "givenName": "Jae-Young",
+              "familyName": "Lim",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Lee, Jong In",
+              "nameType": "Personal",
+              "givenName": "Jong In",
+              "familyName": "Lee",
+              "affiliation": [],
+              "nameIdentifiers": []
+            },
+            {
+              "name": "Hwang, Ji Hye",
+              "nameType": "Personal",
+              "givenName": "Ji Hye",
+              "familyName": "Hwang",
+              "affiliation": [],
+              "nameIdentifiers": [
+                {
+                  "schemeUri": "https://orcid.org",
+                  "nameIdentifier": "https://orcid.org/0000-0002-8176-3354",
+                  "nameIdentifierScheme": "ORCID"
+                }
+              ]
+            }
+          ],
+          "isActive": true,
+          "language": null,
+          "subjects": [
+            {
+              "subject": "Medicine"
+            },
+            {
+              "subject": "Sociology"
+            },
+            {
+              "subject": "FOS: Sociology",
+              "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "subject": "FOS: Sociology",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "subject": "69999 Biological Sciences not elsewhere classified",
+              "subjectScheme": "FOR"
+            },
+            {
+              "subject": "FOS: Biological sciences",
+              "schemeUri": "http://www.oecd.org/science/inno/38235147.pdf",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            },
+            {
+              "subject": "FOS: Biological sciences",
+              "subjectScheme": "Fields of Science and Technology (FOS)"
+            }
+          ],
+          "container": {},
+          "partCount": 0,
+          "published": null,
+          "publisher": {
+            "name": "figshare"
+          },
+          "viewCount": 0,
+          "contentUrl": null,
+          "registered": "2021-04-27T03:58:40Z",
+          "rightsList": [
+            {
+              "rights": "Creative Commons Attribution 4.0 International",
+              "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+              "schemeUri": "https://spdx.org/licenses/",
+              "rightsIdentifier": "cc-by-4.0",
+              "rightsIdentifierScheme": "SPDX"
+            }
+          ],
+          "identifiers": [],
+          "partOfCount": 0,
+          "contributors": [],
+          "descriptions": [
+            {
+              "description": "Additional file 3. Satisfaction questionnaire.",
+              "descriptionType": "Abstract"
+            }
+          ],
+          "geoLocations": [],
+          "relatedItems": [],
+          "versionCount": 0,
+          "citationCount": 0,
+          "downloadCount": 0,
+          "schemaVersion": "http://datacite.org/schema/kernel-4",
+          "viewsOverTime": [],
+          "referenceCount": 0,
+          "versionOfCount": 0,
+          "metadataVersion": 0,
+          "publicationYear": 2021,
+          "citationsOverTime": [],
+          "downloadsOverTime": [],
+          "fundingReferences": [],
+          "relatedIdentifiers": [
+            {
+              "relationType": "IsSupplementTo",
+              "relatedIdentifier": "10.1186/s12891-021-04261-1",
+              "relatedIdentifierType": "DOI"
+            },
+            {
+              "relationType": "IsIdenticalTo",
+              "relatedIdentifier": "10.6084/m9.figshare.14490106",
+              "relatedIdentifierType": "DOI"
+            }
+          ],
+          "alternateIdentifiers": []
+        },
+        "relationships": {
+          "parts": {
+            "data": []
+          },
+          "client": {
+            "data": {
+              "id": "figshare.ars",
+              "type": "clients"
+            }
+          },
+          "partOf": {
+            "data": []
+          },
+          "provider": {
+            "data": {
+              "id": "otjm",
+              "type": "providers"
+            }
+          },
+          "versions": {
+            "data": []
+          },
+          "citations": {
+            "data": []
+          },
+          "versionOf": {
+            "data": []
+          },
+          "references": {
+            "data": []
+          }
+        }
+      }
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:33:54.178816",
+    "processing_time_ms": 6710
+  },
+  "openalex": {
+    "data": {
+      "id": "https://openalex.org/W3159351244",
+      "doi": "https://doi.org/10.1186/s12891-021-04261-1",
+      "title": "Effectiveness of interactive augmented reality-based telerehabilitation in patients with adhesive capsulitis: protocol for a multi-center randomized controlled trial",
+      "open_access": {
+        "is_oa": true,
+        "oa_url": "https://bmcmusculoskeletdisord.biomedcentral.com/track/pdf/10.1186/s12891-021-04261-1",
+        "oa_status": "gold",
+        "any_repository_has_fulltext": true
+      },
+      "cited_by_count": 27,
+      "publication_year": 2021
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:33:48.653017",
+    "processing_time_ms": 1197
+  },
+  "unpaywall": {
+    "data": {
+      "doi": "10.1186/s12891-021-04261-1",
+      "year": 2021,
+      "genre": "journal-article",
+      "is_oa": true,
+      "title": "Effectiveness of interactive augmented reality-based telerehabilitation in patients with adhesive capsulitis: protocol for a multi-center randomized controlled trial",
+      "doi_url": "https://doi.org/10.1186/s12891-021-04261-1",
+      "oa_status": "gold",
+      "publisher": "Springer Science and Business Media LLC",
+      "is_paratext": false,
+      "journal_name": "BMC Musculoskeletal Disorders",
+      "journal_issns": "1471-2474",
+      "journal_issn_l": "1471-2474",
+      "published_date": "2021-04-26",
+      "z_authors_summary": {
+        "count": 6,
+        "first_author": ""
+      },
+      "has_repository_copy": true,
+      "oa_locations_summary": {
+        "count": 2,
+        "has_repository": true
+      },
+      "best_oa_location_summary": {
+        "is_best": true,
+        "host_type": "publisher",
+        "url_for_pdf": true
+      },
+      "first_oa_location_summary": {
+        "is_first": true,
+        "host_type": "publisher",
+        "url_for_pdf": true
+      }
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:33:48.855445",
+    "processing_time_ms": 1397
+  },
+  "europe_pmc": {
+    "data": {
+      "id": "33902546",
+      "doi": "10.1186/s12891-021-04261-1",
+      "pmid": "33902546",
+      "inPMC": "Y",
+      "pmcid": "PMC8074703",
+      "title": "Effectiveness of interactive augmented reality-based telerehabilitation in patients with adhesive capsulitis: protocol for a multi-center randomized controlled trial.",
+      "hasPDF": "Y",
+      "inEPMC": "Y",
+      "source": "MED",
+      "authMan": "N",
+      "hasBook": "N",
+      "hasData": "Y",
+      "license": "cc by",
+      "pubYear": "2021",
+      "hasSuppl": "Y",
+      "language": "eng",
+      "pageInfo": "386",
+      "pubModel": "Electronic",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Yeo SM",
+            "initials": "SM",
+            "lastName": "Yeo",
+            "firstName": "Seung Mi",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Physical and Rehabilitation Medicine, Samsung Medical Center, Sungkyunkwan University School of Medicine, Seoul, Republic of Korea."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Lim JY",
+            "initials": "JY",
+            "lastName": "Lim",
+            "firstName": "Ji Young",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Physical Therapy, General School of Medical Sciences, Konyang University, Daejeon, Republic of Korea."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Do JG",
+            "initials": "JG",
+            "lastName": "Do",
+            "firstName": "Jong Geol",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Physical and Rehabilitation Medicine, Samsung Medical Center, Sungkyunkwan University School of Medicine, Seoul, Republic of Korea."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Lim JY",
+            "initials": "JY",
+            "lastName": "Lim",
+            "firstName": "Jae-Young",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Rehabilitation Medicine, Seoul National University College of Medicine, Seoul National University Bundang Hospital, Seongnam-si, Gyeonggi-do, Republic of Korea."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "In Lee J",
+            "initials": "J",
+            "lastName": "In Lee",
+            "firstName": "Jong",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Rehabilitation Medicine, Seoul St. Mary's Hospital, College of Medicine, The Catholic University of Korea, 222, Banpo-daero, Seocho-gu, Seoul, 06591, Republic of Korea. ljikyh@catholic.ac.kr."
+                }
+              ]
+            }
+          },
+          {
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0002-8176-3354"
+            },
+            "fullName": "Hwang JH",
+            "initials": "JH",
+            "lastName": "Hwang",
+            "firstName": "Ji Hye",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Physical and Rehabilitation Medicine, Samsung Medical Center, Sungkyunkwan University School of Medicine, Seoul, Republic of Korea. hwanglee@skku.edu."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "grantsList": {
+        "grant": [
+          {
+            "agency": "Korea Health Industry Development Institute",
+            "grantId": "HI19C0781",
+            "orderIn": 0
+          }
+        ]
+      },
+      "nihAuthMan": "N",
+      "subsetList": {
+        "subset": [
+          {
+            "code": "IM",
+            "name": "Index Medicus"
+          }
+        ]
+      },
+      "affiliation": "Department of Physical and Rehabilitation Medicine, Samsung Medical Center, Sungkyunkwan University School of Medicine, Seoul, Republic of Korea.",
+      "epmcAuthMan": "N",
+      "journalInfo": {
+        "issue": "1",
+        "volume": "22",
+        "journal": {
+          "essn": "1471-2474",
+          "issn": "1471-2474",
+          "nlmid": "100968565",
+          "title": "BMC musculoskeletal disorders",
+          "isoabbreviation": "BMC Musculoskelet Disord",
+          "medlineAbbreviation": "BMC Musculoskelet Disord"
+        },
+        "journalIssueId": 3144273,
+        "dateOfPublication": "2021 Apr",
+        "yearOfPublication": 2021,
+        "monthOfPublication": 4,
+        "printPublicationDate": "2021-04-01"
+      },
+      "keywordList": {
+        "keyword": [
+          "Telerehabilitation",
+          "Adhesive Capsulitis",
+          "Augmented Reality",
+          "Multi-center Randomized Controlled Trial"
+        ]
+      },
+      "pubTypeList": {
+        "pubType": [
+          "Clinical Trial Protocol",
+          "research-article",
+          "Journal Article"
+        ]
+      },
+      "abstractText": "<h4>Background</h4>As the primary treatment for adhesive capsulitis, intensive and accurate home exercise is as important as physical therapy in hospitals. Augmented reality (AR)-based telerehabilitation has been implemented recently in various musculoskeletal conditions to increase patient compliance and enable patients to exercise with the correct posture. The objective of this study is to present a protocol for investigating the additive effect of interactive AR-based telerehabilitation in comparison with the usual care for patients with adhesive capsulitis.<h4>Methods</h4>This study presents the protocol of a prospective, multi-center, single-blinded, two-armed randomized controlled trial (RCT). One hundred patients with stage I or II adhesive capsulitis will be recruited at the physical medicine and rehabilitation clinic. Patients will be randomly divided into two groups with 1:1 allocation. The intervention group will receive 3 months of hospital-based physical therapy in conjunction with home-based telerehabilitation. The control group will receive 3 months of hospital-based physical therapy in conjunction with a home-based exercise described in a brochure provided by the hospital. The primary outcome will be the change in passive range of motion (ROM) of the affected shoulder joint from baseline to 12 weeks after baseline assessment. The secondary outcomes will be active ROM, pain measured with the numeric rating scale, shoulder pain and disability index, 36-Item Short Form Survey, EuroQoL-5D-5L, and Canadian Occupational Performance Measure.<h4>Discussion</h4>This will be the first RCT study protocol to investigate the effect of telerehabilitation in patients with adhesive capsulitis. The result of this RCT will determine whether AR-based telerehabilitation is more effective than a brochure-based home exercise program and will provide evidence of the usefulness of \"telerehabilitation\" using hardware (IoT) and software (monitoring platform) technologies to develop \"digital therapeutics\" for the future.<h4>Trial registration</h4>This trial was retrospectively registered at the Clinicaltrials.gov website on 20 March 2020, with the identifier NCT04316130 .",
+      "authorIdList": {
+        "authorId": [
+          {
+            "type": "ORCID",
+            "value": "0000-0002-8176-3354"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0002-8844-4807"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0002-9454-0344"
+          }
+        ]
+      },
+      "authorString": "Yeo SM, Lim JY, Do JG, Lim JY, In Lee J, Hwang JH.",
+      "citedByCount": 14,
+      "hasLabsLinks": "Y",
+      "isOpenAccess": "Y",
+      "hasReferences": "Y",
+      "dateOfCreation": "2021-04-27",
+      "dateOfRevision": "2021-05-14",
+      "firstIndexDate": "2021-04-28",
+      "fullTextIdList": {
+        "fullTextId": [
+          "PMC8074703"
+        ]
+      },
+      "hasEvaluations": "N",
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "url": "https://bmcmusculoskeletdisord.biomedcentral.com/track/pdf/10.1186/s12891-021-04261-1",
+            "site": "Unpaywall",
+            "availability": "Open access",
+            "documentStyle": "pdf",
+            "availabilityCode": "OA"
+          },
+          {
+            "url": "https://doi.org/10.1186/s12891-021-04261-1",
+            "site": "DOI",
+            "availability": "Subscription required",
+            "documentStyle": "doi",
+            "availabilityCode": "S"
+          },
+          {
+            "url": "https://europepmc.org/articles/PMC8074703",
+            "site": "Europe_PMC",
+            "availability": "Open access",
+            "documentStyle": "html",
+            "availabilityCode": "OA"
+          },
+          {
+            "url": "https://europepmc.org/articles/PMC8074703?pdf=render",
+            "site": "Europe_PMC",
+            "availability": "Open access",
+            "documentStyle": "pdf",
+            "availabilityCode": "OA"
+          }
+        ]
+      },
+      "meshHeadingList": {
+        "meshHeading": [
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Humans"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Shoulder Pain"
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Bursitis",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "abbreviation": "DI",
+                  "majorTopic_YN": "N",
+                  "qualifierName": "diagnosis"
+                },
+                {
+                  "abbreviation": "TH",
+                  "majorTopic_YN": "N",
+                  "qualifierName": "therapy"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Treatment Outcome"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Canada"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Multicenter Studies as Topic"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Randomized Controlled Trials as Topic"
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Telerehabilitation"
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Augmented Reality"
+          }
+        ]
+      },
+      "dateOfCompletion": "2021-05-14",
+      "dataLinksTagsList": {
+        "dataLinkstag": [
+          "supporting_data"
+        ]
+      },
+      "hasTextMinedTerms": "Y",
+      "publicationStatus": "epublish",
+      "tmAccessionTypeList": {
+        "accessionType": [
+          "nct"
+        ]
+      },
+      "firstPublicationDate": "2021-04-26",
+      "fullTextReceivedDate": "2021-05-04",
+      "hasDbCrossReferences": "N",
+      "hasTMAccessionNumbers": "Y",
+      "electronicPublicationDate": "2021-04-26"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:33:51.743838",
+    "processing_time_ms": 4285
+  },
+  "semantic_scholar": {
+    "data": {
+      "year": 2021,
+      "title": "Effectiveness of interactive augmented reality-based telerehabilitation in patients with adhesive capsulitis: protocol for a multi-center randomized controlled trial",
+      "authors": [
+        {
+          "name": "S. Yeo",
+          "authorId": "93875068"
+        },
+        {
+          "name": "J. Lim",
+          "authorId": "2109632956"
+        },
+        {
+          "name": "Jong Geol Do",
+          "authorId": "4903713"
+        },
+        {
+          "name": "J. Lim",
+          "authorId": "2149144359"
+        },
+        {
+          "name": "Jong In Lee",
+          "authorId": "2084629782"
+        },
+        {
+          "name": "J. Hwang",
+          "authorId": "3953851"
+        }
+      ],
+      "journal": {
+        "name": "BMC Musculoskeletal Disorders",
+        "volume": "22"
+      },
+      "paperId": "ff66a6baa2cea23287347af9de9042e228a41967",
+      "abstract": "Background As the primary treatment for adhesive capsulitis, intensive and accurate home exercise is as important as physical therapy in hospitals. Augmented reality (AR)-based telerehabilitation has been implemented recently in various musculoskeletal conditions to increase patient compliance and enable patients to exercise with the correct posture. The objective of this study is to present a protocol for investigating the additive effect of interactive AR-based telerehabilitation in comparison with the usual care for patients with adhesive capsulitis. Methods This study presents the protocol of a prospective, multi-center, single-blinded, two-armed randomized controlled trial (RCT). One hundred patients with stage I or II adhesive capsulitis will be recruited at the physical medicine and rehabilitation clinic. Patients will be randomly divided into two groups with 1:1 allocation. The intervention group will receive 3 months of hospital-based physical therapy in conjunction with home-based telerehabilitation. The control group will receive 3 months of hospital-based physical therapy in conjunction with a home-based exercise described in a brochure provided by the hospital. The primary outcome will be the change in passive range of motion (ROM) of the affected shoulder joint from baseline to 12 weeks after baseline assessment. The secondary outcomes will be active ROM, pain measured with the numeric rating scale, shoulder pain and disability index, 36-Item Short Form Survey, EuroQoL-5D-5L, and Canadian Occupational Performance Measure. Discussion This will be the first RCT study protocol to investigate the effect of telerehabilitation in patients with adhesive capsulitis. The result of this RCT will determine whether AR-based telerehabilitation is more effective than a brochure-based home exercise program and will provide evidence of the usefulness of “telerehabilitation” using hardware (IoT) and software (monitoring platform) technologies to develop “digital therapeutics” for the future. Trial registration This trial was retrospectively registered at the Clinicaltrials.gov website on 20 March 2020, with the identifier NCT04316130 .",
+      "externalIds": {
+        "DOI": "10.1186/s12891-021-04261-1",
+        "PubMed": "33902546",
+        "CorpusId": 233403141,
+        "PubMedCentral": "8074703"
+      },
+      "isOpenAccess": true,
+      "citationCount": 26,
+      "openAccessPdf": {
+        "url": "https://bmcmusculoskeletdisord.biomedcentral.com/track/pdf/10.1186/s12891-021-04261-1",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8074703, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      }
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:33:48.552499",
+    "processing_time_ms": 1005
+  }
+}

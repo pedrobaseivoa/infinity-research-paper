@@ -1,0 +1,94 @@
+{
+  "source": "gpt-4o-vision",
+  "success": true,
+  "prompt_sent": "Extract ONLY publication metadata from these academic paper pages.\n\nCRITICAL: This data will be sent to 11 external APIs, so format accuracy is essential.\n\nFIELD REQUIREMENTS WITH EXACT FORMATS:\n\n1. **Title**: Clean title for API queries (HIGHEST PRIORITY)\n   - Remove line breaks, extra spaces, formatting\n   - No HTML tags or special characters  \n   - Example: \"Effects of Machine Learning on Healthcare Outcomes\"\n\n2. **Authors**: API-compatible author list (HIGHEST PRIORITY)\n   - Each author as separate string in array\n   - Format: \"FirstName LastName\" or \"F. LastName\"\n   - Clean, no extra punctuation\n   - Example: [\"John Smith\", \"M. Johnson\", \"Sarah Williams\"]\n\n3. **DOI**: Standard DOI format for resolution APIs\n   - Must start with \"10.\" if present\n   - Clean format without URL prefixes\n   - Example: \"10.1234/journal.2024.001\"\n\n4. **Journal**: Clean journal name for database queries\n   - Full journal name preferred over abbreviations\n   - Remove extra formatting, parentheses\n   - Example: \"Nature Medicine\"\n\n5. **Year**: Numeric format for date filtering\n   - 4-digit NUMBER only (not string)\n   - Example: 2024\n\n6. **Volume**: Clean number for bibliographic APIs\n   - Numbers only, no \"Vol.\" prefix\n   - Example: \"15\"\n\n7. **Issue**: Clean number format\n   - Numbers only, no \"No.\" or \"Issue\" prefix\n   - Example: \"3\"\n\n8. **Pages**: Standard page range for citations\n   - Format: \"start-end\" or single page\n   - Example: \"123-135\" or \"45\"\n\n9. **PMID**: PubMed ID for medical APIs\n   - Numbers only, no \"PMID:\" prefix\n   - Example: \"12345678\"\n\n10. **PMCID**: PubMed Central ID for open access papers\n    - Numbers only, no \"PMC\" prefix\n    - Often appears near PMID in biomedical papers\n    - Example: \"9876543\"\n\n11. **Keywords**: API-compatible keyword list\n    - Each keyword as separate string\n    - Research-quality terms, no punctuation\n    - Example: [\"machine learning\", \"healthcare\", \"clinical outcomes\"]\n\n11. **Abstract**: Complete clean text (HIGHEST PRIORITY)\n    - Remove formatting, line breaks, extra spaces\n    - Complete sentences, proper punctuation\n    - Search thoroughly across ALL pages\n    - This is CRITICAL for Semantic Scholar and other APIs\n\n12. **Publisher**: Clean organization name\n    - Official publisher name\n    - Example: \"Elsevier\" or \"Nature Publishing Group\"\n\nABSTRACT EXTRACTION PRIORITY:\n- Look thoroughly across ALL pages for abstract sections\n- Extract COMPLETE text, including multiple paragraphs\n- Check: Abstract, Summary, Introduction summary paragraphs\n- This field is CRITICAL for API enrichment success\n\nReturn JSON format:\n{\n  \"Title\": \"clean title without formatting\",\n  \"Authors\": [\"Author One\", \"Author Two\"],\n  \"DOI\": \"10.xxxx/xxxxx\",\n  \"Journal\": \"clean journal name\", \n  \"Year\": 2024,\n  \"Volume\": \"15\",\n  \"Issue\": \"3\", \n  \"Pages\": \"123-135\",\n  \"Abstract\": \"complete clean abstract text\",\n  \"Keywords\": [\"keyword1\", \"keyword2\"],\n  \"PMID\": \"12345678\",\n  \"PMCID\": \"9876543\",\n  \"Publisher\": \"publisher name\"\n}\n\nReturn null for fields not clearly visible. The Abstract field is MOST IMPORTANT for downstream API success.",
+  "cost_tracking": {
+    "model": "gpt-4o",
+    "call_type": "vision_extraction",
+    "timestamp": "2025-07-22T14:36:10.340850",
+    "input_cost": 0.007725,
+    "total_cost": 0.012215,
+    "output_cost": 0.00449,
+    "input_tokens": 3090,
+    "total_tokens": 3539,
+    "output_tokens": 449
+  },
+  "input_details": {
+    "dpi": 120,
+    "max_tokens": 1500,
+    "model_used": "gpt-4o",
+    "temperature": 0.1,
+    "page_strategy": "strategic",
+    "image_resolution": "high",
+    "processing_time_ms": 23388,
+    "pdf_pages_processed": 3
+  },
+  "extracted_data": {
+    "DOI": "10.1186/s13018-023-04367-3",
+    "PMID": null,
+    "Year": 2023,
+    "Issue": "936",
+    "PMCID": null,
+    "Pages": null,
+    "Title": "Effectiveness of a digital rehabilitation program based on computer vision and augmented reality for isolated meniscus injury: protocol for a prospective randomized controlled trial",
+    "Volume": "18",
+    "Authors": [
+      "Li Wang",
+      "Xi Chen",
+      "Qian Deng",
+      "MingKe You",
+      "Yang Xu",
+      "Di Liu",
+      "Ye Lin",
+      "PengCheng Li",
+      "Jian Li"
+    ],
+    "Journal": "Journal of Orthopaedic Surgery and Research",
+    "Abstract": "The lack of access to physical therapists in developing countries and rural areas poses a significant challenge in supervising postsurgical rehabilitation, potentially impeding desirable outcomes following surgical interventions. For this reason, this study aims to evaluate the feasibility, safety, and effectiveness of utilizing a digital rehabilitation program based on computer vision and augmented reality in comparison with traditional care for patients who will undergo isolated meniscus repair, since to date, there is no literature on this topic. This study intends to enroll two groups of participants, each to be provided with informed consent before undergoing randomization into either the experimental or control group. The experimental group will undergo a digital rehabilitation program utilizing computer vision and augmented reality (AR) technology following their surgical procedure, while the control group will receive conventional care, involving in-clinic physical therapy sessions weekly. Both groups will adhere to a standardized rehabilitation protocol over a six-month duration. Follow-up assessments will be conducted at various intervals, including preoperatively, and at 2 weeks, 6 weeks, 12 weeks, and 24 weeks postoperatively. Imaging assessments and return-to-play evaluations will be conducted during the final follow-up. Clinical functionality will be assessed based on improvements in International Knee Documentation Committee (IKDC) and Visual Analog Scale (VAS) scores.",
+    "Keywords": [
+      "Computer vision",
+      "Augmented reality",
+      "Meniscus",
+      "Rehabilitation"
+    ],
+    "Publisher": "BMC"
+  },
+  "pages_processed": 3,
+  "extraction_matrix": {
+    "_performance_summary": {
+      "total_cost": 0.0,
+      "data_source": "vision_json",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "vision_status": "COMPLETE",
+      "extraction_rate": 76.92,
+      "extraction_source": "gpt-4o-vision",
+      "performance_level": "GOOD",
+      "fields_with_content": 10,
+      "processing_time_seconds": 0,
+      "total_fields_in_response": 13
+    }
+  },
+  "extraction_method": "vision_strategic_strategy",
+  "extraction_quality": {
+    "success_rate": 50.0,
+    "quality_score": 50.0,
+    "successful_fields": 10,
+    "validation_details": {
+      "errors": [],
+      "is_valid": true,
+      "warnings": [],
+      "quality_score": 100,
+      "completeness_score": 100.0
+    },
+    "total_fields_attempted": 13
+  },
+  "processing_time_ms": 23388,
+  "raw_openai_response": {
+    "content": "```json\n{\n  \"Title\": \"Effectiveness of a digital rehabilitation program based on computer vision and augmented reality for isolated meniscus injury: protocol for a prospective randomized controlled trial\",\n  \"Authors\": [\"Li Wang\", \"Xi Chen\", \"Qian Deng\", \"MingKe You\", \"Yang Xu\", \"Di Liu\", \"Ye Lin\", \"PengCheng Li\", \"Jian Li\"],\n  \"DOI\": \"10.1186/s13018-023-04367-3\",\n  \"Journal\": \"Journal of Orthopaedic Surgery and Research\",\n  \"Year\": 2023,\n  \"Volume\": \"18\",\n  \"Issue\": \"936\",\n  \"Pages\": null,\n  \"Abstract\": \"The lack of access to physical therapists in developing countries and rural areas poses a significant challenge in supervising postsurgical rehabilitation, potentially impeding desirable outcomes following surgical interventions. For this reason, this study aims to evaluate the feasibility, safety, and effectiveness of utilizing a digital rehabilitation program based on computer vision and augmented reality in comparison with traditional care for patients who will undergo isolated meniscus repair, since to date, there is no literature on this topic. This study intends to enroll two groups of participants, each to be provided with informed consent before undergoing randomization into either the experimental or control group. The experimental group will undergo a digital rehabilitation program utilizing computer vision and augmented reality (AR) technology following their surgical procedure, while the control group will receive conventional care, involving in-clinic physical therapy sessions weekly. Both groups will adhere to a standardized rehabilitation protocol over a six-month duration. Follow-up assessments will be conducted at various intervals, including preoperatively, and at 2 weeks, 6 weeks, 12 weeks, and 24 weeks postoperatively. Imaging assessments and return-to-play evaluations will be conducted during the final follow-up. Clinical functionality will be assessed based on improvements in International Knee Documentation Committee (IKDC) and Visual Analog Scale (VAS) scores.\",\n  \"Keywords\": [\"Computer vision\", \"Augmented reality\", \"Meniscus\", \"Rehabilitation\"],\n  \"PMID\": null,\n  \"PMCID\": null,\n  \"Publisher\": \"BMC\"\n}\n```",
+    "parsing_error": "Expecting value: line 1 column 1 (char 0)",
+    "response_length": 2167,
+    "parsing_successful": false
+  },
+  "processing_timestamp": "2025-07-22T14:36:10.340840"
+}

@@ -1,0 +1,1314 @@
+{
+  "core": {
+    "data": {
+      "data": {
+        "doi": "10.1002/ase.1696",
+        "year": 2017,
+        "title": "The effectiveness of virtual and augmented reality in health sciences and medical anatomy",
+        "authors": [
+          "Moro, Christian",
+          "Raikos, Athanasios",
+          "Stirling, Allan",
+          "Štromberga, Zane"
+        ],
+        "core_id": 41321540,
+        "journal": "Anatomical Sciences Education",
+        "pdf_url": "https://core.ac.uk/download/196605086.pdf",
+        "abstract": null,
+        "repository": "",
+        "open_access": false,
+        "citation_count": 0
+      },
+      "success": true,
+      "strategy": "Title Field"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:36:21.693983",
+    "processing_time_ms": 10884
+  },
+  "doaj": {
+    "data": {
+      "found": true,
+      "total": 1,
+      "results": [
+        {
+          "id": "d1f7e264224f4d0488ee9a494a77cb3a",
+          "bibjson": {
+            "link": [
+              {
+                "url": "https://doi.org/10.1186/s13018-023-04367-3",
+                "type": "fulltext",
+                "content_type": "HTML"
+              }
+            ],
+            "year": "2023",
+            "month": "12",
+            "title": "Effectiveness of a digital rehabilitation program based on computer vision and augmented reality for isolated meniscus injury: protocol for a prospective randomized controlled trial",
+            "author": [
+              {
+                "name": "Li Wang",
+                "affiliation": "Department of Orthopaedics, Orthopaedic Research Institute, West China Hospital, Sichuan University"
+              },
+              {
+                "name": "Xi Chen",
+                "affiliation": "Department of Orthopaedics, Orthopaedic Research Institute, West China Hospital, Sichuan University"
+              },
+              {
+                "name": "Qian Deng",
+                "affiliation": "Department of Orthopaedics, Orthopaedic Research Institute, West China Hospital, Sichuan University"
+              },
+              {
+                "name": "MingKe You",
+                "affiliation": "Department of Orthopaedics, Orthopaedic Research Institute, West China Hospital, Sichuan University"
+              },
+              {
+                "name": "Yang Xu",
+                "affiliation": "Department of Orthopaedics, Orthopaedic Research Institute, West China Hospital, Sichuan University"
+              },
+              {
+                "name": "Di Liu",
+                "affiliation": "Jiakang Zhongzhi Technology Company"
+              },
+              {
+                "name": "Ye Lin",
+                "affiliation": "University of Chicago"
+              },
+              {
+                "name": "PengCheng Li",
+                "affiliation": "Department of Orthopaedics, Orthopaedic Research Institute, West China Hospital, Sichuan University"
+              },
+              {
+                "name": "Jian Li",
+                "affiliation": "Department of Orthopaedics, Orthopaedic Research Institute, West China Hospital, Sichuan University"
+              }
+            ],
+            "journal": {
+              "issns": [
+                "1749-799X"
+              ],
+              "title": "Journal of Orthopaedic Surgery and Research",
+              "number": "1",
+              "volume": "18",
+              "country": "GB",
+              "language": [
+                "EN"
+              ],
+              "publisher": "BMC"
+            },
+            "subject": [
+              {
+                "code": "RD701-811",
+                "term": "Orthopedic surgery",
+                "scheme": "LCC"
+              },
+              {
+                "code": "RC925-935",
+                "term": "Diseases of the musculoskeletal system",
+                "scheme": "LCC"
+              }
+            ],
+            "abstract": "Abstract Background The lack of access to physical therapists in developing countries and rural areas poses a significant challenge in supervising postsurgical rehabilitation, potentially impeding desirable outcomes following surgical interventions. For this reason, this study aims to evaluate the feasibility, safety, and effectiveness of utilizing a digital rehabilitation program based on computer vision and augmented reality in comparison with traditional care for patients who will undergo isolated meniscus repair, since to date, there is no literature on this topic. Methods This study intends to enroll two groups of participants, each to be provided with informed consent before undergoing randomization into either the experimental or control group. The experimental group will undergo a digital rehabilitation program utilizing computer vision and augmented reality (AR) technology following their surgical procedure, while the control group will receive conventional care, involving in-clinic physical therapy sessions weekly. Both groups will adhere to a standardized rehabilitation protocol over a six-month duration. Follow-up assessments will be conducted at various intervals, including preoperatively, and at 2 weeks, 6 weeks, 12 weeks, and 24 weeks postoperatively. Imaging assessments and return-to-play evaluations will be conducted during the final follow-up. Clinical functionality will be assessed based on improvements in International Knee Documentation Committee (IKDC) and Visual Analog Scale (VAS) scores. Registration number ChiCTR2300070582.",
+            "end_page": "7",
+            "keywords": [
+              "Computer vision",
+              "Augmented reality",
+              "Meniscus",
+              "Rehabilitation"
+            ],
+            "identifier": [
+              {
+                "id": "10.1186/s13018-023-04367-3",
+                "type": "doi"
+              },
+              {
+                "id": "1749-799X",
+                "type": "eissn"
+              }
+            ],
+            "start_page": "1"
+          },
+          "created_date": "2023-12-10T12:26:06Z",
+          "last_updated": "2023-12-10T12:26:06Z"
+        }
+      ]
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:36:12.372755",
+    "processing_time_ms": 1553
+  },
+  "arxiv": {
+    "error": "No results found",
+    "success": false,
+    "timestamp": "2025-07-22T14:36:12.459063",
+    "processing_time_ms": 1648
+  },
+  "orcid": {
+    "data": {
+      "person": {
+        "name": {
+          "path": "0000-0002-9405-0441",
+          "source": null,
+          "visibility": "public",
+          "credit-name": null,
+          "family-name": {
+            "value": "Wang"
+          },
+          "given-names": {
+            "value": "Li-Li"
+          },
+          "created-date": {
+            "value": 1460762449713
+          },
+          "last-modified-date": {
+            "value": 1460762449713
+          }
+        },
+        "path": "/0000-0002-9405-0441/person",
+        "emails": {
+          "path": "/0000-0002-9405-0441/email",
+          "email": [],
+          "last-modified-date": null
+        },
+        "keywords": {
+          "path": "/0000-0002-9405-0441/keywords",
+          "keyword": [],
+          "last-modified-date": null
+        },
+        "addresses": {
+          "path": "/0000-0002-9405-0441/address",
+          "address": [],
+          "last-modified-date": null
+        },
+        "biography": null,
+        "other-names": {
+          "path": "/0000-0002-9405-0441/other-names",
+          "other-name": [],
+          "last-modified-date": null
+        },
+        "researcher-urls": {
+          "path": "/0000-0002-9405-0441/researcher-urls",
+          "researcher-url": [],
+          "last-modified-date": null
+        },
+        "last-modified-date": null,
+        "external-identifiers": {
+          "path": "/0000-0002-9405-0441/external-identifiers",
+          "last-modified-date": null,
+          "external-identifier": []
+        }
+      },
+      "orcid_id": "0000-0002-9405-0441"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:36:12.313414",
+    "processing_time_ms": 1490
+  },
+  "pubmed": {
+    "data": {
+      "PubmedArticle": [
+        {
+          "MedlineCitation": {
+            "PMID": {
+              "content": "38057846"
+            },
+            "Article": {
+              "Journal": {
+                "Title": "Journal of orthopaedic surgery and research",
+                "JournalIssue": {
+                  "Issue": "1",
+                  "Volume": "18",
+                  "PubDate": {
+                    "Year": "2023"
+                  }
+                }
+              },
+              "Abstract": {
+                "AbstractText": [
+                  "The lack of access to physical therapists in developing countries and rural areas poses a significant challenge in supervising postsurgical rehabilitation, potentially impeding desirable outcomes following surgical interventions. For this reason, this study aims to evaluate the feasibility, safety, and effectiveness of utilizing a digital rehabilitation program based on computer vision and augmented reality in comparison with traditional care for patients who will undergo isolated meniscus repair, since to date, there is no literature on this topic.",
+                  "This study intends to enroll two groups of participants, each to be provided with informed consent before undergoing randomization into either the experimental or control group. The experimental group will undergo a digital rehabilitation program utilizing computer vision and augmented reality (AR) technology following their surgical procedure, while the control group will receive conventional care, involving in-clinic physical therapy sessions weekly. Both groups will adhere to a standardized rehabilitation protocol over a six-month duration. Follow-up assessments will be conducted at various intervals, including preoperatively, and at 2 weeks, 6 weeks, 12 weeks, and 24 weeks postoperatively. Imaging assessments and return-to-play evaluations will be conducted during the final follow-up. Clinical functionality will be assessed based on improvements in International Knee Documentation Committee (IKDC) and Visual Analog Scale (VAS) scores.",
+                  "ChiCTR2300070582."
+                ]
+              },
+              "AuthorList": {
+                "Author": [
+                  {
+                    "ForeName": "Li",
+                    "LastName": "Wang"
+                  },
+                  {
+                    "ForeName": "Xi",
+                    "LastName": "Chen"
+                  },
+                  {
+                    "ForeName": "Qian",
+                    "LastName": "Deng"
+                  },
+                  {
+                    "ForeName": "MingKe",
+                    "LastName": "You"
+                  },
+                  {
+                    "ForeName": "Yang",
+                    "LastName": "Xu"
+                  },
+                  {
+                    "ForeName": "Di",
+                    "LastName": "Liu"
+                  },
+                  {
+                    "ForeName": "Ye",
+                    "LastName": "Lin"
+                  },
+                  {
+                    "ForeName": "PengCheng",
+                    "LastName": "Li"
+                  },
+                  {
+                    "ForeName": "Jian",
+                    "LastName": "Li"
+                  }
+                ]
+              },
+              "Pagination": {
+                "MedlinePgn": "936"
+              },
+              "ArticleTitle": "Effectiveness of a digital rehabilitation program based on computer vision and augmented reality for isolated meniscus injury: protocol for a prospective randomized controlled trial."
+            }
+          }
+        }
+      ]
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:36:12.869372",
+    "processing_time_ms": 2070
+  },
+  "crossref": {
+    "data": {
+      "status": "ok",
+      "message": {
+        "DOI": "10.1186/s13018-023-04367-3",
+        "URL": "https://doi.org/10.1186/s13018-023-04367-3",
+        "ISSN": [
+          "1749-799X"
+        ],
+        "link": [
+          {
+            "URL": "https://link.springer.com/content/pdf/10.1186/s13018-023-04367-3.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://link.springer.com/article/10.1186/s13018-023-04367-3/fulltext.html",
+            "content-type": "text/html",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://link.springer.com/content/pdf/10.1186/s13018-023-04367-3.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "type": "journal-article",
+        "issue": "1",
+        "score": 1,
+        "title": [
+          "Effectiveness of a digital rehabilitation program based on computer vision and augmented reality for isolated meniscus injury: protocol for a prospective randomized controlled trial"
+        ],
+        "author": [
+          {
+            "given": "Li",
+            "family": "Wang",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Xi",
+            "family": "Chen",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Qian",
+            "family": "Deng",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "MingKe",
+            "family": "You",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Yang",
+            "family": "Xu",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Di",
+            "family": "Liu",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Ye",
+            "family": "Lin",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "PengCheng",
+            "family": "Li",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Jian",
+            "family": "Li",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "funder": [
+          {
+            "id": [
+              {
+                "id": "10.13039/501100004829",
+                "id-type": "DOI",
+                "asserted-by": "publisher"
+              }
+            ],
+            "DOI": "10.13039/501100004829",
+            "name": "Science and Technology Department of Sichuan Province",
+            "award": [
+              "2022YFS0372"
+            ],
+            "doi-asserted-by": "publisher"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              7
+            ]
+          ]
+        },
+        "member": "297",
+        "prefix": "10.1186",
+        "source": "Crossref",
+        "volume": "18",
+        "created": {
+          "date-time": "2023-12-07T04:23:56Z",
+          "timestamp": 1701923036000,
+          "date-parts": [
+            [
+              2023,
+              12,
+              7
+            ]
+          ]
+        },
+        "indexed": {
+          "version": "3.37.3",
+          "date-time": "2025-02-21T13:45:24Z",
+          "timestamp": 1740145524214,
+          "date-parts": [
+            [
+              2025,
+              2,
+              21
+            ]
+          ]
+        },
+        "license": [
+          {
+            "URL": "https://creativecommons.org/licenses/by/4.0",
+            "start": {
+              "date-time": "2023-12-07T00:00:00Z",
+              "timestamp": 1701907200000,
+              "date-parts": [
+                [
+                  2023,
+                  12,
+                  7
+                ]
+              ]
+            },
+            "delay-in-days": 0,
+            "content-version": "tdm"
+          },
+          {
+            "URL": "https://creativecommons.org/licenses/by/4.0",
+            "start": {
+              "date-time": "2023-12-07T00:00:00Z",
+              "timestamp": 1701907200000,
+              "date-parts": [
+                [
+                  2023,
+                  12,
+                  7
+                ]
+              ]
+            },
+            "delay-in-days": 0,
+            "content-version": "vor"
+          }
+        ],
+        "subject": [],
+        "abstract": "<jats:title>Abstract</jats:title><jats:sec>\n                <jats:title>Background</jats:title>\n                <jats:p>The lack of access to physical therapists in developing countries and rural areas poses a significant challenge in supervising postsurgical rehabilitation, potentially impeding desirable outcomes following surgical interventions. For this reason, this study aims to evaluate the feasibility, safety, and effectiveness of utilizing a digital rehabilitation program based on computer vision and augmented reality in comparison with traditional care for patients who will undergo isolated meniscus repair, since to date, there is no literature on this topic.</jats:p>\n              </jats:sec><jats:sec>\n                <jats:title>Methods</jats:title>\n                <jats:p>This study intends to enroll two groups of participants, each to be provided with informed consent before undergoing randomization into either the experimental or control group. The experimental group will undergo a digital rehabilitation program utilizing computer vision and augmented reality (AR) technology following their surgical procedure, while the control group will receive conventional care, involving in-clinic physical therapy sessions weekly. Both groups will adhere to a standardized rehabilitation protocol over a six-month duration. Follow-up assessments will be conducted at various intervals, including preoperatively, and at 2 weeks, 6 weeks, 12 weeks, and 24 weeks postoperatively. Imaging assessments and return-to-play evaluations will be conducted during the final follow-up. Clinical functionality will be assessed based on improvements in International Knee Documentation Committee (IKDC) and Visual Analog Scale (VAS) scores.</jats:p>\n              </jats:sec><jats:sec>\n                <jats:title>Registration number</jats:title>\n                <jats:p>ChiCTR2300070582.</jats:p>\n              </jats:sec>",
+        "language": "en",
+        "relation": {},
+        "resource": {
+          "primary": {
+            "URL": "https://josr-online.biomedcentral.com/articles/10.1186/s13018-023-04367-3"
+          }
+        },
+        "subtitle": [],
+        "assertion": [
+          {
+            "name": "received",
+            "group": {
+              "name": "ArticleHistory",
+              "label": "Article History"
+            },
+            "label": "Received",
+            "order": 1,
+            "value": "6 September 2023"
+          },
+          {
+            "name": "accepted",
+            "group": {
+              "name": "ArticleHistory",
+              "label": "Article History"
+            },
+            "label": "Accepted",
+            "order": 2,
+            "value": "12 November 2023"
+          },
+          {
+            "name": "first_online",
+            "group": {
+              "name": "ArticleHistory",
+              "label": "Article History"
+            },
+            "label": "First Online",
+            "order": 3,
+            "value": "7 December 2023"
+          },
+          {
+            "name": "Ethics",
+            "group": {
+              "name": "EthicsHeading",
+              "label": "Declarations"
+            },
+            "order": 1
+          },
+          {
+            "name": "Ethics",
+            "group": {
+              "name": "EthicsHeading",
+              "label": "Ethics approval and consent to participate"
+            },
+            "order": 2,
+            "value": "This study has been registered at the Chinese Clinical Trial Registry (ChiCTR) website; Registration number: ChiCTR2300070582. This study was approved by the Clinical Trial Ethics Review Committee of West China Hospital of Sichuan University."
+          },
+          {
+            "name": "Ethics",
+            "group": {
+              "name": "EthicsHeading",
+              "label": "Competing interests"
+            },
+            "order": 3,
+            "value": "Di Liu is an employee of Jiakang Zhongzhi Technology Company."
+          }
+        ],
+        "deposited": {
+          "date-time": "2023-12-07T04:25:13Z",
+          "timestamp": 1701923113000,
+          "date-parts": [
+            [
+              2023,
+              12,
+              7
+            ]
+          ]
+        },
+        "issn-type": [
+          {
+            "type": "electronic",
+            "value": "1749-799X"
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              7
+            ]
+          ]
+        },
+        "publisher": "Springer Science and Business Media LLC",
+        "reference": [
+          {
+            "DOI": "10.1016/j.csm.2019.08.004",
+            "key": "4367_CR1",
+            "year": "2020",
+            "author": "SL Sherman",
+            "volume": "39",
+            "first-page": "165",
+            "unstructured": "Sherman SL, DiPaolo ZJ, Ray TE, Sachs BM, Oladeji LO. Meniscus injuries. Clin Sports Med. 2020;39:165–83. https://doi.org/10.1016/j.csm.2019.08.004.",
+            "journal-title": "Clin Sports Med",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1177/0363546516667578",
+            "key": "4367_CR2",
+            "year": "2017",
+            "author": "K O’Donnell",
+            "volume": "45",
+            "first-page": "1687",
+            "unstructured": "O’Donnell K, Freedman KB, Tjoumakaris FP. Rehabilitation protocols after isolated meniscal repair: a systematic review. Am J Sports Med. 2017;45:1687–97. https://doi.org/10.1177/0363546516667578.",
+            "journal-title": "Am J Sports Med",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1007/s12178-011-9110-y",
+            "key": "4367_CR3",
+            "year": "2012",
+            "author": "JT Cavanaugh",
+            "volume": "5",
+            "first-page": "46",
+            "unstructured": "Cavanaugh JT, Killian SE. Rehabilitation following meniscal repair. Curr Rev Musculoskelet Med. 2012;5:46–58. https://doi.org/10.1007/s12178-011-9110-y.",
+            "journal-title": "Curr Rev Musculoskelet Med",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1097/JSA.0000000000000303",
+            "key": "4367_CR4",
+            "year": "2021",
+            "author": "C Wedge",
+            "volume": "29",
+            "first-page": "173",
+            "unstructured": "Wedge C, Crowell M, Mason J, Pitt W. Rehabilitation and return to play following meniscus repair. Sports Med Arthrosc Rev. 2021;29:173–9. https://doi.org/10.1097/JSA.0000000000000303.",
+            "journal-title": "Sports Med Arthrosc Rev",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1016/S0749-8063(96)90170-X",
+            "key": "4367_CR5",
+            "year": "1996",
+            "issue": "6",
+            "author": "PP Mariani",
+            "volume": "12",
+            "first-page": "680",
+            "unstructured": "Mariani PP, Santori N, Adriani E, Mastantuono M. Accelerated rehabilitation after arthroscopic meniscal repair: a clinical and magnetic resonance imaging evaluation. Arthrosc J Arthrosc Relat Surg. 1996;12(6):680–6. https://doi.org/10.1016/S0749-8063(96)90170-X.",
+            "journal-title": "Arthrosc J Arthrosc Relat Surg",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1177/1757913919839432",
+            "key": "4367_CR6",
+            "year": "2020",
+            "author": "CT Antonio",
+            "volume": "140",
+            "first-page": "54",
+            "unstructured": "Antonio CT, et al. Components of compulsory service program for health professionals in low- and middle-income countries: a scoping review. Perspect Public Health. 2020;140:54–61. https://doi.org/10.1177/1757913919839432.",
+            "journal-title": "Perspect Public Health",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1186/s12909-018-1434-5",
+            "key": "4367_CR7",
+            "year": "2019",
+            "author": "J Stander",
+            "volume": "19",
+            "first-page": "2",
+            "unstructured": "Stander J, Grimmer K, Brink Y. Learning styles of physiotherapists: a systematic scoping review. BMC Med Educ. 2019;19:2. https://doi.org/10.1186/s12909-018-1434-5.",
+            "journal-title": "BMC Med Educ",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1111/j.1365-2753.2012.01849.x",
+            "key": "4367_CR8",
+            "year": "2013",
+            "author": "EJR Gorgon",
+            "volume": "19",
+            "first-page": "782",
+            "unstructured": "Gorgon EJR, Barrozo HGT, Mariano LG, Rivera EF. Research evidence uptake in a developing country: a survey of attitudes, education and self-efficacy, engagement, and barriers among physical therapists in the Philippines. J Eval Clin Pract. 2013;19:782–90. https://doi.org/10.1111/j.1365-2753.2012.01849.x.",
+            "journal-title": "J Eval Clin Pract",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.2519/jospt.2022.11384",
+            "key": "4367_CR9",
+            "year": "2022",
+            "author": "Z-Y Zhang",
+            "volume": "52",
+            "first-page": "726",
+            "unstructured": "Zhang Z-Y, et al. Digital rehabilitation programs improve therapeutic exercise adherence for patients with musculoskeletal conditions: a systematic review with meta-analysis. J Orthop Sports Phys Ther. 2022;52:726–39. https://doi.org/10.2519/jospt.2022.11384.",
+            "journal-title": "J Orthop Sports Phys Ther",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.3390/jcm9082567",
+            "key": "4367_CR10",
+            "year": "2020",
+            "author": "A Berton",
+            "volume": "9",
+            "first-page": "E2567",
+            "unstructured": "Berton A, et al. Virtual reality, augmented reality, gamification, and telerehabilitation: psychological impact on orthopedic patients’ rehabilitation. J Clin Med. 2020;9:E2567. https://doi.org/10.3390/jcm9082567.",
+            "journal-title": "J Clin Med",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1155/2018/2858294",
+            "key": "4367_CR11",
+            "year": "2018",
+            "author": "X Zeng",
+            "volume": "2018",
+            "first-page": "2858294",
+            "unstructured": "Zeng X, Zhu G, Zhang M, Xie SQ. Reviewing clinical effectiveness of active training strategies of platform-based ankle rehabilitation robots. J Healthc Eng. 2018;2018:2858294. https://doi.org/10.1155/2018/2858294.",
+            "journal-title": "J Healthc Eng",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1148/radiol.2021204587",
+            "key": "4367_CR12",
+            "year": "2021",
+            "author": "M Chalian",
+            "volume": "301",
+            "first-page": "423",
+            "unstructured": "Chalian M, et al. The QIBA profile for MRI-based compositional imaging of knee cartilage. Radiology. 2021;301:423–32. https://doi.org/10.1148/radiol.2021204587.",
+            "journal-title": "Radiology",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.3390/jcm9082639",
+            "key": "4367_CR13",
+            "year": "2020",
+            "author": "J Byra",
+            "volume": "9",
+            "first-page": "2639",
+            "unstructured": "Byra J, Czernicki K. The effectiveness of virtual reality rehabilitation in patients with knee and hip osteoarthritis. J Clin Med. 2020;9:2639. https://doi.org/10.3390/jcm9082639.",
+            "journal-title": "J Clin Med",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1007/s00167-022-06910-x",
+            "key": "4367_CR14",
+            "year": "2022",
+            "author": "A Gazendam",
+            "volume": "30",
+            "first-page": "2548",
+            "unstructured": "Gazendam A, Zhu M, Chang Y, Phillips S, Bhandari M. Virtual reality rehabilitation following total knee arthroplasty: a systematic review and meta-analysis of randomized controlled trials. Knee Surg Sports Traumat Arthrosc Off J ESSKA. 2022;30:2548–55. https://doi.org/10.1007/s00167-022-06910-x.",
+            "journal-title": "Knee Surg Sports Traumat Arthrosc Off J ESSKA",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1155/2022/9320063",
+            "key": "4367_CR15",
+            "year": "2022",
+            "author": "L Li",
+            "volume": "2022",
+            "first-page": "9320063",
+            "unstructured": "Li L. Effect of remote control augmented reality multimedia technology for postoperative rehabilitation of knee joint injury. Comput Math Methods Med. 2022;2022:9320063. https://doi.org/10.1155/2022/9320063.",
+            "journal-title": "Comput Math Methods Med",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1177/11795727211022330",
+            "key": "4367_CR16",
+            "year": "2021",
+            "author": "T Hellsten",
+            "volume": "10",
+            "first-page": "117957272110223",
+            "unstructured": "Hellsten T, Karlsson J, Shamsuzzaman M, Pulkkis G. The potential of computer vision-based marker-less human motion analysis for rehabilitation. Rehabil Process Outcome. 2021;10:11795727211022330. https://doi.org/10.1177/11795727211022330.",
+            "journal-title": "Rehabil Process Outcome",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1177/0363546513505079",
+            "key": "4367_CR17",
+            "year": "2013",
+            "author": "M Lind",
+            "volume": "41",
+            "first-page": "2753",
+            "unstructured": "Lind M, Nielsen T, Faunø P, Lund B, Christiansen SE. Free rehabilitation is safe after isolated meniscus repair: a prospective randomized trial comparing free with restricted rehabilitation regimens. Am J Sports Med. 2013;41:2753–8. https://doi.org/10.1177/0363546513505079.",
+            "journal-title": "Am J Sports Med",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1016/j.ptsp.2020.06.011",
+            "key": "4367_CR18",
+            "year": "2020",
+            "author": "G Harput",
+            "volume": "45",
+            "first-page": "76",
+            "unstructured": "Harput G, Guney-Deniz H, Nyland J, Kocabey Y. Postoperative rehabilitation and outcomes following arthroscopic isolated meniscus repairs: a systematic review. Phys Ther Sport. 2020;45:76–85. https://doi.org/10.1016/j.ptsp.2020.06.011.",
+            "journal-title": "Phys Ther Sport",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1007/s11999-016-4732-4",
+            "key": "4367_CR19",
+            "year": "2016",
+            "author": "MD Kohn",
+            "volume": "474",
+            "first-page": "1886",
+            "unstructured": "Kohn MD, Sassoon AA, Fernando ND. Classifications in brief: Kellgren–Lawrence classification of osteoarthritis. Clin Orthop Relat Res. 2016;474:1886–93. https://doi.org/10.1007/s11999-016-4732-4.",
+            "journal-title": "Clin Orthop Relat Res",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1007/s11999.0000000000000255",
+            "key": "4367_CR20",
+            "year": "2018",
+            "author": "C Slattery",
+            "volume": "476",
+            "first-page": "2101",
+            "unstructured": "Slattery C, Kweon CY. Classifications in brief: outerbridge classification of chondral lesions. Clin Orthop Relat Res. 2018;476:2101–4. https://doi.org/10.1007/s11999.0000000000000255.",
+            "journal-title": "Clin Orthop Relat Res",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1002/sim.4780141709",
+            "key": "4367_CR21",
+            "year": "1995",
+            "author": "RH Browne",
+            "volume": "14",
+            "first-page": "1933",
+            "unstructured": "Browne RH. On the use of a pilot sample for sample size determination. Stat Med. 1995;14:1933–40. https://doi.org/10.1002/sim.4780141709.",
+            "journal-title": "Stat Med",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "key": "4367_CR22",
+            "unstructured": "Andrew Green, Roman Hayda, Andrew Hecht. Postoperative Orthopaedic Rehabilitation. American Academy of Orthopedic Surgeons. 2017; ISBN :9781496360281. https://www5.aaos.org/store/product/?productId=9896972&ssopc=1"
+          },
+          {
+            "DOI": "10.1177/0363546507301883",
+            "key": "4367_CR23",
+            "year": "2007",
+            "author": "SM Tanner",
+            "volume": "35",
+            "first-page": "1450",
+            "unstructured": "Tanner SM, Dainty KN, Marx RG, Kirkley A. Knee-specific quality-of-life instruments: which ones measure symptoms and disabilities most important to patients. Am J Sports Med. 2007;35:1450–8. https://doi.org/10.1177/0363546507301883.",
+            "journal-title": "Am J Sports Med",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1136/bjsports-2015-095898",
+            "key": "4367_CR24",
+            "year": "2016",
+            "author": "N van Melick",
+            "volume": "50",
+            "first-page": "1506",
+            "unstructured": "van Melick N, et al. Evidence-based clinical practice update: practice guidelines for anterior cruciate ligament rehabilitation based on a systematic review and multidisciplinary consensus. Br J Sports Med. 2016;50:1506–15. https://doi.org/10.1136/bjsports-2015-095898.",
+            "journal-title": "Br J Sports Med",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1016/j.arthro.2018.12.014",
+            "key": "4367_CR25",
+            "year": "2019",
+            "issue": "5",
+            "author": "AK Gowd",
+            "volume": "35",
+            "first-page": "1567",
+            "unstructured": "Gowd AK, Lalehzarian SP, Liu JN, Agarwalla A, Christian DR, Forsythe B, Cole BJ, Verma NN. Factors associated with clinically significant patient-reported outcomes after primary arthroscopic partial meniscectomy. Arthrosc J Arthrosc Relat Surg. 2019;35(5):1567–75. https://doi.org/10.1016/j.arthro.2018.12.014.",
+            "journal-title": "Arthrosc J Arthrosc Relat Surg",
+            "doi-asserted-by": "publisher"
+          }
+        ],
+        "short-title": [],
+        "journal-issue": {
+          "issue": "1",
+          "published-online": {
+            "date-parts": [
+              [
+                2023,
+                12
+              ]
+            ]
+          }
+        },
+        "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+        "alternative-id": [
+          "4367"
+        ],
+        "article-number": "936",
+        "content-domain": {
+          "domain": [
+            "link.springer.com"
+          ],
+          "crossmark-restriction": false
+        },
+        "original-title": [],
+        "container-title": [
+          "Journal of Orthopaedic Surgery and Research"
+        ],
+        "reference-count": 25,
+        "published-online": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              7
+            ]
+          ]
+        },
+        "references-count": 25,
+        "short-container-title": [
+          "J Orthop Surg Res"
+        ],
+        "is-referenced-by-count": 0
+      },
+      "message-type": "work",
+      "message-version": "1.0.0"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:36:12.327082",
+    "processing_time_ms": 1528
+  },
+  "datacite": {
+    "error": "No matching articles found",
+    "success": false,
+    "timestamp": "2025-07-22T14:36:19.709650",
+    "processing_time_ms": 8897
+  },
+  "openalex": {
+    "data": {
+      "id": "https://openalex.org/W4389450837",
+      "doi": "https://doi.org/10.1186/s13018-023-04367-3",
+      "title": "Effectiveness of a digital rehabilitation program based on computer vision and augmented reality for isolated meniscus injury: protocol for a prospective randomized controlled trial",
+      "open_access": {
+        "is_oa": true,
+        "oa_url": "https://josr-online.biomedcentral.com/counter/pdf/10.1186/s13018-023-04367-3",
+        "oa_status": "gold",
+        "any_repository_has_fulltext": true
+      },
+      "cited_by_count": 1,
+      "publication_year": 2023
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:36:12.261345",
+    "processing_time_ms": 1459
+  },
+  "unpaywall": {
+    "data": {
+      "doi": "10.1186/s13018-023-04367-3",
+      "year": 2023,
+      "genre": "journal-article",
+      "is_oa": true,
+      "title": "Effectiveness of a digital rehabilitation program based on computer vision and augmented reality for isolated meniscus injury: protocol for a prospective randomized controlled trial",
+      "doi_url": "https://doi.org/10.1186/s13018-023-04367-3",
+      "oa_status": "gold",
+      "publisher": "Springer Science and Business Media LLC",
+      "is_paratext": false,
+      "journal_name": "Journal of Orthopaedic Surgery and Research",
+      "journal_issns": "1749-799X",
+      "journal_issn_l": "1749-799X",
+      "published_date": "2023-12-07",
+      "z_authors_summary": {
+        "count": 9,
+        "first_author": ""
+      },
+      "has_repository_copy": true,
+      "oa_locations_summary": {
+        "count": 2,
+        "has_repository": true
+      },
+      "best_oa_location_summary": {
+        "is_best": true,
+        "host_type": "publisher",
+        "url_for_pdf": true
+      },
+      "first_oa_location_summary": {
+        "is_first": true,
+        "host_type": "publisher",
+        "url_for_pdf": true
+      }
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:36:12.264405",
+    "processing_time_ms": 1454
+  },
+  "europe_pmc": {
+    "data": {
+      "id": "38057846",
+      "doi": "10.1186/s13018-023-04367-3",
+      "pmid": "38057846",
+      "inPMC": "Y",
+      "pmcid": "PMC10701936",
+      "title": "Effectiveness of a digital rehabilitation program based on computer vision and augmented reality for isolated meniscus injury: protocol for a prospective randomized controlled trial.",
+      "hasPDF": "Y",
+      "inEPMC": "Y",
+      "source": "MED",
+      "authMan": "N",
+      "hasBook": "N",
+      "hasData": "N",
+      "license": "cc by",
+      "pubYear": "2023",
+      "hasSuppl": "N",
+      "language": "eng",
+      "pageInfo": "936",
+      "pubModel": "Electronic",
+      "authorList": {
+        "author": [
+          {
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0003-3260-5998"
+            },
+            "fullName": "Wang L",
+            "initials": "L",
+            "lastName": "Wang",
+            "firstName": "Li",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Orthopaedics, Orthopaedic Research Institute, West China Hospital, Sichuan University, No 37 Guo Xue Xiang, Chengdu, 610041, Sichuan, People's Republic of China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Chen X",
+            "initials": "X",
+            "lastName": "Chen",
+            "firstName": "Xi",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Orthopaedics, Orthopaedic Research Institute, West China Hospital, Sichuan University, No 37 Guo Xue Xiang, Chengdu, 610041, Sichuan, People's Republic of China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Deng Q",
+            "initials": "Q",
+            "lastName": "Deng",
+            "firstName": "Qian",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Orthopaedics, Orthopaedic Research Institute, West China Hospital, Sichuan University, No 37 Guo Xue Xiang, Chengdu, 610041, Sichuan, People's Republic of China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "You M",
+            "initials": "M",
+            "lastName": "You",
+            "firstName": "MingKe",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Orthopaedics, Orthopaedic Research Institute, West China Hospital, Sichuan University, No 37 Guo Xue Xiang, Chengdu, 610041, Sichuan, People's Republic of China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Xu Y",
+            "initials": "Y",
+            "lastName": "Xu",
+            "firstName": "Yang",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Orthopaedics, Orthopaedic Research Institute, West China Hospital, Sichuan University, No 37 Guo Xue Xiang, Chengdu, 610041, Sichuan, People's Republic of China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Liu D",
+            "initials": "D",
+            "lastName": "Liu",
+            "firstName": "Di",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Jiakang Zhongzhi Technology Company, Beijing, People's Republic of China."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Lin Y",
+            "initials": "Y",
+            "lastName": "Lin",
+            "firstName": "Ye",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "University of Chicago, Chicago, USA."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Li P",
+            "initials": "P",
+            "lastName": "Li",
+            "firstName": "PengCheng",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Orthopaedics, Orthopaedic Research Institute, West China Hospital, Sichuan University, No 37 Guo Xue Xiang, Chengdu, 610041, Sichuan, People's Republic of China. 16699411@qq.com."
+                },
+                {
+                  "affiliation": "China School of Nursing, Sichuan University, Chengdu, People's Republic of China. 16699411@qq.com."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Li J",
+            "initials": "J",
+            "lastName": "Li",
+            "firstName": "Jian",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Orthopaedics, Orthopaedic Research Institute, West China Hospital, Sichuan University, No 37 Guo Xue Xiang, Chengdu, 610041, Sichuan, People's Republic of China. lijian_sportsmed@163.com."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "grantsList": {
+        "grant": [
+          {
+            "agency": "Science and Technology Department of Sichuan Province",
+            "grantId": "2022YFS0372",
+            "orderIn": 0
+          }
+        ]
+      },
+      "nihAuthMan": "N",
+      "subsetList": {
+        "subset": [
+          {
+            "code": "IM",
+            "name": "Index Medicus"
+          }
+        ]
+      },
+      "affiliation": "Department of Orthopaedics, Orthopaedic Research Institute, West China Hospital, Sichuan University, No 37 Guo Xue Xiang, Chengdu, 610041, Sichuan, People's Republic of China.",
+      "epmcAuthMan": "N",
+      "journalInfo": {
+        "issue": "1",
+        "volume": "18",
+        "journal": {
+          "essn": "1749-799X",
+          "issn": "1749-799X",
+          "nlmid": "101265112",
+          "title": "Journal of orthopaedic surgery and research",
+          "isoabbreviation": "J Orthop Surg Res",
+          "medlineAbbreviation": "J Orthop Surg Res"
+        },
+        "journalIssueId": 3672628,
+        "dateOfPublication": "2023 Dec",
+        "yearOfPublication": 2023,
+        "monthOfPublication": 12,
+        "printPublicationDate": "2023-12-01"
+      },
+      "keywordList": {
+        "keyword": [
+          "Computer vision",
+          "Rehabilitation",
+          "Meniscus",
+          "Augmented Reality"
+        ]
+      },
+      "pubTypeList": {
+        "pubType": [
+          "Clinical Trial Protocol",
+          "research-article",
+          "Journal Article"
+        ]
+      },
+      "abstractText": "<h4>Background</h4>The lack of access to physical therapists in developing countries and rural areas poses a significant challenge in supervising postsurgical rehabilitation, potentially impeding desirable outcomes following surgical interventions. For this reason, this study aims to evaluate the feasibility, safety, and effectiveness of utilizing a digital rehabilitation program based on computer vision and augmented reality in comparison with traditional care for patients who will undergo isolated meniscus repair, since to date, there is no literature on this topic.<h4>Methods</h4>This study intends to enroll two groups of participants, each to be provided with informed consent before undergoing randomization into either the experimental or control group. The experimental group will undergo a digital rehabilitation program utilizing computer vision and augmented reality (AR) technology following their surgical procedure, while the control group will receive conventional care, involving in-clinic physical therapy sessions weekly. Both groups will adhere to a standardized rehabilitation protocol over a six-month duration. Follow-up assessments will be conducted at various intervals, including preoperatively, and at 2 weeks, 6 weeks, 12 weeks, and 24 weeks postoperatively. Imaging assessments and return-to-play evaluations will be conducted during the final follow-up. Clinical functionality will be assessed based on improvements in International Knee Documentation Committee (IKDC) and Visual Analog Scale (VAS) scores.<h4>Registration number</h4>ChiCTR2300070582.",
+      "authorIdList": {
+        "authorId": [
+          {
+            "type": "ORCID",
+            "value": "0000-0003-3260-5998"
+          }
+        ]
+      },
+      "authorString": "Wang L, Chen X, Deng Q, You M, Xu Y, Liu D, Lin Y, Li P, Li J.",
+      "citedByCount": 0,
+      "hasLabsLinks": "N",
+      "isOpenAccess": "Y",
+      "hasReferences": "Y",
+      "dateOfCreation": "2023-12-07",
+      "dateOfRevision": "2023-12-17",
+      "firstIndexDate": "2023-12-07",
+      "fullTextIdList": {
+        "fullTextId": [
+          "PMC10701936"
+        ]
+      },
+      "hasEvaluations": "N",
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "url": "https://josr-online.biomedcentral.com/counter/pdf/10.1186/s13018-023-04367-3",
+            "site": "Unpaywall",
+            "availability": "Open access",
+            "documentStyle": "pdf",
+            "availabilityCode": "OA"
+          },
+          {
+            "url": "https://doi.org/10.1186/s13018-023-04367-3",
+            "site": "DOI",
+            "availability": "Subscription required",
+            "documentStyle": "doi",
+            "availabilityCode": "S"
+          },
+          {
+            "url": "https://europepmc.org/articles/PMC10701936",
+            "site": "Europe_PMC",
+            "availability": "Open access",
+            "documentStyle": "html",
+            "availabilityCode": "OA"
+          },
+          {
+            "url": "https://europepmc.org/articles/PMC10701936?pdf=render",
+            "site": "Europe_PMC",
+            "availability": "Open access",
+            "documentStyle": "pdf",
+            "availabilityCode": "OA"
+          }
+        ]
+      },
+      "meshHeadingList": {
+        "meshHeading": [
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Knee Joint"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Humans"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Treatment Outcome"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Prospective Studies"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Physical Therapy Modalities"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Randomized Controlled Trials as Topic"
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Meniscus"
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Augmented Reality"
+          }
+        ]
+      },
+      "dateOfCompletion": "2023-12-11",
+      "hasTextMinedTerms": "Y",
+      "publicationStatus": "epublish",
+      "firstPublicationDate": "2023-12-07",
+      "fullTextReceivedDate": "2023-12-09",
+      "hasDbCrossReferences": "N",
+      "hasTMAccessionNumbers": "N",
+      "electronicPublicationDate": "2023-12-07"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:36:12.810362",
+    "processing_time_ms": 2004
+  },
+  "semantic_scholar": {
+    "data": {
+      "year": 2023,
+      "title": "Effectiveness of a digital rehabilitation program based on computer vision and augmented reality for isolated meniscus injury: protocol for a prospective randomized controlled trial",
+      "authors": [
+        {
+          "name": "Li Wang",
+          "authorId": "2272458208"
+        },
+        {
+          "name": "Xi Chen",
+          "authorId": "2242332878"
+        },
+        {
+          "name": "Qian Deng",
+          "authorId": "2269820634"
+        },
+        {
+          "name": "M. You",
+          "authorId": "82207389"
+        },
+        {
+          "name": "Yang Xu",
+          "authorId": "2271551584"
+        },
+        {
+          "name": "Di Liu",
+          "authorId": "2269833193"
+        },
+        {
+          "name": "Ye Lin",
+          "authorId": "2271013863"
+        },
+        {
+          "name": "Peng-Cheng Li",
+          "authorId": "2272217276"
+        },
+        {
+          "name": "Jian Li",
+          "authorId": "2268769761"
+        }
+      ],
+      "journal": {
+        "name": "Journal of Orthopaedic Surgery and Research",
+        "volume": "18"
+      },
+      "paperId": "8bc14592aaf381894bea3972523fb1b519ff69df",
+      "abstract": "Background The lack of access to physical therapists in developing countries and rural areas poses a significant challenge in supervising postsurgical rehabilitation, potentially impeding desirable outcomes following surgical interventions. For this reason, this study aims to evaluate the feasibility, safety, and effectiveness of utilizing a digital rehabilitation program based on computer vision and augmented reality in comparison with traditional care for patients who will undergo isolated meniscus repair, since to date, there is no literature on this topic. Methods This study intends to enroll two groups of participants, each to be provided with informed consent before undergoing randomization into either the experimental or control group. The experimental group will undergo a digital rehabilitation program utilizing computer vision and augmented reality (AR) technology following their surgical procedure, while the control group will receive conventional care, involving in-clinic physical therapy sessions weekly. Both groups will adhere to a standardized rehabilitation protocol over a six-month duration. Follow-up assessments will be conducted at various intervals, including preoperatively, and at 2 weeks, 6 weeks, 12 weeks, and 24 weeks postoperatively. Imaging assessments and return-to-play evaluations will be conducted during the final follow-up. Clinical functionality will be assessed based on improvements in International Knee Documentation Committee (IKDC) and Visual Analog Scale (VAS) scores. Registration number ChiCTR2300070582.",
+      "externalIds": {
+        "DOI": "10.1186/s13018-023-04367-3",
+        "PubMed": "38057846",
+        "CorpusId": 265680634,
+        "PubMedCentral": "10701936"
+      },
+      "isOpenAccess": true,
+      "citationCount": 2,
+      "openAccessPdf": {
+        "url": "https://josr-online.biomedcentral.com/counter/pdf/10.1186/s13018-023-04367-3",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10701936, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      }
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:36:11.560140",
+    "processing_time_ms": 760
+  }
+}

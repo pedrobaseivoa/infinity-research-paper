@@ -1,0 +1,98 @@
+{
+  "timestamp": "2025-07-22T14:49:26.953634",
+  "cost_tracking": {
+    "model": "deepseek-chat",
+    "call_type": "smart_consensus",
+    "timestamp": "2025-07-22T14:49:26.953402",
+    "input_cost": 0.003967,
+    "total_cost": 0.005519,
+    "output_cost": 0.001552,
+    "input_tokens": 14693,
+    "total_tokens": 16104,
+    "output_tokens": 1411,
+    "parsing_error": null,
+    "parsing_successful": true,
+    "processing_time_ms": 71741
+  },
+  "consensus_result": {
+    "DOI": "10.3390/children12010032",
+    "PMID": "39857863",
+    "Year": 2024,
+    "Issue": "1",
+    "PMCID": "PMC11763531",
+    "Pages": "32",
+    "Title": "Advancing Pediatric Surgery: The Use of HoloLens 2 for 3D Anatomical Reconstructions in Preoperative Planning",
+    "PDFUrl": "https://www.mdpi.com/2227-9067/12/1/32/pdf",
+    "Volume": "12",
+    "Authors": [
+      "Di Mitri, Marco",
+      "Di Carmine, Annalisa",
+      "D'Antonio, Simone",
+      "Capobianco, Benedetta Maria",
+      "Bisanti, Cristian",
+      "Collautti, Edoardo",
+      "Cravano, Sara Maria",
+      "Ruspi, Francesca",
+      "Libri, Michele",
+      "Gargano, Tommaso",
+      "Lima, Mario"
+    ],
+    "Journal": "Children",
+    "Abstract": "Background: In pediatric surgery, a comprehensive knowledge of the child’s anatomy is crucial to optimize surgical outcomes and minimize complications. Recent advancements in medical imaging and technology have introduced innovative tools that enhance surgical planning and decision-making. Methods: This study explores the integration of mixed reality technology, specifically the HoloLens 2 headset, for visualization and interaction with three-dimensional (3D) anatomical reconstructions obtained from computed tomography (CT) scans. Our prospective observational study, conducted at the IRCCS (Scientific Hospitalization and Care Institute) Sant’Orsola-Malpighi University Hospital in Bologna, engaged ten pediatric surgeons, who assessed three types of anatomical malformations (splenic cysts, pulmonary cystic adenomatoid malformations, and pyelo-ureteral junction stenosis) and planned surgeries using both traditional 2D CT scans and 3D visualizations via HoloLens 2, followed by completing a questionnaire to evaluate the utility of each of these imaging techniques in surgical planning. Results: The statistical analysis revealed that the 3D visualizations significantly outperformed the 2D CT scans in clarity and utility (p < 0.05). The results indicated significant improvements in anatomy understanding and surgical precision. The immersive experience provided by HoloLens 2 enabled surgeons to better identify critical landmarks, understand spatial relationships, and prevent surgical challenges. Furthermore, this technology facilitated collaborative decision-making and streamlined surgical workflows. Conclusions: Despite some challenges in ease of use, HoloLens 2 showed promising results in reducing the learning curve for complex procedures. This study underscores the transformative potential of mixed reality technology in pediatric surgery, advocating for further research and development to integrate these advancements into routine clinical practice.",
+    "Keywords": [
+      "HoloLens 2",
+      "three-dimensional reconstruction",
+      "Verima",
+      "pediatric surgery",
+      "innovations",
+      "mixed reality",
+      "augmented reality",
+      "preoperative planning",
+      "Three-dimensional reconstruction",
+      "Preoperative Planning",
+      "Augmented Reality",
+      "Innovations",
+      "Mixed Reality"
+    ],
+    "Citations": 3,
+    "Publisher": "MDPI AG",
+    "OpenAccess": true,
+    "confidence_factors": {
+      "source": "Vision-Foundation + API Enhancement",
+      "reasoning": "All API data was validated as coherent with vision data. Enhanced with additional identifiers (PMID, PMCID), citations, open access status, and expanded keywords from multiple sources. Year corrected from vision (2025) to API consensus (2024). Publisher name standardized.",
+      "field_sources": {
+        "doi": "crossref|openalex|semantic_scholar|europe_pmc|unpaywall|pubmed|doaj",
+        "pmid": "europe_pmc|pubmed",
+        "year": "crossref|openalex|unpaywall|pubmed|europe_pmc",
+        "issue": "vision|crossref|europe_pmc|doaj",
+        "pages": "vision|crossref|europe_pmc",
+        "pmcid": "europe_pmc",
+        "title": "vision",
+        "pdfurl": "crossref|unpaywall",
+        "volume": "vision|crossref|europe_pmc|doaj",
+        "authors": "crossref+vision",
+        "journal": "vision",
+        "abstract": "vision|europe_pmc",
+        "keywords": "vision|europe_pmc|doaj",
+        "citations": "semantic_scholar|europe_pmc",
+        "publisher": "vision|crossref|unpaywall|doaj",
+        "openaccess": "semantic_scholar|unpaywall|openalex|europe_pmc"
+      },
+      "enhancement_level": "SIGNIFICANT",
+      "validation_status": "HIGH"
+    },
+    "api_success_summary": {
+      "insights": "Excellent coherence across all successful APIs. Semantic Scholar, Europe PMC, and Crossref provided the most valuable enhancements. Year correction was unanimous across APIs. Failed APIs were expected (arxiv not relevant, datacite not found).",
+      "total_apis": 11,
+      "failed_apis": [
+        "arxiv",
+        "datacite"
+      ],
+      "success_rate": 0.82,
+      "coherent_apis": 9,
+      "coherence_rate": 1.0,
+      "successful_apis": 9
+    }
+  },
+  "processing_time_ms": 80289
+}

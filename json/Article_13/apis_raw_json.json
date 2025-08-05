@@ -1,0 +1,2052 @@
+{
+  "core": {
+    "data": {
+      "data": {
+        "doi": "10.1093/ageing/afae214",
+        "year": 2024,
+        "title": "Feasibility and acceptability of the HOLObalance telerehabilitation system compared with standard care for older adults at risk of falls: the HOLOBalance assessor blinded pilot randomised controlled study",
+        "authors": [
+          "Bamiou, Doris-Eva",
+          "Bibas, Athanasios",
+          "Flavell, Carol Ann",
+          "Fotiadis, Dimitrios I.",
+          "Gatsios, Dimitris",
+          "Gourtani, Fariba Mostajeran",
+          "Kikidis, Dimitris",
+          "Koutsouris, Dimitrios",
+          "Maurer, Christoph",
+          "Nikitas, ChristoS",
+          "Papadopoulou, Sofia",
+          "Pardalis, Athanasios",
+          "Pavlou, Marousa",
+          "Steinicke, Frank",
+          "Tsakanikas, Vassili",
+          "Tsoukatos, Michalis",
+          "Walz, Isabelle Daniela"
+        ],
+        "core_id": 169131267,
+        "journal": "",
+        "pdf_url": "https://core.ac.uk/download/639899956.pdf",
+        "abstract": "Background:\n\nFalls have high socioeconomic costs. Information and communication technologies may support provision and monitoring of multisensory (MSR) physiotherapy programmes. The HOLOBalance platform used augmented reality holograms to provide patient-centred, individualised MSR.\n\n\n\nObjectives:\n\nTo determine the platform’s safety, acceptability and feasibility, investigate functional gait and dynamic balance benefits and provide data for a definitive trial.\n\n\n\nDesign and setting:\n\nSingle-blinded pilot randomised controlled feasibility study. Interventions were conducted at clinical sites or participants’ homes in three European countries.\n\n\n\nParticipants:\n\nCommunity-dwelling older adults (median age 73 years; 64.2% female) at risk of falls were enrolled (May 2020-August 2021).\n\n\n\nMethods:\n\nParticipants were randomised to an 8-week clinic or home-based telerehabilitation MSR or OTAGO (control group) programme. Compliance, satisfaction, and adverse events determined feasibility. Clinical outcomes, assessed (blinded) within one-week prior to and post-intervention, included functional gait assessment (FGA), Mini BESTest and cognitive function.\n\n\n\nResults:\n\nRandomisation to completion rate was 76.15% with 109 participants recruited (n = 289 screened). Drop-out rate was similar between groups. Adverse events were reported (n = 3) in the control group. Sixty-nine percent would recommend the HOLOBalance intervention. Findings were similar for the home and clinic-based arms of each intervention; data was combined for analysis. FGA (95%CI [1.63, 4.19]) and Mini-BESTest (95%CI [1.46, 3.93]) showed greater improvement in the HOLOBalance group with a clinically meaningful change of 4/30 noted for the FGA.\n\n\n\nConclusions:\n\nHOLObalance was feasible to implement and acceptable to older adults at risk of falls, with FGA and Mini-BEST improvements exceeding those for the OTAGO programme. A definitive trial is warranted",
+        "repository": "",
+        "open_access": false,
+        "citation_count": 0
+      },
+      "success": true,
+      "strategy": "Exact Title"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:26:24.219147",
+    "processing_time_ms": 6402
+  },
+  "doaj": {
+    "error": "No DOI available for DOAJ search",
+    "success": false,
+    "timestamp": "2025-07-22T14:26:18.354829",
+    "processing_time_ms": 536
+  },
+  "arxiv": {
+    "error": "No results found",
+    "success": false,
+    "timestamp": "2025-07-22T14:26:19.281955",
+    "processing_time_ms": 1465
+  },
+  "orcid": {
+    "data": {
+      "person": {
+        "name": {
+          "path": "0000-0002-5861-2865",
+          "source": null,
+          "visibility": "public",
+          "credit-name": null,
+          "family-name": {
+            "value": "Pavlou"
+          },
+          "given-names": {
+            "value": "Marousa"
+          },
+          "created-date": {
+            "value": 1489406151644
+          },
+          "last-modified-date": {
+            "value": 1525527993399
+          }
+        },
+        "path": "/0000-0002-5861-2865/person",
+        "emails": {
+          "path": "/0000-0002-5861-2865/email",
+          "email": [],
+          "last-modified-date": null
+        },
+        "keywords": {
+          "path": "/0000-0002-5861-2865/keywords",
+          "keyword": [],
+          "last-modified-date": null
+        },
+        "addresses": {
+          "path": "/0000-0002-5861-2865/address",
+          "address": [],
+          "last-modified-date": null
+        },
+        "biography": null,
+        "other-names": {
+          "path": "/0000-0002-5861-2865/other-names",
+          "other-name": [],
+          "last-modified-date": null
+        },
+        "researcher-urls": {
+          "path": "/0000-0002-5861-2865/researcher-urls",
+          "researcher-url": [],
+          "last-modified-date": null
+        },
+        "last-modified-date": {
+          "value": 1524135287259
+        },
+        "external-identifiers": {
+          "path": "/0000-0002-5861-2865/external-identifiers",
+          "last-modified-date": {
+            "value": 1524135287259
+          },
+          "external-identifier": [
+            {
+              "path": "/0000-0002-5861-2865/external-identifiers/1007342",
+              "source": {
+                "source-name": {
+                  "value": "Scopus - Elsevier"
+                },
+                "source-orcid": null,
+                "source-client-id": {
+                  "uri": "https://orcid.org/client/0000-0002-5982-8983",
+                  "host": "orcid.org",
+                  "path": "0000-0002-5982-8983"
+                },
+                "assertion-origin-name": {
+                  "value": "Marousa Pavlou"
+                },
+                "assertion-origin-orcid": {
+                  "uri": "https://orcid.org/0000-0002-5861-2865",
+                  "host": "orcid.org",
+                  "path": "0000-0002-5861-2865"
+                },
+                "assertion-origin-client-id": null
+              },
+              "put-code": 1007342,
+              "visibility": "public",
+              "created-date": {
+                "value": 1524135287258
+              },
+              "display-index": 0,
+              "external-id-url": {
+                "value": "http://www.scopus.com/inward/authorDetails.url?authorID=6602453217&partnerID=MN8TOARS"
+              },
+              "external-id-type": "Scopus Author ID",
+              "external-id-value": "6602453217",
+              "last-modified-date": {
+                "value": 1524135287259
+              },
+              "external-id-relationship": "self"
+            }
+          ]
+        }
+      },
+      "orcid_id": "0000-0002-5861-2865"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:26:19.218739",
+    "processing_time_ms": 1397
+  },
+  "pubmed": {
+    "data": {
+      "PubmedArticle": [
+        {
+          "MedlineCitation": {
+            "PMID": {
+              "content": "39373575"
+            },
+            "Article": {
+              "Journal": {
+                "Title": "Age and ageing",
+                "JournalIssue": {
+                  "Issue": "10",
+                  "Volume": "53",
+                  "PubDate": {
+                    "Year": "2024"
+                  }
+                }
+              },
+              "Abstract": {
+                "AbstractText": [
+                  "Falls have high socioeconomic costs. Information and communication technologies may support provision and monitoring of multisensory (MSR) physiotherapy programmes. The HOLOBalance platform used augmented reality holograms to provide patient-centred, individualised MSR.",
+                  "To determine the platform's safety, acceptability and feasibility, investigate functional gait and dynamic balance benefits and provide data for a definitive trial.",
+                  "Single-blinded pilot randomised controlled feasibility study. Interventions were conducted at clinical sites or participants' homes in three European countries.",
+                  "Community-dwelling older adults (median age 73 years; 64.2% female) at risk of falls were enrolled (May 2020-August 2021).",
+                  "Participants were randomised to an 8-week clinic or home-based telerehabilitation MSR or OTAGO (control group) programme. Compliance, satisfaction, and adverse events determined feasibility. Clinical outcomes, assessed (blinded) within one-week prior to and post-intervention, included functional gait assessment (FGA), Mini BESTest and cognitive function.",
+                  "Randomisation to completion rate was 76.15% with 109 participants recruited (n = 289 screened). Drop-out rate was similar between groups. Adverse events were reported (n = 3) in the control group. Sixty-nine percent would recommend the HOLOBalance intervention. Findings were similar for the home and clinic-based arms of each intervention; data was combined for analysis. FGA (95%CI [1.63, 4.19]) and Mini-BESTest (95%CI [1.46, 3.93]) showed greater improvement in the HOLOBalance group with a clinically meaningful change of 4/30 noted for the FGA.",
+                  "HOLObalance was feasible to implement and acceptable to older adults at risk of falls, with FGA and Mini-BEST improvements exceeding those for the OTAGO programme. A definitive trial is warranted."
+                ]
+              },
+              "AuthorList": {
+                "Author": [
+                  {
+                    "ForeName": "Marousa",
+                    "LastName": "Pavlou"
+                  },
+                  {
+                    "ForeName": "Carol Ann",
+                    "LastName": "Flavell"
+                  },
+                  {
+                    "ForeName": "Fariba Mostajeran",
+                    "LastName": "Gourtani"
+                  },
+                  {
+                    "ForeName": "Christos",
+                    "LastName": "Nikitas"
+                  },
+                  {
+                    "ForeName": "Dimitris",
+                    "LastName": "Kikidis"
+                  },
+                  {
+                    "ForeName": "Athanasios",
+                    "LastName": "Bibas"
+                  },
+                  {
+                    "ForeName": "Dimitris",
+                    "LastName": "Gatsios"
+                  },
+                  {
+                    "ForeName": "Vassilis",
+                    "LastName": "Tsakanikas"
+                  },
+                  {
+                    "ForeName": "Dimitrios I",
+                    "LastName": "Fotiadis"
+                  },
+                  {
+                    "ForeName": "Dimitrios",
+                    "LastName": "Koutsouris"
+                  },
+                  {
+                    "ForeName": "Frank",
+                    "LastName": "Steinicke"
+                  },
+                  {
+                    "ForeName": "Isabelle Daniela",
+                    "LastName": "Walz"
+                  },
+                  {
+                    "ForeName": "Christoph",
+                    "LastName": "Maurer"
+                  },
+                  {
+                    "ForeName": "Sofia",
+                    "LastName": "Papadopoulou"
+                  },
+                  {
+                    "ForeName": "Michalis",
+                    "LastName": "Tsoukatos"
+                  },
+                  {
+                    "ForeName": "Athanasios",
+                    "LastName": "Pardalis"
+                  },
+                  {
+                    "ForeName": "Doris-Eva",
+                    "LastName": "Bamiou"
+                  }
+                ]
+              },
+              "Pagination": {},
+              "ArticleTitle": "Feasibility and acceptability of the HOLObalance telerehabilitation system compared with standard care for older adults at risk of falls: the HOLOBalance assessor blinded pilot randomised controlled study."
+            }
+          }
+        }
+      ]
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:26:19.643101",
+    "processing_time_ms": 1834
+  },
+  "crossref": {
+    "data": {
+      "status": "ok",
+      "message": {
+        "DOI": "10.1093/ageing/afae214",
+        "URL": "https://doi.org/10.1093/ageing/afae214",
+        "ISSN": [
+          "0002-0729",
+          "1468-2834"
+        ],
+        "link": [
+          {
+            "URL": "https://academic.oup.com/ageing/article-pdf/53/10/afae214/59619951/afae214.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "syndication"
+          },
+          {
+            "URL": "https://academic.oup.com/ageing/article-pdf/53/10/afae214/59619951/afae214.pdf",
+            "content-type": "unspecified",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "type": "journal-article",
+        "issue": "10",
+        "score": 1,
+        "title": [
+          "Feasibility and acceptability of the HOLObalance telerehabilitation system compared with standard care for older adults at risk of falls: the HOLOBalance assessor blinded pilot randomised controlled study"
+        ],
+        "author": [
+          {
+            "given": "Marousa",
+            "family": "Pavlou",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Centre for Human and Applied Physiological Sciences, King’s College London , London,",
+                "place": [
+                  "UK"
+                ]
+              },
+              {
+                "name": "Ear Institute, University College London , London,",
+                "place": [
+                  "UK"
+                ]
+              },
+              {
+                "name": "Department of Audiovestibular Medicine , Royal National ENT and Eastman Dental Hospitals, , London,",
+                "place": [
+                  "UK"
+                ]
+              },
+              {
+                "name": "University College London Hospitals NHS Foundation Trust , Royal National ENT and Eastman Dental Hospitals, , London,",
+                "place": [
+                  "UK"
+                ]
+              }
+            ]
+          },
+          {
+            "given": "Carol Ann",
+            "family": "Flavell",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Centre for Human and Applied Physiological Sciences, King’s College London , London,",
+                "place": [
+                  "UK"
+                ]
+              }
+            ]
+          },
+          {
+            "given": "Fariba Mostajeran",
+            "family": "Gourtani",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Human-Computer Interaction Group , Department of Informatics, , Hamburg,",
+                "place": [
+                  "Germany"
+                ]
+              },
+              {
+                "name": "Universität Hamburg , Department of Informatics, , Hamburg,",
+                "place": [
+                  "Germany"
+                ]
+              }
+            ]
+          },
+          {
+            "given": "Christos",
+            "family": "Nikitas",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "1st Department of Otorhinolaryngology , Head and Neck Surgery, , Athens,",
+                "place": [
+                  "Greece"
+                ]
+              },
+              {
+                "name": "National and Kapodistrian University of Athens, Hippocrateion General Hospital , Head and Neck Surgery, , Athens,",
+                "place": [
+                  "Greece"
+                ]
+              }
+            ]
+          },
+          {
+            "given": "Dimitris",
+            "family": "Kikidis",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "1st Department of Otorhinolaryngology , Head and Neck Surgery, , Athens,",
+                "place": [
+                  "Greece"
+                ]
+              },
+              {
+                "name": "National and Kapodistrian University of Athens, Hippocrateion General Hospital , Head and Neck Surgery, , Athens,",
+                "place": [
+                  "Greece"
+                ]
+              }
+            ]
+          },
+          {
+            "given": "Athanasios",
+            "family": "Bibas",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "1st Department of Otorhinolaryngology , Head and Neck Surgery, , Athens,",
+                "place": [
+                  "Greece"
+                ]
+              },
+              {
+                "name": "National and Kapodistrian University of Athens, Hippocrateion General Hospital , Head and Neck Surgery, , Athens,",
+                "place": [
+                  "Greece"
+                ]
+              }
+            ]
+          },
+          {
+            "given": "Dimitris",
+            "family": "Gatsios",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Unit of Medical Technology and Intelligent Information Systems , Department of Materials Science and Engineering, , Ioannina,",
+                "place": [
+                  "Greece"
+                ]
+              },
+              {
+                "name": "University of Ioannina , Department of Materials Science and Engineering, , Ioannina,",
+                "place": [
+                  "Greece"
+                ]
+              }
+            ]
+          },
+          {
+            "given": "Vassilis",
+            "family": "Tsakanikas",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Unit of Medical Technology and Intelligent Information Systems , Department of Materials Science and Engineering, , Ioannina,",
+                "place": [
+                  "Greece"
+                ]
+              },
+              {
+                "name": "University of Ioannina , Department of Materials Science and Engineering, , Ioannina,",
+                "place": [
+                  "Greece"
+                ]
+              }
+            ]
+          },
+          {
+            "given": "Dimitrios I",
+            "family": "Fotiadis",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Unit of Medical Technology and Intelligent Information Systems , Department of Materials Science and Engineering, , Ioannina,",
+                "place": [
+                  "Greece"
+                ]
+              },
+              {
+                "name": "University of Ioannina , Department of Materials Science and Engineering, , Ioannina,",
+                "place": [
+                  "Greece"
+                ]
+              },
+              {
+                "name": "Biomedical Research Institute , Ioannina,",
+                "place": [
+                  "Greece"
+                ]
+              }
+            ]
+          },
+          {
+            "given": "Dimitrios",
+            "family": "Koutsouris",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Biomedical Engineering Laboratory , School of Electrical and Computer Engineering, , Athens,",
+                "place": [
+                  "Greece"
+                ]
+              },
+              {
+                "name": "National Technical University of Athens , School of Electrical and Computer Engineering, , Athens,",
+                "place": [
+                  "Greece"
+                ]
+              }
+            ]
+          },
+          {
+            "given": "Frank",
+            "family": "Steinicke",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Human-Computer Interaction Group , Department of Informatics, , Hamburg,",
+                "place": [
+                  "Germany"
+                ]
+              },
+              {
+                "name": "Universität Hamburg , Department of Informatics, , Hamburg,",
+                "place": [
+                  "Germany"
+                ]
+              }
+            ]
+          },
+          {
+            "given": "Isabelle Daniela",
+            "family": "Walz",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Neurology and Neuroscience , Faculty of Medicine, Medical Center, , Freiburg,",
+                "place": [
+                  "Germany"
+                ]
+              },
+              {
+                "name": "University of Freiburg , Faculty of Medicine, Medical Center, , Freiburg,",
+                "place": [
+                  "Germany"
+                ]
+              },
+              {
+                "name": "Department of Sport and Sport Science, University of Freiburg , Freiburg,",
+                "place": [
+                  "Germany"
+                ]
+              }
+            ]
+          },
+          {
+            "given": "Christoph",
+            "family": "Maurer",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Neurology and Neuroscience , Faculty of Medicine, Medical Center, , Freiburg,",
+                "place": [
+                  "Germany"
+                ]
+              },
+              {
+                "name": "University of Freiburg , Faculty of Medicine, Medical Center, , Freiburg,",
+                "place": [
+                  "Germany"
+                ]
+              }
+            ]
+          },
+          {
+            "given": "Sofia",
+            "family": "Papadopoulou",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "1st Department of Otorhinolaryngology , Head and Neck Surgery, , Athens,",
+                "place": [
+                  "Greece"
+                ]
+              },
+              {
+                "name": "National and Kapodistrian University of Athens, Hippocrateion General Hospital , Head and Neck Surgery, , Athens,",
+                "place": [
+                  "Greece"
+                ]
+              }
+            ]
+          },
+          {
+            "given": "Michalis",
+            "family": "Tsoukatos",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "1st Department of Otorhinolaryngology , Head and Neck Surgery, , Athens,",
+                "place": [
+                  "Greece"
+                ]
+              },
+              {
+                "name": "National and Kapodistrian University of Athens, Hippocrateion General Hospital , Head and Neck Surgery, , Athens,",
+                "place": [
+                  "Greece"
+                ]
+              }
+            ]
+          },
+          {
+            "given": "Athanasios",
+            "family": "Pardalis",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Unit of Medical Technology and Intelligent Information Systems , Department of Materials Science and Engineering, , Ioannina,",
+                "place": [
+                  "Greece"
+                ]
+              },
+              {
+                "name": "University of Ioannina , Department of Materials Science and Engineering, , Ioannina,",
+                "place": [
+                  "Greece"
+                ]
+              }
+            ]
+          },
+          {
+            "given": "Doris-Eva",
+            "family": "Bamiou",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Ear Institute, University College London , London,",
+                "place": [
+                  "UK"
+                ]
+              },
+              {
+                "name": "Department of Audiovestibular Medicine , Royal National ENT and Eastman Dental Hospitals, , London,",
+                "place": [
+                  "UK"
+                ]
+              },
+              {
+                "name": "University College London Hospitals NHS Foundation Trust , Royal National ENT and Eastman Dental Hospitals, , London,",
+                "place": [
+                  "UK"
+                ]
+              }
+            ]
+          }
+        ],
+        "funder": [
+          {
+            "name": "European Union's Horizon 2020 Research and Innovation Programme",
+            "award": [
+              "769574"
+            ]
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2024,
+              10,
+              1
+            ]
+          ]
+        },
+        "member": "286",
+        "prefix": "10.1093",
+        "source": "Crossref",
+        "volume": "53",
+        "created": {
+          "date-time": "2024-10-02T19:21:42Z",
+          "timestamp": 1727896902000,
+          "date-parts": [
+            [
+              2024,
+              10,
+              2
+            ]
+          ]
+        },
+        "indexed": {
+          "version": "3.30.0",
+          "date-time": "2025-05-28T21:40:01Z",
+          "timestamp": 1748468401705,
+          "date-parts": [
+            [
+              2025,
+              5,
+              28
+            ]
+          ]
+        },
+        "license": [
+          {
+            "URL": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+            "start": {
+              "date-time": "2024-10-07T00:00:00Z",
+              "timestamp": 1728259200000,
+              "date-parts": [
+                [
+                  2024,
+                  10,
+                  7
+                ]
+              ]
+            },
+            "delay-in-days": 6,
+            "content-version": "vor"
+          }
+        ],
+        "subject": [],
+        "abstract": "<jats:title>Abstract</jats:title><jats:sec><jats:title>Background</jats:title><jats:p>Falls have high socioeconomic costs. Information and communication technologies may support provision and monitoring of multisensory (MSR) physiotherapy programmes. The HOLOBalance platform used augmented reality holograms to provide patient-centred, individualised MSR.</jats:p></jats:sec><jats:sec><jats:title>Objectives</jats:title><jats:p>To determine the platform’s safety, acceptability and feasibility, investigate functional gait and dynamic balance benefits and provide data for a definitive trial.</jats:p></jats:sec><jats:sec><jats:title>Design and setting</jats:title><jats:p>Single-blinded pilot randomised controlled feasibility study. Interventions were conducted at clinical sites or participants’ homes in three European countries.</jats:p></jats:sec><jats:sec><jats:title>Participants</jats:title><jats:p>Community-dwelling older adults (median age 73 years; 64.2% female) at risk of falls were enrolled (May 2020-August 2021).</jats:p></jats:sec><jats:sec><jats:title>Methods</jats:title><jats:p>Participants were randomised to an 8-week clinic or home-based telerehabilitation MSR or OTAGO (control group) programme. Compliance, satisfaction, and adverse events determined feasibility. Clinical outcomes, assessed (blinded) within one-week prior to and post-intervention, included functional gait assessment (FGA), Mini BESTest and cognitive function.</jats:p></jats:sec><jats:sec><jats:title>Results</jats:title><jats:p>Randomisation to completion rate was 76.15% with 109 participants recruited (n = 289 screened). Drop-out rate was similar between groups. Adverse events were reported (n = 3) in the control group. Sixty-nine percent would recommend the HOLOBalance intervention. Findings were similar for the home and clinic-based arms of each intervention; data was combined for analysis. FGA (95%CI [1.63, 4.19]) and Mini-BESTest (95%CI [1.46, 3.93]) showed greater improvement in the HOLOBalance group with a clinically meaningful change of 4/30 noted for the FGA.</jats:p></jats:sec><jats:sec><jats:title>Conclusions</jats:title><jats:p>HOLObalance was feasible to implement and acceptable to older adults at risk of falls, with FGA and Mini-BEST improvements exceeding those for the OTAGO programme. A definitive trial is warranted.</jats:p></jats:sec>",
+        "language": "en",
+        "relation": {},
+        "resource": {
+          "primary": {
+            "URL": "https://academic.oup.com/ageing/article/doi/10.1093/ageing/afae214/7814651"
+          }
+        },
+        "subtitle": [],
+        "deposited": {
+          "date-time": "2024-11-29T00:51:22Z",
+          "timestamp": 1732841482000,
+          "date-parts": [
+            [
+              2024,
+              11,
+              29
+            ]
+          ]
+        },
+        "issn-type": [
+          {
+            "type": "print",
+            "value": "0002-0729"
+          },
+          {
+            "type": "electronic",
+            "value": "1468-2834"
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2024,
+              10,
+              1
+            ]
+          ]
+        },
+        "publisher": "Oxford University Press (OUP)",
+        "reference": [
+          {
+            "DOI": "10.1017/CBO9780511722233",
+            "key": "2024100713002509600_ref1",
+            "year": "2007",
+            "author": "Lord",
+            "edition": "2nd",
+            "volume-title": "Falls in Older People: Risk Factors and Strategies for Prevention",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1093/ageing/afac205",
+            "key": "2024100713002509600_ref2",
+            "year": "2022",
+            "author": "Montero-Odasso",
+            "volume": "51",
+            "article-title": "World guidelines for falls prevention and management for older adults: a global initiative",
+            "journal-title": "Age Ageing",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1093/ageing/aft129",
+            "key": "2024100713002509600_ref3",
+            "year": "2014",
+            "author": "Liston",
+            "volume": "43",
+            "first-page": "38",
+            "article-title": "Peripheral vestibular dysfunction is prevalent in older adults experiencing multiple non-syncopal falls versus age-matched non-fallers: a pilot study",
+            "journal-title": "Age Ageing",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.2340/16501977-2312",
+            "key": "2024100713002509600_ref4",
+            "year": "2018",
+            "author": "Baldursdottir",
+            "volume": "50",
+            "first-page": "209",
+            "article-title": "Sensory impairments and wrist fractures: a case-control study",
+            "journal-title": "J Rehabil Med",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.3389/fneur.2017.00443",
+            "key": "2024100713002509600_ref5",
+            "year": "2017",
+            "author": "Agrawal",
+            "volume": "8",
+            "first-page": "443",
+            "article-title": "Editorial: age-related vestibular loss: current understanding and future research directions",
+            "journal-title": "Front Neurol",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1001/archinternmed.2009.66",
+            "key": "2024100713002509600_ref6",
+            "year": "2009",
+            "author": "Agrawal",
+            "volume": "169",
+            "first-page": "938",
+            "article-title": "Disorders of balance and vestibular function in US adults: data from the National Health and nutrition examination survey, 2001-2004",
+            "journal-title": "Arch Intern Med",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.2147/CIA.S77432",
+            "key": "2024100713002509600_ref7",
+            "year": "2015",
+            "author": "Hirashima",
+            "volume": "10",
+            "first-page": "643",
+            "article-title": "Dual-tasking over an extended walking distance is associated with falls among community-dwelling older adults",
+            "journal-title": "Clin Interv Aging",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1093/ageing/afl077",
+            "key": "2024100713002509600_ref8",
+            "year": "2006",
+            "author": "Horak",
+            "volume": "35",
+            "first-page": "ii7",
+            "article-title": "Postural orientation and equilibrium: what do we need to know about neural control of balance to prevent falls?",
+            "journal-title": "Age Ageing",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1007/s40520-019-01143-4",
+            "key": "2024100713002509600_ref9",
+            "year": "2020",
+            "author": "Baldursdottir",
+            "volume": "32",
+            "first-page": "29",
+            "article-title": "Multi-sensory training and wrist fractures: a randomized, controlled trial",
+            "journal-title": "Aging Clin Exp Res",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1177/0269215514521042",
+            "key": "2024100713002509600_ref10",
+            "year": "2014",
+            "author": "Liston",
+            "volume": "28",
+            "first-page": "784",
+            "article-title": "Feasibility and effect of supplementing a modified OTAGO intervention with multisensory balance exercises in older people who fall: a pilot randomized controlled trial",
+            "journal-title": "Clin Rehabil",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.3109/09638288.2013.835452",
+            "key": "2024100713002509600_ref11",
+            "year": "2014",
+            "author": "Kristinsdottir",
+            "volume": "36",
+            "first-page": "1211",
+            "article-title": "Effect of multi-sensory balance training for unsteady elderly people: pilot study of the \"Reykjavik model\"",
+            "journal-title": "Disabil Rehabil",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1177/1084822318820531",
+            "key": "2024100713002509600_ref12",
+            "year": "2019",
+            "author": "Whitney",
+            "volume": "31",
+            "first-page": "147",
+            "article-title": "A multidimensional exercise program in the home for older adults designed to improve function",
+            "journal-title": "Home Health Care Manag Pract",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1519/00139143-200932030-00008",
+            "key": "2024100713002509600_ref13",
+            "year": "2009",
+            "author": "Beling",
+            "volume": "32",
+            "first-page": "125",
+            "article-title": "Multifactorial intervention with balance training as a core component among fall-prone older adults",
+            "journal-title": "J Geriatr Phys Ther",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "key": "2024100713002509600_ref14",
+            "year": "2019",
+            "author": "Sherrington",
+            "volume": "2019",
+            "first-page": "CD012424",
+            "article-title": "Exercise for preventing falls in older people living in the community",
+            "journal-title": "Cochrane Database Syst Rev"
+          },
+          {
+            "DOI": "10.2196/10486",
+            "key": "2024100713002509600_ref15",
+            "year": "2018",
+            "author": "Li",
+            "volume": "20",
+            "first-page": "e10486",
+            "article-title": "The social effects of Exergames on older adults: systematic review and metric analysis",
+            "journal-title": "J Med Internet Res",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1177/1474515113512203",
+            "key": "2024100713002509600_ref16",
+            "year": "2014",
+            "author": "Verheijden Klompstra",
+            "volume": "13",
+            "first-page": "388",
+            "article-title": "Exergaming in older adults: a scoping review and implementation potential for patients with heart failure",
+            "journal-title": "Eur J Cardiovasc Nurs",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "key": "2024100713002509600_ref17",
+            "year": "2013",
+            "author": "Treml J, Husk J, Lowe D",
+            "volume-title": "Falling Standards, Broken Promises: Report of the National Audit of Falls and Bone Health"
+          },
+          {
+            "key": "2024100713002509600_ref18",
+            "year": "2016",
+            "author": "Riglin",
+            "volume-title": "Older people's Experience of Therapeutic Exercise as Part of a Falls Prevention Service"
+          },
+          {
+            "DOI": "10.1001/jamanetworkopen.2021.38911",
+            "key": "2024100713002509600_ref19",
+            "year": "2021",
+            "author": "Montero-Odasso",
+            "volume": "4",
+            "first-page": "e2138911",
+            "article-title": "Evaluation of clinical practice guidelines on fall prevention and Management for Older Adults: a systematic review",
+            "journal-title": "JAMA Netw Open",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1007/s40279-017-0747-6",
+            "key": "2024100713002509600_ref20",
+            "year": "2017",
+            "author": "Lacroix",
+            "volume": "47",
+            "first-page": "2341",
+            "article-title": "Effects of supervised vs. unsupervised training programs on balance and muscle strength in older adults: a systematic review and meta-analysis",
+            "journal-title": "Sports Med",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.2196/27972",
+            "key": "2024100713002509600_ref21",
+            "year": "2021",
+            "author": "Nishchyk",
+            "volume": "4",
+            "article-title": "The effect of mixed reality Technologies for falls prevention among older adults: systematic review and meta-analysis",
+            "journal-title": "JMIR Aging",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1097/PHM.0000000000001554",
+            "key": "2024100713002509600_ref22",
+            "year": "2021",
+            "author": "Oh-Park",
+            "volume": "100",
+            "first-page": "92",
+            "article-title": "Technology utilization in fall prevention",
+            "journal-title": "Am J Phys Med Rehabil",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1136/bmjopen-2020-039254",
+            "key": "2024100713002509600_ref23",
+            "year": "2021",
+            "author": "Liston",
+            "volume": "11",
+            "first-page": "e039254",
+            "article-title": "Investigating the feasibility and acceptability of the HOLOBalance system compared with standard care in older adults at risk for falls: study protocol for an assessor blinded pilot randomised controlled study",
+            "journal-title": "BMJ Open",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1093/ageing/afq102",
+            "key": "2024100713002509600_ref24",
+            "year": "2010",
+            "author": "Thomas",
+            "volume": "39",
+            "first-page": "681",
+            "article-title": "Does the 'Otago exercise programme' reduce mortality and falls in older adults?: a systematic review and meta-analysis",
+            "journal-title": "Age Ageing",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1016/j.ijsu.2011.09.004",
+            "key": "2024100713002509600_ref25",
+            "year": "2011",
+            "author": "Schulz",
+            "volume": "9",
+            "first-page": "672",
+            "article-title": "CONSORT 2010 statement: updated guidelines for reporting parallel group randomised trials",
+            "journal-title": "Int J Surg",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1093/ageing/afp225",
+            "key": "2024100713002509600_ref26",
+            "year": "2010",
+            "author": "Delbaere",
+            "volume": "39",
+            "first-page": "210",
+            "article-title": "The falls efficacy scale international (FES-I). A comprehensive longitudinal validation study",
+            "journal-title": "Age Ageing",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1111/j.1532-5415.2005.53221.x",
+            "key": "2024100713002509600_ref27",
+            "year": "2005",
+            "author": "Nasreddine",
+            "volume": "53",
+            "first-page": "695",
+            "article-title": "The Montreal cognitive assessment, MoCA: a brief screening tool for mild cognitive impairment",
+            "journal-title": "J Am Geriatr Soc",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1002/gps.4505",
+            "key": "2024100713002509600_ref28",
+            "year": "2017",
+            "author": "Clarnette",
+            "volume": "32",
+            "first-page": "643",
+            "article-title": "Comparison of the quick mild cognitive impairment (Qmci) screen to the Montreal cognitive assessment (MoCA) in an Australian geriatrics clinic",
+            "journal-title": "Int J Geriatr Psychiatry",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "key": "2024100713002509600_ref29",
+            "year": "2003",
+            "author": "Bradley",
+            "volume": "68",
+            "first-page": "2393",
+            "article-title": "Orthostatic hypotension",
+            "journal-title": "Am Fam Physician"
+          },
+          {
+            "key": "2024100713002509600_ref30",
+            "year": "1995",
+            "author": "Marwijk",
+            "volume": "45",
+            "first-page": "195",
+            "article-title": "Evaluation of the feasibility, reliability and diagnostic value of shortened versions of the geriatric depression scale",
+            "journal-title": "Br J Gen Pract"
+          },
+          {
+            "DOI": "10.1177/0962280215588241",
+            "key": "2024100713002509600_ref31",
+            "year": "2016",
+            "author": "Whitehead",
+            "volume": "25",
+            "first-page": "1057",
+            "article-title": "Estimating the sample size for a pilot randomised trial to minimise the overall trial sample size for the external pilot and main trial for a continuous outcome variable",
+            "journal-title": "Stat Methods Med Res",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1093/ptj/84.10.906",
+            "key": "2024100713002509600_ref32",
+            "year": "2004",
+            "author": "Wrisley",
+            "volume": "84",
+            "first-page": "906",
+            "article-title": "Reliability, internal consistency, and validity of data obtained with the functional gait assessment",
+            "journal-title": "Phys Ther",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.2522/ptj.20090069",
+            "key": "2024100713002509600_ref33",
+            "year": "2010",
+            "author": "Wrisley",
+            "volume": "90",
+            "first-page": "761",
+            "article-title": "Functional gait assessment: concurrent, discriminative, and predictive validity in community-dwelling older adults",
+            "journal-title": "Phys Ther",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.2340/16501977-0537",
+            "key": "2024100713002509600_ref34",
+            "year": "2010",
+            "author": "Franchignoni",
+            "volume": "42",
+            "first-page": "323",
+            "article-title": "Using psychometric techniques to improve the balance evaluation systems test: the mini-BESTest",
+            "journal-title": "J Rehabil Med",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1519/JPT.0000000000000236",
+            "key": "2024100713002509600_ref35",
+            "year": "2020",
+            "author": "Magnani",
+            "volume": "43",
+            "first-page": "179",
+            "article-title": "Use of the BESTest and the mini-BESTest for fall risk prediction in community-dwelling older adults between 60 and 102 years of age",
+            "journal-title": "J Geriatr Phys Ther",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1093/gerona/50A.1.M28",
+            "key": "2024100713002509600_ref36",
+            "year": "1995",
+            "author": "Powell",
+            "volume": "50A",
+            "first-page": "M28",
+            "article-title": "The activities-specific balance confidence (ABC) scale",
+            "journal-title": "J Gerontol A Biol Sci Med Sci",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "key": "2024100713002509600_ref37",
+            "year": "2010",
+            "author": "World Health Organization, Ü.T",
+            "volume-title": "Measuring Health and Disability: Manual for WHO Disability Assessment Schedule (WHODAS 2.0)"
+          },
+          {
+            "DOI": "10.1123/jsep.26.2.191",
+            "key": "2024100713002509600_ref38",
+            "year": "2004",
+            "author": "Markland",
+            "volume": "26",
+            "first-page": "191",
+            "article-title": "A modification of the behavioral regulation in exercise questionnaire to include an assessment of amotivation",
+            "journal-title": "J Sport Exerc Psychol",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "key": "2024100713002509600_ref39",
+            "year": "2016",
+            "author": "Eldridge",
+            "volume": "2",
+            "article-title": "CONSORT 2010 statement: extension to randomised pilot and feasibility trials",
+            "journal-title": "BMJ"
+          },
+          {
+            "DOI": "10.1177/096228029900800102",
+            "key": "2024100713002509600_ref40",
+            "year": "1999",
+            "author": "Schafer",
+            "volume": "8",
+            "first-page": "3",
+            "article-title": "Multiple imputation: A primer",
+            "journal-title": "Stat Methods Med Res",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1016/j.apmr.2018.04.033",
+            "key": "2024100713002509600_ref41",
+            "year": "2018",
+            "author": "Tyagi",
+            "volume": "99",
+            "first-page": "2472",
+            "article-title": "Acceptance of tele-rehabilitation by stroke patients: perceived barriers and facilitators",
+            "journal-title": "Arch Phys Med Rehabil",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "key": "2024100713002509600_ref42",
+            "year": "2018",
+            "author": "Yusheng Wu",
+            "volume-title": "Understanding Older Users' Acceptance of Wearable Interfaces for Sensor-Based Fall Risk Assessment. in CHI Conference on Human Factors in Computing Systems"
+          },
+          {
+            "DOI": "10.2196/22215",
+            "key": "2024100713002509600_ref43",
+            "year": "2021",
+            "author": "Gaspar",
+            "volume": "23",
+            "first-page": "e22215",
+            "article-title": "eHealth for addressing balance disorders in the elderly: systematic review",
+            "journal-title": "J Med Internet Res",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1007/s12311-020-01178-8",
+            "key": "2024100713002509600_ref44",
+            "year": "2021",
+            "author": "Shaikh",
+            "volume": "20",
+            "first-page": "4",
+            "article-title": "Consensus on virtual management of vestibular disorders: urgent versus expedited care",
+            "journal-title": "Cerebellum",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "key": "2024100713002509600_ref45",
+            "year": "2021",
+            "author": "Global strategy on digital health 2020–2025"
+          },
+          {
+            "key": "2024100713002509600_ref46",
+            "year": "2021",
+            "author": "Directorate-General for Health and Food Safety",
+            "volume-title": "Regulation (EU) 2021/2282 on Health Technology Assessment"
+          },
+          {
+            "DOI": "10.1007/s43441-021-00269-w",
+            "key": "2024100713002509600_ref47",
+            "year": "2021",
+            "author": "Galuchie",
+            "volume": "55",
+            "first-page": "733",
+            "article-title": "Protocol deviations: a holistic approach from defining to reporting",
+            "journal-title": "Ther Innov Regul Sci",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1111/j.1532-5415.2010.03062.x",
+            "key": "2024100713002509600_ref48",
+            "year": "2010",
+            "author": "Kelsey",
+            "volume": "58",
+            "first-page": "2135",
+            "article-title": "Indoor and outdoor falls in older adults are different: the maintenance of balance, independent living, intellect, and zest in the elderly of Boston study",
+            "journal-title": "J Am Geriatr Soc",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1177/2333721418823604",
+            "key": "2024100713002509600_ref49",
+            "year": "2019",
+            "author": "Rivera-Torres",
+            "volume": "5",
+            "first-page": "2333721418823604",
+            "article-title": "Adherence to exercise programs in older adults: informative report",
+            "journal-title": "Gerontol Geriatr Med",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1177/00469580231165858",
+            "key": "2024100713002509600_ref50",
+            "year": "2023",
+            "author": "Mgbeojedo",
+            "volume": "60",
+            "first-page": "469580231165858",
+            "article-title": "Effects of Otago exercise program on physical and psychosocial functions among community-dwelling and institutionalized older adults: a scoping review",
+            "journal-title": "Inquiry",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1016/S1836-9553(13)70161-9",
+            "key": "2024100713002509600_ref51",
+            "year": "2013",
+            "author": "Downs",
+            "volume": "59",
+            "first-page": "93",
+            "article-title": "The berg balance scale has high intra- and inter-rater reliability but absolute reliability varies across the scale: a systematic review",
+            "journal-title": "J Physiother",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1097/00129492-200403000-00010",
+            "key": "2024100713002509600_ref52",
+            "year": "2004",
+            "author": "Whitney",
+            "volume": "25",
+            "first-page": "139",
+            "article-title": "Is perception of handicap related to functional performance in persons with vestibular dysfunction?",
+            "journal-title": "Otol Neurotol",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "key": "2024100713002509600_ref53",
+            "year": "1988",
+            "author": "Robinett",
+            "volume": "68",
+            "first-page": "1371",
+            "article-title": "Functional ambulation velocity and distance requirements in rural and urban communities",
+            "journal-title": "Clin Rep Phys Ther"
+          },
+          {
+            "DOI": "10.1016/0021-9681(87)90069-5",
+            "key": "2024100713002509600_ref54",
+            "year": "1987",
+            "author": "Guyatt",
+            "volume": "40",
+            "first-page": "171",
+            "article-title": "Measuring change over time: assessing the usefulness of evaluative instruments",
+            "journal-title": "J Chronic Dis",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.2522/ptj.20130596",
+            "key": "2024100713002509600_ref55",
+            "year": "2014",
+            "author": "Beninato",
+            "volume": "94",
+            "first-page": "1594",
+            "article-title": "Minimal clinically important difference of the functional gait assessment in older adults",
+            "journal-title": "Phys Ther",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1016/j.apmr.2016.07.011",
+            "key": "2024100713002509600_ref56",
+            "year": "2016",
+            "author": "Marques",
+            "volume": "97",
+            "first-page": "2166",
+            "article-title": "Reliability, validity, and ability to identify fall status of the balance evaluation systems test, mini-balance evaluation systems test, and brief-balance evaluation systems test in older people living in the community",
+            "journal-title": "Arch Phys Med Rehabil",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.2522/ptj.20120171",
+            "key": "2024100713002509600_ref57",
+            "year": "2013",
+            "author": "Godi",
+            "volume": "93",
+            "first-page": "158",
+            "article-title": "Comparison of reliability, validity, and responsiveness of the mini-BESTest and berg balance scale in patients with balance disorders",
+            "journal-title": "Phys Ther",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1097/JXX.0000000000000587",
+            "key": "2024100713002509600_ref58",
+            "year": "2021",
+            "volume": "33",
+            "first-page": "117",
+            "article-title": "Factors influencing the implementation of falls prevention practice in primary care",
+            "journal-title": "J Am Assoc Nurse Pract",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.2147/CIA.S354911",
+            "key": "2024100713002509600_ref59",
+            "year": "2022",
+            "author": "Meekes",
+            "volume": "17",
+            "first-page": "885",
+            "article-title": "Implementing falls prevention in primary care: barriers and facilitators",
+            "journal-title": "Clin Interv Aging",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1017/S1041610214002701",
+            "key": "2024100713002509600_ref60",
+            "year": "2015",
+            "author": "Hughes",
+            "volume": "27",
+            "first-page": "1071",
+            "article-title": "A theoretical and empirical review of psychological factors associated with falls-related psychological concerns in community-dwelling older people",
+            "journal-title": "Int Psychogeriatr",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.3390/ijerph19073986",
+            "key": "2024100713002509600_ref61",
+            "year": "2022",
+            "author": "Leite",
+            "volume": "19",
+            "article-title": "Impact of COVID-19 pandemic on daily life, physical exercise, and general health among older people with type 2 diabetes: a qualitative interview study",
+            "journal-title": "Int J Environ Res Public Health",
+            "doi-asserted-by": "crossref"
+          }
+        ],
+        "short-title": [],
+        "journal-issue": {
+          "issue": "10",
+          "published-print": {
+            "date-parts": [
+              [
+                2024,
+                10,
+                1
+              ]
+            ]
+          }
+        },
+        "content-domain": {
+          "domain": [],
+          "crossmark-restriction": false
+        },
+        "original-title": [],
+        "container-title": [
+          "Age and Ageing"
+        ],
+        "published-other": {
+          "date-parts": [
+            [
+              2024,
+              10
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2024,
+              10,
+              1
+            ]
+          ]
+        },
+        "reference-count": 61,
+        "published-online": {
+          "date-parts": [
+            [
+              2024,
+              10,
+              7
+            ]
+          ]
+        },
+        "references-count": 61,
+        "short-container-title": [],
+        "is-referenced-by-count": 6
+      },
+      "message-type": "work",
+      "message-version": "1.0.0"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:26:19.208800",
+    "processing_time_ms": 1401
+  },
+  "datacite": {
+    "error": "No matching articles found",
+    "success": false,
+    "timestamp": "2025-07-22T14:26:27.226778",
+    "processing_time_ms": 9409
+  },
+  "openalex": {
+    "data": {
+      "id": "https://openalex.org/W4403173912",
+      "doi": "https://doi.org/10.1093/ageing/afae214",
+      "title": "Feasibility and acceptability of the HOLObalance telerehabilitation system compared with standard care for older adults at risk of falls: the HOLOBalance assessor blinded pilot randomised controlled study",
+      "open_access": {
+        "is_oa": true,
+        "oa_url": "https://doi.org/10.1093/ageing/afae214",
+        "oa_status": "hybrid",
+        "any_repository_has_fulltext": false
+      },
+      "cited_by_count": 5,
+      "publication_year": 2024
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:26:18.962267",
+    "processing_time_ms": 1147
+  },
+  "unpaywall": {
+    "data": {
+      "doi": "10.1093/ageing/afae214",
+      "year": 2024,
+      "genre": "journal-article",
+      "is_oa": true,
+      "title": "Feasibility and acceptability of the HOLObalance telerehabilitation system compared with standard care for older adults at risk of falls: the HOLOBalance assessor blinded pilot randomised controlled study",
+      "doi_url": "https://doi.org/10.1093/ageing/afae214",
+      "oa_status": "hybrid",
+      "publisher": "Oxford University Press (OUP)",
+      "is_paratext": false,
+      "journal_name": "Age and Ageing",
+      "journal_issns": "0002-0729,1468-2834",
+      "journal_issn_l": "0002-0729",
+      "published_date": "2024-10-01",
+      "z_authors_summary": {
+        "count": 17,
+        "first_author": ""
+      },
+      "has_repository_copy": true,
+      "oa_locations_summary": {
+        "count": 2,
+        "has_repository": true
+      },
+      "best_oa_location_summary": {
+        "is_best": true,
+        "host_type": "publisher",
+        "url_for_pdf": true
+      },
+      "first_oa_location_summary": {
+        "is_first": true,
+        "host_type": "publisher",
+        "url_for_pdf": true
+      }
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:26:19.053777",
+    "processing_time_ms": 1237
+  },
+  "europe_pmc": {
+    "data": {
+      "id": "39373575",
+      "doi": "10.1093/ageing/afae214",
+      "pmid": "39373575",
+      "inPMC": "Y",
+      "pmcid": "PMC11457341",
+      "title": "Feasibility and acceptability of the HOLObalance telerehabilitation system compared with standard care for older adults at risk of falls: the HOLOBalance assessor blinded pilot randomised controlled study.",
+      "hasPDF": "Y",
+      "inEPMC": "Y",
+      "source": "MED",
+      "authMan": "N",
+      "hasBook": "N",
+      "hasData": "N",
+      "license": "cc by-nc-nd",
+      "pubYear": "2024",
+      "hasSuppl": "N",
+      "language": "eng",
+      "pageInfo": "afae214",
+      "pubModel": "Print",
+      "authorList": {
+        "author": [
+          {
+            "fullName": "Pavlou M",
+            "initials": "M",
+            "lastName": "Pavlou",
+            "firstName": "Marousa",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Centre for Human and Applied Physiological Sciences, King's College London, London, UK."
+                },
+                {
+                  "affiliation": "Ear Institute, University College London, London, UK."
+                },
+                {
+                  "affiliation": "Department of Audiovestibular Medicine, Royal National ENT and Eastman Dental Hospitals, University College London Hospitals NHS Foundation Trust, London, UK."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Flavell CA",
+            "initials": "CA",
+            "lastName": "Flavell",
+            "firstName": "Carol Ann",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Centre for Human and Applied Physiological Sciences, King's College London, London, UK."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Gourtani FM",
+            "initials": "FM",
+            "lastName": "Gourtani",
+            "firstName": "Fariba Mostajeran",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Human-Computer Interaction Group, Department of Informatics, Universität Hamburg, Hamburg, Germany."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Nikitas C",
+            "initials": "C",
+            "lastName": "Nikitas",
+            "firstName": "Christos",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "1st Department of Otorhinolaryngology, Head and Neck Surgery, National and Kapodistrian University of Athens, Hippocrateion General Hospital, Athens, Greece."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Kikidis D",
+            "initials": "D",
+            "lastName": "Kikidis",
+            "firstName": "Dimitris",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "1st Department of Otorhinolaryngology, Head and Neck Surgery, National and Kapodistrian University of Athens, Hippocrateion General Hospital, Athens, Greece."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Bibas A",
+            "initials": "A",
+            "lastName": "Bibas",
+            "firstName": "Athanasios",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "1st Department of Otorhinolaryngology, Head and Neck Surgery, National and Kapodistrian University of Athens, Hippocrateion General Hospital, Athens, Greece."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Gatsios D",
+            "initials": "D",
+            "lastName": "Gatsios",
+            "firstName": "Dimitris",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Unit of Medical Technology and Intelligent Information Systems, Department of Materials Science and Engineering, University of Ioannina, Ioannina, Greece."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Tsakanikas V",
+            "initials": "V",
+            "lastName": "Tsakanikas",
+            "firstName": "Vassilis",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Unit of Medical Technology and Intelligent Information Systems, Department of Materials Science and Engineering, University of Ioannina, Ioannina, Greece."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Fotiadis DI",
+            "initials": "DI",
+            "lastName": "Fotiadis",
+            "firstName": "Dimitrios I",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Unit of Medical Technology and Intelligent Information Systems, Department of Materials Science and Engineering, University of Ioannina, Ioannina, Greece."
+                },
+                {
+                  "affiliation": "Biomedical Research Institute, Ioannina, Greece."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Koutsouris D",
+            "initials": "D",
+            "lastName": "Koutsouris",
+            "firstName": "Dimitrios",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Biomedical Engineering Laboratory, School of Electrical and Computer Engineering, National Technical University of Athens, Athens, Greece."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Steinicke F",
+            "initials": "F",
+            "lastName": "Steinicke",
+            "firstName": "Frank",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Human-Computer Interaction Group, Department of Informatics, Universität Hamburg, Hamburg, Germany."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Walz ID",
+            "initials": "ID",
+            "lastName": "Walz",
+            "firstName": "Isabelle Daniela",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Neurology and Neuroscience, Faculty of Medicine, Medical Center, University of Freiburg, Freiburg, Germany."
+                },
+                {
+                  "affiliation": "Department of Sport and Sport Science, University of Freiburg, Freiburg, Germany."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Maurer C",
+            "initials": "C",
+            "lastName": "Maurer",
+            "firstName": "Christoph",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Neurology and Neuroscience, Faculty of Medicine, Medical Center, University of Freiburg, Freiburg, Germany."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Papadopoulou S",
+            "initials": "S",
+            "lastName": "Papadopoulou",
+            "firstName": "Sofia",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "1st Department of Otorhinolaryngology, Head and Neck Surgery, National and Kapodistrian University of Athens, Hippocrateion General Hospital, Athens, Greece."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Tsoukatos M",
+            "initials": "M",
+            "lastName": "Tsoukatos",
+            "firstName": "Michalis",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "1st Department of Otorhinolaryngology, Head and Neck Surgery, National and Kapodistrian University of Athens, Hippocrateion General Hospital, Athens, Greece."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Pardalis A",
+            "initials": "A",
+            "lastName": "Pardalis",
+            "firstName": "Athanasios",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Unit of Medical Technology and Intelligent Information Systems, Department of Materials Science and Engineering, University of Ioannina, Ioannina, Greece."
+                }
+              ]
+            }
+          },
+          {
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0001-7486-4264"
+            },
+            "fullName": "Bamiou DE",
+            "initials": "DE",
+            "lastName": "Bamiou",
+            "firstName": "Doris-Eva",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Ear Institute, University College London, London, UK."
+                },
+                {
+                  "affiliation": "Department of Audiovestibular Medicine, Royal National ENT and Eastman Dental Hospitals, University College London Hospitals NHS Foundation Trust, London, UK."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "grantsList": {
+        "grant": [
+          {
+            "agency": "European Union&apos;s Horizon 2020 Research and Innovation Programme",
+            "grantId": "769574",
+            "orderIn": 0
+          },
+          {
+            "agency": "European Union's Horizon 2020 Research and Innovation Programme",
+            "grantId": "769574",
+            "orderIn": 0
+          }
+        ]
+      },
+      "nihAuthMan": "N",
+      "subsetList": {
+        "subset": [
+          {
+            "code": "IM",
+            "name": "Index Medicus"
+          }
+        ]
+      },
+      "affiliation": "Centre for Human and Applied Physiological Sciences, King's College London, London, UK.",
+      "epmcAuthMan": "N",
+      "journalInfo": {
+        "issue": "10",
+        "volume": "53",
+        "journal": {
+          "essn": "1468-2834",
+          "issn": "0002-0729",
+          "nlmid": "0375655",
+          "title": "Age and ageing",
+          "isoabbreviation": "Age Ageing",
+          "medlineAbbreviation": "Age Ageing"
+        },
+        "journalIssueId": 3833412,
+        "dateOfPublication": "2024 Oct",
+        "yearOfPublication": 2024,
+        "monthOfPublication": 10,
+        "printPublicationDate": "2024-10-01"
+      },
+      "keywordList": {
+        "keyword": [
+          "Older People",
+          "Older Adults",
+          "Augmented Reality",
+          "Falls Risk",
+          "Balance Rehabilitation"
+        ]
+      },
+      "pubTypeList": {
+        "pubType": [
+          "research-article",
+          "Multicenter Study",
+          "Randomized Controlled Trial",
+          "Journal Article"
+        ]
+      },
+      "abstractText": "<h4>Background</h4>Falls have high socioeconomic costs. Information and communication technologies may support provision and monitoring of multisensory (MSR) physiotherapy programmes. The HOLOBalance platform used augmented reality holograms to provide patient-centred, individualised MSR.<h4>Objectives</h4>To determine the platform's safety, acceptability and feasibility, investigate functional gait and dynamic balance benefits and provide data for a definitive trial.<h4>Design and setting</h4>Single-blinded pilot randomised controlled feasibility study. Interventions were conducted at clinical sites or participants' homes in three European countries.<h4>Participants</h4>Community-dwelling older adults (median age 73 years; 64.2% female) at risk of falls were enrolled (May 2020-August 2021).<h4>Methods</h4>Participants were randomised to an 8-week clinic or home-based telerehabilitation MSR or OTAGO (control group) programme. Compliance, satisfaction, and adverse events determined feasibility. Clinical outcomes, assessed (blinded) within one-week prior to and post-intervention, included functional gait assessment (FGA), Mini BESTest and cognitive function.<h4>Results</h4>Randomisation to completion rate was 76.15% with 109 participants recruited (n = 289 screened). Drop-out rate was similar between groups. Adverse events were reported (n = 3) in the control group. Sixty-nine percent would recommend the HOLOBalance intervention. Findings were similar for the home and clinic-based arms of each intervention; data was combined for analysis. FGA (95%CI [1.63, 4.19]) and Mini-BESTest (95%CI [1.46, 3.93]) showed greater improvement in the HOLOBalance group with a clinically meaningful change of 4/30 noted for the FGA.<h4>Conclusions</h4>HOLObalance was feasible to implement and acceptable to older adults at risk of falls, with FGA and Mini-BEST improvements exceeding those for the OTAGO programme. A definitive trial is warranted.",
+      "authorIdList": {
+        "authorId": [
+          {
+            "type": "ORCID",
+            "value": "0000-0001-7486-4264"
+          }
+        ]
+      },
+      "authorString": "Pavlou M, Flavell CA, Gourtani FM, Nikitas C, Kikidis D, Bibas A, Gatsios D, Tsakanikas V, Fotiadis DI, Koutsouris D, Steinicke F, Walz ID, Maurer C, Papadopoulou S, Tsoukatos M, Pardalis A, Bamiou DE.",
+      "citedByCount": 4,
+      "hasLabsLinks": "Y",
+      "isOpenAccess": "Y",
+      "hasReferences": "Y",
+      "dateOfCreation": "2024-10-07",
+      "dateOfRevision": "2025-03-12",
+      "firstIndexDate": "2024-10-09",
+      "fullTextIdList": {
+        "fullTextId": [
+          "PMC11457341"
+        ]
+      },
+      "hasEvaluations": "N",
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "url": "https://doi.org/10.1093/ageing/afae214",
+            "site": "DOI",
+            "availability": "Subscription required",
+            "documentStyle": "doi",
+            "availabilityCode": "S"
+          },
+          {
+            "url": "https://europepmc.org/articles/PMC11457341",
+            "site": "Europe_PMC",
+            "availability": "Open access",
+            "documentStyle": "html",
+            "availabilityCode": "OA"
+          },
+          {
+            "url": "https://europepmc.org/articles/PMC11457341?pdf=render",
+            "site": "Europe_PMC",
+            "availability": "Open access",
+            "documentStyle": "pdf",
+            "availabilityCode": "OA"
+          }
+        ]
+      },
+      "meshHeadingList": {
+        "meshHeading": [
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Humans"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Gait"
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Feasibility Studies"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Pilot Projects"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Single-Blind Method"
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Accidental Falls",
+            "meshQualifierList": {
+              "meshQualifier": [
+                {
+                  "abbreviation": "PC",
+                  "majorTopic_YN": "N",
+                  "qualifierName": "prevention & control"
+                }
+              ]
+            }
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Aged"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Aged, 80 and over"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Female"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Male"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Postural Balance"
+          },
+          {
+            "majorTopic_YN": "N",
+            "descriptorName": "Independent Living"
+          },
+          {
+            "majorTopic_YN": "Y",
+            "descriptorName": "Telerehabilitation"
+          }
+        ]
+      },
+      "dateOfCompletion": "2024-10-07",
+      "dataLinksTagsList": {
+        "dataLinkstag": [
+          "altmetrics"
+        ]
+      },
+      "hasTextMinedTerms": "Y",
+      "publicationStatus": "ppublish",
+      "firstPublicationDate": "2024-10-01",
+      "fullTextReceivedDate": "2024-10-29",
+      "hasDbCrossReferences": "N",
+      "hasTMAccessionNumbers": "N"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:26:19.634621",
+    "processing_time_ms": 1818
+  },
+  "semantic_scholar": {
+    "data": {
+      "year": 2024,
+      "title": "Feasibility and acceptability of the HOLObalance telerehabilitation system compared with standard care for older adults at risk of falls: the HOLOBalance assessor blinded pilot randomised controlled study",
+      "authors": [
+        {
+          "name": "M. Pavlou",
+          "authorId": "2793338"
+        },
+        {
+          "name": "C. Flavell",
+          "authorId": "37959287"
+        },
+        {
+          "name": "Fariba Mostajeran Gourtani",
+          "authorId": "3452327"
+        },
+        {
+          "name": "Christos Nikitas",
+          "authorId": "3325754"
+        },
+        {
+          "name": "Dimitris Kikidis",
+          "authorId": "113966989"
+        },
+        {
+          "name": "A. Bibas",
+          "authorId": "2380400"
+        },
+        {
+          "name": "D. Gatsios",
+          "authorId": "2840237"
+        },
+        {
+          "name": "V. Tsakanikas",
+          "authorId": "15816545"
+        },
+        {
+          "name": "Dimitrios I. Fotiadis",
+          "authorId": "2257417055"
+        },
+        {
+          "name": "Dimitrios D. Koutsouris",
+          "authorId": "2261267339"
+        },
+        {
+          "name": "Frank Steinicke",
+          "authorId": "32374164"
+        },
+        {
+          "name": "I. Walz",
+          "authorId": "1675249361"
+        },
+        {
+          "name": "Christoph Maurer",
+          "authorId": "2081221329"
+        },
+        {
+          "name": "Sofia Papadopoulou",
+          "authorId": "2219114558"
+        },
+        {
+          "name": "Michalis Tsoukatos",
+          "authorId": "2199326273"
+        },
+        {
+          "name": "Athanasios A. Pardalis",
+          "authorId": "1729238598"
+        },
+        {
+          "name": "D. Bamiou",
+          "authorId": "145975862"
+        }
+      ],
+      "journal": {
+        "name": "Age and Ageing",
+        "volume": "53"
+      },
+      "paperId": "f1544d000b1055fc95e8bc4a10c246c7083e9e89",
+      "abstract": "Abstract Background Falls have high socioeconomic costs. Information and communication technologies may support provision and monitoring of multisensory (MSR) physiotherapy programmes. The HOLOBalance platform used augmented reality holograms to provide patient-centred, individualised MSR. Objectives To determine the platform’s safety, acceptability and feasibility, investigate functional gait and dynamic balance benefits and provide data for a definitive trial. Design and setting Single-blinded pilot randomised controlled feasibility study. Interventions were conducted at clinical sites or participants’ homes in three European countries. Participants Community-dwelling older adults (median age 73 years; 64.2% female) at risk of falls were enrolled (May 2020-August 2021). Methods Participants were randomised to an 8-week clinic or home-based telerehabilitation MSR or OTAGO (control group) programme. Compliance, satisfaction, and adverse events determined feasibility. Clinical outcomes, assessed (blinded) within one-week prior to and post-intervention, included functional gait assessment (FGA), Mini BESTest and cognitive function. Results Randomisation to completion rate was 76.15% with 109 participants recruited (n = 289 screened). Drop-out rate was similar between groups. Adverse events were reported (n = 3) in the control group. Sixty-nine percent would recommend the HOLOBalance intervention. Findings were similar for the home and clinic-based arms of each intervention; data was combined for analysis. FGA (95%CI [1.63, 4.19]) and Mini-BESTest (95%CI [1.46, 3.93]) showed greater improvement in the HOLOBalance group with a clinically meaningful change of 4/30 noted for the FGA. Conclusions HOLObalance was feasible to implement and acceptable to older adults at risk of falls, with FGA and Mini-BEST improvements exceeding those for the OTAGO programme. A definitive trial is warranted.",
+      "externalIds": {
+        "DOI": "10.1093/ageing/afae214",
+        "PubMed": "39373575",
+        "CorpusId": 273179095,
+        "PubMedCentral": "11457341"
+      },
+      "isOpenAccess": true,
+      "citationCount": 4,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1093/ageing/afae214",
+        "status": "HYBRID",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11457341, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      }
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:26:18.554731",
+    "processing_time_ms": 744
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "source": "gpt-4o-vision",
+  "success": true,
+  "prompt_sent": "Extract ONLY publication metadata from these academic paper pages.\n\nCRITICAL: This data will be sent to 11 external APIs, so format accuracy is essential.\n\nFIELD REQUIREMENTS WITH EXACT FORMATS:\n\n1. **Title**: Clean title for API queries (HIGHEST PRIORITY)\n   - Remove line breaks, extra spaces, formatting\n   - No HTML tags or special characters  \n   - Example: \"Effects of Machine Learning on Healthcare Outcomes\"\n\n2. **Authors**: API-compatible author list (HIGHEST PRIORITY)\n   - Each author as separate string in array\n   - Format: \"FirstName LastName\" or \"F. LastName\"\n   - Clean, no extra punctuation\n   - Example: [\"John Smith\", \"M. Johnson\", \"Sarah Williams\"]\n\n3. **DOI**: Standard DOI format for resolution APIs\n   - Must start with \"10.\" if present\n   - Clean format without URL prefixes\n   - Example: \"10.1234/journal.2024.001\"\n\n4. **Journal**: Clean journal name for database queries\n   - Full journal name preferred over abbreviations\n   - Remove extra formatting, parentheses\n   - Example: \"Nature Medicine\"\n\n5. **Year**: Numeric format for date filtering\n   - 4-digit NUMBER only (not string)\n   - Example: 2024\n\n6. **Volume**: Clean number for bibliographic APIs\n   - Numbers only, no \"Vol.\" prefix\n   - Example: \"15\"\n\n7. **Issue**: Clean number format\n   - Numbers only, no \"No.\" or \"Issue\" prefix\n   - Example: \"3\"\n\n8. **Pages**: Standard page range for citations\n   - Format: \"start-end\" or single page\n   - Example: \"123-135\" or \"45\"\n\n9. **PMID**: PubMed ID for medical APIs\n   - Numbers only, no \"PMID:\" prefix\n   - Example: \"12345678\"\n\n10. **PMCID**: PubMed Central ID for open access papers\n    - Numbers only, no \"PMC\" prefix\n    - Often appears near PMID in biomedical papers\n    - Example: \"9876543\"\n\n11. **Keywords**: API-compatible keyword list\n    - Each keyword as separate string\n    - Research-quality terms, no punctuation\n    - Example: [\"machine learning\", \"healthcare\", \"clinical outcomes\"]\n\n11. **Abstract**: Complete clean text (HIGHEST PRIORITY)\n    - Remove formatting, line breaks, extra spaces\n    - Complete sentences, proper punctuation\n    - Search thoroughly across ALL pages\n    - This is CRITICAL for Semantic Scholar and other APIs\n\n12. **Publisher**: Clean organization name\n    - Official publisher name\n    - Example: \"Elsevier\" or \"Nature Publishing Group\"\n\nABSTRACT EXTRACTION PRIORITY:\n- Look thoroughly across ALL pages for abstract sections\n- Extract COMPLETE text, including multiple paragraphs\n- Check: Abstract, Summary, Introduction summary paragraphs\n- This field is CRITICAL for API enrichment success\n\nReturn JSON format:\n{\n  \"Title\": \"clean title without formatting\",\n  \"Authors\": [\"Author One\", \"Author Two\"],\n  \"DOI\": \"10.xxxx/xxxxx\",\n  \"Journal\": \"clean journal name\", \n  \"Year\": 2024,\n  \"Volume\": \"15\",\n  \"Issue\": \"3\", \n  \"Pages\": \"123-135\",\n  \"Abstract\": \"complete clean abstract text\",\n  \"Keywords\": [\"keyword1\", \"keyword2\"],\n  \"PMID\": \"12345678\",\n  \"PMCID\": \"9876543\",\n  \"Publisher\": \"publisher name\"\n}\n\nReturn null for fields not clearly visible. The Abstract field is MOST IMPORTANT for downstream API success.",
+  "cost_tracking": {
+    "model": "gpt-4o",
+    "call_type": "vision_extraction",
+    "timestamp": "2025-07-22T14:26:17.489390",
+    "input_cost": 0.007725,
+    "total_cost": 0.014995,
+    "output_cost": 0.00727,
+    "input_tokens": 3090,
+    "total_tokens": 3817,
+    "output_tokens": 727
+  },
+  "input_details": {
+    "dpi": 120,
+    "max_tokens": 1500,
+    "model_used": "gpt-4o",
+    "temperature": 0.1,
+    "page_strategy": "strategic",
+    "image_resolution": "high",
+    "processing_time_ms": 31394,
+    "pdf_pages_processed": 3
+  },
+  "extracted_data": {
+    "DOI": "10.1093/ageing/afae214",
+    "PMID": null,
+    "Year": 2024,
+    "Issue": "4",
+    "PMCID": null,
+    "Pages": "1-11",
+    "Title": "Feasibility and acceptability of the HOLOBalance telerehabilitation system compared with standard care for older adults at risk of falls: the HOLOBalance assessor blinded pilot randomised controlled study",
+    "Volume": "53",
+    "Authors": [
+      "Marousa Pavlou",
+      "Carol Ann Flavell",
+      "Fariba Mostajeran Gourtani",
+      "Christos Nikitas",
+      "Dimitris Kikidis",
+      "Athanasios Bibas",
+      "Dimitris Gatsios",
+      "Vassilis Tsakanikas",
+      "Dimitrios I. Fotiadis",
+      "Dimitrios Koutsouris",
+      "Frank Steinke",
+      "Isabelle Daniela Walz",
+      "Christoph Maurer",
+      "Sofia Papadopoulou",
+      "Michalis Tsoukatos",
+      "Athanasios Pardalis",
+      "Doris-Eva Bamiou"
+    ],
+    "Journal": "Age and Ageing",
+    "Abstract": "Background: Falls have high socioeconomic costs. Information and communication technologies may support provision and monitoring of multisensory (MSR) physiotherapy programmes. The HOLOBalance platform used augmented reality holograms to provide patient-centred, individualised MSR. Objectives: To determine the platform’s safety, acceptability and feasibility, investigate functional gait and dynamic balance benefits and provide data for a definitive trial. Design and setting: Single-blinded pilot randomised controlled feasibility study. Interventions were conducted at clinical sites or participants’ homes in three European countries. Participants: Community-dwelling older adults (median age 73 years; 64.2% female) at risk of falls were enrolled (May 2020-August 2021). Methods: Participants were randomised to an 8-week clinic or home-based telerehabilitation MSR or OTAGO (control group) programme. Compliance, satisfaction, and adverse events determined feasibility. Clinical outcomes, assessed (blinded) within one-week prior to and post-intervention, included functional gait assessment (FGA), Mini BESTest and cognitive function. Results: Randomisation to completion rate was 76.15% with 109 participants recruited (n = 289 screened). Drop-out rate was similar between groups. Adverse events were reported (n = 3) in the control group. Sixty-nine percent would recommend the HOLOBalance intervention. Findings were similar for the home and clinic-based arms of each intervention; data was combined for analysis. FGA (95%CI [1.63, 4.19]) and Mini-BESTest (95%CI [1.46, 3.93]) showed greater improvement in the HOLOBalance group with a clinically meaningful change of 4/30 noted for the FGA. Conclusions: HOLOBalance was feasible to implement and acceptable to older adults at risk of falls, with FGA and Mini-BEST improvements exceeding those for the OTAGO programme. A definitive trial is warranted.",
+    "Keywords": [
+      "augmented reality",
+      "balance rehabilitation",
+      "older adults",
+      "falls risk",
+      "older people"
+    ],
+    "Publisher": "Oxford University Press"
+  },
+  "pages_processed": 3,
+  "extraction_matrix": {
+    "_performance_summary": {
+      "total_cost": 0.0,
+      "data_source": "vision_json",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "vision_status": "COMPLETE",
+      "extraction_rate": 84.62,
+      "extraction_source": "gpt-4o-vision",
+      "performance_level": "EXCELLENT",
+      "fields_with_content": 11,
+      "processing_time_seconds": 0,
+      "total_fields_in_response": 13
+    }
+  },
+  "extraction_method": "vision_strategic_strategy",
+  "extraction_quality": {
+    "success_rate": 50.0,
+    "quality_score": 50.0,
+    "successful_fields": 11,
+    "validation_details": {
+      "errors": [],
+      "is_valid": true,
+      "warnings": [],
+      "quality_score": 100,
+      "completeness_score": 100.0
+    },
+    "total_fields_attempted": 13
+  },
+  "processing_time_ms": 31394,
+  "raw_openai_response": {
+    "content": "```json\n{\n  \"Title\": \"Feasibility and acceptability of the HOLOBalance telerehabilitation system compared with standard care for older adults at risk of falls: the HOLOBalance assessor blinded pilot randomised controlled study\",\n  \"Authors\": [\n    \"Marousa Pavlou\",\n    \"Carol Ann Flavell\",\n    \"Fariba Mostajeran Gourtani\",\n    \"Christos Nikitas\",\n    \"Dimitris Kikidis\",\n    \"Athanasios Bibas\",\n    \"Dimitris Gatsios\",\n    \"Vassilis Tsakanikas\",\n    \"Dimitrios I. Fotiadis\",\n    \"Dimitrios Koutsouris\",\n    \"Frank Steinke\",\n    \"Isabelle Daniela Walz\",\n    \"Christoph Maurer\",\n    \"Sofia Papadopoulou\",\n    \"Michalis Tsoukatos\",\n    \"Athanasios Pardalis\",\n    \"Doris-Eva Bamiou\"\n  ],\n  \"DOI\": \"10.1093/ageing/afae214\",\n  \"Journal\": \"Age and Ageing\",\n  \"Year\": 2024,\n  \"Volume\": \"53\",\n  \"Issue\": \"4\",\n  \"Pages\": \"1-11\",\n  \"Abstract\": \"Background: Falls have high socioeconomic costs. Information and communication technologies may support provision and monitoring of multisensory (MSR) physiotherapy programmes. The HOLOBalance platform used augmented reality holograms to provide patient-centred, individualised MSR. Objectives: To determine the platform’s safety, acceptability and feasibility, investigate functional gait and dynamic balance benefits and provide data for a definitive trial. Design and setting: Single-blinded pilot randomised controlled feasibility study. Interventions were conducted at clinical sites or participants’ homes in three European countries. Participants: Community-dwelling older adults (median age 73 years; 64.2% female) at risk of falls were enrolled (May 2020-August 2021). Methods: Participants were randomised to an 8-week clinic or home-based telerehabilitation MSR or OTAGO (control group) programme. Compliance, satisfaction, and adverse events determined feasibility. Clinical outcomes, assessed (blinded) within one-week prior to and post-intervention, included functional gait assessment (FGA), Mini BESTest and cognitive function. Results: Randomisation to completion rate was 76.15% with 109 participants recruited (n = 289 screened). Drop-out rate was similar between groups. Adverse events were reported (n = 3) in the control group. Sixty-nine percent would recommend the HOLOBalance intervention. Findings were similar for the home and clinic-based arms of each intervention; data was combined for analysis. FGA (95%CI [1.63, 4.19]) and Mini-BESTest (95%CI [1.46, 3.93]) showed greater improvement in the HOLOBalance group with a clinically meaningful change of 4/30 noted for the FGA. Conclusions: HOLOBalance was feasible to implement and acceptable to older adults at risk of falls, with FGA and Mini-BEST improvements exceeding those for the OTAGO programme. A definitive trial is warranted.\",\n  \"Keywords\": [\n    \"augmented reality\",\n    \"balance rehabilitation\",\n    \"older adults\",\n    \"falls risk\",\n    \"older people\"\n  ],\n  \"PMID\": null,\n  \"PMCID\": null,\n  \"Publisher\": \"Oxford University Press\"\n}\n```",
+    "parsing_error": "Expecting value: line 1 column 1 (char 0)",
+    "response_length": 2964,
+    "parsing_successful": false
+  },
+  "processing_timestamp": "2025-07-22T14:26:17.489377"
+}

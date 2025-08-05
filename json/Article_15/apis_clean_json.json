@@ -1,0 +1,87 @@
+{
+  "timestamp": "2025-07-22T14:22:20.858893",
+  "cost_tracking": {
+    "model": "deepseek-chat",
+    "call_type": "smart_consensus",
+    "timestamp": "2025-07-22T14:22:20.858687",
+    "input_cost": 0.002469,
+    "total_cost": 0.003778,
+    "output_cost": 0.001309,
+    "input_tokens": 9143,
+    "total_tokens": 10333,
+    "output_tokens": 1190,
+    "parsing_error": null,
+    "parsing_successful": true,
+    "processing_time_ms": 59374
+  },
+  "consensus_result": {
+    "DOI": "10.1007/978-3-031-44521-7_11",
+    "PMID": null,
+    "Year": 2023,
+    "Issue": null,
+    "PMCID": null,
+    "Pages": "111-120",
+    "Title": "HoloPOCUS: Portable Mixed-Reality 3D Ultrasound Tracking, Reconstruction and Overlay",
+    "PDFUrl": "https://arxiv.org/pdf/2308.13823",
+    "Volume": null,
+    "Authors": [
+      "Ng, Kian Wei",
+      "Gao, Yujia",
+      "Furqan, Shaheryar Mohammed",
+      "Yeo, Zachery",
+      "Lau, Joel",
+      "Ngiam, Kee Yuan",
+      "Khoo, Eng Tat"
+    ],
+    "Journal": "Lecture Notes in Computer Science: Simplifying Medical Ultrasound",
+    "Abstract": "Ultrasound (US) imaging provides a safe and accessible solution to procedural guidance and diagnostic imaging. The effective usage of conventional 2D US for interventional guidance requires extensive experience to project the image plane onto the patient, and the interpretation of images in diagnostics suffers from high intra- and inter-user variability. 3D US reconstruction allows for more consistent diagnosis and interpretation, but existing solutions are limited in terms of equipment and applicability in real-time navigation. To address these issues, we propose HoloPOCUS - a mixed reality US system (MR-US) that overlays rich US information onto the user's vision in a point-of-care setting. HoloPOCUS extends existing MR-US methods beyond placing a US plane in the user's vision to include a 3D reconstruction and projection that can aid in procedural guidance using conventional probes. We validated a tracking pipeline that demonstrates higher accuracy compared to existing MR-US works. Furthermore, user studies conducted via a phantom task showed significant improvements in navigation duration when using our proposed methods.",
+    "Keywords": [
+      "mixed reality",
+      "3D ultrasound",
+      "interventional guidance",
+      "tracking",
+      "Computer Vision and Pattern Recognition",
+      "Human-Computer Interaction"
+    ],
+    "Citations": 0,
+    "Publisher": "Springer Nature Switzerland",
+    "OpenAccess": true,
+    "confidence_factors": {
+      "source": "Vision-Foundation + API Enhancement",
+      "reasoning": "All API sources (Semantic Scholar, DataCite, Crossref) consistently validated the vision data. Crossref provided the most complete metadata including journal details and pages. Keywords were enriched from DataCite's subject fields. Open access status and PDF URL were confirmed by multiple sources.",
+      "field_sources": {
+        "doi": "crossref|semantic_scholar|datacite",
+        "year": "crossref|semantic_scholar|datacite",
+        "pages": "crossref",
+        "title": "vision|semantic_scholar|datacite|crossref",
+        "pdfurl": "semantic_scholar",
+        "authors": "vision|semantic_scholar|datacite|crossref",
+        "journal": "crossref+semantic_scholar",
+        "abstract": "vision|semantic_scholar|datacite",
+        "keywords": "vision+datacite",
+        "citations": "semantic_scholar|openalex",
+        "publisher": "crossref|datacite",
+        "openaccess": "semantic_scholar|openalex"
+      },
+      "enhancement_level": "SIGNIFICANT",
+      "validation_status": "HIGH"
+    },
+    "api_success_summary": {
+      "insights": "Semantic Scholar, DataCite, Crossref, and OpenAlex provided coherent data that enhanced vision-extracted metadata. Most failures were due to missing DOI (Unpaywall, DOAJ) or no results found (arXiv, Europe PMC, PubMed). CORE API failed with an internal error.",
+      "total_apis": 11,
+      "failed_apis": [
+        "core",
+        "unpaywall",
+        "doaj",
+        "arxiv",
+        "europe_pmc",
+        "pubmed"
+      ],
+      "success_rate": 0.45,
+      "coherent_apis": 4,
+      "coherence_rate": 0.8,
+      "successful_apis": 5
+    }
+  },
+  "processing_time_ms": 67087
+}

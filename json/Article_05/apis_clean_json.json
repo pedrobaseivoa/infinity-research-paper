@@ -1,0 +1,85 @@
+{
+  "timestamp": "2025-07-22T14:47:14.626291",
+  "cost_tracking": {
+    "model": "deepseek-chat",
+    "call_type": "smart_consensus",
+    "timestamp": "2025-07-22T14:47:14.626016",
+    "input_cost": 0.001494,
+    "total_cost": 0.002783,
+    "output_cost": 0.001288,
+    "input_tokens": 5535,
+    "total_tokens": 6706,
+    "output_tokens": 1171,
+    "parsing_error": null,
+    "parsing_successful": true,
+    "processing_time_ms": 59461
+  },
+  "consensus_result": {
+    "DOI": "10.1145/2909609.2909626",
+    "PMID": null,
+    "Year": 2016,
+    "Issue": null,
+    "PMCID": null,
+    "Pages": "1-4",
+    "Title": "Applying Augmented Reality to Enable Automated and Low-Cost Data Capture from Medical Devices",
+    "PDFUrl": "https://dl.acm.org/doi/pdf/10.1145/2909609.2909626",
+    "Volume": null,
+    "Authors": [
+      "Chamberlain, Daniel",
+      "Jimenez-Galindo, Adrian",
+      "Fletcher, Richard Ribón",
+      "Kodgule, Rahul"
+    ],
+    "Journal": "Proceedings of the Eighth International Conference on Information and Communication Technologies and Development",
+    "Abstract": "As an alternative to building custom electronic devices that connect to mobile phones (via Bluetooth or USB), we present a new approach using Augmented Reality (AR) and machine vision to digitally recognize a biomedical device and capture readings automatically. In the context of developing countries, this approach enables easy integration with low-cost devices, without the need for designing any electronics or obtaining new FDA regulatory approval. As an example, we illustrate the use of AR with a peak flow meter, a device used in the diagnosis and treatment of respiratory disease. In our mobile application, the AR graphic overlay is used to provide feedback to patients and doctors by displaying personalized reference values. Comparing the automated readings from this device to manual readings, our mobile application had a mean error of 5.8 L/min and a correlation of 0.99. A small user study was also conducted in an India field clinic with three health staff (two nurses and a doctor). Following one minute of instruction, the automated readings from the participants had a mean error of 5.5 L/min and a correlation of 0.99 compared to manual readings, with a median task duration of 17.5 seconds. This small case study illustrates how AR can be used to capture medical device data on a mobile phone and help automate the data recording tasks performed by health workers in developing countries. This technology can also be used in developed countries, enabling patients to automatically record readings from similar devices at home using their smart phones.",
+    "Keywords": [
+      "augmented reality",
+      "consumer health",
+      "medical devices",
+      "Android",
+      "mobile health",
+      "peak flow meter",
+      "lung health",
+      "asthma"
+    ],
+    "Citations": 6,
+    "Publisher": "ACM",
+    "OpenAccess": false,
+    "confidence_factors": {
+      "source": "Vision-Foundation + API Enhancement",
+      "reasoning": "Vision data provided strong foundation with complete abstract and keywords. APIs validated and enhanced journal, year, pages, publisher, citations, and access status. All API data was coherent with vision foundation. Author names standardized from both sources.",
+      "field_sources": {
+        "doi": "crossref|openalex|semantic_scholar|unpaywall|core",
+        "year": "crossref|openalex|semantic_scholar|unpaywall|core",
+        "pages": "crossref",
+        "title": "vision",
+        "pdfurl": "core",
+        "authors": "vision+crossref",
+        "journal": "semantic_scholar|unpaywall|crossref",
+        "abstract": "vision",
+        "keywords": "vision",
+        "citations": "openalex",
+        "publisher": "crossref|unpaywall",
+        "openaccess": "crossref|openalex|unpaywall|core"
+      },
+      "enhancement_level": "SIGNIFICANT",
+      "validation_status": "HIGH"
+    },
+    "api_success_summary": {
+      "insights": "Crossref, Semantic Scholar, OpenAlex, and Unpaywall provided the most valuable enhancements. All successful APIs were coherent with vision data. Failure cases were expected (no DOAJ record for conference proceedings, no PubMed/Europe PMC coverage). Core provided valuable PDF link despite missing abstract.",
+      "total_apis": 11,
+      "failed_apis": [
+        "doaj",
+        "arxiv",
+        "europe_pmc",
+        "pubmed",
+        "datacite"
+      ],
+      "success_rate": 0.636,
+      "coherent_apis": 7,
+      "coherence_rate": 1.0,
+      "successful_apis": 7
+    }
+  },
+  "processing_time_ms": 68132
+}

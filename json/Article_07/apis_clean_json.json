@@ -1,0 +1,96 @@
+{
+  "timestamp": "2025-07-22T14:42:47.080292",
+  "cost_tracking": {
+    "model": "deepseek-chat",
+    "call_type": "smart_consensus",
+    "timestamp": "2025-07-22T14:42:47.080115",
+    "input_cost": 0.004925,
+    "total_cost": 0.006573,
+    "output_cost": 0.001649,
+    "input_tokens": 18239,
+    "total_tokens": 19738,
+    "output_tokens": 1499,
+    "parsing_error": null,
+    "parsing_successful": true,
+    "processing_time_ms": 78170
+  },
+  "consensus_result": {
+    "DOI": "10.1038/s41746-023-00978-6",
+    "PMID": "38110486",
+    "Year": 2023,
+    "Issue": "1",
+    "PMCID": "PMC10728213",
+    "Pages": "234",
+    "Title": "Augmented reality versus standard tests to assess cognition and function in early Alzheimer’s disease",
+    "PDFUrl": "https://www.nature.com/articles/s41746-023-00978-6.pdf",
+    "Volume": "6",
+    "Authors": [
+      "Muurling, Marijn",
+      "de Boer, Casper",
+      "Vairavan, Srinivasan",
+      "Harms, Robbert L.",
+      "Chadha, Antonella Santuccione",
+      "Tarnanas, Ioannis",
+      "Luis, Estefania Vilarino",
+      "Religa, Dorota",
+      "Gjestsen, Martha Therese",
+      "Galluzzi, Samantha",
+      "Ibarria Sala, Marta",
+      "Koychev, Ivan",
+      "Hausner, Lucrezia",
+      "Gkioka, Mara",
+      "Aarsland, Dag",
+      "Visser, Pieter Jelle",
+      "Brem, Anna-Katharine"
+    ],
+    "Journal": "npj Digital Medicine",
+    "Abstract": "Augmented reality (AR) apps, in which the virtual and real world are combined, can recreate instrumental activities of daily living (IADL) and are therefore promising to measure cognition needed for IADL in early Alzheimer’s disease (AD) both in the clinic and in the home settings. The primary aim of this study was to distinguish and classify healthy controls (HC) from participants with AD pathology in an early AD stage using an AR app. The secondary aims were to test the association of the app with clinical cognitive and functional tests and investigate the feasibility of at-home testing using AR. We furthermore investigated the test-retest reliability and potential learning effects of the task. The digital score from the AR app could significantly distinguish HC from preclinical AD (preAD) and prodromal AD (proAD), and preAD from proAD, both with in-clinic and at-home tests. For the classification of the proAD group, the digital score (AUCin-clinic = 0.84 [0.75–0.93], AUCat-home = 0.77 [0.61–0.93]) was as good as the cognitive score (AUCin-clinic = 0.85 [0.78–0.93]), while for classifying the preAD group, the digital score (AUCin-clinic = 0.66 [0.53–0.78], AUCat-home = 0.76 [0.61–0.91]) was superior to the cognitive score (AUC = 0.55 [0.42–0.68]). In-clinic and at-home tests moderately correlated (rho = 0.57, p < 0.001). The digital score was associated with the clinical cognitive score (rho = 0.56, p < 0.001). No learning effects were found. Here we report the AR app distinguishes HC from otherwise healthy Aβ-positive individuals, both in the outpatient setting and at home, which is currently not possible with standard cognitive tests.",
+    "Keywords": [
+      "augmented reality",
+      "cognition",
+      "Alzheimer’s disease",
+      "instrumental activities of daily living",
+      "digital health"
+    ],
+    "Citations": 12,
+    "Publisher": "Springer Nature",
+    "OpenAccess": true,
+    "confidence_factors": {
+      "source": "Vision-Foundation + API Enhancement",
+      "reasoning": "Vision data used as foundation with significant enhancements from multiple coherent API sources. All API data was validated against vision foundation. Key enhancements include adding missing issue number, PMID/PMCID, citation count, and open access status.",
+      "field_sources": {
+        "doi": "vision|semantic_scholar|crossref|openalex|europe_pmc|pubmed",
+        "pmid": "europe_pmc|pubmed",
+        "year": "vision|semantic_scholar|crossref|openalex|europe_pmc|pubmed",
+        "issue": "crossref|doaj|europe_pmc",
+        "pages": "vision|europe_pmc|pubmed",
+        "pmcid": "europe_pmc",
+        "title": "vision",
+        "pdfurl": "semantic_scholar|crossref|europe_pmc",
+        "volume": "vision|semantic_scholar|crossref|doaj|europe_pmc",
+        "authors": "vision+europe_pmc+pubmed",
+        "journal": "vision|semantic_scholar|doaj",
+        "abstract": "vision|semantic_scholar|europe_pmc",
+        "keywords": "vision",
+        "citations": "semantic_scholar|openalex",
+        "publisher": "vision|semantic_scholar",
+        "openaccess": "semantic_scholar|unpaywall|openalex|europe_pmc"
+      },
+      "enhancement_level": "SIGNIFICANT",
+      "validation_status": "HIGH"
+    },
+    "api_success_summary": {
+      "insights": "Excellent data coherence across most APIs with semantic_scholar, europe_pmc and crossref providing the most valuable enhancements. Only arxiv and datacite failed to return results. All successful APIs confirmed the same article through DOI matching.",
+      "total_apis": 11,
+      "failed_apis": [
+        "arxiv",
+        "datacite"
+      ],
+      "success_rate": 0.82,
+      "coherent_apis": 8,
+      "coherence_rate": 0.89,
+      "successful_apis": 9
+    }
+  },
+  "processing_time_ms": 87917
+}

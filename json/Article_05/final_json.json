@@ -1,0 +1,734 @@
+{
+  "vision_json": {
+    "source": "gpt-4o-vision",
+    "success": true,
+    "prompt_sent": "Extract ONLY publication metadata from these academic paper pages.\n\nCRITICAL: This data will be sent to 11 external APIs, so format accuracy is essential.\n\nFIELD REQUIREMENTS WITH EXACT FORMATS:\n\n1. **Title**: Clean title for API queries (HIGHEST PRIORITY)\n   - Remove line breaks, extra spaces, formatting\n   - No HTML tags or special characters  \n   - Example: \"Effects of Machine Learning on Healthcare Outcomes\"\n\n2. **Authors**: API-compatible author list (HIGHEST PRIORITY)\n   - Each author as separate string in array\n   - Format: \"FirstName LastName\" or \"F. LastName\"\n   - Clean, no extra punctuation\n   - Example: [\"John Smith\", \"M. Johnson\", \"Sarah Williams\"]\n\n3. **DOI**: Standard DOI format for resolution APIs\n   - Must start with \"10.\" if present\n   - Clean format without URL prefixes\n   - Example: \"10.1234/journal.2024.001\"\n\n4. **Journal**: Clean journal name for database queries\n   - Full journal name preferred over abbreviations\n   - Remove extra formatting, parentheses\n   - Example: \"Nature Medicine\"\n\n5. **Year**: Numeric format for date filtering\n   - 4-digit NUMBER only (not string)\n   - Example: 2024\n\n6. **Volume**: Clean number for bibliographic APIs\n   - Numbers only, no \"Vol.\" prefix\n   - Example: \"15\"\n\n7. **Issue**: Clean number format\n   - Numbers only, no \"No.\" or \"Issue\" prefix\n   - Example: \"3\"\n\n8. **Pages**: Standard page range for citations\n   - Format: \"start-end\" or single page\n   - Example: \"123-135\" or \"45\"\n\n9. **PMID**: PubMed ID for medical APIs\n   - Numbers only, no \"PMID:\" prefix\n   - Example: \"12345678\"\n\n10. **PMCID**: PubMed Central ID for open access papers\n    - Numbers only, no \"PMC\" prefix\n    - Often appears near PMID in biomedical papers\n    - Example: \"9876543\"\n\n11. **Keywords**: API-compatible keyword list\n    - Each keyword as separate string\n    - Research-quality terms, no punctuation\n    - Example: [\"machine learning\", \"healthcare\", \"clinical outcomes\"]\n\n11. **Abstract**: Complete clean text (HIGHEST PRIORITY)\n    - Remove formatting, line breaks, extra spaces\n    - Complete sentences, proper punctuation\n    - Search thoroughly across ALL pages\n    - This is CRITICAL for Semantic Scholar and other APIs\n\n12. **Publisher**: Clean organization name\n    - Official publisher name\n    - Example: \"Elsevier\" or \"Nature Publishing Group\"\n\nABSTRACT EXTRACTION PRIORITY:\n- Look thoroughly across ALL pages for abstract sections\n- Extract COMPLETE text, including multiple paragraphs\n- Check: Abstract, Summary, Introduction summary paragraphs\n- This field is CRITICAL for API enrichment success\n\nReturn JSON format:\n{\n  \"Title\": \"clean title without formatting\",\n  \"Authors\": [\"Author One\", \"Author Two\"],\n  \"DOI\": \"10.xxxx/xxxxx\",\n  \"Journal\": \"clean journal name\", \n  \"Year\": 2024,\n  \"Volume\": \"15\",\n  \"Issue\": \"3\", \n  \"Pages\": \"123-135\",\n  \"Abstract\": \"complete clean abstract text\",\n  \"Keywords\": [\"keyword1\", \"keyword2\"],\n  \"PMID\": \"12345678\",\n  \"PMCID\": \"9876543\",\n  \"Publisher\": \"publisher name\"\n}\n\nReturn null for fields not clearly visible. The Abstract field is MOST IMPORTANT for downstream API success.",
+    "cost_tracking": {
+      "model": "gpt-4o",
+      "call_type": "vision_extraction",
+      "timestamp": "2025-07-22T14:46:05.837157",
+      "input_cost": 0.007725,
+      "total_cost": 0.012365,
+      "output_cost": 0.00464,
+      "input_tokens": 3090,
+      "total_tokens": 3554,
+      "output_tokens": 464
+    },
+    "input_details": {
+      "dpi": 120,
+      "max_tokens": 1500,
+      "model_used": "gpt-4o",
+      "temperature": 0.1,
+      "page_strategy": "strategic",
+      "image_resolution": "high",
+      "processing_time_ms": 31686,
+      "pdf_pages_processed": 3
+    },
+    "extracted_data": {
+      "DOI": "10.1145/2909609.2909626",
+      "PMID": null,
+      "Year": null,
+      "Issue": null,
+      "PMCID": null,
+      "Pages": null,
+      "Title": "Applying Augmented Reality to Enable Automated and Low-Cost Data Capture from Medical Devices",
+      "Volume": null,
+      "Authors": [
+        "Daniel Chamberlain",
+        "Adrian Jimenez-Galindo",
+        "Richard Ribón Fletcher",
+        "Rahul Kodgule"
+      ],
+      "Journal": null,
+      "Abstract": "As an alternative to building custom electronic devices that connect to mobile phones (via Bluetooth or USB), we present a new approach using Augmented Reality (AR) and machine vision to digitally recognize a biomedical device and capture readings automatically. In the context of developing countries, this approach enables easy integration with low-cost devices, without the need for designing any electronics or obtaining new FDA regulatory approval. As an example, we illustrate the use of AR with a peak flow meter, a device used in the diagnosis and treatment of respiratory disease. In our mobile application, the AR graphic overlay is used to provide feedback to patients and doctors by displaying personalized reference values. Comparing the automated readings from this device to manual readings, our mobile application had a mean error of 5.8 L/min and a correlation of 0.99. A small user study was also conducted in an India field clinic with three health staff (two nurses and a doctor). Following one minute of instruction, the automated readings from the participants had a mean error of 5.5 L/min and a correlation of 0.99 compared to manual readings, with a median task duration of 17.5 seconds. This small case study illustrates how AR can be used to capture medical device data on a mobile phone and help automate the data recording tasks performed by health workers in developing countries. This technology can also be used in developed countries, enabling patients to automatically record readings from similar devices at home using their smart phones.",
+      "Keywords": [
+        "augmented reality",
+        "consumer health",
+        "medical devices",
+        "Android",
+        "mobile health",
+        "peak flow meter",
+        "lung health",
+        "asthma"
+      ],
+      "Publisher": null
+    },
+    "pages_processed": 3,
+    "extraction_matrix": {
+      "_performance_summary": {
+        "total_cost": 0.0,
+        "data_source": "vision_json",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "vision_status": "COMPLETE",
+        "extraction_rate": 38.46,
+        "extraction_source": "gpt-4o-vision",
+        "performance_level": "POOR",
+        "fields_with_content": 5,
+        "processing_time_seconds": 0,
+        "total_fields_in_response": 13
+      }
+    },
+    "extraction_method": "vision_strategic_strategy",
+    "extraction_quality": {
+      "success_rate": 50.0,
+      "quality_score": 50.0,
+      "successful_fields": 5,
+      "validation_details": {
+        "errors": [],
+        "is_valid": true,
+        "warnings": [
+          "Missing important field: Journal",
+          "Missing important field: Year"
+        ],
+        "quality_score": 80,
+        "completeness_score": 66.66666666666666
+      },
+      "total_fields_attempted": 13
+    },
+    "processing_time_ms": 31686,
+    "raw_openai_response": {
+      "content": "```json\n{\n  \"Title\": \"Applying Augmented Reality to Enable Automated and Low-Cost Data Capture from Medical Devices\",\n  \"Authors\": [\"Daniel Chamberlain\", \"Adrian Jimenez-Galindo\", \"Richard Ribón Fletcher\", \"Rahul Kodgule\"],\n  \"DOI\": \"10.1145/2909609.2909626\",\n  \"Journal\": null,\n  \"Year\": null,\n  \"Volume\": null,\n  \"Issue\": null,\n  \"Pages\": null,\n  \"Abstract\": \"As an alternative to building custom electronic devices that connect to mobile phones (via Bluetooth or USB), we present a new approach using Augmented Reality (AR) and machine vision to digitally recognize a biomedical device and capture readings automatically. In the context of developing countries, this approach enables easy integration with low-cost devices, without the need for designing any electronics or obtaining new FDA regulatory approval. As an example, we illustrate the use of AR with a peak flow meter, a device used in the diagnosis and treatment of respiratory disease. In our mobile application, the AR graphic overlay is used to provide feedback to patients and doctors by displaying personalized reference values. Comparing the automated readings from this device to manual readings, our mobile application had a mean error of 5.8 L/min and a correlation of 0.99. A small user study was also conducted in an India field clinic with three health staff (two nurses and a doctor). Following one minute of instruction, the automated readings from the participants had a mean error of 5.5 L/min and a correlation of 0.99 compared to manual readings, with a median task duration of 17.5 seconds. This small case study illustrates how AR can be used to capture medical device data on a mobile phone and help automate the data recording tasks performed by health workers in developing countries. This technology can also be used in developed countries, enabling patients to automatically record readings from similar devices at home using their smart phones.\",\n  \"Keywords\": [\"augmented reality\", \"consumer health\", \"medical devices\", \"Android\", \"mobile health\", \"peak flow meter\", \"lung health\", \"asthma\"],\n  \"PMID\": null,\n  \"PMCID\": null,\n  \"Publisher\": null\n}\n```",
+      "parsing_error": "Expecting value: line 1 column 1 (char 0)",
+      "response_length": 2143,
+      "parsing_successful": false
+    },
+    "processing_timestamp": "2025-07-22T14:46:05.837142"
+  },
+  "apis_raw_json": {
+    "core": {
+      "data": {
+        "data": {
+          "doi": "10.1145/2909609.2909626",
+          "year": 2016,
+          "title": "Applying Augmented Reality to Enable Automated and Low-Cost Data Capture from Medical Devices",
+          "authors": [
+            "Adrian Jimenez-Galindo",
+            "Daniel Chamberlain",
+            "Rahul Kodgule",
+            "Richard Ribón Fletcher"
+          ],
+          "core_id": 265568385,
+          "journal": "",
+          "pdf_url": "https://dl.acm.org/doi/pdf/10.1145/2909609.2909626",
+          "abstract": null,
+          "repository": "",
+          "open_access": false,
+          "citation_count": 0
+        },
+        "success": true,
+        "strategy": "Exact Title"
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:46:13.737292",
+      "processing_time_ms": 7229
+    },
+    "doaj": {
+      "error": "No DOI available for DOAJ search",
+      "success": false,
+      "timestamp": "2025-07-22T14:46:07.476141",
+      "processing_time_ms": 966
+    },
+    "arxiv": {
+      "error": "No results found",
+      "success": false,
+      "timestamp": "2025-07-22T14:46:07.874860",
+      "processing_time_ms": 1368
+    },
+    "orcid": {
+      "data": {
+        "person": {
+          "name": {
+            "path": "0000-0001-7520-8605",
+            "source": null,
+            "visibility": "public",
+            "credit-name": null,
+            "family-name": {
+              "value": "Chamberlain"
+            },
+            "given-names": {
+              "value": "Daniel"
+            },
+            "created-date": {
+              "value": 1515730436019
+            },
+            "last-modified-date": {
+              "value": 1515730436245
+            }
+          },
+          "path": "/0000-0001-7520-8605/person",
+          "emails": {
+            "path": "/0000-0001-7520-8605/email",
+            "email": [],
+            "last-modified-date": null
+          },
+          "keywords": {
+            "path": "/0000-0001-7520-8605/keywords",
+            "keyword": [],
+            "last-modified-date": null
+          },
+          "addresses": {
+            "path": "/0000-0001-7520-8605/address",
+            "address": [],
+            "last-modified-date": null
+          },
+          "biography": null,
+          "other-names": {
+            "path": "/0000-0001-7520-8605/other-names",
+            "other-name": [],
+            "last-modified-date": null
+          },
+          "researcher-urls": {
+            "path": "/0000-0001-7520-8605/researcher-urls",
+            "researcher-url": [],
+            "last-modified-date": null
+          },
+          "last-modified-date": null,
+          "external-identifiers": {
+            "path": "/0000-0001-7520-8605/external-identifiers",
+            "last-modified-date": null,
+            "external-identifier": []
+          }
+        },
+        "orcid_id": "0000-0001-7520-8605"
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:46:07.885163",
+      "processing_time_ms": 1374
+    },
+    "pubmed": {
+      "error": "No results found",
+      "success": false,
+      "timestamp": "2025-07-22T14:46:10.641062",
+      "processing_time_ms": 4145
+    },
+    "crossref": {
+      "data": {
+        "status": "ok",
+        "message": {
+          "DOI": "10.1145/2909609.2909626",
+          "URL": "https://doi.org/10.1145/2909609.2909626",
+          "link": [
+            {
+              "URL": "https://dl.acm.org/doi/10.1145/2909609.2909626",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "text-mining"
+            },
+            {
+              "URL": "https://dl.acm.org/doi/pdf/10.1145/2909609.2909626",
+              "content-type": "unspecified",
+              "content-version": "vor",
+              "intended-application": "similarity-checking"
+            }
+          ],
+          "page": "1-4",
+          "type": "proceedings-article",
+          "event": {
+            "name": "ICTD '16: Eighth International Conference on Information and Communication Technologies and Development",
+            "acronym": "ICTD '16",
+            "sponsor": [
+              "Google Inc.",
+              "Microsoft Microsoft",
+              "University of Michigan University of Michigan"
+            ],
+            "location": "Ann Arbor MI USA"
+          },
+          "score": 1,
+          "title": [
+            "Applying Augmented Reality to Enable Automated and Low-Cost Data Capture from Medical Devices"
+          ],
+          "author": [
+            {
+              "given": "Daniel",
+              "family": "Chamberlain",
+              "sequence": "first",
+              "affiliation": [
+                {
+                  "name": "Massachusetts Institute of Technology, Cambridge, MA, USA"
+                }
+              ]
+            },
+            {
+              "given": "Adrian",
+              "family": "Jimenez-Galindo",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Massachusetts Institute of Technology, Cambridge, MA, USA"
+                }
+              ]
+            },
+            {
+              "given": "Richard Ribón",
+              "family": "Fletcher",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Massachusetts Institute of Technology, Cambridge, MA, USA"
+                }
+              ]
+            },
+            {
+              "given": "Rahul",
+              "family": "Kodgule",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Chest Research Foundation, Pune, India"
+                }
+              ]
+            }
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2016,
+                6,
+                3
+              ]
+            ]
+          },
+          "member": "320",
+          "prefix": "10.1145",
+          "source": "Crossref",
+          "created": {
+            "date-time": "2016-05-25T20:14:10Z",
+            "timestamp": 1464207250000,
+            "date-parts": [
+              [
+                2016,
+                5,
+                25
+              ]
+            ]
+          },
+          "indexed": {
+            "version": "3.41.0",
+            "date-time": "2025-06-19T04:12:41Z",
+            "timestamp": 1750306361639,
+            "date-parts": [
+              [
+                2025,
+                6,
+                19
+              ]
+            ]
+          },
+          "license": [
+            {
+              "URL": "https://www.acm.org/publications/policies/copyright_policy#Background",
+              "start": {
+                "date-time": "2016-06-03T00:00:00Z",
+                "timestamp": 1464912000000,
+                "date-parts": [
+                  [
+                    2016,
+                    6,
+                    3
+                  ]
+                ]
+              },
+              "delay-in-days": 0,
+              "content-version": "vor"
+            }
+          ],
+          "subject": [],
+          "relation": {},
+          "resource": {
+            "primary": {
+              "URL": "https://dl.acm.org/doi/10.1145/2909609.2909626"
+            }
+          },
+          "subtitle": [],
+          "assertion": [
+            {
+              "name": "published",
+              "group": {
+                "name": "publication_history",
+                "label": "Publication History"
+              },
+              "label": "Published",
+              "order": 2,
+              "value": "2016-06-03"
+            }
+          ],
+          "deposited": {
+            "date-time": "2025-06-18T04:56:13Z",
+            "timestamp": 1750222573000,
+            "date-parts": [
+              [
+                2025,
+                6,
+                18
+              ]
+            ]
+          },
+          "published": {
+            "date-parts": [
+              [
+                2016,
+                6,
+                3
+              ]
+            ]
+          },
+          "publisher": "ACM",
+          "reference": [
+            {
+              "key": "e_1_3_2_1_1_1",
+              "unstructured": "2\n    Billion Consumers Worldwide to Get Smart(phones) by 2016 - eMarketer: http://www.emarketer.com/Article/2-Billion-Consumers-Worldwide-Smartphones-by-2016/1011694. Accessed: 2016-01-26.  2 Billion Consumers Worldwide to Get Smart(phones) by 2016 - eMarketer: http://www.emarketer.com/Article/2-Billion-Consumers-Worldwide-Smartphones-by-2016/1011694. Accessed: 2016-01-26."
+            },
+            {
+              "DOI": "10.1145/159544.159587",
+              "key": "e_1_3_2_1_2_1",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.5555/646921.709755",
+              "key": "e_1_3_2_1_3_1",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "key": "e_1_3_2_1_4_1",
+              "unstructured": "GLOBAL BURDEN OF DISEASE DUE TO ASTHMA: http://www.globalasthmareport.org/burden/burden.php.  GLOBAL BURDEN OF DISEASE DUE TO ASTHMA: http://www.globalasthmareport.org/burden/burden.php."
+            },
+            {
+              "DOI": "10.5555/646769.704779",
+              "key": "e_1_3_2_1_5_1",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.5555/857202.858138",
+              "key": "e_1_3_2_1_6_1",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "key": "e_1_3_2_1_7_1",
+              "unstructured": "The burden of lung disease: http://www.erswhitebook.org/chapters/the-burden-of-lung-disease/.  The burden of lung disease: http://www.erswhitebook.org/chapters/the-burden-of-lung-disease/."
+            },
+            {
+              "DOI": "10.1183/09031936.96.09050880",
+              "key": "e_1_3_2_1_8_1",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "DOI": "10.1007/s11263-006-7938-1",
+              "key": "e_1_3_2_1_9_1",
+              "doi-asserted-by": "publisher"
+            },
+            {
+              "key": "e_1_3_2_1_10_1",
+              "volume-title": "Virtual Reality: Scientific and Technological Challenges"
+            }
+          ],
+          "short-title": [],
+          "update-policy": "https://doi.org/10.1145/crossmark-policy",
+          "alternative-id": [
+            "10.1145/2909609.2909626",
+            "10.1145/2909609"
+          ],
+          "content-domain": {
+            "domain": [
+              "dl.acm.org"
+            ],
+            "crossmark-restriction": true
+          },
+          "original-title": [],
+          "container-title": [
+            "Proceedings of the Eighth International Conference on Information and Communication Technologies and Development"
+          ],
+          "published-print": {
+            "date-parts": [
+              [
+                2016,
+                6,
+                3
+              ]
+            ]
+          },
+          "reference-count": 10,
+          "published-online": {
+            "date-parts": [
+              [
+                2016,
+                6,
+                3
+              ]
+            ]
+          },
+          "references-count": 10,
+          "publisher-location": "New York, NY, USA",
+          "short-container-title": [],
+          "is-referenced-by-count": 4
+        },
+        "message-type": "work",
+        "message-version": "1.0.0"
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:46:07.464533",
+      "processing_time_ms": 960
+    },
+    "datacite": {
+      "error": "No matching articles found",
+      "success": false,
+      "timestamp": "2025-07-22T14:46:15.163061",
+      "processing_time_ms": 8656
+    },
+    "openalex": {
+      "data": {
+        "id": "https://openalex.org/W2395335189",
+        "doi": "https://doi.org/10.1145/2909609.2909626",
+        "title": "Applying Augmented Reality to Enable Automated and Low-Cost Data Capture from Medical Devices",
+        "open_access": {
+          "is_oa": false,
+          "oa_url": null,
+          "oa_status": "closed",
+          "any_repository_has_fulltext": false
+        },
+        "cited_by_count": 6,
+        "publication_year": 2016
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:46:07.661076",
+      "processing_time_ms": 1159
+    },
+    "unpaywall": {
+      "data": {
+        "doi": "10.1145/2909609.2909626",
+        "year": 2016,
+        "genre": "proceedings-article",
+        "is_oa": false,
+        "title": "Applying Augmented Reality to Enable Automated and Low-Cost Data Capture from Medical Devices",
+        "doi_url": "https://doi.org/10.1145/2909609.2909626",
+        "oa_status": "closed",
+        "publisher": "ACM",
+        "is_paratext": false,
+        "journal_name": "Proceedings of the Eighth International Conference on Information and Communication Technologies and Development",
+        "journal_issns": null,
+        "journal_issn_l": null,
+        "published_date": "2016-05-25",
+        "z_authors_summary": {
+          "count": 4,
+          "first_author": ""
+        },
+        "has_repository_copy": false,
+        "oa_locations_summary": {
+          "count": 0,
+          "has_repository": false
+        },
+        "best_oa_location_summary": null,
+        "first_oa_location_summary": null
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:46:07.660805",
+      "processing_time_ms": 1154
+    },
+    "europe_pmc": {
+      "error": "No results found",
+      "success": false,
+      "timestamp": "2025-07-22T14:46:08.090498",
+      "processing_time_ms": 1588
+    },
+    "semantic_scholar": {
+      "data": {
+        "year": 2016,
+        "title": "Applying Augmented Reality to Enable Automated and Low-Cost Data Capture from Medical Devices",
+        "authors": [
+          {
+            "name": "Daniel B. Chamberlain",
+            "authorId": "145763268"
+          },
+          {
+            "name": "A. Jimenez-Galindo",
+            "authorId": "1412998461"
+          },
+          {
+            "name": "R. Fletcher",
+            "authorId": "145408545"
+          },
+          {
+            "name": "R. Kodgule",
+            "authorId": "46668681"
+          }
+        ],
+        "journal": {
+          "name": "Proceedings of the Eighth International Conference on Information and Communication Technologies and Development"
+        },
+        "paperId": "f89679cc087a70b92fe511dca2f8b5e388741178",
+        "abstract": null,
+        "externalIds": {
+          "DOI": "10.1145/2909609.2909626",
+          "MAG": "2395335189",
+          "DBLP": "conf/ictd/ChamberlainJFK16",
+          "CorpusId": 2868705
+        },
+        "isOpenAccess": false,
+        "citationCount": 5,
+        "openAccessPdf": {
+          "url": "",
+          "status": "CLOSED",
+          "license": null,
+          "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1145/2909609.2909626?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1145/2909609.2909626, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        }
+      },
+      "success": true,
+      "timestamp": "2025-07-22T14:46:07.356385",
+      "processing_time_ms": 859
+    }
+  },
+  "questions_json": {
+    "reason": "custom_topics_not_enabled",
+    "success": false,
+    "extraction_method": "disabled",
+    "processing_timestamp": "2025-07-22T14:47:35.830504"
+  },
+  "apis_clean_json": {
+    "timestamp": "2025-07-22T14:47:14.626291",
+    "cost_tracking": {
+      "model": "deepseek-chat",
+      "call_type": "smart_consensus",
+      "timestamp": "2025-07-22T14:47:14.626016",
+      "input_cost": 0.001494,
+      "total_cost": 0.002783,
+      "output_cost": 0.001288,
+      "input_tokens": 5535,
+      "total_tokens": 6706,
+      "output_tokens": 1171,
+      "parsing_error": null,
+      "parsing_successful": true,
+      "processing_time_ms": 59461
+    },
+    "consensus_result": {
+      "DOI": "10.1145/2909609.2909626",
+      "PMID": null,
+      "Year": 2016,
+      "Issue": null,
+      "PMCID": null,
+      "Pages": "1-4",
+      "Title": "Applying Augmented Reality to Enable Automated and Low-Cost Data Capture from Medical Devices",
+      "PDFUrl": "https://dl.acm.org/doi/pdf/10.1145/2909609.2909626",
+      "Volume": null,
+      "Authors": [
+        "Chamberlain, Daniel",
+        "Jimenez-Galindo, Adrian",
+        "Fletcher, Richard Ribón",
+        "Kodgule, Rahul"
+      ],
+      "Journal": "Proceedings of the Eighth International Conference on Information and Communication Technologies and Development",
+      "Abstract": "As an alternative to building custom electronic devices that connect to mobile phones (via Bluetooth or USB), we present a new approach using Augmented Reality (AR) and machine vision to digitally recognize a biomedical device and capture readings automatically. In the context of developing countries, this approach enables easy integration with low-cost devices, without the need for designing any electronics or obtaining new FDA regulatory approval. As an example, we illustrate the use of AR with a peak flow meter, a device used in the diagnosis and treatment of respiratory disease. In our mobile application, the AR graphic overlay is used to provide feedback to patients and doctors by displaying personalized reference values. Comparing the automated readings from this device to manual readings, our mobile application had a mean error of 5.8 L/min and a correlation of 0.99. A small user study was also conducted in an India field clinic with three health staff (two nurses and a doctor). Following one minute of instruction, the automated readings from the participants had a mean error of 5.5 L/min and a correlation of 0.99 compared to manual readings, with a median task duration of 17.5 seconds. This small case study illustrates how AR can be used to capture medical device data on a mobile phone and help automate the data recording tasks performed by health workers in developing countries. This technology can also be used in developed countries, enabling patients to automatically record readings from similar devices at home using their smart phones.",
+      "Keywords": [
+        "augmented reality",
+        "consumer health",
+        "medical devices",
+        "Android",
+        "mobile health",
+        "peak flow meter",
+        "lung health",
+        "asthma"
+      ],
+      "Citations": 6,
+      "Publisher": "ACM",
+      "OpenAccess": false,
+      "confidence_factors": {
+        "source": "Vision-Foundation + API Enhancement",
+        "reasoning": "Vision data provided strong foundation with complete abstract and keywords. APIs validated and enhanced journal, year, pages, publisher, citations, and access status. All API data was coherent with vision foundation. Author names standardized from both sources.",
+        "field_sources": {
+          "doi": "crossref|openalex|semantic_scholar|unpaywall|core",
+          "year": "crossref|openalex|semantic_scholar|unpaywall|core",
+          "pages": "crossref",
+          "title": "vision",
+          "pdfurl": "core",
+          "authors": "vision+crossref",
+          "journal": "semantic_scholar|unpaywall|crossref",
+          "abstract": "vision",
+          "keywords": "vision",
+          "citations": "openalex",
+          "publisher": "crossref|unpaywall",
+          "openaccess": "crossref|openalex|unpaywall|core"
+        },
+        "enhancement_level": "SIGNIFICANT",
+        "validation_status": "HIGH"
+      },
+      "api_success_summary": {
+        "insights": "Crossref, Semantic Scholar, OpenAlex, and Unpaywall provided the most valuable enhancements. All successful APIs were coherent with vision data. Failure cases were expected (no DOAJ record for conference proceedings, no PubMed/Europe PMC coverage). Core provided valuable PDF link despite missing abstract.",
+        "total_apis": 11,
+        "failed_apis": [
+          "doaj",
+          "arxiv",
+          "europe_pmc",
+          "pubmed",
+          "datacite"
+        ],
+        "success_rate": 0.636,
+        "coherent_apis": 7,
+        "coherence_rate": 1.0,
+        "successful_apis": 7
+      }
+    },
+    "processing_time_ms": 68132
+  },
+  "llm_topics_json": {
+    "success": true,
+    "prompt_sent": "You are a scientific research assistant extracting data for academic comparison tables with statistical rigor.\n\nCRITICAL INSTRUCTIONS FOR ACADEMIC COMPARISON:\n\n- SYSTEMATICALLY scan ALL content: text, tables, figures, charts, appendices\n- PRIORITIZE quantitative data while preserving qualitative context\n- When conflicts exist in the paper, prioritize MOST RECENT/AUTHORITATIVE source\n- Extract ALL relevant details mentioned - DON'T truncate important information\n- Include statistical tests results (Z-scores, t-values, chi-square, etc.)\n- Extract accuracy rates, completion rates, success rates with specific numbers\n- Capture comparative data (e.g., \"46% vs 27%\", \"Group A: 64.5%, Group B: 68.2%\")\n- Use proper numeric format: \"p = 0.007\" not \"p = .007\", \"81\" not \"eighty-one\"\n\nCOMPREHENSIVE CAPTURE REQUIREMENTS:\n\n- List ALL hardware components: cameras, sensors, headsets, controllers, phones, tablets, webcams, probes\n- Include ALL software details: platforms, SDKs, libraries, export formats (CSV, JSON), feedback systems\n- Capture ALL measurement instruments: scales, questionnaires, assessment tools (SUS, NASA-TLX, FES-I, MoCA, IKDC, VAS, ABC scale, WHODAS 2.0, etc.)\n- Note ALL technical specifications: resolutions, frame rates, tracking capabilities, joint counts\n- Include ALL study phases: pilot tests, technical validation, user studies, expert evaluations\n- Capture ALL procedural details: training time, calibration steps, data export processes, real-time feedback\n\nCONFLICT RESOLUTION:\n\n- If conflicting information exists, prioritize methods/results over abstract\n- When uncertain, include both: \"X in abstract, Y in methods section\"\n\nExtract the following 7 scientific topics:\n\n1. *study_design*: Extract the PRIMARY study type/design using the most specific and authoritative terminology from the paper's methods section. Recognize equivalent terms: \"RCT\" = \"Randomized controlled trial\", \"Pilot study\" = \"Feasibility pilot study\", \"Cross-sectional\" = \"Observational cross-sectional\", \"User study\" = \"User evaluation study\". When multiple study type descriptions exist, prioritize the most comprehensive version from methods over abstract. Include specific qualifiers when mentioned (e.g., \"multicenter\", \"double-blind\", \"waitlist-controlled\") as these add valuable detail. Format as brief phrase describing core study methodology, avoiding generic terms like \"study\" or \"research\" alone.\n\n2. *methodology*: ONE comprehensive sentence covering: technology + application + key technical details. Include: ALL device models, software platforms, measurement tools, statistical analyses. Capture ALL hardware components mentioned (cameras, sensors, controllers, probes, etc.). Include ALL software features (real-time feedback, data export, tracking capabilities). Mention ALL technical specifications (joint tracking numbers, frame rates, resolutions). Example: \"Microsoft HoloLens 2 with HoloAnatomy platform for 3D anatomical procedural visualization using real-time motion tracking of 25 joints with CSV data export and real-time visual feedback\".\n\n3. *sample_size*: Format: \"X participants/patients\" (use paper's exact terminology). Include TOTAL numbers if multiple groups exist. Include ALL test phases: technical tests, pilot studies, user evaluations. Example: \"25 total: 23 biomedical students + 2 clinical experts; 50 technical validation readings\".\n\n4. *population*: ALL demographic details and characteristics not captured in sample_size. Include age, profession, condition, experience, setting details. Add specific numbers when available. Include recruitment sources and inclusion/exclusion criteria.\n\n5. *primary_outcome*: Include ALL measurement tools, scales, timing, specific metrics, usability criteria (ease of use, realism, anatomical accuracy). List ALL assessment instruments used and functional scales (SUS, NASA-TLX, FES-I, MoCA, IKDC, VAS, ABC scale, WHODAS 2.0, etc.), and evaluation dimensions beyond the primary measures.. Include ALL comparison conditions and timepoints. Example: \"Patient understanding via 5-point Likert scale assessed pre/post intervention, plus SUS usability scores and NASA-TLX workload assessment\".\n\n6. *key_findings*: PRIORITIZE statistical results with practical implications. Format: \"Finding 1: [statistical data + meaning]. Finding 2: [data + context]\". Include ALL significant findings, p-values, effect sizes, accuracy rates, comparative data, accuracy measurements (sub-mm, degrees), specific understanding domains (surgical risks, operative steps, recovery), and detailed performance metrics beyond statistical significance. Present ALL questionnaire results, prototype performance, qualitative benefits. Include ALL cost factors, training requirements, implementation details. Capture ALL comparison groups and their specific results. Be comprehensive - capture complete findings picture. Include ALL technical specifications mentioned: accuracy measurements (sub-mm, degrees).\n\n7. *limitations*: Extract ALL limitations from limitation/discussion sections. Include sample size issues, technical equipment requirements, methodological, practical constraints. Mention ALL equipment needs, calibration requirements, manufacturing variability. Include ALL generalizability issues, validity concerns, implementation barriers. Capture training requirements, cost constraints, specialized equipment needs. Note real-world applicability issues and clinical implementation challenges. Don't summarize - capture complete limitation landscape.\n\nReturn as valid JSON with this EXACT structure:\n\n{\n  \"study_design\": \"string\",\n  \"methodology\": \"string\",\n  \"sample_size\": \"string\",\n  \"population\": \"string\",\n  \"primary_outcome\": \"string\",\n  \"key_findings\": \"string\",\n  \"limitations\": \"string\"\n}",
+    "cost_tracking": {
+      "model": "gpt-4o",
+      "call_type": "scientific_topics_multimodal",
+      "timestamp": "2025-07-22T14:47:34.924631",
+      "input_cost": 0.01057,
+      "total_cost": 0.01285,
+      "output_cost": 0.00228,
+      "input_tokens": 4228,
+      "total_tokens": 4456,
+      "output_tokens": 228
+    },
+    "input_details": {
+      "dpi": 150,
+      "max_tokens": 6000,
+      "model_used": "gpt-4o",
+      "temperature": 0.1,
+      "strategy_used": "vision_all_pages (≤40)",
+      "pdf_total_pages": 4,
+      "image_resolution": "high",
+      "processing_time_ms": 19459,
+      "pdf_pages_processed": 4
+    },
+    "pages_processed": 4,
+    "extracted_topics": {
+      "population": "Conducted in Indian hospitals and clinics; participants included doctors and nurses with minimal training.",
+      "limitations": "Camera focus issues, sticker location affecting accuracy, minimal training provided, need for calibration routine, variability in readings due to phone camera differences.",
+      "methodology": "Android smartphones using Vuforia Augmented Reality SDK for PEFR measurement with Cipla Breath-O-Meter, CSV data export, and real-time visual feedback.",
+      "sample_size": "Technical validation: 10 measurements; User testing: 2 nurses, 1 doctor",
+      "key_findings": "Finding 1: Mean error of 5.8 L/min in technical validation with correlation of 0.99. Finding 2: User testing showed 90% of readings within 20 L/min of actual value, median recording time 17.5 seconds.",
+      "study_design": "Case study with technical validation and user testing",
+      "primary_outcome": "Accuracy of PEFR readings compared to manual readings, assessed via Bland-Altman plot; usability evaluated through user feedback."
+    },
+    "extraction_method": "multimodal_vision",
+    "extraction_quality": {
+      "topics_missing": 0,
+      "topics_extracted": 7
+    },
+    "processing_time_ms": 19459,
+    "raw_openai_response": {
+      "content": "```json\n{\n  \"study_design\": \"Case study with technical validation and user testing\",\n  \"methodology\": \"Android smartphones using Vuforia Augmented Reality SDK for PEFR measurement with Cipla Breath-O-Meter, CSV data export, and real-time visual feedback.\",\n  \"sample_size\": \"Technical validation: 10 measurements; User testing: 2 nurses, 1 doctor\",\n  \"population\": \"Conducted in Indian hospitals and clinics; participants included doctors and nurses with minimal training.\",\n  \"primary_outcome\": \"Accuracy of PEFR readings compared to manual readings, assessed via Bland-Altman plot; usability evaluated through user feedback.\",\n  \"key_findings\": \"Finding 1: Mean error of 5.8 L/min in technical validation with correlation of 0.99. Finding 2: User testing showed 90% of readings within 20 L/min of actual value, median recording time 17.5 seconds.\",\n  \"limitations\": \"Camera focus issues, sticker location affecting accuracy, minimal training provided, need for calibration routine, variability in readings due to phone camera differences.\"\n}\n```",
+      "parsing_error": null,
+      "response_length": 1047,
+      "parsing_successful": true
+    },
+    "processing_timestamp": "2025-07-22T14:47:34.924488"
+  },
+  "processing_metadata": {
+    "filename": "25) Applying Augmented Reality to Enable Automated and Low-Cost Data Capture from Medical Devices.pdf",
+    "article_id": "unknown",
+    "total_phases": 5,
+    "aggregated_at": "2025-07-22T14:47:36.214038",
+    "phases_completed": {
+      "topics": true,
+      "vision": true,
+      "apis_raw": true,
+      "questions": false,
+      "apis_clean": true
+    },
+    "transparency_level": "complete"
+  }
+}

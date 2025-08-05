@@ -1,0 +1,92 @@
+{
+  "timestamp": "2025-07-22T14:24:57.418221",
+  "cost_tracking": {
+    "model": "deepseek-chat",
+    "call_type": "smart_consensus",
+    "timestamp": "2025-07-22T14:24:57.418069",
+    "input_cost": 0.002655,
+    "total_cost": 0.004218,
+    "output_cost": 0.001563,
+    "input_tokens": 9832,
+    "total_tokens": 11253,
+    "output_tokens": 1421,
+    "parsing_error": null,
+    "parsing_successful": true,
+    "processing_time_ms": 69591
+  },
+  "consensus_result": {
+    "DOI": "10.1089/tmj.2024.0229",
+    "PMID": "38995868",
+    "Year": 2024,
+    "Issue": "10",
+    "PMCID": null,
+    "Pages": "2583-2591",
+    "Title": "Holo-Stroke: Assessing for Immersive Stroke Care Through Stroke Hologram Teleportation",
+    "PDFUrl": null,
+    "Volume": "30",
+    "Authors": [
+      "Weibel, Nadir",
+      "Alwood, Ben",
+      "Ramesh, Vishwajith",
+      "Liu, Weichen",
+      "Meyer, Dawn M.",
+      "McQuaid, Teri",
+      "Germain, Emily St",
+      "Meyer, Brett C."
+    ],
+    "Journal": "Telemedicine and e-Health",
+    "Abstract": "Background: Augmented reality enables the wearer to see both their physical environment and virtual objects. Holograms could allow 3D video of providers to be transmitted to distant sites, allowing patients to interact with virtual providers as if they are in the same physical space. Our aim was to determine if Tele-Stroke augmented with Holo-Stroke, compared with Tele-Stroke alone, could improve satisfaction and perception of immersion for the patient. Methods: Kinect cameras positioned at 90-degree intervals around the hub practitioner were used. Cameras streamed real-time optical video to a unity point-cloud program where the data were stitched together in a 360-degree view. The resultant hologram was positioned in 3D space and was visible through the head-mounted display by the patient. Radiology images were shared in Tele-Stroke and via hologram. Likert satisfaction questions were administered. Wilcoxon signed-rank testing was used. Results: Each of the 30 neurology clinic participants scored both Tele-Stroke and Holo-Stroke. Out of these, 29 patients completed the assessments (1 failure owing to computer reboot). Average age was 52 years, with 53.3% of the patients being female, 70.0% being White, and 13.3% being Hispanic. Likert scale score median \"Overall\" was 32 Tele-Stroke versus 48 Holo-Stroke (p < 0.00001), \"Immersion\" was 5 versus 10 (p < 0.00001), \"Beneficial Technique\" was 6 versus 10 (p < 0.00001), and \"Ability to See Images\" was 5 versus 10 (p < 0.00001). Discussion: Holo-Stroke 3D holographic Tele-Stroke exams resulted in feasibility, satisfaction, and high perception of immersion for the patient. Patients were enthusiastic for the more immersive, personal discussion with their provider and a robust way to experience radiology images. Though further assessments are needed, Holo-Stroke can help the provider \"be there, not just see there!\"",
+    "Keywords": [
+      "Tele-Stroke",
+      "hologram",
+      "augmented reality",
+      "satisfaction",
+      "immersion",
+      "telemedicine",
+      "Imaging, Three-Dimensional",
+      "Holography",
+      "Patient Satisfaction",
+      "Stroke"
+    ],
+    "Citations": 2,
+    "Publisher": "Mary Ann Liebert, Inc.",
+    "OpenAccess": false,
+    "confidence_factors": {
+      "source": "Vision-Foundation + API Enhancement",
+      "reasoning": "Vision data used as foundation with strong API validation across multiple sources. Enhanced abstract from europe_pmc/semantic_scholar, added PMID and citation counts from semantic_scholar, expanded keywords from MeSH terms, and confirmed publisher consistency. All API data was coherent with vision foundation.",
+      "field_sources": {
+        "doi": "crossref|openalex|semantic_scholar|europe_pmc|pubmed|unpaywall",
+        "pmid": "europe_pmc|pubmed|semantic_scholar",
+        "year": "vision|crossref|openalex|semantic_scholar|europe_pmc|pubmed|unpaywall",
+        "issue": "vision|crossref|europe_pmc|pubmed",
+        "pages": "vision|crossref|europe_pmc|pubmed",
+        "title": "vision",
+        "volume": "vision|crossref|europe_pmc|pubmed",
+        "authors": "crossref+europe_pmc+pubmed+semantic_scholar+vision",
+        "journal": "vision",
+        "abstract": "europe_pmc+semantic_scholar+vision",
+        "keywords": "europe_pmc+vision",
+        "citations": "semantic_scholar|openalex",
+        "publisher": "vision|crossref|unpaywall",
+        "openaccess": "openalex|semantic_scholar|unpaywall"
+      },
+      "enhancement_level": "SIGNIFICANT",
+      "validation_status": "HIGH"
+    },
+    "api_success_summary": {
+      "insights": "Strong coherence across successful APIs (crossref, openalex, semantic_scholar, europe_pmc, pubmed, unpaywall, orcid). Most valuable enhancements came from europe_pmc (abstract extension, MeSH keywords) and semantic_scholar (citations, PMID). Failures were expected as article is not in arXiv/DOAJ/CORE/Datacite.",
+      "total_apis": 11,
+      "failed_apis": [
+        "arxiv",
+        "doaj",
+        "datacite",
+        "core"
+      ],
+      "success_rate": 0.73,
+      "coherent_apis": 8,
+      "coherence_rate": 1.0,
+      "successful_apis": 8
+    }
+  },
+  "processing_time_ms": 86265
+}

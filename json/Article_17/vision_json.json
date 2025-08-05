@@ -1,0 +1,95 @@
+{
+  "source": "gpt-4o-vision",
+  "success": true,
+  "prompt_sent": "Extract ONLY publication metadata from these academic paper pages.\n\nCRITICAL: This data will be sent to 11 external APIs, so format accuracy is essential.\n\nFIELD REQUIREMENTS WITH EXACT FORMATS:\n\n1. **Title**: Clean title for API queries (HIGHEST PRIORITY)\n   - Remove line breaks, extra spaces, formatting\n   - No HTML tags or special characters  \n   - Example: \"Effects of Machine Learning on Healthcare Outcomes\"\n\n2. **Authors**: API-compatible author list (HIGHEST PRIORITY)\n   - Each author as separate string in array\n   - Format: \"FirstName LastName\" or \"F. LastName\"\n   - Clean, no extra punctuation\n   - Example: [\"John Smith\", \"M. Johnson\", \"Sarah Williams\"]\n\n3. **DOI**: Standard DOI format for resolution APIs\n   - Must start with \"10.\" if present\n   - Clean format without URL prefixes\n   - Example: \"10.1234/journal.2024.001\"\n\n4. **Journal**: Clean journal name for database queries\n   - Full journal name preferred over abbreviations\n   - Remove extra formatting, parentheses\n   - Example: \"Nature Medicine\"\n\n5. **Year**: Numeric format for date filtering\n   - 4-digit NUMBER only (not string)\n   - Example: 2024\n\n6. **Volume**: Clean number for bibliographic APIs\n   - Numbers only, no \"Vol.\" prefix\n   - Example: \"15\"\n\n7. **Issue**: Clean number format\n   - Numbers only, no \"No.\" or \"Issue\" prefix\n   - Example: \"3\"\n\n8. **Pages**: Standard page range for citations\n   - Format: \"start-end\" or single page\n   - Example: \"123-135\" or \"45\"\n\n9. **PMID**: PubMed ID for medical APIs\n   - Numbers only, no \"PMID:\" prefix\n   - Example: \"12345678\"\n\n10. **PMCID**: PubMed Central ID for open access papers\n    - Numbers only, no \"PMC\" prefix\n    - Often appears near PMID in biomedical papers\n    - Example: \"9876543\"\n\n11. **Keywords**: API-compatible keyword list\n    - Each keyword as separate string\n    - Research-quality terms, no punctuation\n    - Example: [\"machine learning\", \"healthcare\", \"clinical outcomes\"]\n\n11. **Abstract**: Complete clean text (HIGHEST PRIORITY)\n    - Remove formatting, line breaks, extra spaces\n    - Complete sentences, proper punctuation\n    - Search thoroughly across ALL pages\n    - This is CRITICAL for Semantic Scholar and other APIs\n\n12. **Publisher**: Clean organization name\n    - Official publisher name\n    - Example: \"Elsevier\" or \"Nature Publishing Group\"\n\nABSTRACT EXTRACTION PRIORITY:\n- Look thoroughly across ALL pages for abstract sections\n- Extract COMPLETE text, including multiple paragraphs\n- Check: Abstract, Summary, Introduction summary paragraphs\n- This field is CRITICAL for API enrichment success\n\nReturn JSON format:\n{\n  \"Title\": \"clean title without formatting\",\n  \"Authors\": [\"Author One\", \"Author Two\"],\n  \"DOI\": \"10.xxxx/xxxxx\",\n  \"Journal\": \"clean journal name\", \n  \"Year\": 2024,\n  \"Volume\": \"15\",\n  \"Issue\": \"3\", \n  \"Pages\": \"123-135\",\n  \"Abstract\": \"complete clean abstract text\",\n  \"Keywords\": [\"keyword1\", \"keyword2\"],\n  \"PMID\": \"12345678\",\n  \"PMCID\": \"9876543\",\n  \"Publisher\": \"publisher name\"\n}\n\nReturn null for fields not clearly visible. The Abstract field is MOST IMPORTANT for downstream API success.",
+  "cost_tracking": {
+    "model": "gpt-4o",
+    "call_type": "vision_extraction",
+    "timestamp": "2025-07-22T14:15:54.534376",
+    "input_cost": 0.007725,
+    "total_cost": 0.014705,
+    "output_cost": 0.00698,
+    "input_tokens": 3090,
+    "total_tokens": 3788,
+    "output_tokens": 698
+  },
+  "input_details": {
+    "dpi": 120,
+    "max_tokens": 1500,
+    "model_used": "gpt-4o",
+    "temperature": 0.1,
+    "page_strategy": "strategic",
+    "image_resolution": "high",
+    "processing_time_ms": 38154,
+    "pdf_pages_processed": 3
+  },
+  "extracted_data": {
+    "DOI": "10.1186/s40814-024-01480-w",
+    "PMID": null,
+    "Year": 2024,
+    "Issue": "54",
+    "PMCID": null,
+    "Pages": null,
+    "Title": "Remotely prescribed and monitored home-based gait-and-balance therapeutic exergaming using augmented reality glasses: protocol for a clinical feasibility study in people with Parkinson’s disease",
+    "Volume": "10",
+    "Authors": [
+      "L. E. S. Hardeman",
+      "D. J. Geerse",
+      "E. M. Hoogendoorn",
+      "J. Nonnekes",
+      "M. Roerdink"
+    ],
+    "Journal": "Pilot and Feasibility Studies",
+    "Abstract": "Clinical guidelines for people with Parkinson’s disease stress that, complementary to pharmacological treatment, exercise and physiotherapy should be given a central role in disease management. Adhering to regular exercise of the right type, and with high repetition, remains a challenge for people with Parkinson’s disease. Exergaming has the potential to increase adherence through play and personalised interventions, both in clinic and at home. Reality DTx is an augmented-reality home-based gait-and-balance exergaming intervention specifically designed for people with Parkinson’s disease as an extension of supervised physiotherapy. The primary objective of this study is to evaluate the feasibility and potential efficacy of Reality DTx. Twenty-four people with Parkinson’s disease (Hoehn and Yahr stages 2–4) with self-reported gait and/or balance impairments will participate in this study. The study comprises a 6-week waitlist-controlled AR home-based therapeutic gait-and-balance exergaming intervention. Reality DTx will initially be prescribed remotely for a minimum of 5 days a week for 30 min per day. We will remotely set and adjust the frequency, difficulty, type of games, and/or duration weekly, based on objective and subjective data from the AR glasses and participant, respectively. In addition to the home-based gait-and-balance exergaming intervention, the study comprises three laboratory visits: before the 6-week waitlist period (t0; baseline), before the 6-week intervention period (t1; pre-intervention), and after the 6-week intervention period (t2; post-intervention). The primary study parameters are feasibility (in terms of safety, adherence, and user experience) and potential efficacy for improving gait and balance (using standard clinical gait-and-balance tests and a targeted walking-related risk assessment). Recruitment started in December 2022 and the final post-intervention assessment will be according to planning in July 2023. This clinical feasibility trial is the first remotely prescribed and monitored home-based AR gait-and-balance exergaming intervention for people with Parkinson’s disease. The results in terms of clinical feasibility (i.e., safety, adherence, and user experience) and potential efficacy (gait, balance, and fall-risk outcomes) form the basis for future randomised controlled studies on the effectiveness of home-based AR gait-and-balance exergaming interventions for people with Parkinson’s disease.",
+    "Keywords": [
+      "Parkinson’s disease",
+      "Augmented reality",
+      "Clinical feasibility",
+      "Home-based therapy",
+      "Rehabilitation",
+      "Exergaming",
+      "Remote monitoring",
+      "Gait",
+      "Balance"
+    ],
+    "Publisher": "BMC"
+  },
+  "pages_processed": 3,
+  "extraction_matrix": {
+    "_performance_summary": {
+      "total_cost": 0.0,
+      "data_source": "vision_json",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "vision_status": "COMPLETE",
+      "extraction_rate": 76.92,
+      "extraction_source": "gpt-4o-vision",
+      "performance_level": "GOOD",
+      "fields_with_content": 10,
+      "processing_time_seconds": 0,
+      "total_fields_in_response": 13
+    }
+  },
+  "extraction_method": "vision_strategic_strategy",
+  "extraction_quality": {
+    "success_rate": 50.0,
+    "quality_score": 50.0,
+    "successful_fields": 10,
+    "validation_details": {
+      "errors": [],
+      "is_valid": true,
+      "warnings": [],
+      "quality_score": 100,
+      "completeness_score": 100.0
+    },
+    "total_fields_attempted": 13
+  },
+  "processing_time_ms": 38154,
+  "raw_openai_response": {
+    "content": "```json\n{\n  \"Title\": \"Remotely prescribed and monitored home-based gait-and-balance therapeutic exergaming using augmented reality glasses: protocol for a clinical feasibility study in people with Parkinson’s disease\",\n  \"Authors\": [\"L. E. S. Hardeman\", \"D. J. Geerse\", \"E. M. Hoogendoorn\", \"J. Nonnekes\", \"M. Roerdink\"],\n  \"DOI\": \"10.1186/s40814-024-01480-w\",\n  \"Journal\": \"Pilot and Feasibility Studies\",\n  \"Year\": 2024,\n  \"Volume\": \"10\",\n  \"Issue\": \"54\",\n  \"Pages\": null,\n  \"Abstract\": \"Clinical guidelines for people with Parkinson’s disease stress that, complementary to pharmacological treatment, exercise and physiotherapy should be given a central role in disease management. Adhering to regular exercise of the right type, and with high repetition, remains a challenge for people with Parkinson’s disease. Exergaming has the potential to increase adherence through play and personalised interventions, both in clinic and at home. Reality DTx is an augmented-reality home-based gait-and-balance exergaming intervention specifically designed for people with Parkinson’s disease as an extension of supervised physiotherapy. The primary objective of this study is to evaluate the feasibility and potential efficacy of Reality DTx. Twenty-four people with Parkinson’s disease (Hoehn and Yahr stages 2–4) with self-reported gait and/or balance impairments will participate in this study. The study comprises a 6-week waitlist-controlled AR home-based therapeutic gait-and-balance exergaming intervention. Reality DTx will initially be prescribed remotely for a minimum of 5 days a week for 30 min per day. We will remotely set and adjust the frequency, difficulty, type of games, and/or duration weekly, based on objective and subjective data from the AR glasses and participant, respectively. In addition to the home-based gait-and-balance exergaming intervention, the study comprises three laboratory visits: before the 6-week waitlist period (t0; baseline), before the 6-week intervention period (t1; pre-intervention), and after the 6-week intervention period (t2; post-intervention). The primary study parameters are feasibility (in terms of safety, adherence, and user experience) and potential efficacy for improving gait and balance (using standard clinical gait-and-balance tests and a targeted walking-related risk assessment). Recruitment started in December 2022 and the final post-intervention assessment will be according to planning in July 2023. This clinical feasibility trial is the first remotely prescribed and monitored home-based AR gait-and-balance exergaming intervention for people with Parkinson’s disease. The results in terms of clinical feasibility (i.e., safety, adherence, and user experience) and potential efficacy (gait, balance, and fall-risk outcomes) form the basis for future randomised controlled studies on the effectiveness of home-based AR gait-and-balance exergaming interventions for people with Parkinson’s disease.\",\n  \"Keywords\": [\"Parkinson’s disease\", \"Augmented reality\", \"Clinical feasibility\", \"Home-based therapy\", \"Rehabilitation\", \"Exergaming\", \"Remote monitoring\", \"Gait\", \"Balance\"],\n  \"PMID\": null,\n  \"PMCID\": null,\n  \"Publisher\": \"BMC\"\n}\n```",
+    "parsing_error": "Expecting value: line 1 column 1 (char 0)",
+    "response_length": 3203,
+    "parsing_successful": false
+  },
+  "processing_timestamp": "2025-07-22T14:15:54.534365"
+}

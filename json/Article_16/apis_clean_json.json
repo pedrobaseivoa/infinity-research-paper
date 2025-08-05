@@ -1,0 +1,87 @@
+{
+  "timestamp": "2025-07-22T14:19:58.554889",
+  "cost_tracking": {
+    "model": "deepseek-chat",
+    "call_type": "smart_consensus",
+    "timestamp": "2025-07-22T14:19:58.554653",
+    "input_cost": 0.003829,
+    "total_cost": 0.005273,
+    "output_cost": 0.001444,
+    "input_tokens": 14182,
+    "total_tokens": 15495,
+    "output_tokens": 1313,
+    "parsing_error": null,
+    "parsing_successful": true,
+    "processing_time_ms": 66110
+  },
+  "consensus_result": {
+    "DOI": "10.1007/s10916-018-1100-9",
+    "PMID": "30374695",
+    "Year": 2018,
+    "Issue": "12",
+    "PMCID": "PMC6208648",
+    "Pages": "246",
+    "Title": "Patient-Tailored Augmented Reality Games for Assessing Upper Extremity Motor Impairments in Parkinson’s Disease and Stroke",
+    "PDFUrl": "https://link.springer.com/content/pdf/10.1007/s10916-018-1100-9.pdf",
+    "Volume": "42",
+    "Authors": [
+      "Bank, Paulina J. M.",
+      "Cidota, Marina A.",
+      "Ouwehand, P. Elma",
+      "Lukosch, Stephan G."
+    ],
+    "Journal": "Journal of Medical Systems",
+    "Abstract": "In clinical practice, upper extremity motor impairments are commonly assessed with disease-specific, subjectively scored and low-resolution rating scales that often do not consider the variations in tasks and environment that are essential aspects of daily life. Augmented reality (AR) systems with contactless tracking of the hand and upper body offer opportunities for objective quantification of motor (dys)function in a challenging, engaging and patient-tailored environment. In this study, we explore the potential of AR for evaluating 1) speed and goal-directedness of movements within the individually determined interaction space, 2) adaptation of hand opening to objects of different sizes, and 3) obstacle avoidance in healthy individuals (N=10) and two highly prevalent neurological conditions (N=10 patients with Parkinson's Disease and N=10 stroke patients). We successfully implemented three AR games to evaluate these key aspects of motor function. As expected, PD patients moved slower than controls and needed more time for task completion. No differences were observed between stroke patients and controls, perhaps because motor impairments in this patient group were relatively mild. Importantly, usability of our AR system was good and considerably improved compared to our previous study due to more natural and patient-tailored interaction. Although this study highlights the potential of AR for assessing motor impairments in patients with neurological conditions and provide starting points for further improvement, there are still many steps to be taken towards application in clinical practice.",
+    "Keywords": [
+      "augmented reality",
+      "engagement",
+      "upper extremity",
+      "motor function",
+      "Parkinson's disease",
+      "stroke",
+      "video games",
+      "virtual reality"
+    ],
+    "Citations": 70,
+    "Publisher": "Springer Science and Business Media LLC",
+    "OpenAccess": true,
+    "confidence_factors": {
+      "source": "Vision-Foundation + API Enhancement",
+      "reasoning": "Vision data used as foundation with significant enhancements from multiple coherent API sources. Issue number corrected from vision (11) to API consensus (12). Added PMCID, PMID, citation count, and open access status from validated sources. Keywords enriched from MeSH terms in Europe PMC.",
+      "field_sources": {
+        "doi": "crossref|openalex|semantic_scholar|unpaywall|europe_pmc",
+        "pmid": "europe_pmc|pubmed",
+        "year": "vision|crossref|openalex|semantic_scholar|unpaywall|europe_pmc",
+        "issue": "crossref|europe_pmc|pubmed",
+        "pages": "vision|europe_pmc|pubmed",
+        "pmcid": "europe_pmc|semantic_scholar",
+        "title": "vision",
+        "pdfurl": "semantic_scholar|openalex|unpaywall",
+        "volume": "vision|crossref|europe_pmc",
+        "authors": "crossref|europe_pmc|pubmed|vision",
+        "journal": "vision|crossref|europe_pmc",
+        "abstract": "europe_pmc+vision",
+        "keywords": "europe_pmc+vision",
+        "citations": "openalex|semantic_scholar",
+        "publisher": "crossref|unpaywall",
+        "openaccess": "openalex|semantic_scholar|unpaywall|europe_pmc"
+      },
+      "enhancement_level": "SIGNIFICANT",
+      "validation_status": "HIGH"
+    },
+    "api_success_summary": {
+      "insights": "Strong coherence among major APIs (Crossref, Europe PMC, Semantic Scholar, OpenAlex, Unpaywall, PubMed). Europe PMC provided the most comprehensive enhancements including MeSH terms and affiliations. DOAJ failed due to missing DOI search, while arXiv and DataCite had no matches.",
+      "total_apis": 11,
+      "failed_apis": [
+        "doaj",
+        "arxiv",
+        "datacite"
+      ],
+      "success_rate": 0.73,
+      "coherent_apis": 7,
+      "coherence_rate": 0.88,
+      "successful_apis": 8
+    }
+  },
+  "processing_time_ms": 75289
+}

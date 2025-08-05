@@ -1,0 +1,1615 @@
+{
+  "core": {
+    "data": {
+      "data": {
+        "doi": "10.1038/s41746-023-00978-6",
+        "year": 2023,
+        "title": "Augmented reality versus standard tests to assess cognition and function in early Alzheimer's disease",
+        "authors": [
+          "Chadha, AS",
+          "de, Boer C",
+          "Galluzzi, S",
+          "Gjestsen, MT",
+          "Harms, RL",
+          "Luis, EV",
+          "Muurling, M",
+          "Religa, D,",
+          "Tarnanas, I",
+          "Vairavan, S"
+        ],
+        "core_id": 290516015,
+        "journal": "",
+        "pdf_url": "",
+        "abstract": null,
+        "repository": "",
+        "open_access": false,
+        "citation_count": 0
+      },
+      "success": true,
+      "strategy": "DOI"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:41:22.502305",
+    "processing_time_ms": 3317
+  },
+  "doaj": {
+    "data": {
+      "found": true,
+      "total": 1,
+      "results": [
+        {
+          "id": "9849069b1e0c480cb921133b632c90a4",
+          "bibjson": {
+            "link": [
+              {
+                "url": "https://doi.org/10.1038/s41746-023-00978-6",
+                "type": "fulltext",
+                "content_type": "HTML"
+              }
+            ],
+            "year": "2023",
+            "month": "12",
+            "title": "Augmented reality versus standard tests to assess cognition and function in early Alzheimer’s disease",
+            "author": [
+              {
+                "name": "Marijn Muurling",
+                "affiliation": "Alzheimer Center Amsterdam, Neurology, Vrije Universiteit Amsterdam, Amsterdam UMC location VUmc"
+              },
+              {
+                "name": "Casper de Boer",
+                "affiliation": "Alzheimer Center Amsterdam, Neurology, Vrije Universiteit Amsterdam, Amsterdam UMC location VUmc"
+              },
+              {
+                "name": "Srinivasan Vairavan",
+                "affiliation": "Janssen Research & Development, LLC"
+              },
+              {
+                "name": "Robbert L. Harms",
+                "affiliation": "Altoida Inc."
+              },
+              {
+                "name": "Antonella Santuccione Chadha",
+                "affiliation": "Altoida Inc."
+              },
+              {
+                "name": "Ioannis Tarnanas",
+                "affiliation": "Altoida Inc."
+              },
+              {
+                "name": "Estefania Vilarino Luis",
+                "affiliation": "Centre de la mémoire, Université de Genève (UNIGE), Hôpitaux Universitaires de Genève"
+              },
+              {
+                "name": "Dorota Religa",
+                "affiliation": "Center for Alzheimer Research, Department of Neurobiology, Care Sciences and Society (NVS), Karolinska Institutet"
+              },
+              {
+                "name": "Martha Therese Gjestsen",
+                "affiliation": "Centre for Age-related Medicine, Stavanger University Hospital"
+              },
+              {
+                "name": "Samantha Galluzzi",
+                "affiliation": "Laboratory Alzheimer’s Neuroimaging & Epidemiology, IRCCS Istituto Centro San Giovanni di Dio Fatebenefratelli"
+              },
+              {
+                "name": "Marta Ibarria Sala",
+                "affiliation": "Ace Alzheimer Center Barcelona – Universitat Internacional de Catalunya"
+              },
+              {
+                "name": "Ivan Koychev",
+                "affiliation": "Department of Psychiatry, University of Oxford"
+              },
+              {
+                "name": "Lucrezia Hausner",
+                "affiliation": "Central Institute for Mental Health, Faculty Mannheim, University of Heidelberg"
+              },
+              {
+                "name": "Mara Gkioka",
+                "affiliation": "Alzheimer Hellas and Laboratory of Neurodegenerative Diseases, Center for Interdisciplinary Research and Innovation (CIRI – AUTh), Balkan Center, Aristotle University of Thessaloniki"
+              },
+              {
+                "name": "Dag Aarsland",
+                "affiliation": "Centre for Age-related Medicine, Stavanger University Hospital"
+              },
+              {
+                "name": "Pieter Jelle Visser",
+                "affiliation": "Alzheimer Center Amsterdam, Neurology, Vrije Universiteit Amsterdam, Amsterdam UMC location VUmc"
+              },
+              {
+                "name": "Anna-Katharine Brem",
+                "affiliation": "Institute of Psychiatry, Psychology and Neuroscience, King’s College London"
+              }
+            ],
+            "journal": {
+              "issns": [
+                "2398-6352"
+              ],
+              "title": "npj Digital Medicine",
+              "number": "1",
+              "volume": "6",
+              "country": "GB",
+              "language": [
+                "EN"
+              ],
+              "publisher": "Nature Portfolio"
+            },
+            "subject": [
+              {
+                "code": "R858-859.7",
+                "term": "Computer applications to medicine. Medical informatics",
+                "scheme": "LCC"
+              }
+            ],
+            "abstract": "Abstract Augmented reality (AR) apps, in which the virtual and real world are combined, can recreate instrumental activities of daily living (IADL) and are therefore promising to measure cognition needed for IADL in early Alzheimer’s disease (AD) both in the clinic and in the home settings. The primary aim of this study was to distinguish and classify healthy controls (HC) from participants with AD pathology in an early AD stage using an AR app. The secondary aims were to test the association of the app with clinical cognitive and functional tests and investigate the feasibility of at-home testing using AR. We furthermore investigated the test-retest reliability and potential learning effects of the task. The digital score from the AR app could significantly distinguish HC from preclinical AD (preAD) and prodromal AD (proAD), and preAD from proAD, both with in-clinic and at-home tests. For the classification of the proAD group, the digital score (AUCclinic_visit = 0.84 [0.75–0.93], AUCat_home = 0.77 [0.61–0.93]) was as good as the cognitive score (AUC = 0.85 [0.78–0.93]), while for classifying the preAD group, the digital score (AUCclinic_visit = 0.66 [0.53–0.78], AUCat_home = 0.76 [0.61–0.91]) was superior to the cognitive score (AUC = 0.55 [0.42–0.68]). In-clinic and at-home tests moderately correlated (rho = 0.57, p < 0.001). The digital score was associated with the clinical cognitive score (rho = 0.56, p < 0.001). No learning effects were found. Here we report the AR app distinguishes HC from otherwise healthy Aβ-positive individuals, both in the outpatient setting and at home, which is currently not possible with standard cognitive tests.",
+            "end_page": "10",
+            "identifier": [
+              {
+                "id": "10.1038/s41746-023-00978-6",
+                "type": "doi"
+              },
+              {
+                "id": "2398-6352",
+                "type": "eissn"
+              }
+            ],
+            "start_page": "1"
+          },
+          "created_date": "2023-12-24T12:29:59Z",
+          "last_updated": "2023-12-24T12:29:59Z"
+        }
+      ]
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:41:20.603886",
+    "processing_time_ms": 1416
+  },
+  "arxiv": {
+    "error": "No results found",
+    "success": false,
+    "timestamp": "2025-07-22T14:41:20.774876",
+    "processing_time_ms": 1588
+  },
+  "orcid": {
+    "data": {
+      "person": {
+        "name": {
+          "path": "0000-0001-9397-4602",
+          "source": null,
+          "visibility": "public",
+          "credit-name": null,
+          "family-name": {
+            "value": "Muurling"
+          },
+          "given-names": {
+            "value": "Marijn"
+          },
+          "created-date": {
+            "value": 1532704222426
+          },
+          "last-modified-date": {
+            "value": 1532704222644
+          }
+        },
+        "path": "/0000-0001-9397-4602/person",
+        "emails": {
+          "path": "/0000-0001-9397-4602/email",
+          "email": [],
+          "last-modified-date": null
+        },
+        "keywords": {
+          "path": "/0000-0001-9397-4602/keywords",
+          "keyword": [],
+          "last-modified-date": null
+        },
+        "addresses": {
+          "path": "/0000-0001-9397-4602/address",
+          "address": [],
+          "last-modified-date": null
+        },
+        "biography": null,
+        "other-names": {
+          "path": "/0000-0001-9397-4602/other-names",
+          "other-name": [],
+          "last-modified-date": null
+        },
+        "researcher-urls": {
+          "path": "/0000-0001-9397-4602/researcher-urls",
+          "researcher-url": [],
+          "last-modified-date": null
+        },
+        "last-modified-date": null,
+        "external-identifiers": {
+          "path": "/0000-0001-9397-4602/external-identifiers",
+          "last-modified-date": null,
+          "external-identifier": []
+        }
+      },
+      "orcid_id": "0000-0001-9397-4602"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:41:20.698032",
+    "processing_time_ms": 1508
+  },
+  "pubmed": {
+    "data": {
+      "PubmedArticle": [
+        {
+          "MedlineCitation": {
+            "PMID": {
+              "content": "38110486"
+            },
+            "Article": {
+              "Journal": {
+                "Title": "NPJ digital medicine",
+                "JournalIssue": {
+                  "Issue": "1",
+                  "Volume": "6",
+                  "PubDate": {
+                    "Year": "2023"
+                  }
+                }
+              },
+              "Abstract": {
+                "AbstractText": [
+                  "Augmented reality (AR) apps, in which the virtual and real world are combined, can recreate instrumental activities of daily living (IADL) and are therefore promising to measure cognition needed for IADL in early Alzheimer's disease (AD) both in the clinic and in the home settings. The primary aim of this study was to distinguish and classify healthy controls (HC) from participants with AD pathology in an early AD stage using an AR app. The secondary aims were to test the association of the app with clinical cognitive and functional tests and investigate the feasibility of at-home testing using AR. We furthermore investigated the test-retest reliability and potential learning effects of the task. The digital score from the AR app could significantly distinguish HC from preclinical AD (preAD) and prodromal AD (proAD), and preAD from proAD, both with in-clinic and at-home tests. For the classification of the proAD group, the digital score (AUC"
+                ]
+              },
+              "AuthorList": {
+                "Author": [
+                  {
+                    "ForeName": "Marijn",
+                    "LastName": "Muurling"
+                  },
+                  {
+                    "ForeName": "Casper",
+                    "LastName": "de Boer"
+                  },
+                  {
+                    "ForeName": "Srinivasan",
+                    "LastName": "Vairavan"
+                  },
+                  {
+                    "ForeName": "Robbert L",
+                    "LastName": "Harms"
+                  },
+                  {
+                    "ForeName": "Antonella Santuccione",
+                    "LastName": "Chadha"
+                  },
+                  {
+                    "ForeName": "Ioannis",
+                    "LastName": "Tarnanas"
+                  },
+                  {
+                    "ForeName": "Estefania Vilarino",
+                    "LastName": "Luis"
+                  },
+                  {
+                    "ForeName": "Dorota",
+                    "LastName": "Religa"
+                  },
+                  {
+                    "ForeName": "Martha Therese",
+                    "LastName": "Gjestsen"
+                  },
+                  {
+                    "ForeName": "Samantha",
+                    "LastName": "Galluzzi"
+                  },
+                  {
+                    "ForeName": "Marta",
+                    "LastName": "Ibarria Sala"
+                  },
+                  {
+                    "ForeName": "Ivan",
+                    "LastName": "Koychev"
+                  },
+                  {
+                    "ForeName": "Lucrezia",
+                    "LastName": "Hausner"
+                  },
+                  {
+                    "ForeName": "Mara",
+                    "LastName": "Gkioka"
+                  },
+                  {
+                    "ForeName": "Dag",
+                    "LastName": "Aarsland"
+                  },
+                  {
+                    "ForeName": "Pieter Jelle",
+                    "LastName": "Visser"
+                  },
+                  {
+                    "ForeName": "Anna-Katharine",
+                    "LastName": "Brem"
+                  }
+                ]
+              },
+              "Pagination": {
+                "MedlinePgn": "234"
+              },
+              "ArticleTitle": "Augmented reality versus standard tests to assess cognition and function in early Alzheimer's disease."
+            }
+          }
+        }
+      ]
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:41:21.021955",
+    "processing_time_ms": 1857
+  },
+  "crossref": {
+    "data": {
+      "status": "ok",
+      "message": {
+        "DOI": "10.1038/s41746-023-00978-6",
+        "URL": "https://doi.org/10.1038/s41746-023-00978-6",
+        "ISSN": [
+          "2398-6352"
+        ],
+        "link": [
+          {
+            "URL": "https://www.nature.com/articles/s41746-023-00978-6.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://www.nature.com/articles/s41746-023-00978-6",
+            "content-type": "text/html",
+            "content-version": "vor",
+            "intended-application": "text-mining"
+          },
+          {
+            "URL": "https://www.nature.com/articles/s41746-023-00978-6.pdf",
+            "content-type": "application/pdf",
+            "content-version": "vor",
+            "intended-application": "similarity-checking"
+          }
+        ],
+        "type": "journal-article",
+        "issue": "1",
+        "score": 1,
+        "title": [
+          "Augmented reality versus standard tests to assess cognition and function in early Alzheimer’s disease"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0001-9397-4602",
+            "given": "Marijn",
+            "family": "Muurling",
+            "sequence": "first",
+            "affiliation": [],
+            "authenticated-orcid": false
+          },
+          {
+            "given": "Casper",
+            "family": "de Boer",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-7975-8436",
+            "given": "Srinivasan",
+            "family": "Vairavan",
+            "sequence": "additional",
+            "affiliation": [],
+            "authenticated-orcid": false
+          },
+          {
+            "given": "Robbert L.",
+            "family": "Harms",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Antonella Santuccione",
+            "family": "Chadha",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-4069-6551",
+            "given": "Ioannis",
+            "family": "Tarnanas",
+            "sequence": "additional",
+            "affiliation": [],
+            "authenticated-orcid": false
+          },
+          {
+            "given": "Estefania Vilarino",
+            "family": "Luis",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Dorota",
+            "family": "Religa",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Martha Therese",
+            "family": "Gjestsen",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Samantha",
+            "family": "Galluzzi",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Marta",
+            "family": "Ibarria Sala",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Ivan",
+            "family": "Koychev",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Lucrezia",
+            "family": "Hausner",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Mara",
+            "family": "Gkioka",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Dag",
+            "family": "Aarsland",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Pieter Jelle",
+            "family": "Visser",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0003-0295-6834",
+            "given": "Anna-Katharine",
+            "family": "Brem",
+            "sequence": "additional",
+            "affiliation": [],
+            "authenticated-orcid": false
+          }
+        ],
+        "funder": [
+          {
+            "id": [
+              {
+                "id": "10.13039/501100010767",
+                "id-type": "DOI",
+                "asserted-by": "publisher"
+              }
+            ],
+            "DOI": "10.13039/501100010767",
+            "name": "Innovative Medicines Initiative",
+            "award": [
+              "806999",
+              "806999",
+              "806999",
+              "806999",
+              "806999",
+              "806999",
+              "806999",
+              "806999",
+              "806999"
+            ],
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "name": "National Institute of Health Research (personal award and Oxford Health Biomedical Research Centre) and the Medical Research Council"
+          }
+        ],
+        "issued": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              18
+            ]
+          ]
+        },
+        "member": "297",
+        "prefix": "10.1038",
+        "source": "Crossref",
+        "volume": "6",
+        "created": {
+          "date-time": "2023-12-18T20:03:18Z",
+          "timestamp": 1702929798000,
+          "date-parts": [
+            [
+              2023,
+              12,
+              18
+            ]
+          ]
+        },
+        "indexed": {
+          "version": "3.37.3",
+          "date-time": "2025-07-20T03:46:53Z",
+          "timestamp": 1752983213945,
+          "date-parts": [
+            [
+              2025,
+              7,
+              20
+            ]
+          ]
+        },
+        "license": [
+          {
+            "URL": "https://creativecommons.org/licenses/by/4.0",
+            "start": {
+              "date-time": "2023-12-18T00:00:00Z",
+              "timestamp": 1702857600000,
+              "date-parts": [
+                [
+                  2023,
+                  12,
+                  18
+                ]
+              ]
+            },
+            "delay-in-days": 0,
+            "content-version": "tdm"
+          },
+          {
+            "URL": "https://creativecommons.org/licenses/by/4.0",
+            "start": {
+              "date-time": "2023-12-18T00:00:00Z",
+              "timestamp": 1702857600000,
+              "date-parts": [
+                [
+                  2023,
+                  12,
+                  18
+                ]
+              ]
+            },
+            "delay-in-days": 0,
+            "content-version": "vor"
+          }
+        ],
+        "subject": [],
+        "abstract": "<jats:title>Abstract</jats:title><jats:p>Augmented reality (AR) apps, in which the virtual and real world are combined, can recreate instrumental activities of daily living (IADL) and are therefore promising to measure cognition needed for IADL in early Alzheimer’s disease (AD) both in the clinic and in the home settings. The primary aim of this study was to distinguish and classify healthy controls (HC) from participants with AD pathology in an early AD stage using an AR app. The secondary aims were to test the association of the app with clinical cognitive and functional tests and investigate the feasibility of at-home testing using AR. We furthermore investigated the test-retest reliability and potential learning effects of the task. The digital score from the AR app could significantly distinguish HC from preclinical AD (preAD) and prodromal AD (proAD), and preAD from proAD, both with in-clinic and at-home tests. For the classification of the proAD group, the digital score (AUC<jats:sub>clinic_visit</jats:sub> = 0.84 [0.75–0.93], AUC<jats:sub>at_home</jats:sub> = 0.77 [0.61–0.93]) was as good as the cognitive score (AUC = 0.85 [0.78–0.93]), while for classifying the preAD group, the digital score (AUC<jats:sub>clinic_visit</jats:sub> = 0.66 [0.53–0.78], AUC<jats:sub>at_home</jats:sub> = 0.76 [0.61–0.91]) was superior to the cognitive score (AUC = 0.55 [0.42–0.68]). In-clinic and at-home tests moderately correlated (rho = 0.57, <jats:italic>p</jats:italic> &lt; 0.001). The digital score was associated with the clinical cognitive score (rho = 0.56, <jats:italic>p</jats:italic> &lt; 0.001). No learning effects were found. Here we report the AR app distinguishes HC from otherwise healthy Aβ-positive individuals, both in the outpatient setting and at home, which is currently not possible with standard cognitive tests.</jats:p>",
+        "language": "en",
+        "relation": {},
+        "resource": {
+          "primary": {
+            "URL": "https://www.nature.com/articles/s41746-023-00978-6"
+          }
+        },
+        "subtitle": [],
+        "assertion": [
+          {
+            "name": "received",
+            "group": {
+              "name": "ArticleHistory",
+              "label": "Article History"
+            },
+            "label": "Received",
+            "order": 1,
+            "value": "17 May 2023"
+          },
+          {
+            "name": "accepted",
+            "group": {
+              "name": "ArticleHistory",
+              "label": "Article History"
+            },
+            "label": "Accepted",
+            "order": 2,
+            "value": "29 November 2023"
+          },
+          {
+            "name": "first_online",
+            "group": {
+              "name": "ArticleHistory",
+              "label": "Article History"
+            },
+            "label": "First Online",
+            "order": 3,
+            "value": "18 December 2023"
+          },
+          {
+            "name": "Ethics",
+            "group": {
+              "name": "EthicsHeading",
+              "label": "Competing interests"
+            },
+            "order": 1,
+            "value": "R.L.H., A.S.C. and I.T. are employees of Altoida Inc. and declare no non-financial competing interests. S.V. is an employee of Janssen Pharmaceutical NV and may hold stock options or shares in the company, but has no non-financial competing interests. D.A. has received research support and/or honoraria from Astra-Zeneca, H. Lundbeck, Novartis Pharmaceuticals, Biogen, and GE Health, and served as a paid consultant for H. Lundbeck, Eisai, Heptares, Mentis Cura, and Roche Diagnostics, but declares no non-financial competing interests. S.G. declares support for this work through the Italian Ministry of Health (Ricerca Corrente). All other authors declare no financial or non-financial competing interests."
+          }
+        ],
+        "deposited": {
+          "date-time": "2023-12-18T20:07:16Z",
+          "timestamp": 1702930036000,
+          "date-parts": [
+            [
+              2023,
+              12,
+              18
+            ]
+          ]
+        },
+        "issn-type": [
+          {
+            "type": "electronic",
+            "value": "2398-6352"
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              18
+            ]
+          ]
+        },
+        "publisher": "Springer Science and Business Media LLC",
+        "reference": [
+          {
+            "DOI": "10.1016/j.jalz.2011.03.003",
+            "key": "978_CR1",
+            "year": "2011",
+            "author": "RA Sperling",
+            "volume": "7",
+            "first-page": "280",
+            "unstructured": "Sperling, R. A. et al. Toward defining the preclinical stages of Alzheimer’s disease: recommendations from the National Institute on Aging-Alzheimer’s Association workgroups on diagnostic guidelines for Alzheimer’s disease. Alzheimers Dement. 7, 280–292 (2011).",
+            "journal-title": "Alzheimers Dement.",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1093/geront/9.3_Part_1.179",
+            "key": "978_CR2",
+            "year": "1969",
+            "author": "MP Lawton",
+            "volume": "9",
+            "first-page": "179",
+            "unstructured": "Lawton, M. P. & Brody, E. M. Assessment of older people: self-maintaining and instrumental activities of daily living. Gerontologist 9, 179–186 (1969).",
+            "journal-title": "Gerontologist",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1002/alz.044787",
+            "key": "978_CR3",
+            "year": "2020",
+            "author": "MA Dubbelman",
+            "volume": "16",
+            "first-page": "e044787",
+            "unstructured": "Dubbelman, M. A. et al. Trajectories of decline in cognitively complex everyday activities across the Alzheimer’s disease continuum: Neuropsychology: Longitudinal cognitive assessment in early stages of AD. Alzheimers Dement. 16, e044787 (2020).",
+            "journal-title": "Alzheimers Dement.",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1016/j.dadm.2017.03.002",
+            "key": "978_CR4",
+            "year": "2017",
+            "author": "RJ Jutten",
+            "volume": "8",
+            "first-page": "26",
+            "unstructured": "Jutten, R. J. et al. Detecting functional decline from normal aging to dementia: development and validation of a short version of the Amsterdam IADL Questionnaire. Alzheimers Dement. (Amst). 8, 26–35 (2017).",
+            "journal-title": "Alzheimers Dement. (Amst).",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1186/s13195-015-0099-0",
+            "key": "978_CR5",
+            "year": "2015",
+            "author": "K Jekel",
+            "volume": "7",
+            "first-page": "1",
+            "unstructured": "Jekel, K. et al. Mild cognitive impairment and deficits in instrumental activities of daily living: a systematic review. Alzheimers Res. Ther. 7, 1–20 (2015).",
+            "journal-title": "Alzheimers Res. Ther.",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.3233/JAD-201017",
+            "key": "978_CR6",
+            "year": "2021",
+            "author": "C Tuena",
+            "volume": "79",
+            "first-page": "95",
+            "unstructured": "Tuena, C. et al. Egocentric and allocentric spatial memory in mild cognitive impairment with real-world and virtual navigation tasks: a systematic review. J. Alzheimers Dis. 79, 95–116 (2021).",
+            "journal-title": "J. Alzheimers Dis.",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.3390/jcm9103287",
+            "key": "978_CR7",
+            "year": "2020",
+            "author": "R Jin",
+            "volume": "9",
+            "first-page": "3287",
+            "unstructured": "Jin, R., Pilozzi, A. & Huang, X. Current cognition tests, potential virtual reality applications, and serious games in cognitive assessment and non-pharmacological therapy for neurocognitive disorders. J. Clin. Med. 9, 3287 (2020).",
+            "journal-title": "J. Clin. Med.",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.3233/JAD-191218",
+            "key": "978_CR8",
+            "year": "2020",
+            "author": "F Clay",
+            "volume": "75",
+            "first-page": "23",
+            "unstructured": "Clay, F., Howett, D., FitzGerald, J., Fletcher, P., Chan, D. & Price, A. Use of immersive virtual reality in the assessment and treatment of Alzheimer’s disease: a systematic review. J. Alzheimers Dis. 75, 23–43 (2020).",
+            "journal-title": "J. Alzheimers Dis.",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1038/s41746-021-00470-z",
+            "key": "978_CR9",
+            "year": "2021",
+            "author": "IB Meier",
+            "volume": "4",
+            "first-page": "1",
+            "unstructured": "Meier, I. B., Buegler, M., Harms, R., Seixas, A., Çöltekin, A. & Tarnanas, I. Using a Digital Neuro Signature to measure longitudinal individual-level change in Alzheimer’s disease: the Altoida large cohort study. NPJ Digital Med. 4, 1–9 (2021).",
+            "journal-title": "NPJ Digital Med.",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1056/NEJMoa2212948",
+            "key": "978_CR10",
+            "year": "2023",
+            "author": "CH van Dyck",
+            "volume": "388",
+            "first-page": "9",
+            "unstructured": "van Dyck, C. H. et al. Lecanemab in early Alzheimer’s disease. N. Engl. J. Med. 388, 9–21 (2023).",
+            "journal-title": "N. Engl. J. Med.",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1159/000500040",
+            "key": "978_CR11",
+            "year": "2019",
+            "author": "NM D’Cunha",
+            "volume": "65",
+            "first-page": "430",
+            "unstructured": "D’Cunha, N. M. et al. A mini-review of virtual reality-based interventions to promote well-being for people living with dementia and mild cognitive impairment. Gerontology 65, 430–440 (2019).",
+            "journal-title": "Gerontology",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1001/jamaneurol.2018.4693",
+            "key": "978_CR12",
+            "year": "2019",
+            "author": "RF Buckley",
+            "volume": "76",
+            "first-page": "542",
+            "unstructured": "Buckley, R. F. et al. Sex differences in the association of global amyloid and regional tau deposition measured by positron emission tomography in clinically normal older adults. JAMA Neurol. 76, 542–551 (2019).",
+            "journal-title": "JAMA Neurol.",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1038/s41582-018-0032-9",
+            "key": "978_CR13",
+            "year": "2018",
+            "author": "MT Ferretti",
+            "volume": "14",
+            "first-page": "457",
+            "unstructured": "Ferretti, M. T. et al. Sex differences in Alzheimer disease—the gateway to precision medicine. Nat. Rev. Neurol. 14, 457–469 (2018).",
+            "journal-title": "Nat. Rev. Neurol.",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1001/jamaneurol.2023.1059",
+            "key": "978_CR14",
+            "unstructured": "Buckley, R. F., Gong, J. & Woodward, M. A call to action to address sex differences in Alzheimer disease clinical trials. JAMA Neurol. 80, 769–770 (2023).",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1007/s13167-022-00284-3",
+            "key": "978_CR15",
+            "year": "2022",
+            "author": "RL Harms",
+            "volume": "13",
+            "first-page": "299",
+            "unstructured": "Harms, R. L. et al. Digital biomarkers and sex impacts in Alzheimer’s disease management—potential utility for innovative 3P medicine approach. EPMA J. 13, 299–313 (2022).",
+            "journal-title": "EPMA J.",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.2196/29510",
+            "key": "978_CR16",
+            "year": "2022",
+            "author": "PJ Cho",
+            "volume": "10",
+            "first-page": "e29510",
+            "unstructured": "Cho, P. J. et al. Demographic imbalances resulting from the bring-your-own-device study design. JMIR Mhealth Uhealth 10, e29510 (2022).",
+            "journal-title": "JMIR Mhealth Uhealth",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.3758/s13428-022-01925-1",
+            "key": "978_CR17",
+            "unstructured": "Nicosia, J. et al. To BYOD or not: Are device latencies important for bring-your-own-device (BYOD) smartphone cognitive testing? Behav. Res. Methods 55, 2800–2812 (2023).",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1016/0022-3956(75)90026-6",
+            "key": "978_CR18",
+            "year": "1974",
+            "author": "MF Folstein",
+            "volume": "12",
+            "first-page": "189",
+            "unstructured": "Folstein, M. F., Folstein, S. E. & McHugh, P. R. “Mini-mental state”. A practical method for grading the cognitive state of patients for the clinician. J. Psychiatr. Res. 12, 189–198 (1974).",
+            "journal-title": "J. Psychiatr. Res.",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1212/WNL.43.11.2412-a",
+            "key": "978_CR19",
+            "unstructured": "Morris, J. C. The Clinical Dementia Rating (CDR): current version and scoring rules. Neurology 43, 2412–2414 (1993).",
+            "doi-asserted-by": "crossref"
+          },
+          {
+            "DOI": "10.1016/j.jalz.2018.02.018",
+            "key": "978_CR20",
+            "year": "2018",
+            "author": "CR Jack Jr.",
+            "volume": "14",
+            "first-page": "535",
+            "unstructured": "Jack, C. R. Jr. et al. NIA-AA Research Framework: toward a biological definition of Alzheimer’s disease. Alzheimers Dement. 14, 535–562 (2018).",
+            "journal-title": "Alzheimers Dement.",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1186/s13195-021-00825-4",
+            "key": "978_CR21",
+            "year": "2021",
+            "author": "M Muurling",
+            "volume": "13",
+            "first-page": "1",
+            "unstructured": "Muurling, M. et al. Remote monitoring technologies in Alzheimer’s disease: design of the RADAR-AD study. Alzheimers Res. Ther. 13, 1–13 (2021).",
+            "journal-title": "Alzheimers Res. Ther.",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1371/journal.pone.0285807",
+            "key": "978_CR22",
+            "year": "2023",
+            "author": "M Muurling",
+            "volume": "18",
+            "first-page": "e0285807",
+            "unstructured": "Muurling, M. et al. Ethical challenges of using remote monitoring technologies for clinical research: a case study of the role of local research ethics committees in the RADAR-AD study. PLoS One 18, e0285807 (2023).",
+            "journal-title": "PLoS One",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.3758/BF03203313",
+            "key": "978_CR23",
+            "year": "1982",
+            "author": "DR McLeod",
+            "volume": "14",
+            "first-page": "463",
+            "unstructured": "McLeod, D. R., Griffiths, R. R., Bigelow, G. E. & Yingling, J. An automated version of the digit symbol substitution test (DSST). Behavior Res. Instrum. 14, 463–466 (1982).",
+            "journal-title": "Behavior Res. Instrum.",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "key": "978_CR24",
+            "year": "1999",
+            "author": "MM Cherrier",
+            "volume": "12",
+            "first-page": "95",
+            "unstructured": "Cherrier, M. M., Mendez, M. F., Dave, M. & Perryman, K. M. Performance on the Rey-Osterrieth Complex Figure Test in Alzheimer disease and vascular dementia. Neuropsychiatry Neuropsychol. Behav. Neurol. 12, 95–101 (1999).",
+            "journal-title": "Neuropsychiatry Neuropsychol. Behav. Neurol."
+          },
+          {
+            "DOI": "10.1007/s10072-014-1729-1",
+            "key": "978_CR25",
+            "year": "2014",
+            "author": "B Zarino",
+            "volume": "35",
+            "first-page": "1405",
+            "unstructured": "Zarino, B., Crespi, M., Launi, M. & Casarotti, A. A new standardization of semantic verbal fluency test. Neurol. Sci. 35, 1405–1411 (2014).",
+            "journal-title": "Neurol. Sci.",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1093/geronj/47.3.P154",
+            "key": "978_CR26",
+            "year": "1992",
+            "author": "WJ Mack",
+            "volume": "47",
+            "first-page": "P154",
+            "unstructured": "Mack, W. J., Freed, D. M., Williams, B. W. & Henderson, V. W. Boston Naming Test: shortened versions for use in Alzheimer’s disease. J. Gerontol. 47, P154–P158 (1992).",
+            "journal-title": "J. Gerontol.",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "key": "978_CR27",
+            "year": "2020",
+            "author": "M Buegler",
+            "volume": "12",
+            "first-page": "e12073",
+            "unstructured": "Buegler, M. et al. Digital biomarker‐based individualized prognosis for people at risk of dementia. Alzheimers Dement. (Amst) 12, e12073 (2020).",
+            "journal-title": "Alzheimers Dement. (Amst)"
+          },
+          {
+            "DOI": "10.1016/j.dadm.2015.10.005",
+            "key": "978_CR28",
+            "year": "2015",
+            "author": "I Tarnanas",
+            "volume": "1",
+            "first-page": "521",
+            "unstructured": "Tarnanas, I., Tsolaki, A., Wiederhold, M., Wiederhold, B. & Tsolaki, M. Five-year biomarker progression variability for Alzheimer’s disease dementia prediction: can a complex instrumental activities of daily living marker fill in the gaps?. Alzheimers Dement. (Amst) 1, 521–532 (2015).",
+            "journal-title": "Alzheimers Dement. (Amst)",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1186/s12955-022-01958-2",
+            "key": "978_CR29",
+            "year": "2022",
+            "author": "MA Dubbelman",
+            "volume": "20",
+            "first-page": "1",
+            "unstructured": "Dubbelman, M. A., Terwee, C. B., Verrijp, M., Visser, L. N., Scheltens, P. & Sikkes, S. A. Giving meaning to the scores of the Amsterdam instrumental activities of daily living questionnaire: a qualitative study. Health Qual. Life Outcomes 20, 1–5 (2022).",
+            "journal-title": "Health Qual. Life Outcomes",
+            "doi-asserted-by": "publisher"
+          },
+          {
+            "DOI": "10.1016/j.jcm.2016.02.012",
+            "key": "978_CR30",
+            "year": "2016",
+            "author": "TK Koo",
+            "volume": "15",
+            "first-page": "155",
+            "unstructured": "Koo, T. K. & Li, M. Y. A guideline of selecting and reporting intraclass correlation coefficients for reliability research. J. Chiropr. Med. 15, 155–163 (2016).",
+            "journal-title": "J. Chiropr. Med.",
+            "doi-asserted-by": "publisher"
+          }
+        ],
+        "short-title": [],
+        "journal-issue": {
+          "issue": "1",
+          "published-online": {
+            "date-parts": [
+              [
+                2023,
+                12
+              ]
+            ]
+          }
+        },
+        "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+        "alternative-id": [
+          "978"
+        ],
+        "article-number": "234",
+        "content-domain": {
+          "domain": [
+            "link.springer.com"
+          ],
+          "crossmark-restriction": false
+        },
+        "original-title": [],
+        "container-title": [
+          "npj Digital Medicine"
+        ],
+        "reference-count": 30,
+        "published-online": {
+          "date-parts": [
+            [
+              2023,
+              12,
+              18
+            ]
+          ]
+        },
+        "references-count": 30,
+        "short-container-title": [
+          "npj Digit. Med."
+        ],
+        "is-referenced-by-count": 19
+      },
+      "message-type": "work",
+      "message-version": "1.0.0"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:41:20.354444",
+    "processing_time_ms": 1190
+  },
+  "datacite": {
+    "error": "No matching articles found",
+    "success": false,
+    "timestamp": "2025-07-22T14:41:28.906104",
+    "processing_time_ms": 9719
+  },
+  "openalex": {
+    "data": {
+      "id": "https://openalex.org/W4389922611",
+      "doi": "https://doi.org/10.1038/s41746-023-00978-6",
+      "title": "Augmented reality versus standard tests to assess cognition and function in early Alzheimer’s disease",
+      "open_access": {
+        "is_oa": true,
+        "oa_url": "https://www.nature.com/articles/s41746-023-00978-6.pdf",
+        "oa_status": "gold",
+        "any_repository_has_fulltext": true
+      },
+      "cited_by_count": 17,
+      "publication_year": 2023
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:41:20.686859",
+    "processing_time_ms": 1511
+  },
+  "unpaywall": {
+    "data": {
+      "doi": "10.1038/s41746-023-00978-6",
+      "year": 2023,
+      "genre": "journal-article",
+      "is_oa": true,
+      "title": "Augmented reality versus standard tests to assess cognition and function in early Alzheimer’s disease",
+      "doi_url": "https://doi.org/10.1038/s41746-023-00978-6",
+      "oa_status": "gold",
+      "publisher": "Springer Science and Business Media LLC",
+      "is_paratext": false,
+      "journal_name": "npj Digital Medicine",
+      "journal_issns": "2398-6352",
+      "journal_issn_l": "2398-6352",
+      "published_date": "2023-12-18",
+      "z_authors_summary": {
+        "count": 17,
+        "first_author": ""
+      },
+      "has_repository_copy": true,
+      "oa_locations_summary": {
+        "count": 5,
+        "has_repository": true
+      },
+      "best_oa_location_summary": {
+        "is_best": true,
+        "host_type": "publisher",
+        "url_for_pdf": true
+      },
+      "first_oa_location_summary": {
+        "is_first": true,
+        "host_type": "publisher",
+        "url_for_pdf": true
+      }
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:41:20.647245",
+    "processing_time_ms": 1466
+  },
+  "europe_pmc": {
+    "data": {
+      "id": "38110486",
+      "doi": "10.1038/s41746-023-00978-6",
+      "pmid": "38110486",
+      "inPMC": "Y",
+      "pmcid": "PMC10728213",
+      "title": "Augmented reality versus standard tests to assess cognition and function in early Alzheimer's disease.",
+      "hasPDF": "Y",
+      "inEPMC": "Y",
+      "source": "MED",
+      "authMan": "N",
+      "hasBook": "N",
+      "hasData": "Y",
+      "license": "cc by",
+      "pubYear": "2023",
+      "hasSuppl": "Y",
+      "language": "eng",
+      "pageInfo": "234",
+      "pubModel": "Electronic",
+      "authorList": {
+        "author": [
+          {
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0001-9397-4602"
+            },
+            "fullName": "Muurling M",
+            "initials": "M",
+            "lastName": "Muurling",
+            "firstName": "Marijn",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Alzheimer Center Amsterdam, Neurology, Vrije Universiteit Amsterdam, Amsterdam UMC location VUmc, Amsterdam, The Netherlands. m.muurling@amsterdamumc.nl."
+                },
+                {
+                  "affiliation": "Amsterdam Neuroscience, Neurodegeneration, Amsterdam, The Netherlands. m.muurling@amsterdamumc.nl."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "de Boer C",
+            "initials": "C",
+            "lastName": "de Boer",
+            "firstName": "Casper",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Alzheimer Center Amsterdam, Neurology, Vrije Universiteit Amsterdam, Amsterdam UMC location VUmc, Amsterdam, The Netherlands."
+                },
+                {
+                  "affiliation": "Amsterdam Neuroscience, Neurodegeneration, Amsterdam, The Netherlands."
+                }
+              ]
+            }
+          },
+          {
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0001-7975-8436"
+            },
+            "fullName": "Vairavan S",
+            "initials": "S",
+            "lastName": "Vairavan",
+            "firstName": "Srinivasan",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Janssen Research & Development, LLC, 1125 Trenton Harbourton Road, Titusville, NJ, 08560, USA."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Harms RL",
+            "initials": "RL",
+            "lastName": "Harms",
+            "firstName": "Robbert L",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Altoida Inc., Washington, DC, USA."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Chadha AS",
+            "initials": "AS",
+            "lastName": "Chadha",
+            "firstName": "Antonella Santuccione",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Altoida Inc., Washington, DC, USA."
+                }
+              ]
+            }
+          },
+          {
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0003-4069-6551"
+            },
+            "fullName": "Tarnanas I",
+            "initials": "I",
+            "lastName": "Tarnanas",
+            "firstName": "Ioannis",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Altoida Inc., Washington, DC, USA."
+                },
+                {
+                  "affiliation": "Trinity College Dublin, Global Brain Health Institute - GHBI, Dublin, Ireland."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Luis EV",
+            "initials": "EV",
+            "lastName": "Luis",
+            "firstName": "Estefania Vilarino",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Centre de la mémoire, Université de Genève (UNIGE), Hôpitaux Universitaires de Genève, Geneva, Switzerland."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Religa D",
+            "initials": "D",
+            "lastName": "Religa",
+            "firstName": "Dorota",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Center for Alzheimer Research, Department of Neurobiology, Care Sciences and Society (NVS), Karolinska Institutet, Stockholm, Sweden."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Gjestsen MT",
+            "initials": "MT",
+            "lastName": "Gjestsen",
+            "firstName": "Martha Therese",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Centre for Age-related Medicine, Stavanger University Hospital, Stavanger, Norway."
+                },
+                {
+                  "affiliation": "Department of Clinical Medicine, University of Bergen, Bergen, Norway."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Galluzzi S",
+            "initials": "S",
+            "lastName": "Galluzzi",
+            "firstName": "Samantha",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Laboratory Alzheimer's Neuroimaging & Epidemiology, IRCCS Istituto Centro San Giovanni di Dio Fatebenefratelli, Brescia, Italy."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Ibarria Sala M",
+            "initials": "M",
+            "lastName": "Ibarria Sala",
+            "firstName": "Marta",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Ace Alzheimer Center Barcelona - Universitat Internacional de Catalunya, Barcelona, Spain."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Koychev I",
+            "initials": "I",
+            "lastName": "Koychev",
+            "firstName": "Ivan",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Department of Psychiatry, University of Oxford, Oxford, UK."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Hausner L",
+            "initials": "L",
+            "lastName": "Hausner",
+            "firstName": "Lucrezia",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Central Institute for Mental Health, Faculty Mannheim, University of Heidelberg, Heidelberg, Germany."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Gkioka M",
+            "initials": "M",
+            "lastName": "Gkioka",
+            "firstName": "Mara",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Alzheimer Hellas and Laboratory of Neurodegenerative Diseases, Center for Interdisciplinary Research and Innovation (CIRI - AUTh), Balkan Center, Aristotle University of Thessaloniki, Thessaloniki, Greece."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Aarsland D",
+            "initials": "D",
+            "lastName": "Aarsland",
+            "firstName": "Dag",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Centre for Age-related Medicine, Stavanger University Hospital, Stavanger, Norway."
+                },
+                {
+                  "affiliation": "Institute of Psychiatry, Psychology and Neuroscience, King's College London, London, UK."
+                }
+              ]
+            }
+          },
+          {
+            "fullName": "Visser PJ",
+            "initials": "PJ",
+            "lastName": "Visser",
+            "firstName": "Pieter Jelle",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Alzheimer Center Amsterdam, Neurology, Vrije Universiteit Amsterdam, Amsterdam UMC location VUmc, Amsterdam, The Netherlands."
+                },
+                {
+                  "affiliation": "Amsterdam Neuroscience, Neurodegeneration, Amsterdam, The Netherlands."
+                },
+                {
+                  "affiliation": "Center for Alzheimer Research, Department of Neurobiology, Care Sciences and Society (NVS), Karolinska Institutet, Stockholm, Sweden."
+                },
+                {
+                  "affiliation": "Department of Psychiatry and Neuropsychology, School for Mental Health and Neuroscience, Maastricht University, Maastricht, The Netherlands."
+                }
+              ]
+            }
+          },
+          {
+            "authorId": {
+              "type": "ORCID",
+              "value": "0000-0003-0295-6834"
+            },
+            "fullName": "Brem AK",
+            "initials": "AK",
+            "lastName": "Brem",
+            "firstName": "Anna-Katharine",
+            "authorAffiliationDetailsList": {
+              "authorAffiliation": [
+                {
+                  "affiliation": "Institute of Psychiatry, Psychology and Neuroscience, King's College London, London, UK."
+                },
+                {
+                  "affiliation": "University Hospital of Old Age Psychiatry, University of Bern, Bern, Switzerland."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "grantsList": {
+        "grant": [
+          {
+            "agency": "Innovative Medicines Initiative (IMI)",
+            "grantId": "806999",
+            "orderIn": 0
+          },
+          {
+            "agency": "National Institute of Health Research (personal award and Oxford Health Biomedical Research Centre) and the Medical Research Council",
+            "orderIn": 0
+          },
+          {
+            "agency": "Innovative Medicines Initiative",
+            "grantId": "806999",
+            "orderIn": 0
+          }
+        ]
+      },
+      "nihAuthMan": "N",
+      "affiliation": "Alzheimer Center Amsterdam, Neurology, Vrije Universiteit Amsterdam, Amsterdam UMC location VUmc, Amsterdam, The Netherlands. m.muurling@amsterdamumc.nl.",
+      "epmcAuthMan": "N",
+      "journalInfo": {
+        "issue": "1",
+        "volume": "6",
+        "journal": {
+          "essn": "2398-6352",
+          "issn": "2398-6352",
+          "nlmid": "101731738",
+          "title": "NPJ digital medicine",
+          "isoabbreviation": "NPJ Digit Med",
+          "medlineAbbreviation": "NPJ Digit Med"
+        },
+        "journalIssueId": 3672999,
+        "dateOfPublication": "2023 Dec",
+        "yearOfPublication": 2023,
+        "monthOfPublication": 12,
+        "printPublicationDate": "2023-12-01"
+      },
+      "pubTypeList": {
+        "pubType": [
+          "research-article",
+          "Journal Article"
+        ]
+      },
+      "abstractText": "Augmented reality (AR) apps, in which the virtual and real world are combined, can recreate instrumental activities of daily living (IADL) and are therefore promising to measure cognition needed for IADL in early Alzheimer's disease (AD) both in the clinic and in the home settings. The primary aim of this study was to distinguish and classify healthy controls (HC) from participants with AD pathology in an early AD stage using an AR app. The secondary aims were to test the association of the app with clinical cognitive and functional tests and investigate the feasibility of at-home testing using AR. We furthermore investigated the test-retest reliability and potential learning effects of the task. The digital score from the AR app could significantly distinguish HC from preclinical AD (preAD) and prodromal AD (proAD), and preAD from proAD, both with in-clinic and at-home tests. For the classification of the proAD group, the digital score (AUC<sub>clinic_visit</sub> = 0.84 [0.75-0.93], AUC<sub>at_home</sub> = 0.77 [0.61-0.93]) was as good as the cognitive score (AUC = 0.85 [0.78-0.93]), while for classifying the preAD group, the digital score (AUC<sub>clinic_visit</sub> = 0.66 [0.53-0.78], AUC<sub>at_home</sub> = 0.76 [0.61-0.91]) was superior to the cognitive score (AUC = 0.55 [0.42-0.68]). In-clinic and at-home tests moderately correlated (rho = 0.57, p < 0.001). The digital score was associated with the clinical cognitive score (rho = 0.56, p < 0.001). No learning effects were found. Here we report the AR app distinguishes HC from otherwise healthy Aβ-positive individuals, both in the outpatient setting and at home, which is currently not possible with standard cognitive tests.",
+      "authorIdList": {
+        "authorId": [
+          {
+            "type": "ORCID",
+            "value": "0000-0001-7975-8436"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0001-9397-4602"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0003-0295-6834"
+          },
+          {
+            "type": "ORCID",
+            "value": "0000-0003-4069-6551"
+          }
+        ]
+      },
+      "authorString": "Muurling M, de Boer C, Vairavan S, Harms RL, Chadha AS, Tarnanas I, Luis EV, Religa D, Gjestsen MT, Galluzzi S, Ibarria Sala M, Koychev I, Hausner L, Gkioka M, Aarsland D, Visser PJ, Brem AK.",
+      "citedByCount": 13,
+      "hasLabsLinks": "Y",
+      "isOpenAccess": "Y",
+      "hasReferences": "Y",
+      "dateOfCreation": "2023-12-18",
+      "dateOfRevision": "2023-12-21",
+      "firstIndexDate": "2023-12-22",
+      "fullTextIdList": {
+        "fullTextId": [
+          "PMC10728213"
+        ]
+      },
+      "hasEvaluations": "N",
+      "fullTextUrlList": {
+        "fullTextUrl": [
+          {
+            "url": "https://www.nature.com/articles/s41746-023-00978-6.pdf",
+            "site": "Unpaywall",
+            "availability": "Open access",
+            "documentStyle": "pdf",
+            "availabilityCode": "OA"
+          },
+          {
+            "url": "https://www.nature.com/articles/s41746-023-00978-6.pdf",
+            "site": "Unpaywall",
+            "availability": "Open access",
+            "documentStyle": "pdf",
+            "availabilityCode": "OA"
+          },
+          {
+            "url": "https://doi.org/10.1038/s41746-023-00978-6",
+            "site": "DOI",
+            "availability": "Subscription required",
+            "documentStyle": "doi",
+            "availabilityCode": "S"
+          },
+          {
+            "url": "https://europepmc.org/articles/PMC10728213",
+            "site": "Europe_PMC",
+            "availability": "Open access",
+            "documentStyle": "html",
+            "availabilityCode": "OA"
+          },
+          {
+            "url": "https://europepmc.org/articles/PMC10728213?pdf=render",
+            "site": "Europe_PMC",
+            "availability": "Open access",
+            "documentStyle": "pdf",
+            "availabilityCode": "OA"
+          }
+        ]
+      },
+      "dataLinksTagsList": {
+        "dataLinkstag": [
+          "altmetrics",
+          "supporting_data"
+        ]
+      },
+      "hasTextMinedTerms": "Y",
+      "publicationStatus": "epublish",
+      "firstPublicationDate": "2023-12-18",
+      "fullTextReceivedDate": "2023-12-21",
+      "hasDbCrossReferences": "N",
+      "hasTMAccessionNumbers": "N",
+      "electronicPublicationDate": "2023-12-18"
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:41:20.900825",
+    "processing_time_ms": 1722
+  },
+  "semantic_scholar": {
+    "data": {
+      "year": 2023,
+      "title": "Augmented reality versus standard tests to assess cognition and function in early Alzheimer’s disease",
+      "authors": [
+        {
+          "name": "Marijn Muurling",
+          "authorId": "80963150"
+        },
+        {
+          "name": "Casper de Boer",
+          "authorId": "2243601561"
+        },
+        {
+          "name": "S. Vairavan",
+          "authorId": "2442418"
+        },
+        {
+          "name": "R. Harms",
+          "authorId": "47355695"
+        },
+        {
+          "name": "Antonella Santuccione Chadha",
+          "authorId": "2275226687"
+        },
+        {
+          "name": "Ioannis Tarnanas",
+          "authorId": "2275227575"
+        },
+        {
+          "name": "Estefania Vilarino Luis",
+          "authorId": "2275229708"
+        },
+        {
+          "name": "Dorota Religa",
+          "authorId": "2267027598"
+        },
+        {
+          "name": "M. Gjestsen",
+          "authorId": "5545519"
+        },
+        {
+          "name": "Samantha Galluzzi",
+          "authorId": "2267023387"
+        },
+        {
+          "name": "Marta Ibarria Sala",
+          "authorId": "2331313966"
+        },
+        {
+          "name": "I. Koychev",
+          "authorId": "2258543901"
+        },
+        {
+          "name": "Lucrezia Hausner",
+          "authorId": "2251145875"
+        },
+        {
+          "name": "Mara Gkioka",
+          "authorId": "2275226985"
+        },
+        {
+          "name": "Dag Aarsland",
+          "authorId": "2055489181"
+        },
+        {
+          "name": "Pieter Jelle Visser",
+          "authorId": "2275230051"
+        },
+        {
+          "name": "A. Brem",
+          "authorId": "16736074"
+        }
+      ],
+      "journal": {
+        "name": "NPJ Digital Medicine",
+        "volume": "6"
+      },
+      "paperId": "d4f6862f29d5ae6bdc7e8b5ed4dcee28c5b385ca",
+      "abstract": "Augmented reality (AR) apps, in which the virtual and real world are combined, can recreate instrumental activities of daily living (IADL) and are therefore promising to measure cognition needed for IADL in early Alzheimer’s disease (AD) both in the clinic and in the home settings. The primary aim of this study was to distinguish and classify healthy controls (HC) from participants with AD pathology in an early AD stage using an AR app. The secondary aims were to test the association of the app with clinical cognitive and functional tests and investigate the feasibility of at-home testing using AR. We furthermore investigated the test-retest reliability and potential learning effects of the task. The digital score from the AR app could significantly distinguish HC from preclinical AD (preAD) and prodromal AD (proAD), and preAD from proAD, both with in-clinic and at-home tests. For the classification of the proAD group, the digital score (AUC_clinic_visit = 0.84 [0.75–0.93], AUC_at_home = 0.77 [0.61–0.93]) was as good as the cognitive score (AUC = 0.85 [0.78–0.93]), while for classifying the preAD group, the digital score (AUC_clinic_visit = 0.66 [0.53–0.78], AUC_at_home = 0.76 [0.61–0.91]) was superior to the cognitive score (AUC = 0.55 [0.42–0.68]). In-clinic and at-home tests moderately correlated (rho = 0.57, p  < 0.001). The digital score was associated with the clinical cognitive score (rho = 0.56, p  < 0.001). No learning effects were found. Here we report the AR app distinguishes HC from otherwise healthy Aβ-positive individuals, both in the outpatient setting and at home, which is currently not possible with standard cognitive tests.",
+      "externalIds": {
+        "DOI": "10.1038/s41746-023-00978-6",
+        "DBLP": "journals/npjdm/MuurlingBVHCTLRGGSKHGAV23",
+        "PubMed": "38110486",
+        "CorpusId": 266361273,
+        "PubMedCentral": "10728213"
+      },
+      "isOpenAccess": true,
+      "citationCount": 12,
+      "openAccessPdf": {
+        "url": "https://www.nature.com/articles/s41746-023-00978-6.pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10728213, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      }
+    },
+    "success": true,
+    "timestamp": "2025-07-22T14:41:19.758112",
+    "processing_time_ms": 589
+  }
+}

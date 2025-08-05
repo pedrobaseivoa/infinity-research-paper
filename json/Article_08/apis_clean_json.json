@@ -1,0 +1,86 @@
+{
+  "timestamp": "2025-07-22T14:40:06.911436",
+  "cost_tracking": {
+    "model": "deepseek-chat",
+    "call_type": "smart_consensus",
+    "timestamp": "2025-07-22T14:40:06.911294",
+    "input_cost": 0.003707,
+    "total_cost": 0.005307,
+    "output_cost": 0.001601,
+    "input_tokens": 13728,
+    "total_tokens": 15183,
+    "output_tokens": 1455,
+    "parsing_error": null,
+    "parsing_successful": true,
+    "processing_time_ms": 75873
+  },
+  "consensus_result": {
+    "DOI": "10.1002/pmrj.12883",
+    "PMID": "36197806",
+    "Year": 2023,
+    "Issue": "7",
+    "PMCID": null,
+    "Pages": "891-898",
+    "Title": "Comparison of in-person and synchronous remote musculoskeletal exam using augmented reality and haptics: A pilot study",
+    "PDFUrl": "https://rss.onlinelibrary.wiley.com/doi/am-pdf/10.1002/pmrj.12883",
+    "Volume": "15",
+    "Authors": [
+      "Borresen, Aleks",
+      "Chakka, Keerthana",
+      "Wu, Richard",
+      "Lin, Chung-Kuang",
+      "Wolfe, Cody",
+      "Prabhakaran, Balakrishnan",
+      "Annaswamy, Thiru M."
+    ],
+    "Journal": "PM&R",
+    "Abstract": "Introduction: Utilization of telemedicine for health care delivery increased rapidly during the coronavirus disease 2019 (COVID-19) pandemic. However, physical examination during telehealth visits remains limited. A novel telerehabilitation system—The Augmented Reality-based Telerehabilitation System with Haptics (ARTESH)—shows promise for performing synchronous, remote musculoskeletal examination. Objective: To assess the potential of ARTESH in remotely examining upper extremity passive range of motion (PROM) and maximum isometric strength (MIS). Design: In this cross-sectional pilot study, we compared the in-person (reference standard) and remote evaluations (ARTESH) of participants' upper extremity PROM and MIS in 10 shoulder and arm movements. The evaluators were blinded to each other's results. Setting: Participants underwent in-person evaluations at a Veterans Affairs hospital's outpatient Physical Medicine and Rehabilitation (PM&R) clinic, and underwent remote examination using ARTESH with the evaluator located at a research lab 30 miles away, connected via a high-speed network. Patients: Fifteen participants with upper extremity pain and/or weakness. Interventions: Not applicable. Main Outcome Measures: Inter-rater agreement between in-person and remote evaluations on 10 PROM and MIS movements and presence/absence of pain with movement was calculated. Results: The highest inter-rater agreements were noted in shoulder abduction and protraction PROM (kappa (κ) = 0.44, confidence interval (CI): −0.1 to 1.0), and in elbow flexion, shoulder abduction, and shoulder protraction MIS (κ = 0.63, CI: 0 to 1.0). Conclusions: This pilot study suggests that synchronous tele-physical examination using the ARTESH system with augmented reality and haptics has the potential to provide enhanced value to existing telemedicine platforms. With the additional technological and procedural improvements and with an adequately powered study, the accuracy of ARTESH-enabled remote tele-physical examinations can be better evaluated.",
+    "Keywords": [
+      "telemedicine",
+      "augmented reality",
+      "haptics",
+      "musculoskeletal examination",
+      "remote evaluation"
+    ],
+    "Citations": 8,
+    "Publisher": "Wiley",
+    "OpenAccess": true,
+    "confidence_factors": {
+      "source": "Vision-Foundation + API Enhancement",
+      "reasoning": "Vision data used as foundation with strong API validation from multiple sources. Publisher corrected from vision to Crossref/Unpaywall data. Citations and OpenAccess status added from Semantic Scholar and OpenAlex. Year validated as 2023 from most authoritative sources despite some APIs reporting 2022.",
+      "field_sources": {
+        "doi": "vision|pubmed|europe_pmc|crossref|semantic_scholar|openalex|unpaywall",
+        "pmid": "pubmed|europe_pmc|semantic_scholar",
+        "year": "vision|pubmed|europe_pmc|crossref",
+        "issue": "vision|pubmed|europe_pmc|crossref",
+        "pages": "vision|pubmed|europe_pmc|crossref|semantic_scholar",
+        "title": "vision|pubmed|europe_pmc|crossref|semantic_scholar|openalex|unpaywall",
+        "pdfurl": "semantic_scholar|openalex",
+        "volume": "vision|pubmed|europe_pmc|crossref|semantic_scholar",
+        "authors": "vision|pubmed|europe_pmc|crossref|semantic_scholar",
+        "journal": "vision|pubmed|europe_pmc|crossref|semantic_scholar|unpaywall",
+        "abstract": "vision|pubmed|europe_pmc|crossref",
+        "keywords": "vision",
+        "citations": "openalex|semantic_scholar",
+        "publisher": "crossref|unpaywall",
+        "openaccess": "openalex|semantic_scholar|unpaywall"
+      },
+      "enhancement_level": "SIGNIFICANT",
+      "validation_status": "HIGH"
+    },
+    "api_success_summary": {
+      "insights": "Excellent coherence among major APIs (Crossref, PubMed, Europe PMC, Semantic Scholar, OpenAlex). Core API returned irrelevant article. Most valuable enhancements came from Crossref (publisher, affiliations), Semantic Scholar (citations, OA status), and PubMed (PMID validation).",
+      "total_apis": 11,
+      "failed_apis": [
+        "doaj",
+        "arxiv",
+        "datacite"
+      ],
+      "success_rate": 0.73,
+      "coherent_apis": 7,
+      "coherence_rate": 0.88,
+      "successful_apis": 8
+    }
+  },
+  "processing_time_ms": 86907
+}
