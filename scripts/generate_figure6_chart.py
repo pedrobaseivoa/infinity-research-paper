@@ -296,7 +296,7 @@ def create_specialization_matrix_chart(analysis_data: Dict) -> str:
     ax.set_facecolor('#FFFFFF')
     
     # Save chart
-    chart_path = 'scripts/figure6_chart.png'
+    chart_path = 'plots/figure6_chart.png'
     plt.savefig(chart_path, dpi=150, bbox_inches='tight',
                facecolor='#FAFAFA', edgecolor='none')
     plt.close()
@@ -411,7 +411,7 @@ def main():
     
     print(f"📝 Generating Figure 6 legend...")
     legend_text = generate_figure6_legend(analysis_data)
-    legend_path = 'scripts/figure6_legend.txt'
+    legend_path = 'plots/figure6_legend.txt'
     
     with open(legend_path, 'w', encoding='utf-8') as f:
         f.write(legend_text)

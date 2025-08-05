@@ -1,0 +1,43 @@
+4.7 Manual Resolution of Conflicts
+
+| Classification | Category / Field        | N  | Infinity     | Manual      | Both        | Key Insights                           |
+| Source         |                         |    |              |             |             |                                        |
+|----------------|-------------------------|----|--------------| ------------|-------------|----------------------------------------|
+| Claude-only    | D (Factual)             |  7 | 3 (43%)  | 3 (43%)  | 1 (14%)  | Balanced performance in factual        |
+|                |                         |    |              |             |             | domains                                |
+|                | Years/Method/Type       |  3 | 3 (100%) | 0 (0%)   | 0 (0%)   | Infinity precise: correct year 2024,   |
+|                |                         |    |              |             |             | proper technology used and             |
+|                |                         |    |              |             |             | cross-sectional study definition       |
+|                | Sample Size             |  4 | 0 (0%)   | 3 (75%) | 1 (25%) | Manual captured additional             |
+|                |                         |    |              |             |             | subgroup information as students       |
+|                |                         |    |              |             |             | and experts; infinity presented        |
+|                |                         |    |              |             |             | analytic final sample                  |
+|                | E (Conceptual)          |  6 | 2 (33%)  | 0 (0%)   | 4 (67%)  | Infinity identified correct           |
+|                |                         |    |              |             |             | telepresence focus. Different valid    |
+|                |                         |    |              |             |             | perspectives on same phenomena         |
+|                | F (Incomparable)        |  1 | 0 (0%)   | 0 (100%) | 1 (100%) | Protocol limitation approaches         |
+|                |                         |    |              |             |             | both defensible                        |
+| Claude         |                         | 14 | 5 (36%)  | 3 (21%)  | 6 (43%)  | High complementarity with             |
+| Subtotal       |                         |    |              |             |             | balanced factual performance           |
+| DeepSeek-only  | E (Conceptual)          |  2 | 0 (0%)       | 0 (0%)      | 2 (100%) | Perfect complementarity in             |
+|                |                         |    |              |             |             | specialized domains                    |
+| DeepSeek       |                         |  2 | 0 (0%)       | 0 (0%)      | 2 (100%) | Perfect complementarity in             |
+| Subtotal       |                         |    |              |             |             | specialized domains                    |
+| Both models    | D (Factual)             |  7 | 6 (86%)  | 1 (14%)  | 0 (0%)   | Infinity dominates temporal and        |
+| agree          |                         |    |              |             |             | technical precision                    |
+|                | Years                   |  6 | 5 (83%)  | 1 (17%)  | 0 (0%)   | Infinity: 2023, 2022, 2024, 2025,     |
+|                |                         |    |              |             |             | 2019. Manual: one 2024 case           |
+|                | Study Type              |  1 | 1 (100%) | 0 (0%)   | 0 (0%)   | Infinity provided more precise         |
+|                |                         |    |              |             |             | study type description vs Manual's     |
+|                |                         |    |              |             |             | simplified categorization              |
+|                | F (Incomparable)        |  4 | 0 (0%)   | 4 (100%) | 0 (0%)   | Manual correctly conservative on       |
+|                |                         |    |              |             |             | study protocols lack findings;         |
+|                |                         |    |              |             |             | Infinity presented planned outcomes    |
+|                |                         |    |              |             |             | in studies protocol                    |
+| Both Subtotal  |                         | 11 | 6 (55%)  | 5 (45%)  | 0 (0%)   | Manual correctly recognized study      |
+|                |                         |    |              |             |             | protocols lack findings; Infinity     |
+|                |                         |    |              |             |             | presented planned outcomes in          |
+|                |                         |    |              |             |             | studies protocol                       |
+| **TOTAL**      |                         | **27** | **11 (41%)** | **8 (30%)** | **8 (30%)** | **Infinity: temporal/technical.**      |
+|                |                         |    |              |             |             | **Manual: numerical/protocol**        |
+|                |                         |    |              |             |             | **awareness**                          |

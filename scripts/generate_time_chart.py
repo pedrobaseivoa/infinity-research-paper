@@ -241,9 +241,9 @@ def main():
     
     if chart_bytes:
         # Save chart
-        with open("scripts/time_chart.png", "wb") as f:
+        with open("plots/time_chart.png", "wb") as f:
             f.write(chart_bytes)
-        print("   ✅ Chart saved: scripts/time_chart.png")
+        print("   ✅ Chart saved: plots/time_chart.png")
     else:
         print("   ❌ Failed to generate chart")
     
@@ -252,13 +252,13 @@ def main():
     legend_text = generate_time_legend(chart_data)
     
     # Save legend
-    with open("scripts/time_legend.txt", "w", encoding='utf-8') as f:
+    with open("plots/time_legend.txt", "w", encoding='utf-8') as f:
         f.write(legend_text)
-    print("   ✅ Legend saved: scripts/time_legend.txt")
+    print("   ✅ Legend saved: plots/time_legend.txt")
     
     print(f"\n🎯 Time chart generation complete!")
-    print(f"   📊 Chart: scripts/time_chart.png")
-    print(f"   📝 Legend: scripts/time_legend.txt")
+    print(f"   📊 Chart: plots/time_chart.png")
+    print(f"   📝 Legend: plots/time_legend.txt")
 
 if __name__ == "__main__":
     main()

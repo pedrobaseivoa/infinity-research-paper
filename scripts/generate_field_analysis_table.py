@@ -3,7 +3,7 @@
 📊 FIELD-BY-FIELD ANALYSIS TABLE GENERATOR - Infinity Research Paper
 ====================================================================
 
-Generates the Field-by-Field Analysis of General Concordance table (Section 5.6)
+Generates the Field-by-Field Analysis of General Concordance table (Section 4.6)
 comparing Claude 3.5 Sonnet vs DeepSeek V3 performance across 8 scientific fields.
 
 Input: analysis_claude.json + analysis_deepseek.json
@@ -102,7 +102,7 @@ def generate_field_analysis_table(claude_fields: Dict[str, List[str]],
         'Limitations'
     ]
     
-    table = ["5.6 Field-by-Field Analysis of General Concordance", ""]
+    table = ["4.6 Field-by-Field Analysis of General Concordance", ""]
     table.append("| Scientific Field                          | Claude 3.5 Sonnet | DeepSeek V3       | Distribution (Claude)      | Distribution (DeepSeek)    |")
     table.append("|-------------------------------------------|--------------------|--------------------|----------------------------|----------------------------|")
     
@@ -219,7 +219,7 @@ def main():
     table_content = generate_field_analysis_table(claude_fields, deepseek_fields)
     
     # Save table
-    output_file = "scripts/field_analysis_table.txt"
+    output_file = "plots/field_analysis_table.txt"
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write(table_content)
     

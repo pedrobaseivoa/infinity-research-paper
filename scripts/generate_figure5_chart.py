@@ -266,11 +266,11 @@ def create_figure5_chart(data: Dict):
     ax.set_facecolor('#FFFFFF')
     
     # Save chart
-    plt.savefig("scripts/figure5_chart.png", dpi=150, bbox_inches='tight',
+    plt.savefig("plots/figure5_chart.png", dpi=150, bbox_inches='tight',
                facecolor='#FAFAFA', edgecolor='none')
     plt.close()
     
-    print("   ✅ Chart saved: scripts/figure5_chart.png")
+    print("   ✅ Chart saved: plots/figure5_chart.png")
 
 def generate_figure5_legend(data: Dict):
     """Generate Figure 5 legend text matching article format"""
@@ -333,10 +333,10 @@ def generate_figure5_legend(data: Dict):
     legend_text += ", ".join(improvement_details) + "."
     
     # Save legend
-    with open("scripts/figure5_legend.txt", "w", encoding="utf-8") as f:
+    with open("plots/figure5_legend.txt", "w", encoding="utf-8") as f:
         f.write(legend_text)
     
-    print("   ✅ Legend saved: scripts/figure5_legend.txt")
+    print("   ✅ Legend saved: plots/figure5_legend.txt")
 
 def main():
     """Main execution function"""
@@ -362,8 +362,8 @@ def main():
     generate_figure5_legend(data)
     
     print("🎯 Figure 5 generation complete!")
-    print("   📊 Chart: scripts/figure5_chart.png")
-    print("   📝 Legend: scripts/figure5_legend.txt")
+    print("   📊 Chart: plots/figure5_chart.png")
+    print("   📝 Legend: plots/figure5_legend.txt")
 
 if __name__ == "__main__":
     main()

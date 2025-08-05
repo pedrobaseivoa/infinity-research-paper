@@ -274,7 +274,7 @@ def main():
     table_content = generate_conflicts_table(conflicts_data)
     
     # Save table
-    output_file = "scripts/conflicts_table.txt"
+    output_file = "plots/conflicts_table.txt"
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write(table_content)
     

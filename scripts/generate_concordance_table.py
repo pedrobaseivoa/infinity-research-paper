@@ -165,7 +165,7 @@ def main():
     table_content = generate_concordance_table(claude_counts, deepseek_counts)
     
     # Save table
-    output_file = "scripts/concordance_table.txt"
+    output_file = "plots/concordance_table.txt"
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write(table_content)
     

@@ -279,9 +279,9 @@ def main():
     
     if chart_bytes:
         # Save chart
-        with open("scripts/cost_chart.png", "wb") as f:
+        with open("plots/cost_chart.png", "wb") as f:
             f.write(chart_bytes)
-        print("   ✅ Chart saved: scripts/cost_chart.png")
+        print("   ✅ Chart saved: plots/cost_chart.png")
     else:
         print("   ❌ Failed to generate chart")
     
@@ -290,13 +290,13 @@ def main():
     legend_text = generate_cost_legend(chart_data)
     
     # Save legend
-    with open("scripts/cost_legend.txt", "w", encoding='utf-8') as f:
+    with open("plots/cost_legend.txt", "w", encoding='utf-8') as f:
         f.write(legend_text)
-    print("   ✅ Legend saved: scripts/cost_legend.txt")
+    print("   ✅ Legend saved: plots/cost_legend.txt")
     
     print(f"\n🎯 Cost chart generation complete!")
-    print(f"   📊 Chart: scripts/cost_chart.png")
-    print(f"   📝 Legend: scripts/cost_legend.txt")
+    print(f"   📊 Chart: plots/cost_chart.png")
+    print(f"   📝 Legend: plots/cost_legend.txt")
 
 if __name__ == "__main__":
     main()

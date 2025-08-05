@@ -279,9 +279,9 @@ def main():
     
     if chart_bytes:
         # Save chart
-        with open("scripts/token_chart.png", "wb") as f:
+        with open("plots/token_chart.png", "wb") as f:
             f.write(chart_bytes)
-        print("   ✅ Chart saved: scripts/token_chart.png")
+        print("   ✅ Chart saved: plots/token_chart.png")
     else:
         print("   ❌ Failed to generate chart")
     
@@ -290,13 +290,13 @@ def main():
     legend_text = generate_token_legend(chart_data)
     
     # Save legend
-    with open("scripts/token_legend.txt", "w", encoding='utf-8') as f:
+    with open("plots/token_legend.txt", "w", encoding='utf-8') as f:
         f.write(legend_text)
-    print("   ✅ Legend saved: scripts/token_legend.txt")
+    print("   ✅ Legend saved: plots/token_legend.txt")
     
     print(f"\n🎯 Token chart generation complete!")
-    print(f"   📊 Chart: scripts/token_chart.png")
-    print(f"   📝 Legend: scripts/token_legend.txt")
+    print(f"   📊 Chart: plots/token_chart.png")
+    print(f"   📝 Legend: plots/token_legend.txt")
 
 if __name__ == "__main__":
     main()
