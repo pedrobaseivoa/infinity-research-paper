@@ -112,8 +112,8 @@ Each table script generates:
 - **Single**: Single-source extraction (e.g., `vision`)
 
 ### Manual Analysis Data
-- **`analysis_claude.json`**: Manual evaluation of Claude 3.5 Sonnet extractions (152 field comparisons)
-- **`analysis_deepseek.json`**: Manual evaluation of DeepSeek V3 extractions (152 field comparisons)
+- **`analysis_claude.json`**: evaluation of Claude 3.5 Sonnet extractions (152 field comparisons)
+- **`analysis_deepseek.json`**: evaluation of DeepSeek V3 extractions (152 field comparisons)
 - **`conflicts.json`**: Detailed analysis of 27 unique conflicts with resolution outcomes
 
 ## ✅ Validation
